@@ -2,7 +2,7 @@
 
 Hacker is a Jekyll theme for [GitHub Pages](https://pages.github.com).
 
-You can preview the theme at http://pages-theme.github.io/hacker.
+You can preview the theme at http://pages-themes.github.io/hacker.
 
 ### Usage
 
