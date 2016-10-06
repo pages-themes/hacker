@@ -1,4 +1,4 @@
-# Hacker `jekyll-theme-hacker` gem
+# `jekyll-theme-hacker` gem
 
 Hacker is a Jekyll theme for [GitHub Pages](https://pages.github.com).
 
