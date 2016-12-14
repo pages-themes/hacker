@@ -3,6 +3,7 @@
 Gem::Specification.new do |s|
   s.name          = "jekyll-theme-hacker"
   s.version       = "0.0.1"
+  s.license       = "CC0-1.0"
   s.authors       = ["Jason Costello", "GitHub, Inc."]
   s.email         = ["opensource+jekyll-theme-hacker@github.com"]
   s.homepage      = "https://github.com/pages-themes/hacker"
