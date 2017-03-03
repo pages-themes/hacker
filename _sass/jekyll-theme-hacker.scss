@@ -163,6 +163,15 @@ pre {
   overflow-y: hidden;
 }
 
+code.highlighter-rouge {
+  background: rgba(0,0,0,0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0px 3px;
+  margin: 0px -3px;
+  color: #aa759f;
+  border-radius: 2px;
+}
+
 table {
   width: 100%;
   margin: 0 0 20px 0;
