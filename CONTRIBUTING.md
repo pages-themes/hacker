@@ -27,7 +27,7 @@ Here are a few things you can do that will increase the likelihood of your pull 
 - [Using Pull Requests](https://help.github.com/articles/using-pull-requests/)
 - [GitHub Help](https://help.github.com)
 
-[fork]: https://github.com/pages-themes/hackerfork
-[pr]: https://github.com/pages-themes/hackercompare
+[fork]: https://github.com/pages-themes/hacker/fork
+[pr]: https://github.com/pages-themes/hacker/compare
 [style]: http://ben.balter.com/jekyll-style-guide/
 [code-of-conduct]: CODE_OF_CONDUCT.md
