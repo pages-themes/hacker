@@ -39,6 +39,7 @@ Additionally, you may choose to set the following optional variables:
 
 ```yml
 show_downloads: ["true" or "false" to indicate whether to provide a download URL]
+view_github: ["true" or "false" to indicate whether to provide a view on github URL]
 google_analytics: [Your Google Analytics tracking ID]
 ```
 
