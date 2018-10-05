@@ -2,122 +2,16 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+# BLOGS
 
-[Link to another page](./another-page.html).
+## Blog 1
 
-There should be whitespace between paragraphs.
+Reading from Encyclopedic Anxiety by Joseph Reagle. Available online: https://reagle.org/joseph/2010/gfc/chapter-7.html
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+The most intriguing reading for me this week was in Chapter 7 of Reagle's article. It came to me as a surprise when the author mentioned Wikipedia was first thought of as "marketed (...) resources for children", since it is (now) highly regarded as a reputable encyclopedia despoite certain controvercies. “The implication was that any parent who failed to buy an encyclopedia for the youngster was depriving a child of the opportunity of doing well in school, and, ultimately, in life”. I found this to be an interesting quote; it's now turned on its head. If you were to look into the average household around thr world, not everyone has an encyclopedia, and instead, everyone has access to Wikipedia. Furthermore, I can't conclude one is a bad parent because their children does not have access to an encyclopedia. Personally, my dad rather bases whether people do well in their lives on the amount of novels or non-fictions on their book shelves. I had a encyclopedia-lacking childhood and am ever so proud of my dad. 
 
-# Header 1
+Reagle argues in his article about Wikipedia's child safety, ultimately addressing "concerns about age appropriateness partly through the provision of a Simple English Wikipedia for use by children". This begs the question why it was marketed for children on its launch. Perhaps it becuase it wasn't solely written by reputable authors? Or because it was written in simple English that any layman could understand? This particular section of Chapter 7 was surprising becuase you would have never associated the site being for children. Through this simple quote you could see the shift in technology and the impact that the digital revolution has had. The Internet has just been invented, people remain skeptical of Wikipedia after using a hard copy for generations. Therefore, the notion of "Wikipedia is an unreliable source" has been hardwired into schools. 
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+Slowly and surely, Wikipedia will gain a different connotation, as seen by what it was just a couple of years ago. We can ask at what point did it change? It certainly seems to be profound; within the past week MY personal connotation has infact changed. I believe by doing this Wikipedia assignment, I can understand the extent each article goes through (the original research needed, valididty by Wikimedia groups, talk pages), asking whether this is an unreliable source amongst the vast unmoderated majority on the Internet. The Library of Congress now digitalizing all scholarly articles written, as well as tweets, says a lot about the direction we are going upon rapid imrovements in technology. I was surprised because I was born in the age of the Internet, I have no experience with using physical encyclopedias. However, know what Wikipedia is now no longer marketed as resources for children. Not only does it serve as an online encyclopedia, it is a medium for the curious who do not need to "go to parents for help", and get answers independently.
 
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+-Jay Agaskar
