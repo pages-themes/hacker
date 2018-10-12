@@ -4,6 +4,19 @@ layout: default
 
 # BLOGS
 
+## Blog 2
+
+I really liked this week’s readings for class, it included topics on bots and machine learning which always interests me. One that I read was Janelle Shane’s website where she trains neural networks by providing datasaets to infer from. In one blog post, she talks about BigGAN, a neural network that generates high-resolution and photorealistic images. The photos produced by BigGAN of consistent subjects such as ones of animals and landscapes look amazing. Its really hard to tell they were computer generated. However, when we parse them to generate images of humans, the process goes horribly wrong. She mentions in the post: “the problem is that we’re really attuned to look for things that are slightly off in the faces and bodies of other humans”. I whole heartedly agree with this statement because as we improve technology to recreate humans using computers, we have to either excel at it, or be bad at it (cartoons). If our technology exists in the middle, we go deep in an uncanny valley that makes us look distressing. 
+
+In Speak by Louisa Hall, babybots are “classified as illegally lifelike, their minds were within a 10% deviation from human thought (…)”. In this case, technology for creating lifelike bots has transcended the uncanny valley into something more similar to humans than robots. A question that can arise from this is: As artificial intelligence advances, to what extent does it have to be human-like, that it won't fall into an uncanny valley? In the book, we don’t get a clear enough picture of what babybots look like, however, whether they look human or like Eve from WALL.E, they got banned either way. 
+
+Artificial intelligence does not have to look human, they can interact like humans. In the article by VICE, How To Think About Bots, an interesting point the author points out is “at the same time, we want bots to understand us, work for us; in this case of failure it isn’t funny but annoying”. Therefore, why are we laughing in the case that bots fail and do something out of the ordinary? We are making bots more lifelike, adopting human personalities because we want them to do jobs for us; we should be cheering them on. The Google Assistant that can make reservations, which was recently unveiled at their keynote, at first appeared to me being very creepy, but at the same time feeling very impressed. It was so advanced it even included filler words and paused to think, even though it did not have to. I am a huge movie buff, so when I first read Shane’s post on BigGAN and its failure to comprise human pictures, I thought of CGI in movies. In blockbusters, we can create such amazing imagery of aliens and monsters, but we still fail at recreating humans. We were unable to remove Henry Cavill’s mustache convincingly, making Superman’s mouth move in unconventional ways in the Justice League film. Its because we don’t know how aliens and monster move or how they look like; the unknown can make them look realistic letting our creativity and imagination run wild. By contrast, we know how mouths are supposed to move and ultimately comes out as fake. 
+
+Sources: 
+VICE, How To Think About Bots: https://motherboard.vice.com/en_us/article/qkzpdm/how-to-think-about-bots
+Janelle Shane, Letting Neural Networks Be Weird: http://aiweirdness.com/
+Louisa Hall, Speak. 
+
 ## Blog 1
 
 Reading from Encyclopedic Anxiety by Joseph Reagle. Available online: https://reagle.org/joseph/2010/gfc/chapter-7.html
