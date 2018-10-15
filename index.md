@@ -2,122 +2,29 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+# BLOGS
 
-[Link to another page](./another-page.html).
+## Blog 2
 
-There should be whitespace between paragraphs.
+I really liked this week’s readings for class, it included topics on bots and machine learning which always interests me. One that I read was Janelle Shane’s website where she trains neural networks by providing datasaets to infer from. In one blog post, she talks about BigGAN, a neural network that generates high-resolution and photorealistic images. The photos produced by BigGAN of consistent subjects such as ones of animals and landscapes look amazing. Its really hard to tell they were computer generated. However, when we parse them to generate images of humans, the process goes horribly wrong. She mentions in the post: “the problem is that we’re really attuned to look for things that are slightly off in the faces and bodies of other humans”. I whole heartedly agree with this statement because as we improve technology to recreate humans using computers, we have to either excel at it, or be bad at it (cartoons). If our technology exists in the middle, we go deep in an uncanny valley that makes us look distressing. 
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+In Speak by Louisa Hall, babybots are “classified as illegally lifelike, their minds were within a 10% deviation from human thought (…)”. In this case, technology for creating lifelike bots has transcended the uncanny valley into something more similar to humans than robots. A question that can arise from this is: As artificial intelligence advances, to what extent does it have to be human-like, that it won't fall into an uncanny valley? In the book, we don’t get a clear enough picture of what babybots look like, however, whether they look human or like Eve from WALL.E, they got banned either way. 
 
-# Header 1
+Artificial intelligence does not have to look human, they can interact like humans. In the article by VICE, How To Think About Bots, an interesting point the author points out is “at the same time, we want bots to understand us, work for us; in this case of failure it isn’t funny but annoying”. Therefore, why are we laughing in the case that bots fail and do something out of the ordinary? We are making bots more lifelike, adopting human personalities because we want them to do jobs for us; we should be cheering them on. The Google Assistant that can make reservations, which was recently unveiled at their keynote, at first appeared to me being very creepy, but at the same time feeling very impressed. It was so advanced it even included filler words and paused to think, even though it did not have to. I am a huge movie buff, so when I first read Shane’s post on BigGAN and its failure to comprise human pictures, I thought of CGI in movies. In blockbusters, we can create such amazing imagery of aliens and monsters, but we still fail at recreating humans. We were unable to remove Henry Cavill’s mustache convincingly, making Superman’s mouth move in unconventional ways in the Justice League film. Its because we don’t know how aliens and monster move or how they look like; the unknown can make them look realistic letting our creativity and imagination run wild. By contrast, we know how mouths are supposed to move and ultimately comes out as fake. 
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+Sources: 
+VICE, How To Think About Bots: https://motherboard.vice.com/en_us/article/qkzpdm/how-to-think-about-bots
+Janelle Shane, Letting Neural Networks Be Weird: http://aiweirdness.com/
+Louisa Hall, Speak. 
 
-## Header 2
+## Blog 1
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+Reading from Encyclopedic Anxiety by Joseph Reagle. Available online: https://reagle.org/joseph/2010/gfc/chapter-7.html
 
-### Header 3
+The most intriguing reading for me this week was in Chapter 7 of Reagle's article. It came to me as a surprise when the author mentioned Wikipedia was first thought of as "marketed (...) resources for children", since it is (now) highly regarded as a reputable encyclopedia despoite certain controvercies. “The implication was that any parent who failed to buy an encyclopedia for the youngster was depriving a child of the opportunity of doing well in school, and, ultimately, in life”. I found this to be an interesting quote; it's now turned on its head. If you were to look into the average household around thr world, not everyone has an encyclopedia, and instead, everyone has access to Wikipedia. Furthermore, I can't conclude one is a bad parent because their children does not have access to an encyclopedia. Personally, my dad rather bases whether people do well in their lives on the amount of novels or non-fictions on their book shelves. I had a encyclopedia-lacking childhood and am ever so proud of my dad. 
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+Reagle argues in his article about Wikipedia's child safety, ultimately addressing "concerns about age appropriateness partly through the provision of a Simple English Wikipedia for use by children". This begs the question why it was marketed for children on its launch. Perhaps it becuase it wasn't solely written by reputable authors? Or because it was written in simple English that any layman could understand? This particular section of Chapter 7 was surprising becuase you would have never associated the site being for children. Through this simple quote you could see the shift in technology and the impact that the digital revolution has had. The Internet has just been invented, people remain skeptical of Wikipedia after using a hard copy for generations. Therefore, the notion of "Wikipedia is an unreliable source" has been hardwired into schools. 
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+Slowly and surely, Wikipedia will gain a different connotation, as seen by what it was just a couple of years ago. We can ask at what point did it change? It certainly seems to be profound; within the past week MY personal connotation has infact changed. I believe by doing this Wikipedia assignment, I can understand the extent each article goes through (the original research needed, valididty by Wikimedia groups, talk pages), asking whether this is an unreliable source amongst the vast unmoderated majority on the Internet. The Library of Congress now digitalizing all scholarly articles written, as well as tweets, says a lot about the direction we are going upon rapid imrovements in technology. I was surprised because I was born in the age of the Internet, I have no experience with using physical encyclopedias. However, know what Wikipedia is now no longer marketed as resources for children. Not only does it serve as an online encyclopedia, it is a medium for the curious who do not need to "go to parents for help", and get answers independently.
 
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+-Jay Agaskar
