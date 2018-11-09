@@ -28,19 +28,19 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
-#### Header 4
+#### Things I like to do
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+*  Watch Netlfix.
+*  What tech and programming stuff on youtube.
+*  Play video games
 
-##### Header 5
+##### Fav Genres Of Music!
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+1.  Rap
+2.  Hip-Hop
+3.  Pop
 
-###### Header 6
+###### A chart!
 
 | head1        | head two          | three |
 |:-------------|:------------------|:------|
@@ -53,35 +53,19 @@ end
 
 * * *
 
-### Here is an unordered list:
+### Here Are My fav Fast Food Resturants 
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+*   Chcik-Fil-A
+*   Chipotle
+*   Wing Stop
+*   Wendys
 
-### And an ordered list:
+### My Favorite Foods!
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
+1.  Pizza
+1.  Cheese
+1.  Bread
+1.  Chicken
 
 ### Small image
 
@@ -96,13 +80,13 @@ end
 
 <dl>
 <dt>Name</dt>
-<dd>Godzilla</dd>
+<dd>Manny</dd>
 <dt>Born</dt>
-<dd>1952</dd>
+<dd>1997</dd>
 <dt>Birthplace</dt>
-<dd>Japan</dd>
+<dd>Jersery</dd>
 <dt>Color</dt>
-<dd>Green</dd>
+<dd>blue</dd>
 </dl>
 
 ```
