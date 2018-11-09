@@ -31,7 +31,7 @@ end
 #### Things I like to do
 
 *  Watch Netlfix.
-*  What tech and programming stuff on youtube.
+*  Watch tech and programming stuff on youtube.
 *  Play video games
 
 ##### Fav Genres Of Music!
@@ -71,12 +71,7 @@ end
 
 ![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
 
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
+### HTML syntax Info About Me.
 
 <dl>
 <dt>Name</dt>
