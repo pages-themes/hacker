@@ -1,8 +1,3 @@
-
----
-layout: default
----
-
 # Begin.
 
 Sometimes you write a code, this code simple actually and not hard to think about it. When you finish the code, you realize something. That code amazing. First of all code is working okay :) and you feel it's like a magic. Maybe it could be better, but for now this is the best.
