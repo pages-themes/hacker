@@ -65,17 +65,19 @@ In this case forwarders modifies the From field in the message header and adds a
 
 
 Sender Sends to Forwarder (sender@gmail.com)
-
->From                 :   sender@gmail.com 
->To                   :   receiver@forwarder.com
->DKIM-Signature       :   v=1; a=rsa-sha256; c=relaxed/relaxed;d=gmail.com;b=<signature>
+```
+From                 :   sender@gmail.com 
+To                   :   receiver@forwarder.com
+DKIM-Signature       :   v=1; a=rsa-sha256; c=relaxed/relaxed;d=gmail.com;b=<signature>
+```
 
 Receiver Receives (receiver@yahoo.com)
-
->From                 :  "sender@gmail.com" <mail-forwarder@forwarder.com>
->To                   :  receiver@forwarder.com
->DKIM-Signature       :  v=1; a=rsa-sha256; c=relaxed/relaxed;d=gmail.com;b=<signature>
->DKIM-Signature       :  v=1; a=rsa-sha256; c=relaxed/relaxed;d=forwarder.com;b=<signature2>
+```
+From                 :  "sender@gmail.com" <mail-forwarder@forwarder.com>
+To                   :  receiver@forwarder.com
+DKIM-Signature       :  v=1; a=rsa-sha256; c=relaxed/relaxed;d=gmail.com;b=<signature>
+DKIM-Signature       :  v=1; a=rsa-sha256; c=relaxed/relaxed;d=forwarder.com;b=<signature2>
+```
 
 SPF and DKIM both passes with forwarder.com DNS records. The end receiver chooses the domain inside the "< >" i.e forwarder.com  to verify the DMARC record, which always pass as SPF and DKIM both passes with the same domain. 
 
@@ -94,17 +96,19 @@ Next to Reply , click More Show original.
 Forwarders that do not modify the `From` field in the message header but adds additional DKIM signatures.
 
 Sender Sends to Forwarder (sender@gmail.com)
-
->From                 :   sender@gmail.com
->To                   :   receiver@forwarder.com
->DKIM-Signature       :   v=1; a=rsa-sha256; c=relaxed/relaxed;d=gmail.com;b=<signature>
+```
+From                 :   sender@gmail.com
+To                   :   receiver@forwarder.com
+DKIM-Signature       :   v=1; a=rsa-sha256; c=relaxed/relaxed;d=gmail.com;b=<signature>
+```
 
 Receiver Receives (receiver@gmail.com)
-
->From                 :  sender@gmail.com
->To                   :  receiver@forwarder.com
->DKIM-Signature       :  v=1; a=rsa-sha256; c=relaxed/relaxed;d=gmail.com;b=<signature>
->DKIM-Signature       :  v=1; a=rsa-sha256; c=relaxed/relaxed;d=forwarder.com;b=<signature2>
+```
+From                 :  sender@gmail.com
+To                   :  receiver@forwarder.com
+DKIM-Signature       :  v=1; a=rsa-sha256; c=relaxed/relaxed;d=gmail.com;b=<signature>
+DKIM-Signature       :  v=1; a=rsa-sha256; c=relaxed/relaxed;d=forwarder.com;b=<signature2>
+```
 
 Here SPF passes with forwarder.com ip address but DKIM passes with gmail's signature and since DMARC looks at the domain from From field in the message header , the attacker can only spoof email on behalf of any gmail's email address .
 
