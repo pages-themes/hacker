@@ -42,12 +42,14 @@ But while forwarding they additionally add their DKIM signature to the mail and
 
 According to [rfc6376](https://tools.ietf.org/html/rfc6376#page-34)
 
-```A message might also have multiple signatures because it
+```
+   A message might also have multiple signatures because it
    passed through multiple Signers.  A common case is expected to be
    that of a signed message that passes through a mailing list that also
    signs all messages.  Assuming both of those signatures verify, a
    recipient might choose to accept the message if either of those
-   signatures were known to come from trusted sources.```
+   signatures were known to come from trusted sources.
+   ```
 
 Most of the Verifiers (receivers) choose to process signatures corresponding to the `From` field in the message header before other signatures.
 When a receiver uses SPF, the receiver looks at the domain found in the RFC5321.MailFrom to figure out where to look for an SPF record. The RFC5321.MailFrom address is the entity that is passed along as part of the “MAIL FROM” command during the SMTP conversation. When an SPF check successfully completes, the receivers ends up with an “Authenticated Identifier” that is the domain of the RFC5321.MailFrom. So at the receiver's end SPF check always get passed on behalf of the forwarder's IP and not the sender's IP( sender ip == attacker ip)
