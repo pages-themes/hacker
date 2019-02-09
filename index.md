@@ -2,122 +2,125 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+# Basics
 
-[Link to another page](./another-page.html).
+##### SPF   
 
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+A Sender Policy Framework (SPF) record is a type of Domain Name Service (DNS) TXT record that identifies which mail servers are permitted to send email on behalf of your domain. The purpose of an SPF record is to detect and prevent spammers from sending messages with forged From addresses on your domain. 
 
 
-### Definition lists can be used with HTML syntax.
+##### DKIM    
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+DKIM stands for DomainKeys Identified Email and provides a way to validate that an organization delivering an email has the right to do so. It is an email security standard designed to make sure messages weren’t altered in transit between the sending and recipient servers. It uses public-key cryptography to  sign email with a private key as it leaves a sending server. Recipient servers  can then use a public key published to a domain’s DNS to verify the source of  the message, and that the body of the message hasn’t changed during transit. 
+          
+Selectors are extracted form DKIM-signature header and according to selector the DKIM policy from DNS to verify the email.
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
 
-```
-The final element.
-```
+##### DMARC  
+
+DMARC, which stands for “Domain-based Message Authentication, Reporting & formance”, is an email authentication, policy, and reporting protocol. It builds on the widely deployed SPF and DKIM protocols, adding linkage to the author (“From:”) domain name, published policies for recipient handling of  authentication failures, and reporting from receivers to senders, to improve and monitor protection of the domain from fraudulent email.
+
+Commands to query these records
+
+| Record |    Windows Command Line    |         Mac OS/Linux Terminal     |
+|--------|:---------------------------|:----------------------------------|
+| SPF    |nslookup  -type=txt domain  |dig txt domain                     |
+|--------|----------------------------|-----------------------------------| 
+| DKIM   |>nslookup                   |dig txt selector._domainkey.domain |
+|        |>set q=txt                  |                                   |
+|        |>selector._domainkey.domain |                                   |
+|--------|----------------------------|-----------------------------------| 
+| DMARC  |nslookup -type=txt          |dig txt _dmarc.domain              |
+|        | _dmarc.domain              |                                   |
+|--------|----------------------------|-----------------------------------|
+
+
+# Why are email forwarders prone to Email spoofing?
+
+Many company use email forwarding functionality , they forward the email sent to employee's company email address to their personal email address , while forwarding they do not check the authenticity of incoming email i.e does not check email's SPF , DKIM and DMARC before forwarding and let the responsibility to the end receiver.
+But while forwarding they additionally add their DKIM signature to the mail and
+
+According to [rfc6376](https://tools.ietf.org/html/rfc6376#page-34)
+
+```A message might also have multiple signatures because it
+   passed through multiple Signers.  A common case is expected to be
+   that of a signed message that passes through a mailing list that also
+   signs all messages.  Assuming both of those signatures verify, a
+   recipient might choose to accept the message if either of those
+   signatures were known to come from trusted sources.```
+
+Most of the Verifiers (receivers) choose to process signatures corresponding to the `From` field in the message header before other signatures.
+When a receiver uses SPF, the receiver looks at the domain found in the RFC5321.MailFrom to figure out where to look for an SPF record. The RFC5321.MailFrom address is the entity that is passed along as part of the “MAIL FROM” command during the SMTP conversation. When an SPF check successfully completes, the receivers ends up with an “Authenticated Identifier” that is the domain of the RFC5321.MailFrom. So at the receiver's end SPF check always get passed on behalf of the forwarder's IP and not the sender's IP( sender ip == attacker ip)
+DKIM is similar in that it also generates an “Authenticated Identifier”. However, DKIM’s identifier comes from the “d=” tag that is part of every DKIM signature which the sender choose ( mostly From : field)
+
+Since In the DMARC world, any Authenticated Identifier has to be relevant to the domain that DMARC is looking at, and that is always the domain found in the From: header of an email, which results in DMARC check get passed if any of the RFC5321.MailFrom domain and DKIM signature domain which the receiver choose matches with the From field in the message header .
+
+I have seen mainly two vulnerable configurations of email forwarders
+
+#### First
+
+In this case forwarders modifies the From field in the message header and adds additional DKIM signatures.
+
+
+Sender Sends to Forwarder (sender@gmail.com)
+
+>From                 :   sender@gmail.com 
+>To                   :   receiver@forwarder.com
+>DKIM-Signature       :   v=1; a=rsa-sha256; c=relaxed/relaxed;d=gmail.com;b=<signature>
+
+Receiver Receives (receiver@yahoo.com)
+
+>From                 :  "sender@gmail.com" <mail-forwarder@forwarder.com>
+>To                   :  receiver@forwarder.com
+>DKIM-Signature       :  v=1; a=rsa-sha256; c=relaxed/relaxed;d=gmail.com;b=<signature>
+>DKIM-Signature       :  v=1; a=rsa-sha256; c=relaxed/relaxed;d=forwarder.com;b=<signature2>
+
+SPF and DKIM both passes with forwarder.com DNS records. The end receiver chooses the domain inside the "< >" i.e forwarder.com  to verify the DMARC record, which always pass as SPF and DKIM both passes with the same domain. 
+
+So in this scenario an attacker can spoof email on behalf of any domain .                               
+
+I have seen this scenario when Amazon SES is used as email  forwarder , since it does not have any documentation on how to use it as an email forwarder developers tend to commonly deploy a serverless(AWS Lambda) function to get the work done.
+
+To trace email with full header in Gmail 
+
+Open the email you want to check the headers for.
+Next to Reply , click More Show original.
+
+
+#### Second 
+
+Forwarders that do not modify the `From` field in the message header but adds additional DKIM signatures.
+
+Sender Sends to Forwarder (sender@gmail.com)
+
+>From                 :   sender@gmail.com
+>To                   :   receiver@forwarder.com
+>DKIM-Signature       :   v=1; a=rsa-sha256; c=relaxed/relaxed;d=gmail.com;b=<signature>
+
+Receiver Receives (receiver@gmail.com)
+
+>From                 :  sender@gmail.com
+>To                   :  receiver@forwarder.com
+>DKIM-Signature       :  v=1; a=rsa-sha256; c=relaxed/relaxed;d=gmail.com;b=<signature>
+>DKIM-Signature       :  v=1; a=rsa-sha256; c=relaxed/relaxed;d=forwarder.com;b=<signature2>
+
+Here SPF passes with forwarder.com ip address but DKIM passes with gmail's signature and since DMARC looks at the domain from From field in the message header , the attacker can only spoof email on behalf of any gmail's email address .
+
+NOTE: The email forwarders generally adds more than one DKIM signature before        forwarding. If any company uses AWS SES to forward domain then the DKIM signature of AWS SES and the company's forwarder domain itself gets added.
+
+So in this scenario an attacker can spoof email on behalf domain whose DKIM signatures are present in the email .                                                                                                       
+
+# Exploitation
+
+With services like https://emkei.cz/  it is quiet easy to  spoof any email for phishing purpose .
+
+![email](./email.png)
+
+
+
+# Mitigation
+
+One mitigation  is quiet obvious i.e validate email before forwarding, but it is a lot of work to implement SPF ,DKIM and DMARC checks.
+
+There is one more simpler solution i.e when forwarder does not modify the From field in the message header and does not adds additional DKIM signature .
+
