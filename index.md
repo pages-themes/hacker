@@ -125,6 +125,7 @@ Forwarder adds DKIM signature and forwards the email
 From                 :  sender@forwarder.com
 To                   :  receiver@forwarder.com
 DKIM-Signature       :  v=1; a=rsa-sha256; c=relaxed/relaxed;d=forwarder.com;b=<signature> 
+```
 
 NOTE: The email forwarders generally adds more than one DKIM signature before forwarding. If any company uses AWS SES to forward emails then the DKIM signature of AWS SES and the company's forwarder domain itself gets added.
 
