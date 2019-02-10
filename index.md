@@ -142,5 +142,9 @@ With services like https://emkei.cz/  it is quiet easy to  spoof any email for p
 
 One mitigation  is quiet obvious i.e validate email before forwarding, but it is a lot of work to implement SPF ,DKIM and DMARC checks.
 
-There is one more simpler solution i.e when forwarder does not modify the field in the message header and does not adds additional DKIM signature .(This approach is used by gmail's auto forwarder)
+There is one more simpler solution i.e when forwarder does not modify the field in the message header and does not adds additional DKIM signature (This approach is used by gmail's auto forwarder)
+
+
+
+_/\_
 
