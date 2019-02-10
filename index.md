@@ -66,7 +66,7 @@ I have seen mainly two vulnerable configurations of email forwarders
 In this case forwarders modifies the From field(or any other field which is included in `h=` tag of the original DKIM signature) in the message header and adds additional DKIM signatures.
 
 When any of the fields in `h=` tag is modified the original DKIM signature becomes invalid.
-
+In below explanation `receiver@forwarder.com forwards to receiver@gmail.com`
 
 Sender Sends to Forwarder (sender@gmail.com)
 ```
@@ -75,7 +75,7 @@ To                   :   receiver@forwarder.com
 DKIM-Signature       :   v=1; a=rsa-sha256; c=relaxed/relaxed;d=gmail.com;b=<signature>
 ```
 
-Receiver Receives (receiver@yahoo.com)
+Receiver Receives (receiver@gmail.com)
 ```
 From                 :  "sender@gmail.com" <mail-forwarder@forwarder.com>
 To                   :  receiver@forwarder.com
