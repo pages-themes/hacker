@@ -6,6 +6,13 @@ $body-foreground: $gallery !default;
 $header: $conifer !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
+$container-max-width: 1000px;
+
+@mixin media-max-width($max-width) {
+  @media (max-width: $max-width) {
+      @content;
+  }
+}
 
 body {
   margin: 0;
@@ -21,7 +28,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: $container-max-width;
   margin: 0 auto;
 }
 
@@ -64,7 +71,11 @@ header h1 {
                0 0 10px rgba(181, 232, 83, 0.1);
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
+  @include media-max-width($container-max-width) {
+    margin-left: 0;
+  }
 }
+
 
 header h1:before {
   content: "./ ";
