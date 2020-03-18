@@ -8,7 +8,13 @@ layout: default
 <p class="view">by {{ page.author | default: site.author }}</p>
 
 {{content}}
-
-{% if page.tags %}
-  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+<hr />
+<section>
+{% if page.previous %}
+  <a style="float:left" href="{{ page.previous.url }}">< Previous Post</a>
 {% endif %}
+
+{% if page.next %}
+  <a style="float:right" href="{{ page.next.url }}">Next Post ></a>
+{% endif %}
+</section>

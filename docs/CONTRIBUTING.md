@@ -6,8 +6,7 @@ The Hacker Theme is an open source project supported by the efforts of an entire
 
 Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue, assessing changes, and helping you finalize your pull requests.
 
-
-## Looking for support?
+## Looking for support
 
 We'd love to help. Check out [the support guidelines](SUPPORT.md).
 
@@ -33,8 +32,6 @@ If you find yourself wishing for a feature that doesn't exist in The Hacker Them
 Feature requests are welcome. But take a moment to find out whether your idea fits with the scope and goals of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Please provide as much detail and context as possible, including describing the problem you're trying to solve.
 
 [Open an issue](https://github.com/pages-themes/hacker/issues/new) which describes the feature you would like to see, why you want it, how it should work, etc.
-
-
 
 ## Your first contribution
 

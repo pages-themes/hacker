@@ -85,7 +85,7 @@ header h1:before {
 header h2 {
   font-size: 18px;
   font-weight: 300;
-  color: #666;
+  color: $grey;
 }
 
 #downloads .btn {
@@ -180,6 +180,11 @@ code.highlighter-rouge {
   border-radius: 2px;
 }
 
+table, th, tr, td {
+  border-collapse: collapse;
+  border: 1px solid white;
+}
+
 table {
   width: 100%;
   margin: 0 0 20px 0;
@@ -189,6 +194,7 @@ th {
   text-align: left;
   border-bottom: 1px dashed #b5e853;
   padding: 5px 10px;
+  color: $conifer;
 }
 
 td {
