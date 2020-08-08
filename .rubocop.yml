@@ -4,3 +4,6 @@ AllCops:
 
 Metrics/LineLength:
   Enabled: false
+
+Gemspec/RequiredRubyVersion:
+  Enabled: false
