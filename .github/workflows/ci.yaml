@@ -12,4 +12,3 @@ jobs:
         run: script/bootstrap
       - name: test
         run: script/cibuild
-
