@@ -38,7 +38,10 @@ Additionally, you may choose to set the following optional variables:
 ```yml
 show_downloads: ["true" or "false" to indicate whether to provide a download URL]
 google_analytics: [Your Google Analytics tracking ID]
+google_analytics_v4: [Your Google Analytics v4 (gtags) tracking ID]
 ```
+
+`google_analytics` and `google_analytics_v4` are incompatible, you have to choose one of them, if both are set the later takes precedence.
 
 ### Stylesheet
 
