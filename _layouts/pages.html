@@ -15,22 +15,16 @@
       <div class="container">
         <a id="a-title" href="{{ '/' | relative_url }}">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <h2>{{ page.description }}</h2>
         </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+        
 
         <section id="downloads">
           {% if site.show_downloads %}
             <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
             <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
           {% endif %}
-          {% if page.pdf_url %}
-          {% if page.publish %}
-
-          <a href="{{ page.pdf_url }}" class="btn btn-github"><span class="icon"></span>View as Pdf</a>
-          {% endif %}
-          
-          {% endif %}
-        
+          <a href="{{ '/' | relative_url }}" class="btn btn-github"><span class="icon"></span>View Home</a>
           
         </section>
       </div>
