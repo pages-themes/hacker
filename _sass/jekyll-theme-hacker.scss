@@ -153,6 +153,43 @@ ul li {
   list-style-image:url('../images/bullet.png');
 }
 
+ul.task-list {
+  $checkbox-size: 1em;
+  
+  list-style: none;
+  padding-left: 0.5em;
+
+  li.task-list-item {
+    list-style-image: none;
+    position: relative;
+
+    input.task-list-item-checkbox {
+      display: inline-block;
+      margin-right: 1.2em;
+      width: $checkbox-size;
+      height: $checkbox-size;
+      vertical-align: middle;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+           -o-appearance: none;
+              appearance: none;
+      -webkit-box-shadow: none;
+         -moz-box-shadow: none;
+           -o-box-shadow: none;
+              box-shadow: none;
+      outline: $checkbox-size*0.2 solid $conifer;
+
+      &:checked {
+        width: $checkbox-size*0.813;
+        height: $checkbox-size*0.813;
+        margin-left: $checkbox-size*0.35;
+        outline: $checkbox-size*0.35 double adjust-color($conifer, $lightness: 0%);
+        background-color: adjust-color($conifer, $lightness: -20%);
+      }
+    }
+  }
+}
+
 blockquote {
   color: $blockquote-color;
   padding-left: 10px;
