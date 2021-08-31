@@ -153,6 +153,10 @@ ul li {
   list-style-image:url('../images/bullet.png');
 }
 
+ul.task-list li {
+  list-style-image: none;
+}
+
 blockquote {
   color: $blockquote-color;
   padding-left: 10px;
