@@ -1,5 +1,33 @@
-title: Hacker theme
-description: Hacker is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+title: Life, Universe and Engineering
+description: Some important lessons learned hard from experience
+show_downloads: false
+show_github: false
+google_analytics: G-0KEV259ZXG
 theme: jekyll-theme-hacker
+remote_theme: pages-themes/hacker@v0.2.0
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+source: .
+destination: ./_site
+#permalink: /:title
+paginate: 3
+paginate_path: /page/:num/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+future: true
+plugins:
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+
+staticman_url: https://api.staticman.net/v3/entry/github/jin09/blog/master/comments
