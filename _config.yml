@@ -1,5 +1,7 @@
-title: Hacker theme
-description: Hacker is a theme for GitHub Pages.
+title: Hack3rlife Website
+description: Jekyll Website Hosted on AWS S3 Using GitHub Actions
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-hacker
+
+# Deploy a Jekyll site to AWS S3 using GitHub Actions
