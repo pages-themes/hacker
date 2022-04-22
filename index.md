@@ -1,5 +1,6 @@
-[HTB-Oopsie](./another-page2.html).
+[HTB-Oopsie](./another-page2.html)
 
+[HTB-Responder](./HTB-Responder.html)
 
 ---
 layout: default
