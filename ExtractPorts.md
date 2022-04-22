@@ -27,9 +27,9 @@ automáticamente.
  Esta función la podéis encontrar tanto en el perfil de S4vitar como
  en este repositorio.
  
- S4vitar: https://github.com/s4vitar
+ S4vitar: [https://github.com/s4vitar](https://github.com/s4vitar)
  
- Mi repositorio: https://github.com/F1r0x/ExtractPorts/blob/main/extractPorts
+ Mi repositorio: [https://github.com/F1r0x/ExtractPorts/blob/main/extractPorts](https://github.com/F1r0x/ExtractPorts/blob/main/extractPorts)
  
  ![Captura de pantalla -2022-04-10 23-42-26](https://user-images.githubusercontent.com/103068924/162641184-dd48ed25-c547-4350-a201-de89d0d849e6.png)
  
