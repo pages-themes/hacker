@@ -3,8 +3,16 @@
 ## Starting Points
 
 [HTB-Oopsie](./HTB-Oopsie.html)
+
 [HTB-Responder](./HTB-Responder.html)
 
+
+
+## Herramientas y Scripts 
+
+[wichSystem](./WichSystem.html)
+
+[extractPorts](./ExtractPorts.html)
 
 ---
 layout: default
