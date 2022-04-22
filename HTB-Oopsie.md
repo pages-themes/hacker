@@ -501,10 +501,32 @@ escalar privilegios.
 Un archivo SUID simepre se ejecuta como el usuario propietario del archivo, independientemente de que usuaio 
 pase el comando.
 
-En nuestro caso, el 'butracker' binario es pro piedad de 'root' y por tanto podemos ejecutalo como root ya
+En nuestro caso, el 'butracker' binario es propiedad de 'root' y por tanto podemos ejecutalo como root ya
 que tiene configurado SUID.
 
 Para ello ejecutamos 'bugtacker':
 
                 /usr/bin/bugtracker 
+            
+![Captura de pantalla -2022-04-21 09-57-05](https://user-images.githubusercontent.com/103068924/164786353-6e21c5ef-1b8e-465b-808e-371ac1f3b293.png)
+
+En mi caso probe con 'home' para ver que me reportava:
+
+![Captura de pantalla -2022-04-21 10-01-29](https://user-images.githubusercontent.com/103068924/164786858-de17dddb-948d-4cd9-82b6-0fb270d85340.png)
+
+La herramienta acepta la entrada del usuario como nombre del archivo que se leerá con el comando 'cat'. Sin embargo, no especifica la ruta completa al archivo 'cat' y podríamos aprovechar esto.
+
+Para ello nos dirigiremos al directorio '/tmp':
+ 
+            cd /tmp
+            
+![Captura de pantalla -2022-04-21 10-49-05](https://user-images.githubusercontent.com/103068924/164787581-b841e8fc-9f0c-4d90-bc2c-22f9c44b40d3.png)
+
+
+Y crearemos un archivo 'cat' que contenga la siguiente ruta '/bin/sh':
+
+            echo '/bin/sh' > cat
+            
+ ![Captura de pantalla -2022-04-21 10-49-22](https://user-images.githubusercontent.com/103068924/164787634-3a48e291-f6e5-4415-8bbb-54f197c02657.png)
+      
 
