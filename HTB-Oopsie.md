@@ -27,7 +27,7 @@ En primer lugar, vamos a comprobar si tenemos conexión
  nuestro directorio mediante la herramienta 'extractPorts'.
  
  Puedes encontrar la descripción y la herramienta extractPorts
- creada por S4vitar en mi repositorio: https://github.com/F1r0x/ExtractPorts
+ creada por S4vitar en mi repositorio: [ExtractPorts](https://f1r0x.github.io/ExtractPorts.html)
  
  Es este caso podemos observar los siguientes puertos 
  abiertos por el protocolo TCP:
