@@ -2,7 +2,7 @@
 
 ## Starting Points
 
-[HTB-Oopsie](./another-page2.html)
+[HTB-Oopsie](./HTB-Oopsie.html)
 
 [HTB-Responder](./HTB-Responder.html)
 
