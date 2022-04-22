@@ -10,9 +10,9 @@
 
 ## Herramientas y Scripts 
 
-[wichSystem](./WichSystem.html)
+[WichSystem](./WichSystem.html)
 
-[extractPorts](./ExtractPorts.html)
+[ExtractPorts](./ExtractPorts.html)
 
 ---
 layout: default
