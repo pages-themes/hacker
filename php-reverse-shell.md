@@ -6,6 +6,11 @@ IP y un puerto codificados.
 El destinatario recibirá un shell ejecutándose como el
 usuario actual (normalmente apache).
 
+# Repositorio:
+
+Desde aquí podreís copiar el script:
+https://github.com/F1r0x/php-reverse-shell.php/blob/main/php-reverse-shell.php
+
 # Configuración:
 
 La configuración es muy simple, lo único que tenemos que hacer es cambiar la Ip 
