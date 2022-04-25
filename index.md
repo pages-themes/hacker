@@ -17,7 +17,7 @@
 
 ## Artículos
 
-[Fase de Reconocimiento - HTB](./Fase_de_reconocimiento-HTB)
+[Fase de Reconocimiento - HTB](./Fase_de_reconocimiento-HTB.html)
 
 
 
