@@ -568,4 +568,8 @@ Y abrimos el archivo con 'cat' donde econtramos la última flag:
 
           cat root.txt
           
+ 
+ ![background2](https://user-images.githubusercontent.com/103068924/165103059-55b4a1b6-f646-46aa-8b5a-47a804187541.png)
+
+ 
           
