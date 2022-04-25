@@ -11,6 +11,8 @@
  a la víctima y tratar de recopilar la máxima información
  posible.
 
+---
+
 ## PING 
 
 ![Captura de pantalla -2022-04-11 18-56-44](https://user-images.githubusercontent.com/103068924/165159179-2e3ba6e6-84b8-42d8-a2c0-817beac98552.png)
@@ -31,7 +33,8 @@
  - Determinar si estamos frente a un SO Linux o Windows:
      Windows ttl = 128
      Linux ttl = 64
-     
+  
+---
      
 ## NMAP 
   
@@ -72,6 +75,8 @@
   
   De esta manera podremos revisar los puertos que estaban
   abiertos en cualquier momento.  
+
+---
   
 ## NMAP 
 
@@ -92,6 +97,7 @@ ESCANEO EXHAUSTIVO:
  
  -oN :   Reporta los resultados en formato nmap al archivo 'targed'.
  
+---
  
 ## WHATWEB  
  
