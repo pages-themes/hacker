@@ -28,7 +28,7 @@
      Linux ttl = 64
      
      
- ## NMAP 
+## NMAP 
   
   Tras conocer la máquina a la que nos enfrentamos
   pasaremos analizar los protocolos tcp/udp.
@@ -68,7 +68,7 @@
   De esta manera podremos revisar los puertos que estaban
   abiertos en cualquier momento.  
   
- ## NMAP 
+## NMAP 
 
 ESCANEO EXHAUSTIVO: 
  
@@ -88,7 +88,7 @@ ESCANEO EXHAUSTIVO:
  -oN :   Reporta los resultados en formato nmap al archivo 'targed'.
  
  
- ## WHATWEB  
+## WHATWEB  
  
   Es una herramienta  que se utiliza  para tratar de
   averiguar
