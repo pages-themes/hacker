@@ -85,20 +85,20 @@ En primer lugar, vamos a comprobar si tenemos conexión
 ![Captura de pantalla -2022-04-12 20-29-57](https://user-images.githubusercontent.com/103068924/163029501-1f3ee38d-5925-4505-a8f3-f44d4ec1c65c.png)
 
  Por lo que podemos suponer que tiene que existir alguna página de registro por la que poder acceder.
- Visto esto vamos a echar un vistazo al codigo fuente de la página para ver si encontramos algúna dirección
+ Visto esto vamos a echar un vistazo al código fuente de la página para ver si encontramos alguna dirección
  de registro.
  
- Para ver el código fuente de una página, click derecho sobre la página y luego 'Ver código fuente de la página'.
+ Para ver el código fuente de una página, clic derecho sobre la página y luego 'Ver código fuente de la página'.
  
  ![Captura de pantalla -2022-04-12 20-35-40](https://user-images.githubusercontent.com/103068924/163030380-53f4419e-6e68-472d-bc81-be3d9d2f3477.png)
 
- En la parte final del ćodigo podemos ver como muestra un directorio login. Vamos a tratar de acceder a el mediante
+ En la parte final del ćodigo podemos ver como muestra un directorio login. Vamos a tratar de acceder a él mediante
  el buscador para ver que nos reporta.
  
  ![Captura de pantalla -2022-04-12 20-38-21](https://user-images.githubusercontent.com/103068924/163030801-b7d8df3d-38b9-4d0f-83ee-55ed33284cef.png)
 
  Ahora tenemos un sitio desde el que acceder. Ya que desconocemos el usuario y la contraseña (yo he probado los
- más comunes y no he tenido suerte) vamos ha acceder como invitados. Para ello le daremos a la opción Login as
+ más comunes y no he tenido suerte) vamos a acceder como invitados. Para ello le daremos a la opción Login as
  Gues y tendremos acceso como invitados.
  
  ![Captura de pantalla -2022-04-12 20-43-14](https://user-images.githubusercontent.com/103068924/163031583-c15f6fe6-be42-4aa0-89e0-44a906660539.png)
@@ -110,10 +110,10 @@ aportan:
 
 ![Captura de pantalla -2022-04-12 20-46-08](https://user-images.githubusercontent.com/103068924/163032093-35422154-b58a-4d74-8fd1-9eb8540f9f82.png)
 
-Dentro de account tenemos información sobre el usuario guest, un Access Id, su nombre y un correo eléctronico.
-Luego he revisado el código fuente pero en este caso no me ha reportado mucha información. 
+Dentro de account tenemos información sobre el usuario guest, un Access Id, su nombre y un correo electrónico.
+Luego he revisado el código fuente, pero en este caso no me ha reportado mucha información. 
 
-Tambien es interesante ver la url de la página, ya que nos asigna una id=2.
+También es interesante ver la url de la página, ya que nos asigna una id=2.
 
 ![Captura de pantalla -2022-04-12 20-48-35](https://user-images.githubusercontent.com/103068924/163032502-688b1ca0-e809-4327-b327-9fe966096fca.png)
 
@@ -121,60 +121,60 @@ Tras inspeccionar las cookies es donde encontramos algo interesante.
 
 ![Captura de pantalla -2022-04-12 20-54-39](https://user-images.githubusercontent.com/103068924/163033432-4fbc584c-ec0d-42c1-bc50-709e6d8bc50d.png)
 
-Podemos ver como está página utiliza cookies de inicio de sesión, en caso de tener otro role y otro user, podriamos
+Podemos ver como está página utiliza cookies de inicio de sesión, en caso de tener otro role y otro user, podríamos
 intentar cambiarlos y ganar acceso a otra cuenta.
 
-Bien ahora pasaremos a la siguiente pestaña a ver que más nos puede reportar.
+Bien, ahora pasaremos a la siguiente pestaña a ver que más nos puede reportar.
 
 # Branding
 
 ![Captura de pantalla -2022-04-12 21-39-41](https://user-images.githubusercontent.com/103068924/163040582-9d571a01-4f86-49ce-9c5f-75d654c9cf40.png)
 
-Aquí podemos ver como se nos asigna una Brand Id = 2 y tambien podemos ver como las cookies de inicio de sesión
+Aquí podemos ver como se nos asigna una Brand Id = 2 y también podemos ver como las cookies de inicio de sesión
 se mantienen. 
 
 # Clients
 
 ![Captura de pantalla -2022-04-12 21-43-09](https://user-images.githubusercontent.com/103068924/163041152-679d8735-82e5-497b-a965-ab3de84a2654.png)
 
- Vemos como se nos continiua asignando una ID = 2 y nos muestra un nombre 'client'.
+ Vemos como se nos continua asignando una ID = 2 y nos muestra un nombre 'client'.
  
 # Uploads
 
 ![Captura de pantalla -2022-04-12 21-45-19](https://user-images.githubusercontent.com/103068924/163041448-d44b6a48-5073-45ff-bccb-7d51e39f892f.png)
 
-Esta pestaña es muy interesante ya que parece que sirve para subir archivos a la página. El único problema
-es que no tenemos  permisos de 'super admin'.
+Esta pestaña es muy interesante, ya que parece que sirve para subir archivos a la página. El único problema
+es que no tenemos permisos de 'súper admin'.
 
-En caso de tenerlos podriamos subir algún archivo para tratar de vulnerar la máquina o de escalar privilegios.
+En caso de tenerlos podríamos subir algún archivo para tratar de vulnerar la máquina o de escalar privilegios.
 
 # Recopilación de toda la información:
 
-Tras investigar por todas las pestañas, lo más interesante que he econtrado es que todos los id de el usuario
+Tras investigar por todas las pestañas, lo más interesante que he encontrado es que todos los id del usuario
 actual son iguales a 2. 
 
-Tambien me llama la atención como en la url de la pestaña nos especifica la id=2
+También me llama la atención como en la url de la pestaña nos especifica la id=2
  
  ![Captura de pantalla -2022-04-12 21-54-39](https://user-images.githubusercontent.com/103068924/163042869-a1df4c54-f66a-4f39-b2dd-4bfc1e4bde75.png)
 
-Y otra cosa importante, son las cookies de inicio de sesión que emos encontrado.
+Y otra cosa importante, son las cookies de inicio de sesión que hemos encontrado.
 
-Ahora, tras conocer toda esta información, lo que podemos hacer es porbar otras 'id' en la url de la pestaña
-'Account'. Simplemente introducimos la misma url pero probamos con otros valores (0,1,3,4,...).
+Ahora, tras conocer toda esta información, lo que podemos hacer es probar otras 'id' en la url de la pestaña
+'Account'. Simplemente, introducimos la misma url, pero probamos con otros valores (0,1,3,4,...).
 
 ![Captura de pantalla -2022-04-12 22-00-19](https://user-images.githubusercontent.com/103068924/163043808-0172257b-1519-45d8-8ed5-3752595187da.png)
 
-El primer intento a sido con 0 y vemos como no a tenido resultado.
+El primer intento ha sido con 0 y vemos como no ha tenido resultado.
 
 ![Captura de pantalla -2022-04-12 22-01-14](https://user-images.githubusercontent.com/103068924/163044402-0c82b941-dab9-4211-803a-4cfe55d354a9.png)
 
-Al segundo intento mediante el número id=1 vemos como nos reporta información de un usuario llamado 'admin'. Pero
-nosotros buscamos al usuario 'super admin', ya que es el que tiene pleno acceso a la carga de archviso de la 
+Al segundo intento, mediante el número id=1 vemos como nos reporta información de un usuario llamado 'admin'. Pero
+nosotros buscamos al usuario 'super admin', ya que es el que tiene pleno acceso a la carga de archivos de la 
 pestaña Upload, así que seguimos probando.
 
 ![Captura de pantalla -2022-04-12 22-02-47](https://user-images.githubusercontent.com/103068924/163044418-a4cbd28f-f9a7-4069-a2c3-6ccb0a2e32c2.png)
 
-Vemos como tras muchos intentos vacios, nos muestra algunos usuarios.
+Vemos como tras muchos intentos vacíos, nos muestra algunos usuarios.
 
  ![Captura de pantalla -2022-04-12 22-03-43](https://user-images.githubusercontent.com/103068924/163044454-f20e27ad-192f-455b-898a-bda8336c4bc3.png)
 
@@ -182,10 +182,10 @@ Finalmente, tras 30 intentos, lo conseguimos. El id=30 pertenece al usuario 'sup
 
 ![Captura de pantalla -2022-04-12 22-04-28](https://user-images.githubusercontent.com/103068924/163044499-978e1f8c-f344-4231-95d0-c7b5b0727c06.png)
 
-# Cookies de inicio de sesion:
+# Cookies de inicio de sesión:
 
 Ya conoces el Acces ID (86575) y el Name (super admin), ahora tenemos que iniciar sesión como ese usuario.
-Tras probar ha iniciar sesión desda la págin anterior de registro a la que accedimos como 'Gues', veo que
+Tras probar a iniciar sesión desde la página anterior de registro a la que accedimos como 'Gues', veo que
 no me permite entrar, ya que aun desconocemos la contraseña.
 
 Entonces utilizaremos las cookies de inicio de sesión para intentar acceder como super admin. Para ello, en la 
@@ -194,39 +194,39 @@ hasta la pestaña 'Almacenamiento'.
 
 ![Captura de pantalla -2022-04-12 22-24-01](https://user-images.githubusercontent.com/103068924/163047604-4abab7f4-15bd-4755-8c02-8adcef856ced.png)
 
-Dentro de 'Almacenamiento' veremos una petaña llamada 'Cookies' y el dominio de la página. Bueno pues el truco 
+Dentro de 'Almacenamiento' veremos una pestaña llamada 'Cookies' y el dominio de la página. Bueno, pues el truco 
 consiste en cambiar los parametros 'role' y 'user' actuales por los del super admin.
 
 ![Captura de pantalla -2022-04-12 22-25-21](https://user-images.githubusercontent.com/103068924/163047637-11e2b9cb-3cf8-46f4-9221-93a5c95f2696.png)
 
-Una vez introducimos los nuevos datos, recaramos la página y ya tendríamos acceso como super admin. 
+Una vez introducimos los nuevos datos, recargamos la página y ya tendríamos acceso como super admin. 
 Para comprobarlo, nos vamos a la pestaña Uploads y vemos como ya nos permite subir archivos.
 
 ![Captura de pantalla -2022-04-12 22-26-27](https://user-images.githubusercontent.com/103068924/163048085-17970a2a-aef6-4511-893c-a0f7cc9a4ade.png)
 
 # NetCat y Reverse-Shell
 
-Bueno ahora que ya podemos subir archivos al sistema, vamos a probar a crear una reverse-shell.php ya que la 
+Bueno, ahora que ya podemos subir archivos al sistema, vamos a probar a crear una reverse-shell.php, ya que la 
 url utiliza archivos '.php'.
 
 ![Captura de pantalla -2022-04-13 12-05-12](https://user-images.githubusercontent.com/103068924/163155180-2eef861b-2b0c-4134-9a93-7ce0c84388fb.png)
 
 ########################### php-reverse-shell.php ################################
 
-En caso de utilizar Kali Linux o Parrot, lo más seguro es que ya tengais una reverse-shell en vuestros repositorios.
-En mi caso que utilizo parrot, si realizamos una busqueda del archivo 'php-reverse-shell.php' podemos ver como se
+En caso de utilizar Kali Linux o Parrot, lo más seguro es que ya tengáis una reverse-shell en vuestros repositorios.
+En mi caso que utilizo parrot, si realizamos una búsqueda del archivo 'php-reverse-shell.php' podemos ver como se
 aloja en los siguientes directorios:
 
 ![Captura de pantalla -2022-04-13 12-05-12](https://user-images.githubusercontent.com/103068924/163155773-14809f0c-7c41-40a0-93fc-7274badd19df.png)
 
 En mi caso me aparece en dos repositorios y luego yo he realizado una copia en la carpeta Descargas para poder
-configurar con nuestros datos nuestra reverse-shell. Es importante copiar el archivo en la carpeta Descargas
-ya que será dificil buscar nuestro archvivo desde la página de Uploads a la hora de subirlo.
+configurar con nuestros datos nuestra reverse-shell. Es importante copiar el archivo en la carpeta 'Descargas',
+ya que será difícil buscar nuestro archivo desde la página de Uploads a la hora de subirlo.
 
-En caso de no tener el archivo php-reverse-shelll.php en vuestro sitema, lo podeis encontrar en mi repositorio
-de github mediante el siguiente enlace: https://github.com/F1r0x/php-reverse-shell.php/blob/main/php-reverse-shell.php
+En caso de no tener el archivo php-reverse-shelll.php en vuestro sistema, lo podéis encontrar en mi repositorio
+de GitHub mediante el siguiente enlace: https://github.com/F1r0x/php-reverse-shell.php/blob/main/php-reverse-shell.php
 
-Para tenerlo, simplemente lo copiais, abris una terminal y crearemos el archivo mediante nano:
+Para tenerlo, simplemente lo copiáis, abrís una terminal y crearemos el archivo mediante nano:
 
               nano php-reverse-shell.php
               
@@ -234,8 +234,8 @@ Pegamos todo el script, guardamos (Cntrl + o) y salimos (Cntrl + x).
 
 # Configurar nuestra reverse-shell:
 
-Ya tendriamos la reverse-shell, ahora solo faltaría configurarla. Para ello, desde el directorio en el que este
-el archivo php-reverse-shell.php (recomiendo que sea Descargas), meidante el comando nano cambiaremos la Ip por
+Ya tendríamos la reverse-shell, ahora solo faltaría configurarla. Para ello, desde el directorio en el que esté
+el archivo php-reverse-shell.php (recomiendo que sea Descargas), mediante el comando nano cambiaremos la Ip por
 la nuestra y estableceremos un puerto, desde el cual, posteriormente con NetCat nos pondremos en escucha. 
 
 La configuración es muy simple, lo único que tenemos que hacer es cambiar la Ip 
@@ -260,11 +260,11 @@ cuál es nuestra Ip, podemos verlo mediante el comando 'ipconfig':
 
 Guardamos (Cntrl + o) y salimos (Cntrl + x).
 
-Ya tendriamos nuestro archivo php-reverse-shell.php preparado. Ahora lo siguiente seria tratar de subirlo a la
+Ya tendríamos nuestro archivo php-reverse-shell.php preparado. Ahora lo siguiente seria tratar de subirlo a la
 página desde la pestaña Uploads.
 
 (NOTA: La Ip de la máquina que yo os muestro a lo largo del write-up va cambiando debido a que realizarlo
-a llevado horas y he tenido que reiniciar varias veces la máquina)
+ha llevado horas y he tenido que reiniciar varias veces la máquina)
 
 ![Captura de pantalla -2022-04-13 13-05-15](https://user-images.githubusercontent.com/103068924/163167449-e3ecf585-c2b0-4ada-bf15-65948855ebc2.png)
 
@@ -283,9 +283,9 @@ Perfecto, ya tendríamos nuestro archivo subido.
 
 ![Captura de pantalla -2022-04-13 13-06-42](https://user-images.githubusercontent.com/103068924/163167608-faa10f70-d676-44d5-b261-2b197eae910e.png)
 
- Ahora faltaría preparar nuestro NetCat para que se pongo en modo escucha por el puerto 8080.
- Antes de probar el 8080  probe otros con el cual no conseguí establecer conexión para que
- lo tengaís en cuenta.
+ Ahora faltaría preparar nuestro NetCat para que se ponga en modo escucha por el puerto 8080.
+ Antes de probar el 8080  probé otros con el cual no conseguí establecer conexión para que
+ lo tengáis en cuenta.
  
  Para ponernos en escucha, abrimos una terminal y ejecutamos el siguiente comando:
  
@@ -303,88 +303,88 @@ Perfecto, ya tendríamos nuestro archivo subido.
 ![Captura de pantalla -2022-04-13 13-25-27](https://user-images.githubusercontent.com/103068924/163170156-2409012e-2a0e-4657-8d97-247bd3862179.png)
 
 El siguiente paso sería ejecutar el archivo php-reverse-shell.php que hemos almacenado en la 
-máquina víctima. El unico problema es que no sabemos donde se ha almacenado nuestro archivo.
-Para encontrar nuesto archvi utilizaremos la herramienta 'gobuester'.
+máquina víctima. El único problema es que no sabemos donde se ha almacenado nuestro archivo.
+Para encontrar nuestro archivo utilizaremos la herramienta 'gobuester'.
 
 # Gobuster
 
-Gobuster es una herramienta utilizada para la fuerza bruta de busqueda de URL, incluidos directorios y archivos,
+Gobuster es una herramienta utilizada para la fuerza bruta de búsqueda de URL, incluidos directorios y archivos,
 así como subdominios DNS.
 
 Para instalarlo simplemente ejecutamos:
 
              sudo apt install gobuster
              
-  Y tambien tendremos que descargar los repositorios de direcciones, en esta ocasion utilizaremos un
+  Y también tendremos que descargar los repositorios de direcciones, en esta ocasión utilizaremos un
   repositorio llamado 'wordlists' y en concreto la lista de directorios 'directory-list-2.3-small.txt.
   
-  Podeis descargaros estas bibliotecas de directorios desde la misma página de github, existen un monton
+  Podéis descargaros estas bibliotecas de directorios desde la misma página de github, existen un montón
   de variantes en función del sistema a explotar. De todas formas revisar primero si ya existe en
-  vuestro sistema ya que algunos SO traen repositoios instalados.
+  vuestro sistema, ya que algunos SO traen repositorios instalados.
   
   Para descargar o copiar:
   
   https://gist.github.com/sl4v/c087e36164e74233514b
   
-  En ese enlace encontrareis la biblioteca que vamos a utilizar, yo recomoento instalarlo en el siguiente 
-  directorio, si el directorio no existe crarlo.:
+  En ese enlace encontraréis la biblioteca que vamos a utilizar, yo recomiendo instalarlo en el siguiente 
+  directorio, si el directorio no existe crearlo.:
   
                  /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt   
   
   
-  Bien, ya tenemos nuesto Gobuster y nuestra biblioteca de directorios, ahora toca lanzar la herramienta a ver
+  Bien, ya tenemos nuestro Gobuster y nuestra biblioteca de directorios, ahora toca lanzar la herramienta a ver
   que nos reporta:
   
          gobuster dir --url http://[Ip Víctima]/ --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -x php
   
-  Ahora gobuster empezará a realizar pruebas y a mostrarnos resultados a medida q avanza. No tenemos que esperar a
-  que finalice, simplemente fijaros en cuales son los directorios que reporta y ir probando a ver cuales son
+  Ahora gobuster empezará a realizar pruebas y a mostrarnos resultados a medida que avanza. No tenemos que esperar a
+  que finalice, simplemente fijaros en cuales son los directorios que reporta y ir probando a ver cuáles son
   funcionales.
   
   ![Captura de pantalla -2022-04-13 13-56-08](https://user-images.githubusercontent.com/103068924/163174943-ef87aba2-a3da-4ede-aeae-447ea841f8ad.png)
 
-  Para para el proceso: Cntrl + c
+  Para el proceso: Cntrl + c
   
-  En esta caso hemos tenido suerte ya que al poco de buscar a encontrado una ruta que nos dirige al directorio
+  En este caso hemos tenido suerte, ya que al poco de buscar ha encontrado una ruta que nos dirige al directorio
   Uploads.
   
             http://[Ip Víctima]/uploads/
             
-  Una vez echo esto nos dirigiremos al navegador y tratremos de introducir la siguiente ruta:
+  Una vez hecho esto nos dirigiremos al navegador y trataremos de introducir la siguiente ruta:
    
             http://[Ip Víctima]/uploads/php-reverse-shell.php
             
    ![Captura de pantalla -2022-04-13 13-46-48](https://user-images.githubusercontent.com/103068924/163173691-3a6ffdf3-68f3-4118-af32-35aaba15b3a4.png)
 
-  Una vez echo esto volvemos a la terminal donde se encontraba el 'netcat' y deberia de haberse abierto 
+  Una vez realizado esto, volvemos a la terminal donde se encontraba el 'netcat' y debería de haberse abierto 
   nuestra shell.  
   
 ![Captura de pantalla -2022-04-13 13-48-41](https://user-images.githubusercontent.com/103068924/163173725-66250263-5c8b-4878-8549-897c4cfb935b.png)
 
  Efectivamente, ya tenemos nuestra reverse-shell preparada y activa.
  
- # Busqueda de la primera Flag:
+ # Búsqueda de la primera Flag:
  
  Una vez tengamos la shell activa, podemos ver los directorios mediante ls:
  
  ![Captura de pantalla -2022-04-13 14-59-23](https://user-images.githubusercontent.com/103068924/163187298-bce39584-72ea-45bd-83f0-e9dd8cf827cd.png)
  
  Vamos a ver que Usuarios tenemos registrados en el sistema, para ello nos dirigimos al directorio /home y vemos
- q existe el usuario 'robert'.
+ que existe el usuario 'robert'.
  
  ![Captura de pantalla -2022-04-13 15-00-24](https://user-images.githubusercontent.com/103068924/163187555-39762713-a2b8-494b-8119-3d63bf5243f1.png)
 
- Y bingo!! dentro del directorio 'robert' podemos ver el archivo 'user.txt' que contiene la primera Flag.
+ Y bingo!! Dentro del directorio 'robert' podemos ver el archivo 'user.txt' que contiene la primera Flag.
  
  ![Captura de pantalla -2022-04-13 15-00-44](https://user-images.githubusercontent.com/103068924/163187928-3efd9b72-3992-4036-923d-d6ae79a7686a.png)
 
- Mediante el comando cat podemos ver en la terminal el contenido del archivo:
+ Mediante el comando 'cat' podemos ver en la terminal el contenido del archivo:
  
                    cat user.txt
 
  ![Captura de pantalla -2022-04-13 15-02-39](https://user-images.githubusercontent.com/103068924/163187942-4cde5ee7-b0eb-418c-b192-e719391765f7.png)
 
-Ahora para poder trabajar de manera más comoda y tratar de escalar privilegios, primero, abriremos una shell
+Ahora, para poder trabajar de manera más cómoda y tratar de escalarar privilegios, primero, abriremos una shell
 más funcional. Para ello volvemos al directorio principal mediante cd y ejecutamos el siguiente comando:
 
 
@@ -395,7 +395,7 @@ más funcional. Para ello volvemos al directorio principal mediante cd y ejecuta
 ![Captura de pantalla -2022-04-21 08-17-46](https://user-images.githubusercontent.com/103068924/164387012-eed5d362-cf52-4c9b-bbe8-dea4a252ab4a.png)
 
 Bien, ahora ya tenemos una shell más segura y funcional. Ya hemos visto que con el usuario actual no podemos
-hacer mucho más ya que tenemos el acceso restringido al sistema. 
+hacer mucho más, ya que tenemos el acceso restringido al sistema. 
 
 Ya que el sitio web utiliza PHP y SQL, podemos tratar de comprobar el directorio web en busca de posibles 
 divulgaciones o configuraciones incorrectas.
@@ -405,14 +405,14 @@ ver uno con el nombre 'login' (/var/www/html/cdn-cgi/login) que contiene distint
 
 ![Captura de pantalla -2022-04-21 08-26-47](https://user-images.githubusercontent.com/103068924/164388471-47ec0d82-21a7-4605-add7-ad0acd87390e.png)
 
-Aparecen tres archivos '.php' y uno '.js', el siguiente paso seria buscar información en el codigo fuente de cada
+Aparecen tres archivos '.php' y uno '.js', el siguiente paso sería buscar información en el codigo fuente de cada
 archivo. Para ello, buscaremos cadenas interesantes con el uso de la herramienta 'grep'.
 
 Grep es una herramienta que busca patrones en cada archivo e imprime las líneas que coinciden con los patrones.
-Junto a esta herramienta podemos utilizar el comnado 'cat' para leer todos los arhcivos filtrados por 'grep'.
+Junto a esta herramienta podemos utilizar el comanado 'cat' para leer todos los archivos filtrados por 'grep'.
 
 Con grep utilizaremos el patrón 'passw' para tratar de roportar todas los resultados con ese inicio de palabra (como
-passwd o password por ejemplo). Tambien utilizaremos -i para ignorar las palabras sensibles a mayúsculas y minúsculas
+passwd o password por ejemplo). También usaremos -i para ignorar las palabras sensibles a mayúsculas y minúsculas
 como por ejemplo las contraseñas en este caso.
 
                        cat * | grep -i passw*
@@ -430,14 +430,14 @@ como por ejemplo las contraseñas en este caso.
  ![Captura de pantalla -2022-04-21 08-51-23](https://user-images.githubusercontent.com/103068924/164391835-0f93382c-112b-4f0d-ba0b-c2efab165c22.png)
 
 Podemos ver como tenemos un usuario llamado 'robert'. Vamos a tratar de entrar como este usuario mediante el 
-comadno 'su' y con la contraseña previamente encontrada.
+comando 'su' y con la contraseña previamente encontrada.
 
                         su robert
                         
 ![Captura de pantalla -2022-04-21 08-56-29](https://user-images.githubusercontent.com/103068924/164392632-a0950c9a-d518-4ba7-a9a0-433173395c23.png)
 
 
-Podemos ver que la contraseña no corresponde con este usuario. Como no nos sirve está contraseña vamos a seguir
+Podemos ver que la contraseña no corresponde con este usuario. Como no nos sirve está contraseña, vamos a seguir
 revisando los archivos ".php" y ".js" de manera manual en busca de algo más.
 
 Tras revisar los cuatro archivos, vemos que en el archivo 'db.php' encontramos la siguiente información:
@@ -446,19 +446,19 @@ Tras revisar los cuatro archivos, vemos que en el archivo 'db.php' encontramos l
                        
 ![Captura de pantalla -2022-04-21 09-02-58](https://user-images.githubusercontent.com/103068924/164393733-c692a948-0f9d-45ce-ac05-e7afab97ff00.png)
 
-Como podeis ver aparecen cuatro palabras que podemos probar como contraseñas, tras probarlas vemos como la 
+Como podéis ver aparecen cuatro palabras que podemos probar como contraseñas, tras probarlas vemos como la 
 contraseña del usuario 'robert' es "M3g4C0rpUs3r!"
 
                        su robert
                                      
 ![Captura de pantalla -2022-04-21 09-08-58](https://user-images.githubusercontent.com/103068924/164394920-e350b001-4047-4f76-9c31-6097ef72ea92.png)
 
-Finalmente estamos como el usuario 'robert', podemos comprobarlo utilizando el comando 'whoami':
+Finalmente, estamos como el usuario 'robert', podemos comprobarlo utilizando el comando 'whoami':
 
 ![Captura de pantalla -2022-04-21 09-10-00](https://user-images.githubusercontent.com/103068924/164396131-26ff5453-22ee-48a5-9629-18f5b73e9be9.png)
 
-Ahora podemos ir al directorio pricipal /home/robert y veremos como ahi está nuestro archivo user.txt con 
-nuestra primera flag que ya habiamos visto anteriormente sin necesidad de ningún privilegio.
+Ahora podemos ir al directorio principal /home/robert y veremos como ahí está nuestro archivo user.txt con 
+nuestra primera flag que ya habíamos visto anteriormente sin necesidad de ningún privilegio.
 
                           cd /home/robert
                           
@@ -470,19 +470,19 @@ Pero nosotros lo que buscamos es la flag del super usuario y para ello debemos d
 
 # Escalada de Privilegios.
 
-En primer luegar trataremos de iniciar sesion como super usuario mediante 'sudo':
+En primer lugar, trataremos de iniciar sesión como super usuario mediante 'sudo':
 
             sudo su robert
             
 ![Captura de pantalla -2022-04-21 09-27-12](https://user-images.githubusercontent.com/103068924/164400159-7bc36117-61a0-4dc8-87c4-9e93ab5bb34c.png)
 
-Tras probar las contraseñas previamente rocopiladas vemos como ningúna parece funcionar. Vamos a seguir buscando 
+Tras probar las contraseñas previamente recopiladas vemos como ninguna parece funcionar. Vamos a seguir buscando 
 información, está vez, vamos a revisar los grupos en los que forma parte el usuario 'robert', para ello
 utilizaremos el comando 'id':
 
 ![Captura de pantalla -2022-04-21 09-33-56](https://user-images.githubusercontent.com/103068924/164402956-9fb36b29-d5cb-4e17-8efb-742d75145cd8.png)
 
-Vemos como el usurio robert es parte del grupo 'bugtracker'. Ahora, intentemos ver si hay algún 
+Vemos como el usuario robert es parte del grupo 'bugtracker'. Ahora, intentemos ver si hay algún 
 binario dentro de ese grupo:
 
                      find / -group bugtracker 2>/dev/null
@@ -495,13 +495,13 @@ Nos ha reportado un archivo llamado 'bugtracker'. Ahora comprobamos qué privile
 
 ![Captura de pantalla -2022-04-21 09-47-02](https://user-images.githubusercontent.com/103068924/164405567-6055d680-b99b-4635-a3ad-a2c54ad77b82.png)
 
-Podemos ver que existe un conjunto 'SUID' en ese binario, este es un buen camino de eplotación para tratar de
+Podemos ver que existe un conjunto 'SUID' en ese binario, este es un buen camino de explotación para tratar de
 escalar privilegios.
 
-Un archivo SUID simepre se ejecuta como el usuario propietario del archivo, independientemente de que usuaio 
+Un archivo SUID siempre se ejecuta como el usuario propietario del archivo, independientemente de que usuario 
 pase el comando.
 
-En nuestro caso, el 'butracker' binario es propiedad de 'root' y por tanto podemos ejecutalo como root ya
+En nuestro caso, el 'butracker' binario es propiedad de 'root' y por tanto, podemos ejecutalo como root ya
 que tiene configurado SUID.
 
 Para ello ejecutamos 'bugtacker':
@@ -510,7 +510,7 @@ Para ello ejecutamos 'bugtacker':
             
 ![Captura de pantalla -2022-04-21 09-57-05](https://user-images.githubusercontent.com/103068924/164786353-6e21c5ef-1b8e-465b-808e-371ac1f3b293.png)
 
-En mi caso probe con 'home' para ver que me reportava:
+En mi caso probé con 'home' para ver que me reportaba:
 
 ![Captura de pantalla -2022-04-21 10-01-29](https://user-images.githubusercontent.com/103068924/164786858-de17dddb-948d-4cd9-82b6-0fb270d85340.png)
 
@@ -540,14 +540,14 @@ Una vez preparado el archivo 'cat', debemos agregar el directorio /tmp a la vari
 
 PATH es una variable de entorno en sistemas operativos similares a Unix, DOS, OS/2 y Microsoft Windows, que especifica un conjunto de directorios donde se encuentran los programas ejecutables.
 
-Por tanto debemos introducir el directorio 'tmp' en el archivo PATH
-para poder ejecutarlo correctamente. Para ello utillizamos el siguiente comando:
+Por tanto, debemos introducir el directorio 'tmp' en el archivo PATH
+para poder ejecutarlo correctamente. Para ello utilizamos el siguiente comando:
 
             export PATH=/tmp:$PATH
 
 ![Captura de pantalla -2022-04-21 10-48-24](https://user-images.githubusercontent.com/103068924/165100226-c25d5a72-39a6-4083-9aa4-1d58c4a85179.png)
  
-Para confirmar que todo a salido correctamente y verificar que el directorio 'tmp' está en PATH:
+Para confirmar que todo ha salido correctamente y verificar que el directorio 'tmp' está en PATH:
 
            echo $PATH
            
@@ -558,13 +558,13 @@ Ahora, volvemos a ejecutar 'bugtracker' desde el directorio '/tmp':
 
 ![Captura de pantalla -2022-04-25 15-46-04](https://user-images.githubusercontent.com/103068924/165101887-a7662ee4-3c1a-4a84-8302-cdd067ca5e3b.png)
 
-Genial, ya estamos registrados como 'root'. Finalmente, nos dirigimos al directorio '/root' donde encontramos el archivos 'root.txt.'.
+Genial, ya estamos registrados como 'root'. Finalmente, nos dirigimos al directorio '/root' donde encontramos el archivo 'root.txt.'.
 
 Para poder leer el archvio nos registramos como super usuarios:
 
           sudo su
           
-Y abrimos el archivo con 'cat' donde econtramos la última flag:
+Y abrimos el archivo con 'cat' donde encontramos la última Flag:
 
           cat root.txt
           
