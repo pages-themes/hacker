@@ -1,3 +1,5 @@
+![ImageToStl com_1_znvi3p8txmgcsmmnxqa0ig](https://user-images.githubusercontent.com/103068924/165158987-4aa056d7-3c42-431c-ae7a-7a5f7f9e771e.png)
+
 # Fase de Reconocimiento - HTB
              
  Aquí trato de mostrar unas pautas muy básicas de 
@@ -10,6 +12,9 @@
  posible.
 
 ## PING 
+
+![Captura de pantalla -2022-04-11 18-56-44](https://user-images.githubusercontent.com/103068924/165159179-2e3ba6e6-84b8-42d8-a2c0-817beac98552.png)
+
 
  Para verificar la conexión y tener una primera toma de
  contacto utilizaremos el comando 'ping'.
