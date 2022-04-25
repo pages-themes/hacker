@@ -529,4 +529,43 @@ Y crearemos un archivo 'cat' que contenga la siguiente ruta '/bin/sh':
             
  ![Captura de pantalla -2022-04-21 10-49-22](https://user-images.githubusercontent.com/103068924/164787634-3a48e291-f6e5-4415-8bbb-54f197c02657.png)
       
+Ahora le tenemos que dar privilegios de ejecución:
 
+            chmod +x cat
+            
+![Captura de pantalla -2022-04-21 10-49-52](https://user-images.githubusercontent.com/103068924/165099961-3373a75c-d7b5-4f97-b733-9df7805772fd.png)
+
+            
+Una vez preparado el archivo 'cat', debemos agregar el directorio /tmp a la variable ambiental PATH. 
+
+PATH es una variable de entorno en sistemas operativos similares a Unix, DOS, OS/2 y Microsoft Windows, que especifica un conjunto de directorios donde se encuentran los programas ejecutables.
+
+Por tanto debemos introducir el directorio 'tmp' en el archivo PATH
+para poder ejecutarlo correctamente. Para ello utillizamos el siguiente comando:
+
+            export PATH=/tmp:$PATH
+
+![Captura de pantalla -2022-04-21 10-48-24](https://user-images.githubusercontent.com/103068924/165100226-c25d5a72-39a6-4083-9aa4-1d58c4a85179.png)
+ 
+Para confirmar que todo a salido correctamente y verificar que el directorio 'tmp' está en PATH:
+
+           echo $PATH
+           
+
+![Captura de pantalla -2022-04-25 15-40-24](https://user-images.githubusercontent.com/103068924/165100883-46db8497-56b3-4782-9343-7d6947b4a26d.png)
+
+Ahora, volvemos a ejecutar 'bugtracker' desde el directorio '/tmp':
+
+![Captura de pantalla -2022-04-25 15-46-04](https://user-images.githubusercontent.com/103068924/165101887-a7662ee4-3c1a-4a84-8302-cdd067ca5e3b.png)
+
+Genial, ya estamos registrados como 'root'. Finalmente, nos dirigimos al directorio '/root' donde encontramos el archivos 'root.txt.'.
+
+Para poder leer el archvio nos registramos como super usuarios:
+
+          sudo su
+          
+Y abrimos el archivo con 'cat' donde econtramos la última flag:
+
+          cat root.txt
+          
+          
