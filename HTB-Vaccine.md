@@ -263,6 +263,40 @@ Según la herramienta HashId el algoritmo de nuestro hash es un MD2, MD5 o MD4. 
 reporta los más probables, en ocasiones el primero en reportar no es el correcto. Para contrastar esta información
 voy a mostraros otra herramienta que sirve para lo mismo, pero es un poco más precisa.
 
+### Hash-Identifier
+
+Está herramienta hace básicamente lo mismo que HashId, nos reporta el algoritmo del hash deseado, con la diferencia
+de que Hash-Identifier es algo más precisa a la hora de reportar los resusltados.
+
+Para instalar:
+
+    sudo apt install hash-identifier
+    
+ ![Captura de pantalla -2022-04-26 19-59-02](https://user-images.githubusercontent.com/103068924/165363111-7e273a59-44e3-4704-a4e8-67df02f36a22.png)
+
+Para ejecutarlo:
+
+   hash-identifier
+   
+![Captura de pantalla -2022-04-26 20-01-03](https://user-images.githubusercontent.com/103068924/165363442-be95e169-8cfe-49a1-813c-1176cac2a472.png)
+
+Vemos como se nos despliega una interfaz gráfica donde pegaremos el hash que queremos analizar.
+
+![Captura de pantalla -2022-04-26 20-04-12](https://user-images.githubusercontent.com/103068924/165363897-b100c21f-6d40-4f3f-bf24-4bdb4d763a16.png)
+
+![Captura de pantalla -2022-04-26 20-05-15](https://user-images.githubusercontent.com/103068924/165363916-d09f8190-f21d-44ef-9c96-64180c87f0f0.png)
+
+Una vez analizado el hash, vemos como en la parte superior nos reporta los algoritmos, en este caso MD5.
+
+![Captura de pantalla -2022-04-26 20-04-59](https://user-images.githubusercontent.com/103068924/165364101-b7bf0c4b-99ca-4c02-93e3-fdbef75c8ff8.png)
+
+Perfecto, ya tenemos un hash y conocemos el algoritmo en el que esta basado. El siguiente paso será crackear el hash.
+Para ello, vamos a ver dos formas de crakear un hash, en primer lugar utilizaremos la herramienta HashCat.
+
+## Crackear Hash:
+
+### HashCat:
+
 
 
 
