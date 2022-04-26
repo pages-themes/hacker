@@ -228,7 +228,34 @@ hash de una contraseña.
 
 ![Captura de pantalla -2022-04-26 12-11-16](https://user-images.githubusercontent.com/103068924/165277394-c9f38ef0-efa2-4d65-8906-1b5d6a757b5c.png)
 
+Para trabajar de manera más cómoda, crearemos un archivo llamado credentials.txt y guardaremos el usuario(admin) y
+el hash econtrados.
 
+    nano credentials.txt
+    
+![Captura de pantalla -2022-04-26 12-22-18](https://user-images.githubusercontent.com/103068924/165279384-03afa789-3a37-4376-8538-507d32c9a2c6.png)
+
+Guardamos (Cntrl + o) y salimos (Cntrl + x).
+
+![Captura de pantalla -2022-04-26 12-23-11](https://user-images.githubusercontent.com/103068924/165279549-74cbfada-16e8-4eac-9ef6-f29a9bc6fd44.png)
+
+### Hashid:
+
+Tenemos un hash, pero aún no sabemos en que tipo de algoritmo está basado. Para saberlo, utilizaremos la herramienta 
+Hashid, la cual nos reportará el tipo de algoritmo más provable que se utilizo en su día para crear ese hash a 
+partir de una contraseña.
+
+Para instalar la herramienta:
+
+    sudo apt install hashid
+    
+Para ejecutarla:
+
+    hashid [Hash Núm]
+
+    hashid 2cb42f8734ea607eefed3b70af13bbd3
+
+![Captura de pantalla -2022-04-26 12-33-14](https://user-images.githubusercontent.com/103068924/165281291-c32d3c2a-5ab4-441e-bb04-81190b786114.png)
 
 
 
