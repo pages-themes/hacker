@@ -101,7 +101,7 @@ En primer lugar, vamos a comprobar si tenemos conexión
  más comunes y no he tenido suerte) vamos a acceder como invitados. Para ello le daremos a la opción Login as
  Gues y tendremos acceso como invitados.
  
- ![Captura de pantalla -2022-04-12 20-43-14](https://user-images.githubusercontent.com/103068924/163031583-c15f6fe6-be42-4aa0-89e0-44a906660539.png)
+![Captura de pantalla -2022-04-12 20-43-14](https://user-images.githubusercontent.com/103068924/163031583-c15f6fe6-be42-4aa0-89e0-44a906660539.png)
 
 Podemos ver que tenemos diferentes pestañas, vamos a revisarlas una por una para ver la información que nos 
 aportan:
@@ -155,7 +155,7 @@ actual son iguales a 2.
 
 También me llama la atención como en la url de la pestaña nos especifica la id=2
  
- ![Captura de pantalla -2022-04-12 21-54-39](https://user-images.githubusercontent.com/103068924/163042869-a1df4c54-f66a-4f39-b2dd-4bfc1e4bde75.png)
+![Captura de pantalla -2022-04-12 21-54-39](https://user-images.githubusercontent.com/103068924/163042869-a1df4c54-f66a-4f39-b2dd-4bfc1e4bde75.png)
 
 Y otra cosa importante, son las cookies de inicio de sesión que hemos encontrado.
 
@@ -176,7 +176,7 @@ pestaña Upload, así que seguimos probando.
 
 Vemos como tras muchos intentos vacíos, nos muestra algunos usuarios.
 
- ![Captura de pantalla -2022-04-12 22-03-43](https://user-images.githubusercontent.com/103068924/163044454-f20e27ad-192f-455b-898a-bda8336c4bc3.png)
+![Captura de pantalla -2022-04-12 22-03-43](https://user-images.githubusercontent.com/103068924/163044454-f20e27ad-192f-455b-898a-bda8336c4bc3.png)
 
 Finalmente, tras 30 intentos, lo conseguimos. El id=30 pertenece al usuario 'super admin'.
 
@@ -273,6 +273,7 @@ Para ello simplemente vamos a la página, pulsamos examinar:
 ![Captura de pantalla -2022-04-13 13-05-24](https://user-images.githubusercontent.com/103068924/163167470-2f5b1a66-854f-411a-9dae-f41c159e3d27.png)
 
 Seleccionamos nuestra reverse-shell:
+
 ![Captura de pantalla -2022-04-13 13-05-48](https://user-images.githubusercontent.com/103068924/163167513-4311b8e0-b094-4859-b917-2f6758945497.png)
 
 Y finalmente pulsamos Upload:
@@ -341,7 +342,7 @@ Para instalarlo simplemente ejecutamos:
   que finalice, simplemente fijaros en cuales son los directorios que reporta y ir probando a ver cuáles son
   funcionales.
   
-  ![Captura de pantalla -2022-04-13 13-56-08](https://user-images.githubusercontent.com/103068924/163174943-ef87aba2-a3da-4ede-aeae-447ea841f8ad.png)
+![Captura de pantalla -2022-04-13 13-56-08](https://user-images.githubusercontent.com/103068924/163174943-ef87aba2-a3da-4ede-aeae-447ea841f8ad.png)
 
   Para el proceso: Cntrl + c
   
