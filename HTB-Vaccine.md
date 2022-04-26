@@ -130,6 +130,19 @@ arhcivo 'backup.zip'.
 
 ![Captura de pantalla -2022-04-26 09-44-48](https://user-images.githubusercontent.com/103068924/165248630-8bfff5ae-d750-441f-bedd-064368a699b0.png)
 
+Como podeís ver, tenemos los dos archivos previamente creados con nmap (allPorts y target) y nuestro archivo .zip.
+Vamos a crear un directorio mediante 'mkdir' llamado 'Backup' y vamos a introducir el archivo .zip para luego tratar
+de descomprimirlo.
+
+    mkdir Backup
+    
+    mv backup.zip ./Backup/
+    
+Una vez dentro del nuevo directorio, aplicaremos el comando 'unzip' para tratar de descomprimirlo:
+
+    unzip backup.zip
+    
+    
 
 
 
