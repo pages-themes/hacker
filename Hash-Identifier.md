@@ -2,3 +2,10 @@
 
 # Hash Identifier
 
+Hash Identifier es una herramienta basada en Python que le permite identificar rápidamente los tipos de hash utilizados para cifrar contraseñas.
+Admite más de 220 tipos de hash únicos mediante expresiones regulares.
+
+Es capaz de identificar un solo hash, analizar un archivo o leer varios archivos en un directorio e identificar los hash dentro de ellos. 
+También es capaz de incluir el modo hashcat correspondiente y/o el formato [JohnTheRipper](./john_the_ripper.html) en su salida.
+
+
