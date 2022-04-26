@@ -215,7 +215,7 @@ Y podemos ver como ya tenemos los archivos index.php y style.css en nuestro dire
 
 Tras revisar el archivo index.php, podemos ver como es una copia del código fuente de la página de inicio de sesión
 anterior. 
-Pero si nos fijamos incluye unas líneas adicionales. Para ver el código fuente podemos abrir el archivo
+Pero si nos fijamos, incluye unas líneas adicionales. Para ver el código fuente podemos abrir el archivo
 index.php mediante 'cat' o dirigirnos a la url http://[Ip Víctima]/index.php (la página es visualmente es igual) y
 con clic derecho sobre la página y 'ver código fuente'.
 
@@ -229,7 +229,7 @@ hash de una contraseña.
 ![Captura de pantalla -2022-04-26 12-11-16](https://user-images.githubusercontent.com/103068924/165277394-c9f38ef0-efa2-4d65-8906-1b5d6a757b5c.png)
 
 Para trabajar de manera más cómoda, crearemos un archivo llamado credentials.txt y guardaremos el usuario(admin) y
-el hash econtrados.
+el hash encontrados.
 
     nano credentials.txt
     
@@ -241,8 +241,8 @@ Guardamos (Cntrl + o) y salimos (Cntrl + x).
 
 ### Hashid:
 
-Tenemos un hash, pero aún no sabemos en que tipo de algoritmo está basado. Para saberlo, utilizaremos la herramienta 
-Hashid, la cual nos reportará el tipo de algoritmo más provable que se utilizo en su día para crear ese hash a 
+Tenemos un hash, pero aún no sabemos en qué tipo de algoritmo está basado. Para saberlo, utilizaremos la herramienta 
+Hashid, la cual nos reportará el tipo de algoritmo más probable que se utilizó en su día para crear ese hash a 
 partir de una contraseña.
 
 Para instalar la herramienta:
@@ -256,6 +256,10 @@ Para ejecutarla:
     hashid 2cb42f8734ea607eefed3b70af13bbd3
 
 ![Captura de pantalla -2022-04-26 12-33-14](https://user-images.githubusercontent.com/103068924/165281291-c32d3c2a-5ab4-441e-bb04-81190b786114.png)
+
+Según la herramienta HashId el algoritmo de nuestro hash es un MD2, MD5 o MD4. Recordar que la aplicación nos
+reporta los más probables, en ocasiones el primero en reportar no es el correcto. Para contrastar esta información
+voy a mostraros otra herramienta que sirve para lo mismo, pero es un poco más precisa.
 
 
 
