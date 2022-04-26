@@ -239,6 +239,8 @@ Guardamos (Cntrl + o) y salimos (Cntrl + x).
 
 ![Captura de pantalla -2022-04-26 12-23-11](https://user-images.githubusercontent.com/103068924/165279549-74cbfada-16e8-4eac-9ef6-f29a9bc6fd44.png)
 
+## Identificar algoritmo del Hash
+
 ### HashID: 
 
 Tenemos un hash, pero aún no sabemos en qué tipo de algoritmo está basado. Para saberlo, utilizaremos la herramienta 
@@ -263,7 +265,7 @@ Según la herramienta HashId el algoritmo de nuestro hash es un MD2, MD5 o MD4. 
 reporta los más probables, en ocasiones el primero en reportar no es el correcto. Para contrastar esta información
 voy a mostraros otra herramienta que sirve para lo mismo, pero es un poco más precisa.
 
-### Hash-Identifier
+### Hash-Identifier:
 
 Está herramienta hace básicamente lo mismo que HashId, nos reporta el algoritmo del hash deseado, con la diferencia
 de que Hash-Identifier es algo más precisa a la hora de reportar los resusltados.
@@ -293,7 +295,7 @@ Una vez analizado el hash, vemos como en la parte superior nos reporta los algor
 Perfecto, ya tenemos un hash y conocemos el algoritmo en el que esta basado. El siguiente paso será crackear el hash.
 Para ello, vamos a ver dos formas de crakear un hash, en primer lugar utilizaremos la herramienta HashCat.
 
-## Crackear Hash:
+## Crackear Hash
 
 ### HashCat:
 
