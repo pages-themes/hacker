@@ -9,7 +9,7 @@
 [HTB-Vaccine](./HTB-Vaccine.html)
 
 
-## Herramientas y Scripts 
+# Herramientas y Scripts 
 
 [WichSystem](./WichSystem.html)
 
@@ -23,7 +23,7 @@
 
 [HashCat](./HashCat.html)
 
-## Artículos
+# Artículos
 
 [Fase de Reconocimiento - HTB](./Fase_de_reconocimiento-HTB.html)
 
