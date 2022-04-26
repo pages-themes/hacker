@@ -19,6 +19,8 @@
 
 [John the Ripper](./john_the_ripper.html)
 
+[HashID](./HashId.html)
+
 ## Artículos
 
 [Fase de Reconocimiento - HTB](./Fase_de_reconocimiento-HTB.html)
