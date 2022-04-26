@@ -44,3 +44,5 @@ Crearemos un archivo, por ejemplo 'hash2' y pegamos el número hash que queremos
  Guardamos (Cntrl + o) y salimos (Cntrl + x).
  
  
+ 
+ 
