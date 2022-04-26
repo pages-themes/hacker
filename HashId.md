@@ -1,4 +1,4 @@
-# Hashid:
+# HashID
 
 Hashid es una herramienbta que nos reportará el tipo de algoritmo más probable que se utilizó en su día para crear
 ese hash a partir de una contraseña.
