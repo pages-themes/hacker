@@ -239,11 +239,13 @@ Guardamos (Cntrl + o) y salimos (Cntrl + x).
 
 ![Captura de pantalla -2022-04-26 12-23-11](https://user-images.githubusercontent.com/103068924/165279549-74cbfada-16e8-4eac-9ef6-f29a9bc6fd44.png)
 
-### Hashid:
+### HashID: 
 
 Tenemos un hash, pero aún no sabemos en qué tipo de algoritmo está basado. Para saberlo, utilizaremos la herramienta 
 Hashid, la cual nos reportará el tipo de algoritmo más probable que se utilizó en su día para crear ese hash a 
 partir de una contraseña.
+
+Podéis encontrar más información aquí: [HashID](./HashId.html)
 
 Para instalar la herramienta:
 
@@ -260,6 +262,7 @@ Para ejecutarla:
 Según la herramienta HashId el algoritmo de nuestro hash es un MD2, MD5 o MD4. Recordar que la aplicación nos
 reporta los más probables, en ocasiones el primero en reportar no es el correcto. Para contrastar esta información
 voy a mostraros otra herramienta que sirve para lo mismo, pero es un poco más precisa.
+
 
 
 
