@@ -278,7 +278,7 @@ Para instalar:
 
 Para ejecutarlo:
 
-   hash-identifier
+    hash-identifier
    
 ![Captura de pantalla -2022-04-26 20-01-03](https://user-images.githubusercontent.com/103068924/165363442-be95e169-8cfe-49a1-813c-1176cac2a472.png)
 
