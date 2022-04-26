@@ -51,7 +51,7 @@ Crearemos un archivo, por ejemplo 'hash2' y pegamos el número hash que queremos
  
  ![Captura de pantalla -2022-04-26 23-59-52](https://user-images.githubusercontent.com/103068924/165399824-debe9e55-256e-49a0-ba46-958a9efd2db4.png)
 
- -m : Hash-type. El 0 representa MD5. Esto lo podemos ver con el comando 'hashcat --help'.
+ -m : Hash-type. El 0 representa MD5. Esto lo podemos ver con el comando `hashcat --help`.
  
  ![Captura de pantalla -2022-04-27 00-01-06](https://user-images.githubusercontent.com/103068924/165399873-50a11294-9cd6-4833-8642-16d5193ec93c.png)
  
