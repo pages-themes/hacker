@@ -142,7 +142,15 @@ Una vez dentro del nuevo directorio, aplicaremos el comando 'unzip' para tratar 
 
     unzip backup.zip
     
-    
+
+![Captura de pantalla -2022-04-26 09-52-39](https://user-images.githubusercontent.com/103068924/165250029-0c343ba8-29ae-446e-91e7-87b7b2160eff.png)
+
+Al intentar descomprimir el arhcivo nos pide una contraseña, como desconozco la contraseña, presionado 'Enter'
+podemos ver como nos reporta que dentro del .zip contiene dos archivos (index.php y style.css):
+
+![Captura de pantalla -2022-04-26 09-57-17](https://user-images.githubusercontent.com/103068924/165250925-0f1270d2-0200-426e-9f64-8c475f88bfde.png)
+
+
 
 
 
