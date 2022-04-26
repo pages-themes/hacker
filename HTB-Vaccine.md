@@ -145,7 +145,7 @@ Una vez dentro del nuevo directorio, aplicaremos el comando 'unzip' para tratar 
 
 ![Captura de pantalla -2022-04-26 09-52-39](https://user-images.githubusercontent.com/103068924/165250029-0c343ba8-29ae-446e-91e7-87b7b2160eff.png)
 
-Al intentar descomprimir el arhcivo nos pide una contraseña, como desconozco la contraseña, presionado 'Enter'
+Al intentar descomprimir el archivo nos pide una contraseña, como desconozco la contraseña, presionado 'Enter'
 podemos ver como nos reporta que dentro del .zip contiene dos archivos (index.php y style.css):
 
 ![Captura de pantalla -2022-04-26 09-57-17](https://user-images.githubusercontent.com/103068924/165250925-0f1270d2-0200-426e-9f64-8c475f88bfde.png)
@@ -155,8 +155,50 @@ caso de no tener la herramienta instalada o queráis leer más sobre ella podré
 
 [John the Ripper](./john_the_ripper.html)
 
+### John the Ripper:
 
+Nos posicionamos en el directorio donde se encuentre el archivo backup.zip:
 
+![Captura de pantalla -2022-04-26 11-34-30](https://user-images.githubusercontent.com/103068924/165270196-a2119a6d-fbf6-4446-abcc-8b80574b37ef.png)
+
+En primer lugar, vamos a extraer el hash del archivo 'backup.zip', para ello utilizaremos el comando zip2john y 
+guardaremos los resultados en un archivo nuevo que llamaremos 'hash1':
+
+    zip2john 'backup.zip' > hash1
+    
+![Captura de pantalla -2022-04-26 11-35-49](https://user-images.githubusercontent.com/103068924/165270443-5ec033b6-43b8-4b81-97aa-a851d3fc2118.png)
+
+Como podemos ver, se nos ha generado un nuevo archivo en nuestro directorio actual con el nombre de 'hash1'.
+
+![Captura de pantalla -2022-04-26 11-38-15](https://user-images.githubusercontent.com/103068924/165270953-0592de7a-bf31-4e9b-b64c-3c65a8c3cd98.png)
+
+Mediante 'cat' podemos ver su contenido, el hash extraído del archivo .zip.
+
+    cat hash1
+    
+![Captura de pantalla -2022-04-26 11-39-08](https://user-images.githubusercontent.com/103068924/165271131-4fae266f-0d0e-4caa-87ec-3da52138de98.png)
+
+Perfecto, ya tenemos nuestro hash listo para explotarlo, ahora mediante la herramienta John, vamos a tratar de
+descifrar el 'hash' mediante un diccionario de fuerza bruta llamado rockyou.txt. Rockyou.txt es un diccionario
+con más de 14 millones de contraseñas, el cual se puede encontrar por internet en distintos repositorios.
+
+Es aconsejable alojar el archivo rockyou.txt en la ruta '/usr/share/wordlists/'.
+
+Para ejecutar el ataque por diccionario con John, utilizaremos la variable '--wordlist' especificando la ruta del 
+diccionario, y luego, también especificamos el archivo que queremos tratar de descifrar, en nuestro caso 'hash1':
+
+    john --worlist=/usr/share/wordlists/rockyou.txt hash
+     
+![Captura de pantalla -2022-04-26 11-49-04](https://user-images.githubusercontent.com/103068924/165273100-baee1cfa-ed29-4ab1-beeb-a2cb3f2c66fb.png)
+
+Como podemos ver, la herramienta John enseguida nos reporta que ha procesado 1 contraseña y que no quedan más hashes
+que crackear.
+
+Para poder ver la contraseña simplemente utilizamos John con la variable '--show' y especificar el archivo.
+
+    john --show hash1
+    
+![Captura de pantalla -2022-04-26 11-55-53](https://user-images.githubusercontent.com/103068924/165274505-6168b701-cc37-4810-b0c1-0cab72b0ed91.png)
 
 
 
