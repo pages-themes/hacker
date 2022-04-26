@@ -21,6 +21,8 @@
 
 [HashID](./HashId.html)
 
+[Hash Identifier](./Hash-Identifier.html)
+
 [HashCat](./HashCat.html)
 
 # Artículos
