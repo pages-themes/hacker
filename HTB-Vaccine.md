@@ -2,7 +2,7 @@
 
 ![Captura de pantalla -2022-04-26 08-13-51](https://user-images.githubusercontent.com/103068924/165234105-c74265cb-61e5-4ae5-abe7-0ee2dd77343d.png)
 
-# HTB - Vaccine
+# HTB-Vaccine
 
 Resolución del starting poing de Hack the Box Vaccine.
 
@@ -199,6 +199,34 @@ Para poder ver la contraseña simplemente utilizamos John con la variable '--sho
     john --show hash1
     
 ![Captura de pantalla -2022-04-26 11-55-53](https://user-images.githubusercontent.com/103068924/165274505-6168b701-cc37-4810-b0c1-0cab72b0ed91.png)
+
+Ahora ya podemos copiar la contraseña y descomprimir el archivo .zip:
+
+    unzip backup.zip
+    
+
+![Captura de pantalla -2022-04-26 11-59-18](https://user-images.githubusercontent.com/103068924/165275309-2f069ecc-67b7-47db-8f67-cff6f646babd.png)
+
+Y podemos ver como ya tenemos los archivos index.php y style.css en nuestro direcctiorio:
+
+![Captura de pantalla -2022-04-26 11-59-37](https://user-images.githubusercontent.com/103068924/165275404-435b6409-55fc-451c-bc57-c575d86991d7.png)
+
+### Revisión del código fuente:
+
+Tras revisar el archivo index.php, podemos ver como es una copia del código fuente de la página de inicio de sesión
+anterior. 
+Pero si nos fijamos incluye unas líneas adicionales. Para ver el código fuente podemos abrir el archivo
+index.php mediante 'cat' o dirigirnos a la url http://[Ip Víctima]/index.php (la página es visualmente es igual) y
+con clic derecho sobre la página y 'ver código fuente'.
+
+    cat index.php
+    
+![Captura de pantalla -2022-04-26 12-08-50](https://user-images.githubusercontent.com/103068924/165276973-60275a49-325c-4973-92d7-366a8dbb3faf.png)
+
+El apartado que a nosotros nos interesa es el 'session_start', donde nos reporta un nombre de usuario 'admin' y un
+hash de una contraseña.
+
+![Captura de pantalla -2022-04-26 12-11-16](https://user-images.githubusercontent.com/103068924/165277394-c9f38ef0-efa2-4d65-8906-1b5d6a757b5c.png)
 
 
 
