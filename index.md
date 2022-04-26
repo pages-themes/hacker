@@ -21,6 +21,8 @@
 
 [HashID](./HashId.html)
 
+[HashCat](./HashCat.html)
+
 ## Artículos
 
 [Fase de Reconocimiento - HTB](./Fase_de_reconocimiento-HTB.html)
