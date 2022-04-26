@@ -11,4 +11,4 @@ Resolución del starting poing de Hack the Box Vaccine.
 En primer lugar, vamos a comprobar si tenemos conexión con la máquina. Y si podemos averiguar el sistema 
 operativo que utiliza mediante el ttl.
 
-     ping [Ip Víctima]
+    ping [Ip Víctima]
