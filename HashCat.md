@@ -30,3 +30,17 @@ En Kali Linux y ParrotOS suele venir instalada de forma predeterminada.
 
 # Ejecución:
 
+Para ver las distintas optiones y como ejecutar la herramienta:
+
+    hashcat --help
+
+Para ejecutar la herramienta, debemos especificar en que algoritmo esta basado el hash, esto podemos verlo meidante
+la herramientas [HashID](./HashId.html) o [Hash-Identifier](./Hash-Identifier.html).
+
+Crearemos un archivo, por ejemplo 'hash2' y pegamos el número hash que queremos descifrar.
+
+    nano hash2
+    
+ Guardamos (Cntrl + o) y salimos (Cntrl + x).
+ 
+ 
