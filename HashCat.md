@@ -43,6 +43,19 @@ Crearemos un archivo, por ejemplo 'hash2' y pegamos el número hash que queremos
     
  Guardamos (Cntrl + o) y salimos (Cntrl + x).
  
+ Para ejecutar HashCat de forma básica:
  
+    hashcat -a 0 -m 0 hash2 /usr/share/rockyou.txt
+    
+ -a : Attack-mode. El 0 representa el modo 'Straight'.
  
+ ![Captura de pantalla -2022-04-26 23-59-52](https://user-images.githubusercontent.com/103068924/165399824-debe9e55-256e-49a0-ba46-958a9efd2db4.png)
+
+ -m : Hash-type. El 0 representa MD5. Esto lo podemos ver con el comando ´hashcat --help´.
+ 
+ ![Captura de pantalla -2022-04-27 00-01-06](https://user-images.githubusercontent.com/103068924/165399873-50a11294-9cd6-4833-8642-16d5193ec93c.png)
+ 
+ hash2 : Nombre del archivo que contiene el hash que queremos descifrar.
+ 
+ rockyou.txt : Es un diccionario con más de 14 millones de contraseñas y hashes.
  
