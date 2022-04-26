@@ -15,9 +15,6 @@ Para ejecutarla:
 
     hashid [Hash Núm]
 
-
-  
-    hashid 2cb42f8734ea607eefed3b70af13bbd3
     
 ### Ejemplo:    
 
