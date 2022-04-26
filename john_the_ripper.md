@@ -42,7 +42,7 @@ No obstante, se siguen utilizando mucho las funciones de hash.
 
     zip2john [archivo.zip] > hash
     
-De está manera extraeremos el hash del archivo .zip en el archivo 'hash' para posteriormente poder trabajar con él.
+De esta manera extraeremos el hash del archivo .zip en el archivo 'hash' para posteriormente poder trabajar con él.
 
 ### Ejecutar John y el diccionario rockyou.txt:
 
@@ -50,7 +50,7 @@ De está manera extraeremos el hash del archivo .zip en el archivo 'hash' para p
 
 ![Captura de pantalla -2022-04-26 11-07-52](https://user-images.githubusercontent.com/103068924/165265458-aef0e310-ff62-4057-90ce-be6f8a65c45c.png)
 
-El archivo rockyou.txt es un diccionario con mas de 14 millones de contraseñas. En caso de no tenerlo, podeis
+El archivo rockyou.txt es un diccionario con más de 14 millones de contraseñas. En caso de no tenerlo, podéis
 descargarlo y guardarlo en la ruta /usr/share/wordlists/
 
 Muy bien, ahora para poder ver la contraseña descifrada:
