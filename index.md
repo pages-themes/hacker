@@ -27,6 +27,8 @@
 
 [WPScan](./WPScan.html)
 
+[SQLmap](./SQLmap.html)
+
 # Artículos
 
 [Fase de Reconocimiento - HTB](./Fase_de_reconocimiento-HTB.html)
