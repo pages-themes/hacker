@@ -11,21 +11,23 @@
 
 # Herramientas y Scripts 
 
-[WichSystem](./WichSystem.html)
+### Reporte y reconocimiento:
 
-[ExtractPorts](./ExtractPorts.html)
+[WichSystem](./WichSystem.html) [ExtractPorts](./ExtractPorts.html)
+
+### Shells:
 
 [php-reverse-shell.php](./php-reverse-shell.html)
 
-[John the Ripper](./john_the_ripper.html)
+### Hash:
 
-[HashID](./HashId.html)
+[John the Ripper](./john_the_ripper.html) [HashID](./HashId.html) [Hash Identifier](./Hash-Identifier.html) [HashCat](./HashCat.html)
 
-[Hash Identifier](./Hash-Identifier.html)
-
-[HashCat](./HashCat.html)
+### WordPress:
 
 [WPScan](./WPScan.html)
+
+### SQL:
 
 [SQLmap](./SQLmap.html)
 
