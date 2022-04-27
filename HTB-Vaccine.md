@@ -265,7 +265,7 @@ Según la herramienta HashId el algoritmo de nuestro hash es un MD2, MD5 o MD4. 
 reporta los más probables, en ocasiones el primero en reportar no es el correcto. Para contrastar esta información
 voy a mostraros otra herramienta que sirve para lo mismo, pero es un poco más precisa.
 
-### Hash-Identifier:
+### [Hash-Identifier:](./Hash-Identifier.html)
 
 Está herramienta hace básicamente lo mismo que HashId, nos reporta el algoritmo del hash deseado, con la diferencia
 de que Hash-Identifier es algo más precisa a la hora de reportar los resusltados.
@@ -300,7 +300,7 @@ Para ello, vamos a ver dos formas de crakear un hash, en primer lugar utilizarem
 ### HashCat:
 
 [HashCat](./HashCAt.html) es un descifrador de contraseña popular y eficaz. Mediante esta herramienta trataremos de descifrar el hash, en  primer
-lugar, crearemos un arhivo llamado ´hash2´ donde guardamos el hash a descifrar.
+lugar, crearemos un arhivo llamado `hash2` donde guardamos el hash a descifrar.
 
 Para crear el archivo:
 
@@ -310,7 +310,7 @@ En caso de no tener instalado HashCat:
 
     sudo apt install hashcat
     
-Ahora debemos asegurarnos que tenemos el diccionario ´rockyou.txt´ en el direcctorio ´/usr/share/wordlists/´.    
+Ahora debemos asegurarnos que tenemos el diccionario ´rockyou.txt´ en el direcctorio `/usr/share/wordlists/`.    
     
 Bien, ya lo tenemos todo preparado para ejecutar HashCat, para ello, ejecutamos el siguiente comando:
 
