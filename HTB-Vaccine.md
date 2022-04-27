@@ -354,7 +354,7 @@ el proceso de detección y explotación de inyección SQL. Los ataques de inyecc
  
 Viene preinstalado con Parrot OS y Kali Linux, sin embargo, puede instalarlo a través del repositorio si no lo tiene:
 
-    vsudo apt install sqlmap
+    sudo apt install sqlmap
     
     
  
