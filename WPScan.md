@@ -1,4 +1,5 @@
-![wpscan_logo](https://user-images.githubusercontent.com/103068924/165411959-987b6776-f708-46ff-90ed-772370981220.png)
+![wpscan_logo1](https://user-images.githubusercontent.com/103068924/165412933-412b8027-f44d-47b2-a742-5b7c2a58d1ea.png)
+
 
 # WPScan
 
