@@ -265,10 +265,11 @@ Según la herramienta HashId el algoritmo de nuestro hash es un MD2, MD5 o MD4. 
 reporta los más probables, en ocasiones el primero en reportar no es el correcto. Para contrastar esta información
 voy a mostraros otra herramienta que sirve para lo mismo, pero es un poco más precisa.
 
-### [Hash-Identifier:](./Hash-Identifier.html)
+### Hash-Identifier:
 
 Está herramienta hace básicamente lo mismo que HashId, nos reporta el algoritmo del hash deseado, con la diferencia
 de que Hash-Identifier es algo más precisa a la hora de reportar los resusltados.
+Podéis encontrar más información aquí: [Hash Identifier](./Hash-Identifier.html)
 
 Para instalar:
 
@@ -310,17 +311,52 @@ En caso de no tener instalado HashCat:
 
     sudo apt install hashcat
     
-Ahora debemos asegurarnos que tenemos el diccionario ´rockyou.txt´ en el direcctorio `/usr/share/wordlists/`.    
+Ahora debemos asegurarnos que tenemos el diccionario `rockyou.txt` en el direcctorio `/usr/share/wordlists/`.
+Podemos descargarnos o copiar el diccionario `rockyou.txt` en el siguiente enlace:
+https://www.kaggle.com/datasets/wjburns/common-password-list-rockyoutxt
     
 Bien, ya lo tenemos todo preparado para ejecutar HashCat, para ello, ejecutamos el siguiente comando:
 
     hashcat -a 0 -m 0 'Número Hash' /usr/share/wordlists/rockyou.txt
 
+-a : Attack-mode. El 0 representa el modo 'Straight'.
+
+-m : Hash-type. El 0 representa MD5. Esto lo podemos ver con el comando ´hashcat --help´.
+
+hash2 : Nombre del archivo que contiene el hash que queremos descifrar.
+
+rockyou.txt : Es un diccionario con más de 14 millones de contraseñas y hashes.
 
 
+Como podemos ver, Hashcat descifró la contraseña: qwerty789
 
+## Acceso al Sistema:
+
+Ya conocemos un usuario ´admin´ y una contraseña ´qwerty789´, con esta información vamos a volver a la página web donde nos 
+aparecia una pagina de inicio de sesión y vamos a tratar de acceder utilizando estos datos.
+
+Genial, podemos ver como tenemos acceso como el usuaio ´admin´.
+
+Tras revisar el contenido de la página, vemos como el tablero no reporta nada especial, sin embargo, nos muestra un catálogo que
+podría estar conectado con la base de datos.
+
+Vamos a tratar de realizar algunas consultas y ver que ocurre:
+
+Al verificar la URL, podemos ver que hay una variable ´$search´ que es responsable de buscar en el catálogo.
+
+Tras ver esto, vamos a probar si es vulnerable a una inyeccion SQL, se puede hacer manualmente, pero para facilitarnos el trabajo
+usaremos una herramienta llamada ´Sqlmap´.
+
+## SQLMAP
+
+SQLmap es una herramienta de código abierto utilizada en pruebas de penetración para detectar y explotar fallas de inyección SQL. SQLmap automatiza
+el proceso de detección y explotación de inyección SQL. Los ataques de inyección de SQL pueden tomar el control de las bases de datos que utilizan SQL.
  
- 
+Viene preinstalado con Parrot OS y Kali Linux, sin embargo, puede instalarlo a través del repositorio si no lo tiene:
+
+    vsudo apt install sqlmap
+    
+    
  
  
         
