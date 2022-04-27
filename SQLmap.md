@@ -34,4 +34,4 @@ en otros sistemas Linux basados en Debian usando el comando:
 Primero, debemos ingresar la URL web que queremos verificar junto con el parámetro -u. También podemos usar el parámetro –tor si deseamos probar el 
 sitio web usando proxies. Ahora, por lo general, nos gustaría probar si es posible obtener acceso a una base de datos. Así que usamos la opción –dbs para hacerlo. –dbs enumera todas las bases de datos disponibles. 
 
-Ejemplo: ´sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 --dbs´
+Ejemplo: `sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 --dbs`
