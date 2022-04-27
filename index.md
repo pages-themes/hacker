@@ -13,7 +13,8 @@
 
 ### Reporte y reconocimiento:
 
-[WichSystem](./WichSystem.html)    [ExtractPorts](./ExtractPorts.html)
+1.[WichSystem](./WichSystem.html)    
+2.[ExtractPorts](./ExtractPorts.html)
 
 ### Shells:
 
@@ -21,7 +22,10 @@
 
 ### Hash:
 
-[John the Ripper](./john_the_ripper.html)    [HashID](./HashId.html)    [Hash Identifier](./Hash-Identifier.html)    [HashCat](./HashCat.html)
+1.[John the Ripper](./john_the_ripper.html)    
+2.[HashID](./HashId.html)    
+3.[Hash Identifier](./Hash-Identifier.html)    
+4.[HashCat](./HashCat.html)
 
 ### WordPress:
 
