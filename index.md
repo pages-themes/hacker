@@ -25,6 +25,8 @@
 
 [HashCat](./HashCat.html)
 
+[WPScan](./WPScan.html)
+
 # Artículos
 
 [Fase de Reconocimiento - HTB](./Fase_de_reconocimiento-HTB.html)
