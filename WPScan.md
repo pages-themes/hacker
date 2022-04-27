@@ -35,3 +35,20 @@ Ejemplo 2:
 
     wpscan --url http://10.10.11.143
    
+## Escaneo mediante verbose:
+
+Ejemplo 1:
+
+    wpscan --url http://wordpress.local --verbose
+
+Ejemplo 2:
+
+    wpscan --url http://10.10.11.143 -v
+    
+## Escaneo de directorios y usuarios:
+
+    wpscan --url http://example.local --wp-content-dir wp-admin
+    
+    
+
+
