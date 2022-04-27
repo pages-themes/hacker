@@ -321,7 +321,7 @@ Bien, ya lo tenemos todo preparado para ejecutar HashCat, para ello, ejecutamos 
 
 -a : Attack-mode. El 0 representa el modo 'Straight'.
 
--m : Hash-type. El 0 representa MD5. Esto lo podemos ver con el comando ´hashcat --help´.
+-m : Hash-type. El 0 representa MD5. Esto lo podemos ver con el comando `hashcat --help`.
 
 hash2 : Nombre del archivo que contiene el hash que queremos descifrar.
 
@@ -332,20 +332,20 @@ Como podemos ver, Hashcat descifró la contraseña: qwerty789
 
 ## Acceso al Sistema:
 
-Ya conocemos un usuario ´admin´ y una contraseña ´qwerty789´, con esta información vamos a volver a la página web donde nos 
+Ya conocemos un usuario `admin` y una contraseña `qwerty789`, con esta información vamos a volver a la página web donde nos 
 aparecia una pagina de inicio de sesión y vamos a tratar de acceder utilizando estos datos.
 
-Genial, podemos ver como tenemos acceso como el usuaio ´admin´.
+Genial, podemos ver como tenemos acceso como el usuaio `admin`.
 
 Tras revisar el contenido de la página, vemos como el tablero no reporta nada especial, sin embargo, nos muestra un catálogo que
 podría estar conectado con la base de datos.
 
 Vamos a tratar de realizar algunas consultas y ver que ocurre:
 
-Al verificar la URL, podemos ver que hay una variable ´$search´ que es responsable de buscar en el catálogo.
+Al verificar la URL, podemos ver que hay una variable `$search` que es responsable de buscar en el catálogo.
 
 Tras ver esto, vamos a probar si es vulnerable a una inyeccion SQL, se puede hacer manualmente, pero para facilitarnos el trabajo
-usaremos una herramienta llamada ´Sqlmap´.
+usaremos una herramienta llamada `Sqlmap`.
 
 ## SQLMAP
 
