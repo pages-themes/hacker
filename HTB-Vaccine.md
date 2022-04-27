@@ -299,6 +299,22 @@ Para ello, vamos a ver dos formas de crakear un hash, en primer lugar utilizarem
 
 ### HashCat:
 
+[HashCat](./HashCAt.html) es un descifrador de contraseña popular y eficaz. Mediante esta herramienta trataremos de descifrar el hash, en  primer
+lugar, crearemos un arhivo llamado ´hash2´ donde guardamos el hash a descifrar.
+
+Para crear el archivo:
+
+    echo 'Número de Hash' > hash2
+    
+En caso de no tener instalado HashCat:
+
+    sudo apt install hashcat
+    
+Ahora debemos asegurarnos que tenemos el diccionario ´rockyou.txt´ en el direcctorio ´/usr/share/wordlists/´.    
+    
+Bien, ya lo tenemos todo preparado para ejecutar HashCat, para ello, ejecutamos el siguiente comando:
+
+    hashcat -a 0 -m 0 'Número Hash' /usr/share/wordlists/rockyou.txt
 
 
 
