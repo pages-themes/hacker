@@ -42,6 +42,8 @@
 
 [Fase de Reconocimiento - HTB](./Fase_de_reconocimiento-HTB.html)
 
+[¿Como conectarse a Htb?](./Como conectarse a HTB.html)
+
 
 
 
