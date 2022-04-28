@@ -10,7 +10,7 @@ inyectarles códigos maliciosos. Viene con un potente motor de detección al cua
 ### Características:
 
 Soporte completo para MySQL, Oracle, PostgreSQL y Microsoft SQL. Además de estos cuatro sistemas de gestión de bases de datos, sqlMap también puede
-identificar Microsoft Access, DB2, Informix, Sybase y Interbase.
+identificar Microsoft Access, DB2, Informix, Sybase e Interbase.
 
 Amplia base de datos de sistema de gestión de huellas dactilares basadas en inband error messages, analizar el banner, las funciones de salida de
 comparación y características específicas tales como MySQL comment injection.
@@ -23,7 +23,7 @@ Soporte completo para 2 técnicas de SQL injection: blind SQL injection y inband
 SQLMAP viene preinstalado con kali linux, que es la opción preferida de la mayoría de los probadores de penetración. Sin embargo, puede instalar sqlmap 
 en otros sistemas Linux basados en Debian usando el comando:
  
-      sudo apt-get install sqlmap
+    sudo apt-get install sqlmap
       
 # Ejecución de SQLMap:
 
@@ -31,7 +31,7 @@ en otros sistemas Linux basados en Debian usando el comando:
 
     sqlmap -u [Url Víctima] --dbs
 
-Primero, debemos ingresar la URL web que queremos verificar junto con el parámetro -u. También podemos usar el parámetro –tor si deseamos probar el 
-sitio web usando proxies. Ahora, por lo general, nos gustaría probar si es posible obtener acceso a una base de datos. Así que usamos la opción –dbs para hacerlo. –dbs enumera todas las bases de datos disponibles. 
+Primero, debemos ingresar la URL web que queremos verificar junto con el parámetro `-u`. También podemos usar el parámetro `–tor` si deseamos probar el 
+sitio web usando proxies. Ahora, por lo general, nos gustaría probar si es posible obtener acceso a una base de datos. Así que usamos la opción `–dbs` para hacerlo. `–dbs` enumera todas las bases de datos disponibles. 
 
 Ejemplo: `sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 --dbs`
