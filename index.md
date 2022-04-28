@@ -36,7 +36,7 @@ Herramientas de reconocimiento y des encriptación de hash.
 3.[Hash Identifier](./Hash-Identifier.html)    
 4.[HashCat](./HashCat.html)
 
-# Fuzzing:
+### Fuzzing:
 Fuzzing es una técnica de pruebas de software, a menudo automatizado o semiautomatizado, que implica proporcionar datos inválidos, inesperados o
 aleatorios a las entradas de un programa de ordenador. Entonces se monitorizan las excepciones tales como caídas, aserciones de código erróneas, o
 para encontrar potenciales filtraciones de memoria.
