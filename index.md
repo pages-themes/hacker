@@ -19,18 +19,18 @@
 
 # Herramientas y Scripts 
 
-### Reporte y reconocimiento:
+## Reporte y reconocimiento:
 Herramientas útiles para la fase de reconocimiento, como reportes de SO o recopilación de puertos.
 
 1.[WichSystem](./WichSystem.html)    
 2.[ExtractPorts](./ExtractPorts.html)
 
-### Shells:
+## Shells:
 Herramientas para crear shells inversas.
 
 [php-reverse-shell.php](./php-reverse-shell.html)
 
-### Hash:
+## Hash:
 Herramientas de reconocimiento y des encriptación de hash.
 
 1.[John the Ripper](./john_the_ripper.html)    
@@ -38,19 +38,19 @@ Herramientas de reconocimiento y des encriptación de hash.
 3.[Hash Identifier](./Hash-Identifier.html)    
 4.[HashCat](./HashCat.html)
 
-### Fuzzing:
+## Fuzzing:
 Fuzzing es una técnica de pruebas de software, a menudo automatizado o semiautomatizado, que implica proporcionar datos inválidos, inesperados o
 aleatorios a las entradas de un programa de ordenador. Entonces se monitorizan las excepciones tales como caídas, aserciones de código erróneas, o
 para encontrar potenciales filtraciones de memoria.
 
 [Wfuzz](./Wfuzz.html)
 
-### WordPress:
+## WordPress:
 Escaneo de vulnerabilidades en páginas WordPress.
 
 [WPScan](./WPScan.html)
 
-### SQL:
+## SQL:
 [SQLmap](./SQLmap.html)
 
 
