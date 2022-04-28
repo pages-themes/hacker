@@ -20,6 +20,7 @@
 # Herramientas y Scripts 
 
 ### Reporte y reconocimiento:
+Herramientas útiles para la fase de reconocimiento como reportes de SO o recopilación de puertos.
 
 1.[WichSystem](./WichSystem.html)    
 2.[ExtractPorts](./ExtractPorts.html)
@@ -44,11 +45,9 @@ para encontrar potenciales filtraciones de memoria.
 [Wfuzz](./Wfuzz.html)
 
 ### WordPress:
-
 [WPScan](./WPScan.html)
 
 ### SQL:
-
 [SQLmap](./SQLmap.html)
 
 
