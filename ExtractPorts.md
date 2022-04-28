@@ -3,12 +3,11 @@
 ExtractPorts es una función creada por S4vitar.
 
 Esta herramienta nos mostrará en formato bat y los puertos encontrados.
-Mediante Cntrl + Shift + v podremos pegar los puertos a la terminal
-automáticamente.
+Mediante Cntrl + Shift + v podremos pegar los puertos a la terminal automáticamente.
 
 ![Captura de pantalla -2022-04-10 23-00-33](https://user-images.githubusercontent.com/103068924/162639641-48c8aea9-d14a-4ea2-a38b-cefa0447ffdf.png)
 
-          extractPorts allPorts
+    extractPorts allPorts
    
  allPorts : Archivo previamente definido.
  
@@ -16,16 +15,13 @@ automáticamente.
 
  Cntrl + Shift + v : Para pegar los puertos a la terminal.
  
- # Instalación:
+ ## Instalación:
  
- Para la instalación de esta herramienta previamente se recomienda tener
- instalado 'bat' que es una mejora del comando 'cat'.
+ Para la instalación de esta herramienta previamente se recomienda tener instalado 'bat' que es una mejora del comando 'cat'.
  
- Para poder tener está función activa, simplemente nos dirigiremos
- a la carpeta .bashrc o .zshrc (la que utilicéis) y pegaremos la función.
+ Para poder tener está función activa, simplemente nos dirigiremos a la carpeta .bashrc o .zshrc (la que utilicéis) y pegaremos la función.
  
- Esta función la podéis encontrar tanto en el perfil de S4vitar como
- en este repositorio.
+ Esta función la podéis encontrar tanto en el perfil de S4vitar como en este repositorio.
  
  S4vitar: [https://github.com/s4vitar](https://github.com/s4vitar)
  
@@ -33,8 +29,7 @@ automáticamente.
  
  ![Captura de pantalla -2022-04-10 23-42-26](https://user-images.githubusercontent.com/103068924/162641184-dd48ed25-c547-4350-a201-de89d0d849e6.png)
  
-# Menciones:
+## Menciones:
 
-Esta función está creada por el creador de contenido S4vitar, podéis 
-encontrar una gran cantidad de información sobre ciberseguridad en
+Esta función está creada por el creador de contenido S4vitar, podéis encontrar una gran cantidad de información sobre ciberseguridad en
 sus canales de Youtube y Twitch.
