@@ -40,7 +40,7 @@ Creamos el archivo wichSystem.py:
 Copiamos y pegamos el scrip (lo puedes encontrar en este mismo repositorio
 como wichSystem.py).
 
-https://github.com/F1r0x/WichSystem/blob/main/wichSystem.py
+[https://github.com/F1r0x/WichSystem/blob/main/wichSystem.py](https://github.com/F1r0x/WichSystem/blob/main/wichSystem.py)
 
 Guardamos : Cntrl + o
 
