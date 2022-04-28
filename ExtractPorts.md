@@ -3,7 +3,7 @@
 ExtractPorts es una función creada por S4vitar.
 
 Esta herramienta nos mostrará en formato bat y los puertos encontrados.
-Mediante Cntrl + Shift + v podremos pegar los puertos a la terminal automáticamente.
+Mediante `Cntrl + Shift + v` podremos pegar los puertos a la terminal automáticamente.
 
 ![Captura de pantalla -2022-04-10 23-00-33](https://user-images.githubusercontent.com/103068924/162639641-48c8aea9-d14a-4ea2-a38b-cefa0447ffdf.png)
 
