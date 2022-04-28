@@ -20,12 +20,13 @@
 # Herramientas y Scripts 
 
 ### Reporte y reconocimiento:
-Herramientas útiles para la fase de reconocimiento como reportes de SO o recopilación de puertos.
+Herramientas útiles para la fase de reconocimiento, como reportes de SO o recopilación de puertos.
 
 1.[WichSystem](./WichSystem.html)    
 2.[ExtractPorts](./ExtractPorts.html)
 
 ### Shells:
+Herramientas para crear shells inversas.
 
 [php-reverse-shell.php](./php-reverse-shell.html)
 
@@ -45,6 +46,8 @@ para encontrar potenciales filtraciones de memoria.
 [Wfuzz](./Wfuzz.html)
 
 ### WordPress:
+Escaneo de vulnerabilidades en páginas WordPress.
+
 [WPScan](./WPScan.html)
 
 ### SQL:
