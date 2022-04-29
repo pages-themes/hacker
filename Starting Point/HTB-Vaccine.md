@@ -31,7 +31,7 @@ de manera rápida accediendo al archivo guardado en nuestro directorio mediante 
 ![Captura de pantalla -2022-04-26 08-27-45](https://user-images.githubusercontent.com/103068924/165235713-58183ec0-1a5a-47c7-bc14-280e3c01a3e5.png)
 
 Puedes encontrar la descripción y la herramienta extractPorts creada por S4vitar en mi repositorio: 
- [ExtractPorts](f1r0x.github.io/Herramientas_y_Scripts/ExtractPorts.md)
+ [ExtractPorts](../Herramientas_y_Scripts/ExtractPorts.md)
  
  ![Captura de pantalla -2022-04-26 08-28-45](https://user-images.githubusercontent.com/103068924/165235873-224f1a07-302a-44f8-9a98-1ed1fe43b982.png)
  
