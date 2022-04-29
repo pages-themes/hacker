@@ -1,6 +1,6 @@
-# Administrados de bluetooth de Linux.
+# Administrador de bluetooth de Linux.
 
-Para poder abrir  el gestor de bluetooth desde la terminal de Linux, utilizaremos el siguiente comando:
+Para poder abrir el gestor de bluetooth desde la terminal de Linux, utilizaremos el siguiente comando:
 
     bluetoothctl
     
@@ -9,17 +9,17 @@ de bluetoothctl escribir `help`:
 
     bluetoot help
     
-Para realizar una busqueda de los dispositivos:
+Para realizar una búsqueda de los dispositivos:
 
     scan on
     
-Para detener la busqueda:
+Para detener la búsqueda:
 
     scan off
    
 Para conectarnos con un dispositivo:
 
-    connect [Núm MAC]
+    connect [Núm. MAC]
     
 El `número MAC` es el número que corresponde con el dispositivo que se nos muestra en el escaneo. 
 
