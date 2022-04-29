@@ -27,7 +27,7 @@ En primer lugar, vamos a comprobar si tenemos conexión
  nuestro directorio mediante la herramienta 'extractPorts'.
  
  Puedes encontrar la descripción y la herramienta extractPorts
- creada por S4vitar en mi repositorio: [ExtractPorts](https://f1r0x.github.io/ExtractPorts.html)
+ creada por S4vitar en mi repositorio: [ExtractPorts](https://f1r0x.github.io/Herramientas_y_Scripts/ExtractPorts.html)
  
  Es este caso podemos observar los siguientes puertos 
  abiertos por el protocolo TCP:
@@ -224,7 +224,7 @@ configurar con nuestros datos nuestra reverse-shell. Es importante copiar el arc
 ya que será difícil buscar nuestro archivo desde la página de Uploads a la hora de subirlo.
 
 En caso de no tener el archivo php-reverse-shelll.php en vuestro sistema, lo podéis encontrar en mi repositorio
-de GitHub mediante el siguiente enlace: https://github.com/F1r0x/php-reverse-shell.php/blob/main/php-reverse-shell.php
+de GitHub mediante el siguiente enlace: [https://github.com/F1r0x/php-reverse-shell.php/blob/main/php-reverse-shell.php](./https://github.com/F1r0x/php-reverse-shell.php/blob/main/php-reverse-shell.php)
 
 Para tenerlo, simplemente lo copiáis, abrís una terminal y crearemos el archivo mediante nano:
 
@@ -325,7 +325,7 @@ Para instalarlo simplemente ejecutamos:
   
   Para descargar o copiar:
   
-  https://gist.github.com/sl4v/c087e36164e74233514b
+  [https://gist.github.com/sl4v/c087e36164e74233514b](./https://gist.github.com/sl4v/c087e36164e74233514b)
   
   En ese enlace encontraréis la biblioteca que vamos a utilizar, yo recomiendo instalarlo en el siguiente 
   directorio, si el directorio no existe crearlo.:
