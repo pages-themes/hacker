@@ -15,7 +15,7 @@ Mediante `Cntrl + Shift + v` podremos pegar los puertos a la terminal automátic
 
  `Cntrl + Shift + v` : Para pegar los puertos a la terminal.
  
- ## Instalación:
+## Instalación:
  
  Para la instalación de esta herramienta previamente se recomienda tener instalado 'bat' que es una mejora del comando 'cat'.
  
