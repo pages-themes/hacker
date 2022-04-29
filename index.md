@@ -11,9 +11,9 @@
 ---
 # Artículos
 
-[Fase de Reconocimiento - HTB](./Fase_de_reconocimiento-HTB.html)
+[Fase de Reconocimiento - HTB](./Artículos/Fase_de_reconocimiento-HTB.html)
 
-[¿Como conectarse a Htb?](./Como conectarse a HTB.html)
+[¿Como conectarse a Htb?](./Artículos/Como conectarse a HTB.html)
 
 ---
 
