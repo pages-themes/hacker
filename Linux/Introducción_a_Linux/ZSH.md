@@ -31,7 +31,7 @@ Para ello abrimos el archivo `.bashrc` con el siguiente comando:
 
     sudo nano ~/.bashrc
     
-Una vez abierto el arhcivo `.bashrc` escribiremos 'exec zsh` en la parte superior del archivo. De esta manera se ejecutará el comando `zsh`
+Una vez abierto el arhcivo `.bashrc` escribiremos `exec zsh` en la parte superior del archivo. De esta manera se ejecutará el comando `zsh`
 cada vez que se cargue la terminal.
 
 **Nota**: Se debe de terner mucho cuidado al realizar esta instalación y no realizarlo durante otros procesos ya que al realizar estos cambios
