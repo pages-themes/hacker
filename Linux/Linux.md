@@ -2,6 +2,10 @@
 
 Gran variedad de artículos basdos en el ecosistema Linux.
 
+## Dispositivos:
+
+[Bluetoothctl](../Linux/Introducción_a_Linux/Bluetoothctl.html)
+
 ## Programas de Descargas:
 ### Torrent:
 
