@@ -2,11 +2,11 @@
 
 ## Starting Points
 
-[HTB-Oopsie](./HTB-Oopsie.html)
+[HTB-Oopsie](./Starting Point/HTB-Oopsie.html)
 
-[HTB-Responder](./HTB-Responder.html)
+[HTB-Responder](./Starting Point/HTB-Responder.html)
 
-[HTB-Vaccine](./HTB-Vaccine.html)
+[HTB-Vaccine](./Starting Point/HTB-Vaccine.html)
 
 ---
 # Artículos
