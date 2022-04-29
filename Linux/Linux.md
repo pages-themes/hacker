@@ -9,4 +9,4 @@ Gran variedad de artículos basdos en el ecosistema Linux.
 
 ## Gestor de Comandos:
 
-[ZSH](../Linux/ZSH.html)
+[ZSH](../Linux/Introducción_a_Linux/ZSH.html)
