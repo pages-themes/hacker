@@ -1,4 +1,4 @@
-# Administrador de bluetooth de Linux.
+# Administrador Bluetooth de Linux.
 
 Para poder abrir el gestor de bluetooth desde la terminal de Linux, utilizaremos el siguiente comando:
 
