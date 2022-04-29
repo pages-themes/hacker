@@ -11,6 +11,8 @@
 ---
 # Artículos
 
+[Linux](./Linux/Linux.html)
+
 [Fase de Reconocimiento - HTB](./Artículos/Fase_de_reconocimiento-HTB.html)
 
 [¿Como conectarse a Htb?](./Artículos/Como_conectarse_a_HTB.html)
@@ -52,6 +54,10 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 ## SQL:
 [SQLmap](./Herramientas_y_Scripts/SQLmap.html)
+
+---
+
+
 
 
 
