@@ -153,7 +153,7 @@ podemos ver como nos reporta que dentro del .zip contiene dos archivos (index.ph
 Como desconocemos la contraseña, vamos a utilizar la herramienta John the Ripper para tratar de descifrarla. En 
 caso de no tener la herramienta instalada o queráis leer más sobre ella podréis encontrarlo en el siguiente enlace:
 
-[John the Ripper](./john_the_ripper.html)
+[John the Ripper](./Herramientas_y_Scripts/john_the_ripper.html)
 
 ### John the Ripper:
 
@@ -247,7 +247,7 @@ Tenemos un hash, pero aún no sabemos en qué tipo de algoritmo está basado. Pa
 Hashid, la cual nos reportará el tipo de algoritmo más probable que se utilizó en su día para crear ese hash a 
 partir de una contraseña.
 
-Podéis encontrar más información aquí: [HashID](./HashId.html)
+Podéis encontrar más información aquí: [HashID](./Herramientas_y_Scripts/HashId.html)
 
 Para instalar la herramienta:
 
@@ -269,7 +269,7 @@ voy a mostraros otra herramienta que sirve para lo mismo, pero es un poco más p
 
 Está herramienta hace básicamente lo mismo que HashId, nos reporta el algoritmo del hash deseado, con la diferencia
 de que Hash-Identifier es algo más precisa a la hora de reportar los resusltados.
-Podéis encontrar más información aquí: [Hash Identifier](./Hash-Identifier.html)
+Podéis encontrar más información aquí: [Hash Identifier](./Herramientas_y_Scripts/Hash-Identifier.html)
 
 Para instalar:
 
@@ -300,7 +300,7 @@ Para ello, vamos a ver dos formas de crakear un hash, en primer lugar utilizarem
 
 ### HashCat:
 
-[HashCat](./HashCAt.html) es un descifrador de contraseña popular y eficaz. Mediante esta herramienta trataremos de descifrar el hash, en  primer
+[HashCat](./Herramientas_y_Scripts/HashCAt.html) es un descifrador de contraseña popular y eficaz. Mediante esta herramienta trataremos de descifrar el hash, en  primer
 lugar, crearemos un arhivo llamado `hash2` donde guardamos el hash a descifrar.
 
 Para crear el archivo:
@@ -313,7 +313,7 @@ En caso de no tener instalado HashCat:
     
 Ahora debemos asegurarnos que tenemos el diccionario `rockyou.txt` en el direcctorio `/usr/share/wordlists/`.
 Podemos descargarnos o copiar el diccionario `rockyou.txt` en el siguiente enlace:
-https://www.kaggle.com/datasets/wjburns/common-password-list-rockyoutxt
+[https://www.kaggle.com/datasets/wjburns/common-password-list-rockyoutxt](https://www.kaggle.com/datasets/wjburns/common-password-list-rockyoutxt)
     
 Bien, ya lo tenemos todo preparado para ejecutar HashCat, para ello, ejecutamos el siguiente comando:
 
