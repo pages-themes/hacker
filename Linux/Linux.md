@@ -2,6 +2,10 @@
 
 Gran variedad de artículos basdos en el ecosistema Linux.
 
+## Introducción a Linux:
+
+[¿Qué es Linux?](../Linux/Introducción_a_Limux.html)
+
 ## Dispositivos:
 
 [Bluetoothctl](../Linux/Introducción_a_Linux/Bluetoothctl.html)
