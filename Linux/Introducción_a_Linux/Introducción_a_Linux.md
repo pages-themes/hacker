@@ -1,6 +1,6 @@
 # Introducción a Linux
 
-##¿Qué es Linux?
+## ¿Qué es Linux?
 
 GNU/Linux es un sistema operativo (o una familia
 de sistemas operativos) tipo Unix compuesto por 
