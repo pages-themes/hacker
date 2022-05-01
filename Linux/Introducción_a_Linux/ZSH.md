@@ -1,4 +1,6 @@
-# ZSH
+![zsh](https://user-images.githubusercontent.com/103068924/166144730-96ded5b4-0042-4452-a281-d93b804ec151.png)
+
+# ¿Qué es ZSH?
 
 ZSH es un poderoso interprete de comandos  para sistemas Unix. Construido sobre el popular shell bash. Es, gratuito, de código abierto  y se
 actualiza periodicamente.
@@ -24,7 +26,7 @@ Luego iniciamos la instalación:
 Para ejecutar ZSH de forma automatica cada vez que iniciemos sesión y establecerla podemos hacerlo de dos maneras.
 La primera es ejecutando el siguiente comando:
 
-    chsh -s $(wich zsh)
+    sudo chsh -s $(wich zsh)
     
 Una vez hecho esto, reiniciamos el sistema y comprobamos que funcione. En caso de no funcionar, tendremos que hacerlo de forma manual.
 Para ello abrimos el archivo `.bashrc` con el siguiente comando:
