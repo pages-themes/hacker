@@ -35,3 +35,5 @@ el directorio en el que nos encontremos.
 ![Captura de pantalla -2022-05-02 09-31-43](https://user-images.githubusercontent.com/103068924/166200319-033b31d2-5449-424c-8d5f-48825f2a7ab6.png)
 
 ![Captura de pantalla -2022-05-02 09-31-26](https://user-images.githubusercontent.com/103068924/166200328-7fde4817-aa25-4184-ab00-4fbc6caa8af0.png)
+
+Mediante Youtube-dl podemos descargar archivos de audio en los formatos: `acc`, `vorbis`, `mp3`, `m4a`, `opus` y `wav`.
