@@ -151,9 +151,7 @@ podemos ver como nos reporta que dentro del .zip contiene dos archivos (index.ph
 ![Captura de pantalla -2022-04-26 09-57-17](https://user-images.githubusercontent.com/103068924/165250925-0f1270d2-0200-426e-9f64-8c475f88bfde.png)
 
 Como desconocemos la contraseña, vamos a utilizar la herramienta John the Ripper para tratar de descifrarla. En 
-caso de no tener la herramienta instalada o queráis leer más sobre ella podréis encontrarlo en el siguiente enlace:
-
-[John the Ripper](../Herramientas_y_Scripts/john_the_ripper.html)
+caso de no tener la herramienta instalada o queráis leer más sobre ella podréis encontrarlo en el siguiente enlace: [John the Ripper](../Herramientas_y_Scripts/john_the_ripper.html)
 
 ### John the Ripper:
 
