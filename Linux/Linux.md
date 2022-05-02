@@ -14,12 +14,13 @@ de dispositivos, gestores y administradores de terminales, etc. En mi caso estoy
 # Programas de Descargas:
 Estos son distintos programas de Descarga de archivos para diferentes plataformas y archivos.
 
-### Torrent:
-Para descargar archivos Torrent desde la terminal.
+### Torrent
+Para descargar archivos Torrent desde la Terminal.
 
 [Aria2](../Linux/Programas_para_Linux/Aria2.html)
 
-### Youtube:
+### Youtube
+Para descargar tanto vídeos como audio de Youtube desde la Terminal.
 
 [Youtube-dl](../Linux/Programas_para_Linux/Youtube-dl.html)
 
