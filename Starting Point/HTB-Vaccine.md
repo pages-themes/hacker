@@ -99,14 +99,14 @@ Ahora, mediante un `ls` o un `dir`, vamos a tratar de ver que archivos encontram
 
 ![Captura de pantalla -2022-04-26 09-08-17](https://user-images.githubusercontent.com/103068924/165242129-6e01a7d9-8a34-4830-8d2d-fc048d9cb36b.png)
 
-En mi caso no me permite ejecutar ninguno de los dos comandos. Pero como podemos ver nos reporta que consideremos
-utilizar PASV. Para ello, debemos activar el modo pasivo:
+En mi caso no me permite ejecutar ninguno de los dos comandos. Pero como podemos ver, nos reporta que consideremos
+utilizar PASV. Para ello, debemos activar el modo `passive`:
 
     passive
 
 ![Captura de pantalla -2022-04-26 09-32-35](https://user-images.githubusercontent.com/103068924/165246354-7861cf17-7af4-46c5-aebf-27b9f840e97f.png)
 
-Tras activar el modo activo ya podremos utilizar el comando `ls`:
+Tras activar el modo `passive` ya podremos utilizar el comando `ls`:
 
 ![Captura de pantalla -2022-04-26 09-33-33](https://user-images.githubusercontent.com/103068924/165246513-1911dca6-689c-44c5-8276-04b01aab9b4d.png)
 
