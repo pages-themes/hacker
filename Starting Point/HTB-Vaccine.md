@@ -76,7 +76,7 @@ Aquí podemos ver que tenemos un servicio ssh activo, usando un sistema Ubuntu.
 
 - Puerto 80/tcp: 
 
-El puerto 80 tiene un servicio http activo, el cual, si nos dirigimos a firefox, podemos ver que nos reporta
+El puerto 80 tiene un servicio http activo, el cual, si nos dirigimos a firefox, podemos ver que nos redirige
 hasta una página de registro:
 
 ![Captura de pantalla -2022-04-26 08-50-57](https://user-images.githubusercontent.com/103068924/165239253-c94d3b6a-b2eb-40d3-b146-a856f5a25a7c.png)
