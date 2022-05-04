@@ -305,6 +305,8 @@ Para crear el archivo:
 
     echo 'Número de Hash' > hash2
     
+ ![Captura de pantalla -2022-04-27 11-54-53](https://user-images.githubusercontent.com/103068924/166647923-9ddc2c5c-801e-4f00-8a91-f9d3653af889.png)
+    
 En caso de no tener instalado HashCat:
 
     sudo apt install hashcat
@@ -325,6 +327,14 @@ hash2 : Nombre del archivo que contiene el hash que queremos descifrar.
 
 rockyou.txt : Es un diccionario con más de 14 millones de contraseñas y hashes.
 
+![Captura de pantalla -2022-04-27 11-56-27](https://user-images.githubusercontent.com/103068924/166648025-d3c9c25c-1d4c-4f50-87a0-cd473f6f27fa.png)
+
+Nos indica que ha encontradoalgo y que utilizemos `--show` para poder visualizarlo.
+
+    hashcat --show hash2
+    
+![Captura de pantalla -2022-04-27 11-56-58](https://user-images.githubusercontent.com/103068924/166648230-7ed5f7d0-df2e-49d6-b250-54287562fb0d.png)
+
 
 Como podemos ver, Hashcat descifró la contraseña: qwerty789
 
@@ -333,6 +343,8 @@ Como podemos ver, Hashcat descifró la contraseña: qwerty789
 Ya conocemos un usuario `admin` y una contraseña `qwerty789`, con esta información vamos a volver a la página web donde nos 
 aparecia una pagina de inicio de sesión y vamos a tratar de acceder utilizando estos datos.
 
+![Captura de pantalla -2022-04-27 12-03-29](https://user-images.githubusercontent.com/103068924/166648293-0cbd813b-ec67-4c0e-a939-fb65265e032a.png)
+
 Genial, podemos ver como tenemos acceso como el usuaio `admin`.
 
 Tras revisar el contenido de la página, vemos como el tablero no reporta nada especial, sin embargo, nos muestra un catálogo que
@@ -340,7 +352,21 @@ podría estar conectado con la base de datos.
 
 Vamos a tratar de realizar algunas consultas y ver que ocurre:
 
+![Captura de pantalla -2022-04-27 12-04-13](https://user-images.githubusercontent.com/103068924/166648517-ad1acbad-2a4f-4a97-a624-079023d13e16.png)
+
 Al verificar la URL, podemos ver que hay una variable `$search` que es responsable de buscar en el catálogo.
+
+![Captura de pantalla -2022-04-27 12-06-08](https://user-images.githubusercontent.com/103068924/166648647-2caa34fd-e4ca-4bf4-99f2-78ee204e0946.png)
+
+Intentemos forzar un error en la URL a ver que nos reporta, para ello simplemente quitaremos una comilla de la URL:
+
+![Captura de pantalla -2022-04-27 12-07-04](https://user-images.githubusercontent.com/103068924/166649000-b923f2a7-e0a3-49db-8a00-9b6905de9ade.png)
+
+![Captura de pantalla -2022-04-27 12-06-41](https://user-images.githubusercontent.com/103068924/166648842-a33e5172-8e19-4bcb-b785-ef2ca634bda9.png)
+
+Vemos como al tener una sintaxis erronea, nos repotar el siguiente mensaje:
+
+![Captura de pantalla -2022-04-27 12-06-52](https://user-images.githubusercontent.com/103068924/166648944-796ab23a-74a1-4bd8-88b4-9e4e9854a331.png)
 
 Tras ver esto, vamos a probar si es vulnerable a una inyeccion SQL, se puede hacer manualmente, pero para facilitarnos el trabajo
 usaremos una herramienta llamada `Sqlmap`.
@@ -350,7 +376,7 @@ usaremos una herramienta llamada `Sqlmap`.
 SQLmap es una herramienta de código abierto utilizada en pruebas de penetración para detectar y explotar fallas de inyección SQL. SQLmap automatiza
 el proceso de detección y explotación de inyección SQL. Los ataques de inyección de SQL pueden tomar el control de las bases de datos que utilizan SQL.
  
-Viene preinstalado con Parrot OS y Kali Linux, sin embargo, puede instalarlo a través del repositorio si no lo tiene:
+Viene preinstalado con Parrot OS y Kali Linux, sin embargo, puede instalarlo a través del repositorio o con el siguiente comando:
 
     sudo apt install sqlmap
     
