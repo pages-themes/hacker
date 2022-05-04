@@ -380,7 +380,74 @@ Viene preinstalado con Parrot OS y Kali Linux, sin embargo, puede instalarlo a t
 
     sudo apt install sqlmap
     
+Una vez tenemos SQLmap instalado vamos a ejecutarlo. Para ello en primer lugar unicamente especificaremos la `url`.
+
+    sqlmap --url "10.129.25.145/dashboard.php?search="
     
+Como podeís ver no nos muestra nada interesante utilizando solo la URL.
+Tambien nos muestra que no tenemos unas cookies de sesión definidas. Como 
+ya estamos registrados como el usuario `admin` podemos utilizar sus credenciales de las cookies de inicio de sesión.
+
+Para ello volvemos a firefox y mediante `cntrl + shift + c` o clic derecho e Inspeccionar se nos abrirá una pestaña. Dentro de la pestaña vamos hasta
+`Almacenamiento` y luego `Cookies`. Vemos como nos muestra un `Nombre` y un `Valor`, vamos a copiarlos y utilizarlos con `SQLmap`.
+
+![Captura de pantalla -2022-05-04 11-01-24](https://user-images.githubusercontent.com/103068924/166653464-da9d7d86-d1e0-49b9-9c6b-7f9bd0375857.png)
+
+![Captura de pantalla -2022-05-04 11-01-47](https://user-images.githubusercontent.com/103068924/166653486-611f2dba-b3b0-4793-8ed0-83f67127dbd6.png)
+
+Ahora especificaremos los datos de inicio de sesión de las cookies en el comando anterior, esto lo haremos mediante la variable `--cookie`, tambien vamos a especificar mediante `--batch` que automatice todo el proceso sin necesidad de que nos pregunte que tareas realizar. 
+
+Y lo más importante, lo que queremos buscar mediante el escaneo, en nuestro caso vamos a tratar de enumerar los archivos de la base detos mediante
+la variable `--current-db`.
+
+    sqlmap --current-db --url "http://10.129.25.145/dashboard.php?search=Elixir" --cookie="PHPSESSID=dcep13le13prvgcl8ub8cqgjva" --batch
+
+![Captura de pantalla -2022-05-04 11-39-31](https://user-images.githubusercontent.com/103068924/166658210-dd977256-fa3c-47dc-b9f9-def0335b4c61.png)
+
+![Captura de pantalla -2022-05-04 11-39-53](https://user-images.githubusercontent.com/103068924/166658233-62922c6f-cbd6-4e33-8a51-c372b2a40605.png)
+
+Podemos ver como nos reporta que el nombre de la base de datos es `public`.
+
+Conociendo el nombre de la base de datos, mediante sqlmap vamos a tratar de numerar las tablas de la sbase de datos `public`:
+
+    sqlmap -D public --tables --url "http://10.129.25.145/dashboard.php?search=Elixir" --cookie="PHPSESSID=dcep13le13prvgcl8ub8cqgjva" --batch
+
+`-D` : Indica que vamos a especificar una base de datos. En nuestro caso `public`.
+
+`--tables` : Está variable nos reportará  las tablas de las base de datos que hemos especificado.
+
+![Captura de pantalla -2022-05-04 11-47-48](https://user-images.githubusercontent.com/103068924/166659388-bba12e75-baea-4740-b286-3e15b6579774.png)
+
+![Captura de pantalla -2022-05-04 11-48-13](https://user-images.githubusercontent.com/103068924/166659406-e96e459a-b484-47a3-a015-c66443682701.png)
+
+Sqlmap nos muestra que dentro de la base de datos `public` existe una tabla llamada `cars`.
+
+Nuevamente realizaremos otro escaneo especificando la tabla cars:
+
+    sudo sqlmap -D public -T cars --columns --url "http://10.129.25.145/dashboard.php?search=Elixir" --cookie="PHPSESSID=dcep13le13prvgcl8ub8cqgjva" --batch
  
- 
+`-T` : Indica que vamos a especificar las tablas. En nuestro caso `cars`.
+
+`--columns` : Nos reporta las columnas de la tabla especificada.
+
+![Captura de pantalla -2022-05-04 11-54-26](https://user-images.githubusercontent.com/103068924/166660428-a0c9b440-a411-448b-a888-4d2b8603cdaa.png)
+
+![Captura de pantalla -2022-05-04 11-48-13](https://user-images.githubusercontent.com/103068924/166660453-bd414d72-bd3f-4d5d-8dcc-d84ece33445c.png)
+
+Genial, vemos como nos a reportado la siguiente tabla:
+
+![Captura de pantalla -2022-05-04 11-54-40](https://user-images.githubusercontent.com/103068924/166660515-80da7ede-8a33-4ff3-8eb1-07fcbb78d547.png)
+
+Está tabla tampoco parece reportar nada innteresante así que trataremos de crear mediante Sqlmap una Shell interactiva.
+
+Para ello utilizaremos la siguiente variable de Sqlmap:
+
+    sudo sqlmap --os-shell --url "http://10.129.25.145/dashboard.php?search=Elixir" --cookie="PHPSESSID=dcep13le13prvgcl8ub8cqgjva"
+
+![Captura de pantalla -2022-05-04 12-05-16](https://user-images.githubusercontent.com/103068924/166662665-b4ff7717-f447-4007-a740-c87eb6a209ee.png)
+
+![Captura de pantalla -2022-05-04 12-05-41](https://user-images.githubusercontent.com/103068924/166662689-5efdcacb-4081-4c3f-9dc2-92b004aab684.png)
+
+Ya tenemos nuestra shell activa, vamos a investigar un poco para ver que
+archivos contiene. Primero mediante `ls` vamos a ver que tenemos en el directorio en el que nos encontramos.
         
