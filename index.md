@@ -29,10 +29,8 @@
 Herramientas útiles para la fase de reconocimiento, como reportes de SO o recopilación de puertos.
 
 1.[WichSystem](./Herramientas_y_Scripts/WichSystem.html)    
-2.[ExtractPorts](./Herramientas_y_Scripts/ExtractPorts.html)
-
+2.[ExtractPorts](./Herramientas_y_Scripts/ExtractPorts.html)    
 3.[mkt](./Herramientas_y_Scripts/mkt.html)
-
 
 ## Shells:
 Herramientas para crear shells inversas.
