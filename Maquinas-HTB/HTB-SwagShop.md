@@ -206,42 +206,56 @@ shell es independiente y no se nos caerá.
 Como vemos la shell nos permite utilizar `Cntrl + c` sin expulsarnos pero aún no nos permite utilizar `Cntrl + l` para
 limpiar la shell y si utilizamos un `nano`, vemos como tampoco aprovecha todo el monitor.
 
-
-
 Aún que con esta shell ya se podría realizar las tareas restantes perfectamente, voy a mostrar como solucionar estos dos pequeños inconvenientes y así tener la shell al 100% funcional.
 
 Para ello primero solucionaremos el problema del `Cntrl +l` de la siguiente manera, si realizamos un `echo $TERM` vemos que tiene el valor `dumb`
 y nosotros queremos que igual que nuestra shell, valga `xterm`:
 
     echo $TERM
-    
+ 
+ ![Captura de pantalla -2022-05-05 09-38-24](https://user-images.githubusercontent.com/103068924/166882012-75e7c979-d17f-49da-b452-1eabf8c29dfa.png)
+
+ 
 Vemos como nos reporta `dump`. Para cambiarlo introducimos el siguiente comando:
 
     TERM=xterm
-    
-Ahora ya podremos limpiar la pantalla mediante `Cntrl + l`. Bien, ya solo falta regular el ancho y la altura de nuesta shell, para ello primero debemos
-conocer que medidas tiene nuestro monitor para porder ajustarlo, para verlo, abrimos una terminal nueva desde nuestros directorio e intruducimos:
+  
+![Captura de pantalla -2022-05-05 09-38-46](https://user-images.githubusercontent.com/103068924/166882034-d54cce35-d4ea-4fb5-96fa-52525ab3c4d0.png)
+
+  
+Ahora ya podremos limpiar la pantalla mediante `Cntrl + l`. Bien, ya solo falta regular el ancho y la altura de nuesta
+shell, para ello primero debemos conocer que medidas tiene nuestro monitor para porder ajustarlo, para verlo, abrimos una terminal nueva desde nuestros directorio e intruducimos:
 
     stty size
+    
+![Captura de pantalla -2022-05-05 09-39-53](https://user-images.githubusercontent.com/103068924/166882118-30d9ed4c-860c-4570-a012-cb01760ab413.png)
+
     
 Copiamos los dos números. Ahora volvemos a la reverse shell y podemos ver mediante el mismo comando que las proporciones son mucho menores. Para ajustarlo ralizamos lo siguiente:
 
     stty size
+    
+![Captura de pantalla -2022-05-05 09-40-18](https://user-images.githubusercontent.com/103068924/166882143-f5956c0b-4082-47f9-ac74-d434ad66b244.png)
 
     stty rows 36 columns 133
+    
+![Captura de pantalla -2022-05-05 09-41-31](https://user-images.githubusercontent.com/103068924/166882227-b7499110-b554-4723-bd39-0a0f0a107bf9.png)
 
-    stty size
+### Búsqueda de la primera Flag
 
-Una vez tengamos todo ajustado, vamos a por las flags. Para conseguir la primera, simplemene nos dirigimos al directorio raiz:
+Una vez tengamos todo ajustado, vamos a por las flags. Para conseguir la primera, simplemene nos dirigimos al directorio raiz `/`:
 
     cd /
     
+![Captura de pantalla -2022-05-05 09-42-37](https://user-images.githubusercontent.com/103068924/166882396-a0bccd4e-d044-46f1-a1bb-eede2f31b9db.png)
+     
 Y vamos a la carpeta `/home/haris` donde econtraremos el primer archivo `user.txt` con la primera flag.    
     
+![Captura de pantalla -2022-05-05 09-43-43](https://user-images.githubusercontent.com/103068924/166882451-e9cfb587-c226-41ee-9de7-4db5ff5fd93e.png)
 
-![Captura de pantalla -2022-05-05 02-00-48](https://user-images.githubusercontent.com/103068924/166851070-587d9024-b2e2-4ef1-8a4c-2bf342c7b1a6.png)
+## Búsqueda de la segunda Flag
 
-## Escalada de Privilegios.
+# Escalada de Privilegios.
 
 Ahora nos faltaría autentificarnos como `root`. Tras comprobar que no funcionan las credenciales previamente recopiladas para conectarnos de forma
 directa como `root`, vamos a tratar de utilizarlas para conectarnos mediante
