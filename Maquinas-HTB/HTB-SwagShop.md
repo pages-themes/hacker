@@ -257,8 +257,8 @@ Y vamos a la carpeta `/home/haris` donde econtraremos el primer archivo `user.tx
 
 # Escalada de Privilegios.
 
-Ahora nos faltaría autentificarnos como `root`. Tras comprobar que no funcionan las credenciales previamente recopiladas para conectarnos de forma
-directa como `root`, vamos a tratar de utilizarlas para conectarnos mediante
+Ahora nos faltaría autentificarnos como `root`. Tras comprobar que no funcionan las credenciales previamente recopiladas en la base de datos mysql para conectarnos de forma
+directa como `root`, así que vamos a tratar de utilizarlas para conectarnos mediante
 `mysql`.
 
     mysql -uroot -p
@@ -291,9 +291,52 @@ Y ahora visualizamos las tablas:
 Vemos como se nos reportan un monton, pero una de las más interesantes es `admin_user`. Para ver mas información:
 
     describe admin_user;
+ 
+ ![Captura de pantalla -2022-05-05 10-03-15](https://user-images.githubusercontent.com/103068924/166887057-ffb1ee39-564e-4bbd-bdf8-d88f8c13c034.png)
+
+Vamos a ver que se nos reporta dentro de `username` y `password`:
+
+    select username,password from admin_user;
+
+![Captura de pantalla -2022-05-05 10-10-11](https://user-images.githubusercontent.com/103068924/166887447-06cbc0df-63c9-4eaa-a2ab-2e284b11654b.png)
+
+Vemos como nos reporta dos usuarios, `forme` que es el usuario que creamos nosotros a traves del script de python3 y `haris` el cual nos indica una password hasheada. Yo he intentado descifrar el hash de varias maneras y no he conseguido extraer la contraseña.
+
+Al no poder econtrar la password decidi buscar vulnerabilidades ya reportadas de nuestro sistema, que nos permita 
+registrarnos como sudo.
+
+Lo primero es saber si tenemos algún tipo se privilegios:
+
+    sudo -l
     
+![Captura de pantalla -2022-05-05 10-13-02](https://user-images.githubusercontent.com/103068924/166888310-2fda10fb-df1d-4c45-b8f8-8706909f2843.png)
+
+Vemos como nos permite ejecutar sin contraseña los siguientes
+    
+
+   
+Ahora buscaremos algún binario con el que poder aprovechar estos permisos y registrarnos como`root`. Para poder buscar estas vulnerabilidades por la red
+debemos conocer el sistema que estamos comprometiendo, para ello, podemos ver las especificaciones del sistema mediante el siguiente comando:
+
+    lsb_release -a
+    
+
+Podemos ver que nos econtramos frente ana distribución Ubuntu Xenial versión 16.04. Tras buscar un poco por internet encuentro el siguiente binario 
+que nos permite aprovechar los permisos anteriores y registranos como `root`.
+
+Aquí podeis ver la págian donde reportan el binario: [https://gtfobins.github.io/gtfobins/vi/](https://gtfobins.github.io/gtfobins/vi/)
     
 ![Captura de pantalla -2022-05-05 02-19-31](https://user-images.githubusercontent.com/103068924/166852292-ce2463a1-2c01-4e04-9ebf-1c157e38df85.png)
 
+Para poder introducir el binario y utilizar los permisos que tenemos, debemos realizar lo siguiente:
 
+
+    sudo /usr/bin/vi /var/www/html/* -c ':!/bin/sh' /dev/null
+    
+`sudo /usr/bin/vi /var/www/html/*` : Directorios donde tenemos los permisos.
+
+`-c ':!/bin/sh' /dev/null` : Binario para tratar de registranos como `root`.
+
+Genial, ya estamos como `root`. Podemos comprobarlo mediante el comando `whoami`. Finalmente para encontrar nuestra flag, nos dirigimos al directorio
+`/root` donde encontramos el archivo `root.txt` con nuestra ultima flag.
     
