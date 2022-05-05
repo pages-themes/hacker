@@ -1,5 +1,9 @@
 # **Hack The Box**
 
+# Máquinas
+
+[HRB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html)
+
 ## Starting Points
 
 [HTB-Oopsie](./Starting Point/HTB-Oopsie.html)
@@ -26,6 +30,7 @@ Herramientas útiles para la fase de reconocimiento, como reportes de SO o recop
 
 1.[WichSystem](./Herramientas_y_Scripts/WichSystem.html)    
 2.[ExtractPorts](./Herramientas_y_Scripts/ExtractPorts.html)
+3.[mkt](./Herramientas_y_Scripts/mkt.html)
 
 ## Shells:
 Herramientas para crear shells inversas.
