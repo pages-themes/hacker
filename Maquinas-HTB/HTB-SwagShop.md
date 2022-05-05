@@ -275,7 +275,7 @@ Una vez dentro de `mysql` vamos a ver las bases de datos:
     
 ![Captura de pantalla -2022-05-05 02-07-44](https://user-images.githubusercontent.com/103068924/166851562-c968d37b-05e9-4cb5-a7ab-30d3a4a27b0e.png)
  
-Vemos como existe una base de datos llamada como la máquina `swagsho`. Intentemos ver sus tablas. Para ello primero ingresamos a ella mediante `use`:
+Vemos como existe una base de datos llamada como la máquina `swagshop`. Intentemos ver sus tablas. Para ello primero ingresamos a ella mediante `use`:
 
     use swagshop;
     
