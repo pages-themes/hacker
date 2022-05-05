@@ -311,15 +311,20 @@ Lo primero es saber si tenemos algún tipo se privilegios:
     
 ![Captura de pantalla -2022-05-05 10-13-02](https://user-images.githubusercontent.com/103068924/166888310-2fda10fb-df1d-4c45-b8f8-8706909f2843.png)
 
-Vemos como nos permite ejecutar sin contraseña los siguientes
+Vemos como nos permite ejecutar como `root` sin contraseña los siguientes directorios: `/usr/bin/vi` y `/var/www/html/*`.
+ 
+    sudo /usr/bin/vi /var/www/html/*
     
+![Captura de pantalla -2022-05-05 10-13-50](https://user-images.githubusercontent.com/103068924/166892175-c475ec08-15f0-4494-929c-99734703eb22.png)
 
+![Captura de pantalla -2022-05-05 10-14-18](https://user-images.githubusercontent.com/103068924/166892210-554c4827-3990-4642-b2d0-9168f3bcf38c.png)
    
 Ahora buscaremos algún binario con el que poder aprovechar estos permisos y registrarnos como`root`. Para poder buscar estas vulnerabilidades por la red
 debemos conocer el sistema que estamos comprometiendo, para ello, podemos ver las especificaciones del sistema mediante el siguiente comando:
 
     lsb_release -a
-    
+
+![Captura de pantalla -2022-05-05 10-39-54](https://user-images.githubusercontent.com/103068924/166892361-80f52384-3136-425d-850c-29342a72a5f9.png)
 
 Podemos ver que nos econtramos frente ana distribución Ubuntu Xenial versión 16.04. Tras buscar un poco por internet encuentro el siguiente binario 
 que nos permite aprovechar los permisos anteriores y registranos como `root`.
@@ -330,13 +335,22 @@ Aquí podeis ver la págian donde reportan el binario: [https://gtfobins.github.
 
 Para poder introducir el binario y utilizar los permisos que tenemos, debemos realizar lo siguiente:
 
-
     sudo /usr/bin/vi /var/www/html/* -c ':!/bin/sh' /dev/null
+    
+![Captura de pantalla -2022-05-05 10-17-27](https://user-images.githubusercontent.com/103068924/166892568-06671371-d935-450f-90b3-92077917c43d.png)
     
 `sudo /usr/bin/vi /var/www/html/*` : Directorios donde tenemos los permisos.
 
 `-c ':!/bin/sh' /dev/null` : Binario para tratar de registranos como `root`.
 
-Genial, ya estamos como `root`. Podemos comprobarlo mediante el comando `whoami`. Finalmente para encontrar nuestra flag, nos dirigimos al directorio
-`/root` donde encontramos el archivo `root.txt` con nuestra ultima flag.
+![Captura de pantalla -2022-05-05 10-18-06](https://user-images.githubusercontent.com/103068924/166892617-156e59bb-4084-4bf3-a51b-899e4b15f562.png)
+
+Genial, ya estamos como `root`. Podemos comprobarlo mediante el comando `whoami`. Finalmente para encontrar nuestra flag, nos dirigimos al directorio `/root` donde encontramos el archivo `root.txt` con nuestra ultima flag.
+
+![Captura de pantalla -2022-05-05 10-18-19](https://user-images.githubusercontent.com/103068924/166892662-41b701a5-2f48-4aa0-a469-613deb2e8f90.png)
+
+![Captura de pantalla -2022-05-05 10-19-29](https://user-images.githubusercontent.com/103068924/166892692-9ec8c35d-bf9f-4661-9383-c883243fbcd1.png)
+
+
+
     
