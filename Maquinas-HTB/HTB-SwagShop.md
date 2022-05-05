@@ -7,9 +7,14 @@ En primer luegar nos creamos un directorio con el nombre de la máquina desde el
 
     sudo mkdir SwagShop
     
-Ahora mediante la función `mkt` que tengo previamente definida en la `zhshrc` crearemos nuestros directorio de trabajo:
+Ahora mediante la función [`mkt`](../Herramientas_y_Scripts/mkt.html) que tengo previamente definida en la `zhshrc` crearemos nuestros directorio de trabajo:
 
     sudo mkt
+
+Esta función está definida para crearnos cuatro directorios (`nmap`, `content`, `exploits` y `scripts`) desde los cuales poder trabajar a la hora de
+realizar las máquinas de HTB.
+
+![Captura de pantalla -2022-05-05 08-41-27](https://user-images.githubusercontent.com/103068924/166874377-678da3d9-a60b-4910-ba2b-e73d5f378dd0.png)
     
 ### PING
 
@@ -218,6 +223,5 @@ Vemos como se nos reportan un monton, pero una de las más interesantes es `admi
     
 ![Captura de pantalla -2022-05-05 02-19-31](https://user-images.githubusercontent.com/103068924/166852292-ce2463a1-2c01-4e04-9ebf-1c157e38df85.png)
 
- das
 
     
