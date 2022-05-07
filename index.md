@@ -38,7 +38,7 @@ Herramientas para crear shells inversas.
 [php-reverse-shell.php](./Herramientas_y_Scripts/php-reverse-shell.html)
 
 ## Hash:
-Herramientas de reconocimiento y des encriptación de hash.
+Herramientas de reconocimiento y desencriptación de hash.
 
 1.[John the Ripper](./Herramientas_y_Scripts/john_the_ripper.html)    
 2.[HashID](./Herramientas_y_Scripts/HashId.html)    
@@ -51,6 +51,12 @@ aleatorios a las entradas de un programa de ordenador. Entonces se monitorizan l
 para encontrar potenciales filtraciones de memoria.
 
 [Wfuzz](./Herramientas_y_Scripts/Wfuzz.html)
+
+## Phishing:
+Phishing es un término informático que distingue a un conjunto de técnicas que persiguen el engaño a una víctima ganándose su confianza haciéndose
+pasar por una persona, empresa o servicio de confianza, para manipularla y hacer que realice acciones que no debería realiza.
+
+[Setoolkit](./Herramientas_y_Scripts/Setoolkit.html)
 
 ## WordPress:
 Escaneo de vulnerabilidades en páginas WordPress.
