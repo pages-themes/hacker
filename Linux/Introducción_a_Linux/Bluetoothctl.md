@@ -47,7 +47,8 @@ Una vez conectados podemos salir de la shell simplemente escribiendo `exit`.
 Para solucionar este error simplemente volvemos activar el controlador:
 
     bluetoothctl power on
-    
+       
+![Captura de pantalla -2022-05-10 00-15-20](https://user-images.githubusercontent.com/103068924/167509618-6907f818-fe01-4c24-a917-b73ed4a1dfe2.png)
 
 
 
