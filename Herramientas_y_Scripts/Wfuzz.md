@@ -141,6 +141,8 @@ Cada palabra clave FUZZ debe tener su carga útil (payload) correspondiente. Hay
 `-w` : Especifica un diccionario (Lista de palabras).
 
 `--hc` : Omite los resultados HTTP especificados, en este caso las páginas con servicios 404 (servidor no encontrado) y 403 (sin permisos de acceso).
+
+Se puede encontr mucha más información sobre esta herramienta en su página: [https://wfuzz.readthedocs.io/en/latest/user/getting.html](https://wfuzz.readthedocs.io/en/latest/user/getting.html)
    
    
 
