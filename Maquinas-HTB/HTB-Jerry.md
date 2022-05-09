@@ -1,5 +1,7 @@
 ![Captura de pantalla -2022-05-09 09-36-58](https://user-images.githubusercontent.com/103068924/167362483-2fb9697d-8b28-490a-8f61-2a60dcf94c31.png)
 
+# HTB-Jerry
+
 En primer lugar, nos creamos un directorio con el nombre de la máquina desde el que trabajaremos:
 
     sudo mkdir Jerry
@@ -10,6 +12,8 @@ Ahora, mediante la función [`mkt`](../Herramientas_y_Scripts/mkt.html) que teng
 
 Esta función está definida para crearnos cuatro directorios (`nmap`, `content`, `exploits` y `scripts`) desde los cuales poder trabajar a la hora de
 realizar las máquinas de HTB.
+
+## Fase de Reconocimiento:
 
 Ejecutamos un `ping` y vemos como nos reporta un ttl=127, por tanto, ya sabemos que estamos frente una máquina Windows.
 
@@ -59,6 +63,8 @@ probaremos será especificar el puerto en el que corre el servicio, por tanto, i
 
 ![Captura de pantalla -2022-05-07 15-09-34](https://user-images.githubusercontent.com/103068924/167368016-77a414e6-3ce0-4ee2-ae34-d79d955ca882.png)
 
+## Fase de Inrusión:
+
 Genial ya nos carga la página, vemos que se trata de la página oficial de un programa llamado `Tomcat`. Lo siguiente que vamos a probar, es tratar de
 acceder al directorio `./manager/html`.
 
@@ -92,6 +98,8 @@ Las credenciales funcionan y nos lleva hasta una página que parece gestionar ap
 
 Tras revisar la página vemos que nos permite subir archivos, así que vamos a tratar de buscar alguna herramienta que nos permita crear una
 shell inversa desde la cual poder interactuar con la máquina.
+
+## Creación de una Reverse Shell mediante MsfVenom:
 
 Mediante `msfvenom` podemos tratar de comprobar una gran cantidad de herramientas:
 
