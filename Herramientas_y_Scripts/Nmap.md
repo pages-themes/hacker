@@ -8,7 +8,7 @@ Este software posee varias funciones para sondear redes de computadores, incluye
 
 ### Escaneo Básico:
 
-           nmap -p- --open -T5 -v -n [Ip]
+    nmap -p- --open -T5 -v -n [Ip]
   
 `-p-` : Escanea todo el rango de puertos.
   
