@@ -39,7 +39,7 @@ Para conectarnos con un dispositivo:
 
     connect [Núm. MAC]
     
-El `número MAC` es el número que corresponde con el dispositivo que se nos muestra en el escaneo. 
+El `número MAC` es el número que corresponde con el dispositivo que se nos muestra en el escaneo.
 
 Una vez conectados podemos salir de la shell simplemente escribiendo `exit`.
 
