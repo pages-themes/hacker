@@ -30,7 +30,7 @@ En primer lugar, debemos asegurar que estamos conectados a la víctima y tratar 
   
 `--open` : Solo nos mostrará puertos con el estatus abierto.
              
-`-T5` : Controla el tiempo y el rendimiento del escaneo donde 1 es el más lento  y 5 el más rápido.
+`-T5` : Controla el tiempo y el rendimiento del escaneo donde 1 es el más lento y 5 el más rápido.
              
 `-v` : Verbose. Recopila los puertos abiertos por TCP y los reporta por consola.
            
@@ -62,8 +62,8 @@ En primer lugar, debemos asegurar que estamos conectados a la víctima y tratar 
   
 ![Captura de pantalla -2022-05-07 17-52-38](https://user-images.githubusercontent.com/103068924/167393829-bc058509-3ec1-4eab-8997-57e2afb97bc7.png)
 
-Vemos que en el puerto 21/tcp corre un servicio ftp con la versión `vsftpd 2.3.4`. Vamos a tratar de buscar alguna vulnerabilidad para está versión 
-en concreto. Para realizar la busqueda utilizaremos la herramienta `searchsploit`. En caso de no tenerlo lo instalamos:
+Vemos que en el puerto 21/tcp corre un servicio ftp con la versión `vsftpd 2.3.4`. Vamos a tratar de buscar alguna vulnerabilidad para esta versión 
+en concreto. Para realizar la búsqueda utilizaremos la herramienta `searchsploit`. En caso de no tenerlo lo instalamos:
 
     sudo apt install searchsploit
     
@@ -74,7 +74,7 @@ Luego lo ejecutamos y le especificamos la versión para que nos busque el `explo
 ![Captura de pantalla -2022-05-07 17-52-16](https://user-images.githubusercontent.com/103068924/167394414-f5e72232-7c5b-44bb-8326-7b580addf1b0.png)
 
 Vemos como para la versión 2.3.4 existe una herramienta llamada `Backdoor Command Execution (Metasploit)` alojado en el PATH `unix/remote/17491.rb`.
-Veamos el código a ver que información utiliza para vulnerar está versio:
+Veamos el código a ver que información utiliza para vulnerar está versión:
 
     searchsploit -x unix/remote/17491.rb
     
@@ -84,8 +84,8 @@ Veamos el código a ver que información utiliza para vulnerar está versio:
 
 ![Captura de pantalla -2022-05-09 13-07-35](https://user-images.githubusercontent.com/103068924/167397813-ccae4253-80e9-43c6-aea4-28fa99ef8efc.png)
 
-Esta herramienta por lo que parece, utiliza una serie de cadenas en el usuario para tratar de ganar acceso por el puerto 6200. Yo lo he intentado 
-manualmente y mediante `Metasploit` y no he podido acceder mediante está herramienta.
+Esta herramienta, por lo que parece, usa una serie de cadenas en el usuario para tratar de ganar acceso por el puerto 6200. Yo lo he intentado 
+manualmente y mediante `Metasploit` y no he podido acceder mediante esta herramienta.
 
 ![Captura de pantalla -2022-05-09 13-01-26](https://user-images.githubusercontent.com/103068924/167398192-d205b407-614e-439e-aa2c-e18d3a6060e3.png)
 
@@ -93,7 +93,7 @@ Al ver que esto no funcionaba, busque otro vector de ataque y vemos que por los 
 
 ![Captura de pantalla -2022-05-09 13-17-47](https://user-images.githubusercontent.com/103068924/167399970-c676bcde-785d-4bea-936f-eaed02ccc5dc.png)
 
-Vemos tambien que en el puerto 445 nos indiaca la versión `3.0.20`, así que buscamos sobre este servicio:
+Vemos también que en el puerto 445 nos indica la versión `3.0.20`, así que buscamos sobre este servicio:
 
     searchsploit samba 3.0.20
         
@@ -101,7 +101,7 @@ Vemos tambien que en el puerto 445 nos indiaca la versión `3.0.20`, así que bu
 
 ## Metasploit
 
-Vamos a tratar de acceder mediante `Metasploit` utilizando la herramienta reportada anteriormente. En primer lugar ejecutamos `metasploit`:
+Vamos a tratar de acceder mediante `Metasploit` empleando la herramienta reportada anteriormente. En primer lugar, ejecutamos `Metasploit`:
 
     msfconsole
     
@@ -111,16 +111,16 @@ Buscamos la versión de Samba para asegurarnos que tenemos la herramienta y ver 
     
 ![Captura de pantalla -2022-05-09 13-30-56](https://user-images.githubusercontent.com/103068924/167402968-186b60cc-f240-4690-9d65-74faea05daa5.png)
 
-Ahora mediante la variable `options` podemos ver los campos que tenemos que rellenar para poder realizar el ataque.
+Ahora, mediante la variable `options` podemos ver los campos que tenemos que rellenar para poder realizar el ataque.
 
 ![Captura de pantalla -2022-05-09 13-32-08](https://user-images.githubusercontent.com/103068924/167403226-78c7e9b2-a4ab-48a2-b9bd-c0cff8e697e5.png)
 
-Para cambiar los campos utilizamos la variable `set` y el campo que deseamos cambiar. Primero introduciremos el localhost `LHOST`, es nuestra IP o en este caso
+Para cambiar los campos empleamos la variable `set` y el campo que deseamos cambiar. Primero introduciremos el localhost `LHOST`, es nuestra IP o en este caso
 la IP de la VPN de Hack the Box:
 
 ![Captura de pantalla -2022-05-09 13-35-27](https://user-images.githubusercontent.com/103068924/167403416-26917d45-b54e-4539-90d9-1d40a43bc32e.png)
 
-Ahora especificamos el puero de escucha, yo voy a utilizar el `8080`:
+Ahora especificamos el puerto de escucha, yo voy a utilizar el `8080`:
 
 ![Captura de pantalla -2022-05-09 13-33-13](https://user-images.githubusercontent.com/103068924/167403656-cf7c6037-69b3-46f5-92cc-69c1d2d6126f.png)
 
@@ -129,7 +129,7 @@ Ahora especificaremos de la misma manera el remote host `RHSOT` en este caso la 
 ![Captura de pantalla -2022-05-09 13-34-53](https://user-images.githubusercontent.com/103068924/167403867-17ecf37e-5e8a-4e41-9403-ff6d701b08b2.png)
 
 Y finalmente el puerto abierto `RPORT` por el que corre el servicio Samba, en este caso el puerto `139`, este campo se suele
-rellenar de forma autimática.
+rellenar de forma automática.
 
 ![Captura de pantalla -2022-05-09 13-52-53](https://user-images.githubusercontent.com/103068924/167404426-44f0a7d5-57c6-475a-9c11-8079cb1492b4.png)
 
@@ -141,7 +141,7 @@ Y finalmente ejecutamos Metasploit:
 
 Vemos como nos crea la shell y que a de más estamos registrados como `root`.
 
-Finalmente como estamos registrados como `root` podemos buscar las flags sin ningún problema. Vemos que la flag del usuario la 
+Finalmente, como estamos registrados como `root` podemos buscar las flags sin ningún problema. Vemos que la flag del usuario la 
 podemos encontrar en el directorio `/home/makis/user.txt`.
 
 ![Captura de pantalla -2022-05-09 13-39-09](https://user-images.githubusercontent.com/103068924/167404984-24576d4e-346f-4162-9f66-57510b3f9616.png)
