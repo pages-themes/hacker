@@ -4,6 +4,8 @@
 
 [HTB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html)
 
+[HTB-Jerry](./Maquinas-HTB/HTB-Jerry.html)
+
 ## Starting Points
 
 [HTB-Oopsie](./Starting Point/HTB-Oopsie.html)
