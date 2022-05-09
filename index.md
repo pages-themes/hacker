@@ -6,6 +6,9 @@
 
 [HTB-Jerry](./Maquinas-HTB/HTB-Jerry.html)
 
+[HTB-Lame](./Maquinas-HTB/HTB-Lame.html)
+
+
 ## Starting Points
 
 [HTB-Oopsie](./Starting Point/HTB-Oopsie.html)
