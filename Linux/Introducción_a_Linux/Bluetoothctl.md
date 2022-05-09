@@ -8,10 +8,9 @@ Para poder abrir el gestor de bluetooth desde la terminal de Linux, utilizaremos
     
 ![Captura de pantalla -2022-05-01 13-33-44](https://user-images.githubusercontent.com/103068924/166144293-751d6490-cb12-48af-bffe-a258dbf4b8a3.png)
 
-![Captura de pantalla -2022-05-01 13-34-37](https://user-images.githubusercontent.com/103068924/166144302-ded1cb19-2fe8-40c8-8605-054d7662ef4e.png)
+![Captura de pantalla -2022-05-01 13-34-37](https://user-images.githubusercontent.com/103068924/167509081-4b8466f9-5b40-4b67-9804-5694653dfff8.png)
 
-Para ver todos los comandos disponibles podemos ejecutar el siguiente comando o una vez dentro de la shell
-de bluetoothctl escribir `help`:
+Para ver todos los comandos disponibles podemos ejecutar el siguiente comando o una vez dentro de la shell de bluetoothctl escribir `help`:
 
     bluetoot help
 
@@ -23,7 +22,7 @@ Para poder ver las epecificaciones de nuestro administrador Bluetooth:
 
     show
     
- ![Captura de pantalla -2022-05-01 13-45-24](https://user-images.githubusercontent.com/103068924/166144368-c6eabdca-5f32-44aa-90b1-36eb7d25175d.png)   
+![Captura de pantalla -2022-05-01 13-45-24](https://user-images.githubusercontent.com/103068924/167509402-bffae03e-221f-4892-b29d-b283207ba20f.png)
 
 Para realizar una búsqueda de los dispositivos:
 
