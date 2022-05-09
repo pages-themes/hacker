@@ -16,7 +16,7 @@ de seguridad web en diferentes componentes de la aplicación web, como: parámet
 ## Diccionarios y Listas de Palabras:
 
 En caso de utilizar Kali Linux o ParroOS suelen tener incluidos el repositorio `wordlists` el cual incluye una variedad de diccionarios o listas de
-palabras de dinstintos tamaños. Este repositorio se encuentra en el direcctorio `/usr/share/wordlists`. 
+palabras de distintos tamaños. Este repositorio se encuentra en el directorio `/usr/share/wordlists`. 
 
 ![Captura de pantalla -2022-05-09 06-58-59](https://user-images.githubusercontent.com/103068924/167343931-14b023c8-3260-44da-9b50-62586e56db8f.png)
 
@@ -26,13 +26,13 @@ palabras de dinstintos tamaños. Este repositorio se encuentra en el direcctorio
 
 ![Captura de pantalla -2022-05-09 07-03-15](https://user-images.githubusercontent.com/103068924/167344175-48c8a65e-f043-4efc-9c4d-a00d97b83830.png)
 
-Para descargar el repositorio con todos los diccionarios simplemente ejecutamos lo sisguiente:
+Para descargar el repositorio con todos los diccionarios simplemente ejecutamos lo siguiente:
 
     sudo apt install wordlists
     
 ## Payloads/Cargas Útiles:
 
-Wfuzz se basa en un concepto simple: reemplaza cualquier referencia a la palabra clave FUZZ por el valor de una carga útil determinada. Una `carga útil` más conocida como `payload` en Wfuzz es una fuente de datos de entrada y se especifica meidiante `-z`:
+Wfuzz se basa en un concepto simple: reemplaza cualquier referencia a la palabra clave FUZZ por el valor de una carga útil determinada. Una `carga útil` más conocida como `payload` en Wfuzz es una fuente de datos de entrada y se especifica mediante `-z`:
 
 Las cargas útiles disponibles se pueden listar ejecutando:
 
@@ -50,7 +50,7 @@ Este último se puede filtrar usando el parámetro `--slice`:
     
 ![Captura de pantalla -2022-05-09 07-34-57](https://user-images.githubusercontent.com/103068924/167346718-14049e7c-e687-4376-bc97-21fa0a000df2.png)
     
-## Optener ayuda:
+## Obtener ayuda:
 
 Use el interruptor `–h` y `–help` para obtener el uso de ayuda básica y avanzada respectivamente.
 
@@ -73,7 +73,7 @@ Wfuzz permite filtrar según el código de respuesta HTTP y la longitud de la in
 
 Los siguientes parámetros de la línea de comandos se pueden usar para ocultar ciertas respuestas HTTP `–hc`, `–hl`, `–hw`, `–hh`. 
 
-El comando `--hc` filtra los recursos web desconocidos por el servidor web ( http://en.wikipedia.org/wiki/HTTP_404 ), básicamente suprime las ṕaginas 
+El comando `--hc` filtra los recursos web desconocidos por el servidor web ( http://en.wikipedia.org/wiki/HTTP_404 ), básicamente suprime las páginas 
 que reportar `error 404`:
 
     wfuzz -w wordlist/general/common.txt --hc 404 http://testphp.vulnweb.com/FUZZ
@@ -82,7 +82,9 @@ Se pueden especificar múltiples valores, por ejemplo, la siguiente ejecución d
 
     wfuzz -w wordlist/general/common.txt --hc 404,403 http://testphp.vulnweb.com/FUZZ
     
-Las líneas, palabras o caracteres son útiles cuando buscamos recursos con el mismo código de estado HTTP. Por ejemplo, es un comportamiento común (a veces debido a una configuración incorrecta) que los servidores web devuelvan una página de error personalizada con un código de respuesta 200, esto se conoce como 404 suave.
+Las líneas, palabras o caracteres son útiles cuando buscamos recursos con el mismo código de estado HTTP.
+
+Por ejemplo, es un comportamiento común (a veces debido a una configuración incorrecta) que los servidores web devuelvan una página de error personalizada con un código de respuesta 200, esto se conoce como `soft 404`.
 
 # Ejecución Básica:
 
@@ -118,18 +120,29 @@ Cada línea proporciona la siguiente información:
 
 # Ejecución Carga Útil:
 
-Cada palabra clave FUZZ debe tener su carga ùtil (payload) correspondiente. Hay varias formas equivalentes de especificar una `payload`:
+Cada palabra clave FUZZ debe tener su carga útil (payload) correspondiente. Hay varias formas equivalentes de especificar una `payload`:
 
 ### Ejecución Básica:
 
     wfuzz -w [Ruta del Diccionario] [URL Víctima]
     
+`-w` : Especifica un diccionario (Lista de palabras).
+    
 ### Ejecución definiendo el valor del Payload:
 
-    wfuzz -z file,wordlist/general/common.txt http://testphp.vulnweb.com/FUZZ
+    wfuzz -z [Ruta del Diccionario] [URL Víctima]
 
 `-z` : Especifica el valor del parámetro predeterminado del payload.
 
+### Ejecución filtrada omitiendo servicios web desconocidos:
+
+    wfuzz -w [Ruta del Diccionario] --hc 404,403 [URL Víctima]
+    
+`-w` : Especifica un diccionario (Lista de palabras).
+
+`--hc` : Omite los resultados HTTP especificados, en este caso las páginas con servicios 404 (servidor no encontrado) y 403 (sin permisos de acceso).
+   
+   
 
 
 
