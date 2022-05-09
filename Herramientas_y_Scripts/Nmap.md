@@ -55,8 +55,8 @@ De esta manera podremos revisar los puertos que estaban abiertos en cualquier mo
 
 `--min-rate` : Controla directamente la tasa de escaneo. Nmap intentará mantener la velocidad de envío en 5000 paquetes por segundo o más.
 
-`-v` : Verbose. Recopila los puertos abiertos por TCP y los reporta por consola.
-             
+`-vvv` : Triple verbose. Recopila los puertos abiertos por TCP y los reporta por consola. Cuanto más verbose más información reporta mientras se realiza el escaneneo.
+
 `-n` : Anula la resolución DNS.
 
 
