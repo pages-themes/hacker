@@ -19,9 +19,9 @@
 
 
  Para verificar la conexión y tener una primera toma de
- contacto utilizaremos el comando 'ping'.
+ contacto utilizaremos el comando `ping`.
  
-           ping [Ip Víctima]
+    ping [Ip Víctima]
 
  Mediante este comando podemos obtener la siguiente
  información:
@@ -36,7 +36,7 @@
   
 ---
      
-## NMAP 
+## [NMAP](../Herramientas_y_Scripts/Nmap.html) 
   
   Tras conocer la máquina a la que nos enfrentamos
   pasaremos analizar los protocolos tcp/udp.
@@ -48,54 +48,50 @@
   será un análisis de todos los puertos abiertos del
   protocolo tcp.
   
-            nmap -p- --open -T5 -v -n [Ip]
+    nmap -p- --open -T5 -v -n [Ip]
   
-  -p- :        Escanea todo el rango de puertos.
+`-p-` : Escanea todo el rango de puertos.
   
-  --open :     Solo nos mostrará puertos con el estatus
-               abierto.
+`--open` : Solo nos mostrará puertos con el estatus abierto.
              
-  -T5 :        Controla el tiempo y el rendimiento del
-               escaneo donde 1 es el más lento  y 5 el
-               más rápido.
+`-T5` : Controla el tiempo y el rendimiento del escaneo donde 1 es el más lento  y 5 el más rápido.
              
-  -v :         Verbose. Recopila los puertos abiertos por 
-               TCP y los reporta por consola.
-             
-  -n :         Anula la resolución DNS.
+`-v` : Verbose. Recopila los puertos abiertos por TCP y los reporta por consola.
+           
+`-n` : Anula la resolución DNS.
   
   Ahora para poder trabajar mejor, exportaremos una lista
-  en formato Grepeable al archivo 'allPorts'
+  en formato Grepeable al archivo `allPorts`.
   
-             nmap -p- --open -T5 -v -n [Ip] -oG allPorts
+    nmap -p- --open -T5 -v -n [Ip] -oG allPorts
   
-  -oG :         Exportar los resultados en formato grepeable.
+`-oG` : Exportar los resultados en formato grepeable.
   
-  allPorts :    Nombre del archivo. Si no existe lo creará.
+`allPorts` : Nombre del archivo. Si no existe lo creará.
   
   De esta manera podremos revisar los puertos que estaban
   abiertos en cualquier momento.  
 
 ---
   
-## NMAP 
+## [NMAP](../Herramientas_y_Scripts/Nmap.html)
 
-ESCANEO EXHAUSTIVO: 
+### ESCANEO EXHAUSTIVO: 
  
  Tras conocer los puertos TCP abiertos, realizaremos un 
  segundo escaneo enfocado en los puertos abiertos para ver
  la información que nos reportan y exportarlo en formato
  nmap al archivo 'targed'.
  
-           nmap -sC -sV -p[Port1,Port2] -oN targed  
+    nmap -sC -sV -p[Port1,Port2] -oN targed  
    
- -sC :   Lanza scrips básicos de reconocimiento.
+`-sC` : Lanza scrips básicos de reconocimiento.
  
- -sV :   Localiza la versión y servicio de los puertos definidos. 
+`-sV` : Localiza la versión y servicio de los puertos definidos. 
  
- -p :    Puertos a escanear.    Ej:  -p22,80
+`-p` : Puertos a escanear.    Ej:  -p22,80
  
- -oN :   Reporta los resultados en formato nmap al archivo 'targed'.
+`-oN` : Reporta los resultados en formato nmap al archivo `targed`.
  
 ---
  
@@ -106,9 +102,9 @@ ESCANEO EXHAUSTIVO:
   el gestor de contenido de la Ip. Nos reportará
   información varia del sistema.
   
-          whatweb http://[Ip]
+    whatweb http://[Ip]
   
-          whatweb http://[Host]
+    whatweb http://[Host]
   
   
   
