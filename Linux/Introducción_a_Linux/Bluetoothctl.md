@@ -43,4 +43,12 @@ El `número MAC` es el número que corresponde con el dispositivo que se nos mue
 
 Una vez conectados podemos salir de la shell simplemente escribiendo `exit`.
 
+### Failed to start discovery: org.bluez.Error.NotReady
+
+Para solucionar este error simplemente volvemos activar el controlador:
+
+    bluetoothctl power on
+    
+
+
 
