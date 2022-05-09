@@ -43,3 +43,24 @@ De esta manera podremos revisar los puertos que estaban abiertos en cualquier mo
  
 `-oN` : Reporta los resultados en formato nmap al archivo `targed`.
 
+### Escaneo Rápido Completo:
+
+    nmap -p- --open -sS --min-rate 5800 -vvv -n -Pn [Ip Vícitma] -oG allPorts
+     
+`-p-` : Escanea todo el rango de puertos.
+  
+`--open` : Solo nos mostrará puertos con el estatus abierto.
+
+`-sS` : El escaneo SYN realizar rápidamente, escaneando miles de puertos por segundo en una red rápida que no se ve obstaculizada por firewalls intrusivos.
+
+`--min-rate` : Controla directamente la tasa de escaneo. Nmap intentará mantener la velocidad de envío en 5000 paquetes por segundo o más.
+
+`-v` : Verbose. Recopila los puertos abiertos por TCP y los reporta por consola.
+             
+`-n` : Anula la resolución DNS.
+
+
+
+
+
+
