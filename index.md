@@ -76,7 +76,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
 [SQLmap](./Herramientas_y_Scripts/SQLmap.html)
 
 ---
-```
+~~~
 <script src="https://utteranc.es/client.js"
         repo="gestion-comentarios"
         issue-term="pathname"
@@ -84,6 +84,5 @@ Escaneo de vulnerabilidades en páginas WordPress.
         crossorigin="anonymous"
         async>
 </script>
-```
-
+~~~
 ---
