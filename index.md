@@ -1,10 +1,7 @@
-# **Hack The Box**
-
-## Pestañas {.tabset}
+## **Hack The Box** {.tabset}
 
 ### Máquinas
 
-```{r}
 [HTB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html)
 
 [HTB-Jerry](./Maquinas-HTB/HTB-Jerry.html)
@@ -12,17 +9,14 @@
 [HTB-Lame](./Maquinas-HTB/HTB-Lame.html)
 
 [HTB-Cap](./Maquinas-HTB/HTB-Cap.html)
-```
 
 ### Starting Points
 
-```{r}
 [HTB-Oopsie](./Starting Point/HTB-Oopsie.html)
 
 [HTB-Responder](./Starting Point/HTB-Responder.html)
 
 [HTB-Vaccine](./Starting Point/HTB-Vaccine.html)
-```
 
 ---
 # Artículos
