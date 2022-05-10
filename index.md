@@ -1,4 +1,4 @@
-## **Hack The Box** {.tabset}
+## Hack The Box {.tabset}
 
 ### Máquinas
 
