@@ -80,16 +80,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="/libs/katex/katex.min.css">
-     
   
-  
-  <link rel="stylesheet" href="/css/franklin.css">
-  <link rel="stylesheet" href="/css/basic.css">
-  <link rel="icon" href="/assets/favicon.png">
-   <title>Time average bounds via Sum of Squares</title>  
 </head>
 <body>
 
