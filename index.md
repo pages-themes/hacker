@@ -1,13 +1,10 @@
 # Hack The Box
 
-|## Máquinas:                                      |## Starting Points                                   |
+|**Máquinas**                                      |**Starting Points**                                  |
 |:-------------------------------------------------|:----------------------------------------------------|
 |[HTB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html)  |[HTB-Oopsie](./Starting Point/HTB-Oopsie.html)       |
-|                                                  |                                                     |
 |[HTB-Jerry](./Maquinas-HTB/HTB-Jerry.html)        |[HTB-Responder](./Starting Point/HTB-Responder.html) |
-|                                                  |                                                     |
 |[HTB-Lame](./Maquinas-HTB/HTB-Lame.html)          |[HTB-Vaccine](./Starting Point/HTB-Vaccine.html)     |
-|                                                  |                                                     |
 |[HTB-Cap](./Maquinas-HTB/HTB-Cap.html)            |                                                     |
 
 ## Starting Points
