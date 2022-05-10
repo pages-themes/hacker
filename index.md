@@ -76,7 +76,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
 [SQLmap](./Herramientas_y_Scripts/SQLmap.html)
 
 ---
-
+---
 
 <html lang="en">
 <head>
@@ -92,7 +92,8 @@ Escaneo de vulnerabilidades en páginas WordPress.
     async>
 </script>
   
-  
+---  
+---  
   
 <div class="page-foot">
   <div class="copyright">
