@@ -1,16 +1,14 @@
 # Hack The Box
 
----
-Máquinas: [HTB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html) [HTB-Jerry](./Maquinas-HTB/HTB-Jerry.html) [HTB-Lame](./Maquinas-HTB/HTB-Lame.html) [HTB-Cap](./Maquinas-HTB/HTB-Cap.html) 
----
-
-[HTB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html)
-
-[HTB-Jerry](./Maquinas-HTB/HTB-Jerry.html)
-
-[HTB-Lame](./Maquinas-HTB/HTB-Lame.html)
-
-[HTB-Cap](./Maquinas-HTB/HTB-Cap.html)
+|Máquinas:                                         |Starting Points                                      |
+|:-------------------------------------------------|:----------------------------------------------------|
+|[HTB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html)  |[HTB-Oopsie](./Starting Point/HTB-Oopsie.html)       |
+|                                                  |                                                     |
+|[HTB-Jerry](./Maquinas-HTB/HTB-Jerry.html)        |[HTB-Responder](./Starting Point/HTB-Responder.html) |
+|                                                  |                                                     |
+|[HTB-Lame](./Maquinas-HTB/HTB-Lame.html)          |[HTB-Vaccine](./Starting Point/HTB-Vaccine.html)     |
+|                                                  |                                                     |
+|[HTB-Cap](./Maquinas-HTB/HTB-Cap.html)            |                                                     |
 
 ## Starting Points
 
@@ -73,7 +71,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 [WPScan](./Herramientas_y_Scripts/WPScan.html)
 
-## SQL: ### [SQLmap](./Herramientas_y_Scripts/SQLmap.html)
+## SQL: [SQLmap](./Herramientas_y_Scripts/SQLmap.html)
 
 ---
 ---
