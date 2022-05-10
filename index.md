@@ -1,6 +1,6 @@
-## Hack The Box {.tabset}
+# Hack The Box {.tabset}
 
-### Máquinas
+## Máquinas
 
 [HTB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html)
 
@@ -10,7 +10,7 @@
 
 [HTB-Cap](./Maquinas-HTB/HTB-Cap.html)
 
-### Starting Points
+## Starting Points
 
 [HTB-Oopsie](./Starting Point/HTB-Oopsie.html)
 
