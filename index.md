@@ -1,8 +1,9 @@
 # Hack The Box
-#{.tabset}
 
-## Máquinas
+---
+Máquinas: [HTB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html)
 
+---
 [HTB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html)
 
 [HTB-Jerry](./Maquinas-HTB/HTB-Jerry.html)
