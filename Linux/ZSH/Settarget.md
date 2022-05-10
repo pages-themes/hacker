@@ -16,13 +16,13 @@ Copiamos la función. Nos dirigimos hasta nuestro directorio de usuario `/home/U
 
     nano .zshrc
     
-Una vez pegado, guardamos con `Cntrl + o` y salimos `Cntrl +x`.
+Una vez pegado, guardamos con `Cntrl + o` y salimos `Cntrl + x`.
 
 Para ejecutar la función simplemente le especificamos la Ip y el nombre de la máquina de Hack the Box:
 
     settarget [Ip Máquina] [Nombre de la Máquina]
 
-En caso de no ejecutarse mediante `root`. Nos registramos como `roo` y repetimos la misma operación.
+En caso de no ejecutarse mediante `root`. Nos registramos como `root` y repetimos la misma operación.
 
 
     
