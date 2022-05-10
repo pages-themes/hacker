@@ -103,7 +103,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 <div class="page-foot">
   <div class="copyright">
-    &copy; F1r0x. Last modified: February 22, 2021. Built with <a href="https://github.com/tlienart/Franklin.jl">F1r0x</a>.
+    &copy; F1r0x. Última Modificación: Mayo 10, 2022.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
