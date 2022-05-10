@@ -77,7 +77,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 
 
-[Index2](./Index2.html)
+[Index1](./Index1.html)
 
 
 
