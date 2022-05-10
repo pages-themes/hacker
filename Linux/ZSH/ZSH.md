@@ -59,4 +59,8 @@ La ZSH funciona leyendo el archivo `.zshenv` a menos que se especifique el argum
 `.zlogin` : Este archivo es similar a .zprofile. No debe contener ningún comando que altere el entorno. 
 
 `.zlogout` : Se lee cuando se cierra la sesión de la shell. Puede usarse para configurar los comandos que se ejecutan cuando se cierra el shell.
+
+# Funciones:
+
+### [Función SetTarget](../Linux/ZSH/Settarget.html)
     
