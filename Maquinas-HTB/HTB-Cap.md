@@ -13,7 +13,7 @@ Ahora, mediante la función [`mkt`](../Herramientas_y_Scripts/mkt.html) que teng
 Esta función está definida para crearnos cuatro directorios (`nmap`, `content`, `exploits` y `scripts`) desde los cuales poder trabajar a la hora de
 realizar las máquinas de HTB.
 
-### PING
+## PING
 
 Ejecutamos un `ping` y vemos como nos reporta un ttl=63, por tanto, ya sabemos que estamos frente una máquina Linux.
 
@@ -24,7 +24,7 @@ Ejecutamos un `ping` y vemos como nos reporta un ttl=63, por tanto, ya sabemos q
 Verificamos mediante la herramienta [WishSystem](../Herramientas_y_Scripts/WichSistem.html) que nos encontramos frente
 a un sistema Linux.
 
-### WhatWeb
+## WhatWeb
 
 Ahora vamos a ver mediante `whatweb` que más podemos ver:
 
@@ -35,7 +35,7 @@ Ahora vamos a ver mediante `whatweb` que más podemos ver:
 Vemos que no nos reporta nada interesante, así que vamos a proceder mediante [`Nmap`](../Herramientas_y_Scripts/Nmap.html) a tratar de reportar todos
 los puertos abiertos.
 
-### NMAP
+## NMAP
 
 Ahora mediante `nmap` realizaremos un escaneo de puertos:
 
@@ -103,7 +103,7 @@ Vamos a llevar el archivo al directorio `content` donde vamos a realizar primera
 
 ![Captura de pantalla -2022-05-10 01-02-17](https://user-images.githubusercontent.com/103068924/167512847-8dd4d2cc-9080-4e24-b393-b93972a6b6bf.png)
 
-### TShark
+## TShark
 
 Para poder ver el binario vamos a utilizar la herramienta `tshark`. En caso de no tenerla podéis descargarla utilizando el siguiente comando:
 
@@ -131,7 +131,7 @@ Mediante los siguientes parámetros podríamos filtrar el archivo para solo repo
 
 ![Captura de pantalla -2022-05-07 14-27-41](https://user-images.githubusercontent.com/103068924/167513759-253ccb44-6e98-4e92-b848-793aaab8db70.png)
 
-### FTP Shell:
+## FTP Shell:
 
 Visto esto, vamos a tratar de conectarnos mediante `ftp` con las credenciales que hemos encontrado.
 
@@ -166,7 +166,7 @@ Abrimos una terminal nueva y nos dirigimos a nuestro directorio `content`, si he
 
 ![Captura de pantalla -2022-05-07 14-34-43](https://user-images.githubusercontent.com/103068924/167515100-2f0efbfd-5f1f-4761-9bcd-efc9c249af64.png)
 
-### Shell SSH
+## Shell SSH
 
 Ahora, para tratar de conseguir la flag del `root`, como la shell por ftp nos ha estado dando problemas con algunos comandos, vamos a tratar de establecer conexión mediante el servicio `ssh` y utilizando las mismas credenciales:
 
