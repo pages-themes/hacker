@@ -1,6 +1,6 @@
 # Hack The Box
 
-|Máquinas:                                         |Starting Points                                      |
+|## Máquinas:                                      |## Starting Points                                   |
 |:-------------------------------------------------|:----------------------------------------------------|
 |[HTB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html)  |[HTB-Oopsie](./Starting Point/HTB-Oopsie.html)       |
 |                                                  |                                                     |
