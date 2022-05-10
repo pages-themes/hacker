@@ -78,12 +78,6 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 
 """
-    {{ addcomments }}
-
-Add a comment widget, managed by utterances <https://utteranc.es>.
-"""
-function hfun_gestion-comentarios()
-    html_str = """
         <script src="https://utteranc.es/client.js"
             repo="gestion-comentarios"
             issue-term="pathname"
@@ -93,8 +87,7 @@ function hfun_gestion-comentarios()
             async>
         </script>
     """
-    return html_str
-end
+
 
 
 ---
