@@ -8,6 +8,8 @@
 
 [HTB-Lame](./Maquinas-HTB/HTB-Lame.html)
 
+[HTB-Cap](./Maquinas-HTB/HTB-Cap.html)
+
 
 ## Starting Points
 
