@@ -94,7 +94,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 <div class="page-foot">
   <div class="copyright">
-    &copy; F1r0x. Última Modificación: Mayo 10, 2022.
+    &copy; F1r0x - 10/05/2022
   </div>
 </div><!-- CONTENT ENDS HERE -->
     
