@@ -105,7 +105,6 @@ Escaneo de vulnerabilidades en páginas WordPress.
   <div class="copyright">
     &copy; F1r0x. Última Modificación: Mayo 10, 2022.
   </div>
-</div>
 </div><!-- CONTENT ENDS HERE -->
     
         <script src="/libs/katex/katex.min.js"></script>
