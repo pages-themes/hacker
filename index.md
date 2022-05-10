@@ -77,6 +77,10 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 
 
+[Index2](./Index2.html)
+
+
+
 """
 
 <script src="https://utteranc.es/client.js"
