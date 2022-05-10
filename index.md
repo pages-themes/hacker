@@ -76,7 +76,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
 [SQLmap](./Herramientas_y_Scripts/SQLmap.html)
 
 
-
+~~~
 """
     {{ addcomments }}
 
@@ -95,7 +95,7 @@ function hfun_addcomments()
     """
     return html_str
 end
-
+~~~
 
 ---
 
