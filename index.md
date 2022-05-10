@@ -94,7 +94,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
 <body>
 
 <script src="https://utteranc.es/client.js"
-    repo="F1r0x/gestion-comentarios.git"
+    repo="F1r0x/gestion-comentarios"
     issue-term="pathname"
     theme="github-light"
     crossorigin="anonymous"
