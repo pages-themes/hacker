@@ -76,13 +76,13 @@ Escaneo de vulnerabilidades en páginas WordPress.
 [SQLmap](./Herramientas_y_Scripts/SQLmap.html)
 
 
-~~~...~~~
+
 """
     {{ addcomments }}
 
 Add a comment widget, managed by utterances <https://utteranc.es>.
 """
-function hfun_addcomments()
+function hfun_gestion-comentarios()
     html_str = """
         <script src="https://utteranc.es/client.js"
             repo="gestion-comentarios"
@@ -95,7 +95,7 @@ function hfun_addcomments()
     """
     return html_str
 end
-~~~...~~~
+
 
 ---
 
