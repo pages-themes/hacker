@@ -1,4 +1,6 @@
-<div class="pull-left"># Hack The Box ![Captura de pantalla -2022-05-11 01-09-56](https://user-images.githubusercontent.com/103068924/167741228-5e4a8b11-50b0-452c-ac0b-a2c7d6e62fe5.png) </div>
+# Hack The Box 
+ 
+![Captura de pantalla -2022-05-11 01-09-56](https://user-images.githubusercontent.com/103068924/167741228-5e4a8b11-50b0-452c-ac0b-a2c7d6e62fe5.png)
 
 |**Máquinas**                                      |**Starting Points**                                  |
 |:-------------------------------------------------|:----------------------------------------------------|
