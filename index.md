@@ -1,8 +1,8 @@
 # Hack The Box
 
-
-## Máquinas: [HTB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html) [HTB-Jerry](./Maquinas-HTB/HTB-Jerry.html) [HTB-Lame](./Maquinas-HTB/HTB-Lame.html) [HTB-Cap](./Maquinas-HTB/HTB-Cap.html) 
-
+---
+Máquinas: [HTB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html) [HTB-Jerry](./Maquinas-HTB/HTB-Jerry.html) [HTB-Lame](./Maquinas-HTB/HTB-Lame.html) [HTB-Cap](./Maquinas-HTB/HTB-Cap.html) 
+---
 
 [HTB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html)
 
@@ -73,8 +73,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 [WPScan](./Herramientas_y_Scripts/WPScan.html)
 
-## SQL:
-[SQLmap](./Herramientas_y_Scripts/SQLmap.html)
+## SQL: ### [SQLmap](./Herramientas_y_Scripts/SQLmap.html)
 
 ---
 ---
