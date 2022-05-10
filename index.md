@@ -77,10 +77,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 
 
-[Index1](./Index1.html)
 
-
-<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -106,7 +103,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 <div class="page-foot">
   <div class="copyright">
-    &copy; Ricardo M. S. Rosa. Last modified: February 22, 2021. Built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>.
+    &copy; F1r0x. Last modified: February 22, 2021. Built with <a href="https://github.com/tlienart/Franklin.jl">F1r0x</a>.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
