@@ -38,7 +38,8 @@ Herramientas útiles para la fase de reconocimiento, como reportes de SO o recop
 1.[Nmap](../Herramientas_y_Scripts/Nmap.html)     
 2.[WichSystem](./Herramientas_y_Scripts/WichSystem.html)    
 3.[ExtractPorts](./Herramientas_y_Scripts/ExtractPorts.html)    
-4.[mkt](./Herramientas_y_Scripts/mkt.html)
+4.[mkt](./Herramientas_y_Scripts/mkt.html)       
+5.[SetTarget](./Linux/ZSH/Settarget.html)
 
 ## Shells:
 Herramientas para crear shells inversas.
