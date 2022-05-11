@@ -1,5 +1,6 @@
 # Hack The Box
 
+<div>
 <img style="float: left;" src="https://user-images.githubusercontent.com/103068924/167741228-5e4a8b11-50b0-452c-ac0b-a2c7d6e62fe5.png">
 
 |**Máquinas**                                      |**Starting Points**                                  |
@@ -8,7 +9,7 @@
 |[HTB-Jerry](./Maquinas-HTB/HTB-Jerry.html)        |[HTB-Responder](./Starting Point/HTB-Responder.html) |
 |[HTB-Lame](./Maquinas-HTB/HTB-Lame.html)          |[HTB-Vaccine](./Starting Point/HTB-Vaccine.html)     |
 |[HTB-Cap](./Maquinas-HTB/HTB-Cap.html)            |                                                     |
-  
+</div>  
   
 ---
 # Artículos
