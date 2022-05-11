@@ -21,7 +21,6 @@ Para instalar esta herramienta realizaremos lo siguiente, primero vamos a nuestr
     
     mkdir SEToolkit
 
-
     cd SEToolkit
     
 Ahora nos clonaremos el siguiente repositorio de GitHub en el directorio `SEToolkit`:
@@ -31,26 +30,21 @@ Ahora nos clonaremos el siguiente repositorio de GitHub en el directorio `SETool
     
 Una vez clonado, entramos en el directorio `setoolkit`:
 
-
     cd setoolkit
     
 Podemos ver mediante `ls` todos los archivos clonados. Ahora procederemos a la instalación de todos los
 requisitos necesarios para Setoolkit:
 
-
     sudo pip3 install -r requirements.txt
     
 Y finalmente realizamos la instalación de la herramienta:
 
-
     sudo python setup.py
 
-
-Con esto ya tendríamos instalada nuestra herramienta. Importante, si el usuario
-normal no os permite utilizarla es porque os faltan permisos de ejecución y, por tanto,
-tendréis que utilizar la herramienta como `root`.
-
-
+Con esto ya tendríamos instalada nuestra herramienta. Importante, si el usuario normal no os permite utilizarla es porque os faltan permisos
+de ejecución y, por tanto, tendréis que utilizar la herramienta como `root`.
+  
+  
 ## Ejecución:
 
 Para ejecutarlo y poder acceder a sus múltiples herramientas, simplemente ejecutamos lo siguiente:
