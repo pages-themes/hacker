@@ -1,7 +1,5 @@
 # Hack The Box
 
-<img style="float: left;" src="https://user-images.githubusercontent.com/103068924/167741228-5e4a8b11-50b0-452c-ac0b-a2c7d6e62fe5.png">
-
 |**Máquinas**                                      |**Starting Points**                                  |
 |:-------------------------------------------------|:----------------------------------------------------|
 |[HTB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html)  |[HTB-Oopsie](./Starting Point/HTB-Oopsie.html)       |
@@ -63,11 +61,14 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 [WPScan](./Herramientas_y_Scripts/WPScan.html)
 
-## SQL: [SQLmap](./Herramientas_y_Scripts/SQLmap.html)
+## SQL: 
+
+[SQLmap](./Herramientas_y_Scripts/SQLmap.html)
 
 ---
 ---
-
+  
+    
 <html lang="en">
 <head>
   
@@ -85,9 +86,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
     
   </body>
 </html>
-
-
-
+  
+  
 ---
-
 ---
