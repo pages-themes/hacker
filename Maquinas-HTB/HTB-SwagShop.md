@@ -7,7 +7,7 @@ En primer lugar, nos creamos un directorio con el nombre de la máquina desde el
 
     sudo mkdir SwagShop
     
-Ahora, mediante la función [`mkt`](../Herramientas_y_Scripts/mkt.html) que tengo previamente definida en la `.zhshrc` crearemos nuestros directorios de trabajo:
+Ahora, mediante la función [`mkt`](../Herramientas_y_Scripts/mkt.html) que tengo previamente definida en la `.zshrc` crearemos nuestros directorios de trabajo:
 
     sudo mkt
 
@@ -208,7 +208,7 @@ limpiar la shell y si utilizamos un `nano`, vemos como tampoco aprovecha todo el
 
 Aunque con esta shell ya se podría realizar las tareas restantes perfectamente, voy a mostrar como solucionar estos dos pequeños inconvenientes y así tener la shell al 100% funcional.
 
-Para ello primero solucionaremos el problema del `Cntrl +l` de la siguiente manera, si realizamos un `echo $TERM` vemos que tiene el valor `dumb`
+Para ello primero solucionaremos el problema del `Cntrl + l` de la siguiente manera, si realizamos un `echo $TERM` vemos que tiene el valor `dumb`
 y nosotros queremos que igual que nuestra shell, valga `xterm`:
 
     echo $TERM
