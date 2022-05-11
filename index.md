@@ -81,18 +81,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
     crossorigin="anonymous"
     async>
 </script>
-  
----    
-  
-<div class="page-foot">
-  <div class="copyright">
-    &copy; F1r0x - 10/05/2022
-  </div>
-</div><!-- CONTENT ENDS HERE -->
-    
-    
-
-    
+          
     
   </body>
 </html>
