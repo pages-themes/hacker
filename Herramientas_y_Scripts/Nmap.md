@@ -33,7 +33,7 @@ De esta manera podremos revisar los puertos que estaban abiertos en cualquier mo
 
 ### Escaneo exahustivo de Puertos definidos:
 
-    nmap -sC -sV -n -v -p[Port1,Port2] -oN targed  
+    nmap -sC -sV -n -v -p[Port1,Port2] [Ip Víctima] -oN targed  
    
 `-sC` : Lanza scrips básicos de reconocimiento.
  
