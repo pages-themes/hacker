@@ -33,7 +33,7 @@ De esta manera podremos revisar los puertos que estaban abiertos en cualquier mo
 
 ### Escaneo exahustivo de Puertos definidos:
 
-    nmap -sC -sV -p[Port1,Port2] -oN targed  
+    nmap -sC -sV -n -v -p[Port1,Port2] -oN targed  
    
 `-sC` : Lanza scrips básicos de reconocimiento.
  
@@ -58,6 +58,7 @@ De esta manera podremos revisar los puertos que estaban abiertos en cualquier mo
 `-vvv` : Triple verbose. Recopila los puertos abiertos por TCP y los reporta por consola. Cuanto más verbose más información reporta mientras se realiza el escaneneo.
 
 `-n` : Anula la resolución DNS.
+
 
 
 
