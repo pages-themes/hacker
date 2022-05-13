@@ -145,6 +145,30 @@ Finalmete ejecutamos el exploit:
     
 ![Captura de pantalla -2022-05-13 13-09-48](https://user-images.githubusercontent.com/103068924/168273321-abd7ac24-82f9-4e54-b183-6f2f70132efb.png)
 
+Si todo funciona correctamente se nos tendría que abrir una shell. En caso de daros algún error es posible que tengaís que reiniciar la máquina y
+el Metasploit y volver a intentar el ataque.
+
+
+![Captura de pantalla -2022-05-13 17-48-20](https://user-images.githubusercontent.com/103068924/168326527-fa31beac-78dc-4236-b075-22186c53a8b4.png)
+
+
+Esta vulnerabilidad es muy grave ya que mediante este exploit pasamos a tenerlos máximos privilegios, por tanto, podemos ver todos los archivos 
+incluida la flaf de `root`.
+
+Para encontrar la primera flag simplemente nos dirigimos al directoio `C:\Users\haris\Desktop`:
+
+    cd /Users/haris/Desktop
+    
+Podemos listar los archivos del directorio mediante `ls` y mediante `cat` nos reportará por consla el contenido.
+
+![Captura de pantalla -2022-05-13 17-50-12](https://user-images.githubusercontent.com/103068924/168327189-8d5ecd5b-e4f5-47fb-815d-3d6ecae6851a.png)
+
+Finalmente, la flag del usuario `root` la podemos encontrar en el directorio `C:\Users\Administrator\Desktop\`.
+
+![Captura de pantalla -2022-05-13 17-50-59](https://user-images.githubusercontent.com/103068924/168327406-bb7a2c94-5b04-4219-ac01-ec0a2b6219ec.png)
+
+![Captura de pantalla -2022-05-13 17-51-26](https://user-images.githubusercontent.com/103068924/168327424-9413230b-de79-4710-9efc-140e15dad727.png)
+
 
   
   
