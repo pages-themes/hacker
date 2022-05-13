@@ -26,4 +26,4 @@ Para descargar tanto vídeos como audio de Youtube desde la Terminal.
 
 # Gestor de Comandos:
 
-[ZSH](../Linux/Introducción_a_Linux/ZSH.html)
+[ZSH](../Linux/ZSH/ZSH.html)
