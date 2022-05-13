@@ -22,7 +22,8 @@ Ejecutamos un `ping` y vemos como nos reporta un ttl=127, por tanto, ya sabemos 
     
 ![Captura de pantalla -2022-05-13 02-23-49](https://user-images.githubusercontent.com/103068924/168258904-068e429f-b39a-4aa5-84f2-921190929c68.png)
 
-### NMAP [](../Herramientas_y_Scripts/Nmap.html)
+### NMAP [![image](https://user-images.githubusercontent.com/103068924/168329320-cae16cfe-0669-49b2-a4fe-6d7d9a9f5e19.png)
+](../Herramientas_y_Scripts/Nmap.html)
 
 Ahora mediante `nmap` realizaremos un escaneo de puertos:
 
