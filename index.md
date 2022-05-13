@@ -6,8 +6,9 @@
 |[HTB-Jerry](./Maquinas-HTB/HTB-Jerry.html)        |[HTB-Responder](./Starting Point/HTB-Responder.html) |
 |[HTB-Lame](./Maquinas-HTB/HTB-Lame.html)          |[HTB-Vaccine](./Starting Point/HTB-Vaccine.html)     |
 |[HTB-Cap](./Maquinas-HTB/HTB-Cap.html)            |                                                     |
- 
+|[HTB-Blue](./Maquinas-HTB/HTB-Blue.html)          |                                                     |
   
+
 ---
 # Artículos
 
@@ -57,6 +58,14 @@ Phishing es un término informático que distingue a un conjunto de técnicas qu
 pasar por una persona, empresa o servicio de confianza, para manipularla y hacer que realice acciones que no debería realiza.
 
 [Setoolkit](./Herramientas_y_Scripts/Setoolkit.html)
+
+## Exploits:
+
+Un exploit es una pieza de software, un fragmento de datos o una secuencia de comandos que aprovecha un error o una vulnerabilidad para provocar
+un comportamiento no deseado o imprevisto en el software, el hardware o algo electrónico de la computadora. Tal comportamiento frecuentemente
+incluye cosas como obtener el control de un sistema informático, permitir la escalada de privilegios o un ataque de denegación de servicio.
+
+[Metasploit](./Herramientas_y_Scripts/Metasploit.html)
 
 ## WordPress:
 Escaneo de vulnerabilidades en páginas WordPress.
