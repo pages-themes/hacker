@@ -7,8 +7,7 @@ tests de penetración `Pentesting` y el desarrollo de firmas para sistemas de de
 
 Su subproyecto más conocido es el `Metasploit Framework`, una herramienta para desarrollar y ejecutar exploits contra una máquina remota.
 
-Otros subproyectos importantes son las bases de datos de opcodes (códigos de operación), un archivo de shellcodes, e investigación sobre seguridad. 
-Inicialmente fue creado utilizando el lenguaje de programación de scripting Perl aunque actualmente el Metasploit Framework ha sido escrito de nuevo 
+Inicialmente, fue creado utilizando el lenguaje de programación de scripting Perl aunque actualmente el Metasploit Framework ha sido escrito de nuevo 
 completamente en el lenguaje Ruby.
 
 # ¿Como funciona Metasploit?
@@ -20,7 +19,7 @@ bugs. Existen cerca de 900 exploits incluidos para Windows, Unix / Linux y Mac O
 
 2. Opción para comprobar si el sistema destino es susceptible a los bugs elegidos.  
 
-3. La técnica para codificar el sistema de prevención de intrusiones (IPS) e ignore la carga útil codificada.   
+3. La técnica para codificar el sistema de prevención de intrusiones (IPS) e incluir la carga útil codificada.   
 
 4. Visualización a la hora de ejecutar el exploit.
 
@@ -53,7 +52,7 @@ Una vez instalado podemos ejecutarlo mediante el comando:
 # Búsqueda de Exploits:
  
 Metasploit cuenta con una gran recopilación de exploits, para poder buscar el adecuado filtrando por la vulnerabilidad que queremos explotar 
-simplemente utilizamos el comando `search` seguido del exploit, la vulnerabilidad o la versión del sistema que vamos a vulnerar. Esto debemos
+simplemente usamos el comando `search` seguido del exploit, la vulnerabilidad o la versión del sistema que vamos a vulnerar. Esto debemos
 ejecutarlo una vez hemos ingresado en `msfconsole`:
 
     search [Información que identifique la vulnerabilidad.]
@@ -63,20 +62,20 @@ ejecutarlo una vez hemos ingresado en `msfconsole`:
 ## Conceptos básicos de configuración:
 
 Una vez nos muestra las listas (en este ejemplo hemos buscado la vulnerabilidad ms17-010 conocida como EthernalBlue) de los exploits que contienen
-la iformación proporcionada. En mi caso como he especificado la vulnerabilidad `ms17-'010` los resultados son muy concretos.
+la iformación proporcionada. En mi caso, como he especificado la vulnerabilidad `ms17-'010` los resultados son muy concretos.
 
-Una vez tenemos claro el exploit que deaseamos utilizar podemos seleccionarlo mediante `use` seguido o del número de posición en la lista, el directorio o el nombre del mismo exploit.
+Una vez tenemos claro el exploit que deseamos emplear, podemos seleccionarlo mediante `use` seguido o del número de posición en la lista, el directorio o el nombre del mismo exploit.
 
     use 0
     
 ![Captura de pantalla -2022-05-13 13-06-25](https://user-images.githubusercontent.com/103068924/168303141-286e5f50-4e31-44b6-93a1-497f1e553a3f.png)
 
-Tras seleccionar el exploit ya solo faltaría configurarlo. Para ver la configuración predeterminada podemos utilizar el comando `options`.
+Tras seleccionar el exploit ya solo faltaría configurarlo. Para ver la configuración predeterminada podemos usar el comando `options`.
 
 ![Captura de pantalla -2022-05-13 13-26-24](https://user-images.githubusercontent.com/103068924/168303659-f3e2dbc6-913a-48ae-9f0a-e01faf0cd725.png)
 
 Para configurar los parametros simplemente utilizamos `set` seguido del parametro a cambiar. Debemos especificar el  `RHOSTS` donde indicamos la Ip
-de la víctima, el `LHOST` donde indicaremos nuestra Ip pública (En caso de utilizar una VPN debemos poner la Ip de misma.) y finalmente, indicamos 
+de la víctima, el `LHOST` donde indicaremos nuestra Ip pública (En caso de emplear una VPN debemos poner la Ip de misma.) y finalmente, indicamos 
 el `LPORT` que es el puerto por el cual nos pondremos en escucha.
 
     set RHOSTS [Ip Víctima]
@@ -87,8 +86,7 @@ el `LPORT` que es el puerto por el cual nos pondremos en escucha.
     
 ![Captura de pantalla -2022-05-13 13-25-31](https://user-images.githubusercontent.com/103068924/168304755-70ce4ee5-3ce0-440f-a1ab-8f68ad035dff.png)
 
-Finalmente, una vez lo tenemos todo configurado ejemcutamos el exploit deseado mediante el comando `exploit`:
+Finalmente, una vez lo tenemos todo configurado, ejecutamos la herramienta deseada mediante el comando `exploit`:
 
     exploit
-
 
