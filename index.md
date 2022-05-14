@@ -35,9 +35,10 @@ Herramientas útiles para la fase de reconocimiento, como reportes de SO o recop
 4.[mkt](./Herramientas_y_Scripts/mkt.html)       
 5.[SetTarget](./Linux/ZSH/Settarget.html)
 
-## Shells:
-Herramientas para crear shells inversas.
+## Control remoto de Equipos y Shells Inversas:
+Programas y herramientas para crear accesos remotos y shells inversas con otros equipos.
 
+[Telnet](./Artículos/Telnet.html)  
 [php-reverse-shell.php](./Herramientas_y_Scripts/php-reverse-shell.html)
 
 ## Hash:
