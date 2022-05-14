@@ -9,7 +9,8 @@ de dispositivos, gestores y administradores de terminales, etc. En mi caso estoy
 
 # Dispositivos:
 
-[Bluetoothctl](../Linux/Introducción_a_Linux/Bluetoothctl.html)
+[Bluetoothctl](../Linux/Introducción_a_Linux/Bluetoothctl.html)  
+
 [Ventoy](/f1r0x.github.io/Linux/Programas_para_Linux)
 
 # Programas de Descargas:
