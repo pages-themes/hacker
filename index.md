@@ -18,7 +18,7 @@
 
 [Hack The Box](./Artículos/Artículos-HTB.html)
 
-[Bootear USB en Linux con Ventoy](f1r0x.github.io/Linux/Programas_para_Linux/Ventoy.md)
+[Bootear USB en Linux con Ventoy](./Linux/Programas_para_Linux/Ventoy.html)
 
 [Instalación de Twitch en Linux mediante Flatpak](./Linux/GnomeTwitch.html)
 
