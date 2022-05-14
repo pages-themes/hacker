@@ -11,7 +11,7 @@ de dispositivos, gestores y administradores de terminales, etc. En mi caso estoy
 
 [Bluetoothctl](../Linux/Introducción_a_Linux/Bluetoothctl.html)  
 
-[Ventoy](/f1r0x.github.io/Linux/Programas_para_Linux)
+[Ventoy](/f1r0x.github.io/Linux/Programas_para_Linux/Ventoy.html)
 
 # Programas de Descargas:
 Estos son distintos programas de Descarga de archivos para diferentes plataformas y archivos.
