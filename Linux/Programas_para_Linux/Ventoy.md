@@ -13,11 +13,21 @@ mediante el comando:
 
     git clone https://github.com/ventoy/Ventoy.git
     
-Una vez descargado descomprimimos el archivo. Para ello nos dirigimos al directorio donde se encuentre el archivo descargado y ejecutamos el siguiente
+Una vez descargado, creraremos un directorio llamado `Ventoy` y movemos el archivo descargado para luego proceder a descomprimirlo:
+
+    mkdir Ventoy & mv ventoy-1.0.74-linux.tar.gz ./Ventoy
+    
+![Captura de pantalla -2022-05-14 13-42-15](https://user-images.githubusercontent.com/103068924/168425974-fbf6b698-db6a-41e0-9451-94742987fdc4.png)
+
+![Captura de pantalla -2022-05-14 13-42-50](https://user-images.githubusercontent.com/103068924/168425978-60adeed7-791a-4d9c-b2c0-cc7dcca00c02.png)
+
+Descomprimimos el archivo. Para ello nos dirigimos al directorio donde se encuentre el archivo descargado y ejecutamos el siguiente
 comando:
 
     tar -xf [Archivo.tar.gz]
-    
+
+![Captura de pantalla -2022-05-14 13-44-58](https://user-images.githubusercontent.com/103068924/168425984-0aee4b1c-34a5-46a6-9c20-f46e238b224e.png)
+
 Una vez descomprimido, vemos que nos aparece una carpeta nueva en el mismo directorio. Ya disponemos de Ventoy y podemos borrar el archivo `.tar.gz` que
 hemos descomprimido. Finalmente, para instalarlo ejecutamos:
 
