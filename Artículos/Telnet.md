@@ -10,25 +10,24 @@ reciba y gestione las conexiones. El puerto que se utiliza generalmente es el 23
 
 # Funcionamiento:
 
-Telnet sólo sirve para acceder en modo terminal, es decir, sin gráficos, pero es una herramienta muy útil para arreglar fallos a distancia, sin necesidad 
+Telnet solo sirve para acceder en modo terminal, es decir, sin gráficos, pero es una herramienta muy útil para arreglar fallos a distancia, sin necesidad 
 de estar físicamente en el mismo sitio que la máquina que los tenga. También se usaba para consultar datos a distancia, como datos personales
 en máquinas accesibles por red, información bibliográfica, etc.
 
-Aparte de estos usos, en general telnet se ha utilizado (y aún hoy se puede utilizar en su variante SSH) para abrir una sesión con una 
+Aparte de estos usos, en general telnet se ha empleado (y aún hoy se puede utilizar en su variante SSH) para abrir una sesión con una 
 máquina UNIX, de modo que múltiples usuarios con cuenta en la máquina, se conectan, abren sesión y pueden trabajar utilizando esa máquina. 
 Es una forma muy usual de trabajar con sistemas UNIX.
 
 # Ejecución:
 
 Podemos conectarnos a un cliente con el servicio Telnet activo utilizando el comando `telnet` seguido del `host` o de la `Ip` de equipo que establece
-el servicio Telnet a traves del puerto 23 TCP.
+el servicio Telnet a través del puerto 23 TCP.
 
     telnet http://ejemplo.com/
     
     telnet 10.10.10.10
     
-Una vez establecida la conexión nos pedira un `Usuario` pulsamos `Enter` y una `Contraseña` y volmeos a pulsar `Enter` para finalizar. Una vez echo
-esto tendremos acceso al equipo.
+Una vez establecida la conexión nos pedirá un `Usuario` pulsamos `Enter` y una `Contraseña` y volvemos a pulsar `Enter` para finalizar. Una vez hecho esto tendremos acceso al equipo.
 
 # Seguridad:
 
@@ -44,7 +43,7 @@ Hay 3 razones principales por las que el telnet no se recomienda para los sistem
    
 En ambientes donde es importante la seguridad, por ejemplo en el Internet público, telnet no debe ser utilizado. Las sesiones de telnet no son cifradas.
 Esto significa que cualquiera que tiene acceso a cualquier router, switch, o gateway localizado en la red entre los dos anfitriones donde se está 
-utilizando telnet puede interceptar los paquetes de telnet que pasan cerca y obtener fácilmente la información de la conexión y de la contraseña 
+usando telnet puede interceptar los paquetes de telnet que pasan cerca y obtener fácilmente la información de la conexión y de la contraseña 
 (y cualquier otra cosa que se mecanografía) con cualesquiera de varias utilidades comunes como `tcpdump` y `Wireshark`.
 
-Estos defectos han causado el abandono y despreciación del protocolo telnet rápidamente, a favor de un protocolo más seguro y más funcional llamado SSH.
+Estos defectos han causado el abandono y depreciación del protocolo telnet rápidamente, a favor de un protocolo más seguro y más funcional llamado SSH.
