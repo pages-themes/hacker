@@ -47,3 +47,22 @@ usando telnet puede interceptar los paquetes de telnet que pasan cerca y obtener
 (y cualquier otra cosa que se mecanografía) con cualesquiera de varias utilidades comunes como `tcpdump` y `Wireshark`.
 
 Estos defectos han causado el abandono y depreciación del protocolo telnet rápidamente, a favor de un protocolo más seguro y más funcional llamado SSH.
+
+# Activar/Descativar Telnet en Windows:
+
+Para activar Telnet en Windows 10, abre el menú de inicio y busca el término `características`. 
+
+En los resultados, pulsa sobre `Activar o desactivar las características de Windows`, que es una de las opciones que puedes encontrarte en el 
+antiguo panel de control heredado de versiones anteriores de Windows.
+
+Se abrirá directamente una ventana en la que puedes activar características avanzadas de Windows que suelen estar ocultas. En ella, `activa` la 
+opción de `Cliente Telnet` y pulsa en el botón `Aceptar`. 
+
+Windows se tomará unos segundos para buscar los archivos necesarios, y al terminar ya estará activada la función en el ordenador. Esto lo 
+tienes que hacer tanto en el equipo al que te quieres conectar como ese desde el que te conectarás.
+
+# Activar/Descativar Telnet en Windows:
+
+El archivo de configuración de telnet es `/etc/xinetd.d/telnet`. Para habilitar el servidor telnet, debe abrir este archivo y asegurarse de que
+`Deshabilitar = No` está como `Deshabilitar = Sí`.
+
