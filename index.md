@@ -22,7 +22,7 @@
 
 [Instalación de Twitch en Linux mediante Flatpak](./Linux/GnomeTwitch.html)
 
-Reverse Shell Generator --> [Link](https://www.revshells.com/) 
+Reverse Shell Generator -->  [Link](https://www.revshells.com/) 
 
 ---
 
