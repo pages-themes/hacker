@@ -5,7 +5,11 @@ de dispositivos, gestores y administradores de terminales, etc. En mi caso estoy
 
 # Introducción a Linux:
 
-[¿Qué es Linux?](../Linux/Introducción_a_Linux/Introducción_a_Linux.html)
+[¿Qué es Linux?](../Linux/Introducción_a_Linux/Introducción_a_Linux.html)  
+
+[Comandos Básicos en Linux](../Linux/Introducción_a_Linux/Comandos_básicos_Linux.htm)  
+
+[Escalada Básica de Privilegios en Linux](../Linux/Escalada_básica_de_privilegios_Linux.html)  
 
 # Dispositivos:
 
@@ -26,6 +30,7 @@ Para descargar tanto vídeos como audio de Youtube desde la Terminal.
 
 [Youtube-dl](../Linux/Programas_para_Linux/Youtube-dl.html)
 
-# Gestor de Comandos:
+# Intérete de Comandos:  
+Un intérprete de órdenes o de comandos, es un programa informático que tiene la capacidad de traducir las órdenes que introducen los usuarios, mediante un conjunto de instrucciones facilitadas por él mismo directamente al núcleo y al conjunto de herramientas que forman el sistema operativo.
 
 [ZSH](../Linux/ZSH/ZSH.html)
