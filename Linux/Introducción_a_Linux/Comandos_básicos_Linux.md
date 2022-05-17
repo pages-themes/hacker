@@ -91,3 +91,52 @@ usa `rm -r`.
 
 **Nota:** Ten mucho cuidado con este comando y verifica en qué directorio te encuentras. Este comando elimina todo y no se puede deshacer.
 
+### touch
+El comando touch te permite crear un nuevo archivo en blanco a través de la línea de comando de Linux.  
+Como ejemplo, ejecuta `touch /home/nombredeusuario/Documentos/Web.html` para crear un archivo HTML titulado **Web** en el directorio **Documentos**.
+
+### locate
+Puedes usar este comando para localizar un archivo, al igual que el comando de búsqueda en Windows. Además, el uso del argumento `-i` junto con este
+comando hará que no distinga entre mayúsculas y minúsculas, por lo que puedes buscar un archivo incluso si no recuerdas su nombre exacto.
+
+Para buscar un archivo que contenga dos o más palabras, usa un asterisco `*`.  
+Por ejemplo, el comando `locate -i escuela*nota` buscará cualquier archivo que contenga la palabra `escuela` y `nota`, ya sea en mayúsculas o minúsculas.
+
+### find
+Similar al comando locate, usando find también buscas archivos y directorios. La diferencia es que usas el comando find para ubicar archivos dentro
+de un directorio dado.
+
+Como ejemplo, el comando `find /home/ -name notas.txt` buscará un archivo llamado **notas.txt** dentro del directorio de inicio y sus subdirectorios.
+
+Otras variaciones al usar find son:
+
+Para buscar archivos en el directorio actual, `find . -name notas.txt`.  
+Para buscar directorios, `find / -type d -name notes.txt`.
+
+### grep
+Otro comando básico de Linux que sin duda es útil para el uso diario es grep. Te permite buscar a través de todo el texto en un archivo dado.
+
+Para ilustrar, `grep azul notepad.txt` buscará la palabra **azul** en el archivo del bloc de notas. Las líneas que contienen la palabra buscada
+se mostrarán.
+
+### sudo
+Abreviatura de «SuperUser Do» (SuperUsuario hace), este comando te permite realizar tareas que requieren permisos administrativos o raíz.
+Sin embargo, no es aconsejable usar este comando para el uso diario, ya que podría ser fácil que ocurra un error si haces algo mal.
+
+### df
+Usa el comando df para obtener un informe sobre el uso del espacio en disco del sistema, que se muestra en porcentaje y KB. Si deseas ver el informe
+en megabytes, escribe `df -m`.
+
+### du
+Si deseas verificar cuánto espacio ocupa un archivo o un directorio, el comando du (Uso del disco, en inglés) es la respuesta. Sin embargo, el 
+resumen de uso del disco mostrará números de bloque de disco en lugar del formato de tamaño habitual. Si deseas verlo en bytes, kilobytes y 
+megabytes, agrega el argumento `-h` a la línea de comando.
+
+### head
+El comando head se usa para ver las primeras líneas de cualquier archivo de texto. De manera predeterminada, mostrará las primeras diez líneas,
+pero puedes cambiar este número a tu gusto.  
+Por ejemplo, si solo deseas mostrar las primeras cinco líneas, escribe:
+
+     head -n 5 nombredearchivo.ext.
+     
+     
