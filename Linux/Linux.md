@@ -7,7 +7,7 @@ de dispositivos, gestores y administradores de terminales, etc. En mi caso estoy
 
 [¿Qué es Linux?](../Linux/Introducción_a_Linux/Introducción_a_Linux.html)  
 
-[Comandos Básicos en Linux](../Linux/Introducción_a_Linux/Comandos_básicos_Linux.htm)  
+[Comandos Básicos en Linux](../Linux/Introducción_a_Linux/Comandos_básicos_Linux.html)  
 
 [Escalada Básica de Privilegios en Linux](../Linux/Escalada_básica_de_privilegios_Linux.html)  
 
