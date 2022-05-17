@@ -139,4 +139,103 @@ Por ejemplo, si solo deseas mostrar las primeras cinco líneas, escribe:
 
      head -n 5 nombredearchivo.ext.
      
+### tail
+Este tiene una función similar al comando head, pero en lugar de mostrar las primeras líneas, el comando tail mostrará las últimas diez líneas de
+un archivo de texto. Por ejemplo:
+
+    tail -n nombredearchivo.ext
+    
+### diff
+Para abreviar diferencia, el comando diff compara el contenido de dos archivos línea por línea. Después de analizar los archivos, genera las líneas
+que no coinciden. Los programadores a menudo usan este comando cuando necesitan hacer modificaciones al programa en lugar de reescribir todo el
+código fuente.
+
+La forma más simple de usar este comando es:
+
+    diff archivo1.ext archivo2.ext
+    
+### tar
+El comando tar es el comando más utilizado para guardar múltiples archivos en un tarball, un formato de archivo de Linux común que es similar al
+formato zip, con compresión opcional.
+
+Este comando es bastante complejo con una larga lista de funciones, como agregar nuevos archivos a un archivo existente, enumerar el contenido de
+un archivo, extraer el contenido de un archivo y muchos más.  
+
+### chmod
+chmod es otro comando de Linux, utilizado para cambiar los permisos de lectura, escritura y ejecución de archivos y directorios. Como este comando es
+bastante complicado, puedes leer el tutorial completo (en inglés) para ejecutarlo correctamente. 
+     
+### chown
+En Linux, todos los archivos son propiedad de un usuario específico. El comando chown te permite cambiar o transferir la propiedad de un archivo al
+nombre de usuario especificado. Por ejemplo, `chown usuariolinux2 archivo.ext` hará que usuariolinux2 sea el propietario del archivo.ext.
+
+### jobs
+El comando jobs mostrará todos los trabajos actuales junto con sus estados. Un trabajo es básicamente un proceso iniciado por el shell.
+
+### kill
+Si tienes un programa que no responde, puedes cerrarlo manualmente utilizando el comando kill. Enviará una cierta señal al programa que se está
+ejecutando mal y le indica a la aplicación que finalice.
+
+Hay un total de sesenta y cuatro señales que puedes usar, pero las personas generalmente solo usan dos señales:
+
+`SIGTERM (15)` : Solicita que un programa deje de ejecutarse y te da algo de tiempo para guardar todo tu progreso. Si no especificas la señal al
+ingresar el comando kill, se utilizará esta señal.
+
+`SIGKILL (9)` : Obliga a los programas a detenerse inmediatamente. El progreso no guardado se perderá.
+
+Además de conocer las señales, también debes conocer el número de identificación del proceso (PID) del programa que deseas detener (kill). Si no
+conoces el PID, simplemente ejecute el comando `ps ux`.
+
+Después de saber qué señal deseas usar y el PID del programa, ingresa la siguiente sintaxis:
+
+    kill [opción de señal] PID.
+    
+### ping
+Usa el comando ping para verificar tu estado de conectividad a un servidor. Por ejemplo, simplemente ingresando `ping google.com`, el comando
+verificará si puedes conectarte a Google y también medirá el tiempo de respuesta.
+
+### wget
+La línea de comandos de Linux es muy útil: incluso puedes descargar archivos de Internet con la ayuda del comando wget. Para hacerlo, simplemente escribe `wget` seguido del enlace de descarga.
+
+### uname
+El comando uname, abreviatura de Nombre de Unix, imprimirá información detallada sobre tu sistema Linux, como el nombre de la máquina, el sistema
+operativo, el núcleo, etc.
+
+### top
+Como un terminal equivalente al Administrador de tareas en Windows, el comando top mostrará una lista de los procesos en ejecución y la cantidad de CPU
+que utiliza cada proceso. Es muy útil monitorear el uso de los recursos del sistema, especialmente para saber qué proceso debe terminarse porque consume
+demasiados recursos.
+
+### history
+Cuando hayas estado utilizando Linux durante un cierto período de tiempo, notarás rápidamente que puedes ejecutar cientos de comandos todos los días. Como tal, ejecutar el comando history es particularmente útil si deseas revisar los comandos que ingresaste anteriormente.
+
+
+### man
+¿Confundido sobre la función de ciertos comandos de Linux? No te preocupes, puedes aprender fácilmente cómo usarlos directamente desde el shell de 
+Linux mediante el comando man. Por ejemplo, al ingresar man tail se mostrarán las instrucciones manuales del comando tail.
+
+### echo
+Este comando se usa para mover algunos datos a un archivo. Por ejemplo, si deseas agregar el texto «Hola, mi nombre es John» en un archivo llamado
+**nombre.txt**, debes escribir: `echo Hola, mi nombre es John >> nombre.txt`.
+
+
+### zip, unzip
+Usa el comando `zip` para **comprimir tus archivos** en un archivo zip y use el comando `unzip` para **extraer los archivos comprimidos** de un
+archivo zip.
+
+### hostname
+Si deseas conocer el nombre de tu host/red, simplemente escribe hostname. Agregar un `-I` al final mostrará la dirección IP de tu red.
+
+### useradd, userdel
+Dado que Linux es un sistema multiusuario, esto significa que más de una persona puede interactuar con el mismo sistema al mismo tiempo. `useradd` se
+usa para crear un nuevo usuario, mientras que `passwd` agrega una contraseña a la cuenta de ese usuario. Para agregar una nueva persona llamada John,
+escribe `useradd John` y luego para agregar su contraseña, escribe `passwd 123456789`.
+
+**Eliminar un usuario** es muy similar a agregar un nuevo usuario. Para eliminar la cuenta de usuario, escribe `userdel NombredeUsuario`.
+
+### clear
+Para limpiar el terminal si se está abarrotando con demasiados comandos pasados.
+
+
+
      
