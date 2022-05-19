@@ -25,7 +25,7 @@ Una vez pegado, guardamos con `Cntrl + o` y salimos `Cntrl + x`.
 
 Para poder mostrar la función en la Polybar, agregaremos el siguiente script `target_to_hack` al direcorio `~/.config/bin/`:
 
-***
+```
 
 #!/bin/zsh
  
@@ -38,7 +38,7 @@ else
     echo "${F#000000} %{u-}%{F#000000} No target"
 fi
 
-***
+```
 
 
 
