@@ -1,3 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animated Search Interaction</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <form action="" class="search-bar">
+        <input type="search" name="search" pattern=".*\S.*" required>
+        <button class="search-btn" type="submit">
+            <span>Search</span>
+        </button>
+    </form>
+</body>
+</html>
+
+
 # Hack The Box
 
 |**Máquinas**                                      |**Starting Points**                                  |
