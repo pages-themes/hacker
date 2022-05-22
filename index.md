@@ -8,7 +8,7 @@
       
     <div id="sidebar">
       <div class="toggle-btn">
-        <span>&#9776</span>
+        <span>#</span>
       </div>
       <ul>
         <li>
