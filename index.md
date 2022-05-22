@@ -1,3 +1,29 @@
+   
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Animated Sidebar CSS</title> </head>
+    <link rel="stylesheet" href="main.css">
+  <body>
+      
+    <div id="sidebar">
+      <div class="toggle-btn">
+        <span>&#9776</span>
+      </div>
+      <ul>
+        <li>
+          <img src="img/logo.jpg" alt="Logo Fazt" class="logo">
+        </li>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
 
 <html lang="en">
 <head>
