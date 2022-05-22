@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,9 +14,10 @@
         </button>
     </form>
 </body>
-</html>
-
-
+</html>  
+  
+  
+   
 # Hack The Box
 
 |**Máquinas**                                      |**Starting Points**                                  |
