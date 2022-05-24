@@ -1,4 +1,7 @@
+@import "rouge-base16-dark";
+@import "default_colors";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 
 img {
     margin-right: 10px;
