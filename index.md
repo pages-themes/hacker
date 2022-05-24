@@ -18,7 +18,7 @@
         <header>Menu</header>
         <ul>
             <li><a href="#"><img src="https://img.icons8.com/metro/26/000000/qr-code.png"/>Panel</a></li>
-            <li><a href="#"><img src="https://img.icons8.com/metro/26/000000/link.png"/>Artículos</a></li>
+            <li><a href="https://f1r0x.github.io./Artículos/Artículos-HTB.html"><img src="https://img.icons8.com/metro/26/000000/link.png"/>Artículos</a></li>
             <li><a href="#"><img src="https://img.icons8.com/windows/32/000000/stream-logo.png"/>Visión General</a></li>
             <li><a href="#"><img src="https://img.icons8.com/windows/32/000000/calendar-week.png"/>Eventos</a></li>
             <li><a href="#"><img src="https://img.icons8.com/metro/26/000000/ask-question.png"/>Sobre Mi</a></li>
