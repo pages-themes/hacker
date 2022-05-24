@@ -46,6 +46,8 @@
   
 
 ---
+  
+
 # Artículos  
 
 [Linux](./Linux/Linux.html)
@@ -59,6 +61,7 @@
 [Instalación de Twitch en Linux mediante Flatpak](./Linux/GnomeTwitch.html)
 
 ---
+    
 
 # Herramientas y Scripts 
 
