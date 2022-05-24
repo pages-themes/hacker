@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-body {
-    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-    color: $body-foreground;
-    font-size: 16px;
-    line-height: 1.5;
-    background: $body-background url("../images/bkg.png") 0 0;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
 img {
     margin-right: 10px;
     margin-top: 10px;
