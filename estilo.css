@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background: #494368;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    color: $body-foreground;
+    font-size: 16px;
+    line-height: 1.5;
+    background: $body-background url("../images/bkg.png") 0 0;
 }
 
 * {
