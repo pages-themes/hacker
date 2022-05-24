@@ -14,52 +14,6 @@ $container-max-width: 1000px;
   }
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: $body-background url("../images/bkg.png") 0 0;
-  color: $body-foreground;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-}
-
-.barra-lateral {
-    position: fixed;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background: #7A28CB;
-    transition: all .5s ease;
-}
-
-.barra-lateral header{
-    font-size: 22px;
-    color: white;
-    text-align: center;
-    line-height: 70px;
-    background: #FC60A8;
-    user-select: none;
-}
-
-.barra-lateral ul a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 65px;
-    font-size: 20px;
-    color: white;
-    padding-left: 40px;
-    box-sizing: border-box;
-    border-top: 1px solid rgba(255,255,255, .1);
-    border-bottom: 1px solid black;
-    transition: .4s;
-}
-
-ul li:hover a {
-    padding-left: 60px;
-}
-
 /* General & 'Reset' Stuff */
 
 .container {
