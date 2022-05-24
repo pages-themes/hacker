@@ -1,8 +1,34 @@
-<div class="w3-sidebar w3-bar-block" style="width:25%">
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-</div>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra Lateral</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <input type="checkbox" id="check">
+    <label for="check">
+        <img src="https://img.icons8.com/android/24/000000/menu.png" id="btn"/>
+        <img src="https://img.icons8.com/ios-filled/26/000000/multiply.png" id="cancelar"/>
+    </label>
+
+    <div class="barra-lateral">
+        <header>Menu</header>
+        <ul>
+            <li><a href="#"><img src="https://img.icons8.com/metro/26/000000/qr-code.png"/>Painel</a></li>
+            <li><a href="#"><img src="https://img.icons8.com/metro/26/000000/link.png"/>Atalho</a></li>
+            <li><a href="#"><img src="https://img.icons8.com/windows/32/000000/stream-logo.png"/>Visão Geral</a></li>
+            <li><a href="#"><img src="https://img.icons8.com/windows/32/000000/calendar-week.png"/>Eventos</a></li>
+            <li><a href="#"><img src="https://img.icons8.com/metro/26/000000/ask-question.png"/>Sobre</a></li>
+            <li><a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/period-slider.png"/>Serviços</a></li>
+            <li><a href="#"><img src="https://img.icons8.com/android/24/000000/filled-message.png"/>Contato</a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>
 
 <div style="margin-left:25%">
 ... page content ...
