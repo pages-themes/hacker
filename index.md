@@ -31,7 +31,7 @@
 </html>
 
 <div style="margin-left:25%">
-... page content ...
+
 </div>
 
 # Hack The Box
