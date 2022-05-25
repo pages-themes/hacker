@@ -268,6 +268,7 @@ img {
     height: 100%;
     background: #7d7f7d;
     transition: all .5s ease;
+    border-radius: 20px;
 }
 
 .barra-lateral header{
@@ -292,6 +293,7 @@ img {
     border-top: 1px solid rgba(255,255,255, .1);
     border-bottom: 1px solid black;
     transition: .4s;
+    border-radius: 20px;
 }
 
 ul li:hover a {
