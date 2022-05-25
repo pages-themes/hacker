@@ -22,7 +22,6 @@
             <li><a href="#"><img src="https://img.icons8.com/windows/32/000000/stream-logo.png"/>Hack The Box</a></li>
             <li><a href="#"><img src="https://img.icons8.com/windows/32/000000/calendar-week.png"/>Herramientas</a></li>
             <li><a href="#"><img src="https://img.icons8.com/metro/26/000000/ask-question.png"/>Sobre Mi</a></li>
-            <li><a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/period-slider.png"/>Servicios</a></li>
             <li><a href="#"><img src="https://img.icons8.com/android/24/000000/filled-message.png"/>Contacto</a></li>
         </ul>
     </div>
