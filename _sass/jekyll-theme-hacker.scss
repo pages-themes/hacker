@@ -268,7 +268,8 @@ img {
     height: 100%;
     background: #7d7f7d;
     transition: all .5s ease;
-    border-radius: 20px;
+    border-top-left-radius: 20px; // esquina superior izquierda
+    border-top-right-radius: 20px; // esquina superior derecha
 }
 
 .barra-lateral header{
@@ -278,7 +279,8 @@ img {
     line-height: 70px;
     background: #434b4d;
     user-select: none;
-    border-radius: 20px;
+    border-top-left-radius: 20px; // esquina superior izquierda
+    border-top-right-radius: 20px; // esquina superior derecha
 }
 
 .barra-lateral ul a {
