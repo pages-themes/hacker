@@ -1,3 +1,5 @@
+![searchsploit-kali-linux](https://user-images.githubusercontent.com/103068924/170473716-7ad5193c-3a45-43f5-a916-0c3c7fa605bc.jpg)
+
 # SearchSploit
 
 ## ¿Qué es SearchSploit?
@@ -20,6 +22,12 @@ También puedes clonarte la herramienta desde los repositorios de GitHub:
     git clone https://github.com/offensive-security/exploit-database.git
 
 ## Ejecución:
+
+### Opciones:
+
+Podemos ver todas las funciones de este comando utilizando la opción `--help`:
+
+    searchsploit --help
 
 ### Búsqueda General:
 
