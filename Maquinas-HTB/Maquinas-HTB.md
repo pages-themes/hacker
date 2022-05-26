@@ -1,12 +1,7 @@
 # Maquinas de Hack The Box:
 
 
-[![SwagShopButton](https://user-images.githubusercontent.com/103068924/170582056-fdeabff6-9361-4e74-b124-324263d7360b.png)](./Maquinas-HTB/HTB-SwagShop.html)
-
-
-
-
-
+[![SwagShopButton](https://user-images.githubusercontent.com/103068924/170582056-fdeabff6-9361-4e74-b124-324263d7360b.png)](./HTB-SwagShop.html)[![BlueButton](https://user-images.githubusercontent.com/103068924/170584185-44bd99d6-7b6f-4339-994d-c677f4103b6a.png)](./HTB-Blue.html)
 
 
 
