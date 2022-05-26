@@ -45,7 +45,7 @@ Programas y herramientas para crear accesos remotos y shells inversas con otros 
 [SSH](./Artículos/SSH.html)  
 [Telnet](./Artículos/Telnet.html)  
 [php-reverse-shell.php](./Herramientas_y_Scripts/php-reverse-shell.html)  
-[Tratamiento de la TTY](./Artículos/tatamientoTTY.html)  
+[Tratamiento de la TTY](./Artículos/tratamientoTTY.html)  
 Reverse Shell Generator -->  [Link](https://www.revshells.com/) 
 
 ## Hash:
