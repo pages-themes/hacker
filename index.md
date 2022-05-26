@@ -4,7 +4,7 @@
 
 |**Máquinas**                                      |**Starting Points**                                  |
 |:-------------------------------------------------|:----------------------------------------------------|
-|[HTB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html)  |[HTB-Oopsie](./Starting Point/HTB-Oopsie.html)       |
+|[![SwagShopButton](https://user-images.githubusercontent.com/103068924/170582056-fdeabff6-9361-4e74-b124-324263d7360b.png)][HTB-SwagShop](./Maquinas-HTB/HTB-SwagShop.html)  |[HTB-Oopsie](./Starting Point/HTB-Oopsie.html)       |
 |[HTB-Jerry](./Maquinas-HTB/HTB-Jerry.html)        |[HTB-Responder](./Starting Point/HTB-Responder.html) |
 |[HTB-Lame](./Maquinas-HTB/HTB-Lame.html)          |[HTB-Vaccine](./Starting Point/HTB-Vaccine.html)     |
 |[HTB-Cap](./Maquinas-HTB/HTB-Cap.html)            |                                                     |
