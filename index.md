@@ -1,37 +1,3 @@
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barra Lateral</title>
-    <link rel="stylesheet" href="jekyll-theme-hacker.scss">
-</head>
-<body>
-    
-    <input type="checkbox" id="check">
-    <label for="check">
-        <img src="https://cdn1.iconfinder.com/data/icons/glyph-1-1/24/Bars_hamburger_list_menu_navigation_options-128.png" id="btn"/>
-        <img src="https://img.icons8.com/ios-filled/26/000000/multiply.png" id="cancelar"/>
-    </label>
-
-    <div class="barra-lateral">
-        <header>Menu</header>
-        <ul>
-            <li><a href="#"><img src="https://img.icons8.com/windows/32/000000/stream-logo.png"/>Inicio</a></li>
-            <li><a href="https://f1r0x.github.io./Artículos/Artículos-HTB.html"><img src="https://img.icons8.com/metro/26/000000/link.png"/>Artículos</a></li>
-            <li><a href="#"><img src="https://img.icons8.com/windows/32/000000/stream-logo.png"/>Hack The Box</a></li>
-            <li><a href="#"><img src="https://img.icons8.com/windows/32/000000/calendar-week.png"/>Herramientas</a></li>
-            <li><a href="#"><img src="https://img.icons8.com/metro/26/000000/ask-question.png"/>Sobre Mi</a></li>
-            <li><a href="#"><img src="https://img.icons8.com/android/24/000000/filled-message.png"/>Contacto</a></li>
-        </ul>
-    </div>
-    
-</body>
-</html>
-
-<div style="margin-left:25%">
-
-</div>
 
 # Hack The Box
 
