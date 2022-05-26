@@ -10,7 +10,7 @@
   </div>
   <div class="imagen">
     <h5>Imagen 2</h5>
-    <img src="https://user-images.githubusercontent.com/103068924/170584185-44bd99d6-7b6f-4339-994d-c677f4103b6a.pn"/>
+    <img src="https://user-images.githubusercontent.com/103068924/170584185-44bd99d6-7b6f-4339-994d-c677f4103b6a.png"/>
   </div>
   <div class="imagen">
     <h5>Imagen 3</h5>
