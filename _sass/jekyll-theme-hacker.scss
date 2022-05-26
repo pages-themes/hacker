@@ -1,7 +1,7 @@
 @import "rouge-base16-dark";
 @import "default_colors";
 
-$body-background: bkg1.jpg;
+$body-background: $cod-grey !default;
 $body-foreground: $gallery !default;
 $header: $conifer !default;
 $blockquote-color: $silver-chalice !default;
@@ -256,86 +256,3 @@ a {
 #a-title {
   text-decoration: none;
 }
-
-img {
-    margin-right: 10px;
-    margin-top: 10px;
-}
-.barra-lateral {
-    position: fixed;
-    left: -300px; // Posición oculta de la Barra Lateral
-    width: 300px; // Ancho de la Barra Lateral
-    height: 100%;
-    background: #7d7f7d;
-    transition: all .5s ease;
-    border-top-left-radius: 20px; // esquina superior izquierda
-    border-top-right-radius: 20px; // esquina superior derecha
-}
-
-.barra-lateral header{
-    font-size: 22px;
-    color: #b5e853;
-    text-align: center;
-    line-height: 70px;
-    background: #434b4d;
-    user-select: none;
-    border-top-left-radius: 20px; // esquina superior izquierda
-    border-top-right-radius: 20px; // esquina superior derecha
-}
-
-.barra-lateral ul a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 65px;
-    font-size: 20px;
-    color: white;
-    padding-left: 40px;
-    box-sizing: border-box;
-    border-top: 1px solid rgba(255,255,255, .1);
-    border-bottom: 1px solid black;
-    transition: .4s;
-}
-
-ul li:hover a {
-    padding-left: 60px;
-}
-
-#check {
-    display: none;
-}
-
-label #btn, label #cancelar {
-    position: absolute;
-    cursor: pointer;
-} 
-
-label #btn {
-    left: 20px;
-    top: 25px;
-    height: 35px;
-    width: 35px;
-    transition: all .5s ;
-}
-
-label #cancelar {
-    z-index: 1111;
-    left: -195px;
-    top: 17px;
-    transition: all .5s ;
-}
-
-#check:checked ~ .barra-lateral {
-    left: 0;
-}
-
-#check:checked ~ label #btn {
-    left: 250px;
-    opacity: 0;
-    pointer-events: none;
-}
-
-#check:checked ~ label #cancelar {
-    left: 195px;
-}
-
