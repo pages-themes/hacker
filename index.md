@@ -75,6 +75,7 @@ Un exploit es una pieza de software, un fragmento de datos o una secuencia de co
 un comportamiento no deseado o imprevisto en el software, el hardware o algo electrónico de la computadora. Tal comportamiento frecuentemente
 incluye cosas como obtener el control de un sistema informático, permitir la escalada de privilegios o un ataque de denegación de servicio.
 
+[SearchSploit](./Herramientas_y_Scripts/searchSploit.html)  
 [Metasploit](./Herramientas_y_Scripts/Metasploit.html)
 
 ## WordPress:
