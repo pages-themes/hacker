@@ -9,6 +9,8 @@ de dispositivos, gestores y administradores de terminales, etc. En mi caso estoy
 
 [Comandos Básicos en Linux](../Linux/Introducción_a_Linux/Comandos_básicos_Linux.html)  
 
+[Busqueda de Archivos en Linux](../Linux/Introducción_a_Linux/find.html)   
+
 Escalada Básica de Privilegios en Linux --> [Link](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)  
 
 # Dispositivos:
