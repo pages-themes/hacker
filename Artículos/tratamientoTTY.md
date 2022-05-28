@@ -33,7 +33,10 @@ Y debajo de este comando a la derecha, escribimos `reset xterm` para volver a la
 
     reset xterm
     
-    
+En caso de no funcionar aún el `Ctrl + l` para limpiar la terminal, realizamos tambien lo siguiente:
+
+    export SHELL=bash  
+    export TERM=xterm
     
 
 
