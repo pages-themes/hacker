@@ -1,4 +1,3 @@
-[*](./Maquinas-HTB/Maquinas-HTB.html)
 
 # Hack The Box
 
@@ -56,6 +55,18 @@ Herramientas de reconocimiento y desencriptación de hash.
 2.[HashID](./Herramientas_y_Scripts/HashId.html)    
 3.[Hash Identifier](./Herramientas_y_Scripts/Hash-Identifier.html)    
 4.[HashCat](./Herramientas_y_Scripts/HashCat.html)
+
+## Codificación:
+La codificación roceso de conversión de los componentes de un mensaje para que este no sea entendido. Las reglas de transformación entre un sistema y otro van a estar
+definidas para poder entender el contenido del mensaje. A diferencia del cifrado, la codificación se basa en alterar la semántica del mensaje, lo que está relacionado
+con el significado del mensaje.
+
+[Base64](./Artículos/base64.html)
+
+## Cifrados
+El cifrado se basa en aplicar un algoritmo que suele utilizar una clave para transformar la estructura y composición de la información que se pretende proteger, de tal 
+manera que si es interceptada por un tercero no la pueda entender. Cuando nos referimos a cifrar un mensaje, tiene que ver con ocultar la información basándose en la
+sintaxis del mensaje, es decir alterando los símbolos que lo componen.
 
 ## Fuzzing:
 Fuzzing es una técnica de pruebas de software, a menudo automatizado o semiautomatizado, que implica proporcionar datos inválidos, inesperados o
