@@ -22,7 +22,7 @@ body {
 
 .contenedor {
 	width: 50%;
-	max-width: 1200px;
+	max-width: 600px;
     background-size: cover;
 /*  background-image: url('../../images/bg-header3.jpeg'); */
     background-position:center;
