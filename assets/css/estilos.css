@@ -1,0 +1,124 @@
+/* ESTILOS GENERALES */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#000;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+    background-size: cover;
+    background-image: url('../img/bg-header3.jpeg');
+    background-position:center;
+	margin-left: auto; 
+	margin-right: auto;
+    margin-top: 15px;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 99;
+    opacity: .85;
+}
+
+.contenedor.header {
+    height: calc(100vh - 55px);
+    border: 3px solid #555555;
+}
+
+.barra-navegacion ul {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra-navegacion li {
+    list-style: none;
+    display: inline-block;
+}
+
+.barra-navegacion .logo { 
+    color:#3dff3e;
+    font-size: 50px;
+}
+
+.barra-navegacion a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: .5s ease;
+}
+
+.barra-navegacion a:hover {
+    color: #3dff3e;
+    border-bottom: 1px solid currentcolor;
+}
+
+.contenido-descripcion {
+    width: 60%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.contenido-descripcion .titulo {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.contenido-descripcion .titulo span:first-child {
+    font-size: 50px; 
+    display: block;
+    font-weight: 300;
+}
+
+.contenido-descripcion .titulo span:last-child {
+    font-weight: 900;
+    font-size: 100px;
+}
+
+.contenido-descripcion .btn-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 25px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3dff3e;
+    border: 1px solid #555555;
+    animation: parpadeo 2s linear infinite;
+    transition: .7s ease;
+}
+
+.contenido-descripcion .btn-link:hover {
+    border: 1px solid #3dff3e;
+    animation: none;
+}
+
+
+@keyframes parpadeo  {
+    0%, 41%, 45%, 47%, 49.5%, 100%  { 
+        opacity: 1;
+    }
+
+    42%, 44%, 46%,48%,  50%  { 
+        opacity: 0; 
+    }
+}
