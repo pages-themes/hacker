@@ -59,7 +59,28 @@ De esta manera podremos revisar los puertos que estaban abiertos en cualquier mo
 
 `-n` : Anula la resolución DNS.
 
+`-Pn` : Omite el descubrimiento de Hosts.
 
+
+# Escalada de privilegios con Nmap:
+
+En multiples ocasiones, una vez realizada la intrusión en el sistema, veremos como algunos de los equipos o sistemas tienen `nmap` instalado. En caso de que los
+privilegios sean los adecuados, se pueden utilizar para ganar acceso como root.
+
+Para esto en primer lugar, debe de tratarse de una versión de nmap que contenga el parámetro `--interactive`. Ahora, mediante el comando `sudo -l` podemos ver los
+permisos que tenemos como sudo:
+
+    sudo -l
+    
+Debemos de fijarnos que tengamos permisos sudo sobre `nmap`. En tal caso, utilizaremos el siguiente comando para establecer una shell interna:
+
+    sudo nmap --interactive
+    
+Una vez establecida la shell de nmap, usaremos la expresión `!sh` para acceder como `root`.
+
+    !sh
+    
+Directamente, pasaremos a estar registrados como el usuario `root` del sistema.    
 
 
 
