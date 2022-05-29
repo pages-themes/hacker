@@ -71,14 +71,14 @@ Para esto en primer lugar, debe de tratarse de una versión de nmap que contenga
 permisos que tenemos como sudo:
 
     sudo -l
-    
-file:///home/firox/Im%C3%A1genes/Maquinas/Beep/Captura%20de%20pantalla%20-2022-05-29%2016-19-01.png
 
 
 Debemos de fijarnos que tengamos permisos sudo sobre `nmap`. En tal caso, utilizaremos el siguiente comando para establecer una shell interna:
 
     sudo nmap --interactive
     
+
+
 Una vez establecida la shell de nmap, usaremos la expresión `!sh` para acceder como `root`.
 
     !sh
