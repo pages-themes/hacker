@@ -24,7 +24,7 @@ body {
 	width: 20%;
 	max-width: 900px;
     background-size: cover;
-    background-image: url('../../images/bg-header3.jpeg');
+    background-image: url('../images/bg-header3.jpeg');
     background-position:center;
 	margin-left: auto; 
 	margin-right: auto;
