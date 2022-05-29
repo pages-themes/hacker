@@ -10,12 +10,12 @@ body {
     color: #fff;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
-    font-weight: 150;
+    font-weight: 300;
 }
 
 #particles-js {
 	height: 100vh; 
-	width: 100%;
+	width: 50%;
     position: fixed;
     z-index: -1;
 }
