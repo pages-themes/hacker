@@ -21,7 +21,7 @@ body {
 }
 
 .contenedor {
-	width: 80%;
+	width: 20%;
 	max-width: 900px;
     background-size: cover;
     background-image: url('../../images/bg-header3.jpeg');
