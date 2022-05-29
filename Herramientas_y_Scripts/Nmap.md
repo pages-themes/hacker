@@ -72,16 +72,21 @@ permisos que tenemos como sudo:
 
     sudo -l
 
+![Captura de pantalla -2022-05-29 16-19-01](https://user-images.githubusercontent.com/103068924/170876271-0be1555f-58da-4361-b38f-01bbefdc58f4.png)
+
+![Captura de pantalla -2022-05-29 16-20-21](https://user-images.githubusercontent.com/103068924/170876284-b614c5a7-82bc-4a38-8926-ee395408fe4a.png)
 
 Debemos de fijarnos que tengamos permisos sudo sobre `nmap`. En tal caso, utilizaremos el siguiente comando para establecer una shell interna:
 
     sudo nmap --interactive
     
-
+![Captura de pantalla -2022-05-29 16-21-09](https://user-images.githubusercontent.com/103068924/170876291-8ab391a2-ba8e-41d3-98ed-72a0664dbb6d.png)
 
 Una vez establecida la shell de nmap, usaremos la expresión `!sh` para acceder como `root`.
 
     !sh
+
+![Captura de pantalla -2022-05-29 16-21-39](https://user-images.githubusercontent.com/103068924/170876304-2e7280f7-623d-49f9-9608-c0b9a1de421d.png)
     
 Directamente, pasaremos a estar registrados como el usuario `root` del sistema.    
 
