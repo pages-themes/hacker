@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Particles JS</title>
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./css/estilos.css">    
+</head>
+<body>
+    <!-- ID Particles.js -->
+    <div id="particles-js"></div>
+    <header class="contenedor header">
+
+        <!-- Barra de navegación -->
+        <nav class="barra-navegacion">
+            <ul>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li>
+                    <a href="#" class="logo">
+                        <i class="fas fa-biohazard"></i>
+                    </a>
+                </li>
+                <li><a href="#">Filosofía</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Título y descripción -->
+        <div class="contenido-descripcion">
+            <div>
+                <h1 class="titulo">
+                    <span>Ethical</span>
+                    <span>Hacking</span>
+                </h1>
+                <article class="descripcion">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa earum, ipsa, officiis nemo doloribus mollitia corporis eum voluptate aliquid harum quos esse ducimus? Minima fugit iste vero dolores suscipit. Omnis sed, est voluptatibus quasi temporibus aperiam placeat optio ex aliquam vero unde illum neque, nulla animi exercitationem similique dolor nam? </p>
+                    <a href="#" class="btn-link">Conviertete en uno</a>
+                </article>
+            </div>
+        </div>
+    </header>
+
+    <!-- JS Particles.js -->
+    
+    
+    <!-- JS FontAwesome -->
+    <script src="https://kit.fontawesome.com/a2e8d0339c.js"></script>
+</body>
+</html>
