@@ -1,124 +1,96 @@
-/* ESTILOS GENERALES */
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box;
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,body{ 
+	width:100%;
+	height:100%;
+	background:#111;
 }
 
-body {
-    background-color:#000;
-    color: #fff;
-    font-size: 18px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-#particles-js {
-	height: 100vh; 
-	width: 100%;
-    position: fixed;
-    z-index: -1;
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
 }
 
-.contenedor {
-	width: 90%;
-	max-width: 1200px;
-    background-size: cover;
-    background-image: url('../assets/images/bg-header3.jpeg');
-    background-position:center;
-	margin-left: auto; 
-	margin-right: auto;
-    margin-top: 15px;
-    padding: 20px 30px;
-    position: relative;
-    z-index: 99;
-    opacity: .85;
-}
-
-.contenedor.header {
-    height: calc(100vh - 55px);
-    border: 3px solid #555555;
-}
-
-.barra-navegacion ul {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-}
-
-.barra-navegacion li {
-    list-style: none;
-    display: inline-block;
-}
-
-.barra-navegacion .logo { 
-    color:#3dff3e;
-    font-size: 50px;
-}
-
-.barra-navegacion a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 19px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    border-bottom: 1px solid transparent;
-    transition: .5s ease;
-}
-
-.barra-navegacion a:hover {
-    color: #3dff3e;
-    border-bottom: 1px solid currentcolor;
-}
-
-.contenido-descripcion {
-    width: 60%;
-    display: flex;
-    height: 100%;
-    align-items: center;
-}
-
-.contenido-descripcion .titulo {
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
-.contenido-descripcion .titulo span:first-child {
-    font-size: 50px; 
-    display: block;
-    font-weight: 300;
-}
-
-.contenido-descripcion .titulo span:last-child {
-    font-weight: 900;
-    font-size: 100px;
-}
-
-.contenido-descripcion .btn-link {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 25px 0;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #3dff3e;
-    border: 1px solid #555555;
-    animation: parpadeo 2s linear infinite;
-    transition: .7s ease;
-}
-
-.contenido-descripcion .btn-link:hover {
-    border: 1px solid #3dff3e;
-    animation: none;
+canvas{
+  display:block;
+  vertical-align:bottom;
 }
 
 
-@keyframes parpadeo  {
-    0%, 41%, 45%, 47%, 49.5%, 100%  { 
-        opacity: 1;
-    }
+/* ---- stats.js ---- */
 
-    42%, 44%, 46%,48%,  50%  { 
-        opacity: 0; 
-    }
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
