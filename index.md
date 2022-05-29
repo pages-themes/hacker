@@ -25,7 +25,7 @@
                         <i class="fas fa-biohazard"></i>
                     </a>
                 </li>
-                <li><a href="#">Filosofía</a></li>
+                <li><a href="#">Hack The Box</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
