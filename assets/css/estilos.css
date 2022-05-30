@@ -21,7 +21,7 @@ particles-js {
 }
 
 .contenedor {
-	width: 90%;                                             /* Cuadrado bordeado: Ancho  */
+	width: 60%;                                             /* Cuadrado bordeado: Ancho  */
 	max-width: 1200px;
     	background-size: cover;
     	background-image: url('../images/FondoWeb.jpeg');
