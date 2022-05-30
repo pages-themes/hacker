@@ -13,7 +13,7 @@ body {
     font-weight: 300;
 }
 
-particles-js {
+.particles-js {
 	height: 100vh; 
 	width: 100%;
     position: relative;
@@ -24,14 +24,13 @@ particles-js {
 	width: 90%;                                       /* Cuadrado bordeado: Ancho  */
 	max-width: 1200px;
     background-size: cover;
-    background-image: url('../images/bkg.png');
+    background-image: url('../images/bg-header3.jpeg');
     background-position:center;
 	margin-left: auto; 
 	margin-right: auto;
     margin-top: 15px;
     padding: 20px 30px;
     position: relative;
-    top: -125px;
     z-index: 99;
     opacity: .85;
 }
