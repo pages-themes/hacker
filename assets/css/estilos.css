@@ -32,7 +32,7 @@ particles-js {
     	padding: 20px 30px;
     	position: relative;
     	z-index: 99;
-    	opacity: .85;
+    	opacity: .10;
 }
 
 .contenedor.header {
