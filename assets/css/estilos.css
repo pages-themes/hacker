@@ -85,6 +85,11 @@ particles-js {
 }
 
 .contenido-descripcion .titulo span:first-child {
+    font-weight: 900;
+    font-size: 100px;
+}	
+
+.contenido-descripcion .titulo span:last-child {
     font-size: 50px; 
     display: block;
     font-weight: 300;
