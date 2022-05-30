@@ -16,7 +16,7 @@ body {
 particles-js {
 	height: 100vh; 
 	width: 100%;
-    position: fixed;
+    #position: fixed;
     z-index: -1;
 }
 
