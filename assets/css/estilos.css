@@ -10,7 +10,7 @@ body {
     color: #fff;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
-    font-weight: 200;
+    font-weight: 20;
 }
 
 #particles-js {
@@ -21,10 +21,10 @@ body {
 }
 
 .contenedor {
-	width: 20%;
+	width: 50%;                                       /* Cuadrado bordeado: Ancho  */
 	max-width: 900px;
     background-size: cover;
-    background-image: url('../../images/bg-header3.jpeg');
+    background-image: url('../images/bg-header3.jpeg');
     background-position:center;
 	margin-left: auto; 
 	margin-right: auto;
