@@ -28,7 +28,7 @@ particles-js {
     	background-position:center;
 	margin-left: auto;
 	margin-right: auto;
-    	margin-top: -950px;                              /* Altura del cajón respecto a la página  */
+    	margin-top: -920px;                              /* Altura del cajón respecto a la página  */
     	padding: 20px 30px;
     	position: relative;
     	z-index: 99;
