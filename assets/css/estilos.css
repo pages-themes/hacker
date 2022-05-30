@@ -30,7 +30,7 @@ body {
 	margin-right: auto;
     margin-top: 5px;
     padding: 20px 30px;
-    position: relative;
+    position: absolute;
     z-index: 99;
     opacity: .85;
 }
