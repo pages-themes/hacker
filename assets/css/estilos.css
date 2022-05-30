@@ -10,19 +10,19 @@ body {
     color: #fff;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 #particles-js {
 	height: 100vh; 
-	width: 70%;
+	width: 100%;
     position: fixed;
     z-index: -1;
 }
 
 .contenedor {
-	width: 50%;                                       /* Cuadrado bordeado: Ancho  */
-	max-width: 900px;
+	width: 90%;                                       /* Cuadrado bordeado: Ancho  */
+	max-width: 1200px;
     background-size: cover;
     background-image: url('../images/bg-header3.jpeg');
     background-position:center;
@@ -32,7 +32,7 @@ body {
     padding: 20px 30px;
     position: relative;
     z-index: 99;
-    opacity: .89;
+    opacity: .85;
 }
 
 .contenedor.header {
