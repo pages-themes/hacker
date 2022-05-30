@@ -85,8 +85,9 @@ particles-js {
 }
 
 .contenido-descripcion .titulo span:first-child {
+    color: #3dff3e;	
     font-weight: 900;
-    font-size: 200px;
+    font-size: 150px;
 }	
 
 .contenido-descripcion .titulo span:last-child {
