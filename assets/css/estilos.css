@@ -16,23 +16,23 @@ body {
 particles-js {
 	height: 100vh; 
 	width: 100%;
-    position: relative;
-    z-index: -100;
+    	position: relative;
+  	z-index: -100;
 }
 
 .contenedor {
 	width: 90%;                                       /* Cuadrado bordeado: Ancho  */
 	max-width: 1200px;
-    background-size: cover;
-    background-image: url('../images/bg-header3.jpeg');
-    background-position:center;
+    	background-size: cover;
+    	background-image: url('../images/bg-header3.jpeg');
+    	background-position:center;
 	margin-left: auto;
 	margin-right: auto;
-    margin-top: 0px;
-    padding: 20px 30px;
-    position: relative;
-    z-index: 99;
-    opacity: .85;
+    	margin-top: 0px;
+    	padding: 20px 30px;
+    	position: relative;
+    	z-index: 99;
+    	opacity: .85;
 }
 
 .contenedor.header {
