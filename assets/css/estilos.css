@@ -24,7 +24,7 @@ particles-js {
 	width: 90%;                                       /* Cuadrado bordeado: Ancho  */
 	max-width: 1200px;
     background-size: cover;
-    background-image: url('../images/bg-header3.jpeg');
+    background-image: url('../images/bkg.png');
     background-position:center;
 	margin-left: auto; 
 	margin-right: auto;
