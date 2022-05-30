@@ -31,7 +31,8 @@ body {
     margin-top: 5px;
     padding: 20px 30px;
     position: relative;
-    top: -10px;	
+    top: -90px;
+    left: 15px;	
     z-index: 99;
     opacity: .85;
 }
