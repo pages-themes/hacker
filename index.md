@@ -25,6 +25,7 @@
 
 [Instalación de Twitch en Linux mediante Flatpak](./Linux/GnomeTwitch.html)
 
+[Buffer Overflow](./Articulos/BufferOverflow.html)  
 ---
     
 
@@ -37,7 +38,7 @@ Herramientas útiles para la fase de reconocimiento, como reportes de SO o recop
 2.[WichSystem](./Herramientas_y_Scripts/WichSystem.html)    
 3.[ExtractPorts](./Herramientas_y_Scripts/ExtractPorts.html)    
 4.[mkt](./Herramientas_y_Scripts/mkt.html)       
-5.[SetTarget](./Linux/ZSH/Settarget.html)
+5.[SetTarget](./Linux/ZSH/Settarget.html)  
 
 ## Control remoto de Equipos y Shells Inversas:
 Programas y herramientas para crear accesos remotos y shells inversas con otros equipos.
