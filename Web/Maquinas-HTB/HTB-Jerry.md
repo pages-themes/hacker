@@ -6,7 +6,7 @@ En primer lugar, nos creamos un directorio con el nombre de la máquina desde el
 
     sudo mkdir Jerry
     
-Ahora, mediante la función [`mkt`](../Herramientas_y_Scripts/mkt.html) que tengo previamente definida en la `.zhshrc` crearemos nuestros directorios de trabajo:
+Ahora, mediante la función [`mkt`](../Web/Herramientas_y_Scripts/mkt.html) que tengo previamente definida en la `.zhshrc` crearemos nuestros directorios de trabajo:
 
     sudo mkt
 
