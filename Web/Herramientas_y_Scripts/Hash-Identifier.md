@@ -6,6 +6,6 @@ Hash Identifier es una herramienta basada en Python que le permite identificar r
 Admite más de 220 tipos de hash únicos mediante expresiones regulares.
 
 Es capaz de identificar un solo hash, analizar un archivo o leer varios archivos en un directorio e identificar los hash dentro de ellos. 
-También es capaz de incluir el modo hashcat correspondiente y/o el formato [JohnTheRipper](./john_the_ripper.html) en su salida.
+También es capaz de incluir el modo hashcat correspondiente y/o el formato [JohnTheRipper](./Web/Herramientas_y_Scripts/john_the_ripper.html) en su salida.
 
 
