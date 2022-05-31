@@ -25,7 +25,7 @@
 
 [Instalación de Twitch en Linux mediante Flatpak](./Linux/GnomeTwitch.html)
 
-[Buffer Overflow](./Articulos/BufferOverflow.html)    
+[Buffer Overflow](./Artículos/BufferOverflow.html)    
   
 ---
     
