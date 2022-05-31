@@ -298,7 +298,7 @@ Para ello, vamos a ver dos formas de crakear un hash, en primer lugar utilizarem
 
 ### HashCat:
 
-[HashCat](../Herramientas_y_Scripts/HashCat.html) es un descifrador de contraseña popular y eficaz. Mediante esta herramienta trataremos de descifrar el hash, en  primer
+[HashCat](../Web/Herramientas_y_Scripts/HashCat.html) es un descifrador de contraseña popular y eficaz. Mediante esta herramienta trataremos de descifrar el hash, en  primer
 lugar, crearemos un arhivo llamado `hash2` donde guardamos el hash a descifrar.
 
 Para crear el archivo:
