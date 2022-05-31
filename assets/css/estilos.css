@@ -22,7 +22,7 @@ particles-js {
 
 .contenedor {
 	width: 60%;                                             /* Cuadrado bordeado: Ancho  */
-	max-width: 1200px;
+	max-width: 1000px;
     	background-size: cover;
     	background-image: url('../images/FondoWeb.jpeg');
     	background-position:center;
@@ -98,7 +98,7 @@ particles-js {
 
 .contenido-descripcion .titulo span:last-child {
     font-weight: 900;
-    font-size: 100px;
+    font-size: 80px;
 }
 
 .contenido-descripcion .btn-link {
