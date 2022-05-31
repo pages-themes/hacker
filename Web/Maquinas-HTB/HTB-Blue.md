@@ -22,7 +22,7 @@ Ejecutamos un `ping` y vemos como nos reporta un ttl=127, por tanto, ya sabemos 
     
 ![Captura de pantalla -2022-05-13 02-23-49](https://user-images.githubusercontent.com/103068924/168258904-068e429f-b39a-4aa5-84f2-921190929c68.png)
 
-## [留](../Herramientas_y_Scripts/Nmap.html) NMAP
+## [留](../Web/Herramientas_y_Scripts/Nmap.html) NMAP
 
 Ahora mediante `nmap` realizaremos un escaneo de puertos:
 
@@ -108,7 +108,7 @@ conocidas del sistema y `safe` lo utilizamos para no causar ningún tipo de dene
  Vemos que `Metasploit` nos reporta el exploit `SMB Remote Code Execution Scanner (MS17-010) (Metasploit)`. Vamos abrir Metasploit y a buscar si 
  disponemos del exploit.
  
- ## [留](../Herramientas_y_Scripts/Metasploit.html) Metasploit
+ ## [留](../Web/Herramientas_y_Scripts/Metasploit.html) Metasploit
  
  Abrimos Metasploit:
  
