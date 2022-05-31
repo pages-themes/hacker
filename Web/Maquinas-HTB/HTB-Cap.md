@@ -6,7 +6,7 @@ En primer lugar, nos creamos un directorio con el nombre de la máquina desde el
 
     sudo mkdir Cap
     
-Ahora, mediante la función [`mkt`](../Herramientas_y_Scripts/mkt.html) que tengo previamente definida en la `.zhshrc` crearemos nuestros directorios de trabajo:
+Ahora, mediante la función [`mkt`](../Web/Herramientas_y_Scripts/mkt.html) que tengo previamente definida en la `.zhshrc` crearemos nuestros directorios de trabajo:
 
     sudo mkt
 
@@ -21,7 +21,7 @@ Ejecutamos un `ping` y vemos como nos reporta un ttl=63, por tanto, ya sabemos q
     
 ![Captura de pantalla -2022-05-09 22-50-48](https://user-images.githubusercontent.com/103068924/167497195-d69bd6ca-65fc-4ad6-97e9-7ba11627fdad.png)
  
-Verificamos mediante la herramienta [WishSystem](../Herramientas_y_Scripts/WichSistem.html) que nos encontramos frente
+Verificamos mediante la herramienta [WishSystem](../Web/Herramientas_y_Scripts/WichSistem.html) que nos encontramos frente
 a un sistema Linux.
 
 ## WhatWeb
@@ -32,10 +32,10 @@ Ahora vamos a ver mediante `whatweb` que más podemos ver:
     
 ![Captura de pantalla -2022-05-09 23-01-58](https://user-images.githubusercontent.com/103068924/167497948-0a37ea37-6d93-4b33-9ca9-c55c76d70e0a.png)
 
-Vemos que no nos reporta nada interesante, así que vamos a proceder mediante [`Nmap`](../Herramientas_y_Scripts/Nmap.html) a tratar de reportar todos
+Vemos que no nos reporta nada interesante, así que vamos a proceder mediante [`Nmap`](../Web/Herramientas_y_Scripts/Nmap.html) a tratar de reportar todos
 los puertos abiertos.
 
-## [留](../Herramientas_y_Scripts/Nmap.html) NMAP
+## [留](../Web/Herramientas_y_Scripts/Nmap.html) NMAP
 
 Ahora mediante `nmap` realizaremos un escaneo de puertos:
 
