@@ -62,5 +62,5 @@ La ZSH funciona leyendo el archivo `.zshenv` a menos que se especifique el argum
 
 # Funciones:
 
-### [Función SetTarget](f1r0x.github.io/Linux/ZSH/Settarget.html)
+### [Función SetTarget](f1r0x.github.io/Web/Linux/ZSH/Settarget.html)
     
