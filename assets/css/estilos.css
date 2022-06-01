@@ -13,31 +13,11 @@ body {
     font-weight: 300;
 }
 
-#particles-js {
-        height: 100%; 
-        width: 100%;
+particles-js {
+	height: 100vh; 
+	width: 100%;
     position: fixed;
     z-index: -1;
-}
-
-.contenedor {
-        width: 30%;            /* Ancho del contenedor */
-        max-width: 1200px; 
-    background-size: cover;
-    background-image: url('../img/bg-header3.jpeg');
-    background-position:center;
-        margin-left: auto; 
-        margin-right: auto;
-    margin-top: 250px;            /* Posición del contenedor en la página */
-    padding: 20px 30px;
-    position: relative;
-    z-index: 99;
-    opacity: .85;
-}
-
-.contenedor.header {
-    height: calc(100% - 55px);    /* Altura del contenedor */
-    border: 3px solid #555555;
 }
 
 .contenido-descripcion {
@@ -58,15 +38,10 @@ body {
     font-weight: 300;
 }
 
-.contenido-descripcion .titulo span:last-child {
-    font-weight: 900;
-    font-size: 100px;
-}
-
 .contenido-descripcion .btn-link {
     display: inline-block;
     padding: 10px 20px;
-    margin: 25px 0;
+    margin: 100px 0;
     text-transform: uppercase;
     text-decoration: none;
     color: #3dff3e;
@@ -89,4 +64,207 @@ body {
     42%, 44%, 46%,48%,  50%  { 
         opacity: 0; 
     }
+}
+
+/* LETRERO LUMINOSO*/
+
+
+@font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+.sign {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #186b4a,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #e6ffe6;
+  text-shadow: 0 0 0.6rem #e6ffe6, 0 0 1.5rem #66ffa8,
+    -0.2rem 0.1rem 1rem #66ffa8, 0.2rem 0.1rem 1rem #66ffa8,
+    0 -0.5rem 2rem #24ffa0, 0 0.5rem 3rem #24ffa0;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #e6ffe6;
+    text-shadow: 0 0 0.6rem #e6ffe6, 0 0 1.5rem #66ffa8,
+      -0.2rem 0.1rem 1rem #66ffa8, 0.2rem 0.1rem 1rem #66ffa8,
+      0 -0.5rem 2rem #24ffa0, 0 0.5rem 3rem #24ffa0;
+  }
+  28%,
+  33% {
+    color: #66ffa8;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #24ffa0;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #186b4a;
+    text-shadow: none;
+  }
+  100% {
+    color: #e6ffe6;
+    text-shadow: 0 0 0.6rem #e6ffe6, 0 0 1.5rem #66ffa8,
+      -0.2rem 0.1rem 1rem #66ffa8, 0.2rem 0.1rem 1rem #66ffa8,
+      0 -0.5rem 2rem #24ffa0, 0 0.5rem 3rem #24ffa0;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
