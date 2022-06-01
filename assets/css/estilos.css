@@ -17,6 +17,7 @@ particles-js {
 	height: 100%; 
 	width: 100%;
     position: fixed;
+    background_repeat: repeat-y;
     z-index: -1;
 }
 
@@ -267,4 +268,27 @@ particles-js {
   to {
     opacity: 1;
   }
+}
+
+/* RESOLUCION PARA LOS DISTINTOS DISPOSITIVOS */
+
+.resolucion{
+  width: 99%;
+  text-align: center;
+
+}
+/* Movil */
+@media (max-width: 767px){
+  .desktop{display: none;}
+  .tablet{display: none;}
+}
+/* Tablet */
+@media (min-width: 767px) and (max-width: 990px) {
+  .desktop{display: none;}
+  .movil{display: none;}
+} 
+/* Escritorio */  
+@media (min-width: 991px) and {
+  .tablet{display: none;}
+  .movil{display: none;}
 }

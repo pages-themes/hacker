@@ -125,8 +125,7 @@ particlesJS('particles-js',
       "background_color": "#b61924",
       "background_image": "",
       "background_position": "50% 50%",
-      "background_repeat": "no-repeat",
-      "background_size": "cover"
+      "background_repeat": "repeat-y",
     }
   }
 
