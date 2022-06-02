@@ -18,13 +18,8 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 ## Máquinas:
 
 <a href="./Maquinas-HTB/HTB-Blue.html"> <img src="../assets/images/BlueButton.png" align="middle"> Blue </a>
-<div id="container">
-    <img src="../assets/images/SwagShopButton.png" align="middle">
-    [SwagShop](Maquinas-HTB/HTB-SwagShop.html)
-</div>
 
-
-
+<a href="./Maquinas-HTB/HTB-SwagShop.html"> <img src="../assets/images/SwagShopButton.png" align="middle"> SwagShop </a>
 
 
 |**Máquinas**                                          |
