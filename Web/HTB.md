@@ -9,7 +9,7 @@ Es una gran forma de poner en práctica y de empezar en el mundo de la cibersegu
 poder prepararse para futuras certificaciones, ya que podréis encontrar retos con distintas dificultades, obligándote
 abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hacking.
 
-Página Oficial Hack The Box --> [Link](https://www.hackthebox.com/)
+`Página Oficial Hack The Box` --> [Link](https://www.hackthebox.com/)
 
 ## Artículos:
 [Como conectaré a través de la VPN de Hack The Box](./Articulos/Como_conectarse_a_HTB.html)  
