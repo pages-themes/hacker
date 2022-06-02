@@ -18,7 +18,9 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 ## Máquinas:
 
 <center><img src="../assets/images/BlueButton.png" ...></center>
-<center>Blue</center>
+<center>Blue</center>  
+  
+->![Blue](../assets/images/SnockerButton.png)<-
 
 
 
