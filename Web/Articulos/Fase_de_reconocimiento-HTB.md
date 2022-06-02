@@ -1,5 +1,3 @@
-![ImageToStl com_1_znvi3p8txmgcsmmnxqa0ig](https://user-images.githubusercontent.com/103068924/165158987-4aa056d7-3c42-431c-ae7a-7a5f7f9e771e.png)
-
 # Fase de Reconocimiento - HTB
              
  Aquí trato de mostrar unas pautas muy básicas de 
