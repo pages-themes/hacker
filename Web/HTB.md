@@ -21,14 +21,16 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 
 <a href="./Maquinas-HTB/HTB-SwagShop.html"><img src="../assets/images/SwagShopButton.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-SwagShop.html">SwagShop </a>
 
+<a href="./Maquinas-HTB/HTB-Jerry.html"><img src="../assets/images/JerryButton.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-Jerry.html">Jerry </a>
+
+
 
 |**Máquinas**                                          |
 |:-----------------------------------------------------|
-|[HTB-SwagShop](./Web/Maquinas-HTB/HTB-SwagShop.html)  |
 |[HTB-Jerry](./Web/Maquinas-HTB/HTB-Jerry.html)        |
 |[HTB-Lame](./Web/Maquinas-HTB/HTB-Lame.html)          |
 |[HTB-Cap](./Web/Maquinas-HTB/HTB-Cap.html)            |                                                      
-|[HTB-Blue](./Web/Maquinas-HTB/HTB-Blue.html)          |                                                        
+                                                       
   
 ## Starting Points:
 
