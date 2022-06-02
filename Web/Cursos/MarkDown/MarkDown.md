@@ -64,6 +64,15 @@ muestre en HTML, debemos escribirlo con la extension `.html` para que se nos mue
      
  En este caso retrocedemos un directorio con `../` y nos lleva al arhivo `Ejemplo2.html`.
 
+### Mostrar texto o comandos en Bloque Básico:
+Para poder mostrar informcación dentro de un bloque de forma que resalte y se pueda copiar su contenido de manera más eficiente,
+simplemente pulsamos cuatro veces espacio, una vez tengamos cuatro espacios desde el inicio de la línea MarkDown interpretará
+que todo el contenido posterior va dentro de un bloque:
+
+    Ejemplo
+    
+
+
     
 
 
