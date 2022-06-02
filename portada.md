@@ -1,5 +1,5 @@
 
-# Hack The Box --> [LINK](./Web/HTB.html)
+# Hack The Box --> [Link](./Web/HTB.html)
 
 ---
 
