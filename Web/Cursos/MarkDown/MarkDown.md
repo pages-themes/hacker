@@ -29,7 +29,7 @@ un `salto de página` y que los elementos permanezcan en distintas líneas simpl
 `###` : Encabezado Pequeño.
 
 ### Marcar Textos:
-Para marcar un texto, introducimos el texto entre comillas cerradas ``. ``Ejemplo`` 
+Para marcar un texto, introducimos el texto entre comillas cerradas. ``Ejemplo`` 
 
 ### Escribir texto en Cursiva o Negrita:
 Usaremos un asterisco antes y después para las cursivas y dos asteriscos para las negritas, ambos sin espacios.
