@@ -1,17 +1,7 @@
 
-# Hack The Box
-
-|**Máquinas**                                          |**Starting Points**                                      |
-|:-----------------------------------------------------|:--------------------------------------------------------|
-|[HTB-SwagShop](./Web/Maquinas-HTB/HTB-SwagShop.html)  |[HTB-Oopsie](./Web/Starting Point/HTB-Oopsie.html)       |
-|[HTB-Jerry](./Web/Maquinas-HTB/HTB-Jerry.html)        |[HTB-Responder](./Web/Starting Point/HTB-Responder.html) |
-|[HTB-Lame](./Web/Maquinas-HTB/HTB-Lame.html)          |[HTB-Vaccine](./Web/Starting Point/HTB-Vaccine.html)     |
-|[HTB-Cap](./Web/Maquinas-HTB/HTB-Cap.html)            |                                                         |
-|[HTB-Blue](./Web/Maquinas-HTB/HTB-Blue.html)          |                                                         |
-  
+# [Hack The Box](./Web/HTB.html)
 
 ---
-  
 
 # Artículos  
 
@@ -19,16 +9,13 @@
 
 [Windows](./Web/Windows/Windows.html)
 
-[Hack The Box](./Web/Articulos/Artículos-HTB.html)
-
 [Bootear USB en Linux con Ventoy](./Web/Linux/Programas_para_Linux/Ventoy.html)
 
 [Instalación de Twitch en Linux mediante Flatpak](./Web/Linux/GnomeTwitch.html)
 
 [Buffer Overflow](./Web/Articulos/BufferOverflow.html)    
   
----
-    
+---    
 
 # Herramientas y Scripts 
 
