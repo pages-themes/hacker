@@ -22,15 +22,7 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
     This is an image
 </div>
 
-#container {
-    height:100px;
-    line-height:100px;
-}
-
-#container img {
-    vertical-align:middle;
-    max-height:100%;
-}
+![my image](../assets/images/BlueButton.png#center)
 
 
 
