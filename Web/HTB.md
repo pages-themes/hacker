@@ -24,11 +24,9 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 
 # Starting Points:
 
-|                                                         |
-|:--------------------------------------------------------|
-|[HTB-Oopsie](./Web/Starting Point/HTB-Oopsie.html)       |
-|[HTB-Responder](./Web/Starting Point/HTB-Responder.html) |
-|[HTB-Vaccine](./Web/Starting Point/HTB-Vaccine.html)     |
+[HTB-Oopsie](./Web/Starting Point/HTB-Oopsie.html)  
+[HTB-Responder](./Web/Starting Point/HTB-Responder.html)  
+[HTB-Vaccine](./Web/Starting Point/HTB-Vaccine.html)
 
 
 ---
