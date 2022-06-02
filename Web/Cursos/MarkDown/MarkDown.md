@@ -44,6 +44,24 @@ automáticamente:
 * Ejemplo2
 * Ejemplo3
 
+### Crear Hipervínculos:
+Para poder introducir hipervinculos tanto en textos, enunciados o imagenes, podemos utilizar el siguiente parametro
+`[]()`. Algo que debemos tener en cuenta es que si queremos redirigirnos a un archivo `.md` (MarkDown) pero que se nos
+muestre en HTML, debemos escribirlo con la extension `.html` para que se nos mueste correctamente.
+
+    [Texto](Ruta del hipervínculo)
+    
+    [Ejemplo](https://ejemplo.com)
+ 
+ En la ruta del hipervínculo podemos tanto introducir el dominio de una página (como el ejemplo anterior) o redirigir
+ a un archivo local. Para ello simplemente establecemos la ruta desde el archivo desde el que nos encontremos.
+ 
+ `[Ejemplo](./Ejemplo1.html)` : De esta forma nos redirije al archivo `Ejemplo1.html` situado en el mismo directorio que en
+ el que nos encontramos `./` .
+ 
+ `[Ejemplo2](../Ejemplo2.html)` : En este caso retrocedemos un directorio con `../` y nos lleva al arhivo `Ejemplo2.html`.
+
+    
 
 
 
