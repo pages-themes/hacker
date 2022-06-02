@@ -23,7 +23,7 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 </div>
 <div id="container">
     <img src="../assets/images/SwagShopButton.png" align="middle">
-    [Blue](./Maquinas-HTB/HTB-SwagShop.html)
+    [SwagShop](./Maquinas-HTB/HTB-SwagShop.html)
 </div>
 
 
