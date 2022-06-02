@@ -19,16 +19,8 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 
 <div id="container">
     <img src="../assets/images/BlueButton.png" align="middle">
-    This is an image
+    [Blue](./Web/Maquinas-HTB/HTB-Blue.html)
 </div>
-
-![my image](../assets/images/BlueButton.png#center)
-
-
-
-
-
-
 
 |**Máquinas**                                          |
 |:-----------------------------------------------------|
