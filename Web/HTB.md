@@ -19,11 +19,11 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 
 <div id="container">
     <img src="../assets/images/BlueButton.png" align="middle">
-    [Blue](./Web/Maquinas-HTB/HTB-Blue.html)
+    [Blue](./Maquinas-HTB/HTB-Blue.html)
 </div>
 <div id="container">
     <img src="../assets/images/SwagShopButton.png" align="middle">
-    [Blue](./Web/Maquinas-HTB/HTB-SwagShop.html)
+    [Blue](./Maquinas-HTB/HTB-SwagShop.html)
 </div>
 
 
