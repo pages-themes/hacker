@@ -17,7 +17,7 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 
 ## Máquinas:
 
-<a href="./Maquinas-HTB/HTB-Blue.html"><img src="../assets/images/BlueButton.png" align="middle"></a>  <a href="./Maquinas-HTB/HTB-Blue.html">Blue</a> <a href="./Maquinas-HTB/HTB-SwagShop.html"><img src="../assets/images/SwagShopButton.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-SwagShop.html">SwagShop</a> <a href="./Maquinas-HTB/HTB-Jerry.html"><img src="../assets/images/JerryButton.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-Jerry.html">Jerry</a>
+<a href="./Maquinas-HTB/HTB-Blue.html"><img src="../assets/images/BlueButton.png" align="middle"></a>  <a href="./Maquinas-HTB/HTB-Blue.html">Blue</a>  <a href="./Maquinas-HTB/HTB-SwagShop.html"><img src="../assets/images/SwagShopButton.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-SwagShop.html">SwagShop</a>  <a href="./Maquinas-HTB/HTB-Jerry.html"><img src="../assets/images/JerryButton.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-Jerry.html">Jerry</a>
 
 
 
