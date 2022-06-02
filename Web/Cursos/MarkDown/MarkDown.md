@@ -11,15 +11,25 @@ Markdown es realmente dos cosas: por un lado, el lenguaje; por otro, una herrami
 ## Sintaxis:
 
 La sintaxis es muy sencilla y cuenta con varias opciones diferentes para algunos de sus elementos. Básicamente, se trata de añadir ciertos caracteres al
-inicio de la línea o antes y después de los elementos a los que vamos a aplicar el formato. 
+inicio de la línea o antes y después de los elementos a los que vamos a aplicar el formato.
 
 ## Comandos Básicos:
+
+### Espacios:
+Los espacios en el leguaje MarkDown tienen gran importacia. Un espacio se comportará de manera normal, dos espacio es el máximo que podemos separar dos
+elementos ya que a partir de dos espacios, todos los restantes se anula.
+
+Si al terminar una línea no incorporamos ningún espacio, MarkDown interpreta que debe solaparlo con la siguiente línea e introduce un espacio. Para realizar
+un `salto de página` y que los elementos permanezcan en distintas líneas simplemente introducimos `dos espacios al final de la línea`.
 
 ### Encabezados:
 
 `#` : Encabezado Grande.  
 `##` : Encabezado Medio.  
-`###` : Encabezado Pequeño.  
+`###` : Encabezado Pequeño.
+
+### Marcar Textos:
+Para marcar un texto, introducimos el texto entre comillas cerradas ``. ``Ejemplo`` 
 
 ### Escribir texto en Cursiva o Negrita:
 Usaremos un asterisco antes y después para las cursivas y dos asteriscos para las negritas, ambos sin espacios.
