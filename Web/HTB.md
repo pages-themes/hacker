@@ -17,8 +17,6 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 [Como conectaré a través de la VPN de Hack The Box](./Articulos/Como_conectarse_a_HTB.html)  
 [Fase de Reconocimiento](./Articulos/Fase_de_reconocimiento-HTB.html)  
 
----
-
 # Máquinas:
 
 <a href="./Maquinas-HTB/HTB-Blue.html"><img src="../assets/images/BlueButton.png" align="middle"></a>  <a href="./Maquinas-HTB/HTB-Blue.html">Blue</a>  <a href="./Maquinas-HTB/HTB-SwagShop.html"><img src="../assets/images/SwagShopButton.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-SwagShop.html">SwagShop</a>  <a href="./Maquinas-HTB/HTB-Jerry.html"><img src="../assets/images/JerryButton.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-Jerry.html">Jerry</a>  <a href="./Maquinas-HTB/HTB-Lame.html"><img src="../assets/images/Lame.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-Lame.html">Lame</a>  <a href="./Maquinas-HTB/HTB-Cap.html"><img src="../assets/images/Cap.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-Cap.html">Cap</a> 
@@ -26,7 +24,7 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 
 # Starting Points:
 
-|**Starting Points**                                      |
+|                                                         |
 |:--------------------------------------------------------|
 |[HTB-Oopsie](./Web/Starting Point/HTB-Oopsie.html)       |
 |[HTB-Responder](./Web/Starting Point/HTB-Responder.html) |
