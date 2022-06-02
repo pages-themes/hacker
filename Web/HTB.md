@@ -17,10 +17,20 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 
 ## Máquinas:
 
-<center><img src="./assets/images/BlueButton.png" ...></center>
-<center>Blue</center>  
-  
-->![alt text](./assets/images/SnockerButton.png)<-
+<div id="container">
+    <img src="../assets/images/BlueButton.png">
+    This is an image
+</div>
+
+#container {
+    height:100px;
+    line-height:100px;
+}
+
+#container img {
+    vertical-align:middle;
+    max-height:100%;
+}
 
 
 
