@@ -20,7 +20,7 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 <center><img src="../assets/images/BlueButton.png" ...></center>
 <center>Blue</center>  
   
-->![Blue](../assets/images/SnockerButton.png)<-
+->![Blue](./assets/images/SnockerButton.png)<-
 
 
 
