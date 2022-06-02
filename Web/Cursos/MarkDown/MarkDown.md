@@ -56,7 +56,7 @@ automáticamente:
 * Ejemplo2
 * Ejemplo3
 
-### Crear Hipervínculos:
+### Crear Links o Hipervínculos:
 Para poder introducir hipervinculos tanto en textos, enunciados o imagenes, podemos utilizar el siguiente parametro
 `[]()`. Algo que debemos tener en cuenta es que si queremos redirigirnos a un archivo `.md` (MarkDown) pero que se nos
 muestre en HTML, debemos escribirlo con la extension `.html` para que se nos mueste correctamente.
@@ -75,7 +75,14 @@ muestre en HTML, debemos escribirlo con la extension `.html` para que se nos mue
      [Ejemplo2](../Ejemplo2.html)
      
  En este caso retrocedemos un directorio con `../` y nos lleva al arhivo `Ejemplo2.html`.
+ 
+### Links o Hipervínculos automáticos:
+Para generar links automáticos tan solo tendrás que rodearlos con los símbolos < >
 
+    <https://f1r0x.github.io>
+    
+<https://f1r0x.github.io>
+      
 ### Mostrar texto o comandos en Bloque Básico:
 Para poder mostrar informcación dentro de un bloque de forma que resalte y se pueda copiar su contenido de manera más eficiente,
 simplemente pulsamos cuatro veces espacio, una vez tengamos cuatro espacios desde el inicio de la línea MarkDown interpretará
@@ -83,6 +90,39 @@ que todo el contenido posterior va dentro de un bloque:
 
     Ejemplo
     
+### Crear Bloque para Código:
+Si quieres crear un bloque entero que contenga código. Lo único que tienes que hacer es encerrar dicho párrafo entre dos líneas
+formadas por tres ~ virgulillas.
+
+~~~
+Ejemplo1
+Ejemplo2
+Ejemplo3
+~~~
+
+### Reglas Horizontales:
+
+Para introducir líneas horizontales que separen los distintos apartados podemos utilizar tres asteriscos `***`, tres guiones `---` o tres
+barras bajas `___`.
+
+***  
+---  
+___
+
+### Imagenes:
+Insertar una imagen con Markdown se realiza de una manera prácticamente idéntica a insertar links, con la diferencia que primero incorporamos un
+sino de exclamación `![]()`
+
+    ![Texto alternativo](/ruta/a/la/imagen.jpg)
+
+El texto alternativo es lo que se mostraría si la carga de la imagen fallase. 
+
+También podrás añadir un título alternativo entrecomillándolo al final de la ruta. Esto sería el título mostrado al dejar el cursor del ratón sobre la imagen.
+
+    ![Texto alternativo](/ruta/a/la/imagen.jpg "Texto al cusrsar sobre la Imagen.")
+    
+    
+/* Hola */
 
 
     
