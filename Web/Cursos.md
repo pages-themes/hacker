@@ -1,4 +1,4 @@
 # Cursos
 
-* Linux --> [Link](./Linux/Liux.html)
+* Linux --> [Link](./Linux/Linux.html)
 * MarkDown --> [Link](./Cursos/MarkDown/MarkDown.html) 
