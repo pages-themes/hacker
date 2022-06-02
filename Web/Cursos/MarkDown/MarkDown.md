@@ -17,13 +17,13 @@ inicio de la línea o antes y después de los elementos a los que vamos a aplica
 
 ### Encabezados:
 
-`#` : Encabezado Grande
-`##` : Encabezado Medio
-`###` : Encabezado Pequeño.
+`#` : Encabezado Grande.  
+`##` : Encabezado Medio.  
+`###` : Encabezado Pequeño.  
 
 ### Escribir texto en Cursiva o Negrita
 
-`*cursiva*` : 
-`**negrita**` :
+`*cursiva*` :   
+`**negrita**` :  
 
 
