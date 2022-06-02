@@ -56,10 +56,13 @@ muestre en HTML, debemos escribirlo con la extension `.html` para que se nos mue
  En la ruta del hipervínculo podemos tanto introducir el dominio de una página (como el ejemplo anterior) o redirigir
  a un archivo local. Para ello simplemente establecemos la ruta desde el archivo desde el que nos encontremos.
  
- `[Ejemplo](./Ejemplo1.html)` : De esta forma nos redirije al archivo `Ejemplo1.html` situado en el mismo directorio que en
- el que nos encontramos `./` .
+     [Ejemplo](./Ejemplo1.html)
+     
+ De esta forma nos redirije al archivo `Ejemplo1.html` situado en el mismo directorio que en el que nos encontramos `./` .
  
- `[Ejemplo2](../Ejemplo2.html)` : En este caso retrocedemos un directorio con `../` y nos lleva al arhivo `Ejemplo2.html`.
+     [Ejemplo2](../Ejemplo2.html)
+     
+ En este caso retrocedemos un directorio con `../` y nos lleva al arhivo `Ejemplo2.html`.
 
     
 
