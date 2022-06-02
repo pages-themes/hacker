@@ -17,6 +17,12 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 
 ## Máquinas:
 
+<center><img src="../assets/images/BlueButton.png" ...></center>
+<center>Blue</center>
+
+
+
+
 |**Máquinas**                                          |
 |:-----------------------------------------------------|
 |[HTB-SwagShop](./Web/Maquinas-HTB/HTB-SwagShop.html)  |
