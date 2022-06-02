@@ -12,9 +12,27 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 Página Oficial Hack The Box --> [Link](https://www.hackthebox.com/)
 
 ## Artículos:
- 
+[Como conectare a traves de la VPN de Hack The Box](./Articulos/Como_conectarse_a_HTB.html)  
+[Fase de Reconocimiento](./Articulos/Fase_de_reconocimiento-HTB.html)  
 
 ## Máquinas:
 
+|**Máquinas**                                          |
+|:-----------------------------------------------------|
+|[HTB-SwagShop](./Web/Maquinas-HTB/HTB-SwagShop.html)  |
+|[HTB-Jerry](./Web/Maquinas-HTB/HTB-Jerry.html)        |
+|[HTB-Lame](./Web/Maquinas-HTB/HTB-Lame.html)          |
+|[HTB-Cap](./Web/Maquinas-HTB/HTB-Cap.html)            |                                                      
+|[HTB-Blue](./Web/Maquinas-HTB/HTB-Blue.html)          |                                                        
+  
 ## Starting Points:
 
+|**Starting Points**                                      |
+|:--------------------------------------------------------|
+|[HTB-Oopsie](./Web/Starting\ Point/HTB-Oopsie.html)       |
+|[HTB-Responder](./Web/Starting Point/HTB-Responder.html) |
+|[HTB-Vaccine](./Web/Starting Point/HTB-Vaccine.html)     |
+ 
+ 
+
+  
