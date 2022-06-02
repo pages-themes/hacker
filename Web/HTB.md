@@ -29,7 +29,7 @@ Página Oficial Hack The Box --> [Link](https://www.hackthebox.com/)
 
 |**Starting Points**                                      |
 |:--------------------------------------------------------|
-|[HTB-Oopsie](./Web/Starting\ Point/HTB-Oopsie.html)       |
+|[HTB-Oopsie](./Web/Starting Point/HTB-Oopsie.html)       |
 |[HTB-Responder](./Web/Starting Point/HTB-Responder.html) |
 |[HTB-Vaccine](./Web/Starting Point/HTB-Vaccine.html)     |
  
