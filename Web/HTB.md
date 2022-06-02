@@ -27,7 +27,6 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 
 |**Máquinas**                                          |
 |:-----------------------------------------------------|
-|[HTB-Jerry](./Web/Maquinas-HTB/HTB-Jerry.html)        |
 |[HTB-Lame](./Web/Maquinas-HTB/HTB-Lame.html)          |
 |[HTB-Cap](./Web/Maquinas-HTB/HTB-Cap.html)            |                                                      
                                                        
