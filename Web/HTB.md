@@ -10,9 +10,9 @@ poder prepararse para futuras certificaciones, ya que podréis encontrar retos c
 abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hacking.
 
 `Página Oficial Hack The Box` --> [Link](https://www.hackthebox.com/)
-
----
-
+  
+  
+     
 ## Artículos:
 [Como conectaré a través de la VPN de Hack The Box](./Articulos/Como_conectarse_a_HTB.html)  
 [Fase de Reconocimiento](./Articulos/Fase_de_reconocimiento-HTB.html)  
