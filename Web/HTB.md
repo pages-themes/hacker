@@ -18,11 +18,14 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 ## Máquinas:
 
 <div id="container">
-    <img src="../assets/images/BlueButton.png">
+    <img src="../assets/images/BlueButton.png" align="middle">
     This is an image
 </div>
 
 ![my image](../assets/images/BlueButton.png#center)
+
+
+
 
 
 
