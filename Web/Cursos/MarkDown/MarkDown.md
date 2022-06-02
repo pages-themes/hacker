@@ -21,9 +21,30 @@ inicio de la línea o antes y después de los elementos a los que vamos a aplica
 `##` : Encabezado Medio.  
 `###` : Encabezado Pequeño.  
 
-### Escribir texto en Cursiva o Negrita
+### Escribir texto en Cursiva o Negrita:
+Usaremos un asterisco antes y después para las cursivas y dos asteriscos para las negritas, ambos sin espacios.
 
-`*cursiva*` :   
-`**negrita**` :  
+`*cursiva*` : *cursiva*   
+`**negrita**` : **negrita**  
+
+### Crear Listas:
+En MarkDown podremos crear dos tipos de listas, `numeradas` y `sin numerar`. Para crear listas numeradas usaremos números
+seguidos de un punto y un espacio, una vez hemos escrito el primero (`1. ` Por ejemplo.), simplemente al terminar pulsamos
+`enter` y automaticamente creará el siguiente:
+
+1. Ejemplo1  
+2. Ejemplo2 
+3. Ejemplo3
+
+Para crear listas sín numerar el proceso es el mismo, simplemente escribimos asrterisco `*` al inicio de cada línea seguido
+de un espacio. Tras escribir el elemento listado pulsamos `enter` y saltara a la siguiente línea ehecutando el asterisco 
+automáticamente:
+
+* Ejemplo1
+* Ejemplo2
+* Ejemplo3
+
+
+
 
 
