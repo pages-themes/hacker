@@ -23,7 +23,7 @@ particlesJS('particles-js',
         }
       },
       "color": {
-        "value": "#66ffa8"
+        "value": "#b5e800"
       },
       "shape": {
         "type": "circle",

@@ -28,7 +28,7 @@ body {
     background-position:center;
 	margin-left: auto; 
 	margin-right: auto;
-    margin-top: -820px;
+    margin-top: -920px;
     padding: 20px 30px;
     position: relative;
     z-index: 99;
@@ -36,7 +36,7 @@ body {
 }
 
 .contenedor.header {
-    height: calc(100vh - 255px);
+    height: calc(100vh - 780px);
     border: 3px solid #555555;
 }
 
@@ -72,53 +72,24 @@ body {
     border-bottom: 1px solid currentcolor;
 }
 
-.contenido-descripcion {
-    width: 40%;
-    display: flex;
-    height: 100%;
-    align-items: center;
+/* SEGUNDO CONTENEDOR */
+
+.contenedor1 {
+	width: 90%;
+	max-width: 1200px;
+    background-size: cover;
+    background-image: url('../images/fondonegro.png');
+    background-position:center;
+	margin-left: auto; 
+	margin-right: auto;
+    margin-top: -320px;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 100;
+    opacity: .99;
 }
 
-.contenido-descripcion .titulo {
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
-.contenido-descripcion .titulo span:first-child {
-    font-size: 50px; 
-    display: block;
-    font-weight: 300;
-}
-
-.contenido-descripcion .titulo span:last-child {
-    font-weight: 900;
-    font-size: 100px;
-}
-
-.contenido-descripcion .btn-link {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 25px 0;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #b5e853;
-    border: 1px solid #555555;
-    animation: parpadeo 2s linear infinite;
-    transition: .7s ease;
-}
-
-.contenido-descripcion .btn-link:hover {
-    border: 1px solid #b5e853;
-    animation: none;
-}
-
-
-@keyframes parpadeo  {
-    0%, 41%, 45%, 47%, 49.5%, 100%  { 
-        opacity: 1;
-    }
-
-    42%, 44%, 46%,48%,  50%  { 
-        opacity: 0; 
-    }
+.contenedor1.header {
+    height: calc(100vh - 780px);
+    border: 3px solid #555555;
 }

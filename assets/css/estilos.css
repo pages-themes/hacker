@@ -84,7 +84,7 @@ particles-js {
   height: 50%;
   background-image: radial-gradient(
     ellipse 50% 35% at 50% 50%,
-    #186b4a,
+    #759538,
     transparent
   );
   transform: translate(-50%, -50%);
@@ -94,10 +94,10 @@ particles-js {
   font-family: "Clip";
   text-transform: uppercase;
   font-size: 6em;
-  color: #e6ffe6;
-  text-shadow: 0 0 0.6rem #e6ffe6, 0 0 1.5rem #66ffa8,
-    -0.2rem 0.1rem 1rem #66ffa8, 0.2rem 0.1rem 1rem #66ffa8,
-    0 -0.5rem 2rem #24ffa0, 0 0.5rem 3rem #24ffa0;
+  color: #eaf8c7;
+  text-shadow: 0 0 0.6rem #eaf8c7, 0 0 1.5rem #b5e853,
+    -0.2rem 0.1rem 1rem #b5e853, 0.2rem 0.1rem 1rem #b5e853,
+    0 -0.5rem 2rem #b5e800, 0 0.5rem 3rem #b5e800;
   animation: shine 2s forwards, flicker 3s infinite;
 }
 
@@ -106,19 +106,19 @@ particles-js {
   22%,
   36%,
   75% {
-    color: #e6ffe6;
-    text-shadow: 0 0 0.6rem #e6ffe6, 0 0 1.5rem #66ffa8,
-      -0.2rem 0.1rem 1rem #66ffa8, 0.2rem 0.1rem 1rem #66ffa8,
-      0 -0.5rem 2rem #24ffa0, 0 0.5rem 3rem #24ffa0;
+    color: #eaf8c7;
+    text-shadow: 0 0 0.6rem #eaf8c7, 0 0 1.5rem #b5e853,
+      -0.2rem 0.1rem 1rem #b5e853, 0.2rem 0.1rem 1rem #b5e853,
+      0 -0.5rem 2rem #b5e800, 0 0.5rem 3rem #b5e800;
   }
   28%,
   33% {
-    color: #66ffa8;
+    color: #b5e853;
     text-shadow: none;
   }
   82%,
   97% {
-    color: #24ffa0;
+    color: #b5e800;
     text-shadow: none;
   }
 }
@@ -133,14 +133,14 @@ particles-js {
 
 @keyframes shine {
   0% {
-    color: #186b4a;
+    color: #759538;
     text-shadow: none;
   }
   100% {
-    color: #e6ffe6;
-    text-shadow: 0 0 0.6rem #e6ffe6, 0 0 1.5rem #66ffa8,
-      -0.2rem 0.1rem 1rem #66ffa8, 0.2rem 0.1rem 1rem #66ffa8,
-      0 -0.5rem 2rem #24ffa0, 0 0.5rem 3rem #24ffa0;
+    color: #eaf8c7;
+    text-shadow: 0 0 0.6rem #eaf8c7, 0 0 1.5rem #b5e853,
+      -0.2rem 0.1rem 1rem #b5e853, 0.2rem 0.1rem 1rem #b5e853,
+      0 -0.5rem 2rem #b5e800, 0 0.5rem 3rem #b5e800;
   }
 }
 
