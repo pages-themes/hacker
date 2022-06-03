@@ -20,7 +20,7 @@
 ## Reporte y reconocimiento:
 Herramientas útiles para la fase de reconocimiento, como reportes de SO o recopilación de puertos.
 
-* [Nmap](../Web/Herramientas_y_Scripts/Nmap.html)     
+* <a href="../Web/Herramientas_y_Scripts/Nmap.html" style="text-decoration:none">Nmap</a> 
 * [WichSystem](./Web/Herramientas_y_Scripts/WichSystem.html)    
 * [ExtractPorts](./Web/Herramientas_y_Scripts/ExtractPorts.html)    
 * [mkt](./Web/Herramientas_y_Scripts/mkt.html)       
