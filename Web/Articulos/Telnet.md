@@ -66,3 +66,28 @@ tienes que hacer tanto en el equipo al que te quieres conectar como ese desde el
 El archivo de configuración de telnet es `/etc/xinetd.d/telnet`. Para habilitar el servidor telnet, debe abrir este archivo y asegurarse de que
 `Deshabilitar = No` está como `Deshabilitar = Sí`.
 
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
