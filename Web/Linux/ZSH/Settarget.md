@@ -50,5 +50,32 @@ Para ejecutar la función simplemente le especificamos la Ip y el nombre de la m
 
 En caso de no ejecutarse mediante `root`. Nos registramos como `root` y repetimos la misma operación.
 
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
+
+
 
     
