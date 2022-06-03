@@ -169,6 +169,31 @@ Y finalmente, mediante `type` podemos visualizar el contenido:
 
 ![Captura de pantalla -2022-05-09 09-36-58](https://user-images.githubusercontent.com/103068924/167387740-ca9ebbf6-6e75-47f5-b8e5-076a6e0eee27.png)
 
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
 
 
 
