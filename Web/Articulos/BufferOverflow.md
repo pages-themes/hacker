@@ -38,3 +38,30 @@ tiempo mínimo.
 Pero imaginémonos que excepcionalmente entran 12L por la tubería A, ahora parte de esa agua se quedaría en el deposito llenándolo ya que solo podrán 
 salir por la tubería B 10L, esperando a que el flujo de agua baje y puedan salir, pero si pasa demasiado tiempo este se acabará llenando y se 
 desbordará (buffer overflow) y eliminando del sistema el excedente, es decir, parte de los datos nuevos que entren.
+
+
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
