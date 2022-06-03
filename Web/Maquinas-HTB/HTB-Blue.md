@@ -174,7 +174,31 @@ Finalmente, la flag del usuario `root` la podemos encontrar en el directorio `C:
 ![Captura de pantalla -2022-05-13 11-40-500](https://user-images.githubusercontent.com/103068924/168327730-476d67f7-5298-41f3-8f38-c92a0bb8fbff.png)
 
   
+ ---
+---
   
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+--- 
   
  
  
