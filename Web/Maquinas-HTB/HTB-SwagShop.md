@@ -352,5 +352,29 @@ Genial, ya estamos como `root`. Podemos comprobarlo mediante el comando `whoami`
 ![Captura de pantalla -2022-05-05 10-19-29](https://user-images.githubusercontent.com/103068924/166892692-9ec8c35d-bf9f-4661-9383-c883243fbcd1.png)
 
 
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
 
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
     
