@@ -7,7 +7,7 @@
 
 # Artículos  
 
-* <a href=»./Web/Linux/Linux.html» style=»text-decoration:none;»>Linux</a>  
+* <a href="./Web/Linux/Linux.html">Linux</a>  
 * [Linux](./Web/Linux/Linux.html)
 * [Windows](./Web/Windows/Windows.html)
 * [Bootear USB en Linux con Ventoy](./Web/Linux/Programas_para_Linux/Ventoy.html)
