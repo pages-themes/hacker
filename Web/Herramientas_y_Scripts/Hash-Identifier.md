@@ -8,4 +8,29 @@ Admite más de 220 tipos de hash únicos mediante expresiones regulares.
 Es capaz de identificar un solo hash, analizar un archivo o leer varios archivos en un directorio e identificar los hash dentro de ellos. 
 También es capaz de incluir el modo hashcat correspondiente y/o el formato [JohnTheRipper](./Web/Herramientas_y_Scripts/john_the_ripper.html) en su salida.
 
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
 
