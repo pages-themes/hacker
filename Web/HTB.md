@@ -24,9 +24,9 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 
 # Starting Points:
 
-* [HTB-Oopsie](./Web/Starting Point/HTB-Oopsie.html)  
-* [HTB-Responder](./Web/Starting Point/HTB-Responder.html)  
-* [HTB-Vaccine](./Web/Starting Point/HTB-Vaccine.html)
+* <a href="./Web/Starting Point/HTB-Oopsie.html" style="text-decoration:none">HTB-Oopsie</a>
+* <a href="./Web/Starting Point/HTB-Responder.html" style="text-decoration:none">HTB-Responder</a>  
+* <a href="./Web/Starting Point/HTB-Vaccine.html" style="text-decoration:none">HTB-Vaccine</a>
 
 
 ---
