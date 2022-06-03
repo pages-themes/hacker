@@ -26,3 +26,28 @@ Para iniciar un servicio SSH en Linux ejecutamos el comando `ssh`, donde especif
 Una vez establecida la conexión nos pedira la contraseña de la cuenta solicitada. La introducimos, pulsamos `Enter` y finalmente tendremos control
 del equipo.
 
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
