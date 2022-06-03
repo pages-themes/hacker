@@ -34,7 +34,7 @@
   
 ---
      
-## NMAP --> [Link](../Herramientas_y_Scripts/Nmap.html) 
+## NMAP --> <a href="../Herramientas_y_Scripts/Nmap.html" style="text-decoration:none">Link</a> 
   
   Tras conocer la máquina a la que nos enfrentamos
   pasaremos analizar los protocolos tcp/udp.
@@ -72,8 +72,7 @@
 
 ---
   
-## NMAP --> [Link](../Herramientas_y_Scripts/Nmap.html)
-
+## NMAP --> <a href="../Herramientas_y_Scripts/Nmap.html" style="text-decoration:none">Link</a>
 ### ESCANEO EXHAUSTIVO: 
  
  Tras conocer los puertos TCP abiertos, realizaremos un 
