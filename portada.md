@@ -7,11 +7,11 @@
 
 # Artículos  
 
-* <a href="./Web/Linux/Linux.html" style="text-decoration:none">Linux</a>  
-* <a href="./Web/Windows/Windows.html" style="text-decoration:none">Windows</a> 
-* <a href="./Web/Linux/Programas_para_Linux/Ventoy.html" style="text-decoration:none">Bootear USB en Linux con Ventoy</a>
-* <a href="./Web/Linux/GnomeTwitch.html" style="text-decoration:none">Instalación de Twitch en Linux mediante Flatpak</a> 
-* <a href="./Web/Articulos/BufferOverflow.html" style="text-decoration:none">Buffer Overflow</a>  
+* <a href="./Web/Linux/Linux.html" style="text-decoration:none">Linux.</a>  
+* <a href="./Web/Windows/Windows.html" style="text-decoration:none">Windows.</a> 
+* <a href="./Web/Linux/Programas_para_Linux/Ventoy.html" style="text-decoration:none">Bootear USB en Linux con Ventoy.</a>
+* <a href="./Web/Linux/GnomeTwitch.html" style="text-decoration:none">Instalación de Twitch en Linux mediante Flatpak.</a> 
+* <a href="./Web/Articulos/BufferOverflow.html" style="text-decoration:none">Buffer Overflow.</a>  
   
 ---    
 
@@ -29,31 +29,30 @@ Herramientas útiles para la fase de reconocimiento, como reportes de SO o recop
 ## Control remoto de Equipos y Shells Inversas:
 Programas y herramientas para crear accesos remotos y shells inversas con otros equipos.
 
-* [SSH](./Web/Articulos/SSH.html)  
-* [Telnet](./Web/Articulos/Telnet.html)  
-* [PHP Reverse Shell](./Web/Herramientas_y_Scripts/php-reverse-shell.html)
-* [Bash Revesrse Shell](./Web/Herramientas_y_Scripts/bash-reverse-shell.html)  
-* [Tratamiento de la TTY](./Web/Articulos/tratamientoTTY.html)  
-Reverse Shell Generator -->  [Link](https://www.revshells.com/) 
+* <a href="./Web/Articulos/SSH.html" style="text-decoration:none">SSH</a>  
+* <a href="./Web/Articulos/Telnet.html" style="text-decoration:none">Telnet</a>  
+* <a href="./Web/Herramientas_y_Scripts/php-reverse-shell.html" style="text-decoration:none">PHP Reverse Shell</a>
+* <a href="./Web/Herramientas_y_Scripts/bash-reverse-shell.html" style="text-decoration:none">Bash Revesrse Shell</a>
+* <a href="./Web/Articulos/tratamientoTTY.html" style="text-decoration:none">Tratamiento de la TTY</a>
 
 ## Proxies y Analizadores de Tráfico:
 
-* [BurpSuite](./Web/Herramientas_y_Scripts/burpsuite.html)
+* <a href="./Web/Herramientas_y_Scripts/burpsuite.html" style="text-decoration:none">BurpSuite</a> 
 
 ## Hash:
 Herramientas de reconocimiento y desencriptación de hash.
 
-* [John the Ripper](./Web/Herramientas_y_Scripts/john_the_ripper.html)    
-* [HashID](./Web/Herramientas_y_Scripts/HashId.html)    
-* [Hash Identifier](./Web/Herramientas_y_Scripts/Hash-Identifier.html)    
-* [HashCat](./Web/Herramientas_y_Scripts/HashCat.html)
+* <a href="./Web/Herramientas_y_Scripts/john_the_ripper.html" style="text-decoration:none">John the Ripper</a>
+* <a href="./Web/Herramientas_y_Scripts/HashId.html" style="text-decoration:none">HashID</a>  
+* <a href="./Web/Herramientas_y_Scripts/Hash-Identifier.html" style="text-decoration:none">Hash Identifier</a>
+* <a href="./Web/Herramientas_y_Scripts/HashCat.html" style="text-decoration:none">HashCat</a>
 
 ## Codificación:
 La codificación roceso de conversión de los componentes de un mensaje para que este no sea entendido. Las reglas de transformación entre un sistema y otro van a estar
 definidas para poder entender el contenido del mensaje. A diferencia del cifrado, la codificación se basa en alterar la semántica del mensaje, lo que está relacionado
 con el significado del mensaje.
 
-* [Base64](./Web/Articulos/base64.html)
+* <a href="./Web/Articulos/base64.html" style="text-decoration:none">Base64</a>
 
 ## Cifrados
 El cifrado se basa en aplicar un algoritmo que suele utilizar una clave para transformar la estructura y composición de la información que se pretende proteger, de tal 
@@ -65,14 +64,14 @@ Fuzzing es una técnica de pruebas de software, a menudo automatizado o semiauto
 aleatorios a las entradas de un programa de ordenador. Entonces se monitorizan las excepciones tales como caídas, aserciones de código erróneas, o
 para encontrar potenciales filtraciones de memoria.
 
-* [Wfuzz](./Web/Herramientas_y_Scripts/Wfuzz.html)
+* <a href="./Web/Herramientas_y_Scripts/Wfuzz.html" style="text-decoration:none">Wfuzz</a> 
 
 ## Phishing:
 Phishing es un término informático que distingue a un conjunto de técnicas que persiguen el engaño a una víctima ganándose su confianza haciéndose
 pasar por una persona, empresa o servicio de confianza, para manipularla y hacer que realice acciones que no debería realiza.
 
-* [Setoolkit](./Web/Herramientas_y_Scripts/Setoolkit.html)
-
+* <a href="./Web/Herramientas_y_Scripts/Setoolkit.html" style="text-decoration:none">Setoolkit</a> 
+* 
 ## Exploits:
 
 Un exploit es una pieza de software, un fragmento de datos o una secuencia de comandos que aprovecha un error o una vulnerabilidad para provocar
