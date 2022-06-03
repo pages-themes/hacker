@@ -9,7 +9,7 @@ Es una gran forma de poner en práctica y de empezar en el mundo de la cibersegu
 poder prepararse para futuras certificaciones, ya que podréis encontrar retos con distintas dificultades, obligándote
 abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hacking.
 
-`Página Oficial Hack The Box` --> [Link](https://www.hackthebox.com/)
+`Página Oficial Hack The Box` --> <a href="https://www.hackthebox.com/" style="text-decoration:none">Link</a>
   
   
      
@@ -19,7 +19,7 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 
 # Máquinas:
 
-<a href="./Maquinas-HTB/HTB-Blue.html"><img src="../assets/images/BlueButton.png" align="middle"></a>  <a href="./Maquinas-HTB/HTB-Blue.html">Blue</a>  <a href="./Maquinas-HTB/HTB-SwagShop.html"><img src="../assets/images/SwagShopButton.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-SwagShop.html">SwagShop</a>  <a href="./Maquinas-HTB/HTB-Jerry.html"><img src="../assets/images/JerryButton.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-Jerry.html">Jerry</a>  <a href="./Maquinas-HTB/HTB-Lame.html"><img src="../assets/images/Lame.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-Lame.html">Lame</a>  <a href="./Maquinas-HTB/HTB-Cap.html"><img src="../assets/images/Cap.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-Cap.html">Cap</a> 
+<a href="./Maquinas-HTB/HTB-Blue.html" style="text-decoration:none"><img src="../assets/images/BlueButton.png" align="middle"></a>  <a href="./Maquinas-HTB/HTB-Blue.html" style="text-decoration:none">Blue</a>  <a href="./Maquinas-HTB/HTB-SwagShop.html"><img src="../assets/images/SwagShopButton.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-SwagShop.html" style="text-decoration:none">SwagShop</a>  <a href="./Maquinas-HTB/HTB-Jerry.html"><img src="../assets/images/JerryButton.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-Jerry.html" style="text-decoration:none">Jerry</a>  <a href="./Maquinas-HTB/HTB-Lame.html"><img src="../assets/images/Lame.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-Lame.html" style="text-decoration:none">Lame</a>  <a href="./Maquinas-HTB/HTB-Cap.html"><img src="../assets/images/Cap.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-Cap.html" style="text-decoration:none">Cap</a> 
 
 
 # Starting Points:
