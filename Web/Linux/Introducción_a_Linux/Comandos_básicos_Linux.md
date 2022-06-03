@@ -235,5 +235,33 @@ escribe `useradd John` y luego para agregar su contraseña, escribe `passwd 1234
 Para limpiar el terminal si se está abarrotando con demasiados comandos pasados.
 
 
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
+
+
+
 
      
