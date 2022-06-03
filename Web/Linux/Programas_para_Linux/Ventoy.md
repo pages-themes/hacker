@@ -57,6 +57,33 @@ poder almacenar los distintos archivos.iso.
 
 Finalmente, una vez copiadas las .iso podemos arrancar el PC desde la Bios y seleccionar el Sistema Operativo que queramos.
 
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
+
+
 
 
  
