@@ -6,7 +6,7 @@ En primer lugar, nos creamos un directorio con el nombre de la máquina desde el
 
     sudo mkdir Blue
     
-Ahora, mediante la función [`mkt`](../Herramientas_y_Scripts/mkt.html) que tengo previamente definida en la `.zshrc` crearemos nuestros directorios
+Ahora, mediante la función <a href="../Herramientas_y_Scripts/mkt.html" style="text-decoration:none">`mkt`</a> que tengo previamente definida en la `.zshrc` crearemos nuestros directorios
 de trabajo:
 
     sudo mkt
