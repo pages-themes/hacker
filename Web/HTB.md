@@ -14,8 +14,8 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
   
      
 # Artículos:
-* [Como conectaré a través de la VPN de Hack The Box](./Articulos/Como_conectarse_a_HTB.html)  
-* [Fase de Reconocimiento](./Articulos/Fase_de_reconocimiento-HTB.html)  
+* <a href="./Articulos/Como_conectarse_a_HTB.html" style="text-decoration:none">Como conectaré a través de la VPN de Hack The Box</a>  
+* <a href="./Articulos/Fase_de_reconocimiento-HTB.html" style="text-decoration:none">Fase de Reconocimiento</a>
 
 # Máquinas:
 
