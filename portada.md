@@ -8,10 +8,10 @@
 # Artículos  
 
 * <a href="./Web/Linux/Linux.html" style="text-decoration:none">Linux</a>  
-* [Windows](./Web/Windows/Windows.html)
-* [Bootear USB en Linux con Ventoy](./Web/Linux/Programas_para_Linux/Ventoy.html)
-* [Instalación de Twitch en Linux mediante Flatpak](./Web/Linux/GnomeTwitch.html)
-* [Buffer Overflow](./Web/Articulos/BufferOverflow.html)    
+* <a href="./Web/Windows/Windows.html" style="text-decoration:none">Windows</a> 
+* <a href="./Web/Linux/Programas_para_Linux/Ventoy.html" style="text-decoration:none">Bootear USB en Linux con Ventoy</a>
+* <a href="./Web/Linux/GnomeTwitch.html" style="text-decoration:none">Instalación de Twitch en Linux mediante Flatpak</a> 
+* <a href="./Web/Articulos/BufferOverflow.html" style="text-decoration:none">Buffer Overflow</a>  
   
 ---    
 
