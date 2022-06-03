@@ -108,7 +108,7 @@ conocidas del sistema y `safe` lo utilizamos para no causar ningún tipo de dene
  Vemos que `Metasploit` nos reporta el exploit `SMB Remote Code Execution Scanner (MS17-010) (Metasploit)`. Vamos abrir Metasploit y a buscar si 
  disponemos del exploit.
  
- ## Metasploit --> <a href="../Herramientas_y_Scripts/Metasploit.html" style="text-decoration:none">Link</a>
+## Metasploit --> <a href="../Herramientas_y_Scripts/Metasploit.html" style="text-decoration:none">Link</a>
  
  Abrimos Metasploit:
  
