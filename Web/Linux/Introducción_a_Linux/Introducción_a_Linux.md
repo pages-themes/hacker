@@ -36,3 +36,30 @@ instalar o probar en un ordenador, cubriendo
 una gama de necesidades que van desde el uso 
 cotidiano personal hasta aplicaciones muy 
 específicas en ambientes especializados.
+
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
+
