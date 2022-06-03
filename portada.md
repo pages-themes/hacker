@@ -1,14 +1,13 @@
 
-# Hack The Box --> [Link](./Web/HTB.html)  
+# Hack The Box --> <a href="./Web/HTB.html" style="text-decoration:none">Link</a>   
   
-# Cursos --> [Link](./Web/Cursos.html)
+# Cursos --> <a href="./Web/Cursos.html" style="text-decoration:none">Link</a>
 
 ---
 
 # Artículos  
 
 * <a href="./Web/Linux/Linux.html" style="text-decoration:none">Linux</a>  
-* [Linux](./Web/Linux/Linux.html)
 * [Windows](./Web/Windows/Windows.html)
 * [Bootear USB en Linux con Ventoy](./Web/Linux/Programas_para_Linux/Ventoy.html)
 * [Instalación de Twitch en Linux mediante Flatpak](./Web/Linux/GnomeTwitch.html)
