@@ -5,9 +5,9 @@ de dispositivos, gestores y administradores de terminales, etc. En mi caso estoy
 
 # Introducción a Linux:
 
-* [¿Qué es Linux?](../Web/Linux/Introducción_a_Linux/Introducción_a_Linux.html)  
-* [Comandos Básicos en Linux](../Web/Linux/Introducción_a_Linux/Comandos_básicos_Linux.html)  
-* [Busqueda de Archivos en Linux](../Web/Linux/Introducción_a_Linux/find.html)   
+* [¿Qué es Linux?](./Introducción_a_Linux/Introducción_a_Linux.html)  
+* [Comandos Básicos en Linux](./Introducción_a_Linux/Comandos_básicos_Linux.html)  
+* [Busqueda de Archivos en Linux](./Introducción_a_Linux/find.html)   
 
 Escalada Básica de Privilegios en Linux --> [Link](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)  
 
