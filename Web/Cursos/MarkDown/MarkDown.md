@@ -124,6 +124,34 @@ También podrás añadir un título alternativo entrecomillándolo al final de l
     ![Texto alternativo](/ruta/a/la/imagen.jpg "Texto al cursar sobre la Imagen.")
     
     
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
+
+    
+    
 
 
     
