@@ -13,8 +13,8 @@ Escalada Básica de Privilegios en Linux --> [Link](https://blog.g0tmi1k.com/201
 
 # Dispositivos:
 
-* [Bluetoothctl](../Web/Linux/Introducción_a_Linux/Bluetoothctl.html)  
-* [Ventoy](/f1r0x.github.io/Web/Linux/Programas_para_Linux/Ventoy.html)
+* [Bluetoothctl](./Introducción_a_Linux/Bluetoothctl.html)  
+* [Ventoy](./Programas_para_Linux/Ventoy.html)
 
 # Programas de Descargas:
 Estos son distintos programas de Descarga de archivos para diferentes plataformas y archivos.
@@ -22,14 +22,14 @@ Estos son distintos programas de Descarga de archivos para diferentes plataforma
 ### Torrent
 Para descargar archivos Torrent desde la Terminal.
 
-* [Aria2](../Web/Linux/Programas_para_Linux/Aria2.html)
+* [Aria2](./Programas_para_Linux/Aria2.html)
 
 ### Youtube
 Para descargar tanto vídeos como audio de Youtube desde la Terminal.
 
-* [Youtube-dl](../Web/Linux/Programas_para_Linux/Youtube-dl.html)
+* [Youtube-dl](./Programas_para_Linux/Youtube-dl.html)
 
 # Intérprete de Comandos:  
 Un intérprete de órdenes o de comandos, es un programa informático que tiene la capacidad de traducir las órdenes que introducen los usuarios, mediante un conjunto de instrucciones facilitadas por él mismo directamente al núcleo y al conjunto de herramientas que forman el sistema operativo.
 
-* [ZSH](../Web/Linux/ZSH/ZSH.html)
+* [ZSH](./ZSH/ZSH.html)
