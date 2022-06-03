@@ -36,6 +36,10 @@ Programas y herramientas para crear accesos remotos y shells inversas con otros 
 * [Tratamiento de la TTY](./Web/Articulos/tratamientoTTY.html)  
 Reverse Shell Generator -->  [Link](https://www.revshells.com/) 
 
+## Proxies y Analizadores de Tráfico:
+
+* [BurpSuite](./Web/Herramientas_y_Scripts/burpsuite.html)
+
 ## Hash:
 Herramientas de reconocimiento y desencriptación de hash.
 
