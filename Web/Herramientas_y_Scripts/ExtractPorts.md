@@ -33,3 +33,30 @@ Mediante `Cntrl + Shift + v` podremos pegar los puertos a la terminal automátic
 
 Esta función está creada por el creador de contenido S4vitar, podéis encontrar una gran cantidad de información sobre ciberseguridad en
 sus canales de Youtube y Twitch.
+
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
+
