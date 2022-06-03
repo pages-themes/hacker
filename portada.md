@@ -21,10 +21,10 @@
 Herramientas útiles para la fase de reconocimiento, como reportes de SO o recopilación de puertos.
 
 * <a href="../Web/Herramientas_y_Scripts/Nmap.html" style="text-decoration:none">Nmap</a> 
-* [WichSystem](./Web/Herramientas_y_Scripts/WichSystem.html)    
-* [ExtractPorts](./Web/Herramientas_y_Scripts/ExtractPorts.html)    
-* [mkt](./Web/Herramientas_y_Scripts/mkt.html)       
-* [SetTarget](./Web/Linux/ZSH/Settarget.html)  
+* <a href="./Web/Herramientas_y_Scripts/WichSystem.html" style="text-decoration:none">WichSystem</a>     
+* <a href="./Web/Herramientas_y_Scripts/ExtractPorts.html" style="text-decoration:none">ExtractPorts</a>    
+* <a href="./Web/Herramientas_y_Scripts/mkt.html" style="text-decoration:none">mkt</a>
+* <a href="./Web/Linux/ZSH/Settarget.html" style="text-decoration:none">SetTarget</a>   
 
 ## Control remoto de Equipos y Shells Inversas:
 Programas y herramientas para crear accesos remotos y shells inversas con otros equipos.
