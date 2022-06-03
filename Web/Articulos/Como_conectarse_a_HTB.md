@@ -1,6 +1,6 @@
 # Como conectarse a las máquinas de Hack the Box por VPN:
 
-[https://www.hackthebox.com/](https://www.hackthebox.com/)
+<a href="https://www.hackthebox.com/" style="text-decoration:none">https://www.hackthebox.com/</a> 
 
 En este artículo os mostraré como conectarse a cualquier servicio de HTB (Hack The Box) a través de sus VPN.
 HTB utiliza VPN para los distintos servicios que se utilizan. Resumiendo, las `starting_points`  utilizan una VPV, las `máquinas` usan otras
