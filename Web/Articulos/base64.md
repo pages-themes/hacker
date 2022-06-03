@@ -10,12 +10,36 @@ está bien documentado, es compatible con varios lenguajes de programación, ha 
 ## Codificar/Descodificar:
 Existen distintas páginas donde codificar y descodificar datos en Base 64.
 
-[Codificar](https://base64.guru/converter/encode)
-
-[Descodificar](https://base64.guru/converter/decode)
+* <a href="[./Web/Herramientas_y_Scripts/SQLmap.html](https://base64.guru/converter/encode)" style="text-decoration:none">Codificar</a> 
+* <a href="[./Web/Herramientas_y_Scripts/SQLmap.html](https://base64.guru/converter/decode)" style="text-decoration:none">Descodificar</a>
 
 Para `descodificar` datos en base64 mediante la terminal podemos utilizar el siguiente comando:
 
     echo "Datos en Base64" | base64 -d; echo
     
   
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
