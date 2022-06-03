@@ -14,8 +14,8 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
   
      
 # Artículos:
-* <a href="./Articulos/Como_conectarse_a_HTB.html" style="text-decoration:none">Como conectaré a través de la VPN de Hack The Box</a>  
-* <a href="./Articulos/Fase_de_reconocimiento-HTB.html" style="text-decoration:none">Fase de Reconocimiento</a>
+* <a href="./Articulos/Como_conectarse_a_HTB.html" style="text-decoration:none">Como conectaré a través de la VPN de Hack The Box.</a>  
+* <a href="./Articulos/Fase_de_reconocimiento-HTB.html" style="text-decoration:none">Fase de Reconocimiento.</a>
 
 # Máquinas:
 
@@ -24,9 +24,9 @@ abarcar varios temas y de esta manera unificando tus conocimientos sobre el Hack
 
 # Starting Points:
 
-* <a href="./Web/Starting Point/HTB-Oopsie.html" style="text-decoration:none">HTB-Oopsie</a>
-* <a href="./Web/Starting Point/HTB-Responder.html" style="text-decoration:none">HTB-Responder</a>  
-* <a href="./Web/Starting Point/HTB-Vaccine.html" style="text-decoration:none">HTB-Vaccine</a>
+* <a href="./Starting Point/HTB-Oopsie.html" style="text-decoration:none">HTB-Oopsie.</a>
+* <a href="./Starting Point/HTB-Responder.html" style="text-decoration:none">HTB-Responder.</a>  
+* <a href="./Starting Point/HTB-Vaccine.html" style="text-decoration:none">HTB-Vaccine.</a>
 
 
 ---
