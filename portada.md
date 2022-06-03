@@ -71,24 +71,24 @@ Phishing es un término informático que distingue a un conjunto de técnicas qu
 pasar por una persona, empresa o servicio de confianza, para manipularla y hacer que realice acciones que no debería realiza.
 
 * <a href="./Web/Herramientas_y_Scripts/Setoolkit.html" style="text-decoration:none">Setoolkit</a> 
-* 
+ 
 ## Exploits:
 
 Un exploit es una pieza de software, un fragmento de datos o una secuencia de comandos que aprovecha un error o una vulnerabilidad para provocar
 un comportamiento no deseado o imprevisto en el software, el hardware o algo electrónico de la computadora. Tal comportamiento frecuentemente
 incluye cosas como obtener el control de un sistema informático, permitir la escalada de privilegios o un ataque de denegación de servicio.
 
-* [SearchSploit](./Web/Herramientas_y_Scripts/searchSploit.html)  
-* [Metasploit](./Web/Herramientas_y_Scripts/Metasploit.html)
+* <a href="./Web/Herramientas_y_Scripts/searchSploit.html" style="text-decoration:none">SearchSploit</a>  
+* <a href="./Web/Herramientas_y_Scripts/Metasploit.html" style="text-decoration:none">Metasploit</a> 
 
 ## WordPress:
 Escaneo de vulnerabilidades en páginas WordPress.
 
-* [WPScan](./Web/Herramientas_y_Scripts/WPScan.html)
+* <a href="./Web/Herramientas_y_Scripts/WPScan.html" style="text-decoration:none">WPScan</a> 
 
 ## SQL: 
 
-* [SQLmap](./Web/Herramientas_y_Scripts/SQLmap.html)
+* <a href="./Web/Herramientas_y_Scripts/SQLmap.html" style="text-decoration:none">SQLmap</a>
 
 ---
 ---
