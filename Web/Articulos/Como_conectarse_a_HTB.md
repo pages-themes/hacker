@@ -65,3 +65,29 @@ conectada (Primer tick verde) y luego pulsamos `Spawn Machine`.
 Una vez realizada la conexión, nos reportará la `Ip` de la máquina que vamos a explotar.
 
 ![Captura de pantalla -2022-04-28 19-00-08](https://user-images.githubusercontent.com/103068924/165812758-4e6bdec9-f163-42b0-b1ab-a3f7a19a5822.png)
+
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
