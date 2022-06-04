@@ -51,3 +51,30 @@ En caso de no funcionaros un puerto, seguir probando, ya que en muchas ocasiones
 se puede acceder a través de ellos. 
 
 Otra causa de fallo habitual es que el sistema tenga algún firewall que no permita pasar a la reverse shell.
+
+
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
