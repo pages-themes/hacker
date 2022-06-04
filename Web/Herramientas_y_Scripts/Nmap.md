@@ -91,6 +91,30 @@ Una vez establecida la shell de nmap, usaremos la expresión `!sh` para acceder 
 Directamente, pasaremos a estar registrados como el usuario `root` del sistema.    
 
 
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
 
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
 
 
