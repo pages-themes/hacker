@@ -30,3 +30,30 @@ los directorios de trabajo, usamos el comando `mtk`:
 ![Captura de pantalla -2022-05-05 08-43-11](https://user-images.githubusercontent.com/103068924/166874403-66f732eb-5180-48b4-b6a4-940873c411fb.png)
 
 ![Captura de pantalla -2022-05-05 08-43-34](https://user-images.githubusercontent.com/103068924/166874405-6d25c2c6-b415-4bc4-8ac6-4af143715b19.png)
+
+
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
