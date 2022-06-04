@@ -152,4 +152,28 @@ Y finalmente podemos ver como se nos reporta todo en la terminal desde la cual e
 ![Captura de pantalla -2022-05-07 12-10-37](https://user-images.githubusercontent.com/103068924/167251748-0c989b4d-453f-4849-8508-71b0b71283e1.png)
 
 
+---
+---
+  
     
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---    
