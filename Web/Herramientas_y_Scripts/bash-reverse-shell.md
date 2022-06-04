@@ -25,4 +25,30 @@ Mediante este comando estamos estableciendo una reverse shell desde el equipo v√
 puerto 443.
 
 Si todo ha funcionado correctamente veremos como en la terminal donde est√°bamos en escucha con NetCat se nos abre la reverse shell.
+
+
+---
+---
   
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
