@@ -35,3 +35,30 @@ Primero, debemos ingresar la URL web que queremos verificar junto con el paráme
 sitio web usando proxies. Ahora, por lo general, nos gustaría probar si es posible obtener acceso a una base de datos. Así que usamos la opción `–dbs` para hacerlo. `–dbs` enumera todas las bases de datos disponibles. 
 
 Ejemplo: `sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 --dbs`
+
+
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
