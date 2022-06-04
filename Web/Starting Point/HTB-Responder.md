@@ -292,4 +292,28 @@ Y al recargar la página podemos ver como se nos reporta un hash en base64.
 Lo copiaremos para poder pasarlo a una terminar y tratar de descifrarlo.
 
 
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
 
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
