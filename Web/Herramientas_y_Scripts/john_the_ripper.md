@@ -59,3 +59,29 @@ Muy bien, ahora para poder ver la contraseña descifrada:
     
  ![Captura de pantalla -2022-04-26 11-10-46](https://user-images.githubusercontent.com/103068924/165265589-818f0f4e-9b0b-42fa-ad8d-250a3a585601.png)
 
+
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
