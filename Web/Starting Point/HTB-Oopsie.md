@@ -572,4 +572,28 @@ Y abrimos el archivo con 'cat' donde encontramos la última Flag:
  ![background2](https://user-images.githubusercontent.com/103068924/165103059-55b4a1b6-f646-46aa-8b5a-47a804187541.png)
 
  
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
           
+    
+  </body>
+</html>
+  
+  
+---
+---          
