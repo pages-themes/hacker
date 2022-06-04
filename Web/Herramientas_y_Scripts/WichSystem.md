@@ -51,3 +51,30 @@ El creador de esta herramienta es el creador de contenido S4vitar, tiene diverso
 seguridad y resolución de máquinas de Hack the Box. 
 
 S4vitar: [https://github.com/s4vitar](https://github.com/s4vitar)
+
+
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
