@@ -451,3 +451,28 @@ Para ello utilizaremos la siguiente variable de Sqlmap:
 Ya tenemos nuestra shell activa, vamos a investigar un poco para ver que
 archivos contiene. Primero mediante `ls` vamos a ver que tenemos en el directorio en el que nos encontramos.
         
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
