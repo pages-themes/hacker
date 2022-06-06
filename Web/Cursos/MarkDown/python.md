@@ -2,11 +2,11 @@
 
 ## ¿Qué es Python?
 
-Es un lenguaje de programación, multiplataforma y multiparadigma que se destaca por su código legible y limpio. Su licencia es de código abierto y
-permite su utilización en cualquier escenario. Esto hace que sea uno de los lenguajes de iniciación de muchos programadores. Permite y ajiliza entre otras de
-sus características la automatización de procesos y ejecución de tareas tanto en entorno de cliente como de servidor.
+Es un lenguaje de programación multiplataforma, que se destaca por su código legible y limpio. Su licencia es de código abierto y
+permite su utilización en cualquier escenario. Esto hace que sea uno de los lenguajes de iniciación de muchos programadores. Permite y agiliza, entre otras de
+sus características, la automatización de procesos y ejecución de tareas tanto en entorno de cliente como de servidor.
 
-Un lenguaje sencillo, legible y elegante que atiende a un conjunto de reglas que hacen muy corta su curva de aprendizaje.Esto hace de Python un lenguaje 
+Un lenguaje sencillo, legible y elegante que atiende a un conjunto de reglas que hacen muy corta su curva de aprendizaje. Esto hace de Python un lenguaje 
 práctico que permite ahorrar mucho tiempo.
 
 
@@ -23,45 +23,44 @@ práctico que permite ahorrar mucho tiempo.
 
 ### Interprete de Python:
 
-Para poder programar en Python vamos a necesitar dos programas, primero vamos a necesitar un interprete de Python, que es el encargado a que nuestro ordenador 
+Para poder programar en Python vamos a necesitar dos programas, primero vamos a necesitar un intérprete de Python, que es el encargado a que nuestro ordenador 
 (o cualquier dispositivo compatible) pueda entender Python. Podemos descargarlo desde su página oficia.
 
-* Descargar Interprete de Python --> <a href="https://www.python.org" style="text-decoration:none">Link</a>
+* Descargar Intérprete de Python --> <a href="https://www.python.org" style="text-decoration:none">Link</a>
 
 Una vez descargado, ejecutamos el archivo de instalación `.exe`. La instalación es muy simple, lo primero que veremos al desplegarse la ventana de instalación
-es el boton de `Install Now`, pero antes de pulsarlo debéis ativar las casillas inferiores. Tanto la que nos permite utilizar el programa a todos lo usuarios
+es el botón de `Install Now`, pero antes de pulsarlo debéis activar las casillas inferiores. Tanto la que nos permite utilizar el programa a todos los usuarios
 (que viene activada de forma predeterminada) como la `Add Python to PATH` que nos permitira trabajar con python desde la Terminal.
 
-Para comprobar que la instalación se ha completado correctamente abrimos la terminal de windows (Cntl + r  y escribimos `cmd`) y ejecutamos el siguiente
+Para comprobar que la instalación se ha completado correctamente, abrimos la terminal de Windows (Cntl + r y escribimos `cmd`) y ejecutamos el siguiente
 comando:
 
     python --version
     
-Si la instalción se ha realizado correctamente nos debería de mostrar la versión de python instalada. Tambien podemos combrobar que funciona correctamente 
-ejecutando el mismo python:
+Si la instalación se ha realizado correctamente, nos debería de mostrar la versión de Python instalada. También podemos comprobar que funciona correctamente 
+ejecutando el mismo Python:
 
     python
     
-Ahora nuestra terminal está lista para interpretar código python. Podemos comprobarlo realizando algún calculo simple. `Ej:` 2 + 2 y debería reportarnos 4.
+Ahora nuestra terminal está lista para interpretar código Python. Podemos comprobarlo actuando algún cálculo simple. `Ej:` 2 + 2 y debería reportarnos 4.
 Para volver a la Terminal de Windows introducimos el comando `exit()`.
 
 ### Editor de Código:
 
-El segundo programa que vamos a necesitar va a ser el encargado de ayudarnos a escribir el código de python, estos programas se conocen como `editores de código`
-y existe una gran variedad. Nosotros vamos a utilizar Visual Estudio Code ya que es el editor más utilizado actualmente.
+El segundo programa que vamos a necesitar va a ser el encargado de ayudarnos a escribir el código de Python, estos programas se conocen como `editores de código`
+y existe una gran variedad. Nosotros vamos a usar Visual Estudio Code, ya que es el editor más empleado actualmente.
 
 * Descargar Editor de Código --> <a href="https://code.visualstudio.com" style="text-decoration:none">Link</a>
 
-Al igual que la instalación anterior, está tambien es muy sencilla y debemos de fijarnos básicamente en lo mismo. Una vez descargado el archivo de instalción
+Al igual que la instalación anterior, esta también es muy sencilla y debemos de fijarnos básicamente en lo mismo. Una vez descargado el archivo de instalación
 `.exe` simplemente lo ejecutamos, una vez inicie la instalación, pulsamos siguiente hasta llegar al apartado `Seleccione Tareas Adicionales` y debemos de 
-activar la opción de `Agregar a PATH (disponible después de reiniciar)`, está opcion nos permitira trabajar desde la Terminal con el Editor de Código.
+activar la opción de `Agregar a PATH (disponible después de reiniciar)`, está opción nos permitirá trabajar desde la Terminal con el Editor de Código.
 
 ### Dinámica de trabajo:
 
-Una vez tengamos los dos programas instalados ya podemos empezar a trabajar. Básicamente escribiremos nuestro código mediante el `Editor de Código` (en este caso
+Una vez tengamos los dos programas instalados ya podemos empezar a trabajar. Básicamente, escribiremos nuestro código mediante el `Editor de Código` (en este caso
 mediante Visual Estudio Code) y lo ejecutaremos utilizando el `Interprete`.
 
 ## Crear Nuestro Primer Programa: Hello World
-
 
 
