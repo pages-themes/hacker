@@ -87,7 +87,7 @@ argumentos que tiene predefinidas para realizar una serie de acciones. El argume
 `print()` : Se utiliza para imprimir en pantalla. En caso de no establecer nada Python lo interpretara como un salto de línea (al igual que si pulsaramos Enter
 en un editor de texto.).
 
-```
+```py
 print("Hello World")
     
 ```
