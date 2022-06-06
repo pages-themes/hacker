@@ -108,9 +108,54 @@ programa, simplemente escribimos el comando `python` seguido de nuestro programa
 
     python helloworld.py
     
-Como podéis ver nos reporta nuestra frase.
+Como podéis ver nos reporta nuestra frase. En caso de tener dudas con los parámetros que vamos viendo, podéis revisarlos con el parámetro ayuda `-h`.
 
+    python -h
+    
+Puede parecer muy confuso al principio, peró en un futuro puede resolverte pequeñas dudas. 
 
+# Tipos de Data en Python: Datatypes
 
+Vamos a tratas de establecer algun concepto más, ya hemos visto la capacidad de imprimir frases como la de "Hello World", a cada letra o símbolo incluido dentro
+de la frase (incluidos los espacios) se les conoce como `caracteres` y al conjunto de estos caracteres se le conoce como `string`. Cuando cambiamos cualquier 
+carácter, ya sea un espacio, una letra minúscula por una mayúscula o incluir cualquier signo, Pyhton interpreta que es un string diferente.
+
+`Por Ejemplo` : "Hello World" y "hello World" serían dos strings diferentes ya que la primerá letra no es igual.
+
+Otra cosa que debemos tener en cuenta es que podemos establecer varios strings diferenciandolos uniucamente por el tipo de comillas. A continucion podemos ver 
+ejemplos de diferentes strings en funcion del tipo de comillado.
+
+    'Hello World'
+    "Hello World"
+    '''Helo World'''
+    """Hello World"""
+
+Como podeís ver existen varias formas de nombrar un `string`, pero como podemos saber que interpreta Pyhton como un string? Muy fácil, para ello volvemos a la 
+Terminal, ejecutamos Python:
+
+    python
+    
+Y vamos a suponer que queremos saber si `"Hello World"` es un string, para ello utilizaremos el argumento `type()`.
+
+    type("Hello World")
+
+Al ejecutarlo vemos como nos devulve `class 'str'`, donde `str` es el diminutivo de string. Vamos a ver otro ejemplo, esta vez con los numeros:
+
+   type(100)
+
+Esta vez vemos como nos reporta `int` (integral), indicandonos que se trata de un número entero.
+
+Ahora vamo a tratar de incluir est en nuestro programita anterior, en primer luegar, el programa debe imprimir la frase "Hello World" y seguido debe de imprimir
+el tipo de clase que es. Para ello realizamos lo siguiente:
+
+```py
+# Este es mi primer programa
+print("Hello World")
+print(type("Hello World"))
+```
+
+Guardamos (Cntrl + s) y desde la terminal lo ejecutamos.
+
+Ahora vemos como nos reporta la frase, y el tipo de clase que es.
 
 
