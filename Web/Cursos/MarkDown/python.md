@@ -88,8 +88,27 @@ argumentos que tiene predefinidas para realizar una serie de acciones. El argume
 en un editor de texto.).
 
 ```py
+# Este es mi primer programa
 print("Hello World")   
 ```
+
+Como veis debemos de introducir el texto entre comillas ya sean dobles o simples. Ya tendríamos nuestro primer mini programa creado, facil verdad? El siguiente paso 
+será ejecutarlo. 
+
+Para ejecutar nuestro programa lo primero que debemos de hacer es abrir una Terminal. Para abrir la Terminal de Windows (Cntl + r y escribimos `cmd`). Una vez
+abierta la Terminal debemos dirigirnos a la carpeta creada al principio, que es donde se encuentra nuestro programa `helloworld.py`. Para desplazarnos entre 
+directorios utilizamos el comando `cd` seguido de la ruta de nuetra carpeta.
+
+    cd /Desktop/Curso_Python/
+    
+    cd /Escritorio/Curso_Python
+    
+Una vez estemos en nuestro directorio, podemos ver los archivos que contiene mediante el comando `dir` y vemos nuestro archivo `helloworld.py`. Para ejecutar el
+programa, simplemente escribimos el comando `python` seguido de nuestro programa.
+
+    python helloworld.py
+    
+Como podeís ver nos reporta nuestra frase.
 
 
 
