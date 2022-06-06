@@ -63,4 +63,37 @@ mediante Visual Estudio Code) y lo ejecutaremos utilizando el `Interprete`.
 
 ## Crear Nuestro Primer Programa: Hello World
 
+Para empezar, vamos a crearnos una carpeta desde la cual trabajar. Creamos una carpeta llamada `Curso_Python` en nuestro escritorio. Tras crear la carpeta, abrimos
+el Visual Estudio Code, y en la parte superior izquierda pulsamos `File` luego `Open File` y  abrimos nuestra carpeta `Curso_Python`.
+
+Una vez abierta la carpeta, veremos como se nos muestra en modo menu en la parte izquierda de la pantalla. Ahora vamos a crear un archivo dentro de nuestrea
+carpeta, para ello nos dirigimos al menu de nuestra carpeta (arriba izquierda) y pulsamos `New File`, llamaremos al archivo `helloworld.py`.
+
+Para que nuestro programa funcione y que los dispositivos identifiquen que este arhivo contiene código Python, debemos utilizar la extensión `.py` ya que sin
+ella los archivos no se ejecutaran.
+
+Una vez creado nuestro archivo helloworld.py, vamos a tratar de crear un programa super simple que nos devuelva la frase `Hello World`. En primer luegar, vamos 
+a introducir un comentario para en un futuro poder saber de que trata el programa. Los comentarios son muy utilies para programas con códigos largos o cuando 
+trabajamos con otras personas y queremos dejar notas sobre las cuestiones que veamos oportunas reportar. Los comentarios solo aparecen en el código, no serán 
+interpretado al ejecutar el programa.
+
+Para introducir un comentario simplemten colocamos el signo `#` seguido del comentario en cuestión. En nuestro caso vamos a especificar que es nuestro primer
+programa, para ello escribimos `# Este es mi primer programa.`
+
+Bien ya hemos visto como se incoporan los comentarios, ahora vamos con la sintaxis del código. La finalidad de nuestro programa es que cuando lo
+ejecutemos, nos reporte la frase `Hello World`. Para ello vamos a ver nuestro primer concepto que son las palabras claves. Python utiliza estas palabras clave o
+argumentos que tiene predefinidas para realizar una serie de acciones. El argumento que nosotros vamos a necesitar para `Imprimir` nuestra frase es `print()`.
+
+`print()` : Se utiliza para imprimir en pantalla. En caso de no establecer nada Python lo interpretara como un salto de línea (al igual que si pulsaramos Enter
+en un editor de texto.).
+
+```
+    print("Hello World")
+    
+```
+
+
+
+
+
 
