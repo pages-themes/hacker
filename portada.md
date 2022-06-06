@@ -1,4 +1,3 @@
-
 # Hack The Box --> <a href="./Web/HTB.html" style="text-decoration:none">Link</a>   
   
 # Cursos --> <a href="./Web/Cursos.html" style="text-decoration:none">Link</a>
@@ -48,9 +47,9 @@ Herramientas de reconocimiento y desencriptación de hash.
 * <a href="./Web/Herramientas_y_Scripts/HashCat.html" style="text-decoration:none">HashCat</a>
 
 ## Codificación:
-La codificación roceso de conversión de los componentes de un mensaje para que este no sea entendido. Las reglas de transformación entre un sistema y otro van a estar
-definidas para poder entender el contenido del mensaje. A diferencia del cifrado, la codificación se basa en alterar la semántica del mensaje, lo que está relacionado
-con el significado del mensaje.
+La codificación es el proceso de conversión de los componentes de un mensaje para que este no sea entendido. Las reglas de transformación entre un sistema y otro
+van a estar definidas para poder entender el contenido del mensaje. A diferencia del cifrado, la codificación se basa en alterar la semántica del mensaje, lo
+que está relacionado con el significado del mensaje.
 
 * <a href="./Web/Articulos/base64.html" style="text-decoration:none">Base64</a>
 
