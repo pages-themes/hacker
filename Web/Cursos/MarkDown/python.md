@@ -88,7 +88,7 @@ argumentos que tiene predefinidas para realizar una serie de acciones. El argume
 en un editor de texto.).
 
 ```
-    print("Hello World")
+print("Hello World")
     
 ```
 
