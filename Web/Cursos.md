@@ -1,9 +1,11 @@
 # Cursos
 
-* Linux --> <a href="./Linux/Linux.html" style="text-decoration:none">Link</a> 
-* MarkDown --> <a href="./Cursos/MarkDown/MarkDown.html" style="text-decoration:none">Link</a>    
-
-
+* Linux --> <a href="./Linux/Linux.html" style="text-decoration:none">Link</a>   
+  
+* MarkDown --> <a href="./Cursos/MarkDown/MarkDown.html" style="text-decoration:none">Link</a>     
+  
+* Python --> <a href="./Cursos/python.html" style="text-decoration:none">Link</a>  
+  
 ---
 ---
   
