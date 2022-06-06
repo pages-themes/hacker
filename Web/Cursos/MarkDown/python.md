@@ -19,4 +19,16 @@ práctico que permite ahorrar mucho tiempo.
 * `Portable` : Es un lenguaje muy portable. Podemos usarlo en prácticamente cualquier sistema de la actualidad.
 * `Comunidad` : Cuenta con un gran número de usuarios. Su comunidad participa activamente en el desarrollo del lenguaje.
 
+## Programas Necesarios para programar en Python:
+
+Para poder programar en Python vamos a necesitar dos programas, primero vamos a necesitar un interprete de Python, que es el encargado a que nuestro ordenador 
+(o cualquier dispositivo compatible) pueda entender Python. Podemos descargarlo desde su página oficia.
+
+* Descargar Interprete de Python --> <a href="https://www.python.org" style="text-decoration:none">Link</a>
+
+El segundo programa que vamos a necesitar va a ser el encargado de ayudarnos a escribir el código de python, estos programas se conocen como `editores de código`
+y existe una gran variedad. Nosotros vamos a utilizar Visual Estudio Code ya que es el editor más utilizado actualmente.
+
+* Descargar Editor de Código --> <a href="https://code.visualstudio.com" style="text-decoration:none">Link</a>
+
 
