@@ -156,6 +156,6 @@ print(type("Hello World"))
 
 Guardamos (Cntrl + s) y desde la terminal lo ejecutamos.
 
-Ahora vemos como nos reporta la frase, y el tipo de clase que es.
+Ahora, vemos como nos reporta la frase, y el tipo de clase que es.
 
 
