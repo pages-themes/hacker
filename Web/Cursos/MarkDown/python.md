@@ -88,8 +88,7 @@ argumentos que tiene predefinidas para realizar una serie de acciones. El argume
 en un editor de texto.).
 
 ```py
-print("Hello World")
-    
+print("Hello World")   
 ```
 
 
