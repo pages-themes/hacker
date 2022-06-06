@@ -64,27 +64,27 @@ mediante Visual Estudio Code) y lo ejecutaremos utilizando el `Interprete`.
 ## Crear Nuestro Primer Programa: Hello World
 
 Para empezar, vamos a crearnos una carpeta desde la cual trabajar. Creamos una carpeta llamada `Curso_Python` en nuestro escritorio. Tras crear la carpeta, abrimos
-el Visual Estudio Code, y en la parte superior izquierda pulsamos `File` luego `Open File` y  abrimos nuestra carpeta `Curso_Python`.
+el Visual Estudio Code, y en la parte superior izquierda pulsamos `File` luego `Open File` y abrimos nuestra carpeta `Curso_Python`.
 
-Una vez abierta la carpeta, veremos como se nos muestra en modo menu en la parte izquierda de la pantalla. Ahora vamos a crear un archivo dentro de nuestrea
-carpeta, para ello nos dirigimos al menu de nuestra carpeta (arriba izquierda) y pulsamos `New File`, llamaremos al archivo `helloworld.py`.
+Una vez abierta la carpeta, veremos como se nos muestra en modo menú en la parte izquierda de la pantalla. Ahora vamos a generar un archivo dentro de nuestra
+carpeta, para ello nos dirigimos al menú de nuestra carpeta (arriba izquierda) y pulsamos `New File`, llamaremos al archivo `helloworld.py`.
 
-Para que nuestro programa funcione y que los dispositivos identifiquen que este arhivo contiene código Python, debemos utilizar la extensión `.py` ya que sin
+Para que nuestro programa funcione y que los dispositivos identifiquen que este archivo contiene código Python, debemos usar la extensión `.py`, ya que sin
 ella los archivos no se ejecutaran.
 
-Una vez creado nuestro archivo helloworld.py, vamos a tratar de crear un programa super simple que nos devuelva la frase `Hello World`. En primer luegar, vamos 
-a introducir un comentario para en un futuro poder saber de que trata el programa. Los comentarios son muy utilies para programas con códigos largos o cuando 
+Una vez creado nuestro archivo helloworld.py, vamos a tratar de crear un programa super simple que nos devuelva la frase `Hello World`. En primer lugar, vamos 
+a introducir un comentario para en un futuro poder saber de qué trata el programa. Los comentarios son muy útiles para programas con códigos largos o cuando 
 trabajamos con otras personas y queremos dejar notas sobre las cuestiones que veamos oportunas reportar. Los comentarios solo aparecen en el código, no serán 
-interpretado al ejecutar el programa.
+interpretados al ejecutar el programa.
 
-Para introducir un comentario simplemten colocamos el signo `#` seguido del comentario en cuestión. En nuestro caso vamos a especificar que es nuestro primer
+Para introducir un comentario simplemente colocamos el signo `#` seguido del comentario en cuestión. En nuestro caso vamos a especificar que es nuestro primer
 programa, para ello escribimos `# Este es mi primer programa.`
 
-Bien ya hemos visto como se incoporan los comentarios, ahora vamos con la sintaxis del código. La finalidad de nuestro programa es que cuando lo
+Bien, ya hemos visto como se incorporan los comentarios, ahora vamos con la sintaxis del código. La finalidad de nuestro programa es que cuando lo
 ejecutemos, nos reporte la frase `Hello World`. Para ello vamos a ver nuestro primer concepto que son las palabras claves. Python utiliza estas palabras clave o
 argumentos que tiene predefinidas para realizar una serie de acciones. El argumento que nosotros vamos a necesitar para `Imprimir` nuestra frase es `print()`.
 
-`print()` : Se utiliza para imprimir en pantalla. En caso de no establecer nada Python lo interpretara como un salto de línea (al igual que si pulsaramos Enter
+`print()` : Se usa para imprimir en pantalla. En caso de no establecer nada, Python lo interpretará como un salto de línea (al igual que si pulsáramos Enter
 en un editor de texto.).
 
 ```py
@@ -92,24 +92,23 @@ en un editor de texto.).
 print("Hello World")   
 ```
 
-Como veis debemos de introducir el texto entre comillas ya sean dobles o simples. Ya tendríamos nuestro primer mini programa creado, facil verdad? El siguiente paso 
+Como veis debemos de introducir el texto entre comillas ya sean dobles o simples. ¿Ya tendríamos nuestro primer mini programa creado, fácil verdad? El siguiente paso 
 será ejecutarlo. 
 
 Para ejecutar nuestro programa lo primero que debemos de hacer es abrir una Terminal. Para abrir la Terminal de Windows (Cntl + r y escribimos `cmd`). Una vez
 abierta la Terminal debemos dirigirnos a la carpeta creada al principio, que es donde se encuentra nuestro programa `helloworld.py`. Para desplazarnos entre 
-directorios utilizamos el comando `cd` seguido de la ruta de nuetra carpeta.
+directorios empleamos el comando `cd` seguido de la ruta de nuestra carpeta.
 
     cd /Desktop/Curso_Python/
     
-    cd /Escritorio/Curso_Python
+    cd /Escritorio/Curso_Python/
     
 Una vez estemos en nuestro directorio, podemos ver los archivos que contiene mediante el comando `dir` y vemos nuestro archivo `helloworld.py`. Para ejecutar el
 programa, simplemente escribimos el comando `python` seguido de nuestro programa.
 
     python helloworld.py
     
-Como podeís ver nos reporta nuestra frase.
-
+Como podéis ver nos reporta nuestra frase.
 
 
 
