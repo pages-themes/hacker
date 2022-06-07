@@ -347,5 +347,13 @@ Cada palabra está separada por un carácter de subrayado:
 mi_variable_nombre = "F1r0x"
 ```
 
+Ya sabemos estableces variables y podemos llamarlas de múltiples maneras. Ahora vamos a ver como establecer distintas variables sin necesidad de escribir 
+código de más ya que podemos establecer disntintas variables en la misma línea de código. Esto lo podemos ejecutar de la siguiente manera:
 
+```py
+x, y, z = "Unos", "Dos", "Tres"
+print(x)
+print(y)
+print(z)
+```
 
