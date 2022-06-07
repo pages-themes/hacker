@@ -1,17 +1,17 @@
 # Python
 
 # Índice:
-[1.1 ¿Qué es Python?](#item1)
-[1.2 Ventajas de programar en Python.](#item2)
-[1.3 Programas Necesarios para programar en Python.](#item3)
-[1.3.1 Interprete de Python.](#item4)
-[1.3.2 Editor de Código.](#item5)
-[1.3.2 Editor de Código](#item6)
+[1.1 ¿Qué es Python?](#item1)  
+[1.2 Ventajas de programar en Python.](#item2)  
+[1.3 Programas Necesarios para programar en Python.](#item3)  
+[1.3.1 Interprete de Python.](#item4)  
+[1.3.2 Editor de Código.](#item5)    
 
 
 
 ---
-## <h2 id=titulo1>¿Qué es Python?</h2>
+<a name="item1"></a>
+## ¿Qué es Python?
 
 Es un lenguaje de programación multiplataforma, que se destaca por su código legible y limpio. Su licencia es de código abierto y
 permite su utilización en cualquier escenario. Esto hace que sea uno de los lenguajes de iniciación de muchos programadores. Permite y agiliza, entre otras de
@@ -20,8 +20,8 @@ sus características, la automatización de procesos y ejecución de tareas tant
 Un lenguaje sencillo, legible y elegante que atiende a un conjunto de reglas que hacen muy corta su curva de aprendizaje. Esto hace de Python un lenguaje 
 práctico que permite ahorrar mucho tiempo.
 
-
-## <h2 id=titulo2>Ventajas de programar en Python:</h2>
+<a name="item2"></a>
+## Ventajas de programar en Python:
 
 * `Simplificado y rápido` : Este lenguaje simplifica mucho la programación, es un gran lenguaje para scripting.
 * `Elegante y flexible` : El lenguaje ofrece muchas facilidades al programador al ser fácilmente legible e interpretable.
@@ -30,9 +30,11 @@ práctico que permite ahorrar mucho tiempo.
 * `Portable` : Es un lenguaje muy portable. Podemos usarlo en prácticamente cualquier sistema de la actualidad.
 * `Comunidad` : Cuenta con un gran número de usuarios. Su comunidad participa activamente en el desarrollo del lenguaje.
 
-## <h2 id=titulo3>Programas Necesarios para programar en Python:</h2>
+<a name="item3"></a>
+## Programas Necesarios para programar en Python:
 
-### <h2 id=titulo4>Interprete de Python:</h2>
+<a name="item4"></a>
+### Interprete de Python:
 
 Para poder programar en Python vamos a necesitar dos programas, primero vamos a necesitar un intérprete de Python, que es el encargado a que nuestro ordenador 
 (o cualquier dispositivo compatible) pueda entender Python. Podemos descargarlo desde su página oficia.
@@ -72,7 +74,7 @@ Para volver a la Terminal de Windows introducimos el comando `exit()`.
 
 ![Screenshot 2022-06-07 081636](https://user-images.githubusercontent.com/103068924/172309096-65bee0fe-46ac-405c-a439-4d9033e45735.png)
 
-<a name="item6"></a>
+<a name="item5"></a>
 ### Editor de Código:
 
 El segundo programa que vamos a necesitar va a ser el encargado de ayudarnos a escribir el código de Python, estos programas se conocen como `editores de código`
