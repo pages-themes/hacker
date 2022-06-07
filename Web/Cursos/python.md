@@ -28,22 +28,38 @@ Para poder programar en Python vamos a necesitar dos programas, primero vamos a 
 
 * Descargar Intérprete de Python --> <a href="https://www.python.org" style="text-decoration:none">Link</a>
 
+![Python](https://user-images.githubusercontent.com/103068924/172308453-711064dc-8f05-493c-aae0-35ec9ff0c91a.png)
+
+![Python1](https://user-images.githubusercontent.com/103068924/172308502-1700286d-5bdf-43ee-9ef5-f8ffa710a10a.png)
+
+![Screenshot 2022-06-07 080832](https://user-images.githubusercontent.com/103068924/172308571-f82b909d-8257-4007-a20e-c171fdd669fa.png)
+
 Una vez descargado, ejecutamos el archivo de instalación `.exe`. La instalación es muy simple, lo primero que veremos al desplegarse la ventana de instalación
 es el botón de `Install Now`, pero antes de pulsarlo debéis activar las casillas inferiores. Tanto la que nos permite utilizar el programa a todos los usuarios
 (que viene activada de forma predeterminada) como la `Add Python to PATH` que nos permitira trabajar con python desde la Terminal.
+
+![Screenshot 2022-06-07 081039](https://user-images.githubusercontent.com/103068924/172308587-e7df641c-27a2-47be-911c-5862ff6d56ee.png)
 
 Para comprobar que la instalación se ha completado correctamente, abrimos la terminal de Windows (Cntl + r y escribimos `cmd`) y ejecutamos el siguiente
 comando:
 
     python --version
-    
+
+![Screenshot 2022-06-07 081356](https://user-images.githubusercontent.com/103068924/172308937-2c0fa1f1-0db2-4daa-9f94-52f726fe9c03.png)
+
+![Screenshot 2022-06-07 081534](https://user-images.githubusercontent.com/103068924/172308954-64a67a3b-0e13-4ae3-8e00-6961cedb114d.png)
+
 Si la instalación se ha realizado correctamente, nos debería de mostrar la versión de Python instalada. También podemos comprobar que funciona correctamente 
 ejecutando el mismo Python:
 
     python
-    
+ 
+ ![Screenshot 2022-06-07 081426](https://user-images.githubusercontent.com/103068924/172308797-7e9e4948-32d6-4803-9388-ab777e8bcff5.png)
+ 
 Ahora nuestra terminal está lista para interpretar código Python. Podemos comprobarlo actuando algún cálculo simple. `Ej:` 2 + 2 y debería reportarnos 4.
 Para volver a la Terminal de Windows introducimos el comando `exit()`.
+
+![Screenshot 2022-06-07 081636](https://user-images.githubusercontent.com/103068924/172309096-65bee0fe-46ac-405c-a439-4d9033e45735.png)
 
 ### Editor de Código:
 
