@@ -117,6 +117,11 @@ lenguaje simplemente añadimos su extension al final de las tres primeras comill
 
 `Ejemplo Python`
 
+    ```py
+
+    print("Hello World")
+
+    ```
 ```py
 
 print("Hello World")
