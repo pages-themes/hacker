@@ -1,11 +1,11 @@
 # Python
 
 # Índice:
-[1.1 ¿Qué es Python?](#item1)  
-[1.2 Ventajas de programar en Python.](#item2)  
-[1.3 Programas Necesarios para programar en Python.](#item3)  
-[1.3.1 Interprete de Python.](#item4)  
-[1.3.2 Editor de Código.](#item5)    
+* [1.1 ¿Qué es Python?](#item1)  
+* [1.2 Ventajas de programar en Python.](#item2)  
+* [1.3 Programas Necesarios para programar en Python.](#item3)  
+* [1.3.1 Interprete de Python.](#item4)  
+* [1.3.2 Editor de Código.](#item5)    
 
 
 
