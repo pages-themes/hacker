@@ -1,4 +1,4 @@
-![Captura de pantalla -2022-05-13 11-40-50](https://user-images.githubusercontent.com/103068924/168258096-c362a48f-e5af-4500-822a-72db7894bbb1.png)
+<center><img src="https://user-images.githubusercontent.com/103068924/168258096-c362a48f-e5af-4500-822a-72db7894bbb1.png"></center>
 
 # Hack The Box-Blue
 
