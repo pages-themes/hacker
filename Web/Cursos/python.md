@@ -2,7 +2,7 @@
 
 # Índice:
 <li><a href="#titulo1">1.1 ¿Qué es Python?</a></li>
-<li><a href="#">#</a></li>
+<li><a href="#titulo2">#</a>1.2 Ventajas de programar en Python:</li>
 <li><a href="#">#</a></li>
 <li><a href="#">#</a></li>
 <li><a href="#">#</a></li>
@@ -20,7 +20,7 @@ Un lenguaje sencillo, legible y elegante que atiende a un conjunto de reglas que
 práctico que permite ahorrar mucho tiempo.
 
 
-## Ventajas de programar en Python:
+## <h2 id=titulo2>Ventajas de programar en Python:</h2>
 
 * `Simplificado y rápido` : Este lenguaje simplifica mucho la programación, es un gran lenguaje para scripting.
 * `Elegante y flexible` : El lenguaje ofrece muchas facilidades al programador al ser fácilmente legible e interpretable.
