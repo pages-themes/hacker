@@ -11,7 +11,8 @@
 * [1.4 Dinámica de trabajo.](#item6)
 * [2.1 Crear Nuestro Primer Programa: Hello World.](#item7)
 * [2.2 Tipos de Data en Python: Datatypes.](#item8)
-* [2.2.1 Variables](#item9)    
+* [2.2.1 Variables](#item9)
+* [2.2.2 Listas](#item10)   
 
 
 ---
@@ -368,4 +369,20 @@ print(x)
 print(y)
 print(z)
 ```
+
+<a name="item10"></a>
+# Listas
+
+El siguiente concepto que vamos a ver son `las listas` se utilizan para almacenar varios elementos en una sola variable. Para crear listas se utilizan los
+corchetes `[]`. Vamos a ver un ejemplo y crear una lista simple:
+
+```py
+milista = ["Uno", "Dos", "Tres"]
+print(milista)
+```
+Los elementos de la lista están ordenados, se pueden cambiar y permiten valores duplicados. Estos elementos están indexados, el primer elemento tiene un índice
+`0`, el segundo `1` y así sucesivamente. Las listas están ordenadas, significa que los elementos tienen un orden definido y ese orden no cambiará.
+
+
+
 
