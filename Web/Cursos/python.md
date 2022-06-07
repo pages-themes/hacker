@@ -68,9 +68,15 @@ y existe una gran variedad. Nosotros vamos a usar Visual Estudio Code, ya que es
 
 * Descargar Editor de Código --> <a href="https://code.visualstudio.com" style="text-decoration:none">Link</a>
 
+![Screenshot 2022-06-07 081905](https://user-images.githubusercontent.com/103068924/172309670-a8876ac3-f000-4a76-a14b-dacd01f490e2.png)
+
+![Screenshot 2022-06-07 081932](https://user-images.githubusercontent.com/103068924/172309684-10c1bb86-6ec2-44f0-ba6d-a12b86671d96.png)
+
 Al igual que la instalación anterior, esta también es muy sencilla y debemos de fijarnos básicamente en lo mismo. Una vez descargado el archivo de instalación
 `.exe` simplemente lo ejecutamos, una vez inicie la instalación, pulsamos siguiente hasta llegar al apartado `Seleccione Tareas Adicionales` y debemos de 
 activar la opción de `Agregar a PATH (disponible después de reiniciar)`, está opción nos permitirá trabajar desde la Terminal con el Editor de Código.
+
+![Screenshot 2022-06-07 082001](https://user-images.githubusercontent.com/103068924/172309723-8a3cea41-73ff-42be-9228-e3c4178f5219.png)
 
 ### Dinámica de trabajo:
 
