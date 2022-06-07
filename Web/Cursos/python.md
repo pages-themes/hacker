@@ -10,7 +10,8 @@
 * [1.3.2 Editor de Código.](#item5) 
 * [1.4 Dinámica de trabajo.](#item6)
 * [2.1 Crear Nuestro Primer Programa: Hello World.](#item7)
-* [2.2 Tipos de Data en Python: Datatypes.](#item8)    
+* [2.2 Tipos de Data en Python: Datatypes.](#item8)
+* [2.2.1 Variables](#item9)    
 
 
 ---
@@ -223,6 +224,7 @@ Ahora, vemos como nos reporta la frase, y el tipo de clase que es. Bien, ya hemo
 
 <center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png"></center>
 
+<a name="item9"></a>
 # Variables
 
 Ahora vamos a ver el concepto de `varibles`, una variable la podemos definir como un nombre adjunto a un objeto en particular. En Python, las variables no 
@@ -352,6 +354,16 @@ código de más ya que podemos establecer disntintas variables en la misma líne
 
 ```py
 x, y, z = "Unos", "Dos", "Tres"
+print(x)
+print(y)
+print(z)
+```
+
+Otra cosa que tambien podemos hacer es establer un valor para múltiples variables. De esta forma ejecutando cualquiera de esas variables, obtendremos el 
+mismo resultado:
+
+```py
+x = y = z = "Unos", "Dos", "Tres"
 print(x)
 print(y)
 print(z)
