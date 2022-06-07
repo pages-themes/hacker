@@ -4,8 +4,8 @@
 <li><a href="#titulo1">1.1 ¿Qué es Python?</a></li>
 <li><a href="#titulo2">1.2 Ventajas de programar en Python.</a></li>
 <li><a href="#titulo3"></a>1.3 Programas Necesarios para programar en Python.</li>
-<li><a href="titulo4">#</a>1.3.1 Interprete de Python.</li>
-<li><a href="titulo5">#</a>1.3.2 Editor de Código.</li>
+<li><a href="titulo4">1.3.1 Interprete de Python.</a></li>
+<li><a href="titulo5">1.3.2 Editor de Código.</a></li>
 
 
 
