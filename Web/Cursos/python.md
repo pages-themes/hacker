@@ -179,21 +179,21 @@ Puede parecer muy confuso al principio, peró en un futuro puede resolverte pequ
 <a name="item8"></a>
 # Tipos de Data en Python: Datatypes
 
-Vamos a tratas de establecer algun concepto más, ya hemos visto la capacidad de imprimir frases como la de "Hello World", a cada letra o símbolo incluido dentro
+Vamos a tratar de establecer algún concepto más, ya hemos visto la capacidad de imprimir frases como la de "Hello World", a cada letra o símbolo incluido dentro
 de la frase (incluidos los espacios) se les conoce como `caracteres` y al conjunto de estos caracteres se le conoce como `string`. Cuando cambiamos cualquier 
 carácter, ya sea un espacio, una letra minúscula por una mayúscula o incluir cualquier signo, Pyhton interpreta que es un string diferente.
 
-`Por Ejemplo` : "Hello World" y "hello World" serían dos strings diferentes ya que la primerá letra no es igual.
+`Por Ejemplo` : "Hello World" y "hello World" serían dos strings diferentes, ya que la primera letra no es igual.
 
-Otra cosa que debemos tener en cuenta es que podemos establecer varios strings diferenciandolos uniucamente por el tipo de comillas. A continucion podemos ver 
-ejemplos de diferentes strings en funcion del tipo de comillado.
+Otra cosa que debemos tener en cuenta es que podemos establecer varios strings diferenciándolos únicamente por el tipo de comillas. A continuación podemos ver 
+ejemplos de diferentes strings en función del tipo de comillas.
 
     'Hello World'
     "Hello World"
     '''Helo World'''
     """Hello World"""
 
-Como podeís ver existen varias formas de nombrar un `string`, pero como podemos saber que interpreta Pyhton como un string? Muy fácil, para ello volvemos a la 
+Como podéis ver, existen varias formas de nombrar un `string`, pero como podemos saber que interpreta Pyhton como un string? Muy fácil, para ello volvemos a la 
 Terminal, ejecutamos Python:
 
     python
@@ -202,14 +202,14 @@ Y vamos a suponer que queremos saber si `"Hello World"` es un string, para ello 
 
     type("Hello World")
 
-Al ejecutarlo vemos como nos devulve `class 'str'`, donde `str` es el diminutivo de string. Vamos a ver otro ejemplo, esta vez con los numeros:
+Al ejecutarlo vemos como nos devuelve `class 'str'`, donde `str` es el diminutivo de string. Vamos a ver otro ejemplo, esta vez con los números:
 
    type(100)
 
-Esta vez vemos como nos reporta `int` (integral), indicandonos que se trata de un número entero.
+Esta vez vemos como nos reporta `int` (integral), indicándonos que se trata de un número entero.
 
-Ahora vamo a tratar de incluir est en nuestro programita anterior, en primer luegar, el programa debe imprimir la frase "Hello World" y seguido debe de imprimir
-el tipo de clase que es. Para ello realizamos lo siguiente:
+Ahora vamos a tratar de incluir este argumento en nuestro programita anterior, en primer lugar, el programa debe imprimir la frase "Hello World" y seguido
+debe de imprimir el tipo de clase que es. Para ello realizamos lo siguiente:
 
 ```py
 # Este es mi primer programa
@@ -219,6 +219,47 @@ print(type("Hello World"))
 
 Guardamos (Cntrl + s) y desde la terminal lo ejecutamos.
 
-Ahora, vemos como nos reporta la frase, y el tipo de clase que es.
+Ahora, vemos como nos reporta la frase, y el tipo de clase que es. Bien, ya hemos tocado un poco de Python, ahora vamos a seguir con algo de teoría.
+
+<center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png"></center>
+
+# Variables
+
+Ahora vamos a ver el concepto de `varibles`, una variable la podemos definir como un nombre adjunto a un objeto en particular. En Python, las variables no 
+necesitan ser declaradas o definidas por adelantado, como es el caso en muchos otros lenguajes de programación. 
+
+Para crear una variable, simplemente le asignamos un valor y luego ya podemos empezar a utilizarla. La asignación se realiza con un solo signo igual `=`:
+
+`Ejemplo:`
+
+```py
+x = 10
+y = F1r0x
+print(x)
+print(y)
+```
+
+Como podeís ver aquí establecemos dos variables, al objeto `10` le establecemos el nombre `x`, de tal forma que al ejecutar `print(x)` directamente nos imprime
+`10`. De la misma forma establecemos la segunda variable con `y`.
+
+Podemos definir varias  variables al mismo objeto, teniendo en cuenta que Python lee de arriba para bajo, se interpretará la última variable establecida. Esto puede
+ser un poco lioso, pero vamos a ver un par de ejemplos.
+
+```py
+x = 1000
+x = 20
+print(x)
+```
+
+Como puedes ver, hemos establecido dos variables al mismo objeto. Como `x = 20` es el último establecido, será el único que se imprima por pantalla. En caso de querer
+imprimir tambien el primer valor, debemos de imprimir `x` antes del cambio:
+
+```py
+x = 1000
+print(x)
+x = 20
+print(x)
+```
+Ahora nos reporta los dos resultados, Python interpreta la primera variable hasta llegar al cambio `x = 20`.
 
 
