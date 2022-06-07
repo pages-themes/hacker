@@ -17,7 +17,7 @@ $container-max-width: 1000px;
 body {
   margin: 0;
   padding: 0;
-  background: $body-background url("../images/fondonegro.png") 0 0;
+  background: $body-background url("../images/bkg.png") 0 0;
   color: $body-foreground;
   font-size: 16px;
   line-height: 1.5;
@@ -78,7 +78,7 @@ header h1 {
 
 
 header h1:before {
-  content: "";
+  content: "./ ";
   font-size: 24px;
 }
 
@@ -154,7 +154,7 @@ ul li {
 }
 
 blockquote {
-  color: $bouquet;
+  color: $blockquote-color;
   padding-left: 10px;
   border-left: 1px dotted $blockquote-border;
 }
@@ -164,7 +164,7 @@ pre {
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 10px;
   font-size: 16px;
-  color: $conifer;
+  color: #b5e853;
   border-radius: 2px;
   word-wrap: normal;
   overflow: auto;
@@ -187,7 +187,7 @@ table {
 
 th {
   text-align: left;
-  border-bottom: 1px dashed $gallery;
+  border-bottom: 1px dashed #b5e853;
   padding: 5px 10px;
 }
 
@@ -198,8 +198,8 @@ td {
 hr {
   height: 0;
   border: 0;
-  border-bottom: 1px dashed $potters-clay;
-  color: #aa759f;
+  border-bottom: 1px dashed #b5e853;
+  color: #b5e853;
 }
 
 /* Buttons
@@ -265,24 +265,4 @@ a {
 
 #a-title {
   text-decoration: none;
-}
-
-.contenedor {
-   display: flex;
-   flex-wrap: wrap;
-}
-
-.contenedor img {
-    width: 29%;
-}
-
-.imagen {
-  box-sizing: border-box;
-  flex-basis: 33.33%;
-  flex-shrink: 0;
-  padding: 5px;
-}
-
-.imagen h5 {
-  margin: 1px 0;
 }
