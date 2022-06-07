@@ -327,6 +327,25 @@ Nombre de variables `Ilegales`:
 mi-nombre = "F1r0x"
 mi nombre = "F1r0x"
 ```
+Estos tres últimos ejemplos, Python no será capaz de interpretarlos y nos reportara un error.
+
+Para las variables largas, podemos utilizar varias técnicas para facilitar su lectura:
+
+`Carmel:`
+Cada palabra, excepto la primera, comienza con una letra mayúscula:
+```py
+miVaribleNombre = "F1r0x"
+```
+`Pascual:`
+Cada palabra comienza con una letra mayúscula:
+```py
+MiVariableNombre = "F1r0x"
+```
+`Snake:`
+Cada palabra está separada por un carácter de subrayado:
+```py
+mi_variable_nombre = "F1r0x"
+```
 
 
 
