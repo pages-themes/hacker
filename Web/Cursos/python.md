@@ -7,7 +7,8 @@
 * [1.3.1 Interprete de Python.](#item4)  
 * [1.3.2 Editor de Código.](#item5) 
 * [1.4 Dinámica de trabajo.](#item6)
-* [2.1 Crear Nuestro Primer Programa: Hello World](#item7)    
+* [2.1 Crear Nuestro Primer Programa: Hello World.](#item7)
+* [2.2 Tipos de Data en Python: Datatypes.](#item8)    
 
 
 ---
@@ -153,6 +154,7 @@ Como podéis ver nos reporta nuestra frase. En caso de tener dudas con los pará
     
 Puede parecer muy confuso al principio, peró en un futuro puede resolverte pequeñas dudas. 
 
+<a name="item8"></a>
 # Tipos de Data en Python: Datatypes
 
 Vamos a tratas de establecer algun concepto más, ya hemos visto la capacidad de imprimir frases como la de "Hello World", a cada letra o símbolo incluido dentro
