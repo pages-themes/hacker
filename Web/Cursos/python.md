@@ -92,11 +92,13 @@ activar la opción de `Agregar a PATH (disponible después de reiniciar)`, está
 
 ![Screenshot 2022-06-07 082001](https://user-images.githubusercontent.com/103068924/172309723-8a3cea41-73ff-42be-9228-e3c4178f5219.png)
 
+<a name="item6"></a>
 ### Dinámica de trabajo:
 
 Una vez tengamos los dos programas instalados ya podemos empezar a trabajar. Básicamente, escribiremos nuestro código mediante el `Editor de Código` (en este caso
 mediante Visual Estudio Code) y lo ejecutaremos utilizando el `Interprete`.
 
+<a name="item7"></a>
 ## Crear Nuestro Primer Programa: Hello World
 
 Para empezar, vamos a crearnos una carpeta desde la cual trabajar. Creamos una carpeta llamada `Curso_Python` en nuestro escritorio. Tras crear la carpeta, abrimos
