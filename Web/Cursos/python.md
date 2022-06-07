@@ -1,6 +1,16 @@
 # Python
 
-## ¿Qué es Python?
+# Índice:
+<li><a href="#titulo1">1.1 ¿Qué es Python?</a></li>
+<li><a href="#">#</a></li>
+<li><a href="#">#</a></li>
+<li><a href="#">#</a></li>
+<li><a href="#">#</a></li>
+
+
+
+---
+## <h2 id=titulo1>¿Qué es Python?</h2>
 
 Es un lenguaje de programación multiplataforma, que se destaca por su código legible y limpio. Su licencia es de código abierto y
 permite su utilización en cualquier escenario. Esto hace que sea uno de los lenguajes de iniciación de muchos programadores. Permite y agiliza, entre otras de
