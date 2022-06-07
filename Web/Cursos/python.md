@@ -1,12 +1,12 @@
 # Python
 
 # Índice:
-<li><a href="#titulo1">1.1 ¿Qué es Python?</a></li>
-<li><a href="#titulo2">1.2 Ventajas de programar en Python.</a></li>
-<li><a href="#titulo3">1.3 Programas Necesarios para programar en Python.</a></li>
-<li><a href="#titulo4">1.3.1 Interprete de Python.</a></li>
-<li><a href="#titulo5">1.3.2 Editor de Código.</a></li>
-[1.3.2 Editor de Código](#item1)
+[1.1 ¿Qué es Python?](#item1)
+[1.2 Ventajas de programar en Python.](#item2)
+[1.3 Programas Necesarios para programar en Python.](#item3)
+[1.3.1 Interprete de Python.](#item4)
+[1.3.2 Editor de Código.](#item5)
+[1.3.2 Editor de Código](#item6)
 
 
 
@@ -72,8 +72,8 @@ Para volver a la Terminal de Windows introducimos el comando `exit()`.
 
 ![Screenshot 2022-06-07 081636](https://user-images.githubusercontent.com/103068924/172309096-65bee0fe-46ac-405c-a439-4d9033e45735.png)
 
-<a name="item1"></a>
-### <h2 id=titulo5>Editor de Código:</h2>
+<a name="item6"></a>
+### Editor de Código:
 
 El segundo programa que vamos a necesitar va a ser el encargado de ayudarnos a escribir el código de Python, estos programas se conocen como `editores de código`
 y existe una gran variedad. Nosotros vamos a usar Visual Estudio Code, ya que es el editor más empleado actualmente.
