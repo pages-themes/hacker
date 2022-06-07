@@ -1,6 +1,6 @@
 # Python
 
-<center><img src="https://user-images.githubusercontent.com/103068924/172474820-95cf1d8b-ae86-4d28-94b3-023153e3f204.png" ...></center>
+![python_titulo](https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png#center)
 
 
 # Índice:
