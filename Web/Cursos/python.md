@@ -5,8 +5,9 @@
 * [1.2 Ventajas de programar en Python.](#item2)  
 * [1.3 Programas Necesarios para programar en Python.](#item3)  
 * [1.3.1 Interprete de Python.](#item4)  
-* [1.3.2 Editor de Código.](#item5)    
-
+* [1.3.2 Editor de Código.](#item5) 
+* [1.4 Dinámica de trabajo.](#item6)
+* [2.1 Crear Nuestro Primer Programa: Hello World](#item7)    
 
 
 ---
