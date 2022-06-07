@@ -255,11 +255,78 @@ Como puedes ver, hemos establecido dos variables al mismo objeto. Como `x = 20` 
 imprimir tambien el primer valor, debemos de imprimir `x` antes del cambio:
 
 ```py
-x = 1000
+x = 1000   
 print(x)
-x = 20
+x = 20     # Cambio de la variable
 print(x)
 ```
-Ahora nos reporta los dos resultados, Python interpreta la primera variable hasta llegar al cambio `x = 20`.
+Ahora nos reporta los dos resultados, Python interpreta la primera variable hasta llegar al cambio `x = 20`. Algo importante tambien, es que las variables distinguen
+entre mayúsculas y minúsculas:
+
+```py
+a = 5          # Estas dos variables son distintas.
+A = "F1r0x"
+```
+
+El siguiente concepto que vamos a ver dentro de las varibles, es como indicar el `tipo de datos` de una variable.
+
+```py
+x = str(5)     # Establecemos la variable como String '5'
+y = int(5)     # Establecemos la variable como Entero 5 
+z = float(5)   # Establecemos la variable como Float 5.0 
+```
+
+De esta forma podemos ejecutar una variable de varias formas distintas. Podeís comprobarlo imprimiendo mediante `print()` las disntintas variables:
+
+```py
+x = str(5)     # Establecemos la variable como String '5'
+y = int(5)     # Establecemos la variable como Entero 5 
+z = float(5)   # Establecemos la variable como Float 5.0 
+
+print(x)
+print(y)
+print(z)
+```
+
+Tambien podemos obtener el tipo de datos de un varible con el argumento `type()`, para ver un ejemplo crearemos dos nuevas variables `x = 10` y `y = "F1r0x"`
+y queremos reportar el tipo de variable:
+
+```py
+x = 10
+y = "F1r0x"
+print(type(x))
+print(type(y))
+```
+
+Ya hemos visto como establecer variables, lo unico es que los nombres que hemos establecido a las varibles son muy simples (básicamente `x` y `y`). Que ocurre 
+si queremos establecer nombres más largos y más específicos? Pues en primer lugar debemos de saber que no podemos asignar el nombre que queramos, existen unos
+parámetros que Python interpretará como nombres y otros que los interpretará como variables ilegales. Veamos las reglas básicas de Python:
+
+* Un nombre de variable debe comenzar con una letra o el carácter de subrayado (barra baja _).
+* Un nombre de variable NO puede comenzar con un número.
+* Un nombre de variable solo puede contener caracteres alfanuméricos y guiones bajos (Az, 0-9 y _).
+* Los nombres de las variables distinguen entre mayúsculas y minúsculas (edad, Edad y EDAD son tres variables diferentes).
+
+Nombres de variables `Legales`:
+
+`Ejemplo:`
+```py
+minombre = "F1r0x"
+mi_nombre = "F1r0x"
+_mi_noimbre = "F1r0x"
+miNombre = "F1r0x"
+MINOMBRE = "F1r0x"
+minombre11 = "F1r0x"
+```
+
+Nombre de variables `Ilegales`:
+
+`Ejemplo:`
+```py
+1minombre = "F1r0x"
+mi-nombre = "F1r0x"
+mi nombre = "F1r0x"
+```
+
 
 
