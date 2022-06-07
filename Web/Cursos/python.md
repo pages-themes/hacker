@@ -2,6 +2,7 @@
 
 ![python_titulo](https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png#center)
 
+<center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png"></center>
 
 # Índice:
 * [1.1 ¿Qué es Python?](#item1)  
