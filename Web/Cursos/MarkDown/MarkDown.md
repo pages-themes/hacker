@@ -84,7 +84,16 @@ Para generar links automáticos tan solo tendrás que rodearlos con los símbolo
     <https://f1r0x.github.io>
     
 <https://f1r0x.github.io>
-      
+
+### Link o Hipervínculos dentro de la misma página:
+Para poder crear links dentro de nuestra página, por ejemplo para crear un índice o para establecer links a otros artículos, usaremos los siguientes
+comandos:
+
+    [Titulo del artículo](#item1) → Para los títulos del índice.
+    <a name=»item1″></a> → Marca a la que salta el enlace anterior.
+    
+El primer parámetro será dode estableceremos el link, mientras que el segundo nos indica a donde queremos desplazarnos.
+     
 ### Mostrar texto o comandos en Bloque Básico:
 Para poder mostrar información dentro de un bloque de forma que resalte y se pueda copiar su contenido de manera más eficiente,
 simplemente pulsamos cuatro veces espacio, una vez tengamos cuatro espacios desde el inicio de la línea, MarkDown interpretará
@@ -101,6 +110,21 @@ Ejemplo1
 Ejemplo2
 Ejemplo3
 ~~~
+
+### Crear Bloque para Código Específico:
+De igual modo que el bloque anterior, podemos crear un bloque de códido específico para un lenguaje de programación. Para especificar el 
+lenguaje simplemente añadimos su extension al final de las tres primeras comillas. 
+
+`Ejemplo Python`
+
+```py
+
+print("Hello World")
+
+```
+
+Para establecer cualquier otro leguaje de programación, solo debemos sustituir `py` por la extensión deaseada.
+
 
 ### Reglas Horizontales:
 
