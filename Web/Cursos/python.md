@@ -2,7 +2,7 @@
 
 # Índice:
 <li><a href="#titulo1">1.1 ¿Qué es Python?</a></li>
-<li><a href="#titulo2">#</a>1.2 Ventajas de programar en Python:</li>
+<li><a href="#titulo2">1.2 Ventajas de programar en Python:</a></li>
 <li><a href="#">#</a></li>
 <li><a href="#">#</a></li>
 <li><a href="#">#</a></li>
