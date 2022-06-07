@@ -104,10 +104,16 @@ mediante Visual Estudio Code) y lo ejecutaremos utilizando el `Interprete`.
 ## Crear Nuestro Primer Programa: Hello World
 
 Para empezar, vamos a crearnos una carpeta desde la cual trabajar. Creamos una carpeta llamada `Curso_Python` en nuestro escritorio. Tras crear la carpeta, abrimos
-el Visual Estudio Code, y en la parte superior izquierda pulsamos `File` luego `Open File` y abrimos nuestra carpeta `Curso_Python`.
+el Visual Estudio Code, y en la parte superior izquierda pulsamos `File` luego `Open Folder` y abrimos nuestra carpeta `Curso_Python`.
+
+![Screenshot 2022-06-07 093039](https://user-images.githubusercontent.com/103068924/172322112-c71bfbf5-234b-427b-8673-ba4b92ad0158.png)
 
 Una vez abierta la carpeta, veremos como se nos muestra en modo menú en la parte izquierda de la pantalla. Ahora vamos a generar un archivo dentro de nuestra
 carpeta, para ello nos dirigimos al menú de nuestra carpeta (arriba izquierda) y pulsamos `New File`, llamaremos al archivo `helloworld.py`.
+
+![Screenshot 2022-06-07 093905](https://user-images.githubusercontent.com/103068924/172323550-4e75bc78-2be4-44fb-8203-6bd7c72575d2.png)
+
+![Screenshot 2022-06-07 093558](https://user-images.githubusercontent.com/103068924/172323598-87f8ddba-e724-4a17-815e-2bb410d3e5c8.png)
 
 Para que nuestro programa funcione y que los dispositivos identifiquen que este archivo contiene código Python, debemos usar la extensión `.py`, ya que sin
 ella los archivos no se ejecutaran.
@@ -119,6 +125,8 @@ interpretados al ejecutar el programa.
 
 Para introducir un comentario simplemente colocamos el signo `#` seguido del comentario en cuestión. En nuestro caso vamos a especificar que es nuestro primer
 programa, para ello escribimos `# Este es mi primer programa.`
+
+![Screenshot 2022-06-07 094110](https://user-images.githubusercontent.com/103068924/172324207-560066ef-fa6a-40e8-8ad1-8bbd771681a3.png)
 
 Bien, ya hemos visto como se incorporan los comentarios, ahora vamos con la sintaxis del código. La finalidad de nuestro programa es que cuando lo
 ejecutemos, nos reporte la frase `Hello World`. Para ello vamos a ver nuestro primer concepto que son las palabras claves. Python utiliza estas palabras clave o
@@ -132,8 +140,14 @@ en un editor de texto.).
 print("Hello World")   
 ```
 
-Como veis debemos de introducir el texto entre comillas ya sean dobles o simples. ¿Ya tendríamos nuestro primer mini programa creado, fácil verdad? El siguiente paso 
-será ejecutarlo. 
+![Screenshot 2022-06-07 094243](https://user-images.githubusercontent.com/103068924/172324659-5ed6319d-a447-44e2-87d7-2d36295f1a84.png)
+
+Finalmente, para guardar nuestro proyecto podemos dirigirnos a `File` y `Save` o utilizando el atajo `Ctrl + s`.
+
+![Screenshot 2022-06-07 094551](https://user-images.githubusercontent.com/103068924/172325296-bb9cc111-561f-4551-9ae9-244d491be338.png)
+
+Como veis debemos de introducir el texto entre comillas ya sean dobles o simples. ¿Ya tendríamos nuestro primer mini programa creado, fácil verdad? El siguiente
+paso será ejecutarlo. 
 
 Para ejecutar nuestro programa lo primero que debemos de hacer es abrir una Terminal. Para abrir la Terminal de Windows (Cntl + r y escribimos `cmd`). Una vez
 abierta la Terminal debemos dirigirnos a la carpeta creada al principio, que es donde se encuentra nuestro programa `helloworld.py`. Para desplazarnos entre 
