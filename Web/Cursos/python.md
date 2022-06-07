@@ -156,11 +156,15 @@ directorios empleamos el comando `cd` seguido de la ruta de nuestra carpeta.
     cd /Desktop/Curso_Python/
     
     cd /Escritorio/Curso_Python/
-    
+
+![Screenshot 2022-06-07 094954](https://user-images.githubusercontent.com/103068924/172326102-b18c884d-8f1d-4853-bd3c-11fab0bb6544.png)
+
 Una vez estemos en nuestro directorio, podemos ver los archivos que contiene mediante el comando `dir` y vemos nuestro archivo `helloworld.py`. Para ejecutar el
 programa, simplemente escribimos el comando `python` seguido de nuestro programa.
 
     python helloworld.py
+    
+![Screenshot 2022-06-07 095305](https://user-images.githubusercontent.com/103068924/172326672-f53e35aa-498d-49ae-81f4-f175400f30d6.png)
     
 Como podéis ver nos reporta nuestra frase. En caso de tener dudas con los parámetros que vamos viendo, podéis revisarlos con el parámetro ayuda `-h`.
 
