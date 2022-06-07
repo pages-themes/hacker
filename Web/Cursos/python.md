@@ -1,7 +1,5 @@
 # Python
 
-![python_titulo](https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png#center)
-
 <center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png"></center>
 
 # Índice:
@@ -103,6 +101,8 @@ activar la opción de `Agregar a PATH (disponible después de reiniciar)`, está
 
 Una vez tengamos los dos programas instalados ya podemos empezar a trabajar. Básicamente, escribiremos nuestro código mediante el `Editor de Código` (en este caso
 mediante Visual Estudio Code) y lo ejecutaremos utilizando el `Interprete`.
+
+<center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png"></center>
 
 <a name="item7"></a>
 ## Crear Nuestro Primer Programa: Hello World
