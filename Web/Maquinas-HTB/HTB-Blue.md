@@ -171,10 +171,9 @@ Finalmente, la flag del usuario `root` la podemos encontrar en el directorio `C:
 
 ![Captura de pantalla -2022-05-13 17-51-26](https://user-images.githubusercontent.com/103068924/168327424-9413230b-de79-4710-9efc-140e15dad727.png)
 
-![Captura de pantalla -2022-05-13 11-40-500](https://user-images.githubusercontent.com/103068924/168327730-476d67f7-5298-41f3-8f38-c92a0bb8fbff.png)
-
+<center><img src="https://user-images.githubusercontent.com/103068924/168327730-476d67f7-5298-41f3-8f38-c92a0bb8fbff.png"></center>
   
- ---
+---
 ---
   
     
