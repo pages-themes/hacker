@@ -493,8 +493,44 @@ Como podéis ver, la definición de una función consta de los siguientes compon
  Las declaraciones deben tener el mismo nivel de sangría (generalmente 4 espacios). También podemos incluir de manera opcional una declaración `return` para 
  devolver un valor de la función. Entraremos en detalle sobre estos conceptos más adelante.
  
+ Vamos a ver algunos ejemplos, primero vamos a crear una variable fuera de una función `x` y la utilizaremos dentro de la función:
  
+```py
+x = "World"      # Variable fuera de la función.    
+
+def mifuncion():
+  print("Hello " + x)    
+
+mifuncion()
+```
  
+ También está la opción de crea una variable con el mismo nombre dentro de una función, esta variable será local y solo se puede usar dentro de la función. La 
+ variable global con el mismo nombre quedará como estaba, global y con el valor original.
  
+```py
+x = "World"      # Variable fuera de la función.    
+
+def mifuncion():
+  x = "F1r0x"
+  print("Hello " + x)    
+
+mifuncion()
+
+print("Hello " + x)
+``` 
+
+De la misma forma que hemos creado una variable global fuera de la función, podemos definirla dentro. Esto lo podemos realizar utilizando la palabra clave
+`global` dentro de la función:
+
+```py
+def mifuncion():
+  global x
+  x = "World"   
+
+mifuncion()
+
+print("Hello " + x)
+``` 
+
 
 
