@@ -178,6 +178,8 @@ Como podéis ver nos reporta nuestra frase. En caso de tener dudas con los pará
     
 Puede parecer muy confuso al principio, peró en un futuro puede resolverte pequeñas dudas. 
 
+<center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png"></center>
+
 <a name="item8"></a>
 # Tipos de Data en Python: Datatypes
 
@@ -369,6 +371,8 @@ print(x)
 print(y)
 print(z)
 ```
+
+<center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png"></center>
 
 <a name="item10"></a>
 # Listas
