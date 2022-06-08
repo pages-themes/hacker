@@ -177,7 +177,7 @@ Como podéis ver nos reporta nuestra frase. En caso de tener dudas con los pará
 
     python -h
     
-Puede parecer muy confuso al principio, peró en un futuro puede resolverte pequeñas dudas. 
+Puede parecer muy confuso al principio, pero en un futuro puede resolverte pequeñas dudas. 
 
 <center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png"></center>
 
@@ -231,7 +231,7 @@ Ahora, vemos como nos reporta la frase, y el tipo de clase que es. Bien, ya hemo
 <a name="item9"></a>
 # Variables
 
-Ahora vamos a ver el concepto de `varibles`, una variable la podemos definir como un nombre adjunto a un objeto en particular. En Python, las variables no 
+Ahora vamos a ver el concepto de `variables`, una variable la podemos definir como un nombre adjunto a un objeto en particular. En Python, las variables no 
 necesitan ser declaradas o definidas por adelantado, como es el caso en muchos otros lenguajes de programación. 
 
 Para crear una variable, simplemente le asignamos un valor y luego ya podemos empezar a utilizarla. La asignación se realiza con un solo signo igual `=`:
@@ -245,10 +245,10 @@ print(x)
 print(y)
 ```
 
-Como podeís ver aquí establecemos dos variables, al objeto `10` le establecemos el nombre `x`, de tal forma que al ejecutar `print(x)` directamente nos imprime
-`10`. De la misma forma establecemos la segunda variable con `y`.
+Como podéis ver aquí establecemos dos variables, al objeto `10` le establecemos el nombre `x`, de tal forma que al ejecutar `print(x)` directamente nos imprime
+`10`. De la misma manera establecemos la segunda variable con `y`.
 
-Podemos definir varias  variables al mismo objeto, teniendo en cuenta que Python lee de arriba para bajo, se interpretará la última variable establecida. Esto puede
+Podemos definir varias variables al mismo objeto, teniendo en cuenta que Python lee de arriba para bajo, se interpretará la última variable establecida. Esto puede
 ser un poco lioso, pero vamos a ver un par de ejemplos.
 
 ```py
@@ -258,7 +258,7 @@ print(x)
 ```
 
 Como puedes ver, hemos establecido dos variables al mismo objeto. Como `x = 20` es el último establecido, será el único que se imprima por pantalla. En caso de querer
-imprimir tambien el primer valor, debemos de imprimir `x` antes del cambio:
+imprimir también el primer valor, debemos de imprimir `x` antes del cambio:
 
 ```py
 x = 1000   
@@ -266,7 +266,7 @@ print(x)
 x = 20     # Cambio de la variable
 print(x)
 ```
-Ahora nos reporta los dos resultados, Python interpreta la primera variable hasta llegar al cambio `x = 20`. Algo importante tambien, es que las variables distinguen
+Ahora nos reporta los dos resultados, Python interpreta la primera variable hasta llegar al cambio `x = 20`. Algo importante también, es que las variables distinguen
 entre mayúsculas y minúsculas:
 
 ```py
@@ -274,7 +274,7 @@ a = 5          # Estas dos variables son distintas.
 A = "F1r0x"
 ```
 
-El siguiente concepto que vamos a ver dentro de las varibles, es como indicar el `tipo de datos` de una variable.
+El siguiente concepto que vamos a ver dentro de las variables, es como indicar el `tipo de datos` de una variable.
 
 ```py
 x = str(5)     # Establecemos la variable como String '5'
@@ -282,7 +282,7 @@ y = int(5)     # Establecemos la variable como Entero 5
 z = float(5)   # Establecemos la variable como Float 5.0 
 ```
 
-De esta forma podemos ejecutar una variable de varias formas distintas. Podeís comprobarlo imprimiendo mediante `print()` las disntintas variables:
+De esta forma podemos ejecutar una variable de varias formas distintas. Podéis comprobarlo imprimiendo mediante `print()` las distintas variables:
 
 ```py
 x = str(5)     # Establecemos la variable como String '5'
@@ -294,7 +294,7 @@ print(y)
 print(z)
 ```
 
-Tambien podemos obtener el tipo de datos de un varible con el argumento `type()`, para ver un ejemplo crearemos dos nuevas variables `x = 10` y `y = "F1r0x"`
+También podemos obtener el tipo de datos de un variable con el argumento `type()`, para ver un ejemplo crearemos dos nuevas variables `x = 10` y `y = "F1r0x"`
 y queremos reportar el tipo de variable:
 
 ```py
@@ -304,7 +304,7 @@ print(type(x))
 print(type(y))
 ```
 
-Ya hemos visto como establecer variables, lo unico es que los nombres que hemos establecido a las varibles son muy simples (básicamente `x` y `y`). Que ocurre 
+Ya hemos visto como establecer variables, lo único es que los nombres que hemos establecido a las variables son muy simples (básicamente `x` y `y`). ¿Qué ocurre 
 si queremos establecer nombres más largos y más específicos? Pues en primer lugar debemos de saber que no podemos asignar el nombre que queramos, existen unos
 parámetros que Python interpretará como nombres y otros que los interpretará como variables ilegales. Veamos las reglas básicas de Python:
 
@@ -333,7 +333,7 @@ Nombre de variables `Ilegales`:
 mi-nombre = "F1r0x"
 mi nombre = "F1r0x"
 ```
-Estos tres últimos ejemplos, Python no será capaz de interpretarlos y nos reportara un error.
+Estos tres últimos ejemplos, Python no será capaz de interpretarlos y nos reportará un error.
 
 Para las variables largas, podemos utilizar varias técnicas para facilitar su lectura:
 
@@ -354,7 +354,7 @@ mi_variable_nombre = "F1r0x"
 ```
 
 Ya sabemos estableces variables y podemos llamarlas de múltiples maneras. Ahora vamos a ver como establecer distintas variables sin necesidad de escribir 
-código de más ya que podemos establecer disntintas variables en la misma línea de código. Esto lo podemos ejecutar de la siguiente manera:
+código de más, ya que podemos establecer distintas variables en la misma línea de código. Esto lo podemos ejecutar de la siguiente manera:
 
 ```py
 x, y, z = "Unos", "Dos", "Tres"
@@ -363,7 +363,7 @@ print(y)
 print(z)
 ```
 
-Otra cosa que tambien podemos hacer es establer un valor para múltiples variables. De esta forma ejecutando cualquiera de esas variables, obtendremos el 
+Otra cosa que también podemos hacer es establecer un valor para múltiples variables. De esta forma ejecutando cualquiera de esas variables, obtendremos el 
 mismo resultado:
 
 ```py
@@ -378,7 +378,7 @@ print(z)
 <a name="item10"></a>
 # Listas
 
-El siguiente concepto que vamos a ver son `las listas` se utilizan para almacenar varios elementos en una sola variable. Para crear listas se utilizan los
+El siguiente concepto que vamos a ver son `las listas` se utilizan para almacenar varios elementos en una sola variable. Para crear listas se emplean los
 corchetes `[]`. Vamos a ver un ejemplo y crear una lista simple:
 
 ```py
@@ -420,8 +420,8 @@ Al estar las listas indexadas, vemos como nos reporta los nombres de la lista en
 <a name="item11"></a>
 # Función print()
 
-La función de Python print() se usa a menudo para generar variables y reportarlas por consola como hemos visto anteriormente. Vamos a ver un poco más a fondo 
-su funcionamiento. Está función permite generar múltiples variables seprandolas por una coma `,`.
+La función de Python print() se usa a menudo para generar variables y reportarlas por consola, como hemos visto anteriormente. Vamos a ver un poco más a fondo 
+su funcionamiento. Esta función permite generar múltiples variables separándolas por una coma `,`.
 
 ```py
 x = "Hello"
@@ -429,8 +429,8 @@ y = "World"
 print(x, y)
 ```
 
-Como vemos nos reporta los nombres de las variables separados por un espacio. Otra forma de generar varia variables es urilizando el signo `+`, al utilizar el
-signo de suma los nombres de las varibles se reportarán sin espacios que los separen.
+Como vemos nos reporta los nombres de las variables separados por un espacio. Otra forma de generar varias variables es utilizando el signo `+`, al utilizar el
+signo de suma los nombres de las variables y se reportarán sin espacios entre los nombres.
 
 ```py
 x = "Hello"
@@ -438,7 +438,7 @@ y = "World"
 print(x + y)
 ```
 
-Tabien podemos utilizar el carácter `+` como operador matemático, para ello establecemos dos variables númericos y establecemos la suma en la funcion `print()`:
+También podemos utilizar el carácter `+` como operador matemático, para ello establecemos dos variables numéricas y establecemos la suma en la función `print()`:
 
 ```py
 x = 10
@@ -446,14 +446,14 @@ y = 20
 print(x + y)
 ```
 
-Obviamente esta función solo es funcional con variables númericos, en caso de intentar sumar una cadena y un número se nos reportará un error.
+Obviamente, esta función solo es funcional con variables numéricos, en caso de intentar sumar una cadena y un número se nos reportará un error.
 
 ```py
 x = "F1r0x"
 y = 20
 print(x + y)      # Nos reportará un error. No puede sumar F1r0x y 20.
 ```
-En caso de querer imprimir dos variables diferentes es mejor utilizar `print()` separando las variables por una coma.
+En caso de querer imprimir dos variables diferentes, es mejor usar `print()` separando las variables por una coma.
 
 ```py
 x = "F1r0x"
@@ -478,7 +478,7 @@ def nombre_función(parámetros):
 	declaraciones)
 ```
 
-Como podeís ver la definición de una función consta de los siguientes componentes:
+Como podéis ver, la definición de una función consta de los siguientes componentes:
 
 * `Palabra clave def` : Marca el inicio del encabezado de la función.
 * `Nombre de la función` : Identifica de forma única la función. La nomenclatura de funciones sigue las mismas reglas de escritura de identificadores en Python.
@@ -486,12 +486,11 @@ Como podeís ver la definición de una función consta de los siguientes compone
 * `Dos puntos (:)` : Se utiliza para marcar el final del encabezado de la función.
 * `Cadena de documentación opcional` : (Docstring) Es básicamente un comentario para describir lo que hace la función.
  
- Las declaraciones deben tener el mismo nivel de sangría (generalmente 4 espacios). Tambien podemos incluir de forma opcional una declaración `return` para 
+ Las declaraciones deben tener el mismo nivel de sangría (generalmente 4 espacios). También podemos incluir de manera opcional una declaración `return` para 
  devolver un valor de la función. Entraremos en detalle sobre estos conceptos más adelante.
  
  
  
  
-
 
 
