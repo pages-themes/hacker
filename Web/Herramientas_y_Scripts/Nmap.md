@@ -1,5 +1,3 @@
-![Logo-Nmap-800x388](https://user-images.githubusercontent.com/103068924/167357897-d229ec85-4beb-4811-aa23-839ee5846311.png)
-
 <center><img src="https://user-images.githubusercontent.com/103068924/172614528-6ceb9b92-6089-4530-8c16-1dabf3c33b8f.png"></center>
 
 # NMAP
