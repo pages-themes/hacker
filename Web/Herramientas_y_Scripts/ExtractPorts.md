@@ -21,9 +21,24 @@ Mediante `Cntrl + Shift + v` podremos pegar los puertos a la terminal automátic
  
  Para poder tener está función activa, simplemente nos dirigiremos a la carpeta .bashrc o .zshrc (la que utilicéis) y pegaremos la función.
  
- Esta función la podéis encontrar tanto en el perfil de S4vitar como en este repositorio.
+ ```
+ # Extract nmap information:
+function extractPorts(){
+        ports="$(cat $1 | grep -oP '\d{1,5}/open' | awk '{prin>
+        ip_address="$(cat $1 | grep -oP '\d{1,3}\.\d{1,3}\.\d{>
+        echo -e "\n[*] Extracting information...\n" > extractP>
+        echo -e "\t[*] IP Address: $ip_address"  >> extractPor>
+        echo -e "\t[*] Open ports: $ports\n"  >> extractPorts.>
+        echo $ports | tr -d '\n' | xclip -sel clip
+        echo -e "[*] Ports copied to clipboard\n"  >> extractP>
+        cat extractPorts.tmp; rm extractPorts.tmp
+}
+
+ ```
+
+Esta función la podéis encontrar también en el perfil de S4vitar.
  
- S4vitar: [https://github.com/s4vitar](https://github.com/s4vitar)
+S4vitar: [https://github.com/s4vitar](https://github.com/s4vitar)
  
  Mi repositorio: [https://github.com/F1r0x/ExtractPorts/blob/main/extractPorts](https://github.com/F1r0x/ExtractPorts/blob/main/extractPorts)
  
