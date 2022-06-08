@@ -85,7 +85,11 @@ Guardamos : Cntrl + o
 
 Salimos : Cntrl + x
 
-Ya tendriamos listo nuestra nueva herramienta WichSystem.
+Le damos permisos de ejecución:
+
+    sudo chmod +x wichSystem.py
+
+y ya tendriamos listo nuestra nueva herramienta WichSystem.
 
 # Menciones:
 
