@@ -593,9 +593,41 @@ print(dir(miString))
 ![Screenshot 2022-06-08 132853](https://user-images.githubusercontent.com/103068924/172608080-14884acb-6f37-44ac-8f6a-a06c1a9a72d9.png)
 
 
-Aquí podeís ver todas las opciones que le podemos aplicar al string "Hello World". El primer ejemplo q vamos a ver es `upper()` q nos muestra el string en 
-mayúsculas.
+Aquí podeís ver todas las opciones que le podemos aplicar al string "Hello World". El primer ejemplo q vamos a ver es `upper()` (uppercase = mayúscula) que nos
+muestra el string en `mayúsculas`.
+
+```py
+miString = "Hello World"
+
+print(miString.upper())
+```
+![Screenshot 2022-06-08 134905](https://user-images.githubusercontent.com/103068924/172609155-edd99ea7-0b3f-4227-982a-13dd2982c839.png)
+
+La sintaxis mantiene primero la función, seguido de la variable y finalmente, introducimos separado por un punto `.` la función que modifica nuestro string.
+Vemos como la funcion `upper()` ha modificado com pletamente nuestra variable, mostrandonos todo su contenido en mayúsculas.
+
+También podemos realizar la operación contraria, utilzando la función `lower()` podemos representar el string en `minúsculas`.
+
+```py
+miString = "Hello World"
+
+print(miString.upper())
+print(miString.lower())
+```
+
+![Screenshot 2022-06-08 135751](https://user-images.githubusercontent.com/103068924/172610739-3683ed1c-1cf9-4a2e-a566-4ecc4d1bc101.png)
+
+Existen una gran cantidad de funciones con multiples finalidades, otro ejemplo es la funcion `swapcase()` que nos reportará la primera letra de cada
+palabra en `minúscula` seguido de el resto de la palabra en `mayúsculas`.
 
 
+```py
+miString = "Hello World"
+
+print(miString.upper())
+print(miString.lower())
+print(miString.swapcase())
+```
+![Screenshot 2022-06-08 140140](https://user-images.githubusercontent.com/103068924/172611339-f0f776c3-9f9a-40c4-a0fd-e561ea1705e5.png)
 
 
