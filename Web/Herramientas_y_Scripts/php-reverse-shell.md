@@ -9,7 +9,7 @@ usuario actual (normalmente apache).
 # Repositorio:
 
 Podéis copiar el script o del final de ester artículo o desde el siguiente elace.
-[php-reverse-shell.php](https://github.com/F1r0x/php-reverse-shell.php/blob/main/php-reverse-shell.php)
+[php-reverse-shell.php](./php-reverse-shell.php)
 
 
 # Configuración:
