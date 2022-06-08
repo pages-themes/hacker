@@ -401,7 +401,7 @@ la `longitud` de la lista, para ello utilizamos la función `len()` y nos report
 
 ```py
 milista = ["Uno", "Dos", "Tres", "Uno"]
-print(len(milista)
+print(len(milista))
 ```
 
 Ahora vamos a ver como extraer, los distintos nombres de una lista y asignarlos a varias variables, esto se conoce como `unpacking`. 
