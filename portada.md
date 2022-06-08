@@ -8,8 +8,8 @@
 
 * <a href="./Web/Linux/Linux.html" style="text-decoration:none">Linux.</a>  
 * <a href="./Web/Windows/Windows.html" style="text-decoration:none">Windows.</a>
-* <a href="./Web/Curso/MarkDown/MarkDown.html" style="text-decoration:none">MarkDown.</a>
-* <a href="./Web/Curso/Python.html" style="text-decoration:none">Python.</a> 
+* <a href="./Web/Cursos/MarkDown/MarkDown.html" style="text-decoration:none">MarkDown.</a>
+* <a href="./Web/Cursos/Python.html" style="text-decoration:none">Python.</a> 
 * <a href="./Web/Linux/Programas_para_Linux/Ventoy.html" style="text-decoration:none">Bootear USB en Linux con Ventoy.</a>
 * <a href="./Web/Linux/GnomeTwitch.html" style="text-decoration:none">Instalación de Twitch en Linux mediante Flatpak.</a> 
 * <a href="./Web/Articulos/BufferOverflow.html" style="text-decoration:none">Buffer Overflow.</a>  
