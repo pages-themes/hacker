@@ -2,8 +2,12 @@
 
 ExtractPorts es una función creada por S4vitar.
 
-Esta herramienta nos mostrará en formato bat y los puertos encontrados.
-Mediante `Cntrl + Shift + v` podremos pegar los puertos a la terminal automáticamente.
+Esta herramienta nos mostrará en formato bat los puertos encontrados y guardados previamemte en un archivo. Para crear estos archivos, debemos de guardar los
+escaneos (al escanear los puertos con nmap por ejemplo) en formato `grepeable` (-oG). 
+
+Luego mediante `Cntrl + Shift + v` podremos pegar los puertos a la terminal automáticamente. Esto es muy útil cuando tenemos que trabajar con muchos puertos
+ya que tenemos los puertos guardados sin necesidad de volver a realizar el escaneo y para pegar de forma rápida todos los puertos sin la necesidad de escribirlos
+uno por uno.
 
 ![Captura de pantalla -2022-04-10 23-00-33](https://user-images.githubusercontent.com/103068924/162639641-48c8aea9-d14a-4ea2-a38b-cefa0447ffdf.png)
 
@@ -21,7 +25,7 @@ Para la instalación de esta herramienta previamente se recomienda tener instala
  
 Para poder tener está función activa, simplemente nos dirigiremos a la carpeta .bashrc o .zshrc (la que utilicéis) y pegaremos la función.
  
-```py
+```
 
 # Extract nmap information:
 function extractPorts(){
