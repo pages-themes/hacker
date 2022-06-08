@@ -383,6 +383,20 @@ print(milista)
 Los elementos de la lista están ordenados, se pueden cambiar y permiten valores duplicados. Estos elementos están indexados, el primer elemento tiene un índice
 `0`, el segundo `1` y así sucesivamente. Las listas están ordenadas, significa que los elementos tienen un orden definido y ese orden no cambiará.
 
+La lista se puede cambiar, lo que significa que podemos cambiar, agregar y eliminar elementos en una lista después de que se haya creado. Debido a que las
+listas están indexadas, las listas pueden tener elementos con el mismo valor.
+
+```py
+milista = ["Uno", "Dos", "Tres", "Uno"]
+print(milista)
+```
+En el index número `3` tengo establecido el nombre `Uno`, al igual que en el index `0`. Ahora, que ocurre cuando tenemos listas muy largas y queremos saber 
+la `longitud` de la lista, para ello utilizamos la función `len()` y nos reporta el número de nombres que componen la lista:
+
+```py
+milista = ["Uno", "Dos", "Tres", "Uno"]
+print(len(milista)
+```
 
 
 
