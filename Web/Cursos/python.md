@@ -402,5 +402,65 @@ milista = ["Uno", "Dos", "Tres", "Uno"]
 print(len(milista)
 ```
 
+Ahora vamos a ver como extraer, los distintos nombres de una lista y asignarlos a varias variables, esto se conoce como `unpacking`. 
+
+```py
+comida = ["arroz", "pizza", "sopa"]   # Nuestra lista
+x, y, z = comida                      # Asignamos nuestras tres variables a la lista comida.
+print(x)                              # Imprime el primer valor de la lista comida.
+print(y)                              # Imprime el segundo valor de la lista.  
+print(z)
+```
+Al estar las listas indexadas, vemos como nos reporta los nombres de la lista en el mismo orden que hemos establecido las variables.
+
+# Función print()
+
+La función de Python print() se usa a menudo para generar variables y reportarlas por consola como hemos visto anteriormente. Vamos a ver un poco más a fondo 
+su funcionamiento. Está función permite generar múltiples variables seprandolas por una coma `,`.
+
+```py
+x = "Hello"
+y = "World"
+print(x, y)
+```
+
+Como vemos nos reporta los nombres de las variables separados por un espacio. Otra forma de generar varia variables es urilizando el signo `+`, al utilizar el
+signo de suma los nombres de las varibles se reportarán sin espacios que los separen.
+
+```py
+x = "Hello"
+y = "World"
+print(x + y)
+```
+
+Tabien podemos utilizar el carácter `+` como operador matemático, para ello establecemos dos variables númericos y establecemos la suma en la funcion `print()`:
+
+```py
+x = 10
+y = 20
+print(x + y)
+```
+
+Obviamente esta función solo es funcional con variables númericos, en caso de intentar sumar una cadena y un número se nos reportará un error.
+
+```py
+x = "F1r0x"
+y = 20
+print(x + y)      # Nos reportará un error. No puede sumar F1r0x y 20.
+```
+En caso de querer imprimir dos variables diferentes es mejor utilizar `print()` separando las variables por una coma.
+
+```py
+x = "F1r0x"
+y = 20
+print(x, y)      # Correcto. Nos reportará: F1rox 20
+```
+
+
+
+
+
+
+
 
 
