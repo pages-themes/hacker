@@ -208,9 +208,21 @@ Y vamos a suponer que queremos saber si `"Hello World"` es un string, para ello 
 
     type("Hello World")
 
-Al ejecutarlo vemos como nos devuelve `class 'str'`, donde `str` es el diminutivo de string. Vamos a ver otro ejemplo, esta vez con los números:
+![Screenshot 2022-06-07 094929](https://user-images.githubusercontent.com/103068924/172606021-1e791c41-684e-4af9-88e7-a5f2194ffd53.png)
 
-   type(100)
+Al ejecutarlo vemos como no nos devuelve el resultado. Esto es debido a que nos falta añadir tambien la función
+print()para que nos responda mediante la terminal. 
+
+    print(type("Hello World"))
+    
+![Screenshot 2022-06-08 133500](https://user-images.githubusercontent.com/103068924/172606802-e840e027-a149-41ff-bdfc-70c006e720c7.png)
+
+Vemos como ahora no reporta `class 'str'`, donde `str` es el diminutivo de string. Vamos a ver otro ejemplo, esta vez con los números:
+
+   print(type(100))
+
+![Screenshot 2022-06-08 133611](https://user-images.githubusercontent.com/103068924/172606958-adf8c7bf-2946-4a39-8ae8-baf02c687e08.png)
+
 
 Esta vez vemos como nos reporta `int` (integral), indicándonos que se trata de un número entero.
 
@@ -222,6 +234,8 @@ debe de imprimir el tipo de clase que es. Para ello realizamos lo siguiente:
 print("Hello World")
 print(type("Hello World"))
 ```
+
+![Screenshot 2022-06-08 131601](https://user-images.githubusercontent.com/103068924/172607271-b6c50687-41df-4f76-ab47-b4bb196d5e18.png)
 
 Guardamos (Cntrl + s) y desde la terminal lo ejecutamos.
 
@@ -246,6 +260,8 @@ print(x)
 print(y)
 ```
 
+![Screenshot 2022-06-08 131753](https://user-images.githubusercontent.com/103068924/172607212-4cdf48f3-c516-4d12-9866-3b2c7c57189a.png)
+
 Como podéis ver aquí establecemos dos variables, al objeto `10` le establecemos el nombre `x`, de tal forma que al ejecutar `print(x)` directamente nos imprime
 `10`. De la misma manera establecemos la segunda variable con `y`.
 
@@ -257,6 +273,7 @@ x = 1000
 x = 20
 print(x)
 ```
+![Screenshot 2022-06-08 131916](https://user-images.githubusercontent.com/103068924/172607322-63383ced-75c2-4bb7-aa12-47f95a21a46a.png)
 
 Como puedes ver, hemos establecido dos variables al mismo objeto. Como `x = 20` es el último establecido, será el único que se imprima por pantalla. En caso de querer
 imprimir también el primer valor, debemos de imprimir `x` antes del cambio:
@@ -267,6 +284,8 @@ print(x)
 x = 20     # Cambio de la variable
 print(x)
 ```
+![Screenshot 2022-06-08 131944](https://user-images.githubusercontent.com/103068924/172607416-ec587275-19f4-4687-82be-01dd291b652c.png)
+
 Ahora nos reporta los dos resultados, Python interpreta la primera variable hasta llegar al cambio `x = 20`. Algo importante también, es que las variables distinguen
 entre mayúsculas y minúsculas:
 
@@ -294,6 +313,7 @@ print(x)
 print(y)
 print(z)
 ```
+![Screenshot 2022-06-08 132030](https://user-images.githubusercontent.com/103068924/172607542-8b23fcb9-a0f7-4419-a0de-c7c0d4b5ae4b.png)
 
 También podemos obtener el tipo de datos de un variable con el argumento `type()`, para ver un ejemplo crearemos dos nuevas variables `x = 10` y `y = "F1r0x"`
 y queremos reportar el tipo de variable:
@@ -304,6 +324,7 @@ y = "F1r0x"
 print(type(x))
 print(type(y))
 ```
+![Screenshot 2022-06-08 132100](https://user-images.githubusercontent.com/103068924/172607574-a7961bf2-b098-40ea-ab3b-ba02070e133a.png)
 
 Ya hemos visto como establecer variables, lo único es que los nombres que hemos establecido a las variables son muy simples (básicamente `x` y `y`). ¿Qué ocurre 
 si queremos establecer nombres más largos y más específicos? Pues en primer lugar debemos de saber que no podemos asignar el nombre que queramos, existen unos
@@ -364,6 +385,8 @@ print(y)
 print(z)
 ```
 
+![Screenshot 2022-06-08 132131](https://user-images.githubusercontent.com/103068924/172607644-8c42daa4-b73e-4ba1-8efa-cadbe52094ea.png)
+
 Otra cosa que también podemos hacer es establecer un valor para múltiples variables. De esta forma ejecutando cualquiera de esas variables, obtendremos el 
 mismo resultado:
 
@@ -373,6 +396,7 @@ print(x)
 print(y)
 print(z)
 ```
+![Screenshot 2022-06-08 132208](https://user-images.githubusercontent.com/103068924/172607675-a9bda205-e8f4-4879-993a-4f2bd7e77c42.png)
 
 <center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png"></center>
 
@@ -386,6 +410,8 @@ corchetes `[]`. Vamos a ver un ejemplo y crear una lista simple:
 milista = ["Uno", "Dos", "Tres"]
 print(milista)
 ```
+![Screenshot 2022-06-08 132238](https://user-images.githubusercontent.com/103068924/172607720-d6cffc26-3b98-4fe6-b5a5-5ed6315696e5.png)
+
 Los elementos de la lista están ordenados, se pueden cambiar y permiten valores duplicados. Estos elementos están indexados, el primer elemento tiene un índice
 `0`, el segundo `1` y así sucesivamente. Las listas están ordenadas, significa que los elementos tienen un orden definido y ese orden no cambiará.
 
@@ -396,6 +422,8 @@ listas están indexadas, las listas pueden tener elementos con el mismo valor.
 milista = ["Uno", "Dos", "Tres", "Uno"]
 print(milista)
 ```
+
+
 En el index número `3` tengo establecido el nombre `Uno`, al igual que en el index `0`. Ahora, que ocurre cuando tenemos listas muy largas y queremos saber 
 la `longitud` de la lista, para ello utilizamos la función `len()` y nos reporta el número de nombres que componen la lista:
 
@@ -403,6 +431,7 @@ la `longitud` de la lista, para ello utilizamos la función `len()` y nos report
 milista = ["Uno", "Dos", "Tres", "Uno"]
 print(len(milista))
 ```
+![Screenshot 2022-06-08 132406](https://user-images.githubusercontent.com/103068924/172607761-32d1eeac-2c86-47ef-909e-f90f786d6672.png)
 
 Ahora vamos a ver como extraer, los distintos nombres de una lista y asignarlos a varias variables, esto se conoce como `unpacking`. 
 
@@ -413,6 +442,8 @@ print(x)                              # Imprime el primer valor de la lista comi
 print(y)                              # Imprime el segundo valor de la lista.  
 print(z)
 ```
+![Screenshot 2022-06-08 132444](https://user-images.githubusercontent.com/103068924/172607787-5b75c915-fb12-48c9-9ed5-38b7d398c127.png)
+
 Al estar las listas indexadas, vemos como nos reporta los nombres de la lista en el mismo orden que hemos establecido las variables.
 
 
@@ -429,6 +460,7 @@ x = "Hello"
 y = "World"
 print(x, y)
 ```
+![Screenshot 2022-06-08 132510](https://user-images.githubusercontent.com/103068924/172607820-453c6973-d32b-4072-bc37-f7decac44720.png)
 
 Como vemos nos reporta los nombres de las variables separados por un espacio. Otra forma de generar varias variables es utilizando el signo `+`, al utilizar el
 signo de suma los nombres de las variables y se reportarán sin espacios entre los nombres.
@@ -438,6 +470,8 @@ x = "Hello"
 y = "World"
 print(x + y)
 ```
+![Screenshot 2022-06-08 132533](https://user-images.githubusercontent.com/103068924/172607845-aff9b501-26ef-4d04-918a-6862749eed06.png)
+
 
 También podemos utilizar el carácter `+` como operador matemático, para ello establecemos dos variables numéricas y establecemos la suma en la función `print()`:
 
@@ -446,6 +480,8 @@ x = 10
 y = 20
 print(x + y)
 ```
+![Screenshot 2022-06-08 132555](https://user-images.githubusercontent.com/103068924/172607878-33fc4905-3855-4bcd-89d5-b27af0facd3e.png)
+
 
 Obviamente, esta función solo es funcional con variables numéricos, en caso de intentar sumar una cadena y un número se nos reportará un error.
 
@@ -454,6 +490,9 @@ x = "F1r0x"
 y = 20
 print(x + y)      # Nos reportará un error. No puede sumar F1r0x y 20.
 ```
+![Screenshot 2022-06-08 132637](https://user-images.githubusercontent.com/103068924/172607906-0ac0622a-1322-47b5-a7af-d21919cb2d4b.png)
+
+
 En caso de querer imprimir dos variables diferentes, es mejor usar `print()` separando las variables por una coma.
 
 ```py
@@ -461,6 +500,7 @@ x = "F1r0x"
 y = 20
 print(x, y)      # Correcto. Nos reportará: F1rox 20
 ```
+![Screenshot 2022-06-08 132708](https://user-images.githubusercontent.com/103068924/172607937-000fdd4b-d6a1-4cb3-8b78-fa3fbf0b5c6f.png)
 
 <center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png"></center>
 
@@ -503,6 +543,8 @@ def mifuncion():
 
 mifuncion()
 ```
+![Screenshot 2022-06-08 132736](https://user-images.githubusercontent.com/103068924/172607976-dfe21b89-8f0a-4ee0-b860-83003b013855.png)
+
  
  También está la opción de crea una variable con el mismo nombre dentro de una función, esta variable será local y solo se puede usar dentro de la función. La 
  variable global con el mismo nombre quedará como estaba, global y con el valor original.
@@ -518,6 +560,8 @@ mifuncion()
 
 print("Hello " + x)
 ``` 
+![Screenshot 2022-06-08 132800](https://user-images.githubusercontent.com/103068924/172608013-0dda4886-ae23-4f45-adc8-400ea2dfbdbf.png)
+
 
 De la misma forma que hemos creado una variable global fuera de la función, podemos definirla dentro. Esto lo podemos realizar utilizando la palabra clave
 `global` dentro de la función:
@@ -532,6 +576,8 @@ mifuncion()
 print("Hello " + x)
 ``` 
 
+![Screenshot 2022-06-08 132820](https://user-images.githubusercontent.com/103068924/172608039-52651b32-e49f-43c9-b026-3929701ceee9.png)
+
 Ya hemos visto muy por encima varios conceptos, hemos visto las variables, las listas, las funciones y ahora vamos a tratar de profundizar un poco más utilizando
 los disntintos conceptos.
 
@@ -543,6 +589,10 @@ miString = "Hello World"
 
 print(dir(miString))
 ```
+
+![Screenshot 2022-06-08 132853](https://user-images.githubusercontent.com/103068924/172608080-14884acb-6f37-44ac-8f6a-a06c1a9a72d9.png)
+
+
 Aquí podeís ver todas las opciones que le podemos aplicar al string "Hello World". El primer ejemplo q vamos a ver es `upper()` q nos muestra el string en 
 mayúsculas.
 
