@@ -8,8 +8,8 @@ usuario actual (normalmente apache).
 
 # Repositorio:
 
-Podéis copiar el script o del final de ester artículo o desde el siguiente elace.
-[php-reverse-shell.php](./php-reverse-shell.php)
+Podéis enconmtrar y copiar el script al final de ester artículo o descargarlo desde el siguiente elace.  
+* [php-reverse-shell.php](./php-reverse-shell.php)
 
 
 # Configuración:
