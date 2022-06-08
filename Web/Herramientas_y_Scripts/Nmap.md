@@ -90,6 +90,8 @@ Una vez establecida la shell de nmap, usaremos la expresión `!sh` para acceder 
     
 Directamente, pasaremos a estar registrados como el usuario `root` del sistema.    
 
+<center><img src="https://user-images.githubusercontent.com/103068924/172614528-6ceb9b92-6089-4530-8c16-1dabf3c33b8f.png"></center>
+
 
 ---
 ---
