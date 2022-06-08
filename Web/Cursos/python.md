@@ -241,7 +241,7 @@ Para crear una variable, simplemente le asignamos un valor y luego ya podemos em
 
 ```py
 x = 10
-y = F1r0x
+y = "F1r0x"
 print(x)
 print(y)
 ```
