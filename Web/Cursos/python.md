@@ -12,7 +12,8 @@
 * [2.1 Crear Nuestro Primer Programa: Hello World.](#item7)
 * [2.2 Tipos de Data en Python: Datatypes.](#item8)
 * [2.2.1 Variables](#item9)
-* [2.2.2 Listas](#item10)   
+* [2.2.2 Listas](#item10)
+* [2.2.3 Función print()](#intem11)  
 
 
 ---
@@ -413,6 +414,10 @@ print(z)
 ```
 Al estar las listas indexadas, vemos como nos reporta los nombres de la lista en el mismo orden que hemos establecido las variables.
 
+
+<center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png"></center>
+
+<a name="item11"></a>
 # Función print()
 
 La función de Python print() se usa a menudo para generar variables y reportarlas por consola como hemos visto anteriormente. Vamos a ver un poco más a fondo 
@@ -456,11 +461,37 @@ y = 20
 print(x, y)      # Correcto. Nos reportará: F1rox 20
 ```
 
+# Como Definir una Función
 
+### ¿Qué es una Función?
 
+En Python, una función es un grupo de declaraciones relacionadas que realizan una tarea específica.
 
+Las funciones ayudan a dividir nuestro programa en partes más pequeñas y modulares. A medida que nuestro programa crece más y más, las funciones lo hacen más
+organizado y manejable.
 
+Además, evita la repetición y hace que el código sea reutilizable. Su sintaxis básica sería la siguiente:
 
+```py
+def nombre_función(parámetros):
+	"""cadena de documentación"""
+	declaraciones)
+```
+
+Como podeís ver la definición de una función consta de los siguientes componentes:
+
+* `Palabra clave def` : Marca el inicio del encabezado de la función.
+* `Nombre de la función` : Identifica de forma única la función. La nomenclatura de funciones sigue las mismas reglas de escritura de identificadores en Python.
+* `Parámetros` : (Argumentos) A través de los cuales pasamos valores a una función. Son opcionales.
+* `Dos puntos (:)` : Se utiliza para marcar el final del encabezado de la función.
+* `Cadena de documentación opcional` : (Docstring) Es básicamente un comentario para describir lo que hace la función.
+ 
+ Las declaraciones deben tener el mismo nivel de sangría (generalmente 4 espacios). Tambien podemos incluir de forma opcional una declaración `return` para 
+ devolver un valor de la función. Entraremos en detalle sobre estos conceptos más adelante.
+ 
+ 
+ 
+ 
 
 
 
