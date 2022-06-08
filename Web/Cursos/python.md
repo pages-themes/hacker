@@ -532,5 +532,20 @@ mifuncion()
 print("Hello " + x)
 ``` 
 
+Ya hemos visto muy por encima varios conceptos, hemos visto las variables, las listas, las funciones y ahora vamos a tratar de profundizar un poco más utilizando
+los disntintos conceptos.
+
+Vamos a tratar de explicar algunas funciones, hemos visto como imprimir mediante `print()` y como podemos ejecutar un `string` como por ejemplo 
+`print("Hello Wold")`. Esto esta muy bien, pero para poder ver las funciones que podeos aplicar a este string se utiliza la funcion `dir()`:
+
+```py
+miString = "Hello World"
+
+print(dir(miString))
+```
+Aquí podeís ver todas las opciones que le podemos aplicar al string "Hello World". El primer ejemplo q vamos a ver es `upper()` q nos muestra el string en 
+mayúsculas.
+
+
 
 
