@@ -13,7 +13,8 @@
 * [2.2 Tipos de Data en Python: Datatypes.](#item8)
 * [2.2.1 Variables](#item9)
 * [2.2.2 Listas](#item10)
-* [2.2.3 Función print()](#intem11)  
+* [2.2.3 Función print()](#intem11)
+* [2.2.4 Definir una Función](#item12)  
 
 
 ---
@@ -461,6 +462,9 @@ y = 20
 print(x, y)      # Correcto. Nos reportará: F1rox 20
 ```
 
+<center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png"></center>
+
+<a name="item12"></a>
 # Como Definir una Función
 
 ### ¿Qué es una Función?
