@@ -91,6 +91,12 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 * <a href="./Web/Herramientas_y_Scripts/SQLmap.html" style="text-decoration:none">SQLmap</a>
 
+# Links de Interés: 
+
+* Principales puertos TCP y UDP -->  <a href="https://www.redeszone.net/tutoriales/configuracion-puertos/puertos-tcp-udp/" style="text-decoration:none">Link</a>
+   
+     
+
 ---
 ---
   
