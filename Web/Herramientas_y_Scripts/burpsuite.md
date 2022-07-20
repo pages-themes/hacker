@@ -29,7 +29,8 @@ Para ello tendremos que configurar BurpSuite y FoxyProxy para establecer entre e
 
 Una vez instalado FoxyProxy en el navegador, simplemente pulsamos sobre él y luego pulsamos el botón `Options`.
 
-![Captura de pantalla 2022-07-21 003510](https://user-images.githubusercontent.com/103068924/180094196-5196eb55-c900-46cd-bc3c-47fb2e026dd5.png)
+![Captura de pantalla 2022-07-21 004025](https://user-images.githubusercontent.com/103068924/180094673-c0c8a26e-e183-4195-845d-de45fb2a6565.png)
+
 
 Tras abrirse el programa, en la parte izquierda, nos dirigimos a la opción `Add`.
 
@@ -47,6 +48,9 @@ emplear un puerto distinto o matar el proceso.
 
 Con esto ya tendríamos FoxyProxy configurado, pulsamos guardar `save` y veremos tras guardas como ya nos aparece nuestro nuevo Proxy en el icono de la extensión
 si pulsamos encima con el ratón.
+
+![Captura de pantalla 2022-07-21 003510](https://user-images.githubusercontent.com/103068924/180094697-283b86e6-2f86-4d80-8653-b0e034ca1eeb.png)
+
 
 ### Actualizar BurpSuite:
 
