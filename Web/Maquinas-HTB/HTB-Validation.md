@@ -41,6 +41,49 @@ herramienta `nmap`.
 
 # Nmap
 
+Nos desplazamos hasta la carpeta `nmap` que hemos creado dentro de `Validatio`.
+
+En primer lugar vamos a realizar un escaneo básico para ver que puertos TCP y UDP se encuentran abiertos, para utilizar `nmap` debemos
+ser `root`:
+
+    nmap -p- --open -T5 -vvv -n 10.10.11.116 -oG allPorts
+
+`-p-` : Escanea todo el rango de puertos.
+  
+`--open` : Solo nos mostrará puertos con el estatus abierto.
+             
+`-T5` : Controla el tiempo y el rendimiento del escaneo donde 1 es el más lento  y 5 el más rápido.
+             
+`-vvv` : Verbose. Recopila los puertos abiertos por TCP y los reporta por consola.
+             
+`-n` : Anula la resolución DNS.
+
+`-oG` : Exportar los resultados en formato grepeable.
+  
+`allPorts` : Nombre del archivo donde se guardan los resultados. Si no existe lo creará.
+  
+Los resultados del escaneo quedarán guardados en el archivo `allPorts`. De esta manera podremos revisar los puertos que estaban abiertos en cualquier
+momento.
+
+![Captura de pantalla -2022-07-20 14-03-41](https://user-images.githubusercontent.com/103068924/180032930-cc4431a2-1682-409b-a2f0-995e6cd4af2d.png)
+
+El escaneo nos reporta unos cuantos puesto abiertos, vamos a ver para que sirven cada uno de ellos:
+
+* `Puerto 22`: Por normal general este puerto se usa para conexiones seguras SSH y SFTP, siempre que no hayamos cambiado el puerto de escucha de nuestro servidor SSH.
+
+* `Puerto 80`: Este puerto es el que se usa para la navegación web de forma no segura HTTP.
+
+* ` Puerto 4566`: Usa el Protocolo de Control de Transmisión `TCP`. El puerto 4566 garantiza la entrega de paquetes de datos en la misma orden, en que fueron mandados. Solo cuando la conexión es determinada, los datos del usuario pueden ser mandados de modo bidireccional por la conexión. 
+
+En este caso el puerto 4566 nos muetra el servicio `kwtc` (KWTC --> Kids Watch Time Control Service), parece ser
+algún tipo de aplicación parental para niños.
+
+* `Puerto 8080`: Es el puerto alternativo al puerto 80 TCP para servidores web, normalmente se utiliza este puerto en pruebas.
+
+
+
+
+
 
 
 
