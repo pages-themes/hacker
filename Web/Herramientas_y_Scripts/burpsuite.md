@@ -48,6 +48,9 @@ Para configurar el proxy debemos acceder a la pestaña `Proxy` -> `Options` y no
 
 Ya tendríamos configurado BurpSuite y listo para su funcionamiento.
 
+### Como Interceptar peticiones básicas.
+
+
 
 ---
 ---
