@@ -27,13 +27,20 @@ Para ello tendremos que configurar BurpSuite y FoxyProxy para establecer entre e
 
 ### Configuración de FoxyProxy:
 
-Una vez instalado FoxyProxy en el navegador, simplemente pulsamos sobre él y luego pulsamos el botón `Options`. Tras abrirse el programa, en la parte izquierda, nos
-dirigimos a la opción `Add`.
+Una vez instalado FoxyProxy en el navegador, simplemente pulsamos sobre él y luego pulsamos el botón `Options`.
+
+![Captura de pantalla 2022-07-21 003510](https://user-images.githubusercontent.com/103068924/180094196-5196eb55-c900-46cd-bc3c-47fb2e026dd5.png)
+
+Tras abrirse el programa, en la parte izquierda, nos dirigimos a la opción `Add`.
+
+![Captura de pantalla 2022-07-21 003734](https://user-images.githubusercontent.com/103068924/180094303-6b18acaa-9fa0-4cba-9949-effbb85b68f9.png)
 
 De Título podemos poner `BurpSuite` para poder identificarlo, el color que deseamos (En mi caso verde, que es más vistoso) y ahora vamos a lo importante.
 
 Para poder establecer conexión con BurpSuite vamos a usar un Proxy de tipo `HTTP` y una dirección Ip `127.0.0.1` (Esta dirección Ip es nuestro localhost) por
 el puerto 8080. 
+
+![Captura de pantalla 2022-07-21 003827](https://user-images.githubusercontent.com/103068924/180094382-b78d1d9d-9db3-410d-9591-a99c8e266a43.png)
 
 `Nota:` En caso de tener problemas a la hora de capturar el tráfico, tener en cuenta de que no estáis usando el puerto 8080 para otros procesos. En tal caso
 emplear un puerto distinto o matar el proceso.
