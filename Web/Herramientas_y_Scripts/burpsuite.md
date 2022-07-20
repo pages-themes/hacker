@@ -9,6 +9,10 @@ se puede encontrar ya instalada en Kali Linux, la distribución de Linux diseña
 
 `Podeís Descargas BurpSuite en su págian Oficial` --> [Link](https://portswigger.net/burp/communitydownload)
 
+Para instalar BurpSuite directamente desde la terminal (para sistemas como Parrot o Kali):
+
+    sudo apt install burpsuite
+
 ## Herramientas Necesarias:
 
 Para poder trabajar con BurpSuite vamos a necesitar otras dos herramientas imprescindibles, primero necesitaremos un navegador (preferentemente firefox) y luego 
