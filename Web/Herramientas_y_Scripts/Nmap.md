@@ -35,7 +35,7 @@ De esta manera podremos revisar los puertos que estaban abiertos en cualquier mo
 
     nmap -sC -sV -n -v -p[Port1,Port2] [Ip Víctima] -oN targed  
    
-`-sC` : Lanza scrips básicos de reconocimiento.
+`-sC` : Lanza scripts básicos de reconocimiento.
  
 `-sV` : Localiza la versión y servicio de los puertos definidos. 
  
