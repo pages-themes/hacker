@@ -105,6 +105,7 @@ Vemos lo que parece una página de registro muy simple. Vamoa a ver que informac
 
 ![Captura de pantalla 2022-07-20 103857](https://user-images.githubusercontent.com/103068924/180041947-b495d194-8bde-4542-b035-7891a5098d76.png)
 
+No parece reportarnos nada que la herramienta `whatweb` no nos haya mostrado ya.
 
 
 
