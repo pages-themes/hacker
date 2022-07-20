@@ -41,6 +41,20 @@ emplear un puerto distinto o matar el proceso.
 Con esto ya tendríamos FoxyProxy configurado, pulsamos guardar `save` y veremos tras guardas como ya nos aparece nuestro nuevo Proxy en el icono de la extensión
 si pulsamos encima con el ratón.
 
+### Actualizar BurpSuite:
+
+Es recomendable borrar previamente la versión anterior de BurpSuite y instalar la nueva versión en su directorio `/opt/BurpSuiteCommunity/`.
+Descargar el archivo `.sh` desde su página principal. Luego lo ejecutamos como administrador:
+  
+  sudo chmod +X BurpSuite.sh
+    
+Luego con el siguiente comando procedemos a su instalación:
+
+    ./BurpSuite.sh
+
+Una vez intalado para ejecutarlo escribimos `BurpSuiteCommunity`.
+
+
 ### Configuración de BurpSuite:
 
 Para configurar el proxy debemos acceder a la pestaña `Proxy` -> `Options` y nos aseguramos que la opción `Running` esté marcada. Luego introducimos en la columna 
