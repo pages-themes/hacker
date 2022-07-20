@@ -68,8 +68,12 @@ Una vez intalado para ejecutarlo escribimos `BurpSuiteCommunity`.
 
 ### Configuración de BurpSuite:
 
+
+
 Para configurar el proxy debemos acceder a la pestaña `Proxy` -> `Options` y nos aseguramos que la opción `Running` esté marcada. Luego introducimos en la columna 
 `Interface` los mismos datos con los que hemos configurado FoxyProxy, que en nuestro caso es nuestro localhost por el puerto 8080 (127.0.0.1:8080).
+
+![Captura de pantalla 2022-07-21 004623](https://user-images.githubusercontent.com/103068924/180095402-d96a38bc-934f-41fa-bb5e-183fc1e1ef95.png)
 
 Ya tendríamos configurado BurpSuite y listo para su funcionamiento.
 
@@ -78,7 +82,14 @@ Ya tendríamos configurado BurpSuite y listo para su funcionamiento.
 Para interceptar una petición con BurpSuite, una vez tenemos el FoxyProxy configurado, preparamos la petición que queramos capturar, y activamos FoxyProxy.
 Luego desde BurpSuite nos dirigimos al apartado `Proxy` y activamos la casilla en modo `Intercept is on`.
 
+![Captura de pantalla 2022-07-21 005816](https://user-images.githubusercontent.com/103068924/180096836-94b40517-d704-4bb0-a2ab-163bb1641826.png)
+
+![Captura de pantalla 2022-07-21 005926](https://user-images.githubusercontent.com/103068924/180096903-3fb03265-3b28-4e9e-8520-9afb98b6d99e.png)
+
 Finalmente realizamos la petición que queriamos capturar en el navegador y veremos como BupSuite la interceptará.
+
+
+
 
 
 
