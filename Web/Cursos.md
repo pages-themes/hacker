@@ -4,7 +4,9 @@
   
 * MarkDown --> <a href="./Cursos/MarkDown/MarkDown.html" style="text-decoration:none">Link</a>     
   
-* Python --> <a href="./Cursos/python.html" style="text-decoration:none">Link</a>  
+* Python --> <a href="./Cursos/python.html" style="text-decoration:none">Link</a> 
+
+* Preparación para el eJPT --> <a href="./Cursos/ejpt.html" style="text-decoration:none">Link</a>
   
 ---
 ---
