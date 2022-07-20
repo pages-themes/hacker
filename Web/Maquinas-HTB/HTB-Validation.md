@@ -34,6 +34,15 @@ Podemos ver tambien como utilizael framework de desarrollo wep `Bootstrap`.
 
 * ¿Qué es Bootstrap? --> <a href="https://www.hostinger.mx/tutoriales/que-es-bootstrap" style="text-decoration:none">Link</a> 
     
-    
+Finalmente podemos ver que utiliza la biblioteca de JavaScript `jQuery` y utiliza la versión 7.4.23 del lenguaje de programación PHP.
+
+Vamos a tratar de averiguar que puertos se encuentran abiertos utilizando la 
+herramienta `nmap`.
+
+# Nmap
+
+
+
+
 
 
