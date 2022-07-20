@@ -73,12 +73,35 @@ El escaneo nos reporta unos cuantos puesto abiertos, vamos a ver para que sirven
 
 * `Puerto 80`: Este puerto es el que se usa para la navegación web de forma no segura HTTP.
 
-* ` Puerto 4566`: Usa el Protocolo de Control de Transmisión `TCP`. El puerto 4566 garantiza la entrega de paquetes de datos en la misma orden, en que fueron mandados. Solo cuando la conexión es determinada, los datos del usuario pueden ser mandados de modo bidireccional por la conexión. 
-
-En este caso el puerto 4566 nos muetra el servicio `kwtc` (KWTC --> Kids Watch Time Control Service), parece ser
-algún tipo de aplicación parental para niños.
+* ` Puerto 4566`: Usa el Protocolo de Control de Transmisión `TCP`. El puerto 4566 garantiza la entrega de paquetes de datos en la misma orden, en que fueron mandados. Solo cuando la conexión es determinada, los datos del usuario pueden ser mandados de modo bidireccional por la conexión. En este caso el puerto 4566 nos muetra el servicio `kwtc` (KWTC --> Kids Watch Time Control Service), parece ser algún tipo de aplicación parental para niños.
 
 * `Puerto 8080`: Es el puerto alternativo al puerto 80 TCP para servidores web, normalmente se utiliza este puerto en pruebas.
+
+Bien ya tenemos una base, ahora vamos a tratar de realizar otro escaneo un poco más exahustivo lanzando una serie
+de scripts básicos de reconocimiento sobre los puertos que hemos encontrado:
+
+    nmap -sC -sV -n -vvv -p22,80,4566,8080 10.10.11.116 -oN target
+    
+  
+`-sC` : Lanza scripts básicos de reconocimiento.
+ 
+`-sV` : Localiza la versión y servicio de los puertos definidos. 
+ 
+`-p` : Puertos a escanear.    Ej:  -p22,80,...
+ 
+`-oN` : Reporta los resultados en formato nmap al archivo `targed`.
+
+![Captura de pantalla -2022-07-20 18-48-30](https://user-images.githubusercontent.com/103068924/180038969-37faba03-8edf-40b7-aa9a-bb186777e820.png)
+
+Vemos que el puerto 22/tcp corre un servicio `ssh`, que el puerto 4566/tcp nos devuelve un `403 Forbidden` y el
+puerto 8080 nos devuelve un `502 Bad Gateway`. Por tanto vamos a tratar de utilzar el único que de momento nos es
+funcional, el puesto 80.
+
+Como el pueto 80 es el que se usa para la navegación web, vamos al buscador y a ver que resultados nos reporta:
+
+![Captura de pantalla -2022-07-20 10-39-27](https://user-images.githubusercontent.com/103068924/180041181-35a05afa-ba3b-4889-b978-8893cd65767a.png)
+
+Vemos lo que parece una página de registro muy simple. Vamoa a ver que información nos aporta el Wappalyzer:
 
 
 
