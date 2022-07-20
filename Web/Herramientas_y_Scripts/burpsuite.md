@@ -54,7 +54,7 @@ si pulsamos encima con el ratón.
 
 ### Actualizar BurpSuite:
 
-Es recomendable borrar previamente la versión anterior de BurpSuite y instalar la nueva versión en su directorio `/opt/BurpSuiteCommunity/`.
+Es recomendable borrar previamente la versión anterior de BurpSuite e instalar la nueva versión en su directorio `/opt/BurpSuiteCommunity/`.
 Descargar el archivo `.sh` desde su página principal. Luego lo ejecutamos como administrador:
   
     sudo chmod +x BurpSuite.sh
@@ -63,7 +63,7 @@ Luego con el siguiente comando procedemos a su instalación:
 
     ./BurpSuite.sh
 
-Una vez intalado para ejecutarlo escribimos `BurpSuiteCommunity`.
+Una vez instalado para ejecutarlo, escribimos `BurpSuiteCommunity`.
 
 
 ### Configuración de BurpSuite:
@@ -86,7 +86,7 @@ Luego desde BurpSuite nos dirigimos al apartado `Proxy` y activamos la casilla e
 
 ![Captura de pantalla 2022-07-21 005926](https://user-images.githubusercontent.com/103068924/180096903-3fb03265-3b28-4e9e-8520-9afb98b6d99e.png)
 
-Finalmente realizamos la petición que queriamos capturar en el navegador y veremos como BupSuite la interceptará.
+Finalmente, realizamos la petición que queríamos capturar en el navegador y veremos como BupSuite la interceptará.
 
 
 
@@ -118,4 +118,3 @@ Finalmente realizamos la petición que queriamos capturar en el navegador y vere
   
 ---
 ---
-
