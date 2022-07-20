@@ -57,7 +57,7 @@ si pulsamos encima con el ratón.
 Es recomendable borrar previamente la versión anterior de BurpSuite y instalar la nueva versión en su directorio `/opt/BurpSuiteCommunity/`.
 Descargar el archivo `.sh` desde su página principal. Luego lo ejecutamos como administrador:
   
-  sudo chmod +X BurpSuite.sh
+    sudo chmod +x BurpSuite.sh
     
 Luego con el siguiente comando procedemos a su instalación:
 
