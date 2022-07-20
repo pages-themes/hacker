@@ -103,7 +103,7 @@ Como el pueto 80 es el que se usa para la navegación web, vamos al buscador y a
 
 Vemos lo que parece una página de registro muy simple. Vamoa a ver que información nos aporta el Wappalyzer:
 
-
+![Captura de pantalla 2022-07-20 103750](https://user-images.githubusercontent.com/103068924/180041725-a5cfd9fc-6e00-4ecd-b5d0-088be73248e3.png)
 
 
 
