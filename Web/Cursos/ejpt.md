@@ -10,3 +10,32 @@ certificación en su página oficial.
 
 * Certificación eJPT --> <a href="https://elearnsecurity.com/product/ejpt-certification/" style="text-decoration:none">Link</a>
 
+### ¿Qué conceptos se evaluan?
+
+![Captura de pantalla 2022-07-20 092553](https://user-images.githubusercontent.com/103068924/179922697-6794e586-1cf5-4572-b6af-bd5bc450dc2b.png)
+
+### Lista de Máquinas de Hack the Box para preparar el eJPT.
+
+* Validation
+* Return
+* Horizontall
+* Jeeves
+* Flustered
+* Love
+* NodeBlog
+* NunChucks
+* Bolt
+* GoodGames
+* Hawk
+* Driver
+* Toolbox
+* Chaos
+* Antique
+* Stratosphere
+* Devzat
+* Shocker
+* Tabby
+* Static
+* Jerry
+* Tenten
+
