@@ -64,6 +64,11 @@ Ya tendríamos configurado BurpSuite y listo para su funcionamiento.
 
 ### Como Interceptar peticiones básicas.
 
+Para interceptar una petición con BurpSuite, una vez tenemos el FoxyProxy configurado, preparamos la petición que queramos capturar, y activamos FoxyProxy.
+Luego desde BurpSuite nos dirigimos al apartado `Proxy` y activamos la casilla en modo `Intercept is on`.
+
+Finalmente realizamos la petición que queriamos capturar en el navegador y veremos como BupSuite la interceptará.
+
 
 
 ---
