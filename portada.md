@@ -34,6 +34,7 @@ Programas y herramientas para crear accesos remotos y shells inversas con otros 
 * <a href="./Web/Articulos/Telnet.html" style="text-decoration:none">Telnet</a>  
 * <a href="./Web/Herramientas_y_Scripts/php-reverse-shell.html" style="text-decoration:none">PHP Reverse Shell</a>
 * <a href="./Web/Herramientas_y_Scripts/bash-reverse-shell.html" style="text-decoration:none">Bash Revesrse Shell</a>
+* <a href="./Web/Herramientas_y_Scripts/reverseShellCurl.html" style="text-decoration:none">Crear una Shell Inversa utilizando Curl</a>
 * <a href="./Web/Articulos/tratamientoTTY.html" style="text-decoration:none">Tratamiento de la TTY</a>
 
 ## Proxies y Analizadores de Tráfico:
