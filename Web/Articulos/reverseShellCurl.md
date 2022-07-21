@@ -122,3 +122,28 @@ Tras ejecutar este último comando se nos tendría que haber abierto una Shell e
 Para este ejemplo hemos utilizado la máquina Nunchuchks de Hack the Box.
 
 
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
