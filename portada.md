@@ -64,7 +64,7 @@ sintaxis del mensaje, es decir alterando los símbolos que lo componen.
 Traducido al español, el SSTI son las siglas de `Inyección de plantillas del lado del Servidor`. SSTI es una vulnerabilidad que aprovecha una implementación 
 insegura de un motor de plantillas (template engine). Los motores de plantilla son empleado por las aplicaciones web para la presentación de datos dinámicos.
 
-* Más información sobre injecciones SSTI --> <a href="https://infayer.com/archivos/803#:~:text=Las%20vulnerabilidades%20de%20SSTI%20(Server,Code%20Execution)%2C%20lo%20que%20lo" style="text-decoration:none">Link</a>
+* Más información sobre injecciones SSTI --> <a href="https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection" style="text-decoration:none">Link</a>
 
 ## Fuzzing:
 Fuzzing es una técnica de pruebas de software, a menudo automatizado o semiautomatizado, que implica proporcionar datos inválidos, inesperados o
