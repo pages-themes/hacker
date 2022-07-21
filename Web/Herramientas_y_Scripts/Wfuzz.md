@@ -135,7 +135,7 @@ Cada palabra clave FUZZ debe tener su carga útil (payload) correspondiente. Hay
 `-z` : Especifica el valor del parámetro predeterminado del payload.
 
 ### Ejecución fuzzeando cabezaras.
-Esto nos permite la opción de repetir varios encabezados. Para ello se utiliza la etiqueta `-H` de header seguida de la especificación entre comillas dobles. 
+Esto nos permite la opción de repetir varios encabezados. Para ello se emplea la etiqueta `-H` de header seguida de la especificación entre comillas dobles. 
 
     wfuzz -w [Ruta del Diccionario] -H "Host: FUZZ.ejemplo.com" http://ejemplo.com
    
@@ -154,19 +154,19 @@ Esto nos permite la opción de repetir varios encabezados. Para ello se utiliza 
 
 Se puede encontr mucha más información sobre esta herramienta en su página: [https://wfuzz.readthedocs.io/en/latest/user/getting.html](https://wfuzz.readthedocs.io/en/latest/user/getting.html)
    
-### Ejecución filtrada omitiendo servicios con caracateres repetidos:
+### Ejecución filtrada omitiendo servicios con caracteres repetidos:
 
-En alguna ocasiones al ejecutar Wfuzz veremos como empieza a reportar resultados inconcluyentes con el mismo número de caracteres. Al igual que los servicios web
+En algunas ocasiones al ejecutar Wfuzz veremos como empieza a reportar resultados inconcluyentes con el mismo número de caracteres. Al igual que los servicios web
 estos resultados pueden ser filtrados para que sean omitidos y que solo nos devuelva los resultados que nos interesan.
 
-Para omitir los caracteres o chars especificos se utiliza la instrucción `--hh=[Nº Chars]`. Veamos como sería su sintaxis:
+Para omitir los caracteres o chars específicos se usa la instrucción `--hh=[Nº Chars]`. Veamos como sería su sintaxis:
 
     wfuzz --hh=[Nº Chars] -w [Ruta del Diccionario] [URL Víctima]
     
-Vamos a ver un ejemplo para que quede más claro, para ello primero vamos a realizar un escaneo simple sin filtrar ningun resultado para que veais como se repiten
+Vamos a ver un ejemplo para que quede más claro, para ello primero vamos a realizar un escaneo simple sin filtrar ningún resultado para que veáis como se repiten
 las peticiones con el mismo número de caracteres.
 
-Para este ejemplo usaremos la máquina `Nunchucks` de HTB con la Ip 10.10.11.122 y como diccionario utilizaremos uno de la libreria `Seclists`.
+Para este ejemplo usaremos la máquina `Nunchucks` de HTB con la Ip 10.10.11.122 y como diccionario utilizaremos uno de la librería `Seclists`.
 
     wfuzz -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt -H "Host: FUZZ.nunchucks.htb" http://nunchucks.htb
     
@@ -174,7 +174,7 @@ Para este ejemplo usaremos la máquina `Nunchucks` de HTB con la Ip 10.10.11.122
 
 ![Captura de pantalla 2022-07-21 172633](https://user-images.githubusercontent.com/103068924/180252698-c7432676-681d-486a-9307-502475e7c986.png)
 
-Como podéis ver nos reporta un monton de resultados con el mismo número de `chars`:
+Como podéis ver nos reporta un montón de resultados con el mismo número de `chars`:
 
 ![Captura de pantalla 2022-07-21 172657](https://user-images.githubusercontent.com/103068924/180252935-a968d55d-776f-4f62-87d4-0d0fd9f2b255.png)
 
@@ -215,7 +215,6 @@ Una vez especificado, solo nos muestra los resultados con un número de caracter
   
 ---
 ---
-
 
 
 
