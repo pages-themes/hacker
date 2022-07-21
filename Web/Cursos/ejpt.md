@@ -36,6 +36,5 @@ conocer los fundamentos de las pruebas de penetraci√≥n y de la seguridad inform√
 * Shocker
 * Tabby
 * Static
-* Jerry
 * Tenten
 
