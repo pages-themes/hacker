@@ -13,9 +13,9 @@ GoBuster tiene la capacidad de realizar las siguientes enumeraciones:
 * Nombres de virtual hosts en servidores web.
 * Buckets S3 de Amazon públicos.
 
-## ¿Como instala GoBuster?
+## ¿Cómo instala GoBuster?
 
-En caso de tener una distribución basada en Debian podeís instalarlo directamente desde la terminal mediante le siguiente comando:
+En caso de tener una distribución basada en Debian, podéis instalarlo directamente desde la terminal mediante le siguiente comando:
 
     sudo apt install gobuster
     
@@ -32,7 +32,6 @@ Como ya indicábamos se pueden hacer 4 tipos de enumeraciones, de `URIs`, `DNS`,
 * `-w`: Especifica la ruta del diccionario.
 
 Más información acerca de goBuster --> <a href="https://byte-mind.net/enumeracion-por-fuerza-bruta-con-gobuster/" style="text-decoration:none">Link</a>
-
 
 
 
