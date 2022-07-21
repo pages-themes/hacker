@@ -90,7 +90,7 @@ Por ejemplo, es un comportamiento común (a veces debido a una configuración in
 
 Una ejecución de línea de comando típica de Wfuzz, que especifica una carga de diccionario y una URL, se ve así:
 
-    wfuzz -w [Ruta del Diccionario] [Url Víctima]
+    wfuzz -w [Ruta del Diccionario] [Url Víctima]/FUZZ
     
     wfuzz -w wordlist/general/common.txt http://testphp.vulnweb.com/FUZZ
     
@@ -124,15 +124,25 @@ Cada palabra clave FUZZ debe tener su carga útil (payload) correspondiente. Hay
 
 ### Ejecución Básica:
 
-    wfuzz -w [Ruta del Diccionario] [URL Víctima]
+    wfuzz -w [Ruta del Diccionario] [URL Víctima]/FUZZ
     
 `-w` : Especifica un diccionario (Lista de palabras).
     
 ### Ejecución definiendo el valor del Payload:
 
-    wfuzz -z [Ruta del Diccionario] [URL Víctima]
+    wfuzz -z [Ruta del Diccionario] [URL Víctima]/FUZZ
 
 `-z` : Especifica el valor del parámetro predeterminado del payload.
+
+### Ejecución fuzzeando cabezaras.
+Esto nos permite la opción de repetir varios encabezados. Para ello se utiliza la etiqueta `-H` de header seguida de la especificación entre comillas dobles. 
+
+    wfuzz -w [Ruta del Diccionario] -H "Host: FUZZ.ejemplo.com" http://ejemplo.com
+   
+* `Ejemplo:` 
+ 
+    wfuzz -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt -H "Host: FUZZ.nunchuks.htb" http://nunchuks.htb
+
 
 ### Ejecución filtrada omitiendo servicios web desconocidos:
 
@@ -144,7 +154,41 @@ Cada palabra clave FUZZ debe tener su carga útil (payload) correspondiente. Hay
 
 Se puede encontr mucha más información sobre esta herramienta en su página: [https://wfuzz.readthedocs.io/en/latest/user/getting.html](https://wfuzz.readthedocs.io/en/latest/user/getting.html)
    
-   
+### Ejecución filtrada omitiendo servicios con caracateres repetidos:
+
+En alguna ocasiones al ejecutar Wfuzz veremos como empieza a reportar resultados inconcluyentes con el mismo número de caracteres. Al igual que los servicios web
+estos resultados pueden ser filtrados para que sean omitidos y que solo nos devuelva los resultados que nos interesan.
+
+Para omitir los caracteres o chars especificos se utiliza la instrucción `--hh=[Nº Chars]`. Veamos como sería su sintaxis:
+
+    wfuzz --hh=[Nº Chars] -w [Ruta del Diccionario] [URL Víctima]
+    
+Vamos a ver un ejemplo para que quede más claro, para ello primero vamos a realizar un escaneo simple sin filtrar ningun resultado para que veais como se repiten
+las peticiones con el mismo número de caracteres.
+
+Para este ejemplo usaremos la máquina `Nunchucks` de HTB con la Ip 10.10.11.122 y como diccionario utilizaremos uno de la libreria `Seclists`.
+
+    wfuzz -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt -H "Host: FUZZ.nunchucks.htb" http://nunchucks.htb
+    
+![Captura de pantalla 2022-07-21 172614](https://user-images.githubusercontent.com/103068924/180252687-7037a5b5-add2-4744-8491-e5d2a1f88f5d.png)
+
+![Captura de pantalla 2022-07-21 172633](https://user-images.githubusercontent.com/103068924/180252698-c7432676-681d-486a-9307-502475e7c986.png)
+
+Como podéis ver nos reporta un monton de resultados con el mismo número de `chars`:
+
+![Captura de pantalla 2022-07-21 172657](https://user-images.githubusercontent.com/103068924/180252935-a968d55d-776f-4f62-87d4-0d0fd9f2b255.png)
+
+Vamos a intentar aplicar el filtro a ver que sucede:
+
+    wfuzz --hh=30587 -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt -H "Host: FUZZ.nunchucks.htb" http://nunchucks.htb
+    
+![Captura de pantalla 2022-07-21 173038](https://user-images.githubusercontent.com/103068924/180253429-4f39c317-b4ac-40a5-b32a-eef79b67b0f2.png)
+
+![Captura de pantalla 2022-07-21 173652](https://user-images.githubusercontent.com/103068924/180254604-38dff995-7ae1-489b-8794-79913b3d2b0a.png)
+
+Una vez especificado, solo nos muestra los resultados con un número de caracteres diferente a 30587.
+
+
 
 ---
 ---
