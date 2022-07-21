@@ -15,7 +15,7 @@ conocer los fundamentos de las pruebas de penetración y de la seguridad inform�
 
 ## Lista de Máquinas de Hack the Box para preparar el eJPT.
 
-* <a><img src="../assets/images/JerryButton.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-Jerry.html" style="text-decoration:none">Jerry</a>
+* <a><img src="../../assets/images/JerryButton.png" align="middle"></a> <a href="./Maquinas-HTB/HTB-Jerry.html" style="text-decoration:none">Jerry</a>
 * Validation
 * Return
 * Horizontall
