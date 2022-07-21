@@ -65,7 +65,8 @@ Fuzzing es una técnica de pruebas de software, a menudo automatizado o semiauto
 aleatorios a las entradas de un programa de ordenador. Entonces se monitorizan las excepciones tales como caídas, aserciones de código erróneas, o
 para encontrar potenciales filtraciones de memoria.
 
-* <a href="./Web/Herramientas_y_Scripts/Wfuzz.html" style="text-decoration:none">Wfuzz</a> 
+* <a href="./Web/Herramientas_y_Scripts/Wfuzz.html" style="text-decoration:none">Wfuzz</a>
+* <a href="./Web/Herramientas_y_Scripts/goBuster.html" style="text-decoration:none">GoBuster</a>
 
 ## Phishing:
 Phishing es un término informático que distingue a un conjunto de técnicas que persiguen el engaño a una víctima ganándose su confianza haciéndose
