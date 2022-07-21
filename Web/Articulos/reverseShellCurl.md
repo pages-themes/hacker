@@ -8,6 +8,8 @@ Curl es un herramienta cuya finalidad es transferir datos a través de una URL. 
 sistemas basados en Unix. Es una abreviatura de `Client URL`. Los comandos de Curl están diseñados para funcionar como una forma
 de verificar la conectividad a las URL y como una gran herramienta para transferir datos.
 
+![Captura de pantalla 2022-07-21 225432](https://user-images.githubusercontent.com/103068924/180313605-edaba56e-d31d-4c74-bf50-4db5bfa3b27e.png)
+
 * Información más detallada del funcionamiento de Curl --> <a href='https://www.hostinger.es/tutoriales/comando-curl' style="text-decoration:none">Link</a>
 
 # Ejecución:
