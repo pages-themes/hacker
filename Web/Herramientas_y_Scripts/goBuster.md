@@ -27,11 +27,11 @@ Como ya indicábamos se pueden hacer 4 tipos de enumeraciones, de `URIs`, `DNS`,
 
     gobuster dir -u http://www.ejemplo.com/ -w /ruta/del/diccionario
     
-`dir`: Indica que vamos a enumerar directorios.     
-`-u`: Especifica la targeta URL.
-`-w`: Especifica la ruta del diccionario.
+* `dir`: Indica que vamos a enumerar directorios.     
+* `-u`: Especifica la targeta URL.
+* `-w`: Especifica la ruta del diccionario.
 
-
+Más información acerca de goBuster --> <a href="https://byte-mind.net/enumeracion-por-fuerza-bruta-con-gobuster/" style="text-decoration:none">Link</a>
 
 
 
