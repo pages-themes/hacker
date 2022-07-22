@@ -11,7 +11,8 @@
 * <a href="./Web/Cursos/MarkDown/MarkDown.html" style="text-decoration:none">MarkDown.</a>
 * <a href="./Web/Cursos/python.html" style="text-decoration:none">Python.</a> 
 * <a href="./Web/Linux/Programas_para_Linux/Ventoy.html" style="text-decoration:none">Bootear USB en Linux con Ventoy.</a>
-* <a href="./Web/Linux/GnomeTwitch.html" style="text-decoration:none">Instalación de Twitch en Linux mediante Flatpak.</a> 
+* <a href="./Web/Linux/GnomeTwitch.html" style="text-decoration:none">Instalación de Twitch en Linux mediante Flatpak.</a>
+* <a href="./Web/Articulos/codigoFuenteTerminal.html" style="text-decoration:none">Como ver el código fuente de una página web desde la terminal.</a>
 * <a href="./Web/Articulos/BufferOverflow.html" style="text-decoration:none">Buffer Overflow.</a>  
   
 ---    
