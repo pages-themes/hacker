@@ -60,11 +60,11 @@ que está relacionado con el significado del mensaje.
 ## Cifrados
 El cifrado se basa en aplicar un algoritmo que suele utilizar una clave para transformar la estructura y composición de la información que se pretende proteger, de tal 
 manera que si es interceptada por un tercero no la pueda entender. Cuando nos referimos a cifrar un mensaje, tiene que ver con ocultar la información basándose en la
-sintaxis del mensaje, es decir alterando los símbolos que lo componen.
+sintaxis del mensaje, es decir, alterando los símbolos que lo componen.
 
 ## SSTI --> Server Side Template Injection.
 Traducido al español, el SSTI son las siglas de `Inyección de plantillas del lado del Servidor`. SSTI es una vulnerabilidad que aprovecha una implementación 
-insegura de un motor de plantillas (template engine). Los motores de plantilla son empleado por las aplicaciones web para la presentación de datos dinámicos.
+insegura de un motor de plantillas (template engine). Los motores de plantilla son empleados por las aplicaciones web para la presentación de datos dinámicos.
 
 * Más información sobre injecciones SSTI --> <a href="https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection" style="text-decoration:none">Link</a>
 
@@ -77,7 +77,7 @@ para encontrar potenciales filtraciones de memoria.
 * <a href="./Web/Herramientas_y_Scripts/goBuster.html" style="text-decoration:none">GoBuster</a>
 
 ## Phishing:
-Phishing es un término informático que distingue a un conjunto de técnicas que persiguen el engaño a una víctima ganándose su confianza haciéndose
+Phishing es un término informático que distingue a un conjunto de técnicas que persiguen el engaño a una víctima ganándose su confianza, haciéndose
 pasar por una persona, empresa o servicio de confianza, para manipularla y hacer que realice acciones que no debería realiza.
 
 * <a href="./Web/Herramientas_y_Scripts/Setoolkit.html" style="text-decoration:none">Setoolkit</a> 
