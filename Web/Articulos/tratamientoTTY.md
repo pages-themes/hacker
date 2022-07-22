@@ -37,7 +37,24 @@ En caso de no funcionar aún el `Ctrl + l` para limpiar la terminal, realizamos 
 
     export SHELL=bash  
     export TERM=xterm
+
+## Ajustar Proporciones:
+
+Para que las proporciones de la terminal sean iguales a las de nuestro sistema debemos ajustar tanto las filas como las columnas. Por ejemplo si abrimos 
+o creamos un archivo con `nano` este se verá pequeño. Para ajustar estas proporciones primero debemos ir a una de nuestras ventas y ver que proporciones tiene:
+
+    stty size
     
+![Captura de pantalla 2022-07-22 133406](https://user-images.githubusercontent.com/103068924/180431036-3ba25039-39d1-41ea-909c-271142b6b96d.png)
+
+En mi caso mi terminal tiene 52 filas y 189 columnas. Ahora ajustaremos con estos parámetros nuestra Reverse Shell. Para ello escribimos lo siguiente en la
+terminal de la Reverse Shell:
+
+    stty rows 52 columns 189
+    
+ ![Captura de pantalla 2022-07-22 133922](https://user-images.githubusercontent.com/103068924/180431795-5130fda6-f528-4574-a9a9-82832e22ba17.png)
+   
+
 
 ---
 ---
