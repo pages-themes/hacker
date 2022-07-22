@@ -103,7 +103,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
 # Links de Interés: 
 
 * Principales puertos TCP y UDP -->  <a href="https://www.redeszone.net/tutoriales/configuracion-puertos/puertos-tcp-udp/" style="text-decoration:none">Link</a>
-   
+* EXPLOIT de Escalada de Privilegios Vulnerando `pkexec` --> <a href="https://github.com/berdav/CVE-2021-4034" style="text-decoration:none">Link</a>  
      
 
 ---
