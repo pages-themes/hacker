@@ -36,7 +36,7 @@ una serie de escaneos para ver que puertos se encuentran abiertos, primero reali
   
 `allPorts` : Nombre del archivo. Si no existe lo creará.
   
-De esta manera podremos revisar los puertos que estaban abiertos en cualquier momento.
+Guardamos los resultados en el archivo `allPorts`, de esta manera podremos revisar los puertos que estaban abiertos en cualquier momento.
 
 ![Captura de pantalla -2022-05-09 10-02-16](https://user-images.githubusercontent.com/103068924/167366619-2fea1b36-9776-47cd-8c0d-a516313f4c11.png)
 
