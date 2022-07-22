@@ -1,9 +1,9 @@
 # Como ver el Código Fuente de una página web en nuestra Terminal:
 
-En este artículo vamos a ver como utilzando el comando `Curl` vamos a poder ver el código fuente de una página web en nuestra terminal. 
+En este artículo vamos a ver como utilizando el comando `Curl` vamos a poder ver el código fuente de una página web en nuestra terminal. 
 
-Esto es muy útil cuando queremos trabajar con el código, cuando necesitamos parte de él para otra tarea o simplemente para visualizarlo de forma más cómoda (por ejemplo 
-en caso de mostrarse todo el código en una línea, en nuestra terminal lo pòdremos separar y estructurar para que sea más visual.
+Esto es muy útil cuando queremos trabajar con el código, cuando necesitamos parte de él para otra tarea o simplemente para visualizarlo de forma más cómoda (por ejemplo, 
+en caso de mostrarse todo el código en una línea, en nuestra terminal lo podremos separar y estructurar para que sea más visual).
 
     curl -s -X GET "[Dirección Web]"
     
@@ -12,7 +12,7 @@ en caso de mostrarse todo el código en una línea, en nuestra terminal lo pòdr
 * `-s`: Mostrar código de estado de respuesta.
 
 `Ejemplo:`
-Para estos ejemplos utilizaremos la máquina Horizontall de Hack the Box y vamos a tratar de de visualizar el código fuente de la página http://horizontall.htb.
+Para estos ejemplos emplearemos la máquina Horizontall de Hack the Box y vamos a tratar de visualizar el código fuente de la página http://horizontall.htb.
 Realizamos la petición mediante `Curl`:
 
     curl -s -X GET "http://horizontall.com"
@@ -21,7 +21,7 @@ Realizamos la petición mediante `Curl`:
 
 ![Captura de pantalla 2022-07-22 092523](https://user-images.githubusercontent.com/103068924/180386501-be981aec-3fc5-49dc-bccd-6aafb5343247.png)
 
-Como podéis ver nos muestra el código en una sola línea. Para que podamos verlo de forma más comoda vamos a utilizar la herramienta `htmlq`.
+Como podéis ver nos muestra el código en una sola línea. Para que podamos verlo de forma más cómoda vamos a usar la herramienta `htmlq`.
 
 ## Instalar htmlq:
 
@@ -29,21 +29,20 @@ Para instalar la herramienta `htmlq` simplemente ejecutamos estos dos comandos, 
 
     sudo apt install cargo
     
-Y ahora procedemos a la intalación de `htmlq`:
+Y ahora procedemos a la instalación de `htmlq`:
 
     cargo install htmlq
    
-Finalmente parta poder visualizar el código lo ejecutamos de la siguiente manera:
+Finalmente, parta poder visualizar el código, lo ejecutamos de la siguiente manera:
 
     curl -s -X GET "http://ejemplo/" | htmlq -p
         
 ![Captura de pantalla 2022-07-22 102441](https://user-images.githubusercontent.com/103068924/180397239-a42518f3-86cc-480f-acfc-1ef98b5a3528.png)
 
-Actualmente `htmlq` está dando muchos problemas con sus librerias, en caso de no funcionar, otra alternativa para visualizarlo de manera más comoda
-es utilizando la herramienta `bat` que básicamente es una mejora que sustituye al `cat` que viene predeterminado en Linux. 
+Actualmente, `htmlq` está dando muchos problemas con sus librerías, en caso de no funcionar, otra alternativa para visualizarlo de manera más práctica (ya que distingue las sentencias por colores)
+es empleando la herramienta `bat` que básicamente es una mejora que sustituye al `cat` que viene predeterminado en Linux. 
 
    
-
 
 
  
