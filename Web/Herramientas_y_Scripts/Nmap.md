@@ -45,7 +45,7 @@ De esta manera podremos revisar los puertos que estaban abiertos en cualquier mo
 
 ### Escaneo Rápido Completo:
 
-    nmap -p- --open -sS --min-rate 5800 -vvv -n -Pn [Ip Vícitma] -oG allPorts
+    nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn [Ip Vícitma] -oG allPorts
      
 `-p-` : Escanea todo el rango de puertos.
   
