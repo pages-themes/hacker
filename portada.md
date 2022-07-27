@@ -49,6 +49,7 @@ Herramientas de reconocimiento y desencriptación de hash.
 * <a href="./Web/Herramientas_y_Scripts/HashId.html" style="text-decoration:none">HashID</a>  
 * <a href="./Web/Herramientas_y_Scripts/Hash-Identifier.html" style="text-decoration:none">Hash Identifier</a>
 * <a href="./Web/Herramientas_y_Scripts/HashCat.html" style="text-decoration:none">HashCat</a>
+* Página para Crackear hashes de Contraseñas -->  <a href="https://crackstation.net/" style="text-decoration:none">Link</a>
 
 ## Codificación:
 La codificación es el proceso de conversión de los componentes de un mensaje para que este no sea entendido. Las reglas de transformación entre un sistema y otro
