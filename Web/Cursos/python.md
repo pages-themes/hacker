@@ -7,15 +7,15 @@
 * <a href="#item1" style="text-decoration:none">1.1 ¿Qué es Python?</a>
 * <a href="#item2" style="text-decoration:none">1.2 Ventajas de programar en Python.</a>
 * <a href="#item3" style="text-decoration:none">1.3 Programas Necesarios para programar en Python.</a>
-* <a href="#item4" style="text-decoration:none">1.3.1 Interprete de Python.</a>
-* <a href="#item5" style="text-decoration:none">1.3.2 Editor de Código.</a>
+* <a href="#item4" style="text-decoration:none">1.3 Interprete de Python.</a>
+* <a href="#item5" style="text-decoration:none">1.3 Editor de Código.</a>
 * <a href="#item6" style="text-decoration:none">1.4 Dinámica de trabajo.</a>
 * <a href="#item7" style="text-decoration:none">2.1 Crear Nuestro Primer Programa: Hello World.</a>
 * <a href="#item8" style="text-decoration:none">2.2 Tipos de Data en Python: Datatypes.</a>
-* <a href="#item9" style="text-decoration:none">2.2.1 Variables.</a>
-* <a href="#item10" style="text-decoration:none">2.2.2 Listas.</a>
-* <a href="#item11" style="text-decoration:none">2.2.3 Función print().</a>  
-* <a href="#item12" style="text-decoration:none">2.2.4 Definir una función.</a> 
+* <a href="#item9" style="text-decoration:none">2.2 Variables.</a>
+* <a href="#item10" style="text-decoration:none">2.2 Listas.</a>
+* <a href="#item11" style="text-decoration:none">2.2 Función print().</a>  
+* <a href="#item12" style="text-decoration:none">2.2 Definir una función.</a> 
 
 ---
 <a name="item1"></a>
