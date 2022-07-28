@@ -1,11 +1,11 @@
 # BurpSuite
 
-<a href="#item1" style="text-decoration:none">¿Qué es BurpSuite?</a>
-<a href="#item2" style="text-decoration:none">Herramientas Necesarias.</a>
-<a href="#item3" style="text-decoration:none">Configuración de FoxyProxy</a>
-<a href="#item4" style="text-decoration:none">Actualizar BurpSuite</a>
-<a href="#item5" style="text-decoration:none">Configuración de BurpSuite</a>
-<a href="#item6" style="text-decoration:none">Como Interceptar peticiones básicas.</a>
+* <a href="#item1" style="text-decoration:none">¿Qué es BurpSuite?</a>
+* <a href="#item2" style="text-decoration:none">Herramientas Necesarias.</a>
+* <a href="#item3" style="text-decoration:none">Configuración de FoxyProxy</a>
+* <a href="#item4" style="text-decoration:none">Actualizar BurpSuite</a>
+* <a href="#item5" style="text-decoration:none">Configuración de BurpSuite</a>
+* <a href="#item6" style="text-decoration:none">Como Interceptar peticiones básicas.</a>
 
 
 <a name="item1"></a>
