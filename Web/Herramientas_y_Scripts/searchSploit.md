@@ -2,6 +2,17 @@
 
 # SearchSploit
 
+* <a href="#item1" style="text-decoration:none">¿Qué es SearchSploit?</a>
+* <a href="#item2" style="text-decoration:none">Instalación.</a>
+* <a href="#item3" style="text-decoration:none">Búsqueda General.</a>
+* <a href="#item4" style="text-decoration:none">Distinguir Mayúsculas y Minúsculas.</a>
+* <a href="#item5" style="text-decoration:none">Copiar ruta del Exploit al portapapeles.</a>
+* <a href="#item6" style="text-decoration:none">Excluir Resultados.</a>
+* <a href="#item7" style="text-decoration:none">Copiar Exploit al directorio actual.</a>
+* <a href="#item8" style="text-decoration:none">Examinar resultados de NMAP.</a>
+
+
+<a name="item1"></a>
 ## ¿Qué es SearchSploit?
 
 Searchsploit es una herramienta de búsqueda de línea de comandos para Exploit-DB que te permite llevar contigo una copia de Exploit DataBase
@@ -10,6 +21,7 @@ Searchsploit es una herramienta de búsqueda de línea de comandos para Exploit-
 Básicamente, busca exploits relacionados con las palabras que le proporcionemos, que pueden ser, nombres del sistema, versiones, servicios, programas que se 
 estén ejecutando,etc. Contiene exploits para tanto para sistemas Windows como para Linux y muchas de sus distribuciones.
 
+<a name="item2"></a>
 ## Instalación:
 
 Si estás utilizando la versión estándar de Kali Linux, el paquete `exploitdb` ya está incluido de forma predeterminada. Sin embargo, si estás utilizando otro,
@@ -29,6 +41,7 @@ Podemos ver todas las funciones de este comando utilizando la opción `--help`:
 
     searchsploit --help
 
+<a name="item3"></a>
 ### Búsqueda General:
 
 Para realizar una búsqueda global de algo que nos llame la atención simple meten ejecutamos el comando `searchsploit` seguido de la palabra que deseamos buscar:
@@ -38,7 +51,8 @@ Para realizar una búsqueda global de algo que nos llame la atención simple met
 Ejemplo:
 
     searcsploit Explore
-    
+
+<a name="item4"></a>
 ### Búsqueda por Títulos:
 
 El uso de la opción `-t` habilita el parámetro `título` para buscar un exploit con un título específico. Porque por defecto, searchsploit intentará tanto el título 
@@ -51,6 +65,7 @@ del exploit como la ruta. La búsqueda de un exploit con un título específico 
 Al usar la opción `–c`, se puede realizar una búsqueda que distingue entre mayúsculas y minúsculas. Esto permite descubrir la vulnerabilidad relacionada con la
 mención de caracteres específicos en el comando, de manera predeterminada hace una `búsqueda insensitive`.
 
+<a name="item5"></a>
 ### Copiar ruta del Exploit al portapapeles:
 
 Al emplear la opción `-p`, se muestra la ruta completa de un exploit. Esta opción proporciona más información relacionada con el exploit, así como también copia 
@@ -60,12 +75,14 @@ la ruta completa del exploit al portapapeles, todo lo que se necesita es presion
     
     searchsploit -p 39166
 
+<a name="item6"></a>
 ### Excluir Resultados:
 
 Al utilizar la opción `--exclude`, se habilita el parámetro de exclusión para eliminar los resultados no deseados dentro de la lista de exploits.
 
     searchsploit [Palabra a Buscar] -w --exclude="[Palabra Excluida]"
 
+<a name="item7"></a>
 ### Copiar Exploit al directorio actual:
 
 La opción `-m` copia un exploit en el directorio de trabajo actual. Esta opción proporciona la misma información que la anterior relacionada con el 
@@ -74,7 +91,8 @@ exploit, pero también copia la vulnerabilidad en tu directorio actual de trabaj
     searchsploit -m [Nombre del Exploit]
 
     searchsploit -m 39166
-    
+
+<a name="item8"></a>
 ### Examinar resultados de NMAP:
 
 Como todos sabemos, Nmap tiene una característica muy notable que te permite guardar el resultado de salida en formato `.xml` y podemos identificar 
