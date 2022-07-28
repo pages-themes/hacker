@@ -10,6 +10,7 @@ está bien documentado, es compatible con varios lenguajes de programación, ha 
 ## Codificar/Descodificar:
 Existen distintas páginas donde codificar y descodificar datos en Base 64.
 
+* <a href="https://www.base64decode.org/" style="text-decoration:none">Codifica y Descodifica.</a>
 * <a href="https://base64.guru/converter/encode" style="text-decoration:none">Codificar</a> 
 * <a href="https://base64.guru/converter/decode" style="text-decoration:none">Descodificar</a>
 
