@@ -57,6 +57,7 @@ van a estar definidas para poder entender el contenido del mensaje. A diferencia
 que está relacionado con el significado del mensaje.
 
 * <a href="./Web/Articulos/base64.html" style="text-decoration:none">Base64</a>
+* Páginas para Codificar o Descodificar código en Base64 --> <a href="https://www.base64decode.org/" style="text-decoration:none"> Link </a>
 
 ## Cifrados
 El cifrado se basa en aplicar un algoritmo que suele utilizar una clave para transformar la estructura y composición de la información que se pretende proteger, de tal 
@@ -106,7 +107,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 * Principales puertos TCP y UDP -->  <a href="https://www.redeszone.net/tutoriales/configuracion-puertos/puertos-tcp-udp/" style="text-decoration:none">Link</a>
 * EXPLOIT de Escalada de Privilegios Vulnerando `pkexec` --> <a href="https://github.com/berdav/CVE-2021-4034" style="text-decoration:none">Link</a>  
-     
+* Páginas para Codificar o Descodificar código en Base64 --> <a href="https://www.base64decode.org/" style="text-decoration:none"> Link </a>     
 
 ---
 ---
