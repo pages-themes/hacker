@@ -12,9 +12,9 @@
 * <a href="#item6" style="text-decoration:none">1.4 Dinámica de trabajo.</a>
 * <a href="#item7" style="text-decoration:none">2.1 Crear Nuestro Primer Programa: Hello World.</a>
 * <a href="#item8" style="text-decoration:none">2.2 Tipos de Data en Python: Datatypes.</a>
-* <a href="#item9" style="text-decoration:none">2.2.1 Variables</a>
-* <a href="#item10" style="text-decoration:none">2.2.2 Listas</a>
-* <a href="#item11" style="text-decoration:none">2.2.3 Función print()</a>  
+* <a href="#item9" style="text-decoration:none">2.2.1 Variables.</a>
+* <a href="#item10" style="text-decoration:none">2.2.2 Listas.</a>
+* <a href="#item11" style="text-decoration:none">2.2.3 Función print().</a>  
 * <a href="#item12" style="text-decoration:none">2.2.4 Definir una función.</a> 
 
 ---
