@@ -1,5 +1,14 @@
 # BurpSuite
 
+<a href="#item1" style="text-decoration:none">¿Qué es BurpSuite?</a>
+<a href="#item2" style="text-decoration:none">Herramientas Necesarias.</a>
+<a href="#item3" style="text-decoration:none">Configuración de FoxyProxy</a>
+<a href="#item4" style="text-decoration:none">Actualizar BurpSuite</a>
+<a href="#item5" style="text-decoration:none">Configuración de BurpSuite</a>
+<a href="#item6" style="text-decoration:none">Como Interceptar peticiones básicas.</a>
+
+
+<a name="item1"></a>
 ## ¿Qué es BurpSuite?
 
 Burp Suite, también conocida como `la navaja suiza del pentester`, es una herramienta multifunción para realizar auditorías de seguridad a aplicaciones Web.
@@ -13,6 +22,7 @@ Para instalar BurpSuite directamente desde la terminal (para sistemas como Parro
 
     sudo apt install burpsuite
 
+<a name="item2"></a>
 ## Herramientas Necesarias:
 
 Para poder trabajar con BurpSuite vamos a necesitar otras dos herramientas imprescindibles, primero necesitaremos un navegador (preferentemente firefox) y luego 
@@ -25,6 +35,7 @@ interceptados.
 
 Para ello tendremos que configurar BurpSuite y FoxyProxy para establecer entre ellos una comunicación.
 
+<a name="item3"></a>
 ### Configuración de FoxyProxy:
 
 Una vez instalado FoxyProxy en el navegador, simplemente pulsamos sobre él y luego pulsamos el botón `Options`.
@@ -51,7 +62,7 @@ si pulsamos encima con el ratón.
 
 ![Captura de pantalla 2022-07-21 003510](https://user-images.githubusercontent.com/103068924/180094697-283b86e6-2f86-4d80-8653-b0e034ca1eeb.png)
 
-
+<a name="item4"></a>
 ### Actualizar BurpSuite:
 
 Es recomendable borrar previamente la versión anterior de BurpSuite e instalar la nueva versión en su directorio `/opt/BurpSuiteCommunity/`.
@@ -65,7 +76,7 @@ Luego con el siguiente comando procedemos a su instalación:
 
 Una vez instalado para ejecutarlo, escribimos `BurpSuiteCommunity`.
 
-
+<a name="item5"></a>
 ### Configuración de BurpSuite:
 
 
@@ -77,6 +88,7 @@ Para configurar el proxy debemos acceder a la pestaña `Proxy` -> `Options` y no
 
 Ya tendríamos configurado BurpSuite y listo para su funcionamiento.
 
+<a name="item6"></a>
 ### Como Interceptar peticiones básicas.
 
 Para interceptar una petición con BurpSuite, una vez tenemos el FoxyProxy configurado, preparamos la petición que queramos capturar, y activamos FoxyProxy.
