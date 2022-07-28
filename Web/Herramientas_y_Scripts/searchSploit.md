@@ -5,11 +5,12 @@
 * <a href="#item1" style="text-decoration:none">¿Qué es SearchSploit?</a>
 * <a href="#item2" style="text-decoration:none">Instalación.</a>
 * <a href="#item3" style="text-decoration:none">Búsqueda General.</a>
-* <a href="#item4" style="text-decoration:none">Distinguir Mayúsculas y Minúsculas.</a>
-* <a href="#item5" style="text-decoration:none">Copiar ruta del Exploit al portapapeles.</a>
-* <a href="#item6" style="text-decoration:none">Excluir Resultados.</a>
-* <a href="#item7" style="text-decoration:none">Copiar Exploit al directorio actual.</a>
-* <a href="#item8" style="text-decoration:none">Examinar resultados de NMAP.</a>
+* <a href="#item4" style="text-decoration:none">Búsqueda por Títulos.</a>
+* <a href="#item5" style="text-decoration:none">Distinguir Mayúsculas y Minúsculas.</a>
+* <a href="#item6" style="text-decoration:none">Copiar ruta del Exploit al portapapeles.</a>
+* <a href="#item7" style="text-decoration:none">Excluir Resultados.</a>
+* <a href="#item8" style="text-decoration:none">Copiar Exploit al directorio actual.</a>
+* <a href="#item9" style="text-decoration:none">Examinar resultados de NMAP.</a>
 
 
 <a name="item1"></a>
@@ -59,13 +60,14 @@ El uso de la opción `-t` habilita el parámetro `título` para buscar un exploi
 del exploit como la ruta. La búsqueda de un exploit con un título específico da resultados rápidos y ordenados.
 
     searchsploit -t [Palabra a Buscar]
-    
+  
+<a name="item5"></a>
 ### Distinguir Mayúsculas y Minúsculas:
 
 Al usar la opción `–c`, se puede realizar una búsqueda que distingue entre mayúsculas y minúsculas. Esto permite descubrir la vulnerabilidad relacionada con la
 mención de caracteres específicos en el comando, de manera predeterminada hace una `búsqueda insensitive`.
 
-<a name="item5"></a>
+<a name="item6"></a>
 ### Copiar ruta del Exploit al portapapeles:
 
 Al emplear la opción `-p`, se muestra la ruta completa de un exploit. Esta opción proporciona más información relacionada con el exploit, así como también copia 
@@ -75,14 +77,14 @@ la ruta completa del exploit al portapapeles, todo lo que se necesita es presion
     
     searchsploit -p 39166
 
-<a name="item6"></a>
+<a name="item7"></a>
 ### Excluir Resultados:
 
 Al utilizar la opción `--exclude`, se habilita el parámetro de exclusión para eliminar los resultados no deseados dentro de la lista de exploits.
 
     searchsploit [Palabra a Buscar] -w --exclude="[Palabra Excluida]"
 
-<a name="item7"></a>
+<a name="item8"></a>
 ### Copiar Exploit al directorio actual:
 
 La opción `-m` copia un exploit en el directorio de trabajo actual. Esta opción proporciona la misma información que la anterior relacionada con el 
@@ -92,7 +94,7 @@ exploit, pero también copia la vulnerabilidad en tu directorio actual de trabaj
 
     searchsploit -m 39166
 
-<a name="item8"></a>
+<a name="item9"></a>
 ### Examinar resultados de NMAP:
 
 Como todos sabemos, Nmap tiene una característica muy notable que te permite guardar el resultado de salida en formato `.xml` y podemos identificar 
