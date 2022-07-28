@@ -3,17 +3,7 @@
 <center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png"></center>
 
 # Índice:
-* [1.1 ¿Qué es Python?](#item1)  
-* [1.2 Ventajas de programar en Python.](#item2)  
-* [1.3 Programas Necesarios para programar en Python.](#item3)  
-* [1.3.1 Interprete de Python.](#item4)  
-* [1.3.2 Editor de Código.](#item5) 
-* [1.4 Dinámica de trabajo.](#item6)
-* [2.1 Crear Nuestro Primer Programa: Hello World.](#item7)
-* [2.2 Tipos de Data en Python: Datatypes.](#item8)
-* [2.2.1 Variables](#item9)
-* [2.2.2 Listas](#item10)
-* [2.2.3 Función print()](#intem11)
+
 * <a href="#item1" style="text-decoration:none">1.1 ¿Qué es Python?</a>
 * <a href="#item2" style="text-decoration:none">1.2 Ventajas de programar en Python.</a>
 * <a href="#item3" style="text-decoration:none">1.3 Programas Necesarios para programar en Python.</a>
