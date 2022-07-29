@@ -51,7 +51,7 @@ De esta manera podremos revisar los puertos que estaban abiertos en cualquier mo
   
 `--open` : Solo nos mostrará puertos con el estatus abierto.
 
-`-sS` : El escaneo SYN realizar rápidamente, escaneando miles de puertos por segundo en una red rápida que no se ve obstaculizada por firewalls intrusivos.
+`-sS` : El escaneo SYN realizar rápida`-oG` : Exportar los resultados en formato grepeable.mente, escaneando miles de puertos por segundo en una red rápida que no se ve obstaculizada por firewalls intrusivos.
 
 `--min-rate` : Controla directamente la tasa de escaneo. Nmap intentará mantener la velocidad de envío en 5000 paquetes por segundo o más.
 
@@ -79,8 +79,16 @@ La sintaxis es muy simple, solo debemos añadir la oción `--script` delante del
 
 El script `http-enum` de Nmap actual como un fuzzer, aplicando un pequeño diccionario interno tratando de buscar directorios o archivos de interes.
 
-    nmap --script http-enum
+    nmap --script http-enum [Ip Víctima]
+    
+Tambien podemos especificar puertos y guardar los resultados en un archivo (en este caso `enumScan`).
 
+    nmap --script http-enum -p [Puerto/s] [Ip Víctima] -oG enumScan
+    
+`--script`: Especifica que vamos a utilizar un Script.   
+`-p`: Especifica los puertos que vamos a escanear.  
+`-oG`: Exportar los resultados en formato grepeable.  
+`enumScan`: Nombre del archivo donde se guardan los resultados.
 
 # Escalada de privilegios con Nmap:
 
