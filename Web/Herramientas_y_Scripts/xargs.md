@@ -1,39 +1,35 @@
-XARGS(1) Manual de Comandos Generales XARGS(1)
+# Manual de Comandos Generales XARGS
 
-NOMBRE         parte superior
-       xargs: crea y ejecuta líneas de comando desde la entrada estándar
-SINOPSIS         arriba
-       xargs [ opciones ] [ comando [ argumentos iniciales ]]
-DESCRIPCIÓN         parte superior
-       Esta página del manual documenta la versión GNU de xargs .  xargs lee
-       elementos de la entrada estándar, delimitados por espacios en blanco (que se pueden
-       protegido con comillas simples o dobles o una barra invertida) o
-       saltos de línea y ejecuta el comando (el valor predeterminado es echo ) uno o más
-       veces con cualquier argumento inicial seguido de elementos leídos de
-       entrada estándar. Las líneas en blanco en la entrada estándar se ignoran.
+# NOMBRE
 
-       La línea de comando para el comando se construye hasta que llega a un
-       límite definido por el sistema (a menos que se utilicen las opciones -n y -L ).El comando 
-       especificado se invocará tantas veces como sea necesario
-       para utilizar la lista de elementos de entrada. En general, habrá
-       muchas menos invocaciones de mando que elementos en el
-       aporte. Esto normalmente tendrá importantes beneficios de rendimiento.
-       Algunos comandos también se pueden ejecutar en paralelo; ver el
-       -Opción P.
+`xargs`: Crea y ejecuta líneas de comando desde la entrada estándar.
 
-       Debido a que los nombres de archivo de Unix pueden contener espacios en blanco y saltos de línea, este
-       el comportamiento predeterminado suele ser problemático; nombres de archivos que contienen
-       xargs procesa incorrectamente los espacios en blanco y/o las nuevas líneas . En
-       estas situaciones es mejor usar la opción -0 , que
-       previene este tipo de problemas. Al usar esta opción, deberá
-       asegúrese de que el programa que produce la entrada para xargs también
-       utiliza un carácter nulo como separador. Si ese programa es GNU
-       encuentre , por ejemplo, la opción -print0 hace esto por usted.
+# SINOPSIS   
 
-       Si alguna invocación del comando sale con un estado de 255,
-       xargs se detendrá inmediatamente sin leer más entradas.
-       Se emite un mensaje de error en stderr cuando esto sucede.
-OPCIONES         arriba
+xargs [opciones] [comando [argumentos]]
+       
+# DESCRIPCIÓN         
+       
+Esta página del manual documenta la versión GNU de `xargs`. Xargs lee elementos de la entrada estándar, delimitados por espacios en blanco (que se pueden
+protegido con comillas simples o dobles o una barra invertida) o saltos de línea y ejecuta el comando (el valor predeterminado es echo ) uno o más
+veces con cualquier argumento inicial seguido de elementos leídos de entrada estándar. Las líneas en blanco en la entrada estándar se ignoran.
+
+La línea de comando para el comando se construye hasta que llega a un límite definido por el sistema (a menos que se utilicen las opciones -n y -L ).El comando 
+especificado se invocará tantas veces como sea necesario para utilizar la lista de elementos de entrada. En general, habrá
+muchas menos invocaciones de mando que elementos en el aporte. Esto normalmente tendrá importantes beneficios de rendimiento.
+Algunos comandos también se pueden ejecutar en paralelo; Para ello se utiliza la opción `P`.
+
+Debido a que los nombres de archivo de Unix pueden contener espacios en blanco y saltos de línea, este el comportamiento predeterminado suele ser
+problemático; nombres de archivos que contienen xargs procesa incorrectamente los espacios en blanco y/o las nuevas líneas . En
+estas situaciones es mejor usar la opción `-0` , que previene este tipo de problemas. Al usar esta opción, deberá asegúrese de que el programa que produce
+la entrada para xargs también utiliza un carácter nulo como separador. Si ese programa es GNU encuentre, por ejemplo, la opción `-print0` hace esto por usted.
+
+Si alguna invocación del comando sale con un estado de 255, xargs se detendrá inmediatamente sin leer más entradas. Se emite un mensaje de error en 
+stderr cuando esto sucede.
+
+# OPCIONES    
+
+```
        -0, --null
               Los elementos de entrada terminan con un carácter nulo en lugar de
               por espacios en blanco, y las comillas y la barra invertida no son
@@ -194,3 +190,5 @@ OPCIONES         arriba
        La excepción a esta regla es que el valor especial max-args 1 
        (' -n 1 ') se ignora después de la opción --replace y sus alias -I 
        y -i , porque en realidad no entraría en conflicto.
+       
+       ```
