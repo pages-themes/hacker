@@ -11,7 +11,7 @@ de dispositivos, gestores y administradores de terminales, etc. En mi caso estoy
 * <a href="./Introducción_a_Linux/wc.html" style="text-decoration:none">Cómo ver el número de palabras, líneas y bytes de un archivo utilizando WC.</a>
 * <a href="../Articulos/BusquedaReporteArchivosLinux.html" style="text-decoration:none">Búsqueda y reconocimiento de archivos en Linux.</a>  
 
-Escalada Básica de Privilegios en Linux --> [Link](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)  
+Escalada Básica de Privilegios en Linux --> <a href="https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/" style="text-decoration:none">Link</a>
 
 # Dispositivos:
 
