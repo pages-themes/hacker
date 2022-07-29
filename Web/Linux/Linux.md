@@ -5,9 +5,9 @@ de dispositivos, gestores y administradores de terminales, etc. En mi caso estoy
 
 # Introducción a Linux:
 
-<a href="./Introducción_a_Linux/Introducción_a_Linux.html" style="text-decoration:none">¿Qué es Linux?</a>
-<a href="./Introducción_a_Linux/Comandos_básicos_Linux.html" style="text-decoration:none">Comandos Básicos en Linux.</a>
-<a href="./Introducción_a_Linux/find.html" style="text-decoration:none">Busqueda de Archivos utilizando `find` en Linux.</a>
+* <a href="./Introducción_a_Linux/Introducción_a_Linux.html" style="text-decoration:none">¿Qué es Linux?</a>
+* <a href="./Introducción_a_Linux/Comandos_básicos_Linux.html" style="text-decoration:none">Comandos Básicos en Linux.</a>
+* <a href="./Introducción_a_Linux/find.html" style="text-decoration:none">Busqueda de Archivos utilizando `find` en Linux.</a>
 
 * [¿Qué es Linux?](./Introducción_a_Linux/Introducción_a_Linux.html)  
 * [Comandos Básicos en Linux](./Introducción_a_Linux/Comandos_básicos_Linux.html)  
