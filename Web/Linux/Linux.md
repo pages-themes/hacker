@@ -8,12 +8,8 @@ de dispositivos, gestores y administradores de terminales, etc. En mi caso estoy
 * <a href="./Introducción_a_Linux/Introducción_a_Linux.html" style="text-decoration:none">¿Qué es Linux?</a>
 * <a href="./Introducción_a_Linux/Comandos_básicos_Linux.html" style="text-decoration:none">Comandos Básicos en Linux.</a>
 * <a href="./Introducción_a_Linux/find.html" style="text-decoration:none">Busqueda de Archivos utilizando `find` en Linux.</a>
-
-* [¿Qué es Linux?](./Introducción_a_Linux/Introducción_a_Linux.html)  
-* [Comandos Básicos en Linux](./Introducción_a_Linux/Comandos_básicos_Linux.html)  
-* [Busqueda de Archivos en Linux](./Introducción_a_Linux/find.html) 
 * <a href="./Introducción_a_Linux/wc.html" style="text-decoration:none">Cómo ver el número de palabras, líneas y bytes de un archivo utilizando WC.</a>
-* <a href="./Web/Articulos/BusquedaReporteArchivosLinux.html" style="text-decoration:none">Búsqueda y reconocimiento de archivos en Linux.</a>  
+* <a href="../Articulos/BusquedaReporteArchivosLinux.html" style="text-decoration:none">Búsqueda y reconocimiento de archivos en Linux.</a>  
 
 Escalada Básica de Privilegios en Linux --> [Link](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)  
 
