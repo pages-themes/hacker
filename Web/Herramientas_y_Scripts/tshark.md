@@ -15,7 +15,7 @@ scripts automatizados.
 
     tshark -i tun0 -Y "http" 2>/dev/null
     
-## Capturar paquetes http y exportalos a un archivo .cap:
+## Capturar paquetes http y guardar resultados en un archivo .cap:
 
     tshark -i tun0 -w Captura.cap 2>/dev/null
 
@@ -25,15 +25,15 @@ scripts automatizados.
     
 * Más información sobre `/dev/null` --> <a href="https://blog.desdelinux.net/que-es-devnull-y-como-puede-ayudarte/" style="text-decoration:none">Link</a>
 
-## Representar los resutados guardados de un análisis con Tshark:
+## Representar los resultados guardados de un análisis con Tshark:
 
-Ahora, los resultados han quedado guardados en el archivo Captura.cap, para poder representar los archivos sustituimos la opcions `-i` por `-r`:
+Ahora, los resultados han quedado guardados en el archivo Captura.cap, para poder representar los archivos sustituimos la opciones `-i` por `-r`:
 
     tshark -r Captura.cap 2>/dev/null
   
 ## Filtrar resultados guardados:
 
-Para filtrar y representar por pantalla los resultado guardados de un análisis con Tshark, utilizaremos la opcion  `-Y`:
+Para filtrar y representar por pantalla los resultados guardados de un análisis con Tshark, utilizaremos la opción  `-Y`:
 
    tshark -r Captura.cap -Y "[Palabra Filtrada]" 2>/dev/null
    
@@ -42,4 +42,32 @@ Para filtrar y representar por pantalla los resultado guardados de un análisis 
     tshark -r Captura.cap -Y "http" 2>/dev/null
     
 En este ejemplo, Tshark representará la información que contenga la palabra `http`.
+
+
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
+
 
