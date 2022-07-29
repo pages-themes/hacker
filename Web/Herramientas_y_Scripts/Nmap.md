@@ -4,7 +4,7 @@
 
 Nmap es un programa de código abierto que sirve para efectuar rastreo de puertos y cuyo desarrollo se encuentra hoy a cargo de una comunidad. Fue creado originalmente para Linux aunque actualmente es multiplataforma. Se usa para evaluar la seguridad de sistemas informáticos, así como para descubrir servicios o servidores en una red informática, para ello Nmap envía unos paquetes definidos a otros equipos y analiza sus respuestas.
 
-Este software posee varias funciones para sondear redes de computadores, incluyendo detección de equipos, servicios y sistemas operativos. Estas funciones son extensibles mediante el uso de scripts para proveer servicios de detección avanzados, detección de vulnerabilidades y otras aplicaciones. Además, durante un escaneo, es capaz de adaptarse a las condiciones de la red incluyendo latencia y congestión de la misma.
+Este software posee varias funciones para sondear redes de computadores, incluyendo detección de equipos, servicios y sistemas operativos. Estas funciones son extensibles mediante el uso de scripts para proveer servicios de detección avanzados, detección de vulnerabilidades y otras aplicaciones. Además, durante un escaneo, es capaz de adaptarse a las condiciones de la red, incluyendo latencia y congestión de la misma.
 
 ### Escaneo Básico:
 
@@ -14,7 +14,7 @@ Este software posee varias funciones para sondear redes de computadores, incluye
   
 `--open` : Solo nos mostrará puertos con el estatus abierto.
              
-`-T5` : Controla el tiempo y el rendimiento del escaneo donde 1 es el más lento  y 5 el más rápido.
+`-T5` : Controla el tiempo y el rendimiento del escaneo donde 1 es el más lento y 5 el más rápido.
              
 `-v` : Verbose. Recopila los puertos abiertos por TCP y los reporta por consola.
              
@@ -55,7 +55,7 @@ De esta manera podremos revisar los puertos que estaban abiertos en cualquier mo
 
 `--min-rate` : Controla directamente la tasa de escaneo. Nmap intentará mantener la velocidad de envío en 5000 paquetes por segundo o más.
 
-`-vvv` : Triple verbose. Recopila los puertos abiertos por TCP y los reporta por consola. Cuanto más verbose más información reporta mientras se realiza el escaneneo.
+`-vvv` : Triple verbose. Recopila los puertos abiertos por TCP y los reporta por consola. Cuanto más verbose más información reporta mientras se realiza el escaneo.
 
 `-n` : Anula la resolución DNS.
 
@@ -63,21 +63,21 @@ De esta manera podremos revisar los puertos que estaban abiertos en cualquier mo
 
 # Scripts específicos de Nmap:
 
-Nmap contiene un gran número de scripts de reconocimiento, para verlos podemos filtrar las categorias por la extensión `.nse`.
+Nmap contiene un gran número de scripts de reconocimiento, para verlos podemos filtrar las categorías por la extensión `.nse`.
 
     locate .nse
 
-Para ver el tipo de categoria de cada script de Nmap, podemos concatenar un `xargs`:
+Para ver el tipo de categoría de cada script de Nmap, podemos concatenar un `xargs`:
 
     locate .nse | xars grep "categories"
     
-La sintaxis es muy simple, solo debemos añadir la oción `--script` delante del script que queramos utilizar:
+La sintaxis es muy simple, solo debemos añadir la opción `--script` delante del script que queramos utilizar:
 
     nmap --script [Nombre del Script]
 
 ## Escaneo mediante el script http-enum:
 
-El script `http-enum` de Nmap actual como un fuzzer, aplicando un pequeño diccionario interno tratando de buscar directorios o archivos de interes.
+El script `http-enum` de Nmap actual como un fuzzer, aplicando un pequeño diccionario interno tratando de buscar directorios o archivos de interés.
 
     nmap --script http-enum [Ip Víctima]
     
@@ -95,7 +95,7 @@ Tambien podemos especificar puertos y guardar los resultados en un archivo (en e
 En multiples ocasiones, una vez realizada la intrusión en el sistema, veremos como algunos de los equipos o sistemas tienen `nmap` instalado. En caso de que los
 privilegios sean los adecuados, se pueden utilizar para ganar acceso como root.
 
-Para esto en primer lugar, debe de tratarse de una versión de nmap que contenga el parámetro `--interactive`. Ahora, mediante el comando `sudo -l` podemos ver los
+Para esto, en primer lugar, debe de tratarse de una versión de nmap que contenga el parámetro `--interactive`. Ahora, mediante el comando `sudo -l` podemos ver los
 permisos que tenemos como sudo:
 
     sudo -l
