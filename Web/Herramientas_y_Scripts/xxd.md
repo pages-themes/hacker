@@ -11,7 +11,7 @@ hexadecimal de nuevo a forma binaria.
     
 ![Captura de pantalla 2022-07-29 184955](https://user-images.githubusercontent.com/103068924/181807685-861a5bd8-9f82-411e-9be0-865c57a84fcf.png)
       
-Vemos como nos reporta una cadena en hexadeciaml. Para ver unicamente la cadena hexadecimal podemos añadir la opción `-ps`:
+Vemos como nos reporta una cadena en hexadecimal. Para ver únicamente la cadena hexadecimal podemos añadir la opción `-ps`:
 
     echo "[Texto]" | xxd -ps
 
