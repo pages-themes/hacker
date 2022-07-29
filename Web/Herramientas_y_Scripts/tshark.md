@@ -1,3 +1,13 @@
+# Tshark
+
+* <a href="#item1" style="text-decoration:none">¿Qué es Tshark?</a>
+* <a href="#item2" style="text-decoration:none">Capturar paquetes http.</a>
+* <a href="#item3" style="text-decoration:none">Capturar paquetes http y guardar resultados en un archivo `.cap`.</a>
+* <a href="#item4" style="text-decoration:none">Representar los resultados guardados de un análisis con Tshark.</a>
+* <a href="#item5" style="text-decoration:none">Filtrar resultados guardados.</a>
+
+
+<a name="item1"></a>
 # ¿Qué es Tshark?
   
 Thark es una herramienta para realizar análisis de protocolos. Se utiliza a través de línea de comandos. Todo el manejo tiene que realizarse
@@ -11,10 +21,12 @@ que es Wireshark, pero en línea de comandos. Esto quiere decir que las personas
 realizar las mismas tareas, pero sin tener que hacerlo a través de ventanas y botones. Lo que permite incluso utilizarlo o incorporarlo en
 scripts automatizados.
 
+<a name="item2"></a>
 ## Capturar paquetes http:
 
     tshark -i tun0 -Y "http" 2>/dev/null
-    
+
+<a name="item3"></a>
 ## Capturar paquetes http y guardar resultados en un archivo .cap:
 
     tshark -i tun0 -w Captura.cap 2>/dev/null
@@ -25,12 +37,14 @@ scripts automatizados.
     
 * Más información sobre `/dev/null` --> <a href="https://blog.desdelinux.net/que-es-devnull-y-como-puede-ayudarte/" style="text-decoration:none">Link</a>
 
+<a name="item4"></a>
 ## Representar los resultados guardados de un análisis con Tshark:
 
 Ahora, los resultados han quedado guardados en el archivo Captura.cap, para poder representar los archivos sustituimos la opciones `-i` por `-r`:
 
     tshark -r Captura.cap 2>/dev/null
-  
+
+<a name="item5"></a>
 ## Filtrar resultados guardados:
 
 Para filtrar y representar por pantalla los resultados guardados de un análisis con Tshark, utilizaremos la opción  `-Y`:
