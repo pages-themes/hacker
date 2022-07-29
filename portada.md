@@ -13,7 +13,8 @@
 * <a href="./Web/Linux/Programas_para_Linux/Ventoy.html" style="text-decoration:none">Bootear USB en Linux con Ventoy.</a>
 * <a href="./Web/Articulos/BusquedaReporteArchivosLinux.html" style="text-decoration:none">Búsqueda y reconocimiento de archivos en Linux.</a>
 * <a href="./Web/Linux/GnomeTwitch.html" style="text-decoration:none">Instalación de Twitch en Linux mediante Flatpak.</a>
-* <a href="./Web/Articulos/codigoFuenteTerminal.html" style="text-decoration:none">Como ver el código fuente de una página web desde la terminal.</a>
+* <a href="./Web/Articulos/codigoFuenteTerminal.html" style="text-decoration:none">Cómo ver el código fuente de una página web desde la terminal.</a>
+* <a href="./Web/Herramientas_y_Scripts/xxd.html" style="text-decoration:none">Cómo codificar y descodificar texto en hexadecimal con xxd.</a>
 * <a href="./Web/Articulos/BufferOverflow.html" style="text-decoration:none">Buffer Overflow.</a>  
   
 ---    
@@ -60,6 +61,7 @@ van a estar definidas para poder entender el contenido del mensaje. A diferencia
 que está relacionado con el significado del mensaje.
 
 * <a href="./Web/Articulos/base64.html" style="text-decoration:none">Base64</a>
+* <a href="./Web/Herramientas_y_Scripts/xxd.html" style="text-decoration:none">Hexadecimal con xxd.</a>
 * Páginas para Codificar o Descodificar código en Base64 --> <a href="https://www.base64decode.org/" style="text-decoration:none"> Link </a>
 
 ## Cifrados
