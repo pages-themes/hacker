@@ -23,7 +23,7 @@ Vemos como nos reporta una cadena en hexadecimal. Para ver únicamente la cadena
 
 Para pasar de hexadecimal a texto plano utilizaremos la opción `-r` para el cambio y `-ps` para mostrar el texto por consola.
 
-   echo "486f6c61204d756e646f0a" | xxd -ps -r
+    echo "486f6c61204d756e646f0a" | xxd -ps -r
 
 ![Captura de pantalla 2022-07-29 185105](https://user-images.githubusercontent.com/103068924/181807787-f9b4db41-ad04-4cd1-b395-256e2ec819cb.png)
 
