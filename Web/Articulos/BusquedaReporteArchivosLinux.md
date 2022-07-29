@@ -3,7 +3,13 @@
 En el siguiente artículo vamos a ver distintas formas de como buscar archivos y como reportar la información de los mismos. Utilizaremos distintas
 herramientas y diferentes formas de representación de la data.
 
-# Locate
+* <a href="#item1" style="text-decoration:none">Búsque de archivos con Locate.</a>
+* <a href="#item2" style="text-decoration:none">Buscar archivos por su extensión con Locate en Linux.</a>
+* <a href="#item3" style="text-decoration:none">Listar por Categorías los Scripts de Nmap.</a>
+* <a href="#item4" style="text-decoration:none">Ver únicamente las categorías de Nmap.</a>
+
+<a name="item1"></a>
+# Búsque de archivos con Locate:
 
 La primera que vamos a ver para buscar archivos en linux es `locate`. Esta herramienta nos permite realizar búsquedas de archivos usando distintos
 parámetros. Posteriormente, podremos filtrar sus resultados empleando otras herramientas como `xargs`, `wc`, etc.
@@ -19,6 +25,7 @@ La sintaxis es muy simple, el comando seguido del archivo que vamos a buscar:
     locate home
     locate users
 
+<a name="item2"></a>
 ## Buscar archivos por su extensión con Locate en Linux:
 Podemos buscar por extensiones:
  
@@ -28,7 +35,8 @@ Podemos buscar por extensiones:
 
     locate .jpg
     locate .txt
-    
+
+<a name="item3"></a>
 ## Listar por Categorías los Scripts de Nmap:
 
 Vamos a ver como listar por `Categorías` los Scripts de un programa, en este caso, como ejemplo, usaremos `Nmap`. Para ello vamos a usar la herramienta
@@ -43,6 +51,7 @@ correspondientes a cada script encontrado con `locate`.
    
 Vemos como a la derecha nos reporta entre corchetes las `categorías` a las que corresponde cada script de Nmap.
 
+<a name="item4"></a>
 ### Ver únicamente las categorías de Nmap:
 
 Ahora vamos a quitar todo el ruido de fondo y únicamente vamos a filtrar los tipos de categorías que existen. Para ello vamos a usar otra vez el 
