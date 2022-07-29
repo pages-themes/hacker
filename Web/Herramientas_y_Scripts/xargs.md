@@ -1,14 +1,14 @@
 # Manual de Comandos Generales XARGS
 
-# NOMBRE
+## NOMBRE
 
 `xargs`: Crea y ejecuta líneas de comando desde la entrada estándar.
 
-# SINOPSIS   
+## SINOPSIS   
 
 xargs [opciones] [comando [argumentos]]
        
-# DESCRIPCIÓN         
+## DESCRIPCIÓN         
        
 Esta página del manual documenta la versión GNU de `xargs`. Xargs lee elementos de la entrada estándar, delimitados por espacios en blanco (que se pueden
 protegido con comillas simples o dobles o una barra invertida) o saltos de línea y ejecuta el comando (el valor predeterminado es echo ) uno o más
@@ -27,7 +27,7 @@ la entrada para xargs también utiliza un carácter nulo como separador. Si ese 
 Si alguna invocación del comando sale con un estado de 255, xargs se detendrá inmediatamente sin leer más entradas. Se emite un mensaje de error en 
 stderr cuando esto sucede.
 
-# OPCIONES    
+## OPCIONES    
 
 ```
        -0, --null
