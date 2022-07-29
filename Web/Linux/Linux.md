@@ -8,7 +8,7 @@ de dispositivos, gestores y administradores de terminales, etc. En mi caso estoy
 * <a href="./Introducción_a_Linux/Introducción_a_Linux.html" style="text-decoration:none">¿Qué es Linux?</a>
 * <a href="./Introducción_a_Linux/Comandos_básicos_Linux.html" style="text-decoration:none">Comandos Básicos en Linux.</a>
 * <a href="./Introducción_a_Linux/find.html" style="text-decoration:none">Búsqueda de Archivos utilizando `Find` en Linux.</a>
-* <a href="../Herramientas_y_Scripts/xargs.html" style="text-decoration:none">Manual de Comandos Generale de la herramienta `Xargs</a>
+* <a href="../Herramientas_y_Scripts/xargs.html" style="text-decoration:none">Manual de Comandos Generale de la herramienta `Xargs`</a>
 * <a href="./Introducción_a_Linux/wc.html" style="text-decoration:none">Cómo ver el número de palabras, líneas y bytes de un archivo utilizando WC.</a>
 * <a href="../Articulos/BusquedaReporteArchivosLinux.html" style="text-decoration:none">Búsqueda y reconocimiento exhaustivo de archivos en Linux.</a>  
 
