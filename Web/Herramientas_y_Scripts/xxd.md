@@ -1,4 +1,4 @@
-# Como codificar y descodificar texto en hexadecimal con xxd.
+# Cómo codificar y descodificar texto en hexadecimal con xxd.
 
 El comando xxd en Linux puede convertir un archivo dado o una entrada estándar en forma hexadecimal, y también puede convertir
 hexadecimal de nuevo a forma binaria.
