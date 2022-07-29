@@ -5,7 +5,8 @@
 * <a href="#item3" style="text-decoration:none">Capturar paquetes http y guardar resultados en un archivo `.cap`.</a>
 * <a href="#item4" style="text-decoration:none">Representar los resultados guardados de un análisis con Tshark.</a>
 * <a href="#item5" style="text-decoration:none">Filtrar resultados guardados.</a>
-
+* <a href="#item6" style="text-decoration:none">Ver atributos de un paquete.</a>
+* <a href="#item7" style="text-decoration:none">Filtrar por campos que contenga el archivo.</a>
 
 <a name="item1"></a>
 # ¿Qué es Tshark?
@@ -56,6 +57,21 @@ Para filtrar y representar por pantalla los resultados guardados de un análisis
     tshark -r Captura.cap -Y "http" 2>/dev/null
     
 En este ejemplo, Tshark representará la información que contenga la palabra `http`.
+
+<a name="item6"></a>
+## Ver atributos de un paquete:
+
+Utilizando la opción `-Tjson` podremos ver por cada paquete filtrado pro la palabra `http` todos sus atributos en `json`.
+
+   tshark -r Captura.cap -Y "http" -Tjson 2>/dev/null
+
+<a name="item7"></a> <a name="item5"></a>  
+## Filtrar por campos que contenga el archivo:
+
+En el siguiente ejemplo vamos a ver como extraer toda la data en hexadecimal de un campo especifico. En este caso Tshark mediante la opción
+`-Tfields` especifica que queremos exportar un campo y `data.data` es el campo que queremos exportar.  
+
+   tshark -r  Captura.cap -Y "http" -Tfields -e "data.data" 2>/dev/null
 
 
 ---
