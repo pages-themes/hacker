@@ -1,11 +1,25 @@
+# NMAP
+
+* <a href="#item1" style="text-decoration:none">¿Qué es NMAP?</a>
+* <a href="#item2" style="text-decoration:none">Escaneo Básico</a>
+* <a href="#item3" style="text-decoration:none">Escaneo Básico Guardando los resultados</a>
+* <a href="#item4" style="text-decoration:none">Escaneo exahustivo de Puertos definidos.</a>
+* <a href="#item5" style="text-decoration:none">Escaneo Rápido Completo.</a>
+* <a href="#item6" style="text-decoration:none">Scripts específicos de Nmap</a>
+* <a href="#item7" style="text-decoration:none">Escaneo mediante el script http-enum.</a>
+* <a href="#item8" style="text-decoration:none">Escalada de privilegios con Nmap.</a>
+
+
 <center><img src="https://user-images.githubusercontent.com/103068924/172614528-6ceb9b92-6089-4530-8c16-1dabf3c33b8f.png"></center>
 
-# NMAP
+<a name="item1"></a>
+# ¿Qué es NMAP?
 
 Nmap es un programa de código abierto que sirve para efectuar rastreo de puertos y cuyo desarrollo se encuentra hoy a cargo de una comunidad. Fue creado originalmente para Linux aunque actualmente es multiplataforma. Se usa para evaluar la seguridad de sistemas informáticos, así como para descubrir servicios o servidores en una red informática, para ello Nmap envía unos paquetes definidos a otros equipos y analiza sus respuestas.
 
 Este software posee varias funciones para sondear redes de computadores, incluyendo detección de equipos, servicios y sistemas operativos. Estas funciones son extensibles mediante el uso de scripts para proveer servicios de detección avanzados, detección de vulnerabilidades y otras aplicaciones. Además, durante un escaneo, es capaz de adaptarse a las condiciones de la red, incluyendo latencia y congestión de la misma.
 
+<a name="item2"></a>
 ### Escaneo Básico:
 
     nmap -p- --open -T5 -v -n [Ip]
@@ -20,7 +34,7 @@ Este software posee varias funciones para sondear redes de computadores, incluye
              
 `-n` : Anula la resolución DNS.
   
-  
+ <a name="item3"></a> 
 ### Escaneo Básico Guardando los resultados:
   
     nmap -p- --open -T5 -v -n [Ip] -oG allPorts
@@ -31,6 +45,7 @@ Este software posee varias funciones para sondear redes de computadores, incluye
   
 De esta manera podremos revisar los puertos que estaban abiertos en cualquier momento.
 
+<a name="item4"></a>
 ### Escaneo exahustivo de Puertos definidos:
 
     nmap -sC -sV -n -v -p[Port1,Port2] [Ip Víctima] -oN targed  
@@ -43,6 +58,7 @@ De esta manera podremos revisar los puertos que estaban abiertos en cualquier mo
  
 `-oN` : Reporta los resultados en formato nmap al archivo `targed`.
 
+<a name="item5"></a>
 ### Escaneo Rápido Completo:
 
     nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn [Ip Vícitma] -oG allPorts
@@ -61,6 +77,7 @@ De esta manera podremos revisar los puertos que estaban abiertos en cualquier mo
 
 `-Pn` : Omite el descubrimiento de Hosts.
 
+<a name="item6"></a>
 # Scripts específicos de Nmap:
 
 Nmap contiene un gran número de scripts de reconocimiento, para verlos podemos filtrar las categorías por la extensión `.nse`.
@@ -75,6 +92,7 @@ La sintaxis es muy simple, solo debemos añadir la opción `--script` delante de
 
     nmap --script [Nombre del Script]
 
+<a name="item7"></a>
 ## Escaneo mediante el script http-enum:
 
 El script `http-enum` de Nmap actual como un fuzzer, aplicando un pequeño diccionario interno tratando de buscar directorios o archivos de interés.
@@ -90,6 +108,7 @@ Tambien podemos especificar puertos y guardar los resultados en un archivo (en e
 `-oG`: Exportar los resultados en formato grepeable.  
 `enumScan`: Nombre del archivo donde se guardan los resultados.
 
+<a name="item8"></a>
 # Escalada de privilegios con Nmap:
 
 En multiples ocasiones, una vez realizada la intrusión en el sistema, veremos como algunos de los equipos o sistemas tienen `nmap` instalado. En caso de que los
