@@ -61,6 +61,26 @@ De esta manera podremos revisar los puertos que estaban abiertos en cualquier mo
 
 `-Pn` : Omite el descubrimiento de Hosts.
 
+# Scripts específicos de Nmap:
+
+Nmap contiene un gran número de scripts de reconocimiento, para verlos podemos filtrar las categorias por la extensión `.nse`.
+
+    locate .nse
+
+Para ver el tipo de categoria de cada script de Nmap, podemos concatenar un `xargs`:
+
+    locate .nse | xars grep "categories"
+    
+La sintaxis es muy simple, solo debemos añadir la oción `--script` delante del script que queramos utilizar:
+
+    nmap --script [Nombre del Script]
+
+## Escaneo mediante el script http-enum:
+
+El script `http-enum` de Nmap actual como un fuzzer, aplicando un pequeño diccionario interno tratando de buscar directorios o archivos de interes.
+
+    nmap --script http-enum
+
 
 # Escalada de privilegios con Nmap:
 
