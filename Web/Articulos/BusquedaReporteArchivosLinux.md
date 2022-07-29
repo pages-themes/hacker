@@ -3,13 +3,13 @@
 En el siguiente artículo vamos a ver distintas formas de como buscar archivos y como reportar la información de los mismos. Utilizaremos distintas
 herramientas y diferentes formas de representación de la data.
 
-* <a href="#item1" style="text-decoration:none">Búsque de archivos con Locate.</a>
+* <a href="#item1" style="text-decoration:none">Búsqueda de archivos con Locate.</a>
 * <a href="#item2" style="text-decoration:none">Buscar archivos por su extensión con Locate en Linux.</a>
 * <a href="#item3" style="text-decoration:none">Listar por Categorías los Scripts de Nmap.</a>
 * <a href="#item4" style="text-decoration:none">Ver únicamente las categorías de Nmap.</a>
 
 <a name="item1"></a>
-# Búsque de archivos con Locate:
+# Búsqueda de archivos con Locate:
 
 La primera que vamos a ver para buscar archivos en linux es `locate`. Esta herramienta nos permite realizar búsquedas de archivos usando distintos
 parámetros. Posteriormente, podremos filtrar sus resultados empleando otras herramientas como `xargs`, `wc`, etc.
