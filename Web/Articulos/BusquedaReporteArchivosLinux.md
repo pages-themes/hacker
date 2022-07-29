@@ -1,12 +1,12 @@
 # Búsqueda y reporte de archivos en Linux.
 
-En el siguiente artíuculo vamos a ver distintas formas de como buscar archivos y como reportar la información de los mismos. Utilizaremos distintas
+En el siguiente artículo vamos a ver distintas formas de como buscar archivos y como reportar la información de los mismos. Utilizaremos distintas
 herramientas y diferentes formas de representación de la data.
 
 # Locate
 
-La primera que vamos a ver para buscar archivos en linux es `locate`. Esta herramientas nos permite realizar busquedas de archivos utilizando dintintos
-parametros. Posteriormente, podremos filtrar sus resultados utilizando otras herramientas como `xargs`, `wc`, etc.
+La primera que vamos a ver para buscar archivos en linux es `locate`. Esta herramienta nos permite realizar búsquedas de archivos usando distintos
+parámetros. Posteriormente, podremos filtrar sus resultados empleando otras herramientas como `xargs`, `wc`, etc.
 
 ## Buscar archivos por su nombre con Locate en Linux:
 
@@ -29,7 +29,60 @@ Podemos buscar por extensiones:
     locate .jpg
     locate .txt
     
-# Listar por Categorias los Scripts de un programa:
+## Listar por Categorías los Scripts de Nmap:
+
+Vamos a ver como listar por `Categorías` los Scripts de un programa, en este caso, como ejemplo, usaremos `Nmap`. Para ello vamos a usar la herramienta
+`locate` para buscar por extensiones, ya que todos los scripts de Nmap contienen la extensión `.nse`.
+
+    locate .nse
+    
+Ahora, concatenando un `xargs`, vamos a ejecutar un `grep` y le especificamos el argumento `"categories"`, de esta manera xargs nos listará las categorias 
+correspondientes a cada script encontrado con `locate`.
+
+   locate .nse | xargs grep "categories"
+   
+Vemos como a la derecha nos reporta entre corchetes las `categorías` a las que corresponde cada script de Nmap.
+
+### Ver únicamente las categorías de Nmap:
+
+Ahora vamos a quitar todo el ruido de fondo y únicamente vamos a filtrar los tipos de categorías que existen. Para ello vamos a usar otra vez el 
+comando `grep` para crear una expresión regular `-oP` que nos permita capturar la data `".*?"` que existe entre el doble comillado.
+
+    locate .nse | xargs grep "categories" | grep -oP '".*?"'
+
+Vemos como ya nos reporta únicamente las categorías, pero algunas se muestran repetidas, para evitar esto, podemos utilizar la herramienta `sort` seguida de
+la opción `-u`:
+
+    locate .nse | xargs grep "categories" | grep -oP '".*?"' | sort -u
+    
+Vemos como ya nos muestra las categorías de una forma más limpia y sin repeticiones.    
+
+
+---
+---
+  
+    
+<html lang="en">
+<head>
+  
+</head>
+<body>
+
+<script src="https://utteranc.es/client.js"
+    repo="F1r0x/gestion-comentarios"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+          
+    
+  </body>
+</html>
+  
+  
+---
+---
 
 
 
