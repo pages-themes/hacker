@@ -14,7 +14,7 @@ Whatweb puede recolectar información como:
 * Dirección IP o País.
 * Plataforma de servidor web y mucho más.
 
-Whatweb utiliza tanto el escaneo activo como el pasivo. El escaneo activo extrae más profundamente con varios tipos de tecnologías, pero la exploración
+Whatweb emplea tanto el escaneo activo como el pasivo. El escaneo activo extrae más profundamente con varios tipos de tecnologías, pero la exploración
 pasiva simplemente extrae datos de los encabezados HTTP.
 
 La sintaxis es muy simple, el comando seguido de la dirección web:
@@ -56,5 +56,4 @@ La sintaxis es muy simple, el comando seguido de la dirección web:
   
 ---
 ---
-
 
