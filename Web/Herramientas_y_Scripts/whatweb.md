@@ -33,6 +33,11 @@ La sintaxis es muy simple, el comando seguido de la dirección web:
     
 ![Captura de pantalla 2022-07-30 144558](https://user-images.githubusercontent.com/103068924/181914969-7f2848b8-8574-4687-9206-962bfd7cadb8.png)
 
+Para reportar un poco más de información podemos añadir la opción `-v`:
+
+    whatweb -v [Dirección web]
+
+* `-v`: Análisis detallado explora el sitio web con mayor profundidad para que se pueda utilizar más información en el análisis del sitio web.
     
 ---
 ---
