@@ -32,6 +32,23 @@ Para poder introducir la contraseña junto con el nombre de usuario para iniciar
  Aquí, la contraseña se proporciona en la línea de comando, que es prácticamente insegura y no se recomienda usar esta opción.
 
 
+# Incluir contraseña guardada en un archivo con SSHPASS:
+
+También podemos utilizar la opción `-f` y poner la contraseña en un archivo. De esta manera, puede leer la contraseña del archivo de la siguiente manera:
+ 
+    sshpass -f [ArchivoConLaContraseña] ssh usuario@[Dirección_Ip] 
+    
+
+# Evitar mostrar la contraseña por pantalla con SSHPASS:
+
+Para evitar mostrar la contraseña en la pantalla, puede usar la -ebandera e ingresar la contraseña como un valor de la variable de entorno `SSHPASS`
+como se muestra a continuación:
+
+    exportar SSHPASS= 'Mi_Contraseña'
+    echo $SSHPASS
+    sshpass -e ssh usuario@[Dirección_Ip]  
+
+La variable de entorno `SSHPASS` es solo para fines temporales y se eliminará durante el reinicio.
     
 ---
 ---
