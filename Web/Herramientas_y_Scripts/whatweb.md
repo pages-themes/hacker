@@ -31,6 +31,9 @@ La sintaxis es muy simple, el comando seguido de la dirección web:
     
     whatweb https://10.10.10.10:8080
     
+![Captura de pantalla 2022-07-30 144558](https://user-images.githubusercontent.com/103068924/181914969-7f2848b8-8574-4687-9206-962bfd7cadb8.png)
+
+    
 ---
 ---
   
