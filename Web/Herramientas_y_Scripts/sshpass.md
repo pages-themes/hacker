@@ -1,17 +1,17 @@
 # SSHPASS
 
-`Sshpass` es una herramienta de líneas de comandos que nos permite proporcioonar una contraseña junto con el nombre de usuario de `SSH`.
+`Sshpass` es una herramienta de líneas de comandos que nos permite proporcionar una contraseña junto con el nombre de usuario de `SSH`.
 
 Ssh usa el acceso TTY directo para asegurarse de que la contraseña realmente la proporcione un usuario de teclado interactivo. Sshpass ejecuta ssh en 
-un tty dedicado, lo engañapara que crea que está recibiendo la contraseña de un usuario interactivo.
+un tty dedicado, lo engaña para que crea que está recibiendo la contraseña de un usuario interactivo.
 
 El uso de sshpass se considera menos seguro, ya que revela la contraseña a todos los usuarios del sistema en la línea de comandos con el simple comando `ps` .
 Es mucho más seguro utilizar la autenticación sin contraseña previa SSH.
 
 # Instalar SSHPASS:
 
-Normalmente Sshpass suele venir instalado de serie en sistemas preparados para el pentesting como Kali o Parrot, para instalar la herramienta simplemente
-ejecutar el siguiete comando en la terminal (Esto es valido para sistemas basados en Debian): 
+Normalmente, Sshpass suele venir instalado de serie en sistemas preparados para el pentesting como Kali o Parrot, para instalar la herramienta simplemente
+ejecutar el siguiete comando en la terminal (Esto es válido para sistemas basados en Debian): 
 
     sudo apt install sshpass
 
@@ -58,7 +58,6 @@ Para poder introducir la contraseña junto con el nombre de usuario para iniciar
   
 ---
 ---
-
 
 
 
