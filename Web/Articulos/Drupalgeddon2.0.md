@@ -1,0 +1,20 @@
+# Drupalgeddon 2.0 (CVE-2018–7600)
+
+## ¿Qué es Drupalggeddon 2.0?
+
+Se conoce como `Drupalgeddon 2.0` o `CVE-2018–7600` a una vulnerabilidad catalogada como altamente crítica que afecta a todas las versiones
+de las ramas 6, 7 y 8 del gestor de contenidos `Drupal` y permite la ejecución de código remoto en el servidor que lo aloja.
+
+Ya en 2014 se dio el primer Drupalgeddon, de ahí el 2.0. Es especialmente grave porque afecta a todas las versiones actuales de Drupal y su publicación se
+hizo antes del parche que lo corrigiera, algo que normalmente no suele ocurrir. De hecho, inicialmente se publicó un parche que ha resultado no ser suficiente
+y ha tenido que volver a ser parcheado. En palabras del propio grupo de seguridad de Drupal, el alcance es de más de un millón de sitios web 
+vulnerables, y supone el 9% del total de páginas web conocidas que usan un CMS.
+
+## ¿Cómo actua Drupalgeddon 2.0?
+
+La causa principal de esta vulnerabilidad está relacionada con el sistema de representación de temas de Drupal. Para crear todos los elementos de la interfaz
+de usuario, Drupal utiliza `Form API`, una poderosa herramienta que permite a los desarrolladores crear formularios y manejar los envíos de formularios de 
+forma rápida y sencilla. Para lograr esto, la API utiliza una matriz asociativa jerárquica `Render Array` que contiene los datos que se renderizarán, así como 
+algunas propiedades que establecen cómo se deben renderizar los datos.
+
+* Para más información tecnica sobre su funciopnamiento: <a href="https://michaelkoczwara.medium.com/drupalgeddon-2-b16c3095ae18" style="text-decoration:none">Link</a>
