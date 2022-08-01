@@ -12,6 +12,8 @@ Podemos probar distintas líneas de comando en los campos de escritura para trat
 
 
     1' or 1=1-- -
+    
+    ' or ''='
 
 
 Otra forma es tratar de ver si hay un retraso en la respuesta (en este caso de 5 segundos) con el siguiente comando, para asegurarnos debemos probar con
