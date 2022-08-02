@@ -36,7 +36,7 @@ Herramientas útiles para la fase de reconocimiento, como reportes de SO o recop
 Programas y herramientas para crear accesos remotos y shells inversas con otros equipos.
 
 * <a href="./Web/Articulos/SSH.html" style="text-decoration:none">SSH</a>
-* <a href="./Web/Herramientas_y_Scripts/SSHPASS.html" style="text-decoration:none">SSHPASS</a> 
+* <a href="./Web/Herramientas_y_Scripts/sshpass.html" style="text-decoration:none">SSHPASS</a> 
 * <a href="./Web/Articulos/Telnet.html" style="text-decoration:none">Telnet</a>  
 * <a href="./Web/Herramientas_y_Scripts/php-reverse-shell.html" style="text-decoration:none">PHP Reverse Shell</a>
 * <a href="./Web/Herramientas_y_Scripts/bash-reverse-shell.html" style="text-decoration:none">Bash Revesrse Shell</a>
