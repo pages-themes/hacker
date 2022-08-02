@@ -117,7 +117,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
 * EXPLOIT de Escalada de Privilegios Vulnerando `pkexec` --> <a href="https://github.com/berdav/CVE-2021-4034" style="text-decoration:none">Link</a>  
 * Páginas para Codificar o Descodificar código en Base64 --> <a href="https://www.base64decode.org/" style="text-decoration:none"> Link </a>     
 * Páginas para Inyección de Cargas Útiles XSS --> <a href="https://webhook.site" style="text-decoration:none"> Link </a>
-* PAYLOADS ALL THE THINGS: Recopilacion de Payloads y todo tipo de inyecciones --> <a href="https://github.com/swisskyrepo/PayloadsAllTheThings" style="text-decoration:none"> Link </a>
+* PAYLOADS ALL THE THINGS: Recopilación de Payloads y todo tipo de inyecciones --> <a href="https://github.com/swisskyrepo/PayloadsAllTheThings" style="text-decoration:none"> Link </a>
 
 
 ---
