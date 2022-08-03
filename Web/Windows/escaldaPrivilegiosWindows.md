@@ -21,6 +21,9 @@ Para poder ver los privilegios que tiene nuestro usuario sobre un directorio o a
     
     icacls user.txt
     
+![Captura de pantalla 2022-08-03 114112](https://user-images.githubusercontent.com/103068924/182577852-18696ff2-9eeb-4bae-b23e-367931f1bbda.png)
+
+    
 En caso de tener privilegios full `F` de algún archivo, lo podremos modificar para darnos permisos y de esta forma interactuar con un archivo con el que antes
 no nos estaba permitido.
 
@@ -36,9 +39,11 @@ Para aplicar estos privilegios a un archivo y poder leerlo e interactuar con él
 `Ejemplo:`
 
 
-    icacls root.txt /grant John:F
+    icacls root.txt /grant Alfred:F
     
 `F`: Nos indica los máximos privilegios.
+
+![Captura de pantalla 2022-08-03 114143](https://user-images.githubusercontent.com/103068924/182577927-775e56c8-47fe-4f52-9543-2bea2d6eac20.png)
 
 
 ---
