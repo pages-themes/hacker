@@ -1,6 +1,7 @@
 # Terminal de Windows
 
 * <a href="../Web/Windows/Administrar_Usuarios_y_Permisos.html" style="text-decoration:none">Administrar Usuarios y Permisos</a>
+* <a href="../Web/Windows/escaldaPrivilegiosWindows.html" style="text-decoration:none">Escalada de Privilegiso en Windows.</a>
 
 ---
 ---
