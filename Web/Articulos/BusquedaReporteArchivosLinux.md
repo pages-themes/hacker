@@ -63,7 +63,7 @@ Ahora, concatenando un `xargs`, vamos a ejecutar un `grep` y le especificamos el
 correspondientes a cada script encontrado con `locate`.
 
 
-   locate .nse | xargs grep "categories"
+    locate .nse | xargs grep "categories"
    
 * `grep "categories"`: Exporta las categorías de los archivos listados.   
    
