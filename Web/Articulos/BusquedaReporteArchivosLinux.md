@@ -56,7 +56,9 @@ Vamos a ver como listar por `Categorías` los Scripts de un programa, en este ca
 
 
     locate .nse
-    
+
+![Captura de pantalla 2022-08-03 111544](https://user-images.githubusercontent.com/103068924/182572366-80a051ab-6d86-4421-a9d6-bcdddb923d4c.png)
+
 Ahora, concatenando un `xargs`, vamos a ejecutar un `grep` y le especificamos el argumento `"categories"`, de esta manera xargs nos listará las categorias 
 correspondientes a cada script encontrado con `locate`.
 
@@ -67,6 +69,7 @@ correspondientes a cada script encontrado con `locate`.
    
 Vemos como a la derecha nos reporta entre corchetes las `categorías` a las que corresponde cada script de Nmap.
 
+![Captura de pantalla 2022-08-03 111456](https://user-images.githubusercontent.com/103068924/182572406-6aa5ff15-fb7b-4527-85ed-6c2789fb082c.png)
 
 <a name="item4"></a>
 ### Ver únicamente las categorías de Nmap:
@@ -81,6 +84,7 @@ comando `grep` para crear una expresión regular `-oP` que nos permita capturar 
 * `-oP '".*?"'`: Exporta la `data` que hay entre el comillado de las categorías listadas. `-oP ''`
 * `.*?`: Es como se representa la `data`.     
 
+![Captura de pantalla 2022-08-03 111402](https://user-images.githubusercontent.com/103068924/182572468-9c690deb-3104-4cb8-84e9-f8ba15d10de3.png)
 
 Vemos como ya nos reporta únicamente las categorías, pero algunas se muestran repetidas, para evitar esto, podemos utilizar la herramienta `sort` seguida de
 la opción `-u`:
