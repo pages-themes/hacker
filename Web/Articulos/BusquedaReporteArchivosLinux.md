@@ -92,6 +92,7 @@ la opción `-u`:
     
 Vemos como ya nos muestra las categorías de una forma más limpia y sin repeticiones.    
 
+![Captura de pantalla 2022-08-03 110200](https://user-images.githubusercontent.com/103068924/182570993-152f9063-5315-4a58-bb3a-30226b0e9e7c.png)
 
 
 
