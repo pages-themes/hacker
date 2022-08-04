@@ -113,9 +113,13 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 * <a href="./Web/Herramientas_y_Scripts/SQLmap.html" style="text-decoration:none">SQLmap</a>
 
+---
+
 # Escalada de Privilegios en Linux:
 
 * <a href="./Exploit/DirtyCow/DirtyCow.html" style="text-decoration:none">Dirty Cow (Versión de Kernel Vulnerable 2.6.22 > 3.9)</a>
+
+---
 
 # Links de Interés: 
 
