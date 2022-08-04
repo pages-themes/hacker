@@ -101,7 +101,8 @@ un comportamiento no deseado o imprevisto en el software, el hardware o algo ele
 incluye cosas como obtener el control de un sistema informático, permitir la escalada de privilegios o un ataque de denegación de servicio.
 
 * <a href="./Web/Herramientas_y_Scripts/searchSploit.html" style="text-decoration:none">SearchSploit</a>  
-* <a href="./Web/Herramientas_y_Scripts/Metasploit.html" style="text-decoration:none">Metasploit</a> 
+* <a href="./Web/Herramientas_y_Scripts/Metasploit.html" style="text-decoration:none">Metasploit</a>
+* <a href="./Exploit/DirtyCow/dirty.c" style="text-decoration:none">dirty.c</a> 
 
 ## WordPress:
 Escaneo de vulnerabilidades en páginas WordPress.
