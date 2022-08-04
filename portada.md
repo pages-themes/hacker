@@ -16,7 +16,8 @@
 * <a href="./Web/Articulos/codigoFuenteTerminal.html" style="text-decoration:none">Cómo ver el código fuente de una página web desde la terminal.</a>
 * <a href="./Web/Herramientas_y_Scripts/xxd.html" style="text-decoration:none">Cómo codificar y descodificar texto en hexadecimal con xxd.</a>
 * <a href="./Web/Articulos/SQLinjection.html" style="text-decoration:none">SQL Injection</a> 
-* <a href="./Web/Articulos/BufferOverflow.html" style="text-decoration:none">Buffer Overflow.</a>  
+* <a href="./Web/Articulos/BufferOverflow.html" style="text-decoration:none">Buffer Overflow.</a>
+* <a href="./Exploit/DirtyCow/DirtyCow.html" style="text-decoration:none">Escalada de Privilegios en Linux utilizando la vulnerabilidad Dirty Cow</a>  
   
 ---    
 
@@ -110,6 +111,10 @@ Escaneo de vulnerabilidades en páginas WordPress.
 ## SQL: 
 
 * <a href="./Web/Herramientas_y_Scripts/SQLmap.html" style="text-decoration:none">SQLmap</a>
+
+# Escalada de Privilegios en Linux:
+
+* <a href="./Exploit/DirtyCow/DirtyCow.html" style="text-decoration:none">Dirty Cow (Versión de Kernel Vulnerable 2.6.22 > 3.9)</a>
 
 # Links de Interés: 
 
