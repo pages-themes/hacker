@@ -57,7 +57,7 @@ Herramientas de reconocimiento y desencriptación de hash.
 * <a href="./Web/Herramientas_y_Scripts/HashId.html" style="text-decoration:none">HashID</a>  
 * <a href="./Web/Herramientas_y_Scripts/Hash-Identifier.html" style="text-decoration:none">Hash Identifier</a>
 * <a href="./Web/Herramientas_y_Scripts/HashCat.html" style="text-decoration:none">HashCat</a>
-* Página para Crackear hashes de Contraseñas -->  <a href="https://crackstation.net/" style="text-decoration:none">Link</a>
+* `Página para Crackear hashes de Contraseñas` -->  <a href="https://crackstation.net/" style="text-decoration:none">Link</a>
 
 ## Codificación:
 La codificación es el proceso de conversión de los componentes de un mensaje para que este no sea entendido. Las reglas de transformación entre un sistema y otro
@@ -66,7 +66,7 @@ que está relacionado con el significado del mensaje.
 
 * <a href="./Web/Articulos/base64.html" style="text-decoration:none">Base64</a>
 * <a href="./Web/Herramientas_y_Scripts/xxd.html" style="text-decoration:none">Hexadecimal con xxd.</a>
-* Páginas para Codificar o Descodificar código en Base64 --> <a href="https://www.base64decode.org/" style="text-decoration:none"> Link </a>
+* `Páginas para Codificar o Descodificar código en Base64` --> <a href="https://www.base64decode.org/" style="text-decoration:none"> Link </a>
 
 ## Cifrados
 El cifrado se basa en aplicar un algoritmo que suele utilizar una clave para transformar la estructura y composición de la información que se pretende proteger, de tal 
@@ -77,8 +77,8 @@ sintaxis del mensaje, es decir, alterando los símbolos que lo componen.
 Traducido al español, el SSTI son las siglas de `Inyección de plantillas del lado del Servidor`. SSTI es una vulnerabilidad que aprovecha una implementación 
 insegura de un motor de plantillas (template engine). Los motores de plantilla son empleados por las aplicaciones web para la presentación de datos dinámicos.
 
-* Más información sobre injecciones SSTI --> <a href="https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection" style="text-decoration:none">Link</a>
-* Injecciones SSTI enfocado en NoseJS -->  <a href="http://disse.cting.org/2016/08/02/2016-08-02-sandbox-break-out-nunjucks-template-engine" style="text-decoration:none">Link</a>
+* `Más información sobre injecciones SSTI` --> <a href="https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection" style="text-decoration:none">Link</a>
+* `Injecciones SSTI enfocado en NoseJS` -->  <a href="http://disse.cting.org/2016/08/02/2016-08-02-sandbox-break-out-nunjucks-template-engine" style="text-decoration:none">Link</a>
 
 ## Fuzzing:
 Fuzzing es una técnica de pruebas de software, a menudo automatizado o semiautomatizado, que implica proporcionar datos inválidos, inesperados o
