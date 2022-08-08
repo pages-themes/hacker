@@ -1,6 +1,10 @@
 ---
 layout: post
-title:  "A Whatsapp Challenge, A Senior's Help, and A Fully Stressed Beam - Part 1"
+title:  "A Fully Stressed Beam - Part 1"
+category: Mechanical
+tags: machine_design MATLAB stress_analysis
 ---
+How a rant post on Whatsapp became a classical problem in stress analysis.
+<!--more-->
 # Background Info
 

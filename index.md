@@ -2,14 +2,16 @@
 
 Hi there! Enjoy some posts!
 
-## Writeups
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+## Mechanical engg posts
+{% for category in site.categories %}
+  <h3>{{ category[0] }}</h3>
+  <ul>
+    {% for post in category[1] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {{ post.excerpt }}
+    {% endfor %}
+  </ul>
+{% endfor %}
 
 [About me](https://minerva-007.github.io/about)
 ```
