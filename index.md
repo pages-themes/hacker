@@ -2,17 +2,20 @@
 
 Hi there! Enjoy some posts!
 
-## Mechanical engg posts
 {% for category in site.categories %}
   <h3>{{ category[0] }}</h3>
   <ul>
     {% for post in category[1] %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {{ post.excerpt }}
+          <blockquote><p>{{ post.excerpt }}</p></blockquote>
     {% endfor %}
   </ul>
 {% endfor %}
 
+```
+
+
+```
 [About me](https://minerva-007.github.io/about)
 ```
 But in this world of infinite choices,
