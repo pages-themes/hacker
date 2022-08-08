@@ -12,7 +12,7 @@ My major is in renewable energy resources, with a paper published in my universi
 - Design Engineering (machine and mechanisms)
 - Design for Manufacturing
 - Computational Engineering 
-	- Metaheuristics, Monte Carlo solvers,
+	- Metaheuristics, Monte Carlo solvers, classical techniques.
 
 ### Computer Programming
 Developing programs to learn technologies that can help me in daily life is the theme behind my scripts. Following are my interests:
