@@ -122,7 +122,16 @@ pública posible sobre un objetivo en concreto (sea persona o no) con el fin de 
 
 * <a href="https://osintframework.com/" style="text-decoration:none">OSINT Framework:</a> Como tal no es una herramienta a la que le demos unos datos y nos devuelva más información, más que eso es un repositorio, uno de los más grandes en este tema, donde recopila la mayoría de las herramientas para OSINT y las categoriza dependiendo su uso, la mayoría de las herramientas que nombraremos a continuación están en este repositorio.  
 
-*  <a href="https://github.com/sherlock-project/sherlock" style="text-decoration:none">Sherlock:</a> Una de las herramientas de OSINT más conocida hoy en día, nos permite buscar, a partir de un nombre de usuario, sus posibles redes sociales.
+*  <a href="https://github.com/sherlock-project/sherlock" style="text-decoration:none">Sherlock:</a> Una de las herramientas de OSINT más conocida hoy en día, nos permite buscar, a partir de un nombre de usuario, sus posibles redes sociales.  
+
+*  <a href="https://github.com/sundowndev/phoneinfoga" style="text-decoration:none"> Phoneinfoga:</a> Nos dará información partiendo de un número telefónico, como, por ejemplo, el país, la compañía, etc.
+
+* <a href="https://haveibeenpwned.com/" style="text-decoration:none">Have I Been Pwned:</a> Nos permite, a partir de un correo electrónico, saber si hay una cuenta creada con ese correo cuyas credenciales se hayan filtrado.  
+
+* <a href="https://thatsthem.com/" style="text-decoration:none">Thatsthem:</a> Nos permite buscar a personas a partir de su correo electrónico.  
+
+* <a href="https://github.com/ElevenPaths/FOCA" style="text-decoration:none">FOCA:</a> Nos permite extraer metadatos de un fichero o, extraer ficheros de un sitio web para luego extraer sus metadatos.
+
 
 ---
 
@@ -139,6 +148,7 @@ pública posible sobre un objetivo en concreto (sea persona o no) con el fin de 
 * Páginas para Codificar o Descodificar código en Base64 --> <a href="https://www.base64decode.org/" style="text-decoration:none"> Link </a>     
 * Páginas para Inyección de Cargas Útiles XSS --> <a href="https://webhook.site" style="text-decoration:none"> Link </a>
 * PAYLOADS ALL THE THINGS: Recopilación de Payloads y todo tipo de inyecciones --> <a href="https://github.com/swisskyrepo/PayloadsAllTheThings" style="text-decoration:none"> Link </a>
+* Recopilación de herramientas `OSINT` --> <a href="https://openwebinars.net/blog/osint-que-es-tecnicas-y-herramientas/" style="text-decoration:none"> Link </a>
 
 
 ---
