@@ -149,6 +149,7 @@ pública posible sobre un objetivo en concreto (sea persona o no) con el fin de 
 * Páginas para Inyección de Cargas Útiles XSS --> <a href="https://webhook.site" style="text-decoration:none"> Link </a>
 * PAYLOADS ALL THE THINGS: Recopilación de Payloads y todo tipo de inyecciones --> <a href="https://github.com/swisskyrepo/PayloadsAllTheThings" style="text-decoration:none"> Link </a>
 * Recopilación de herramientas `OSINT` --> <a href="https://openwebinars.net/blog/osint-que-es-tecnicas-y-herramientas/" style="text-decoration:none"> Link </a>
+* Como instalar `Ghidra` en Linux --> <a href="https://www.youtube.com/watch?v=cW3L43nTvNQ" style="text-decoration:none"> Link </a>
 
 
 ---
