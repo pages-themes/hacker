@@ -115,6 +115,17 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 ---
 
+# OSINT:
+
+Se llama OSINT a una serie de procesos que tienen como misión hacer uso de fuentes de carácter público para poder buscar y recopilar toda la información
+pública posible sobre un objetivo en concreto (sea persona o no) con el fin de poder interpretar esa información y darle una utilidad. 
+
+* <a href="https://osintframework.com/" style="text-decoration:none">OSINT Framework:</a> Como tal no es una herramienta a la que le demos unos datos y nos devuelva más información, más que eso es un repositorio, uno de los más grandes en este tema, donde recopila la mayoría de las herramientas para OSINT y las categoriza dependiendo su uso, la mayoría de las herramientas que nombraremos a continuación están en este repositorio.  
+
+*  <a href="https://github.com/sherlock-project/sherlock" style="text-decoration:none">Sherlock:</a> Una de las herramientas de OSINT más conocida hoy en día, nos permite buscar, a partir de un nombre de usuario, sus posibles redes sociales.
+
+---
+
 # Escalada de Privilegios en Linux:
 
 * <a href="./Exploits/DirtyCow/DirtyCow.html" style="text-decoration:none">Dirty Cow (Versión de Kernel Vulnerable 2.6.22 > 3.9)</a>
