@@ -102,7 +102,7 @@ incluye cosas como obtener el control de un sistema informático, permitir la es
 
 * <a href="./Web/Herramientas_y_Scripts/searchSploit.html" style="text-decoration:none">SearchSploit</a>  
 * <a href="./Web/Herramientas_y_Scripts/Metasploit.html" style="text-decoration:none">Metasploit</a>
-* <a href="./Exploit/DirtyCow/dirty.c" style="text-decoration:none">dirty.c</a> 
+* <a href="https://github.com/F1r0x/f1r0x.github.io/blob/main/Exploits/DirtyCow/dirty.c" style="text-decoration:none">dirty.c</a> 
 
 ## WordPress:
 Escaneo de vulnerabilidades en páginas WordPress.
@@ -117,7 +117,7 @@ Escaneo de vulnerabilidades en páginas WordPress.
 
 # Escalada de Privilegios en Linux:
 
-* <a href="./Exploit/DirtyCow/DirtyCow.html" style="text-decoration:none">Dirty Cow (Versión de Kernel Vulnerable 2.6.22 > 3.9)</a>
+* <a href="./Exploits/DirtyCow/DirtyCow.html" style="text-decoration:none">Dirty Cow (Versión de Kernel Vulnerable 2.6.22 > 3.9)</a>
 
 ---
 
