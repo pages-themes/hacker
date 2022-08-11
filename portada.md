@@ -32,8 +32,8 @@ Herramientas útiles para la fase de reconocimiento, como reportes de SO o recop
 * <a href="./Web/Herramientas_y_Scripts/ExtractPorts.html" style="text-decoration:none">ExtractPorts</a>    
 * <a href="./Web/Herramientas_y_Scripts/mkt.html" style="text-decoration:none">mkt</a>
 * <a href="./Web/Linux/ZSH/Settarget.html" style="text-decoration:none">SetTarget</a>
-* Listar recursos compartidos a nivel de red con `smbclient`-->  <a href="./Web/Artículos/smbClient.html" style="text-decoration:none">Link</a>
-* Listar recursos compartidos a nivel de red con `smbmap`-->  <a href="./Web/Artículos/smbMap.html" style="text-decoration:none">Link</a>   
+* Listar recursos compartidos a nivel de red con `smbclient`-->  <a href="./Web/Articulos/smbClient.html" style="text-decoration:none">Link</a>
+* Listar recursos compartidos a nivel de red con `smbmap`-->  <a href="./Web/Articulos/smbMap.html" style="text-decoration:none">Link</a>   
 
 ## Control remoto de Equipos y Shells Inversas:
 Programas y herramientas para crear accesos remotos y shells inversas con otros equipos.
