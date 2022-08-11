@@ -15,7 +15,7 @@ de dispositivos, gestores y administradores de terminales, etc. En mi caso estoy
 * <a href="./verArchivosAlojadosEnLaWeb.html" style="text-decoration:none">Directorio `/var/www` (Archivos que compoene la web) `Escalda Privilegios`.</a> 
 
 
-listarPrivilegiosLinux.md
+# Escalada de Privilegios:
 
 Escalada Básica de Privilegios en Linux --> <a href="https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/" style="text-decoration:none">Link</a>
 
