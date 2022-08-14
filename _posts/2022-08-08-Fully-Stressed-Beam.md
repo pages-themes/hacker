@@ -8,4 +8,4 @@ permalink: /FSB-I
 How a rant post on Whatsapp became a classical problem in stress analysis.
 <!--more-->
 # Background Info
-
+WIP
