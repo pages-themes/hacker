@@ -25,4 +25,4 @@ Developing programs to learn technologies that can help me in daily life is the 
 I participate in jeopardy-style CTFs in rev/pwn category, as well as practice weekly. I play for [Task_Hashed](https://ctftime.org/team/175900) and sometimes [JHDiscord](https://ctftime.org/team/62434).
 
 ## Find me
-You can find me at [Github](https://www.github.com/Minerva-007/)
+You can find me at [Github](https://www.github.com/Minerva-007/) and at [LinkedIn](https://www.linkedin.com/in/Minerva-007)
