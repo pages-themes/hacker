@@ -13,6 +13,7 @@ My major is in renewable energy resources, with a paper published in my universi
 - Design for Manufacturing
 - Computational Engineering 
 	- Metaheuristics, Monte Carlo solvers, classical techniques.
+
 Tools: MATLAB, Simulink, Arduino, SOLIDWORKS, Ricardo WAVE, EES, MathCAD, PVSyst, Siemens PLM.
 
 ### Low-level developmet
@@ -21,11 +22,14 @@ Developing programs to learn technologies that can help me in daily life is the 
 - Network Programming
 - Compiler Construction
 - Bash/PS scripting
+
 Tools: gcc, g++, masm, cmd/powershell, bash, winsock, gdb.
+
 Environments: Visual Studio, Dev-cpp, Ubuntu@WSL.
 
 ### Cybersecurity
 I participate in jeopardy-style CTFs in rev/pwn category, as well as practice weekly. I play for [Task_Hashed](https://ctftime.org/team/175900) and sometimes [JHDiscord](https://ctftime.org/team/62434).
+
 Tools: Ghidra, IDA, gdb, CyberChef, Ubuntu@WSL.
 
 ## Find me
