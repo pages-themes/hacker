@@ -11,7 +11,7 @@ de dispositivos, gestores y administradores de terminales, etc. En mi caso estoy
 * <a href="../Herramientas_y_Scripts/xargs.html" style="text-decoration:none">Manual de Comandos Generale de la herramienta `Xargs`</a>
 * <a href="./Introducción_a_Linux/wc.html" style="text-decoration:none">Cómo ver el número de palabras, líneas y bytes de un archivo utilizando `WC`.</a>
 * <a href="../Articulos/BusquedaReporteArchivosLinux.html" style="text-decoration:none">Búsqueda y reconocimiento exhaustivo de archivos en Linux.</a> 
-* <a href="./listarPrivilegiosLinux.hml" style="text-decoration:none">Listar Privilegios SUID.</a>
+* <a href="./listarPrivilegiosLinux.html" style="text-decoration:none">Listar Privilegios SUID.</a>
 * <a href="./verArchivosAlojadosEnLaWeb.html" style="text-decoration:none">Directorio `/var/www` (Archivos que compoene la web) `Escalda Privilegios`.</a> 
 
 
