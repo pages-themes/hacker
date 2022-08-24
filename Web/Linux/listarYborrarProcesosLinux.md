@@ -36,6 +36,33 @@ Por ejemplo, para buscar cualquier proceso relacionado con `openvpn` en tu siste
 
 ![Captura de pantalla 2022-08-24 213343](https://user-images.githubusercontent.com/103068924/186507581-d3904fa9-0309-435d-b7fb-a1c4dd3f4ec4.png)
 
+# Matar o Borrar un Proceso en Linux:
+
+Si el comando/proceso se está ejecutando en primer plano, puedes utilizar el atajo de terminal `Ctrl+C`. Sin embargo, si el proceso no es visible (lo que
+significa que se ejecuta en segundo plano), puedes emplear comandos dedicados para `matarlo`.
+
+El término `matar un proceso` se refiere a detener un proceso a mitad de su ejecución. Si conoce el ID del proceso (PID), puedes utilizar el comando `kill`
+de la siguiente manera:
+
+    kill [Opción] [PID]
+    
+En la sintaxis anterior, en primer lugar, marcamos la opción que deseamos ejecutar del comando kill y PID se refiere al ID del proceso.
+Las opciones del comando kill son las siguientes:
+
+![Captura de pantalla 2022-08-24 214450](https://user-images.githubusercontent.com/103068924/186509188-4eca2092-40d8-4f17-bee3-e0fe6d61aab2.png)
+
+En caso de querer eliminar el proceso anterior `openvpn` utilizaremos la opción `9` para cerrar el proceso inmediatamente.
+
+    kill -9 [PID]
+    
+![Captura de pantalla 2022-08-24 214756](https://user-images.githubusercontent.com/103068924/186509952-9fd03bd9-8d40-4133-894b-9513fd90353c.png)
+
+En este caso, el PID del proceso `openvpn` es el 151202 y tras ejecutar el comando `kill` vemos como al tratar de volver a listarlo con `pgrep`
+ya no lo reporta.
+
+![Captura de pantalla 2022-08-24 214828](https://user-images.githubusercontent.com/103068924/186509968-ba08a751-7d5a-4426-ad7b-57dc88a5e4cc.png)
+
+
 ---
 ---
   
@@ -61,5 +88,7 @@ Por ejemplo, para buscar cualquier proceso relacionado con `openvpn` en tu siste
   
 ---
 ---
+
+  
 
   
