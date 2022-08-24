@@ -1,5 +1,3 @@
-![hacker-python](https://user-images.githubusercontent.com/103068924/186538275-ee6ec6bc-f417-4b3e-807b-15c9b24ce361.gif)
-
 # Cursos
 
 * Linux --> <a href="./Linux/Linux.html" style="text-decoration:none">Link</a>   
