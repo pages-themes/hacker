@@ -1,5 +1,13 @@
 # Cómo Listar y Borrar procesos en Linux.
 
+* <a href="#item1" style="text-decoration:none">1.1 Listar Procesos con ps.</a>
+* <a href="#item2" style="text-decoration:none">1.2 Mostrar el uso actual de la CPU y la RAM de cada proceso.</a>
+* <a href="#item3" style="text-decoration:none">1.3 Encontrar un proceso con pgrep.</a>
+* <a href="#item4" style="text-decoration:none">1.4 Matar o Borrar un Proceso en Linux.</a>
+
+<a name="item1"></a>
+# Listar Procesos con ps:
+
 En Linux, una instancia en ejecución de un programa se llama proceso. Ocasionalmente, cuando trabaje en una máquina Linux, 
 es posible que necesite averiguar qué procesos se están ejecutando actualmente.
 
@@ -13,7 +21,8 @@ El comando `ps` puede listar todos los procesos que se están ejecutando en un s
 Podemos conocer más detalles del comando `ps` accediendo a su manual:
 
     man ps
-    
+
+<a name="item2"></a>
 ## Mostrar el uso actual de la CPU y la RAM de cada proceso:
 
 Al igual que la opción anterior, esta opción listará todos los procesos que se estén ejecutando en tu sistema. Pero también 
@@ -23,6 +32,7 @@ muestra el uso actual de la CPU y la RAM de cada proceso, así como el comando q
     
 ![Captura de pantalla 2022-08-24 213641](https://user-images.githubusercontent.com/103068924/186507728-0368cf5f-af7f-47fe-af4c-7147ab1b9521.png)
    
+<a name="item3"></a>
 ## Encontrar un proceso con pgrep:
 
 El comando `pgrep` es una especie de combinación de `ps` y `grep`. Podemos especificar el nombre (o parte del nombre) de un proceso que estemos 
@@ -36,6 +46,7 @@ Por ejemplo, para buscar cualquier proceso relacionado con `openvpn` en tu siste
 
 ![Captura de pantalla 2022-08-24 213343](https://user-images.githubusercontent.com/103068924/186507581-d3904fa9-0309-435d-b7fb-a1c4dd3f4ec4.png)
 
+<a name="item4"></a>
 # Matar o Borrar un Proceso en Linux:
 
 Si el comando/proceso se está ejecutando en primer plano, puedes utilizar el atajo de terminal `Ctrl+C`. Sin embargo, si el proceso no es visible (lo que
