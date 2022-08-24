@@ -1,6 +1,6 @@
-# Hack The Box --> <a href="./Web/HTB.html" style="text-decoration:none">Link</a>   
+# Hack The Box --><a href="./Web/HTB.html" style="text-decoration:none">Link</a> <a><img src="[../../assets/images/JerryButton.png](https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif)" align="middle"></a> <a href="./Web/HTB.html" style="text-decoration:none"></a> 
   
-# Cursos --> <a href="./Web/Cursos.html" style="text-decoration:none">Link</a>
+# Cursos --> <a href="./Web/Cursos.html" style="text-decoration:none">Link</a> 
 
 ---
 
