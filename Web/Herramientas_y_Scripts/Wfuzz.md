@@ -33,7 +33,7 @@ Este concepto simple permite inyectar cualquier entrada en cualquier campo de un
 de seguridad web en diferentes componentes de la aplicación web, como: parámetros, autenticación, formularios, directorios/archivos, encabezados, etc.
 
 <a name="item3"></a>
-## Diccionarios y Listas de Palabras:
+# Diccionarios y Listas de Palabras:
 
 En caso de utilizar Kali Linux o ParroOS suelen tener incluidos el repositorio `wordlists` el cual incluye una variedad de diccionarios o listas de
 palabras de distintos tamaños. Este repositorio se encuentra en el directorio `/usr/share/wordlists`. 
@@ -49,7 +49,7 @@ Para descargar el repositorio con todos los diccionarios simplemente ejecutamos 
     sudo apt install wordlists
  
 <a name="item4"></a> 
-## Payloads/Cargas Útiles:
+# Payloads/Cargas Útiles:
 
 Wfuzz se basa en un concepto simple: reemplaza cualquier referencia a la palabra clave FUZZ por el valor de una carga útil determinada. Una `carga útil` más conocida como `payload` en Wfuzz es una fuente de datos de entrada y se especifica mediante `-z`:
 
@@ -70,7 +70,7 @@ Este último se puede filtrar usando el parámetro `--slice`:
 ![Captura de pantalla -2022-05-09 07-34-57](https://user-images.githubusercontent.com/103068924/167346718-14049e7c-e687-4376-bc97-21fa0a000df2.png)
 
 <a name="item5"></a>
-## Obtener ayuda:
+# Obtener ayuda:
 
 Use el interruptor `–h` y `–help` para obtener el uso de ayuda básica y avanzada respectivamente.
 
@@ -81,7 +81,7 @@ Wfuzz es un marco completamente modular, puede verificar los módulos disponible
 Las categorías válidas son: `cargas útiles`, `codificadores`, `iteradores`, `impresoras` o `scripts`.
 
 <a name="item6"></a>
-## Filtros:
+# Filtros:
 
 Filtrar resultados en Wfuzz es primordial:
 
@@ -90,7 +90,7 @@ La clasificación de las respuestas HTTP es clave para realizar algunos ataques,
 Wfuzz permite filtrar según el código de respuesta HTTP y la longitud de la información recibida (en forma de palabras, caracteres o líneas). También se pueden utilizar expresiones regulares. Se pueden tomar dos enfoques: mostrar u ocultar los resultados que coinciden con un filtro determinado.
 
 <a name="item7"></a>
-## Ocultar respuestas 
+# Ocultar respuestas 
 
 Los siguientes parámetros de la línea de comandos se pueden usar para ocultar ciertas respuestas HTTP `–hc`, `–hl`, `–hw`, `–hh`. 
 
