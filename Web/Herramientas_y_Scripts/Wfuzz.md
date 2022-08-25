@@ -53,7 +53,7 @@ Para descargar el repositorio con todos los diccionarios simplemente ejecutamos 
 
 Wfuzz se basa en un concepto simple: reemplaza cualquier referencia a la palabra clave FUZZ por el valor de una carga útil determinada. Una `carga útil` más conocida como `payload` en Wfuzz es una fuente de datos de entrada y se especifica mediante `-z`:
 
-Las cargas útiles disponibles se pueden listar ejecutando:
+Las cargas útiles disponibles se pueden listar ejecutando la opción `-e payloads`:
 
     wfuzz -e payloads
      
