@@ -3,15 +3,6 @@
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;
-    text-decoration: none;      /*Quitar Subrayado*/
-}
-
-body {
-    background-color:#000;
-    color: #fff;
-    font-size: 18px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
 }
 
 header{
