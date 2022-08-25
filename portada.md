@@ -7,7 +7,6 @@
 
 <link rel="stylesheet" href="./assets/css/estilos.css">
 
-<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
 <body id="body">
     
