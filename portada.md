@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Menú lateral responsive - MagtimusPro</title>
 
-<link rel="stylesheet" href="./assets/css/estilosMenu.css">
+<link rel="stylesheet" href="./assetscss/estilosMenu.css">
 
 <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
@@ -240,7 +240,12 @@ pública posible sobre un objetivo en concreto (sea persona o no) con el fin de 
 
 ---
 ---
+  
     
+<html lang="en">
+<head>
+  
+</head>
 <body>
 
 <script src="https://utteranc.es/client.js"
@@ -252,13 +257,9 @@ pública posible sobre un objetivo en concreto (sea persona o no) con el fin de 
 </script>
           
     
-</body>
-
-  
-</main>
-
-<script src="js/script.js"></script>
-</body>
+  </body>
 </html>
+  
+  
 ---
 ---
