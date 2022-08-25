@@ -1,4 +1,4 @@
-/* ---------- Archivo de Configuración Portada Partículas --------------
+/*---------- Archivo de Configuración Portada Partículas --------------
 
 particlesJS('particles-js',
   
