@@ -78,7 +78,7 @@ Wfuzz es un marco completamente modular, puede verificar los módulos disponible
 
 ![Captura de pantalla -2022-05-09 07-18-22](https://user-images.githubusercontent.com/103068924/167345166-41e40d2a-98fd-4747-9d25-c7ba9c89d95c.png)
 
-Las categorías válidas son: ´cargas útiles´, ´codificadores´, ´iteradores´, ´impresoras´ o ´scripts´.
+Las categorías válidas son: `cargas útiles`, `codificadores`, `iteradores`, `impresoras` o `scripts`.
 
 <a name="item6"></a>
 ## Filtros:
