@@ -9,7 +9,7 @@
 
 <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
-<body id="cuerpo1">
+<body id="body">
     
 <header>
 <div class="icon__menu">
