@@ -240,12 +240,7 @@ pública posible sobre un objetivo en concreto (sea persona o no) con el fin de 
 
 ---
 ---
-  
     
-<html lang="en">
-<head>
-  
-</head>
 <body>
 
 <script src="https://utteranc.es/client.js"
@@ -257,9 +252,13 @@ pública posible sobre un objetivo en concreto (sea persona o no) con el fin de 
 </script>
           
     
-  </body>
+</body>
+
+  
+</main>
+
+<script src="js/script.js"></script>
+</body>
 </html>
-  
-  
 ---
 ---
