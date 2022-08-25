@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="./assets/css/estilos.css">
 
 </head>
-<body id="body">
+<body id="cuerpo1">
     
 <header>
 <div class="icon__menu">
