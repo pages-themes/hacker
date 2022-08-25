@@ -17,7 +17,7 @@ main{
 
 .icon__menu{
     width: 50px;
-    height: 100%;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
