@@ -1,10 +1,29 @@
 ![wfuzz_Kali_Linux](https://user-images.githubusercontent.com/103068924/165838186-e7b3bb1d-8340-4609-93ce-acb30229cb66.png)
 
+# Índice:
+
+* <a href="#item1" style="text-decoration:none">1.1 ¿Qué es Wfuzz?</a>
+* <a href="#item2" style="text-decoration:none">1.2 ¿Cómo funciona?</a>
+* <a href="#item3" style="text-decoration:none">1.3 Diccionarios y Listas de Palabras.</a>
+* <a href="#item4" style="text-decoration:none">1.4 Payloads/Cargas Útiles.</a>
+* <a href="#item5" style="text-decoration:none">1.5 Obtener ayuda.</a>
+* <a href="#item6" style="text-decoration:none">1.6 Filtros.</a>
+* <a href="#item7" style="text-decoration:none">1.7 Ocultar respuestas.</a>
+* <a href="#item8" style="text-decoration:none">2.0 Ejecución Básica.</a>
+* <a href="#item9" style="text-decoration:none">2.1 Ejecución Carga Útil.</a>
+* <a href="#item10" style="text-decoration:none">2.2 Ejecución definiendo el valor del Payload.</a>
+* <a href="#item11" style="text-decoration:none">2.3 Ejecución fuzzeando cabezeras.</a>  
+* <a href="#item12" style="text-decoration:none">2.4 Ejecución filtrada omitiendo servicios web desconocidos.</a> 
+* <a href="#item13" style="text-decoration:none">2.5 Ejecución filtrada omitiendo servicios con caracteres repetidos.</a>
+
+
+<a name="item1"></a>
 # ¿Qué es Wfuzz?
 
-WFuzz es una herramienta y biblioteca de fuzzer de seguridad de aplicaciones web para Python.
+WFuzz es una herramienta y biblioteca de fuzzer de seguridad de aplicaciones web para Python. 
 
-# Cómo funciona:
+<a name="item2"></a>
+# ¿Cómo funciona?
 
 Wfuzz se basa en un concepto simple: reemplaza cualquier referencia a la palabra clave FUZZ por el valor de una carga útil determinada.
 
@@ -13,6 +32,7 @@ Una carga útil en Wfuzz es una fuente de datos.
 Este concepto simple permite inyectar cualquier entrada en cualquier campo de una solicitud HTTP, lo que permite realizar complejos ataques
 de seguridad web en diferentes componentes de la aplicación web, como: parámetros, autenticación, formularios, directorios/archivos, encabezados, etc.
 
+<a name="item3"></a>
 ## Diccionarios y Listas de Palabras:
 
 En caso de utilizar Kali Linux o ParroOS suelen tener incluidos el repositorio `wordlists` el cual incluye una variedad de diccionarios o listas de
@@ -29,7 +49,8 @@ palabras de distintos tamaños. Este repositorio se encuentra en el directorio `
 Para descargar el repositorio con todos los diccionarios simplemente ejecutamos lo siguiente:
 
     sudo apt install wordlists
-    
+ 
+<a name="item4"></a> 
 ## Payloads/Cargas Útiles:
 
 Wfuzz se basa en un concepto simple: reemplaza cualquier referencia a la palabra clave FUZZ por el valor de una carga útil determinada. Una `carga útil` más conocida como `payload` en Wfuzz es una fuente de datos de entrada y se especifica mediante `-z`:
@@ -49,7 +70,8 @@ Este último se puede filtrar usando el parámetro `--slice`:
     wfuzz -z help --slice "dirwalk"
     
 ![Captura de pantalla -2022-05-09 07-34-57](https://user-images.githubusercontent.com/103068924/167346718-14049e7c-e687-4376-bc97-21fa0a000df2.png)
-    
+
+<a name="item5"></a>
 ## Obtener ayuda:
 
 Use el interruptor `–h` y `–help` para obtener el uso de ayuda básica y avanzada respectivamente.
@@ -60,6 +82,7 @@ Wfuzz es un marco completamente modular, puede verificar los módulos disponible
 
 Las categorías válidas son: ´cargas útiles´, ´codificadores´, ´iteradores´, ´impresoras´ o ´scripts´.
 
+<a name="item6"></a>
 ## Filtros:
 
 Filtrar resultados en Wfuzz es primordial:
@@ -68,7 +91,7 @@ Los diccionarios grandes pueden generar una gran cantidad de resultados y pueden
 La clasificación de las respuestas HTTP es clave para realizar algunos ataques, por ejemplo, para verificar la presencia de una vulnerabilidad de inyección SQL, debemos distinguir una respuesta legítima de la que genera un error o datos diferentes.
 Wfuzz permite filtrar según el código de respuesta HTTP y la longitud de la información recibida (en forma de palabras, caracteres o líneas). También se pueden utilizar expresiones regulares. Se pueden tomar dos enfoques: mostrar u ocultar los resultados que coinciden con un filtro determinado.
 
-
+<a name="item7"></a>
 ## Ocultar respuestas 
 
 Los siguientes parámetros de la línea de comandos se pueden usar para ocultar ciertas respuestas HTTP `–hc`, `–hl`, `–hw`, `–hh`. 
@@ -86,6 +109,7 @@ Las líneas, palabras o caracteres son útiles cuando buscamos recursos con el m
 
 Por ejemplo, es un comportamiento común (a veces debido a una configuración incorrecta) que los servidores web devuelvan una página de error personalizada con un código de respuesta 200, esto se conoce como `soft 404`.
 
+<a name="item8"></a>
 # Ejecución Básica:
 
 Una ejecución de línea de comando típica de Wfuzz, que especifica una carga de diccionario y una URL, se ve así:
@@ -118,6 +142,7 @@ Cada línea proporciona la siguiente información:
 
 `Carga útil:` Muestra la carga útil utilizada.
 
+<a name="item9"></a>
 # Ejecución Carga Útil:
 
 Cada palabra clave FUZZ debe tener su carga útil (payload) correspondiente. Hay varias formas equivalentes de especificar una `payload`:
@@ -127,14 +152,16 @@ Cada palabra clave FUZZ debe tener su carga útil (payload) correspondiente. Hay
     wfuzz -w [Ruta del Diccionario] [URL Víctima]/FUZZ
     
 `-w` : Especifica un diccionario (Lista de palabras).
-    
+ 
+<a name="item10"></a> 
 ### Ejecución definiendo el valor del Payload:
 
     wfuzz -z [Ruta del Diccionario] [URL Víctima]/FUZZ
 
 `-z` : Especifica el valor del parámetro predeterminado del payload.
 
-### Ejecución fuzzeando cabezaras.
+<a name="item11"></a>
+### Ejecución fuzzeando cabezeras.
 Esto nos permite la opción de repetir varios encabezados. Para ello se emplea la etiqueta `-H` de header seguida de la especificación entre comillas dobles. 
 
     wfuzz -w [Ruta del Diccionario] -H "Host: FUZZ.ejemplo.com" http://ejemplo.com
@@ -143,7 +170,7 @@ Esto nos permite la opción de repetir varios encabezados. Para ello se emplea l
  
     wfuzz -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt -H "Host: FUZZ.nunchuks.htb" http://nunchuks.htb
 
-
+<a name="item12"></a>
 ### Ejecución filtrada omitiendo servicios web desconocidos:
 
     wfuzz -w [Ruta del Diccionario] --hc 404,403 [URL Víctima]
@@ -153,7 +180,8 @@ Esto nos permite la opción de repetir varios encabezados. Para ello se emplea l
 `--hc` : Omite los resultados HTTP especificados, en este caso las páginas con servicios 404 (servidor no encontrado) y 403 (sin permisos de acceso).
 
 Se puede encontr mucha más información sobre esta herramienta en su página: [https://wfuzz.readthedocs.io/en/latest/user/getting.html](https://wfuzz.readthedocs.io/en/latest/user/getting.html)
-   
+
+<a name="item13"></a>
 ### Ejecución filtrada omitiendo servicios con caracteres repetidos:
 
 En algunas ocasiones al ejecutar Wfuzz veremos como empieza a reportar resultados inconcluyentes con el mismo número de caracteres. Al igual que los servicios web
