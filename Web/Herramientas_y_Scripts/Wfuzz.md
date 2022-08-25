@@ -42,9 +42,7 @@ palabras de distintos tamaños. Este repositorio se encuentra en el directorio `
 
 ![Captura de pantalla -2022-05-09 07-01-52](https://user-images.githubusercontent.com/103068924/167344140-af2eb436-c3ab-4204-8f9f-121c306782bc.png)
 
-![Captura de pantalla -2022-05-09 07-02-21](https://user-images.githubusercontent.com/103068924/167344168-2b83b1e0-0854-4421-82e9-9b9242dca851.png)
-
-![Captura de pantalla -2022-05-09 07-03-15](https://user-images.githubusercontent.com/103068924/167344175-48c8a65e-f043-4efc-9c4d-a00d97b83830.png)
+![Captura de pantalla -2022-05-09 07-02-21](https://user-images.githubusercontent.com/103068924/167344168-2b83b1e0-0854-4421-82e9-9b9242dca851.png) ![Captura de pantalla -2022-05-09 07-03-15](https://user-images.githubusercontent.com/103068924/167344175-48c8a65e-f043-4efc-9c4d-a00d97b83830.png)
 
 Para descargar el repositorio con todos los diccionarios simplemente ejecutamos lo siguiente:
 
