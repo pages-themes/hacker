@@ -21,7 +21,7 @@
 
 <div class="name__page">
 <i class="fab fa-youtube"></i>
-h4>MagtimusPro</h4>
+<h4>MagtimusPro</h4>
 </div>
 
 <div class="options__menu">	
