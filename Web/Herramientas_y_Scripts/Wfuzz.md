@@ -204,7 +204,7 @@ Como podéis ver nos reporta un montón de resultados con el mismo número de `c
 
 ![Captura de pantalla 2022-07-21 172657](https://user-images.githubusercontent.com/103068924/180252935-a968d55d-776f-4f62-87d4-0d0fd9f2b255.png)
 
-Vamos a intentar aplicar el filtro a ver que sucede:
+Vamos a intentar aplicar el filtro `--hh=30587` para ocultar todos los resultados con ese número de caracteres:
 
     wfuzz --hh=30587 -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt -H "Host: FUZZ.nunchucks.htb" http://nunchucks.htb
     
