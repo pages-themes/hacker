@@ -10,7 +10,7 @@ body{
 }
 
 .icon__menu{
-    width: 50px;
+    width: 0px;
     height: 10px;
     display: flex;
     justify-content: center;
