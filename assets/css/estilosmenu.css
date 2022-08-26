@@ -10,6 +10,10 @@
     position: fixed;
 }
 
+main{
+    padding: 20px;
+}
+
 .icon__menu i{
     font-size: 20px;
     cursor: pointer;
@@ -23,7 +27,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    color: black;
+    color: white;
     font-size: 18px;
     z-index: 300;
     overflow: hidden;
