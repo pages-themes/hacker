@@ -1,11 +1,11 @@
 body{
     margin-left: 80px;
-    margin-top: 400px;
+    margin-top: 20px;
     transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 .icon__menu{
-    width: 100px;
+    width: 70px;
     height: 80px;
     display: flex;
     justify-content: center;
