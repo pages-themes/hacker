@@ -17,6 +17,7 @@ body{
     align-items: center;
     transform: translateX(10px);
     top: 0;
+    position: fixed;
 }
  
 .icon__menu i{
