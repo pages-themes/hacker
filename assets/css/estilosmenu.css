@@ -29,7 +29,7 @@ body{
 
 .menu__side{
     width: 80px;
-    height: 100%;
+    height: 80px;
     background: #b5e853;
     position: fixed;
     top: 0;
