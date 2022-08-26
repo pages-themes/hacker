@@ -1,13 +1,9 @@
-.icon__menu{
-    width: 100px;
-    height: 80px;
+header{
     display: flex;
-    justify-content: center;
     align-items: center;
-    transform: translateX(10px);
-    z-index: 200;
-    top: 0;
     position: fixed;
+    top: 0;
+    z-index: 200;
 }
 
 body{
@@ -16,12 +12,16 @@ body{
     transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-header{
+.icon__menu{
+    width: 130px;
+    height: 80px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 0;
+    transform: translateX(10px);
     z-index: 200;
+    top: 0;
+    position: fixed;
 }
     
 .menu__side{
