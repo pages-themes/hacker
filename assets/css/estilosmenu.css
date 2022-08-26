@@ -1,5 +1,5 @@
 .icon__menu{
-    width: 200px;
+    width: 100px;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@ main{
 }
 
 .menu__side{
-    width: 40px;
+    width: 80px;
     height: 100%;
     background: #1783db;
     position: fixed;
