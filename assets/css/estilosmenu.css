@@ -16,6 +16,7 @@ body{
     justify-content: center;
     align-items: center;
     transform: translateX(10px);
+    top: 0;
 }
  
 .icon__menu i{
