@@ -1,6 +1,6 @@
 .icon__menu{
-    width: 20px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
 }
 
 .menu__side{
-    width: 80px;
+    width: 120px;
     height: 100%;
     background: #1783db;
     position: fixed;
