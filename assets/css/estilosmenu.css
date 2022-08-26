@@ -14,8 +14,6 @@ body{
     width: -100px;
     height: 80px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     transform: translateX(10px);
     z-index: 200;
 }
