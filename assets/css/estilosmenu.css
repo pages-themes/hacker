@@ -14,13 +14,13 @@
 }
 
 .menu__side{
-    width: 120px;
+    width: 80px;
     height: 100%;
     background: #1783db;
     position: fixed;
     top: 0;
     left: 0;
-    color: white;
+    color: black;
     font-size: 18px;
     z-index: 300;
     overflow: hidden;
