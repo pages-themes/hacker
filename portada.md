@@ -164,7 +164,7 @@ pública posible sobre un objetivo en concreto (sea persona o no) con el fin de 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Menú lateral</title>
 
-<link rel="stylesheet" href="./assets/css/estilos.css">
+<link rel="stylesheet" href="./assets/css/estilosmenu.css">
 
 <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
