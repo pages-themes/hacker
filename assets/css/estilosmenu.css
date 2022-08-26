@@ -1,6 +1,6 @@
 body{
     margin-left: 80px;
-    margin-top: 80px;
+    margin-top: 400px;
     transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
