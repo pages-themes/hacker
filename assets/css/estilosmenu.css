@@ -16,7 +16,7 @@ body{
     justify-content: center;
     align-items: center;
     transform: translateX(10px);
-    top: -10;
+    top: 0;
     position: fixed;
     z-index: 200;
 }
