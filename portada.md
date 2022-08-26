@@ -176,7 +176,7 @@ pública posible sobre un objetivo en concreto (sea persona o no) con el fin de 
 </div>
 </header>
 
-<div class="menu__side" id="menu_side">
+<div class="menu__side" id="menu__side">
 
 <div class="name__page">
 <i class="fab fa-youtube"></i>
