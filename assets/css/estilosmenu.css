@@ -11,7 +11,7 @@ body{
 }
 
 .icon__menu{
-    width: -100px;
+    width: 5px;
     height: 80px;
     display: flex;
     transform: translateX(10px);
