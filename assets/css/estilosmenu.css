@@ -21,7 +21,13 @@ body{
     top: 0;
     position: fixed;
 }
-    
+ 
+.icon__menu i{
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+
 .menu__side{
     width: 80px;
     height: 100%;
