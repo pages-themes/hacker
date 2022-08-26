@@ -10,7 +10,11 @@
     position: fixed;
 }
 
-main{
+body{
+    padding: 20px;
+}
+
+header{
     padding: 20px;
 }
 
