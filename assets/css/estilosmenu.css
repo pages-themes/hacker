@@ -10,15 +10,12 @@ body{
 }
 
 .icon__menu{
-    width: 5px;
-    height: 80px;
+    width: 50px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(-100px);
-    z-index: 200;
-    top: 0;
-    position: fixed;
+    transform: translateX(10px);
 }
  
 .icon__menu i{
