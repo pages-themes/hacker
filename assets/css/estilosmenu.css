@@ -21,7 +21,7 @@ main{
 }
 
 .menu__side{
-    width: 80px;
+    width: 60px;
     height: 100%;
     background: #1783db;
     position: fixed;
