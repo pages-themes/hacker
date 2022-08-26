@@ -3,7 +3,6 @@
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;
-    text-decoration: none;
 }
 
 body {
@@ -12,9 +11,6 @@ body {
     font-size: 18px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    margin-left: 80px;
-    margin-top: 80px;
-    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 particles-js {
