@@ -17,10 +17,6 @@ body{
 }
 
 header{
-    padding: 20px;
-}
-
-header{
     display: flex;
     align-items: center;
     position: fixed;
