@@ -15,14 +15,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(10px);
+    transform: translateX(-100px);
     z-index: 200;
     top: 0;
     position: fixed;
 }
  
 .icon__menu i{
-    font-size: -20px;
+    font-size: 20px;
     cursor: pointer;
     position: absolute;
 }
