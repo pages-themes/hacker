@@ -10,8 +10,8 @@ body{
 }
 
 .icon__menu{
-    margin-left: 80px;
-    margin-top: 80px;
+    margin-left: 0px;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
