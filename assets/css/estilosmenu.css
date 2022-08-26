@@ -18,6 +18,8 @@ body{
     align-items: center;
     transform: translateX(10px);
     z-index: 200;
+    top: 0;
+    position: fixed;
 }
     
 .menu__side{
