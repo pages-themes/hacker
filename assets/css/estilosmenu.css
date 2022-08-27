@@ -15,7 +15,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(30px);
+    transform: translateX(45px);
     top: 0;
     position: fixed;
     z-index: 200;
