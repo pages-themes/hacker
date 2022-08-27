@@ -231,7 +231,7 @@ pública posible sobre un objetivo en concreto (sea persona o no) con el fin de 
 
 </div>
 
-<script src="js/script.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
 
