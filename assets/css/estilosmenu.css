@@ -9,9 +9,6 @@ body{
     transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-header{
-    align-items: center;
-}
 
 .icon__menu{
     width: 50px;
