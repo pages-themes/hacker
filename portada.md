@@ -3,8 +3,6 @@
   
 # Cursos --> <a href="./Web/Cursos.html" style="text-decoration:none">Link</a> 
 
----
-
 # Artículos  
 
 * <a href="./Web/Linux/Linux.html" style="text-decoration:none">Linux.</a>  
@@ -19,7 +17,8 @@
 * <a href="./Web/Articulos/SQLinjection.html" style="text-decoration:none">SQL Injection.</a> 
 * <a href="./Web/Articulos/BufferOverflow.html" style="text-decoration:none">Buffer Overflow.</a>
 * <a href="./Exploit/DirtyCow/DirtyCow.html" style="text-decoration:none">Escalada de Privilegios en Linux utilizando la vulnerabilidad Dirty Cow.</a>  
-  
+
+---
 ---    
 
 # Herramientas y Scripts 
