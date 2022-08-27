@@ -11,7 +11,7 @@ body{
 
 .icon__menu{
     margin-left: -400px;
-    margin-top: 0px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
