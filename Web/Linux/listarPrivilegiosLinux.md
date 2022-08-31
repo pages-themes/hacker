@@ -6,6 +6,8 @@ Para listar los privilegios `SUID` debemos ejecutar el fomando `find` seguido de
 
     find \-perm -4000 2>/dev/null
     
+<iframe width="420" height="315" src="./video.mp4" frameborder="0" allowfullscreen></iframe>
+    
 ---
 ---
   
