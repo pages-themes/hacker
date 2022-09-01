@@ -2,7 +2,7 @@
    
 ## Buscar archivos por nombre o extensión:
 
-<iframe width="420" height="315" src="../../video.mp4" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://github.com/F1r0x/f1r0x.github.io/edit/main/Web/video.mp4" frameborder="0" allowfullscreen></iframe>
 
 Esta es la parte más esencial del uso del comando Find y para ello se requiere bien sea saber el nombre del objeto o su extensión (.mp4, .txt, . jpg, etc) 
 con el fin de obtener un resultado directo.
