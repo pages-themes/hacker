@@ -1,0 +1,430 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/nmap.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/nmap.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Blog sobre informática Y ciberseguridad.</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!--------------------------------  Letrero Animado  --------------------------------------->      
+ 
+  <svg viewBox="0 0 1320 300">
+
+    <!-- Símbolo -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+        NMAP   <!-- Palabra del Letrero-->
+      </text>
+    </symbol>  
+  
+    <!-- Añadir en función de las letras de la palabra -->
+    <use xlink:href="#s-text" class="text"></use><!--1-->
+    <use xlink:href="#s-text" class="text"></use><!--2-->  
+    <use xlink:href="#s-text" class="text"></use><!--3-->
+    <use xlink:href="#s-text" class="text"></use><!--4-->
+    <use xlink:href="#s-text" class="text"></use><!--5-->
+    <use xlink:href="#s-text" class="text"></use><!--6-->
+    <use xlink:href="#s-text" class="text"></use><!--7-->
+    <use xlink:href="#s-text" class="text"></use><!--8-->
+    <use xlink:href="#s-text" class="text"></use><!--9-->
+  </svg>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<ul>
+  <li><a href="#item1" style="text-decoration:none">¿Qué es NMAP?</a></li>
+  <li><a href="#item2" style="text-decoration:none">Escaneo básico.</a></li>
+  <li><a href="#item3" style="text-decoration:none">Escaneo básico guardando los resultados.</a></li>
+  <li><a href="#item4" style="text-decoration:none">Escaneo exhaustivo de puertos definidos.</a></li>
+  <li><a href="#item5" style="text-decoration:none">Escaneo rápido completo.</a></li>
+  <li><a href="#item6" style="text-decoration:none">Scripts específicos de Nmap.</a></li>
+  <li><a href="#item7" style="text-decoration:none">Escaneo mediante el script http-enum.</a></li>
+  <li><a href="#item8" style="text-decoration:none">Escaneo mediante scripts por categorías.</a></li>
+  <li><a href="#item9" style="text-decoration:none">Escalada de privilegios con Nmap.</a></li>
+  <li><a href="#item10" style="text-decoration:none">Opciones de Nmap.</a></li>
+</ul>
+
+<p><a name="item1"></a></p>
+<h1 id="qué-es-nmap">¿Qué es NMAP?</h1>
+
+<p>Nmap es un programa de código abierto que sirve para efectuar rastreo de puertos y cuyo desarrollo se encuentra hoy a cargo de una comunidad. Fue creado originalmente para Linux aunque actualmente es multiplataforma. Se usa para evaluar la seguridad de sistemas informáticos, así como para descubrir servicios o servidores en una red informática, para ello Nmap envía unos paquetes definidos a otros equipos y analiza sus respuestas.</p>
+
+<p>Este software posee varias funciones para sondear redes de computadores, incluyendo detección de equipos, servicios y sistemas operativos. Estas funciones son extensibles mediante el uso de scripts para proveer servicios de detección avanzados, detección de vulnerabilidades y otras aplicaciones. Además, durante un escaneo, es capaz de adaptarse a las condiciones de la red, incluyendo latencia y congestión de la misma.</p>
+
+<p><a name="item2"></a></p>
+<h2 id="escaneo-básico">Escaneo Básico:</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap -p- --open -T5 -v -n [Ip]
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-p-</code> : Escanea todo el rango de puertos.</p>
+
+<p><code class="language-plaintext highlighter-rouge">--open</code> : Solo nos mostrará puertos con el estatus abierto.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-T5</code> : Controla el tiempo y el rendimiento del escaneo donde 1 es el más lento y 5 el más rápido.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-v</code> : Verbose. Recopila los puertos abiertos por TCP y los reporta por consola.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-n</code> : Anula la resolución DNS.</p>
+
+<p><a name="item3"></a></p>
+<h2 id="escaneo-básico-guardando-los-resultados">Escaneo Básico Guardando los resultados:</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap -p- --open -T5 -v -n [Ip] -oG allPorts
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-oG</code> : Exportar los resultados en formato grepeable.</p>
+
+<p><code class="language-plaintext highlighter-rouge">allPorts</code> : Nombre del archivo. Si no existe lo creará.</p>
+
+<p>De esta manera podremos revisar los puertos que estaban abiertos en cualquier momento.</p>
+
+<p><a name="item4"></a></p>
+<h2 id="escaneo-exahustivo-de-puertos-definidos">Escaneo exhaustivo de Puertos definidos:</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap -sC -sV -n -v -p[Port1,Port2] [Ip Víctima] -oN targed  
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-sC</code> : Lanza scripts básicos de reconocimiento.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-sV</code> : Localiza la versión y servicio de los puertos definidos.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-p</code> : Puertos a escanear.    Ej:  -p22,80</p>
+
+<p><code class="language-plaintext highlighter-rouge">-oN</code> : Reporta los resultados en formato nmap al archivo <code class="language-plaintext highlighter-rouge">targed</code>.</p>
+
+<p><a name="item5"></a></p>
+<h2 id="escaneo-rápido-completo">Escaneo Rápido Completo:</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn [Ip Vícitma] -oG allPorts
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-p-</code> : Escanea todo el rango de puertos.</p>
+
+<p><code class="language-plaintext highlighter-rouge">--open</code> : Solo nos mostrará puertos con el estatus abierto.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-sS</code> : El escaneo SYN realizar rápidamente, escaneando miles de puertos por segundo en una red rápida que no se ve obstaculizada por firewalls intrusivos.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-oG</code> : Exportar los resultados en formato grepeable.</p>
+
+<p><code class="language-plaintext highlighter-rouge">--min-rate</code> : Controla directamente la tasa de escaneo. Nmap intentará mantener la velocidad de envío en 5000 paquetes por segundo o más.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-vvv</code> : Triple verbose. Recopila los puertos abiertos por TCP y los reporta por consola. Cuanto más verbose más información reporta mientras se realiza el escaneo.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-n</code> : Anula la resolución DNS.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-Pn</code> : Omite el descubrimiento de Hosts.</p>
+
+<p><a name="item6"></a></p>
+<h2 id="scripts-específicos-de-nmap">Scripts específicos de Nmap:</h2>
+
+<p>Nmap contiene un gran número de scripts de reconocimiento, para verlos podemos filtrar las categorías por la extensión <code class="language-plaintext highlighter-rouge">.nse</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>locate .nse
+</code></pre></div></div>
+
+<p>Para ver el tipo de categoría de cada script de Nmap, podemos concatenar un <code class="language-plaintext highlighter-rouge">xargs</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>locate .nse | xargs grep "categories"
+</code></pre></div></div>
+
+<p>La sintaxis es muy simple, solo debemos añadir la opción <code class="language-plaintext highlighter-rouge">--script</code> delante del script que queramos utilizar:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap --script [Nombre del Script]
+</code></pre></div></div>
+
+<p><a name="item7"></a></p>
+<h2 id="escaneo-mediante-el-script-http-enum">Escaneo mediante el script http-enum:</h2>
+
+<p>El script <code class="language-plaintext highlighter-rouge">http-enum</code> de Nmap actual como un fuzzer, aplicando un pequeño diccionario interno tratando de buscar directorios o archivos de interés.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap --script http-enum [Ip Víctima]
+</code></pre></div></div>
+
+<p>También podemos especificar puertos y guardar los resultados en un archivo (en este caso <code class="language-plaintext highlighter-rouge">enumScan</code>).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap --script http-enum -p [Puerto/s] [Ip Víctima] -oG enumScan
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">--script</code>: Especifica que vamos a utilizar un Script. <br />
+<code class="language-plaintext highlighter-rouge">-p</code>: Especifica los puertos que vamos a escanear.<br />
+<code class="language-plaintext highlighter-rouge">-oG</code>: Exportar los resultados en formato grepeable.<br />
+<code class="language-plaintext highlighter-rouge">enumScan</code>: Nombre del archivo donde se guardan los resultados.</p>
+
+<p><a name="item8"></a></p>
+<h2 id="escaneo-mediante-scripts-por-categorías">Escaneo mediante scripts por categorías:</h2>
+
+<p>Con Nmap también podemos especificar por categorías qué tipo de scripts queremos lanzar, recordar que podemos ver los distintos scripts utilizando el comando
+<code class="language-plaintext highlighter-rouge">locate .nse | xargs grep "categories"</code>. La sintaxis básica del comando es la siguiente:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap --script "[Categorias]" [Ip Víctima]
+</code></pre></div></div>
+
+<p>Ejemplo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap --script "vuln and safe" 10.10.10.10
+
+nmap --script "vuln and safe" -p22,80,445 10.10.10.10
+</code></pre></div></div>
+
+<p>En este ejemplo vemos como estamos lanzando los scripts de las categorías <code class="language-plaintext highlighter-rouge">vuln</code> y <code class="language-plaintext highlighter-rouge">safe</code> a la dirección Ip Víctima por los puertos 22, 80 y 445.
+Para ver solo las categorías que existen independientemente de los scripts podemos verlas utilizando los siguientes comandos de filtrado:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/182569547-c4642134-8921-4fae-a99b-3780ab394cec.png" alt="Captura de pantalla 2022-08-03 110200" /></p>
+
+<p>Como vemos en la imagen, se nos reporta por consola todas las categorías existentes que podemos emplear.</p>
+
+<p><a name="item9"></a></p>
+<h1 id="escalada-de-privilegios-con-nmap">Escalada de privilegios con Nmap:</h1>
+
+<p>En múltiples ocasiones, una vez realizada la intrusión en el sistema, veremos como algunos de los equipos o sistemas tienen <code class="language-plaintext highlighter-rouge">nmap</code> instalado. En caso de que los
+privilegios sean los adecuados, se pueden usar para ganar acceso como root.</p>
+
+<p>Para esto, en primer lugar, debe de tratarse de una versión de nmap que contenga el parámetro <code class="language-plaintext highlighter-rouge">--interactive</code>. Ahora, mediante el comando <code class="language-plaintext highlighter-rouge">sudo -l</code> podemos ver los
+permisos que tenemos como sudo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -l
+</code></pre></div></div>
+
+<p><img class="img-nmap" src="https://user-images.githubusercontent.com/103068924/170876271-0be1555f-58da-4361-b38f-01bbefdc58f4.png" alt="Captura de pantalla -2022-05-29 16-19-01" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/170876284-b614c5a7-82bc-4a38-8926-ee395408fe4a.png" alt="Captura de pantalla -2022-05-29 16-20-21" /></p>
+
+<p>Debemos de fijarnos que tengamos permisos sudo sobre <code class="language-plaintext highlighter-rouge">nmap</code>. En tal caso, utilizaremos el siguiente comando para establecer una shell interna:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo nmap --interactive
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/170876291-8ab391a2-ba8e-41d3-98ed-72a0664dbb6d.png" alt="Captura de pantalla -2022-05-29 16-21-09" /></p>
+
+<p>Una vez establecida la shell de nmap, usaremos la expresión <code class="language-plaintext highlighter-rouge">!sh</code> para acceder como <code class="language-plaintext highlighter-rouge">root</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>!sh
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/170876304-2e7280f7-623d-49f9-9608-c0b9a1de421d.png" alt="Captura de pantalla -2022-05-29 16-21-39" /></p>
+
+<p>Directamente, pasaremos a estar registrados como el usuario <code class="language-plaintext highlighter-rouge">root</code> del sistema.</p>
+
+<p><a name="item10"></a></p>
+<h1 id="nmap-options-description">Opciones de Nmap.</h1>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">10.10.10.0/24</code> Rango de red de destino. </li>
+  <li><code class="language-plaintext highlighter-rouge">-sn</code>: Deshabilita el análisis de puertos.</li>
+  <li><code class="language-plaintext highlighter-rouge">-Pn</code> Deshabilita las solicitudes de echo ICMP.</li>
+  <li><code class="language-plaintext highlighter-rouge">-n</code> Deshabilita la resolución DNS.</li>
+  <li><code class="language-plaintext highlighter-rouge">-PE</code> Realiza el análisis de ping mediante solicitudes de eco ICMP contra el destino.</li>
+  <li><code class="language-plaintext highlighter-rouge">--packet-trace</code> Muestra todos los paquetes enviados y recibidos.</li>
+  <li><code class="language-plaintext highlighter-rouge">--reason</code> Muestra el motivo de un resultado específico.</li>
+  <li><code class="language-plaintext highlighter-rouge">--disable-arp-ping</code> Deshabilita las solicitudes de ping ARP.</li>
+  <li><code class="language-plaintext highlighter-rouge">--top-ports=&lt;num&gt;</code> Analiza los puertos superiores especificados que se han definido como más frecuentes.</li>
+  <li><code class="language-plaintext highlighter-rouge">-p-</code> Escanea todos los puertos.</li>
+  <li><code class="language-plaintext highlighter-rouge">-p22-110</code> Escanea todos los puertos entre 22 y 110.</li>
+  <li><code class="language-plaintext highlighter-rouge">-p22,25</code> Analiza solo los puertos especificados 22 y 25.</li>
+  <li><code class="language-plaintext highlighter-rouge">-F</code> Escanea los 100 puertos principales.</li>
+  <li><code class="language-plaintext highlighter-rouge">-sS</code> Realiza un TCP SYN-Scan.</li>
+  <li><code class="language-plaintext highlighter-rouge">-sA</code> Realiza un TCP ACK-Scan.</li>
+  <li><code class="language-plaintext highlighter-rouge">-sU</code> Realiza un UDP Scan.</li>
+  <li><code class="language-plaintext highlighter-rouge">-sV</code> Analiza los servicios descubiertos en busca de sus versiones.</li>
+  <li><code class="language-plaintext highlighter-rouge">-sC</code> Realiza un análisis de secuencias de comandos con secuencias de comandos que se clasifican como "predeterminadas".</li>
+  <li><code class="language-plaintext highlighter-rouge">--script &lt;script&gt;</code> Realiza un análisis de secuencias de comandos mediante los scripts especificados.</li>
+  <li><code class="language-plaintext highlighter-rouge">-O</code> Realiza un análisis de detección del sistema operativo para determinar el sistema operativo del destino.</li>
+  <li><code class="language-plaintext highlighter-rouge">-A</code> Realiza análisis de detección del sistema operativo, detección de servicios y traceroute.</li>
+  <li><code class="language-plaintext highlighter-rouge">-D RND:5</code> Establece el número de señuelos aleatorios que se utilizarán para escanear el objetivo.</li>
+  <li><code class="language-plaintext highlighter-rouge">-e</code> Especifica la interfaz de red que se utiliza para el análisis.</li>
+  <li><code class="language-plaintext highlighter-rouge">-S 10.10.10.200</code> Especifica la dirección IP de origen para el análisis.</li>
+  <li><code class="language-plaintext highlighter-rouge">-g</code> Especifica el puerto de origen para el análisis.</li>
+  <li><code class="language-plaintext highlighter-rouge">--dns-server &lt;ns&gt;</code>	La resolución dns se realiza mediante un servidor de nombres especificado.</li>
+  <li><code class="language-plaintext highlighter-rouge">-oA filename</code> Almacena los resultados en todos los formatos disponibles comenzando con el nombre de "filename".</li>
+  <li><code class="language-plaintext highlighter-rouge">-oN filename</code> Almacena los resultados en formato normal con el nombre "filename".</li>
+  <li><code class="language-plaintext highlighter-rouge">-oG filename</code> Almacena los resultados en formato "grepable" con el nombre de "filename".</li>
+  <li><code class="language-plaintext highlighter-rouge">-oX filename</code> Almacena los resultados en formato XML con el nombre de "filename".</li>
+  <li><code class="language-plaintext highlighter-rouge">--max-retries &lt;num&gt;</code>	Establece el número de reintentos para los análisis de puertos específicos.</li>
+  <li><code class="language-plaintext highlighter-rouge">--stats-every=5s</code> Muestra el estado del escaneo cada 5 segundos.</li>
+  <li><code class="language-plaintext highlighter-rouge">-v/-vv</code> Muestra una salida detallada durante el análisis.</li>
+  <li><code class="language-plaintext highlighter-rouge">--initial-rtt-timeout 50ms</code> Establece el valor de tiempo especificado como tiempo de espera RTT inicial.</li>
+  <li><code class="language-plaintext highlighter-rouge">--max-rtt-timeout 100ms</code> Establece el valor de tiempo especificado como tiempo de espera RTT máximo.</li>
+  <li><code class="language-plaintext highlighter-rouge">--min-rate 300</code>	Establece el número de paquetes que se enviarán simultáneamente.</li>
+  <li><code class="language-plaintext highlighter-rouge">-T &lt;0-5&gt;</code> Especifica la plantilla de temporización específica. Siendo 0 el más lento y 5 el más rápido.</li>
+</ul>
+
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+<hr />
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

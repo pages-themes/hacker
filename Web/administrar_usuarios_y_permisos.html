@@ -1,0 +1,294 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/administrar_usuarios_y_permisos.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/administrar_usuarios_y_permisos.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Blog sobre informática Y ciberseguridad.</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!--------------------------------  Letrero Animado  --------------------------------------->      
+ 
+  <svg viewBox="0 0 1320 300">
+
+    <!-- Símbolo -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+        Windows   <!-- Palabra del Letrero-->
+      </text>
+    </symbol>  
+  
+    <!-- Añadir en función de las letras de la palabra -->
+    <use xlink:href="#s-text" class="text"></use><!--1-->
+    <use xlink:href="#s-text" class="text"></use><!--2-->  
+    <use xlink:href="#s-text" class="text"></use><!--3-->
+    <use xlink:href="#s-text" class="text"></use><!--4-->
+    <use xlink:href="#s-text" class="text"></use><!--5-->
+    <use xlink:href="#s-text" class="text"></use><!--6-->
+    <use xlink:href="#s-text" class="text"></use><!--7-->
+    <use xlink:href="#s-text" class="text"></use><!--8-->
+    <use xlink:href="#s-text" class="text"></use><!--9-->
+  </svg>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<h1 id="administrar-usuarios-y-permisos-windows">Administrar Usuarios y Permisos Windows</h1>
+
+<p>En este artículo se muestra como crear o eliminar usuarios y administrar permisos de usuarios desde la shell de Windows.</p>
+
+<h2 id="abrir-la-terminal">Abrir la Terminal:</h2>
+
+<p>Para abrir la terminal en Windows podemos escribir en el buscador <code class="language-plaintext highlighter-rouge">cmd</code> o presionar <code class="language-plaintext highlighter-rouge">Tecla Windows + R</code> y luego escribimos <code class="language-plaintext highlighter-rouge">cmd</code> o <code class="language-plaintext highlighter-rouge">símbolo del sistema</code>.
+Lo ideal para no tener problemas, es abrir la Terminal como Administrador, para ello la buscamos mediante el buscador y escribimos <code class="language-plaintext highlighter-rouge">cmd</code>, luego presionamos
+clic Derecho y <code class="language-plaintext highlighter-rouge">Abrir como Administrador</code>.</p>
+
+<h2 id="listar-usuarios">Listar Usuarios:</h2>
+<p>Mediante este comando podremos ver todos los usuarios registrados en el sistema:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>net user
+</code></pre></div></div>
+
+<h2 id="crear-un-nuevo-usuario">Crear un Nuevo Usuario:</h2>
+<p>Para crear un Usuario Nuevo sin permisos de Administrador podemos utilizar los siguientes comandos. Debemos tener en cuenta que el Usuario creado no
+tendrá contraseña y que tenemos que definirla nosotros una vez creado.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>net user 'nombre de usuario' /add
+</code></pre></div></div>
+
+<p>Otro comando para crear un Usuario es el siguiente:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adduser 'nombre de usuario'
+</code></pre></div></div>
+
+<h2 id="establecer-contraseña-a-un-usuario">Establecer Contraseña a un Usuario:</h2>
+
+<p>Una vez tenemos el Usuario creado, vamos a establecer una contraseña. Para ello introducimos el siguiente comando y se nos desplegará en la terminal la 
+opción de introducir una contraseña.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>net user 'nombre usuario' *
+</code></pre></div></div>
+
+<p>En caso de querer eliminar la contraseña, simplemente usamos el mismo comando, pero en este caso en vez de introducir una contraseña nueva, solo 
+pulsamos dos veces <code class="language-plaintext highlighter-rouge">Enter</code> dejando los parámetros en blanco.</p>
+
+<h2 id="ver-permisos">Ver Permisos:</h2>
+<p>Mediante el siguiente comando podremos ver que tipo de permisos le podemos dar a cada usuario. La lista que muesta el siguiente comando, muestra todos
+los permisos.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>net localgroup
+</code></pre></div></div>
+
+<h2 id="dar-permisos-a-un-usuario">Dar Permisos a un Usuario:</h2>
+<p>Para poder dar permisos a un Usuario, como por ejemplo como <code class="language-plaintext highlighter-rouge">Administrador</code>, realizamos lo siguiente:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>net localgroup administrador 'nombre de usuario' /add
+</code></pre></div></div>
+
+<p>En caso de desear otro tipo de permiso, simplemente cambiamos <code class="language-plaintext highlighter-rouge">administrador</code> por el permiso que le queramos dar.</p>
+
+<p>## Eliminar Permisos a un Usuario:
+ La sintaxis es casi igual que para dar permisos, solo cambiamos la variable final por <code class="language-plaintext highlighter-rouge">/delete</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> net localgroup administrador 'nombre de usuario' /delete
+</code></pre></div></div>
+
+<p>## Eliminar Usuarios:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> net user 'nombre de usuario' /delete
+</code></pre></div></div>
+
+<p>## Habilitar cuenta de Administrador Oculta:
+ Este comando activa o habilita la cuenta de administrador oculta del sistema Windows. Esto se utiliza normalmente cuando no tenemos permisos de
+ administrador, y por tanto, no podemos realizar cambios:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> net user administrador /active:yes
+</code></pre></div></div>
+
+<p>Para comprobar que estamos utilizando el nombre correcto del permiso (en este caso <code class="language-plaintext highlighter-rouge">administrador</code>), podemos revisarlo mediante el comando mencionado
+anteriormente <code class="language-plaintext highlighter-rouge">net localgroup</code>.</p>
+
+<p>Para desactivar la cuenta de administrador oculta:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>net user administrador /active:no
+</code></pre></div></div>
+
+
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+<hr />
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

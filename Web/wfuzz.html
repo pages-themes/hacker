@@ -1,0 +1,446 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/wfuzz.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/wfuzz.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Blog sobre informática Y ciberseguridad.</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!--------------------------------  Letrero Animado  --------------------------------------->      
+ 
+  <svg viewBox="0 0 1320 300">
+
+    <!-- Símbolo -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+        WFUZZ  <!-- Palabra del Letrero-->
+      </text>
+    </symbol>  
+  
+    <!-- Añadir en función de las letras de la palabra -->
+    <use xlink:href="#s-text" class="text"></use><!--1-->
+    <use xlink:href="#s-text" class="text"></use><!--2-->  
+    <use xlink:href="#s-text" class="text"></use><!--3-->
+    <use xlink:href="#s-text" class="text"></use><!--4-->
+    <use xlink:href="#s-text" class="text"></use><!--5-->
+    <use xlink:href="#s-text" class="text"></use><!--6-->
+    <use xlink:href="#s-text" class="text"></use><!--7-->
+    <use xlink:href="#s-text" class="text"></use><!--8-->
+    <use xlink:href="#s-text" class="text"></use><!--9-->
+  </svg>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<h1 id="índice">Índice:</h1>
+
+<ul>
+  <li><a href="#item1" style="text-decoration:none">1.1 ¿Qué es Wfuzz?</a></li>
+  <li><a href="#item2" style="text-decoration:none">1.2 ¿Cómo funciona?</a></li>
+  <li><a href="#item3" style="text-decoration:none">1.3 Diccionarios y Listas de Palabras.</a></li>
+  <li><a href="#item4" style="text-decoration:none">1.4 Payloads/Cargas Útiles.</a></li>
+  <li><a href="#item5" style="text-decoration:none">1.5 Obtener ayuda.</a></li>
+  <li><a href="#item6" style="text-decoration:none">1.6 Filtros.</a></li>
+  <li><a href="#item7" style="text-decoration:none">1.7 Ocultar respuestas.</a></li>
+  <li><a href="#item8" style="text-decoration:none">2.0 Ejecución Básica.</a></li>
+  <li><a href="#item9" style="text-decoration:none">2.1 Ejecución Carga Útil.</a></li>
+  <li><a href="#item10" style="text-decoration:none">2.2 Ejecución definiendo el valor del Payload.</a></li>
+  <li><a href="#item11" style="text-decoration:none">2.3 Ejecución fuzzeando cabezeras.</a></li>
+  <li><a href="#item12" style="text-decoration:none">2.4 Ejecución filtrada omitiendo servicios web desconocidos.</a></li>
+  <li><a href="#item13" style="text-decoration:none">2.5 Ejecución filtrada omitiendo servicios con caracteres repetidos.</a></li>
+</ul>
+
+<p><a name="item1"></a></p>
+<h1 id="qué-es-wfuzz">¿Qué es Wfuzz?</h1>
+
+<p>WFuzz es una herramienta y biblioteca de fuzzer de seguridad de aplicaciones web para Python.</p>
+
+<p><a name="item2"></a></p>
+<h1 id="cómo-funciona">¿Cómo funciona?</h1>
+
+<p>Wfuzz se basa en un concepto simple: reemplaza cualquier referencia a la palabra clave FUZZ por el valor de una carga útil determinada.</p>
+
+<p>Una carga útil en Wfuzz es una fuente de datos.</p>
+
+<p>Este concepto simple permite inyectar cualquier entrada en cualquier campo de una solicitud HTTP, lo que permite realizar complejos ataques
+de seguridad web en diferentes componentes de la aplicación web, como: parámetros, autenticación, formularios, directorios/archivos, encabezados, etc.</p>
+
+<p><a name="item3"></a></p>
+<h1 id="diccionarios-y-listas-de-palabras">Diccionarios y Listas de Palabras:</h1>
+
+<p>En caso de utilizar Kali Linux o ParroOS suelen tener incluidos el repositorio <code class="language-plaintext highlighter-rouge">wordlists</code> el cual incluye una variedad de diccionarios o listas de
+palabras de distintos tamaños. Este repositorio se encuentra en el directorio <code class="language-plaintext highlighter-rouge">/usr/share/wordlists</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167343931-14b023c8-3260-44da-9b50-62586e56db8f.png" alt="Captura de pantalla -2022-05-09 06-58-59" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167344140-af2eb436-c3ab-4204-8f9f-121c306782bc.png" alt="Captura de pantalla -2022-05-09 07-01-52" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167344168-2b83b1e0-0854-4421-82e9-9b9242dca851.png" alt="Captura de pantalla -2022-05-09 07-02-21" /> <img src="https://user-images.githubusercontent.com/103068924/167344175-48c8a65e-f043-4efc-9c4d-a00d97b83830.png" alt="Captura de pantalla -2022-05-09 07-03-15" /></p>
+
+<p>Para descargar el repositorio con todos los diccionarios simplemente ejecutamos lo siguiente:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install wordlists
+</code></pre></div></div>
+
+<p><a name="item4"></a></p>
+<h1 id="payloadscargas-útiles">Payloads/Cargas Útiles:</h1>
+
+<p>Wfuzz se basa en un concepto simple: reemplaza cualquier referencia a la palabra clave FUZZ por el valor de una carga útil determinada. Una <code class="language-plaintext highlighter-rouge">carga útil</code> más conocida como <code class="language-plaintext highlighter-rouge">payload</code> en Wfuzz es una fuente de datos de entrada y se especifica mediante <code class="language-plaintext highlighter-rouge">-z</code>:</p>
+
+<p>Las cargas útiles disponibles se pueden listar ejecutando la opción <code class="language-plaintext highlighter-rouge">-e payloads</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wfuzz -e payloads
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167346305-cd82d0a9-b840-4944-9237-2f27be89c565.png" alt="Captura de pantalla -2022-05-09 07-30-49" /></p>
+
+<p>Se puede obtener información detallada sobre las cargas útiles ejecutando:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wfuzz -z help
+</code></pre></div></div>
+
+<p>Este último se puede filtrar usando el parámetro <code class="language-plaintext highlighter-rouge">--slice</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wfuzz -z help --slice "dirwalk"
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167346718-14049e7c-e687-4376-bc97-21fa0a000df2.png" alt="Captura de pantalla -2022-05-09 07-34-57" /></p>
+
+<p><a name="item5"></a></p>
+<h1 id="obtener-ayuda">Obtener ayuda:</h1>
+
+<p>Use el interruptor <code class="language-plaintext highlighter-rouge">–h</code> y <code class="language-plaintext highlighter-rouge">–help</code> para obtener el uso de ayuda básica y avanzada respectivamente.</p>
+
+<p>Wfuzz es un marco completamente modular, puede verificar los módulos disponibles usando el interruptor <code class="language-plaintext highlighter-rouge">-e iterators</code>:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167345166-41e40d2a-98fd-4747-9d25-c7ba9c89d95c.png" alt="Captura de pantalla -2022-05-09 07-18-22" /></p>
+
+<p>Las categorías válidas son: <code class="language-plaintext highlighter-rouge">cargas útiles</code>, <code class="language-plaintext highlighter-rouge">codificadores</code>, <code class="language-plaintext highlighter-rouge">iteradores</code>, <code class="language-plaintext highlighter-rouge">impresoras</code> o <code class="language-plaintext highlighter-rouge">scripts</code>.</p>
+
+<p><a name="item6"></a></p>
+<h1 id="filtros">Filtros:</h1>
+
+<p>Filtrar resultados en Wfuzz es primordial:</p>
+
+<p>Los diccionarios grandes pueden generar una gran cantidad de resultados y pueden ahogar fácilmente los resultados válidos legítimos.
+La clasificación de las respuestas HTTP es clave para realizar algunos ataques, por ejemplo, para verificar la presencia de una vulnerabilidad de inyección SQL, debemos distinguir una respuesta legítima de la que genera un error o datos diferentes.
+Wfuzz permite filtrar según el código de respuesta HTTP y la longitud de la información recibida (en forma de palabras, caracteres o líneas). También se pueden utilizar expresiones regulares. Se pueden tomar dos enfoques: mostrar u ocultar los resultados que coinciden con un filtro determinado.</p>
+
+<p><a name="item7"></a></p>
+<h1 id="ocultar-respuestas">Ocultar respuestas</h1>
+
+<p>Los siguientes parámetros de la línea de comandos se pueden usar para ocultar ciertas respuestas HTTP <code class="language-plaintext highlighter-rouge">–hc</code>, <code class="language-plaintext highlighter-rouge">–hl</code>, <code class="language-plaintext highlighter-rouge">–hw</code>, <code class="language-plaintext highlighter-rouge">–hh</code>.</p>
+
+<p>El comando <code class="language-plaintext highlighter-rouge">--hc</code> filtra los recursos web desconocidos por el servidor web ( http://en.wikipedia.org/wiki/HTTP_404 ), básicamente suprime las páginas 
+que reportar <code class="language-plaintext highlighter-rouge">error 404</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wfuzz -w wordlist/general/common.txt --hc 404 http://testphp.vulnweb.com/FUZZ
+</code></pre></div></div>
+
+<p>Se pueden especificar múltiples valores, por ejemplo, la siguiente ejecución de wfuzz agrega los recursos prohibidos al filtro:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wfuzz -w wordlist/general/common.txt --hc 404,403 http://testphp.vulnweb.com/FUZZ
+</code></pre></div></div>
+
+<p>Las líneas, palabras o caracteres son útiles cuando buscamos recursos con el mismo código de estado HTTP.</p>
+
+<p>Por ejemplo, es un comportamiento común (a veces debido a una configuración incorrecta) que los servidores web devuelvan una página de error personalizada con un código de respuesta 200, esto se conoce como <code class="language-plaintext highlighter-rouge">soft 404</code>.</p>
+
+<p><a name="item8"></a></p>
+<h1 id="ejecución-básica">Ejecución Básica:</h1>
+
+<p>Una ejecución de línea de comando típica de Wfuzz, que especifica una carga de diccionario y una URL, se ve así:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wfuzz -w [Ruta del Diccionario] [Url Víctima]/FUZZ
+
+wfuzz -w wordlist/general/common.txt http://testphp.vulnweb.com/FUZZ
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-w</code> : Especifica un diccionario (Lista de palabras).</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167342418-da9eb2b7-3f2a-446b-b5af-5892d1da0fd6.png" alt="Captura de pantalla -2022-05-09 06-45-44" /></p>
+
+<p>Podemos ver los siguientes parámetros en la respuesta:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167342497-c9bf20af-e69b-4515-92e5-3ed86fe922d1.png" alt="Captura de pantalla -2022-05-09 06-46-33" /></p>
+
+<p>La salida de Wfuzz permite analizar las respuestas del servidor web y filtrar los resultados deseados en función del mensaje de respuesta HTTP obtenido, por ejemplo, códigos de respuesta, longitud de respuesta, etc.</p>
+
+<p>Cada línea proporciona la siguiente información:</p>
+
+<p><code class="language-plaintext highlighter-rouge">ID</code> : El número de solicitud en el orden en que se realizó.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Respuesta:</code> muestra el código de respuesta HTTP.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Líneas:</code> Muestra el número de líneas en la respuesta HTTP.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Palabra:</code> Muestra el número de palabras en la respuesta HTTP.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Chars:</code> Muestra el número de caracteres en la respuesta HTTP.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Carga útil:</code> Muestra la carga útil utilizada.</p>
+
+<p><a name="item9"></a></p>
+<h1 id="ejecución-carga-útil">Ejecución Carga Útil:</h1>
+
+<p>Cada palabra clave FUZZ debe tener su carga útil (payload) correspondiente. Hay varias formas equivalentes de especificar una <code class="language-plaintext highlighter-rouge">payload</code>:</p>
+
+<h3 id="ejecución-básica-1">Ejecución Básica:</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wfuzz -w [Ruta del Diccionario] [URL Víctima]/FUZZ
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-w</code> : Especifica un diccionario (Lista de palabras).</p>
+
+<p><a name="item10"></a></p>
+<h3 id="ejecución-definiendo-el-valor-del-payload">Ejecución definiendo el valor del Payload:</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wfuzz -z [Ruta del Diccionario] [URL Víctima]/FUZZ
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-z</code> : Especifica el valor del parámetro predeterminado del payload.</p>
+
+<p><a name="item11"></a></p>
+<h3 id="ejecución-fuzzeando-cabezeras">Ejecución fuzzeando cabezeras.</h3>
+<p>Esto nos permite la opción de repetir varios encabezados. Para ello se emplea la etiqueta <code class="language-plaintext highlighter-rouge">-H</code> de header seguida de la especificación entre comillas dobles.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wfuzz -w [Ruta del Diccionario] -H "Host: FUZZ.ejemplo.com" http://ejemplo.com
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Ejemplo:</code></p>
+
+    <p>wfuzz -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt -H “Host: FUZZ.nunchuks.htb” http://nunchuks.htb</p>
+  </li>
+</ul>
+
+<p><a name="item12"></a></p>
+<h3 id="ejecución-filtrada-omitiendo-servicios-web-desconocidos">Ejecución filtrada omitiendo servicios web desconocidos:</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wfuzz -w [Ruta del Diccionario] --hc 404,403 [URL Víctima]
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-w</code> : Especifica un diccionario (Lista de palabras).</p>
+
+<p><code class="language-plaintext highlighter-rouge">--hc</code> : Omite los resultados HTTP especificados, en este caso las páginas con servicios 404 (servidor no encontrado) y 403 (sin permisos de acceso).</p>
+
+<p>Se puede encontr mucha más información sobre esta herramienta en su página: <a href="https://wfuzz.readthedocs.io/en/latest/user/getting.html">https://wfuzz.readthedocs.io/en/latest/user/getting.html</a></p>
+
+<p><a name="item13"></a></p>
+<h3 id="ejecución-filtrada-omitiendo-servicios-con-caracteres-repetidos">Ejecución filtrada omitiendo servicios con caracteres repetidos:</h3>
+
+<p>En algunas ocasiones al ejecutar Wfuzz veremos como empieza a reportar resultados inconcluyentes con el mismo número de caracteres. Al igual que los servicios web
+estos resultados pueden ser filtrados para que sean omitidos y que solo nos devuelva los resultados que nos interesan.</p>
+
+<p>Para omitir los caracteres o chars específicos se usa la instrucción <code class="language-plaintext highlighter-rouge">--hh=[Nº Chars]</code>. Veamos como sería su sintaxis:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wfuzz --hh=[Nº Chars] -w [Ruta del Diccionario] [URL Víctima]
+</code></pre></div></div>
+
+<p>Vamos a ver un ejemplo para que quede más claro, para ello primero vamos a realizar un escaneo simple sin filtrar ningún resultado para que veáis como se repiten
+las peticiones con el mismo número de caracteres.</p>
+
+<p>Para este ejemplo usaremos la máquina <code class="language-plaintext highlighter-rouge">Nunchucks</code> de HTB con la Ip 10.10.11.122 y como diccionario utilizaremos uno de la librería <code class="language-plaintext highlighter-rouge">Seclists</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wfuzz -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt -H "Host: FUZZ.nunchucks.htb" http://nunchucks.htb
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/180252687-7037a5b5-add2-4744-8491-e5d2a1f88f5d.png" alt="Captura de pantalla 2022-07-21 172614" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/180252698-c7432676-681d-486a-9307-502475e7c986.png" alt="Captura de pantalla 2022-07-21 172633" /></p>
+
+<p>Como podéis ver nos reporta un montón de resultados con el mismo número de <code class="language-plaintext highlighter-rouge">chars</code>:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/180252935-a968d55d-776f-4f62-87d4-0d0fd9f2b255.png" alt="Captura de pantalla 2022-07-21 172657" /></p>
+
+<p>Vamos a intentar aplicar el filtro <code class="language-plaintext highlighter-rouge">--hh=30587</code> para ocultar todos los resultados con ese número de caracteres:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wfuzz --hh=30587 -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt -H "Host: FUZZ.nunchucks.htb" http://nunchucks.htb
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/180253429-4f39c317-b4ac-40a5-b32a-eef79b67b0f2.png" alt="Captura de pantalla 2022-07-21 173038" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/180254604-38dff995-7ae1-489b-8794-79913b3d2b0a.png" alt="Captura de pantalla 2022-07-21 173652" /></p>
+
+<p>Una vez especificado, solo nos muestra los resultados con un número de caracteres diferente a 30587.</p>
+
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+<hr />
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

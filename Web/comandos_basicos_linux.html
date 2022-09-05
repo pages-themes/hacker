@@ -1,0 +1,450 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/comandos_basicos_linux.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/comandos_basicos_linux.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Blog sobre informática Y ciberseguridad.</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!--------------------------------  Letrero Animado  --------------------------------------->      
+ 
+  <svg viewBox="0 0 1320 300">
+
+    <!-- Símbolo -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+        Linux   <!-- Palabra del Letrero-->
+      </text>
+    </symbol>  
+  
+    <!-- Añadir en función de las letras de la palabra -->
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+  </svg>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<h1 id="comandos-básicos-de-linux">Comandos Básicos de Linux</h1>
+
+<p>Al operar un sistema operativo Linux, debes usar un shell, una interfaz que te da acceso a los servicios del sistema operativo. La mayoría de
+las distribuciones de Linux utilizan una interfaz gráfica de usuario (GUI) como shell, principalmente para proporcionar facilidad de uso a sus usuarios.</p>
+
+<h2 id="pwd">pwd</h2>
+<p>Usa el comando pwd para encontrar la ruta del directorio (carpeta) de trabajo actual en el que te encuentras. El comando devolverá una ruta absoluta
+(completa), que es básicamente una ruta de todos los directorios que comienzan con una barra diagonal (/) Un ejemplo de una ruta absoluta es
+<code class="language-plaintext highlighter-rouge">/home/nombredeusuario</code>.</p>
+
+<h2 id="cd">cd</h2>
+<p>Para navegar por los archivos y directorios de Linux, usa el comando cd. Te pedirá la ruta completa o el nombre del directorio, dependiendo del
+directorio de trabajo actual en el que te encuentres.</p>
+
+<p>Supongamos que estás en <code class="language-plaintext highlighter-rouge">/home/nombredeusuario/Documentos</code> y deseas ir a <code class="language-plaintext highlighter-rouge">Fotos</code>, un subdirectorio de <code class="language-plaintext highlighter-rouge">Documentos</code>. Para hacerlo, simplemente escribe el siguiente comando:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd Fotos
+</code></pre></div></div>
+
+<p>Otro escenario es si deseas ir a un directorio completamente nuevo, por ejemplo, <code class="language-plaintext highlighter-rouge">/home/nombredeusuario/Peliculas</code>. En este caso, debes escribir <code class="language-plaintext highlighter-rouge">cd</code> seguido de la ruta absoluta del directorio:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /home/ nombredeusuario/Peliculas.
+</code></pre></div></div>
+
+<p>Hay algunos atajos para ayudarte a navegar rápidamente:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cd ..</code> : (Con dos puntos) Para ir un directorio hacia arriba.   <br />
+<code class="language-plaintext highlighter-rouge">cd </code> : Para ir directamente a la carpeta de inicio.  <br />
+<code class="language-plaintext highlighter-rouge">cd-</code> :  (Con un guión) Para ir al directorio anterior.</p>
+
+<p>Como nota al margen, el shell de Linux distingue entre mayúsculas y minúsculas. Por lo tanto, debes escribir el nombre del directorio de forma exacta.</p>
+
+<h2 id="ls">ls</h2>
+<p>El comando ls se usa para ver el contenido de un directorio. Por defecto, este comando mostrará el contenido de tu directorio de trabajo actual.</p>
+
+<p>Si deseas ver el contenido de otros directorios, escribe ls y luego la ruta del directorio. Por ejemplo, ingresa <code class="language-plaintext highlighter-rouge">ls /home/nombredeusuario/Documentos</code>
+para ver el contenido de Documentos.</p>
+
+<p>Hay variaciones que puedes usar con el comando <code class="language-plaintext highlighter-rouge">ls</code>:</p>
+
+<p><code class="language-plaintext highlighter-rouge">ls -R</code> : También listará todos los archivos en los subdirectorios.<br />
+<code class="language-plaintext highlighter-rouge">ls -a</code> : Mostrará los archivos ocultos.<br />
+<code class="language-plaintext highlighter-rouge">ls -al</code> : Listará los archivos y directorios con información detallada como los permisos, el tamaño, el propietario, etc.</p>
+
+<h2 id="cat">cat</h2>
+<p>cat (abreviatura de concatenate, en inglés) es uno de los comandos más utilizados en Linux. Se utiliza para listar el contenido de un archivo en la
+salida estándar (sdout). Para ejecutar este comando, escribe cat seguido del nombre del archivo y su extensión. Por ejemplo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat archivo.txt.
+</code></pre></div></div>
+
+<p>Aquí hay otras formas de usar el comando cat:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cat &gt; nombredearchivo</code> : Crea un nuevo archivo.<br />
+<code class="language-plaintext highlighter-rouge">cat nombredearchivo1 nombredearchivo2&gt;nombredearchivo3</code> : Une dos archivos (1 y 2) y almacena la salida de ellos en un nuevo archivo (3).<br />
+<code class="language-plaintext highlighter-rouge">cat nombredearchivo | tr a-z A-Z&gt; salida.txt</code> : Convertir un archivo a mayúsculas o minúsculas.</p>
+
+<h2 id="cp">cp</h2>
+<p>Usa el comando cp para copiar archivos del directorio actual a un directorio diferente. Por ejemplo, el comando <code class="language-plaintext highlighter-rouge">cp escenario.jpg
+/home/nombredeusuario/Imagenes</code> crearía una copia de escenario.jpg (desde tu directorio actual) en el directorio de <strong>Imagenes</strong>.</p>
+
+<h2 id="mv">mv</h2>
+<p>El uso principal del comando mv es mover archivos, aunque también se puede usar para cambiar el nombre de los archivos.</p>
+
+<p>Los argumentos en mv son similares al comando cp. Debes escribir <code class="language-plaintext highlighter-rouge">mv</code>, el <code class="language-plaintext highlighter-rouge">nombre del archivo</code> y el <code class="language-plaintext highlighter-rouge">directorio destino</code>.<br />
+Por ejemplo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv archivo.txt /home/nombredeusuario/Documentos.
+</code></pre></div></div>
+
+<p>Para <strong>cambiar el nombre</strong> de los archivos, el comando de Linux es:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv nombreviejo.ext nombrenuevo.ext
+</code></pre></div></div>
+
+<h2 id="mkdir">mkdir</h2>
+<p>Usa el comando mkdir para crear un nuevo directorio: si escribes <code class="language-plaintext highlighter-rouge">mkdir Musica</code>, creará un directorio llamado Musica.</p>
+
+<p>También hay comandos adicionales de mkdir:</p>
+
+<p>Para generar un nuevo directorio dentro de otro directorio, usa este comando básico de Linux <code class="language-plaintext highlighter-rouge">mkdir Musica/Nuevoarchivo</code>.<br />
+Usa la opción <code class="language-plaintext highlighter-rouge">p</code> (padres) para crear un directorio entre dos directorios existentes. <br />
+Por ejemplo, <code class="language-plaintext highlighter-rouge">mkdir -p Musica/2020/Nuevoarchivo</code> creará el nuevo archivo <strong>2020</strong>.</p>
+
+<h2 id="rmdir">rmdir</h2>
+<p>Si necesitas eliminar un directorio, usa el comando rmdir. Sin embargo, rmdir solo te permite eliminar directorios vacíos.</p>
+
+<h2 id="rm">rm</h2>
+<p>El comando rm se usa para eliminar directorios y el contenido dentro de ellos. Si solo deseas eliminar el directorio, como alternativa a rmdir,
+usa <code class="language-plaintext highlighter-rouge">rm -r</code>.</p>
+
+<p><strong>Nota:</strong> Ten mucho cuidado con este comando y verifica en qué directorio te encuentras. Este comando elimina todo y no se puede deshacer.</p>
+
+<h2 id="touch">touch</h2>
+<p>El comando touch te permite crear un nuevo archivo en blanco a través de la línea de comando de Linux.<br />
+Como ejemplo, ejecuta <code class="language-plaintext highlighter-rouge">touch /home/nombredeusuario/Documentos/Web.html</code> para crear un archivo HTML titulado <strong>Web</strong> en el directorio <strong>Documentos</strong>.</p>
+
+<h2 id="locate">locate</h2>
+<p>Puedes usar este comando para localizar un archivo, al igual que el comando de búsqueda en Windows. Además, el uso del argumento <code class="language-plaintext highlighter-rouge">-i</code> junto con este
+comando hará que no distinga entre mayúsculas y minúsculas, por lo que puedes buscar un archivo incluso si no recuerdas su nombre exacto.</p>
+
+<p>Para buscar un archivo que contenga dos o más palabras, usa un asterisco <code class="language-plaintext highlighter-rouge">*</code>.<br />
+Por ejemplo, el comando <code class="language-plaintext highlighter-rouge">locate -i escuela*nota</code> buscará cualquier archivo que contenga la palabra <code class="language-plaintext highlighter-rouge">escuela</code> y <code class="language-plaintext highlighter-rouge">nota</code>, ya sea en mayúsculas o minúsculas.</p>
+
+<h2 id="find">find</h2>
+<p>Similar al comando locate, usando find también buscas archivos y directorios. La diferencia es que usas el comando find para ubicar archivos dentro
+de un directorio dado.</p>
+
+<p>Como ejemplo, el comando <code class="language-plaintext highlighter-rouge">find /home/ -name notas.txt</code> buscará un archivo llamado <strong>notas.txt</strong> dentro del directorio de inicio y sus subdirectorios.</p>
+
+<p>Otras variaciones al usar find son:</p>
+
+<p>Para buscar archivos en el directorio actual, <code class="language-plaintext highlighter-rouge">find . -name notas.txt</code>.<br />
+Para buscar directorios, <code class="language-plaintext highlighter-rouge">find / -type d -name notes.txt</code>.</p>
+
+<h2 id="grep">grep</h2>
+<p>Otro comando básico de Linux que sin duda es útil para el uso diario es grep. Te permite buscar a través de todo el texto en un archivo dado.</p>
+
+<p>Para ilustrar, <code class="language-plaintext highlighter-rouge">grep azul notepad.txt</code> buscará la palabra <strong>azul</strong> en el archivo del bloc de notas. Las líneas que contienen la palabra buscada
+se mostrarán.</p>
+
+<h2 id="sudo">sudo</h2>
+<p>Abreviatura de «SuperUser Do» (SuperUsuario hace), este comando te permite realizar tareas que requieren permisos administrativos o raíz.
+Sin embargo, no es aconsejable usar este comando para el uso diario, ya que podría ser fácil que ocurra un error si haces algo mal.</p>
+
+<h2 id="df">df</h2>
+<p>Usa el comando df para obtener un informe sobre el uso del espacio en disco del sistema, que se muestra en porcentaje y KB. Si deseas ver el informe
+en megabytes, escribe <code class="language-plaintext highlighter-rouge">df -m</code>.</p>
+
+<h2 id="du">du</h2>
+<p>Si deseas verificar cuánto espacio ocupa un archivo o un directorio, el comando du (Uso del disco, en inglés) es la respuesta. Sin embargo, el 
+resumen de uso del disco mostrará números de bloque de disco en lugar del formato de tamaño habitual. Si deseas verlo en bytes, kilobytes y 
+megabytes, agrega el argumento <code class="language-plaintext highlighter-rouge">-h</code> a la línea de comando.</p>
+
+<h2 id="head">head</h2>
+<p>El comando head se usa para ver las primeras líneas de cualquier archivo de texto. De manera predeterminada, mostrará las primeras diez líneas,
+pero puedes cambiar este número a tu gusto.<br />
+Por ejemplo, si solo deseas mostrar las primeras cinco líneas, escribe:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> head -n 5 nombredearchivo.ext.
+</code></pre></div></div>
+
+<h2 id="tail">tail</h2>
+<p>Este tiene una función similar al comando head, pero en lugar de mostrar las primeras líneas, el comando tail mostrará las últimas diez líneas de
+un archivo de texto. Por ejemplo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tail -n nombredearchivo.ext
+</code></pre></div></div>
+
+<h2 id="diff">diff</h2>
+<p>Para abreviar diferencia, el comando diff compara el contenido de dos archivos línea por línea. Después de analizar los archivos, genera las líneas
+que no coinciden. Los programadores a menudo usan este comando cuando necesitan hacer modificaciones al programa en lugar de reescribir todo el
+código fuente.</p>
+
+<p>La forma más simple de usar este comando es:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>diff archivo1.ext archivo2.ext
+</code></pre></div></div>
+
+<h2 id="tar">tar</h2>
+<p>El comando tar es el comando más utilizado para guardar múltiples archivos en un tarball, un formato de archivo de Linux común que es similar al
+formato zip, con compresión opcional.</p>
+
+<p>Este comando es bastante complejo con una larga lista de funciones, como agregar nuevos archivos a un archivo existente, enumerar el contenido de
+un archivo, extraer el contenido de un archivo y muchos más.</p>
+
+<h2 id="chmod">chmod</h2>
+<p>chmod es otro comando de Linux, utilizado para cambiar los permisos de lectura, escritura y ejecución de archivos y directorios. Como este comando es
+bastante complicado, puedes leer el tutorial completo (en inglés) para ejecutarlo correctamente.</p>
+
+<h2 id="chown">chown</h2>
+<p>En Linux, todos los archivos son propiedad de un usuario específico. El comando chown te permite cambiar o transferir la propiedad de un archivo al
+nombre de usuario especificado. Por ejemplo, <code class="language-plaintext highlighter-rouge">chown usuariolinux2 archivo.ext</code> hará que usuariolinux2 sea el propietario del archivo.ext.</p>
+
+<h2 id="jobs">jobs</h2>
+<p>El comando jobs mostrará todos los trabajos actuales junto con sus estados. Un trabajo es básicamente un proceso iniciado por el shell.</p>
+
+<h2 id="kill">kill</h2>
+<p>Si tienes un programa que no responde, puedes cerrarlo manualmente utilizando el comando kill. Enviará una cierta señal al programa que se está
+ejecutando mal y le indica a la aplicación que finalice.</p>
+
+<p>Hay un total de sesenta y cuatro señales que puedes usar, pero las personas generalmente solo usan dos señales:</p>
+
+<p><code class="language-plaintext highlighter-rouge">SIGTERM (15)</code> : Solicita que un programa deje de ejecutarse y te da algo de tiempo para guardar todo tu progreso. Si no especificas la señal al
+ingresar el comando kill, se utilizará esta señal.</p>
+
+<p><code class="language-plaintext highlighter-rouge">SIGKILL (9)</code> : Obliga a los programas a detenerse inmediatamente. El progreso no guardado se perderá.</p>
+
+<p>Además de conocer las señales, también debes conocer el número de identificación del proceso (PID) del programa que deseas detener (kill). Si no
+conoces el PID, simplemente ejecute el comando <code class="language-plaintext highlighter-rouge">ps ux</code>.</p>
+
+<p>Después de saber qué señal deseas usar y el PID del programa, ingresa la siguiente sintaxis:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kill [opción de señal] PID.
+</code></pre></div></div>
+
+<h2 id="ping">ping</h2>
+<p>Usa el comando ping para verificar tu estado de conectividad a un servidor. Por ejemplo, simplemente ingresando <code class="language-plaintext highlighter-rouge">ping google.com</code>, el comando
+verificará si puedes conectarte a Google y también medirá el tiempo de respuesta.</p>
+
+<h2 id="wget">wget</h2>
+<p>La línea de comandos de Linux es muy útil: incluso puedes descargar archivos de Internet con la ayuda del comando wget. Para hacerlo, simplemente escribe <code class="language-plaintext highlighter-rouge">wget</code> seguido del enlace de descarga.</p>
+
+<h2 id="uname">uname</h2>
+<p>El comando uname, abreviatura de Nombre de Unix, imprimirá información detallada sobre tu sistema Linux, como el nombre de la máquina, el sistema
+operativo, el núcleo, etc.</p>
+
+<h2 id="top">top</h2>
+<p>Como un terminal equivalente al Administrador de tareas en Windows, el comando top mostrará una lista de los procesos en ejecución y la cantidad de CPU
+que utiliza cada proceso. Es muy útil monitorear el uso de los recursos del sistema, especialmente para saber qué proceso debe terminarse porque consume
+demasiados recursos.</p>
+
+<h2 id="history">history</h2>
+<p>Cuando hayas estado utilizando Linux durante un cierto período de tiempo, notarás rápidamente que puedes ejecutar cientos de comandos todos los días. Como tal, ejecutar el comando history es particularmente útil si deseas revisar los comandos que ingresaste anteriormente.</p>
+
+<h2 id="man">man</h2>
+<p>¿Confundido sobre la función de ciertos comandos de Linux? No te preocupes, puedes aprender fácilmente cómo usarlos directamente desde el shell de 
+Linux mediante el comando man. Por ejemplo, al ingresar man tail se mostrarán las instrucciones manuales del comando tail.</p>
+
+<h2 id="echo">echo</h2>
+<p>Este comando se usa para mover algunos datos a un archivo. Por ejemplo, si deseas agregar el texto «Hola, mi nombre es John» en un archivo llamado
+<strong>nombre.txt</strong>, debes escribir: <code class="language-plaintext highlighter-rouge">echo Hola, mi nombre es John &gt;&gt; nombre.txt</code>.</p>
+
+<h2 id="zip-unzip">zip, unzip</h2>
+<p>Usa el comando <code class="language-plaintext highlighter-rouge">zip</code> para <strong>comprimir tus archivos</strong> en un archivo zip y use el comando <code class="language-plaintext highlighter-rouge">unzip</code> para <strong>extraer los archivos comprimidos</strong> de un
+archivo zip.</p>
+
+<h2 id="hostname">hostname</h2>
+<p>Si deseas conocer el nombre de tu host/red, simplemente escribe hostname. Agregar un <code class="language-plaintext highlighter-rouge">-I</code> al final mostrará la dirección IP de tu red.</p>
+
+<h2 id="useradd-userdel">useradd, userdel</h2>
+<p>Dado que Linux es un sistema multiusuario, esto significa que más de una persona puede interactuar con el mismo sistema al mismo tiempo. <code class="language-plaintext highlighter-rouge">useradd</code> se
+usa para crear un nuevo usuario, mientras que <code class="language-plaintext highlighter-rouge">passwd</code> agrega una contraseña a la cuenta de ese usuario. Para agregar una nueva persona llamada John,
+escribe <code class="language-plaintext highlighter-rouge">useradd John</code> y luego para agregar su contraseña, escribe <code class="language-plaintext highlighter-rouge">passwd 123456789</code>.</p>
+
+<p><strong>Eliminar un usuario</strong> es muy similar a agregar un nuevo usuario. Para eliminar la cuenta de usuario, escribe <code class="language-plaintext highlighter-rouge">userdel NombredeUsuario</code>.</p>
+
+<h2 id="clear">clear</h2>
+<p>Para limpiar el terminal si se está abarrotando con demasiados comandos pasados.</p>
+
+  
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+  
+<!--
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+<hr />
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->
