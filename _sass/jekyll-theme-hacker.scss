@@ -21,17 +21,19 @@ $container-max-width: 1000px;  /* Tamaño máx del contenedor de la página */
     text-decoration: none;
 }
 
-header {                                    /* Cabecera de la Página */
- /* background: rgba(0, 0, 0, 0.1); */      /* Fonde del encabezado, mantenerlo comentado para mostrar una imagen unica en la página*/
- /* border-bottom: 1px dashed $conifer; */  /* Línea para separar la cabezera y el cuerpo de la página */
+/* ----------------------------- Cabecera de la Página ----------------------------------- */
+
+header {                        
     width: 100%; 
     padding: 20px 0;
     margin: 0 0 40px 0;
 }
 
-body {                          /* Cuerpo de la Página */
+/* ----------------------------- Cuerpo de la Página ----------------------------------- */
+
+body {                          
     margin: 0;
-    margin-left: 80px;          /* Espacio izquierdo */
+    margin-left: 69px;          /* Espacio izquierdo */
     padding: 0;
     background: $body-background url("../images/bkg.png") 0 0;            /* Imágen fondo de la página */
     color: $body-foreground;
@@ -41,7 +43,7 @@ body {                          /* Cuerpo de la Página */
     transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-/* General*/
+/* -------------------------------- Contenido General ------------------------------------*/
 
 .container {
   width: 91%;
@@ -49,48 +51,57 @@ body {                          /* Cuerpo de la Página */
   margin: 0 auto;
 }
 
-section {                /* Botónes */
+section {                             /* Botónes */
   display: block;
-  margin: 0 -275px 0;    /* Margen arriba/horizontal/inferior*/
+  margin: 0 -275px 0;                 /* Margen arriba/horizontal/inferior*/
 }
 
-h1{                      /* Títulos principales */
-  margin: 20px -30px 0; 
+h1{                                   /* Títulos principales */
+  margin: 20px -30px 0;  
 }
 
-h2{                      /* Títulos secundarios */
-  margin: 0 0 0;
+h2{                                   /* Títulos secundarios */
+  margin: 20px -20px 8px;  
 }
 
 h3 {
-  margin: 16px 0 0;
+  margin: 16px -15px 8px;
 }
 
-h4 {
-  margin: 0 -10px -5px;
+h4 {                                  /* Títulos del menú lateral */
+  margin: -2px -10px -5px;
 }
 
-h5 {                         /* Título Principal */
+h5 {                                  /* Título Principal */
   margin-left: -27.7%;
   margin: -2px -275px 0;
   font-size: 36px;
 }
 
-h6 {                         /* Descripción del blog */
-  margin: 5px -275px 10px;
+h6 {                                  /* Descripción del Blog */
+  margin: 3px -275px 10px;
   font-size: 20px;
 }
 
-p {                          /* Texto o contenido de la página */
-  margin: 5px 0 0;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color: $header;
+  letter-spacing: -0.03em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(181, 232, 83, 0.1),
+               0 0 10px rgba(181, 232, 83, 0.1);
 }
 
-ul {
-  margin: 0 30px 20px;       /* Contenido listado >> */  
+header h1:before {
+  content: " ";
+  font-size: 24px;
 }
 
-li {
-  line-height: 1.4 ;
+header h2 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #666;
 }
 
 header h5, h6 {
@@ -109,79 +120,29 @@ header h5, h6 {
   }
 }
 
-header h1:before {
-  content: " ";
-  font-size: 24px;
+p {                          /* Texto o contenido general de la Página */
+  margin: 5px 0 0;
 }
 
-header h2 {
-  font-size: 18px;
-  font-weight: 300;
-  color: #666;
+ul {
+  margin: 8px 30px 25px;       /* Contenido listado >> */  
 }
 
-#downloads .btn {
-  display: inline-block;
-  text-align: center;
-  margin: 0;
+li {
+  line-height: 1.4 ;
 }
 
-/* Main Content*/
-
-#main_content {
-  width: 100%;
-  -webkit-font-smoothing: antialiased;
+ul li {
+  list-style-image:url('../images/bullet.png');
 }
+
 section img {
   max-width: 100%
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $header;
-  letter-spacing: -0.03em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
-}
-
-/*#main_content h1 {
-  font-size: 32px;
-}*/
-
-#main_content h2 {
-  font-size: 26px;
-}
-
-#main_content h3 {
-  font-size: 18px;
-}
-
-#main_content h4 {
-  font-size: 17px;
-}
-
-#main_content h5 {
-  font-size: 12px;
-  text-transform: uppercase;
-  margin: 0 0 5px 0;
-}
-
-#main_content h6 {
-  font-size: 30px;
-  text-transform: uppercase;
-  color: #999;
-  margin: 0 0 5px 0;
 }
 
 dt {
   font-style: italic;
   font-weight: bold;
-}
-
-ul li {
-  list-style-image:url('../images/bullet.png');
 }
 
 blockquote {
@@ -203,12 +164,16 @@ pre {
 }
 
 code.highlighter-rouge {
-  background: rgba(0,0,0,0.9);
+  background: rgba(0, 0, 0, 0.9);                 /* Color de fondo del texto entre comillas `` */
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 0px 3px;
   margin: 0px -3px;
-  color: #aa759f;
-  border-radius: 2px;
+  color: #aa759f;                                 /* Color del texto resaltado entre comillas `` */
+  border-radius: 2px; 
+}
+ 
+.highlight {                      /* Cuadros negros para el código  */
+  margin: 5px 0 5px; 
 }
 
 table {
@@ -233,7 +198,59 @@ hr {
   color: #b5e853;
 }
 
-/* Buttons*/
+#a-title {
+  text-decoration: none;
+}
+
+.contenedor {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.contenedor img {
+    width: 29%;
+}
+
+.imagen {
+  box-sizing: border-box;
+  flex-basis: 33.33%;
+  flex-shrink: 0;
+  padding: 5px;
+}
+
+.imagen h5 {
+  margin: 1px 0;
+}
+
+.img-nmap {
+  margin: -20px -350px -20px;
+  scale: 0.8;
+}
+
+
+/* --------------------  Posición del Gestor de Comentarios ---------------------------   */
+
+#comentarios {
+  margin: 40px 100px 40px;                    /* Margen arriba/horizontal/inferior*/
+  width: 800px;
+  height: 300px;
+  background-color: rgb(20, 20, 20);
+  border-radius: 30px;
+  text-align: center;
+}
+
+#comentarios-contacto {
+  margin: 160px 100px 40px;                    /* Margen arriba/horizontal/inferior*/
+  width: 800px;
+  height: 300px;
+  background-color: rgb(20, 20, 20);
+  border-radius: 30px;
+  text-align: center;
+}
+
+
+
+/* ------------------------------------------ Botones ----------------------------------- */
 
 .btn {
   display: inline-block;
@@ -269,14 +286,30 @@ hr {
   background: url("../images/blacktocat.png") 0 0 no-repeat;
 }
 
-/* Links */
+#downloads .btn {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+}
+
+/* ------------------------------------ Botón HTB --------------------------------------*/
+
+#main_content {                                /* Class para Botón HTB */
+  width: 30%;
+  margin-top: -45px;                           /* Altura del contenido de la página */
+  margin-left: -4%;                            /* Espacio lateral del botón */
+  -webkit-font-smoothing: antialiased;
+  
+}
+
+/* ---------------------------------------  Links  ----------------------------------- */
 
 a {
   color: #63c0f5;    /* Color de los links */
   text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
 }
 
-/* Clearfix */
+/* ------------------------------------  Clearfix  ------------------------------------*/
 
 .cf:before, .cf:after {
   content:"  ";
@@ -291,103 +324,19 @@ a {
   zoom:1;
 }
 
-#a-title {
-  text-decoration: none;
-}
+/* --------------------------------------  Menú lateral Animado ---------------------------------------------------*/
 
-/*--------- Buscador -------------*/
-/*
-#a-buscador {
-  margin-left: 35%;
-  margin-top: 25px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateX(77px);
-  position: absolute;
-  top: 0;
-  z-index: 200;
-  background: rgb(157, 255, 0);
-  border-radius: 40px;
-}
-
-.buscar_texto{
-  border: none;
-  background: none;
-  outline: none;
-  color: black;
-  font-size: 18px;
-  float: left;
-  line-height: 30px;
-  transition: .3s;
-  width: 0;
-}
-
-.boton{
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-  font-size: 25px;
-}
-
-*/
-
-/* Parte responsice del buscador */
-
-@media screen and (min-width:480px){
-  .buscar:hover > .buscar_texto{
-    width: 190px;
-  }
-}
-
-@media screen and (min-width:768px){
-  .buscar:hover > .buscar_texto{
-    width: 300px;
-  }
-}
-
-@media screen and (min-width:1024px){
-  .buscar:hover > .buscar_texto{
-    width: 500px;
-  }
-}
-
-/*-------------------------------------*/
-
-.contenedor {
-   display: flex;
-   flex-wrap: wrap;
-}
-
-.contenedor img {
-    width: 29%;
-}
-
-.imagen {
-  box-sizing: border-box;
-  flex-basis: 33.33%;
-  flex-shrink: 0;
-  padding: 5px;
-}
-
-.imagen h5 {
-  margin: 1px 0;
-}
-
-/* Menu lateral */
+/* ---------------- Icono Desplegable ---------------------------------------------------*/
 
 .icon__menu{
-    margin-left: -400px;
-    margin-top: 25px;
+    margin-left: -400px;               /* Distancia lateral del botón de menú lateral */
+    margin-top: 25px;                  /* Altura del botón del menú lateral */
     padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     transform: translateX(77px);
-    position: fixed;
+    position: fixed;                   /* Fijar icono al deslizar la página */
     top: 0;
     z-index: 200;
 }
@@ -398,100 +347,102 @@ a {
     position: absolute;
 }
 
+/* ------------------------------  Menú Lateral -------------------------------------- */
+
 .menu__side{
-    width: 80px;
+    width: 69px;                    /* Ancho del menú lateral plegado */
     height: 100%;
-    background: #b5e853;
+    background: #5c8014;          /* Color de fondo del menú lateral */
     position: fixed;
     top: 0;
     left: 0;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);       /* Color boton principal*/
     font-size: 18px;
     z-index: 300;
     overflow: hidden;
     overflow-y: scroll;
-    border-right: 20px solid #759538;
+    border-right: 10px solid #a7da45;  /* Color del marco derecho del menú */
     transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-/*Ocultar scroll para chrome, safari y opera*/
+.name__page{
+  padding: 20px 25px;              /* Altura del botón de youtube */
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.name__page i{                     /* Movimiento del título principal del menú lateral */
+  width: 20px;
+  margin-right: 20px;
+}
+
+.name__page h4{
+  padding-left: 5px;               /* Posición del título principal */
+}
+
+.options__menu{                    /* General: Botones y títulos secundarios del menú lateral */                     
+  padding: 56px 25px;                   /* Posición Altura/Lateral  */
+  position: absolute;                    
+  
+}
+
+.options__menu a{
+  color: rgb(212, 209, 209);        /* Colores de los botones del menú lateral */
+  cursor: default;
+  display: block;
+  position: relative;
+  transition: color 300ms;
+}
+
+.options__menu a:hover{
+  color: rgb(19, 18, 18);     /* Color al pasar el cursor por encima del icono */
+}
+
+.options__menu .option{
+  padding: 30px 0px;               /* Espacio entre los botones del menú lateral */
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.options__menu .option i{
+  width: 25px;                     /* Posición lateral del texto de los botones del menú lateral */ 
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.options__menu .option h4{
+  color: #b5e853;                  /* Color de las letras del menú lateral */
+  font-weight: 300;
+  cursor: pointer;
+  font-style: italic;
+}
+
+.menu__side .name__page h4{
+  color: #b5e853;                  /* Color del título del menú lateral */
+  font-weight: 300;
+  cursor: pointer;
+  font-style: italic;
+}
+
+/*------  Ocultar scroll para chrome, safari y opera -------*/
+
 .menu__side::-webkit-scrollbar{
     display: none;
 }
 
-/*Ocultar scroll para IE, Edge y Firefox*/
+/*--------  Ocultar scroll para IE, Edge y Firefox  -------*/
+
 .menu__side{
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-.name__page{
-    padding: 20px 30px;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.name__page i{
-    width: 20px;
-    margin-right: 20px;
-}
-
-.options__menu{
-    padding: 20px 30px;
-    position: absolute;
-    top: 80px;
-}
-
-.options__menu a{
-    color: #000000b2;
-    cursor: default;
-    display: block;
-    position: relative;
-    transition: color 300ms;
-}
-
-.options__menu a:hover{
-    color: rgb(255, 255, 255);
-}
-
-.options__menu .option{
-    padding: 20px 0px;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.options__menu .option i{
-    width: 20px;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.options__menu .option h4{
-    font-weight: 300;
-    cursor: pointer;
-}
-
-a.selected{
-    color: #fff;
-}
-
-.selected:before{
-    content: '';
-    width: 3px;
-    height: 80%;
-    background: white;
-    position: absolute;
-    top: 10%;
-    left: -30px;
-}
-
-/*Clases para usar en JavaScript*/
-
+/*-----------  Clases para usar en JavaScript ------------*/
 
 .body_move{
-    margin-left: 200px;  /* Separación Izq. tra desplegar el menu lateral */
+    margin-left: 200px;  /* Separación Izq. tras desplegar el menu lateral */
 }
 
 .menu__side_move{
@@ -504,15 +455,22 @@ a.selected{
     }
 
     .menu__side_move{
-        width: 80px;
-        left: -80px;
+        width: 69px;
+        left: -69px;
     }
 }
 
-/* ------------Letrero de Linux ---------- */
+/* --------------------------------- Letrero Animado Lineal  ------------------------------------ */
 
-
-/* Main styles */
+svg {
+  width: 100%;
+  height: 100%;
+  margin-top: -100px;                   /* Separación superior del Letrero */
+  margin-left: -100px;                  /* Separación lateral del Letrero */
+  background-size: .2em 100%;
+  font: 14.5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+} 
 
 .text {
   fill: none;
@@ -525,12 +483,12 @@ a.selected{
 }
 
 .text:nth-child(5n + 1) {
-  stroke: #242e10;
+  stroke: #43571F;
   -webkit-animation-delay: -1.2s;
   animation-delay: -1.2s;
 }
 .text:nth-child(5n + 2) {
-  stroke: #5a7429;
+  stroke: #dbeeb7;
   -webkit-animation-delay: -2.4s;
   animation-delay: -2.4s;
 }
@@ -542,13 +500,13 @@ a.selected{
 }
 
 .text:nth-child(5n + 4) {
-  stroke: #bcea64;
+  stroke: #87AE3E;
   -webkit-animation-delay: -4.8s;
   animation-delay: -4.8s;
 }
 
 .text:nth-child(5n + 5) {
-  stroke: #daf3a9;
+  stroke: #5c8014;
   -webkit-animation-delay: -6s;
   animation-delay: -6s;
 }
@@ -566,13 +524,3 @@ a.selected{
 }
 
 
-
-svg {
-  width: 100%;
-  height: 100%;
-  margin-top: -100px;                   /* Separación superior del Letrero */
-  margin-left: -100px;                  /* Separación lateral del Letrero */
-  background-size: .2em 100%;
-  font: 14.5em/1 Open Sans, Impact;
-  text-transform: uppercase;
-} 
