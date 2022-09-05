@@ -28,7 +28,7 @@ window.addEventListener("resize", function(){
 
         body.classList.remove("body_move");
         side_menu.classList.remove("menu__side_move");
-    }
+    } 
 
     if (window.innerWidth < 760){
 
