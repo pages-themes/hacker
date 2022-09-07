@@ -1,5 +1,6 @@
 User-Agent: *
 Disallow: 
-google-site-verification=bfbbWeV5fAf5zuBNHYXPHD6tj-lq5swXnWCsgaw4i7c
+
+Sitemap: http://localhost:4000/sitemap.xml
 
 
