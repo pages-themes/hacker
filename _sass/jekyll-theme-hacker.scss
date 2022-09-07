@@ -292,6 +292,21 @@ hr {
   margin: 0;
 }
 
+.btn-anterior{
+  position: fixed;
+  margin-top: 660px;
+  margin-left: -270px;
+  z-index: 300;
+}
+
+
+.btn-siguiente{
+  position: fixed;
+  margin-top: 660px;
+  margin-left: 1150px;
+  z-index: 300;
+}
+
 /* ------------------------------------ Botón HTB --------------------------------------*/
 
 #main_content {                                /* Class para Botón HTB */
