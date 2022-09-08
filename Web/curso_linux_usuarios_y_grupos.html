@@ -165,28 +165,29 @@ Administrador o root.</p>
 
 <p>Podemos realizar estos cambios del sistema de dos formas:</p>
 
-<ul>
-  <li>
-    <p>La primera opción es convertirse en root, para ello utilizando el siguiente comando y proporcionando nuestra contraseña, nuestro usuario pasará
-a ser root y por tanto tendrá los máximos privilegios del sistema.</p>
+<ul><li><p>La primera opción es convertirse en root, para ello utilizando el siguiente comando y proporcionando nuestra contraseña, nuestro usuario pasará
+a ser root y por tanto tendrá los máximos privilegios del sistema.</p></li></ul>
 
-    <p>sudo su</p>
-  </li>
-  <li>
-    <p>La segunda opción es ejecutar la acción como superusurio, pero sin dejar de ser un Usuario normal. Para ello,
-simplemente ejecutamos el comando <code class="language-plaintext highlighter-rouge">sudo</code> delante del comando que vamos a ejecutar como superusuario.</p>
 
-    <p>whoami</p>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo su</code></pre></div></div>
 
-    <p>sudo whoami</p>
-  </li>
-</ul>
+  
+<ul><li><p>La segunda opción es ejecutar la acción como superusurio, pero sin dejar de ser un Usuario normal. Para ello,
+simplemente ejecutamos el comando <code class="language-plaintext highlighter-rouge">sudo</code> delante del comando que vamos a ejecutar como superusuario.</p></li></ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whoami</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo whoami</code></pre></div></div>
 
 <p>Como veis <code class="language-plaintext highlighter-rouge">whoami</code> nos reporta nuestro Usurio actual, en este caso el usurio normal, pero al utilizar el comando <code class="language-plaintext highlighter-rouge">sudo</code>, podemos ver
 como nos devuelve el resultado <code class="language-plaintext highlighter-rouge">root</code> cuando aún estamos como el Usuario normal. Esto se debe a que hemos ejecutado el comando <code class="language-plaintext highlighter-rouge">whoami</code> como
 root pero sin tener que cambiar de usuario.</p>
 
 <p>En las dos situaciones el sistema nos pedira una contraseña para confirmar que tenemos acceso.</p>
+
+<p>Si estamos como <code class="language-plaintext highlighter-rouge">root</code> y queremos volver a convertirnos en un usuario normal, utilizaremos el comando <code class="language-plaintext highlighter-rouge">su</code> seguido del nombre del usuario.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>su [Nombre_del_Usuario]</code></pre></div></div>
+
 
 <p><a name="item3"></a></p>
 <h1 id="superusuario-o-root">Superusuario o root:</h1>
