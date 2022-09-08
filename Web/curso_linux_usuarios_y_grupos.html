@@ -121,22 +121,106 @@
 <!----------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------->
 
-<h1 id="curso-linux-usuarios-y-grupos">Gestión de Usuarios y Grupos en Linux.</h1>
+<h1 id="gestión-de-usuarios-y-grupos-en-linux">Gestión de Usuarios y Grupos en Linux.</h1>
 
-<p> El sistema operativo Linux cuenta con un gran capacidad de gestión de usuarios y grupos que le permite realizar un uso óptimo
-   de su plataforma multiusuario.</p> 
-   
-<p>Quienes utilizan este servidor se identifican mediante un nombre de usuario, y también debe contar con una contraseña para que 
-  pueda realizar la verificación de credenciales y acceder al sistema.</p>
-  
+<p>El sistema operativo Linux cuenta con un gran capacidad de gestión de usuarios y grupos que le permite realizar un uso óptimo
+de su <code class="language-plaintext highlighter-rouge">plataforma multiusuario</code>.</p>
+
+<p>Quienes utilizan este servidor se identifican mediante un <code class="language-plaintext highlighter-rouge">nombre de usuario</code>, y también debe contar con una <code class="language-plaintext highlighter-rouge">contraseña</code> para que pueda
+realizar la verificación de credenciales y acceder al sistema.</p>
+
 <p>Además, el acceso a determinados archivos, directorios y ficheros dependerá de los grupos a los que pertenezca el usuario del sistema.</p>
 
-<h2 id="usurios-linux">Usuarios en Linux.</h2>
+<h1 id="usuarios-en-linux">Usuarios en Linux.</h1>
 
-<p>Los usuarios son una de las piezas claves en cualquier sistema Linux ya que con ellos iniciamos sesión y podremos realizar tareas en base
-   a los permisos que han sido asignados (administración, lectura, escritura) y en base a ello estos usuarios tendrán cierta autoridad en el sistema.</p>
+<p>Los usuarios son una de las piezas claves en cualquier sistema Linux ya que <code class="language-plaintext highlighter-rouge">con ellos iniciamos sesión y podremos realizar tareas
+en base a los permisos</code> que han sido asignados <code class="language-plaintext highlighter-rouge">(administración, lectura, escritura)</code> y en base a ello estos usuarios tendrán cierta autoridad
+en el sistema.</p>
 
-<p>En los sistemas que toman por base la interfaz GNU/Linux o Unix existen dos tipos de usuarios: el administrador o root, y los demás usuarios:</p>
+<h1 id="tipos-de-usuarios">Tipos de Usuarios.</h1>
+
+<p>En los sistemas que toman por base la interfaz GNU/Linux o Unix existen dos tipos de usuarios: el <code class="language-plaintext highlighter-rouge">administrador o root</code>, y los demás <code class="language-plaintext highlighter-rouge">usuarios</code>:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Usuario administrador o root:</code> El usuario root tiene la posibilidad de realizar todo tipo de labores respecto a la administración del sistema.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Usuario Normal:</code> Los usuarios normales o no administradores, son aquellos que pueden utilizar las herramientas del sistema con normalidad, pero que no pueden ejecutar labores administrativas. Son aquellos con los que realizamos las tareas más comunes.</p>
+  </li>
+</ul>
+
+<p>Cuando ingresamos a un sistema Linux lo hacemos con un usurio normal y su contraseña, con este usuario es con el que trabajaremos normalmente, pero cuando
+nos sea necesario realizar algún cambio en el sistema, como por ejemplo instalar un programa nuevo, lo tendremos que hacer a traves de un usuario 
+Administrador o root.</p>
+
+<p>Podemos realizar estos cambios del sistema de dos formas:</p>
+
+<ul>
+  <li>
+    <p>La primera opción es convertirse en root, para ello utilizando el siguiente comando y proporcionando nuestra contraseña, nuestro usuario pasará
+a ser root y por tanto tendrá los máximos privilegios del sistema.</p>
+
+    <p>sudo su</p>
+  </li>
+  <li>
+    <p>La segunda opción es ejecutar la acción como superusurio, pero sin dejar de ser un Usuario normal. Para ello,
+simplemente ejecutamos el comando <code class="language-plaintext highlighter-rouge">sudo</code> delante del comando que vamos a ejecutar como superusuario.</p>
+
+    <p>whoami</p>
+
+    <p>sudo whoami</p>
+  </li>
+</ul>
+
+<p>Como veis <code class="language-plaintext highlighter-rouge">whoami</code> nos reporta nuestro Usurio actual, en este caso el usurio normal, pero al utilizar el comando <code class="language-plaintext highlighter-rouge">sudo</code>, podemos ver
+como nos devuelve el resultado <code class="language-plaintext highlighter-rouge">root</code> cuando aún estamos como el Usuario normal. Esto se debe a que hemos ejecutado el comando <code class="language-plaintext highlighter-rouge">whoami</code> como
+root pero sin tener que cambiar de usuario.</p>
+
+<p>En las dos situaciones el sistema nos pedira una contraseña para confirmar que tenemos acceso.</p>
+
+<h1 id="superusuario-o-root">Superusuario o root:</h1>
+
+<p>Ser <code class="language-plaintext highlighter-rouge">root</code> en el sistema es como ser dios, nos permirita realizar cualquier tipo de cambio a nivel de sistema y por tanto, debemos de tener cuidado
+con su uso. Es recomendable volver al usuario normal tras terminal las tareas realizadas como root al igual que establecer una contraseña segura.</p>
+
+<p>Como veís, <code class="language-plaintext highlighter-rouge">para poder realizar el cambio de usuario normal a usuario root, se necesitarán permisos de administración</code>, y se puede acceder ya sea proporcionando la contraseña del usuario root e iniciando sesión, o establecer una lista de usuarios que pueden tener acceso como administradores.</p>
+
+<p>En términos de seguridad, es recomendable optar por establecer una lista de usuarios con permisos, debido a que compartir la contraseña del usuario
+root con varias personas, implica el traspaso de información sensible y pone al sistema en una situación de vulnerabilidad.</p>
+
+<h1 id="gestión-de-grupos">Gestión de Grupos:</h1>
+
+<p>Los grupos en Linux son usados principalmente para otorgar permisos sobre archivos y directorios. El sistema operativo ya trae incluido ciertos grupos predeterminados que cumplen con funciones específicas. Cada grupo creado en Linux tiene la característica de ser independiente de otros. Además, los grupos en Linux pueden tener contraseñas. Estos grupos pueden ser de tipo primario o secundario:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Grupo principal</code>: Tiene la función de determinar quién será el grupo que posea los archivos creados por el usuario. El grupo primario es el que se le asocia a la cuenta por defecto, y al que se le asignarán los archivos y directorios desarrollados por el usuario. Además, el nombre del grupo suele ser el mismo nombre de usuario.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Grupos secundarios</code>: Los grupos suplementarios son aquellos grupos adicionales a los que el usuario pertenezca.</p>
+  </li>
+</ul>
+
+<h1 id="comandos-para-la-gestión-de-usuarios-y-grupos-en-linux">Comandos para la gestión de usuarios y grupos en Linux</h1>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">adduser</code> o <code class="language-plaintext highlighter-rouge">useradd</code>: Permite la creación de nuevos usuarios.</li>
+  <li><code class="language-plaintext highlighter-rouge">usermod</code>, <code class="language-plaintext highlighter-rouge">chfn</code>, <code class="language-plaintext highlighter-rouge">chsh</code> y <code class="language-plaintext highlighter-rouge">chage</code>: Usados para la modificación de un usuario.</li>
+  <li><code class="language-plaintext highlighter-rouge">deluser</code> o <code class="language-plaintext highlighter-rouge">userdel</code>: Comando para la eliminación de usuarios.</li>
+  <li><code class="language-plaintext highlighter-rouge">passwd</code>: Para cambiar la contraseña de un usuario.</li>
+  <li><code class="language-plaintext highlighter-rouge">addgroup</code> o <code class="language-plaintext highlighter-rouge">groupadd</code>: Usado para añadir un grupo.</li>
+  <li><code class="language-plaintext highlighter-rouge">groupmod</code>: Permite modificar un grupo.</li>
+  <li><code class="language-plaintext highlighter-rouge">groupdel</code> o <code class="language-plaintext highlighter-rouge">delgroup</code>: Se utiliza para eliminar un grupo.</li>
+  <li><code class="language-plaintext highlighter-rouge">gpasswd</code>: Comando diseñado para cambiar la contraseña de un grupo.</li>
+  <li><code class="language-plaintext highlighter-rouge">whoami</code>: Para saber qué usuario somos.</li>
+  <li><code class="language-plaintext highlighter-rouge">groups</code>: Para obtener información de los grupos a los que pertenecemos.</li>
+  <li><code class="language-plaintext highlighter-rouge">id</code>: Nos muestra tanto el usuario como los grupos.</li>
+  <li><code class="language-plaintext highlighter-rouge">su</code>: Comando para cambiar de usuario.</li>
+  <li><code class="language-plaintext highlighter-rouge">who</code> o <code class="language-plaintext highlighter-rouge">w</code>: Sirve para saber cuáles usuarios están conectados en la máquina en un determinado momento.</li>
+  <li><code class="language-plaintext highlighter-rouge">write</code> o <code class="language-plaintext highlighter-rouge">wall</code>: Para enviar mensajes de al resto de usuarios logueados.</li>
+</ul>
+
 
 
 <!----------------------------------------------------------------------------------------->
