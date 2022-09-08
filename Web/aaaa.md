@@ -36,10 +36,12 @@ a ser root y por tanto tendrá los máximos privilegios del sistema.
 * La segunda opción es ejecutar la acción como superusurio, pero sin dejar de ser un Usuario normal. Para ello,
   simplemente ejecutamos el comando ``sudo`` delante del comando que vamos a ejecutar como superusuario.
   
+  
     whoami
   
   
     sudo whoami
+
 
 Como veis ``whoami`` nos reporta nuestro Usurio actual, en este caso el usurio normal, pero al utilizar el comando ``sudo``, podemos ver
 como nos devuelve el resultado ``root`` cuando aún estamos como el Usuario normal. Esto se debe a que hemos ejecutado el comando ``whoami`` como
