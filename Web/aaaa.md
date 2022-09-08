@@ -14,6 +14,8 @@ Los usuarios son una de las piezas claves en cualquier sistema Linux ya que ``co
 en base a los permisos`` que han sido asignados ``(administración, lectura, escritura)`` y en base a ello estos usuarios tendrán cierta autoridad
 en el sistema.
 
+## Tipos de Usuarios.
+
 En los sistemas que toman por base la interfaz GNU/Linux o Unix existen dos tipos de usuarios: el ``administrador o root``, y los demás ``usuarios``:
 
 * ``Usuario administrador o root:`` El usuario root tiene la posibilidad de realizar todo tipo de labores respecto a la administración del sistema.
@@ -33,6 +35,9 @@ a ser root y por tanto tendrá los máximos privilegios del sistema.
 
 * La segunda opción es ejecutar la acción como superusurio, pero sin dejar de ser un Usuario normal. Para ello,
   simplemente ejecutamos el comando ``sudo`` delante del comando que vamos a ejecutar como superusuario.
+  
+    whoami
+  
   
     sudo whoami
 
