@@ -227,6 +227,14 @@ hr {
   scale: 0.8;
 }
 
+/* ----------- Indice lateral (Comandos línux) ------------------- */
+
+#indice-lateral {
+  margin-top: 20px;
+  margin-left: 1050px;
+  position: absolute;
+}
+
 
 /* --------------------  Posición del Gestor de Comentarios ---------------------------   */
 
@@ -292,20 +300,37 @@ hr {
   margin: 0;
 }
 
+/* ---------- Botónes Anterios y Siguiente ------------ */
+
 .btn-anterior{
   position: fixed;
-  margin-top: 660px;
-  margin-left: -270px;
+  margin-top: 684px;
+  margin-left: -320px;
   z-index: 300;
 }
 
 
 .btn-siguiente{
   position: fixed;
-  margin-top: 660px;
-  margin-left: 1150px;
+  margin-top: 684px;
+  margin-left: 1200px;
   z-index: 300;
 }
+
+.btn-anterior-con-titulo{
+  position: fixed;
+  margin-top: 641px;
+  margin-left: -320px;
+  z-index: 300;
+}
+
+.btn-siguiente-con-titulo{
+  position: fixed;
+  margin-top: 641px;
+  margin-left: 1200px;
+  z-index: 300;
+}
+
 
 /* ------------------------------------ Botón HTB --------------------------------------*/
 

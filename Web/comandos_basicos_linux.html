@@ -19,7 +19,7 @@
 
   <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
 
-   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <title>F1r0x | Curso Linux</title>
    <link rel="icon" href="/assets/images/logoweb.ico">
    <meta name="generator" content="Jekyll v3.9.2" />
    <meta property="og:title" content="F1r0x" />
@@ -44,6 +44,7 @@
     <a id="a-title" href="/">
       <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
     </a>
+    <h6>Curso Linux: Comandos Básicos</h6>
 
 <!--------------------------------- Botón Github ---------------------------------------->    
     <section id="downloads">         
@@ -76,8 +77,8 @@
 <!---------------------- Botones de Anterior y Siguiente --------------------------------->
 
 <div id="main-container">
-  <a href="./curso_linux_usuarios_y_grupos.html" class="btn btn-anterior">Artículo anterior</a>
-  <a href="./busqueda_reporte_archivos_linux.html" class="btn btn-siguiente">Artículo siguiente</a>
+  <a href="./curso_linux_usuarios_y_grupos.html" class="btn btn-anterior-con-titulo">Artículo anterior</a>
+  <a href="./busqueda_reporte_archivos_linux.html" class="btn btn-siguiente-con-titulo">Artículo siguiente</a>
 </div>
   
 <!----------------------------- Imagen Hack The Box -------------------------------------->   
@@ -117,17 +118,60 @@
 <!----------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------->
 
+<div id="indice-lateral">
+<h3>Comandos</h3>
+<p><a href="#item1" style="text-decoration:none">pwd</a></p>
+<p><a href="#item2" style="text-decoration:none">cd</a></p>
+<p><a href="#item3" style="text-decoration:none">ls</a></p>
+<p><a href="#item4" style="text-decoration:none">cat</a></p>
+<p><a href="#item5" style="text-decoration:none">cp</a></p>
+<p><a href="#item6" style="text-decoration:none">mv</a></p>
+<p><a href="#item7" style="text-decoration:none">mkdir</a></p>
+<p><a href="#item8" style="text-decoration:none">rmdir</a></p>
+<p><a href="#item9" style="text-decoration:none">rm</a></p>
+<p><a href="#item10" style="text-decoration:none">touch</a></p>
+<p><a href="#item11" style="text-decoration:none">locate</a></p>
+<p><a href="#item12" style="text-decoration:none">find</a></p>
+<p><a href="#item13" style="text-decoration:none">grep</a></p>
+<p><a href="#item14" style="text-decoration:none">sudo</a></p>
+<p><a href="#item15" style="text-decoration:none">df</a></p>
+<p><a href="#item16" style="text-decoration:none">du</a></p>
+<p><a href="#item17" style="text-decoration:none">head</a></p>
+<p><a href="#item18" style="text-decoration:none">tail</a></p>
+<p><a href="#item19" style="text-decoration:none">diff</a></p>
+<p><a href="#item20" style="text-decoration:none">tar</a></p>
+<p><a href="#item21" style="text-decoration:none">chmod</a></p>
+<p><a href="#item22" style="text-decoration:none">chown</a></p>
+<p><a href="#item23" style="text-decoration:none">jobs</a></p>
+<p><a href="#item24" style="text-decoration:none">kill</a></p>
+<p><a href="#item25" style="text-decoration:none">ping</a></p>
+<p><a href="#item26" style="text-decoration:none">wget</a></p>
+<p><a href="#item27" style="text-decoration:none">uname</a></p>
+<p><a href="#item28" style="text-decoration:none">top</a></p>
+<p><a href="#item29" style="text-decoration:none">history</a></p>
+<p><a href="#item30" style="text-decoration:none">man</a></p>
+<p><a href="#item31" style="text-decoration:none">echo</a></p>
+<p><a href="#item32" style="text-decoration:none">zip</a></p>
+<p><a href="#item33" style="text-decoration:none">unzip</a></p>
+<p><a href="#item34" style="text-decoration:none">hostname</a></p>
+<p><a href="#item35" style="text-decoration:none">useradd</a></p>
+<p><a href="#item36" style="text-decoration:none">userdel</a></p>
+<p><a href="#item37" style="text-decoration:none">clear</a></p>
+</div>
 
+<p><a name="item0"></a></p>
 <h1 id="comandos-básicos-de-linux">Comandos Básicos de Linux</h1>
 
 <p>Al operar un sistema operativo Linux, debes usar un shell, una interfaz que te da acceso a los servicios del sistema operativo. La mayoría de
 las distribuciones de Linux utilizan una interfaz gráfica de usuario (GUI) como shell, principalmente para proporcionar facilidad de uso a sus usuarios.</p>
 
+<p><a name="item1"></a></p>
 <h2 id="pwd">pwd</h2>
 <p>Usa el comando pwd para encontrar la ruta del directorio (carpeta) de trabajo actual en el que te encuentras. El comando devolverá una ruta absoluta
 (completa), que es básicamente una ruta de todos los directorios que comienzan con una barra diagonal (/) Un ejemplo de una ruta absoluta es
 <code class="language-plaintext highlighter-rouge">/home/nombredeusuario</code>.</p>
 
+<p><a name="item2"></a></p>
 <h2 id="cd">cd</h2>
 <p>Para navegar por los archivos y directorios de Linux, usa el comando cd. Te pedirá la ruta completa o el nombre del directorio, dependiendo del
 directorio de trabajo actual en el que te encuentres.</p>
@@ -150,6 +194,7 @@ directorio de trabajo actual en el que te encuentres.</p>
 
 <p>Como nota al margen, el shell de Linux distingue entre mayúsculas y minúsculas. Por lo tanto, debes escribir el nombre del directorio de forma exacta.</p>
 
+<p><a name="item3"></a></p>
 <h2 id="ls">ls</h2>
 <p>El comando ls se usa para ver el contenido de un directorio. Por defecto, este comando mostrará el contenido de tu directorio de trabajo actual.</p>
 
@@ -162,6 +207,7 @@ para ver el contenido de Documentos.</p>
 <code class="language-plaintext highlighter-rouge">ls -a</code> : Mostrará los archivos ocultos.<br />
 <code class="language-plaintext highlighter-rouge">ls -al</code> : Listará los archivos y directorios con información detallada como los permisos, el tamaño, el propietario, etc.</p>
 
+<p><a name="item4"></a></p>
 <h2 id="cat">cat</h2>
 <p>cat (abreviatura de concatenate, en inglés) es uno de los comandos más utilizados en Linux. Se utiliza para listar el contenido de un archivo en la
 salida estándar (sdout). Para ejecutar este comando, escribe cat seguido del nombre del archivo y su extensión. Por ejemplo:</p>
@@ -175,10 +221,12 @@ salida estándar (sdout). Para ejecutar este comando, escribe cat seguido del no
 <code class="language-plaintext highlighter-rouge">cat nombredearchivo1 nombredearchivo2&gt;nombredearchivo3</code> : Une dos archivos (1 y 2) y almacena la salida de ellos en un nuevo archivo (3).<br />
 <code class="language-plaintext highlighter-rouge">cat nombredearchivo | tr a-z A-Z&gt; salida.txt</code> : Convertir un archivo a mayúsculas o minúsculas.</p>
 
+<p><a name="item5"></a></p>
 <h2 id="cp">cp</h2>
 <p>Usa el comando cp para copiar archivos del directorio actual a un directorio diferente. Por ejemplo, el comando <code class="language-plaintext highlighter-rouge">cp escenario.jpg
 /home/nombredeusuario/Imagenes</code> crearía una copia de escenario.jpg (desde tu directorio actual) en el directorio de <strong>Imagenes</strong>.</p>
 
+<p><a name="item6"></a></p>
 <h2 id="mv">mv</h2>
 <p>El uso principal del comando mv es mover archivos, aunque también se puede usar para cambiar el nombre de los archivos.</p>
 
@@ -193,6 +241,7 @@ Por ejemplo:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv nombreviejo.ext nombrenuevo.ext
 </code></pre></div></div>
 
+<p><a name="item7"></a></p>
 <h2 id="mkdir">mkdir</h2>
 <p>Usa el comando mkdir para crear un nuevo directorio: si escribes <code class="language-plaintext highlighter-rouge">mkdir Musica</code>, creará un directorio llamado Musica.</p>
 
@@ -202,19 +251,23 @@ Por ejemplo:</p>
 Usa la opción <code class="language-plaintext highlighter-rouge">p</code> (padres) para crear un directorio entre dos directorios existentes. <br />
 Por ejemplo, <code class="language-plaintext highlighter-rouge">mkdir -p Musica/2020/Nuevoarchivo</code> creará el nuevo archivo <strong>2020</strong>.</p>
 
+<p><a name="item8"></a></p>
 <h2 id="rmdir">rmdir</h2>
 <p>Si necesitas eliminar un directorio, usa el comando rmdir. Sin embargo, rmdir solo te permite eliminar directorios vacíos.</p>
 
+<p><a name="item9"></a></p>
 <h2 id="rm">rm</h2>
 <p>El comando rm se usa para eliminar directorios y el contenido dentro de ellos. Si solo deseas eliminar el directorio, como alternativa a rmdir,
 usa <code class="language-plaintext highlighter-rouge">rm -r</code>.</p>
 
 <p><strong>Nota:</strong> Ten mucho cuidado con este comando y verifica en qué directorio te encuentras. Este comando elimina todo y no se puede deshacer.</p>
 
+<p><a name="item10"></a></p>
 <h2 id="touch">touch</h2>
 <p>El comando touch te permite crear un nuevo archivo en blanco a través de la línea de comando de Linux.<br />
 Como ejemplo, ejecuta <code class="language-plaintext highlighter-rouge">touch /home/nombredeusuario/Documentos/Web.html</code> para crear un archivo HTML titulado <strong>Web</strong> en el directorio <strong>Documentos</strong>.</p>
 
+<p><a name="item11"></a></p>
 <h2 id="locate">locate</h2>
 <p>Puedes usar este comando para localizar un archivo, al igual que el comando de búsqueda en Windows. Además, el uso del argumento <code class="language-plaintext highlighter-rouge">-i</code> junto con este
 comando hará que no distinga entre mayúsculas y minúsculas, por lo que puedes buscar un archivo incluso si no recuerdas su nombre exacto.</p>
@@ -222,6 +275,7 @@ comando hará que no distinga entre mayúsculas y minúsculas, por lo que puedes
 <p>Para buscar un archivo que contenga dos o más palabras, usa un asterisco <code class="language-plaintext highlighter-rouge">*</code>.<br />
 Por ejemplo, el comando <code class="language-plaintext highlighter-rouge">locate -i escuela*nota</code> buscará cualquier archivo que contenga la palabra <code class="language-plaintext highlighter-rouge">escuela</code> y <code class="language-plaintext highlighter-rouge">nota</code>, ya sea en mayúsculas o minúsculas.</p>
 
+<p><a name="item12"></a></p>
 <h2 id="find">find</h2>
 <p>Similar al comando locate, usando find también buscas archivos y directorios. La diferencia es que usas el comando find para ubicar archivos dentro
 de un directorio dado.</p>
@@ -233,25 +287,30 @@ de un directorio dado.</p>
 <p>Para buscar archivos en el directorio actual, <code class="language-plaintext highlighter-rouge">find . -name notas.txt</code>.<br />
 Para buscar directorios, <code class="language-plaintext highlighter-rouge">find / -type d -name notes.txt</code>.</p>
 
+<p><a name="item13"></a></p>
 <h2 id="grep">grep</h2>
 <p>Otro comando básico de Linux que sin duda es útil para el uso diario es grep. Te permite buscar a través de todo el texto en un archivo dado.</p>
 
 <p>Para ilustrar, <code class="language-plaintext highlighter-rouge">grep azul notepad.txt</code> buscará la palabra <strong>azul</strong> en el archivo del bloc de notas. Las líneas que contienen la palabra buscada
 se mostrarán.</p>
 
+<p><a name="item14"></a></p>
 <h2 id="sudo">sudo</h2>
 <p>Abreviatura de «SuperUser Do» (SuperUsuario hace), este comando te permite realizar tareas que requieren permisos administrativos o raíz.
 Sin embargo, no es aconsejable usar este comando para el uso diario, ya que podría ser fácil que ocurra un error si haces algo mal.</p>
 
+<p><a name="item15"></a></p>
 <h2 id="df">df</h2>
 <p>Usa el comando df para obtener un informe sobre el uso del espacio en disco del sistema, que se muestra en porcentaje y KB. Si deseas ver el informe
 en megabytes, escribe <code class="language-plaintext highlighter-rouge">df -m</code>.</p>
 
+<p><a name="item16"></a></p>
 <h2 id="du">du</h2>
 <p>Si deseas verificar cuánto espacio ocupa un archivo o un directorio, el comando du (Uso del disco, en inglés) es la respuesta. Sin embargo, el 
 resumen de uso del disco mostrará números de bloque de disco en lugar del formato de tamaño habitual. Si deseas verlo en bytes, kilobytes y 
 megabytes, agrega el argumento <code class="language-plaintext highlighter-rouge">-h</code> a la línea de comando.</p>
 
+<p><a name="item17"></a></p>
 <h2 id="head">head</h2>
 <p>El comando head se usa para ver las primeras líneas de cualquier archivo de texto. De manera predeterminada, mostrará las primeras diez líneas,
 pero puedes cambiar este número a tu gusto.<br />
@@ -260,6 +319,7 @@ Por ejemplo, si solo deseas mostrar las primeras cinco líneas, escribe:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> head -n 5 nombredearchivo.ext.
 </code></pre></div></div>
 
+<p><a name="item18"></a></p>
 <h2 id="tail">tail</h2>
 <p>Este tiene una función similar al comando head, pero en lugar de mostrar las primeras líneas, el comando tail mostrará las últimas diez líneas de
 un archivo de texto. Por ejemplo:</p>
@@ -267,6 +327,7 @@ un archivo de texto. Por ejemplo:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tail -n nombredearchivo.ext
 </code></pre></div></div>
 
+<p><a name="item19"></a></p>
 <h2 id="diff">diff</h2>
 <p>Para abreviar diferencia, el comando diff compara el contenido de dos archivos línea por línea. Después de analizar los archivos, genera las líneas
 que no coinciden. Los programadores a menudo usan este comando cuando necesitan hacer modificaciones al programa en lugar de reescribir todo el
@@ -277,6 +338,7 @@ código fuente.</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>diff archivo1.ext archivo2.ext
 </code></pre></div></div>
 
+<p><a name="item20"></a></p>
 <h2 id="tar">tar</h2>
 <p>El comando tar es el comando más utilizado para guardar múltiples archivos en un tarball, un formato de archivo de Linux común que es similar al
 formato zip, con compresión opcional.</p>
@@ -284,17 +346,21 @@ formato zip, con compresión opcional.</p>
 <p>Este comando es bastante complejo con una larga lista de funciones, como agregar nuevos archivos a un archivo existente, enumerar el contenido de
 un archivo, extraer el contenido de un archivo y muchos más.</p>
 
+<p><a name="item21"></a></p>
 <h2 id="chmod">chmod</h2>
 <p>chmod es otro comando de Linux, utilizado para cambiar los permisos de lectura, escritura y ejecución de archivos y directorios. Como este comando es
 bastante complicado, puedes leer el tutorial completo (en inglés) para ejecutarlo correctamente.</p>
 
+<p><a name="item22"></a></p>
 <h2 id="chown">chown</h2>
 <p>En Linux, todos los archivos son propiedad de un usuario específico. El comando chown te permite cambiar o transferir la propiedad de un archivo al
 nombre de usuario especificado. Por ejemplo, <code class="language-plaintext highlighter-rouge">chown usuariolinux2 archivo.ext</code> hará que usuariolinux2 sea el propietario del archivo.ext.</p>
 
+<p><a name="item23"></a></p>
 <h2 id="jobs">jobs</h2>
 <p>El comando jobs mostrará todos los trabajos actuales junto con sus estados. Un trabajo es básicamente un proceso iniciado por el shell.</p>
 
+<p><a name="item24"></a></p>
 <h2 id="kill">kill</h2>
 <p>Si tienes un programa que no responde, puedes cerrarlo manualmente utilizando el comando kill. Enviará una cierta señal al programa que se está
 ejecutando mal y le indica a la aplicación que finalice.</p>
@@ -314,47 +380,65 @@ conoces el PID, simplemente ejecute el comando <code class="language-plaintext h
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kill [opción de señal] PID.
 </code></pre></div></div>
 
+<p><a name="item25"></a></p>
 <h2 id="ping">ping</h2>
 <p>Usa el comando ping para verificar tu estado de conectividad a un servidor. Por ejemplo, simplemente ingresando <code class="language-plaintext highlighter-rouge">ping google.com</code>, el comando
 verificará si puedes conectarte a Google y también medirá el tiempo de respuesta.</p>
 
+<p><a name="item26"></a></p>
 <h2 id="wget">wget</h2>
 <p>La línea de comandos de Linux es muy útil: incluso puedes descargar archivos de Internet con la ayuda del comando wget. Para hacerlo, simplemente escribe <code class="language-plaintext highlighter-rouge">wget</code> seguido del enlace de descarga.</p>
 
+<p><a name="item27"></a></p>
 <h2 id="uname">uname</h2>
 <p>El comando uname, abreviatura de Nombre de Unix, imprimirá información detallada sobre tu sistema Linux, como el nombre de la máquina, el sistema
 operativo, el núcleo, etc.</p>
 
+<p><a name="item28"></a></p>
 <h2 id="top">top</h2>
 <p>Como un terminal equivalente al Administrador de tareas en Windows, el comando top mostrará una lista de los procesos en ejecución y la cantidad de CPU
 que utiliza cada proceso. Es muy útil monitorear el uso de los recursos del sistema, especialmente para saber qué proceso debe terminarse porque consume
 demasiados recursos.</p>
 
+<p><a name="item29"></a></p>
 <h2 id="history">history</h2>
 <p>Cuando hayas estado utilizando Linux durante un cierto período de tiempo, notarás rápidamente que puedes ejecutar cientos de comandos todos los días. Como tal, ejecutar el comando history es particularmente útil si deseas revisar los comandos que ingresaste anteriormente.</p>
 
+<p><a name="item30"></a></p>
 <h2 id="man">man</h2>
 <p>¿Confundido sobre la función de ciertos comandos de Linux? No te preocupes, puedes aprender fácilmente cómo usarlos directamente desde el shell de 
 Linux mediante el comando man. Por ejemplo, al ingresar man tail se mostrarán las instrucciones manuales del comando tail.</p>
 
+<p><a name="item31"></a></p>
 <h2 id="echo">echo</h2>
 <p>Este comando se usa para mover algunos datos a un archivo. Por ejemplo, si deseas agregar el texto «Hola, mi nombre es John» en un archivo llamado
 <strong>nombre.txt</strong>, debes escribir: <code class="language-plaintext highlighter-rouge">echo Hola, mi nombre es John &gt;&gt; nombre.txt</code>.</p>
 
-<h2 id="zip-unzip">zip, unzip</h2>
-<p>Usa el comando <code class="language-plaintext highlighter-rouge">zip</code> para <strong>comprimir tus archivos</strong> en un archivo zip y use el comando <code class="language-plaintext highlighter-rouge">unzip</code> para <strong>extraer los archivos comprimidos</strong> de un
+<p><a name="item32"></a></p>
+<h2 id="zip">zip</h2>
+<p>Usa el comando <code class="language-plaintext highlighter-rouge">zip</code> para <strong>comprimir tus archivos</strong> en un archivo zip. y use el comando <code class="language-plaintext highlighter-rouge">unzip</code> para <strong>extraer los archivos comprimidos</strong> de un
 archivo zip.</p>
 
+<p><a name="item33"></a></p>
+<h2 id="unzip">unzip</h2>
+<p>Se utiliza el comando <code class="language-plaintext highlighter-rouge">unzip</code> para <strong>extraer los archivos comprimidos</strong> de un
+archivo zip.</p>
+
+<p><a name="item34"></a></p>
 <h2 id="hostname">hostname</h2>
 <p>Si deseas conocer el nombre de tu host/red, simplemente escribe hostname. Agregar un <code class="language-plaintext highlighter-rouge">-I</code> al final mostrará la dirección IP de tu red.</p>
 
-<h2 id="useradd-userdel">useradd, userdel</h2>
+<p><a name="item35"></a></p>
+<h2 id="useradd">useradd</h2>
 <p>Dado que Linux es un sistema multiusuario, esto significa que más de una persona puede interactuar con el mismo sistema al mismo tiempo. <code class="language-plaintext highlighter-rouge">useradd</code> se
 usa para crear un nuevo usuario, mientras que <code class="language-plaintext highlighter-rouge">passwd</code> agrega una contraseña a la cuenta de ese usuario. Para agregar una nueva persona llamada John,
 escribe <code class="language-plaintext highlighter-rouge">useradd John</code> y luego para agregar su contraseña, escribe <code class="language-plaintext highlighter-rouge">passwd 123456789</code>.</p>
 
+<p><a name="item36"></a></p>
+<h2 id="userdel">userdel</h2>
 <p><strong>Eliminar un usuario</strong> es muy similar a agregar un nuevo usuario. Para eliminar la cuenta de usuario, escribe <code class="language-plaintext highlighter-rouge">userdel NombredeUsuario</code>.</p>
 
+<p><a name="item37"></a></p>
 <h2 id="clear">clear</h2>
 <p>Para limpiar el terminal si se está abarrotando con demasiados comandos pasados.</p>
 

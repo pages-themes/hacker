@@ -19,7 +19,7 @@
 
   <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
 
-   <title>F1r0x</title>
+   <title>F1r0x | Curso Linux</title>
    <link rel="icon" href="/assets/images/logoweb.ico">
    <meta name="generator" content="Jekyll v3.9.2" />
    <meta property="og:title" content="F1r0x" />
@@ -43,7 +43,8 @@
   <div class="container">
     <a id="a-title" href="/">
       <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
-    </a>                                                                                <!-- Descripción de la Página-->
+    </a>
+    <h6>Curso Linux: Usuarios y Grupos</h6>                                                                                <!-- Descripción de la Página-->
 
 <!--------------------------------- Botón Github ---------------------------------------->    
     <section id="downloads">         
@@ -76,8 +77,8 @@
 <!---------------------- Botones de Anterior y Siguiente --------------------------------->
 
 <div id="main-container">
-  <a href="./introduccion_a_linux.html" class="btn btn-anterior">Artículo anterior</a>
-  <a href="./comandos_basicos_linux.html" class="btn btn-siguiente">Artículo siguiente</a>
+  <a href="./introduccion_a_linux.html" class="btn btn-anterior-con-titulo">Artículo anterior</a>
+  <a href="./comandos_basicos_linux.html" class="btn btn-siguiente-con-titulo">Artículo siguiente</a>
 </div>
   
 <!----------------------------- Imagen Hack The Box -------------------------------------->   
@@ -121,6 +122,12 @@
 <!----------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------->
 
+<li><a href="#item1" style="text-decoration:none">Usuarios en Linux.</a></li>
+<li><a href="#item2" style="text-decoration:none">Tipos de Usuarios.</a></li>
+<li><a href="#item3" style="text-decoration:none">Superusuario o root.</a></li>
+<li><a href="#item4" style="text-decoration:none">Gestión de Grupos.</a></li>
+<li><a href="#item5" style="text-decoration:none">Comandos para la gestión de usuarios y grupos en Linux.</a></li>
+
 <h1 id="gestión-de-usuarios-y-grupos-en-linux">Gestión de Usuarios y Grupos en Linux.</h1>
 
 <p>El sistema operativo Linux cuenta con un gran capacidad de gestión de usuarios y grupos que le permite realizar un uso óptimo
@@ -131,12 +138,14 @@ realizar la verificación de credenciales y acceder al sistema.</p>
 
 <p>Además, el acceso a determinados archivos, directorios y ficheros dependerá de los grupos a los que pertenezca el usuario del sistema.</p>
 
+<p><a name="item1"></a></p>
 <h1 id="usuarios-en-linux">Usuarios en Linux.</h1>
 
 <p>Los usuarios son una de las piezas claves en cualquier sistema Linux ya que <code class="language-plaintext highlighter-rouge">con ellos iniciamos sesión y podremos realizar tareas
 en base a los permisos</code> que han sido asignados <code class="language-plaintext highlighter-rouge">(administración, lectura, escritura)</code> y en base a ello estos usuarios tendrán cierta autoridad
 en el sistema.</p>
 
+<p><a name="item2"></a></p>
 <h1 id="tipos-de-usuarios">Tipos de Usuarios.</h1>
 
 <p>En los sistemas que toman por base la interfaz GNU/Linux o Unix existen dos tipos de usuarios: el <code class="language-plaintext highlighter-rouge">administrador o root</code>, y los demás <code class="language-plaintext highlighter-rouge">usuarios</code>:</p>
@@ -179,6 +188,7 @@ root pero sin tener que cambiar de usuario.</p>
 
 <p>En las dos situaciones el sistema nos pedira una contraseña para confirmar que tenemos acceso.</p>
 
+<p><a name="item3"></a></p>
 <h1 id="superusuario-o-root">Superusuario o root:</h1>
 
 <p>Ser <code class="language-plaintext highlighter-rouge">root</code> en el sistema es como ser dios, nos permirita realizar cualquier tipo de cambio a nivel de sistema y por tanto, debemos de tener cuidado
@@ -189,6 +199,7 @@ con su uso. Es recomendable volver al usuario normal tras terminal las tareas re
 <p>En términos de seguridad, es recomendable optar por establecer una lista de usuarios con permisos, debido a que compartir la contraseña del usuario
 root con varias personas, implica el traspaso de información sensible y pone al sistema en una situación de vulnerabilidad.</p>
 
+<p><a name="item4"></a></p>
 <h1 id="gestión-de-grupos">Gestión de Grupos:</h1>
 
 <p>Los grupos en Linux son usados principalmente para otorgar permisos sobre archivos y directorios. El sistema operativo ya trae incluido ciertos grupos predeterminados que cumplen con funciones específicas. Cada grupo creado en Linux tiene la característica de ser independiente de otros. Además, los grupos en Linux pueden tener contraseñas. Estos grupos pueden ser de tipo primario o secundario:</p>
@@ -202,7 +213,8 @@ root con varias personas, implica el traspaso de información sensible y pone al
   </li>
 </ul>
 
-<h1 id="comandos-para-la-gestión-de-usuarios-y-grupos-en-linux">Comandos para la gestión de usuarios y grupos en Linux</h1>
+<p><a name="item5"></a></p>
+<h1 id="comandos-para-la-gestión-de-usuarios-y-grupos-en-linux">Comandos para la gestión de usuarios y grupos en Linux:</h1>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">adduser</code> o <code class="language-plaintext highlighter-rouge">useradd</code>: Permite la creación de nuevos usuarios.</li>
