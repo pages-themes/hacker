@@ -47,3 +47,14 @@ root pero sin tener que cambiar de usuario.
 
 En las dos situaciones el sistema nos pedira una contraseña para confirmar que tenemos acceso.
   
+## Superusuario o root:
+
+Ser `root` en el sistema es como ser dios, nos permirita realizar cualquier tipo de cambio a nivel de sistema y por tanto, debemos de tener cuidado
+con su uso. Es recomendable volver al usuario normal tras terminal las tareas realizadas como root al igual que establecer una contraseña segura.
+
+Como veís, ``para poder realizar el cambio de usuario normal a usuario root, se necesitarán permisos de administración``, y se puede acceder ya sea proporcionando la contraseña del usuario root e iniciando sesión, o establecer una lista de usuarios que pueden tener acceso como administradores.
+
+En términos de seguridad, es recomendable optar por establecer una lista de usuarios con permisos, debido a que compartir la contraseña del usuario
+root con varias personas, implica el traspaso de información sensible y pone al sistema en una situación de vulnerabilidad.
+
+
