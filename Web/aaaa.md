@@ -57,4 +57,28 @@ Como veís, ``para poder realizar el cambio de usuario normal a usuario root, se
 En términos de seguridad, es recomendable optar por establecer una lista de usuarios con permisos, debido a que compartir la contraseña del usuario
 root con varias personas, implica el traspaso de información sensible y pone al sistema en una situación de vulnerabilidad.
 
+# Gestión de Grupos:
+
+Los grupos en Linux son usados principalmente para otorgar permisos sobre archivos y directorios. El sistema operativo ya trae incluido ciertos grupos predeterminados que cumplen con funciones específicas. Cada grupo creado en Linux tiene la característica de ser independiente de otros. Además, los grupos en Linux pueden tener contraseñas. Estos grupos pueden ser de tipo primario o secundario:
+
+* ``Grupo principal``: Tiene la función de determinar quién será el grupo que posea los archivos creados por el usuario. El grupo primario es el que se le asocia a la cuenta por defecto, y al que se le asignarán los archivos y directorios desarrollados por el usuario. Además, el nombre del grupo suele ser el mismo nombre de usuario.
+
+* ``Grupos secundarios``: Los grupos suplementarios son aquellos grupos adicionales a los que el usuario pertenezca.
+
+# Comandos para la gestión de usuarios y grupos en Linux
+
+* ``adduser`` o ``useradd``: Permite la creación de nuevos usuarios.
+* ``usermod``, ``chfn``, ``chsh`` y ``chage``: Usados para la modificación de un usuario.
+* ``deluser`` o ``userdel``: Comando para la eliminación de usuarios.
+* ``passwd``: Para cambiar la contraseña de un usuario.
+* ``addgroup`` o ``groupadd``: Usado para añadir un grupo.
+* ``groupmod``: Permite modificar un grupo.
+* ``groupdel`` o ``delgroup``: Se utiliza para eliminar un grupo.
+* ``gpasswd``: Comando diseñado para cambiar la contraseña de un grupo.
+* ``whoami``: Para saber qué usuario somos.
+* ``groups``: Para obtener información de los grupos a los que pertenecemos.
+* ``id``: Nos muestra tanto el usuario como los grupos.
+* ``su``: Comando para cambiar de usuario.
+* ``who`` o ``w``: Sirve para saber cuáles usuarios están conectados en la máquina en un determinado momento.
+* ``write`` o ``wall``: Para enviar mensajes de al resto de usuarios logueados.
 
