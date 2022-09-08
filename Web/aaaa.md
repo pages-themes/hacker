@@ -1,3 +1,7 @@
+    sudo su
+    
+ 
+
 # Gestión de Usuarios y Grupos en Linux.
 
 El sistema operativo Linux cuenta con un gran capacidad de gestión de usuarios y grupos que le permite realizar un uso óptimo
