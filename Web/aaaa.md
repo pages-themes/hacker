@@ -11,7 +11,7 @@ su atajo de teclado.
 
 Los atajos de teclado son teclas predefinidas con una función, abrir un programa, ejecutar una acción, etc. En este caso pulsado ``Ctrl + Alt + T`` no se abrirá la terminal.
 
-Más adelante veremos como modificar los atajos de teclado para ajustar el teclado a nuestras necesidades.
+Más adelante veremos como modificar los atajos de teclado para ajustarlo a nuestras necesidades.
 
 
 
