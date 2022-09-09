@@ -1,3 +1,27 @@
+Los sistemas Linux a menudo cuenta con diversas terminales, por ejemplo en Kali Linux viene por defecto instalada como principal la QTerminal, aunque
+también vienen instaladas terminales como la Powershell o Terminator.
+
+Para abrir la terminal podemos hacerlo de diversas formas, una es dirigirnos al icono que se encuentra arriba a la izquierda:
+
+Otra en el la barra de busqueda de Linux escribit Terminal y nos aparecerá el mismo icono que antes. Y finalmente podemos abrir la terminal mediante
+su atajo de teclado.
+
+Los atajos de teclado son teclas predefinidas con una función, abrir un programa, ejecutar una acción, etc. En este caso pulsado ``Ctrl + Alt + T`` se
+no abrirá la terminal.
+
+Más adelante veremos como modificar los atajos de teclado para ajustar el teclado a nuestras necesidades.
+
+
+
+
+
+
+
+
+
+
+
+
 ![Captura de pantalla_2022-09-09_10-32-54](https://user-images.githubusercontent.com/103068924/189310472-13b1a4b3-1d32-4510-bec8-853bb6f61de7.png)
 
 ![Captura de pantalla_2022-09-09_10-33-16](https://user-images.githubusercontent.com/103068924/189310486-e8db2277-4308-4fe5-8758-a96b9c503aae.png)
