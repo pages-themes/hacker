@@ -6,11 +6,10 @@ Para abrir la terminal podemos hacerlo de diversas formas, una es dirigirnos al 
 ![189310438-eb23610b-af5e-412e-ad7d-1d8928f871f3](https://user-images.githubusercontent.com/103068924/189313897-3e9f5c87-4702-4fb5-b257-26b7e6237d6f.png)
 
 
-Otra en el la barra de busqueda de Linux escribit Terminal y nos aparecerá el mismo icono que antes. Y finalmente podemos abrir la terminal mediante
+Otra forma es abrir la barra de búsqueda de Linux, escribir Terminal y nos aparecerá el mismo icono que antes. Y finalmente podemos abrir la terminal mediante
 su atajo de teclado.
 
-Los atajos de teclado son teclas predefinidas con una función, abrir un programa, ejecutar una acción, etc. En este caso pulsado ``Ctrl + Alt + T`` se
-no abrirá la terminal.
+Los atajos de teclado son teclas predefinidas con una función, abrir un programa, ejecutar una acción, etc. En este caso pulsado ``Ctrl + Alt + T`` no se abrirá la terminal.
 
 Más adelante veremos como modificar los atajos de teclado para ajustar el teclado a nuestras necesidades.
 
