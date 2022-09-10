@@ -1,5 +1,24 @@
-Los sistemas Linux a menudo cuenta con diversas terminales, por ejemplo en Kali Linux viene por defecto instalada como principal la QTerminal, aunque
-también vienen instaladas terminales como la Powershell o Terminator.
+# ¿Qué es una consola?
+
+Una consola hace referencia a un dispositivo electrónico que cuenta con monitor y teclado y que se utiliza para interactuar con un ordenador. 
+
+Este dispositivo es un tipo de ``terminal físico``, una ventana en la que se encuentran activos sus programas en modo texto, un ``interfaz o escritorio desde el cual se monitorea y controla un sistema``. Básicamente, es una 
+terminal física.
+
+Actualmente, existen las llamadas consolas virtuales, lo que significa que la consola puede ser completamente un software. Además, es bastante común que, en el aspecto práctico, no se establezcan diferencias entre consola y terminal.
+
+
+# ¿Qué es un terminal?
+
+El concepto o nombre terminal se refiere a un dispositivo para enviar comandos a un ordenador y mostrar su
+respuesta. En el mundo del desarrollo de software, esto corresponde con el programa que emula este dispositivo.
+
+``Es un entorno de entrada y salida del texto, el cual emula`` una GUI, es decir, ``una consola`` en una interfaz gráfica de usuario.
+
+Sistemas como Linux agregaron mejores herramientas encargadas del multiprocesamiento, por lo que ``el terminal pasó
+a ser meramente un software``.
+
+Los sistemas Linux a menudo cuenta con diversas terminales, por ejemplo en Kali Linux viene por defecto instalada como principal QTerminal, aunque también vienen instaladas terminales como la Powershell, Terminator, etc.
 
 Para abrir la terminal podemos hacerlo de diversas formas, una es dirigirnos al icono que se encuentra arriba a la izquierda:
 
@@ -13,11 +32,15 @@ Los atajos de teclado son teclas predefinidas con una función, abrir un program
 
 Más adelante veremos como modificar los atajos de teclado para ajustarlo a nuestras necesidades.
 
+# ¿Qué es Shell?
 
+Shell ``es la interfaz o programa que interpreta las líneas de comandos`` (donde se ingresan datos y comandos) ``enviadas
+por la terminal``. Funciona procesando los comandos e interpretando los resultados, es decir, ``toma comandos escritos
+a mano y le transmite al sistema operativo que estos deben ser ejecutados``. También, toma secuencia de comandos con el fin de interpretar la lógica entre ellos. Su función principal es la de iniciar otros programas.
 
+Por defecto, Kali Linux siempre ha usado “bash” (también conocido como “Bourne-Again SHell”) como shell predeterminado, cuando abres una terminal o consola.
 
-
-
+En este curso veremos y trabajaremos con las dos shells más utilizadas en Linux que son ``Bash`` y ``ZSH``.
 
 
 
