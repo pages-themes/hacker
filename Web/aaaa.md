@@ -28,9 +28,28 @@ Para ver el manual de cualquier comando simplemtne utilizamos ``man`` seguido de
 
     man [comando]
     
-``Èjemplo:``
+``Ejemplo:``
 
     man whoami
+    
+# Comandos Básicos de Linux
+
+Al operar un sistema operativo Linux, como hemos visto anteriormente, debes usar un shell, una interfaz que te da acceso a los servicios del 
+sistema operativo. La mayoría de las distribuciones de Linux utilizan una interfaz gráfica de usuario (GUI) como shell, principalmente para 
+proporcionar facilidad de uso a sus usuarios.
+
+Con la siguiente lista de comandos básicos ya podrás desenvolverte y realizar las funciones básicas en un sistema Linux. Ahora
+
+
+# Qué es un directorio?
+
+En informática, un directorio o ``carpeta`` es un contenedor virtual en el que se almacenan una agrupación 
+de archivos informáticos y otros subdirectorios, atendiendo a su contenido, a su propósito o a cualquier criterio que decida el usuario. 
+
+
+
+
+
 
 
 
