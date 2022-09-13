@@ -124,7 +124,7 @@ Algunos de los archivos básicos que podemos encontrar en este directorio son:
 * ``fd0``: Representa nuestra disquetera.
 
 
-# Directorio /etc
+## Directorio /etc
 
 El directorio ``/etc`` es un directorio estático que ``contiene los archivos de configuración del sistema operativo``. Este directorio también contiene
 archivos de configuración para controlar el funcionamiento de diversos programas.
