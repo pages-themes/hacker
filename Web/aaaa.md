@@ -85,7 +85,26 @@ En la siguiente imagen podemos ver un breve resumen de cada uno de los directori
 ![Captura de pantalla -2022-09-14 00-14-18](https://user-images.githubusercontent.com/103068924/190019663-5673274a-8836-4d0d-bd91-c38a1b542b9d.png)
 
 
+## Directorio /bin
 
+El directorio ``/bin`` es un directorio estático y compartible en el que ``se almacenan archivos binarios/ejecutables necesarios para el funcionamiento del sistema``. Estos archivos binarios los pueden usar la totalidad de usuarios del sistema operativo.
+
+Algunos de los archivos ejecutables almacenados en el directorio /bin son ``cp``, ``echo``, ``tar``, ``cat``, ``mv``, ``rm``, ``ping``, ``cp``, ``gzip``,
+``kill``, ``ls``, ``ping``, ``su``, etc. Estos archivos son los que nos permiten realizar la gran mayoría de utilidades básicas a través de la terminal
+Linux.
+
+El directorio /bin en ningún caso podrá contener subdirectorios.
+
+## Directorio /boot
+
+Es un directorio estático no compartible que ``contiene la totalidad de archivos necesarios para el arranque del ordenador excepto los archivos de
+configuración``. Algunos de los archivos indispensables para el arranque del sistema que acostumbra a almacenar el directorio ``/boot`` son el kernel y
+el gestor de arranque Grub.
+
+La totalidad de contenido almacenado en el directorio ``/boot`` es el que se utiliza antes de que el Kernel de comience a ejecutar programas en modo 
+usuario.
+
+El directorio /boot puede estar ubicado en su propia partición (partición /boot).
 
 
 
