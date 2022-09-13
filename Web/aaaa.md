@@ -1,99 +1,35 @@
-# ¿Qué es un comando?
-
-Un comando es una instrucción específica dada a una aplicación informática para realizar algún tipo de tarea o función.
-
-Los diferentes sistemas operativos como Windows, Linux, Android, o macOS disponen de una serie de comandos básicos para realizar operaciones 
-simples y directas, que se utilizan a través de una consola o intérprete de comandos.
-
-Los comandos no solo están disponibles en un sistema operativo, sino que también se utilizan en aplicaciones o programas. Cada software puede 
-disponer de sus propios comandos internos para realizar tareas específicas.
-
-# ¿Qué es un comando de Linux?
-
-Un comando Linux es un programa o utilidad que se ejecuta en la línea de comandos. ``Una línea de comandos es una interfaz que acepta líneas de 
-texto y las procesa en forma de instrucciones para tu ordenador``.
-
-Cualquier interfaz gráfica de usuario (GUI) no es más que una abstracción de los programas de línea de comandos. Por ejemplo, cuando cierras una 
-ventana haciendo clic en la «X», hay un comando que se ejecuta detrás de esa acción.
-
-Un ``flag`` es una forma de pasar opciones al comando que se ejecuta. La mayoría de los comandos de Linux ``tienen una página de ayuda`` que podemos 
-llamar con la flag ``-h``. La mayoría de las veces, las flag son opcionales.
-
-    [comando] -h
-
-Puedes invocar flags utilizando guiones ``(-)`` y guiones dobles ``(--)``, mientras que la ejecución de los argumentos depende del orden en que los
-pase a la función, esta sintaxis tambien la podemos ver en el modo ayuda o en el manual del comando.
-
-Para ver el manual de cualquier comando simplemtne utilizamos ``man`` seguido del comando del que queremos más información.
-
-    man [comando]
-    
-``Ejemplo:``
-
-    man whoami
-    
-# Comandos Básicos de Linux
-
-Al operar un sistema operativo Linux, como hemos visto anteriormente, debes usar un shell, una interfaz que te da acceso a los servicios del 
-sistema operativo. La mayoría de las distribuciones de Linux utilizan una interfaz gráfica de usuario (GUI) como shell, principalmente para 
-proporcionar facilidad de uso a sus usuarios.
-
-Con la siguiente lista de comandos básicos ya podrás desenvolverte y realizar las funciones básicas en un sistema Linux. Ahora
-
-
 # Qué es un directorio?
 
 En informática, un directorio o ``carpeta`` es un contenedor virtual en el que se almacenan una agrupación 
-de archivos informáticos y otros subdirectorios, atendiendo a su contenido, a su propósito o a cualquier criterio que decida el usuario. 
+de archivos informáticos y otros subdirectorios, atendiendo a su contenido, a su propósito o a cualquier criterio que decida el usuario.
 
+En linux los directorios siguen siendo las carpetas de toda la vida, pero en este curso trataremos unicamente la gestión de directorios a traves
+de la terminal, ya que nuestra finalidad es poder gestionar cualquier cosa a traves de líneas de comandos.
 
+# Estructura de directorios de Linux
 
+El estándar de jerarquía del sistema de archivos, también conocido como FHS (Filesystem Hierarchy Standard), es la norma creada por la 
+comunidad que define los directorios y el contenido de los directorios en los sistemas operativos GNU/Linux y Unix.
 
+GNU-Linux dispone de un sistema de directorios completamente estructurado, coherente y estandarizado obteniendo así las siguiente ventajas:
 
+* El software que tenemos instalado en nuestro ordenador sabe en todo momento las carpetas y los permisos de las carpetas de nuestro ordenador. Por 
+  lo tanto nuestro software en todo momento sabe donde encontrar y almacenar la información que necesita para su funcionamiento.
+* Los usuarios saben en todo momento el contenido que hay en cada una de las carpetas del ordenador.
+* Ayuda a la hora de realizar el mantenimiento de un sistema operativo.
+* Ayuda a otorgar los permisos pertinentes a cada uno de los archivos de nuestro sistema operativo.
 
+El estándar de jerarquía del sistema de archivos es flexible y existe cierta libertad a la hora de aplicar las normas. De hecho ciertas distribuciones 
+GNU-Linux introducen modificaciones a la estructura de directorios estándar para adaptarla a sus necesidades.
 
+# Directorio Raíz (/)
 
-![Captura de pantalla_2022-09-09_10-32-54](https://user-images.githubusercontent.com/103068924/189310472-13b1a4b3-1d32-4510-bec8-853bb6f61de7.png)
+El directorio raíz, simbolizado por el símbolo (``/``), es el directorio principal a partir del cual se ramifican todo el resto de directorios.
 
-![Captura de pantalla_2022-09-09_10-33-16](https://user-images.githubusercontent.com/103068924/189310486-e8db2277-4308-4fe5-8758-a96b9c503aae.png)
+Por lo tanto, podemos decir que el directorio raíz es el contenedor de nuestro sistema operativo, ya que de él nacen el resto de directorios que tendrá
+nuestro sistema operativo.
 
-![Captura de pantalla_2022-09-09_10-33-44](https://user-images.githubusercontent.com/103068924/189310499-5101891c-5185-4a7d-a417-fb31873f8e3b.png)
-
-
-![Captura de pantalla_2022-09-09_10-34-43](https://user-images.githubusercontent.com/103068924/189310506-2a15ef2f-9c87-4a2e-b4fb-64a4e2525863.png)
-
-
-![Captura de pantalla_2022-09-09_10-38-07](https://user-images.githubusercontent.com/103068924/189310534-0830d583-6aca-4250-b49f-ff2efa29e449.png)
-
-![Captura de pantalla_2022-09-09_10-38-35](https://user-images.githubusercontent.com/103068924/189310565-d12b1c12-f8bb-4bb1-8fbf-d5c1b3a9ecd5.png)
-
-![Captura de pantalla_2022-09-09_10-39-19](https://user-images.githubusercontent.com/103068924/189310577-1fbf7849-f892-40eb-8c49-36cfee36f6a4.png)
-
-![Captura de pantalla_2022-09-09_10-39-31](https://user-images.githubusercontent.com/103068924/189310602-8a392c95-74a7-4fb1-a261-1d1e3289c737.png)
-
-![Captura de pantalla_2022-09-09_10-40-52](https://user-images.githubusercontent.com/103068924/189310619-027acaad-2098-4f83-8950-a6b30bdee959.png)
-
-![Captura de pantalla_2022-09-09_10-42-16](https://user-images.githubusercontent.com/103068924/189310642-e9e6839b-7fa2-451e-b7d9-ee08c53481ed.png)
-
-
-![Captura de pantalla_2022-09-09_10-39-19](https://user-images.githubusercontent.com/103068924/189310380-596e7f02-cf9d-4c49-aceb-2cfbe7db8a52.png)
-
-![Captura de pantalla_2022-09-09_10-39-31](https://user-images.githubusercontent.com/103068924/189310409-1e9877f5-3a0a-4e2f-9f09-a0d902c4b880.png)
-
-
-
-![Captura de pantalla_2022-09-09_10-40-52](https://user-images.githubusercontent.com/103068924/189310421-5d038354-c515-453c-b2fc-302c03460e9a.png)
-
-
-![Captura de pantalla_2022-09-09_10-42-16](https://user-images.githubusercontent.com/103068924/189310425-dc42caeb-f633-4078-a0b8-525271e8edf1.png)
-
-
-![Screenshot_2022-09-09_10_25_50](https://user-images.githubusercontent.com/103068924/189310438-eb23610b-af5e-412e-ad7d-1d8928f871f3.png)
-
-
-
-![189310438-eb23610b-af5e-412e-ad7d-1d8928f871f3](https://user-images.githubusercontent.com/103068924/189313897-3e9f5c87-4702-4fb5-b257-26b7e6237d6f.png)
-
+![FHS-2574955839](https://user-images.githubusercontent.com/103068924/190015004-2f8f1535-f5b3-42e2-9745-bfbef66e219d.png)
 
 
 
