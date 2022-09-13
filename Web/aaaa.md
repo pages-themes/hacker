@@ -1,49 +1,36 @@
-# ¿Qué es una consola?
+# ¿Qué es un comando?
 
-Una consola hace referencia a un dispositivo electrónico que cuenta con monitor y teclado y que se utiliza para interactuar con un ordenador. 
+Un comando es una instrucción específica dada a una aplicación informática para realizar algún tipo de tarea o función.
 
-Este dispositivo es un tipo de ``terminal físico``, una ventana en la que se encuentran activos sus programas en modo texto, un ``interfaz o escritorio desde el cual se monitorea y controla un sistema``. Básicamente, es una 
-terminal física.
+Los diferentes sistemas operativos como Windows, Linux, Android, o macOS disponen de una serie de comandos básicos para realizar operaciones 
+simples y directas, que se utilizan a través de una consola o intérprete de comandos.
 
-Actualmente, existen las llamadas consolas virtuales, lo que significa que la consola puede ser completamente un software. Además, es bastante común que, en el aspecto práctico, no se establezcan diferencias entre consola y terminal.
+Los comandos no solo están disponibles en un sistema operativo, sino que también se utilizan en aplicaciones o programas. Cada software puede 
+disponer de sus propios comandos internos para realizar tareas específicas.
 
+# ¿Qué es un comando de Linux?
 
-# ¿Qué es un terminal?
+Un comando Linux es un programa o utilidad que se ejecuta en la línea de comandos. ``Una línea de comandos es una interfaz que acepta líneas de 
+texto y las procesa en forma de instrucciones para tu ordenador``.
 
-El concepto o nombre terminal se refiere a un dispositivo para enviar comandos a un ordenador y mostrar su
-respuesta. En el mundo del desarrollo de software, esto corresponde con el programa que emula este dispositivo.
+Cualquier interfaz gráfica de usuario (GUI) no es más que una abstracción de los programas de línea de comandos. Por ejemplo, cuando cierras una 
+ventana haciendo clic en la «X», hay un comando que se ejecuta detrás de esa acción.
 
-``Es un entorno de entrada y salida del texto, el cual emula`` una GUI, es decir, ``una consola`` en una interfaz gráfica de usuario.
+Un ``flag`` es una forma de pasar opciones al comando que se ejecuta. La mayoría de los comandos de Linux ``tienen una página de ayuda`` que podemos 
+llamar con la flag ``-h``. La mayoría de las veces, las flag son opcionales.
 
-Sistemas como Linux agregaron mejores herramientas encargadas del multiprocesamiento, por lo que ``el terminal pasó
-a ser meramente un software``.
+    [comando] -h
 
-Los sistemas Linux a menudo cuenta con diversas terminales, por ejemplo en Kali Linux viene por defecto instalada como principal QTerminal, aunque también vienen instaladas terminales como la Powershell, Terminator, etc.
+Puedes invocar flags utilizando guiones ``(-)`` y guiones dobles ``(--)``, mientras que la ejecución de los argumentos depende del orden en que los
+pase a la función, esta sintaxis tambien la podemos ver en el modo ayuda o en el manual del comando.
 
-Para abrir la terminal podemos hacerlo de diversas formas, una es dirigirnos al icono que se encuentra arriba a la izquierda:
+Para ver el manual de cualquier comando simplemtne utilizamos ``man`` seguido del comando del que queremos más información.
 
-![189310438-eb23610b-af5e-412e-ad7d-1d8928f871f3](https://user-images.githubusercontent.com/103068924/189313897-3e9f5c87-4702-4fb5-b257-26b7e6237d6f.png)
+    man [comando]
+    
+``Èjemplo:``
 
-
-Otra forma es abrir la barra de búsqueda de Linux, escribir Terminal y nos aparecerá el mismo icono que antes. Y finalmente podemos abrir la terminal mediante
-su atajo de teclado.
-
-Los atajos de teclado son teclas predefinidas con una función, abrir un programa, ejecutar una acción, etc. En este caso pulsado ``Ctrl + Alt + T`` no se abrirá la terminal.
-
-Más adelante veremos como modificar los atajos de teclado para ajustarlo a nuestras necesidades.
-
-# ¿Qué es Shell?
-
-Shell ``es la interfaz o programa que interpreta las líneas de comandos`` (donde se ingresan datos y comandos) ``enviadas
-por la terminal``. Funciona procesando los comandos e interpretando los resultados, es decir, ``toma comandos escritos
-a mano y le transmite al sistema operativo que estos deben ser ejecutados``. También, toma secuencia de comandos con el fin de interpretar la lógica entre ellos. Su función principal es la de iniciar otros programas.
-
-Por defecto, Kali Linux siempre ha usado “bash” (también conocido como “Bourne-Again SHell”) como shell predeterminado, cuando abres una terminal o consola.
-
-En este curso veremos y trabajaremos con las dos shells más utilizadas en Linux que son ``Bash`` y ``ZSH``.
-
-
-
+    man whoami
 
 
 
