@@ -3,23 +3,23 @@
 En informática, un directorio o ``carpeta`` es un contenedor virtual en el que se almacenan una agrupación 
 de archivos informáticos y otros subdirectorios, atendiendo a su contenido, a su propósito o a cualquier criterio que decida el usuario.
 
-En linux los directorios siguen siendo las carpetas de toda la vida, pero en este curso trataremos unicamente la gestión de directorios a traves
-de la terminal, ya que nuestra finalidad es poder gestionar cualquier cosa a traves de líneas de comandos.
+En Linux los directorios siguen siendo las carpetas de toda la vida, pero en este curso trataremos únicamente la gestión de directorios a través
+de la terminal, ya que nuestra finalidad es poder gestionar cualquier cosa a través de líneas de comandos.
 
 # Estructura de directorios de Linux
 
 El estándar de jerarquía del sistema de archivos, también conocido como FHS (Filesystem Hierarchy Standard), es la norma creada por la 
 comunidad que define los directorios y el contenido de los directorios en los sistemas operativos GNU/Linux y Unix.
 
-GNU-Linux dispone de un sistema de directorios completamente estructurado, coherente y estandarizado obteniendo así las siguiente ventajas:
+GNU-Linux dispone de un sistema de directorios completamente estructurado, coherente y estandarizado, obteniendo así las siguientes ventajas:
 
 * El software que tenemos instalado en nuestro ordenador sabe en todo momento las carpetas y los permisos de las carpetas de nuestro ordenador. Por 
-  lo tanto nuestro software en todo momento sabe donde encontrar y almacenar la información que necesita para su funcionamiento.
+  lo tanto, nuestro software en todo momento sabe donde encontrar y almacenar la información que necesita para su funcionamiento.
 * Los usuarios saben en todo momento el contenido que hay en cada una de las carpetas del ordenador.
 * Ayuda a la hora de realizar el mantenimiento de un sistema operativo.
 * Ayuda a otorgar los permisos pertinentes a cada uno de los archivos de nuestro sistema operativo.
 
-El estándar de jerarquía del sistema de archivos es flexible y existe cierta libertad a la hora de aplicar las normas. De hecho ciertas distribuciones 
+El estándar de jerarquía del sistema de archivos es flexible y existe cierta libertad a la hora de aplicar las normas. De hecho, ciertas distribuciones 
 GNU-Linux introducen modificaciones a la estructura de directorios estándar para adaptarla a sus necesidades.
 
 # Directorio Raíz (/)
@@ -37,11 +37,11 @@ un archivo en ``/home/user/documents``, puedes adivinar que la estructura de dir
 
 # Tipos de directorio en Linux:
 
-En GNU-Linux existen distintos tipos de directorios. Los distintos tipos de directorios existentes según su uso son los siguiente:
+En GNU-Linux existen distintos tipos de directorios. Los distintos tipos de directorios existentes según su uso son los siguientes:
 
 ## Directorios compartibles
 
-Los directorios compartidos son aquellos directorios que se pueden acceder desde distintos equipos. Por lo tanto los directorios compartibles son
+Los directorios compartidos son aquellos directorios que se pueden acceder desde distintos equipos. Por lo tanto, los directorios compartibles son
 aquellos que contienen archivos que se pueden usar desde otros equipos.
 
 Algunos ejemplos de directorios compartibles son:
@@ -51,8 +51,8 @@ Algunos ejemplos de directorios compartibles son:
 ## Directorios no compartibles
 
 Al contrario que los directorios compartibles, los directorios no compartibles son aquellos directorios que no se pueden compartir y su acceso y
-modificación están limitados al administrador del sistema. Por lo tanto los directorios no compartibles contienen archivos que solo puedes ser 
-accesibles y modificados por el administrador del sistemas.
+modificación están limitados al administrador del sistema. Por lo tanto, los directorios no compartibles contienen archivos que solo puedes ser 
+accesibles y modificados por el administrador del sistema.
 
 Algunos ejemplos de directorios no compartibles son:
 
@@ -83,7 +83,6 @@ predefinida.
 En la siguiente imagen podemos ver un breve resumen de cada uno de los directorios principales y sus funciones:
 
 ![Captura de pantalla -2022-09-14 00-14-18](https://user-images.githubusercontent.com/103068924/190019663-5673274a-8836-4d0d-bd91-c38a1b542b9d.png)
-
 
 
 
