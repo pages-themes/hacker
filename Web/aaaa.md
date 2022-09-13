@@ -106,6 +106,43 @@ usuario.
 
 El directorio /boot puede estar ubicado en su propia partición (partición /boot).
 
+## Directorio /dev
+
+``El sistema operativo Gnu-Linux trata los dispositivos de hardware como si fueran un archivo. Estos archivos que representan nuestros dispositivos de 
+hardware se hallan almacenados en el directorio /dev.``
+
+Cada vez que nosotros accedemos o usamos un dispositivo de hardware, como puede ser una memoria USB, una impresora, un disco duro externo, un ratón, etc,
+accedemos al hardware del dispositivo leyendo y escribiendo en el fichero correspondiente ubicado en el directorio ``/dev``.
+
+Algunos de los archivos básicos que podemos encontrar en este directorio son:
+
+* ``cdrom``: Representa nuestro dispositivo de CDROM.
+* ``sda``: Representa nuestro disco duro sata.
+* ``audio``: Representa nuestra tarjeta de sonido.
+* ``psaux``: Representa el puerto PS/2.
+* ``lpx``: Representa nuestra impresora.
+* ``fd0``: Representa nuestra disquetera.
+
+
+# Directorio /etc
+
+El directorio ``/etc`` es un directorio estático que ``contiene los archivos de configuración del sistema operativo``. Este directorio también contiene
+archivos de configuración para controlar el funcionamiento de diversos programas.
+
+Algunos de los archivos de configuración de la carpeta /etc pueden ser sustituidos o complementados por archivos de configuración ubicados en nuestra
+carpeta personal /home.
+
+Este directorio solamente contiene archivos de texto y subdirectorios. Estos subdirectorios también contendrán archivos de configuración para configurar
+partes de nuestro sistema como por ejemplo:
+
+* ``/etc/apt``: Carpeta que contiene ficheros de configuración del gestor de paquetes apt.
+* ``/etc/opt``: Carpeta que contiene los ficheros de configuración para los programas alojados en la carpeta /opt. Algunos programas alojados en esta 
+                carpeta pueden ser Spotify, Google-earth, Google Chrome, Teamviewer, etc.
+* ``/etc/profile``: Carpeta que contiene parámetros de configuración de los usuarios para inicializar la shell o interprete de comandos “terminal”
+* ``/etc/sgml``: Carpeta que contiene los ficheros de configuración para SGML. SGML es un lenguaje que se utiliza para la organización y marcado de
+                 documentos.
+* ``/etc/X11``: Ficheros para la configuración del sistema X Window etc.
+
 
 
 
