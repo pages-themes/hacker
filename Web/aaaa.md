@@ -269,19 +269,30 @@ Todo el contenido almacenado en la carpeta ``/usr`` es accesible para todos los 
 
 El directorio ``/usr`` contiene una serie de subdirectorios que acostumbran a almacenar la siguiente información:
 
-``/usr/bin``: Subdirectorio que almacena los archivos ejecutables del software que tenemos almacenado en nuestro ordenador.
+* ``/usr/bin``: Subdirectorio que almacena los archivos ejecutables del software que tenemos almacenado en nuestro ordenador.
 
-``/usr/include``: Subdirectorio que incluye la totalidad de archivos de cabecera que necesita el software instalado en nuestro sistema operativo para que funcione de forma adecuada.
+* ``/usr/include``: Subdirectorio que incluye la totalidad de archivos de cabecera que necesita el software instalado en nuestro sistema operativo para
+                    que funcione de forma adecuada.
 
-``/usr/lib``: Subdirectorio que incluye bibliotecas compartidas y ficheros binarios que únicamente pueden ser ejecutados por el administrador del sistema.
+* ``/usr/lib``: Subdirectorio que incluye bibliotecas compartidas y ficheros binarios que únicamente pueden ser ejecutados por el administrador del
+sistema.
 
-``/usr/local`: GNU-Linux es un sistema operativo diseñado para ser usado en entornos de red. Por lo tanto es posible que el directorio /usr no esté instalado localmente en nuestro y esté en un servidor. En estos casos existe el directorio /usr/local que está destinado a alojar los programas que instala localmente el administrador del sistema. Este directorio está protegido de las actualizaciones automáticas de todo el sistema operativo y tiene una estructura de directorios muy similar a la del directorio /usr.
+* ``/usr/local``: GNU-Linux es un sistema operativo diseñado para ser usado en entornos de red. Por lo tanto es posible que el directorio /usr no esté
+                  instalado localmente en nuestro y esté en un servidor. En estos casos existe el directorio /usr/local que está destinado a alojar los
+                  programas que instala localmente el administrador del sistema. Este directorio está protegido de las actualizaciones automáticas de
+                  todo el sistema operativo y tiene una estructura de directorios muy similar a la del directorio /usr.
 
-``/usr/sbin``: Directorio que contiene archivos binarios para la administración del nuestro equipo no esenciales para el proceso de arranque ni para reparar el ordenador. Estos archivos binarios almacenados en la carpeta /usr/sbin solamente pueden ser usados por el administrador del sistema. Algunos de estos archivos binarios no críticos para administrar el sistema operativo pueden ser por ejemplo varios demonios para diversos servicios de red, xcalib para calibrar el color de nuestro monitores, etc.
+* ``/usr/sbin``: Directorio que contiene archivos binarios para la administración del nuestro equipo no esenciales para el proceso de arranque ni para
+                 reparar el ordenador. Estos archivos binarios almacenados en la carpeta /usr/sbin solamente pueden ser usados por el administrador del
+                 sistema. Algunos de estos archivos binarios no críticos para administrar el sistema operativo pueden ser por ejemplo varios demonios
+                 para diversos servicios de red, xcalib para calibrar el color de nuestro monitores, etc.
 
-``/usr/share``: En el directorio /usr/share encontramos archivos de texto compartibles que son independientes de la arquitectura del sistema operativo. En este directorio podemos encontrar por ejemplo los archivos de ayuda como por ejemplo los documentos info y las páginas de man, ficheros de configuración, imágenes, iconos, themes, etc.
+* ``/usr/share``: En el directorio /usr/share encontramos archivos de texto compartibles que son independientes de la arquitectura del sistema operativo.
+                  En este directorio podemos encontrar por ejemplo los archivos de ayuda como por ejemplo los documentos info y las páginas de man,
+                  ficheros de configuración, imágenes, iconos, themes, etc.
 
-``/usr/src``: En el directorio /usr/src normalmente encontramos el código fuente de algunas aplicaciones y del kernel que tenemos instalado en nuestro sistema operativo.
+* ``/usr/src``: En el directorio /usr/src normalmente encontramos el código fuente de algunas aplicaciones y del kernel que tenemos instalado en nuestro
+                sistema operativo.
 
 
 ## Directorio /var
@@ -294,23 +305,38 @@ propia, y en caso de no ser posible es recomendable ubicarlo fuera de la partici
 
 Algunos de los subdirectorios importantes que están dentro de la carpeta ``/var`` son los siguientes:
 
-``/var/cache``: Subdirectorio pensado para almacenar datos de aplicaciones en modo cache. Un ejemplo de lo que acabo de citar es apt-get. En el momento de instalar una aplicación con apt-get se almacena una copia del paquete binario instalado en la ubicación /var/cache/apt/archives/. Así en el caso que desinstalaramos el programa y quisiéramos volver instalarlo no seria necesario descargar el fichero binario de nuevo y la instalación seria inmediata.
+``/var/cache``: Subdirectorio pensado para almacenar datos de aplicaciones en modo cache. Un ejemplo de lo que acabo de citar es apt-get. En el momento
+de instalar una aplicación con apt-get se almacena una copia del paquete binario instalado en la ubicación /var/cache/apt/archives/. Así en el caso que
+desinstalaramos el programa y quisiéramos volver instalarlo no seria necesario descargar el fichero binario de nuevo y la instalación seria inmediata.
 
-``/var/lib``: En este subdirectorio encontramos información sobre el estado de las aplicaciones. Este directorio también contiene bases de datos del sistema.
+``/var/lib``: En este subdirectorio encontramos información sobre el estado de las aplicaciones. Este directorio también contiene bases de datos del
+sistema.
 
-``/var/lock``: Directorio en el que se hallan los archivos de bloqueo que crean ciertos programas. La función de los archivos de bloqueo creados por algunos programas, como por ejemplo un servidor web, es evitar que ciertos recursos sean usados por otros programas que no sean el propio servidor web. En el momento de cerrar la aplicación que ha generado el archivo de bloqueo, el archivo de bloqueo desaparece.
+``/var/lock``: Directorio en el que se hallan los archivos de bloqueo que crean ciertos programas. La función de los archivos de bloqueo creados por
+algunos programas, como por ejemplo un servidor web, es evitar que ciertos recursos sean usados por otros programas que no sean el propio servidor web.
+En el momento de cerrar la aplicación que ha generado el archivo de bloqueo, el archivo de bloqueo desaparece.
 
-``/var/log``: En el directorio /var/log se encuentran de forma clasificada gran parte de los registros de nuestros programas y del sistema operativo. Este directorio es muy importante ya que en caso de problemas, el administrador del sistema lo puede consultar para intentar averiguar la causa del problema. Los log o registros se encuentran perfectamente clasificados, así por lo tanto si queremos consultar los registros generados por el kernel tendremos que consultar el archivo /var/log/messages, si queremos consultar los accesos a nuestro sistema operativo podemos consultar el archivo /var/log/wtmp, etc.
+``/var/log``: En el directorio /var/log se encuentran de forma clasificada gran parte de los registros de nuestros programas y del sistema operativo.
+Este directorio es muy importante ya que en caso de problemas, el administrador del sistema lo puede consultar para intentar averiguar la causa del
+problema. Los log o registros se encuentran perfectamente clasificados, así por lo tanto si queremos consultar los registros generados por el kernel
+tendremos que consultar el archivo /var/log/messages, si queremos consultar los accesos a nuestro sistema operativo podemos consultar el archivo
+/var/log/wtmp, etc.
 
-``/var/mail``: Directorio en el que se ubican los archivos de correo electrónico de cada uno de los usuarios del servidor de mail. También es posible ubicar nuestros archivos de correo electrónico en la partición /home.
+``/var/mail``: Directorio en el que se ubican los archivos de correo electrónico de cada uno de los usuarios del servidor de mail. También es posible
+ubicar nuestros archivos de correo electrónico en la partición /home.
 
 ``/var/opt``: En el directorio /var/opt se almacenan datos variables que utilizan los programas instalados en la ubicación /opt.
 
-``/var/run``: El directorio /var/run contiene información de la sesión que estamos ejecutando. Ejemplos de la información que contienen los archivos de esta carpeta son los demonios que están en ejecución, los usuarios que están logueados, los procesos que están activos, etc.
+``/var/run``: El directorio /var/run contiene información de la sesión que estamos ejecutando. Ejemplos de la información que contienen los archivos de
+esta carpeta son los demonios que están en ejecución, los usuarios que están logueados, los procesos que están activos, etc.
 
-``/var/spool``: Directorio que almacena archivos que controlan la tareas pendientes de realizar. Así por ejemplo en el directorio /var/spool/cups encontraremos los archivos que gestionan los trabajos de impresión en espera, en el directorio /var/spool/cron encontraremos los archivos que gestionan las tareas planificadas pendientes de ejecutar, etc.
+``/var/spool``: Directorio que almacena archivos que controlan la tareas pendientes de realizar. Así por ejemplo en el directorio /var/spool/cups
+encontraremos los archivos que gestionan los trabajos de impresión en espera, en el directorio /var/spool/cron encontraremos los archivos que gestionan
+las tareas planificadas pendientes de ejecutar, etc.
 
-``/var/tmp``: Directorio que al igual que el directorio /tmp contiene archivos temporales. La principal diferencia entre los directorios /var/tmp y /tmp es que los archivos temporales ubicados en la carpeta /tmp se acostumbran a borrar automáticamente entre sesiones o reinicios del sistema, mientras que los archivos temporales ubicados en el directorio /var/tmp no lo hacen.
+``/var/tmp``: Directorio que al igual que el directorio /tmp contiene archivos temporales. La principal diferencia entre los directorios /var/tmp y /tmp
+es que los archivos temporales ubicados en la carpeta /tmp se acostumbran a borrar automáticamente entre sesiones o reinicios del sistema, mientras que
+los archivos temporales ubicados en el directorio /var/tmp no lo hacen.
 
 
 ## Directorio /sys
