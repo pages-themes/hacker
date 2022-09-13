@@ -75,6 +75,14 @@ Algunos ejemplos de directorios estáticos son:
 
 ``/etc/password``, ``/etc/shadow``, ``/usr``, ``/opt``, ``/etc``, ``/boot``, ``/bin``, ``/sbin``, etc.
 
+# Directorios Principales
+
+Ahora vamos a ver los directorios principales y sus funciones principales. Estos directorios parten de la raíz (``/``) y cada uno tiene una función
+predefinida.
+
+En la siguiente imagen podemos ver un breve resumen de cada uno de los directorios principales y sus funciones:
+
+![Captura de pantalla -2022-09-14 00-14-18](https://user-images.githubusercontent.com/103068924/190019663-5673274a-8836-4d0d-bd91-c38a1b542b9d.png)
 
 
 
