@@ -51,7 +51,7 @@ Algunos ejemplos de directorios compartibles son:
 ## Directorios no compartibles
 
 Al contrario que los directorios compartibles, los directorios no compartibles son aquellos directorios que no se pueden compartir y su acceso y
-modificación están limitados al administrador del sistema. Por lo tanto los los directorios no compartibles contienen archivos que solo puedes ser 
+modificación están limitados al administrador del sistema. Por lo tanto los directorios no compartibles contienen archivos que solo puedes ser 
 accesibles y modificados por el administrador del sistemas.
 
 Algunos ejemplos de directorios no compartibles son:
