@@ -1,12 +1,12 @@
-<a href="#item1" style="text-decoration:none">¿Qué es un Directorio?</a>
-<a href="#item2" style="text-decoration:none">Estructura de Directorios en Linux</a>
-<a href="#item3" style="text-decoration:none">Directorio Raíz (/)</a>
-<a href="#item4" style="text-decoration:none">Tipos de Directorio en Linux</a>
+<a href="#item1" style="text-decoration:none">¿Qué es un Directorio?</a>  
+<a href="#item2" style="text-decoration:none">Estructura de Directorios en Linux</a>  
+<a href="#item3" style="text-decoration:none">Directorio Raíz (/)</a>  
+<a href="#item4" style="text-decoration:none">Tipos de Directorio en Linux</a>  
 * <a href="#item4.1" style="text-decoration:none">Directorios Compartibles</a>
 * <a href="#item5" style="text-decoration:none">Directorios No Compartibles</a>
 * <a href="#item6" style="text-decoration:none">Directorios Variables</a>
 * <a href="#item7" style="text-decoration:none">Directorios Estáticos</a>
-<a href="#item8" style="text-decoration:none">Directorios Principales</a>
+<a href="#item8" style="text-decoration:none">Directorios Principales</a>    
 * <a href="#item9" style="text-decoration:none">Directorio /bin</a>
 * <a href="#item10" style="text-decoration:none">Directorio /boot</a>
 * <a href="#item11" style="text-decoration:none">Directorio /dev</a>
