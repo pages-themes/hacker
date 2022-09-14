@@ -75,6 +75,10 @@ Algunos ejemplos de directorios estáticos son:
 
 ``/etc/password``, ``/etc/shadow``, ``/usr``, ``/opt``, ``/etc``, ``/boot``, ``/bin``, ``/sbin``, etc.
 
+
+
+
+
 # Directorios Principales
 
 Ahora vamos a ver los directorios principales y sus funciones principales. Estos directorios parten de la raíz (``/``) y cada uno tiene una función
@@ -317,33 +321,34 @@ Algunos de los subdirectorios importantes que están dentro de la carpeta ``/var
 algunos programas, como por ejemplo un servidor web, es evitar que ciertos recursos sean usados por otros programas que no sean el propio servidor web.
 En el momento de cerrar la aplicación que ha generado el archivo de bloqueo, el archivo de bloqueo desaparece.
 
-``/var/log``: En el directorio /var/log se encuentran de forma clasificada gran parte de los registros de nuestros programas y del sistema operativo.
-Este directorio es muy importante ya que en caso de problemas, el administrador del sistema lo puede consultar para intentar averiguar la causa del
-problema. Los log o registros se encuentran perfectamente clasificados, así por lo tanto si queremos consultar los registros generados por el kernel
-tendremos que consultar el archivo /var/log/messages, si queremos consultar los accesos a nuestro sistema operativo podemos consultar el archivo
-/var/log/wtmp, etc.
+* ``/var/log``: En el directorio ``/var/log`` se encuentran de forma clasificada gran parte de los registros de nuestros programas y del sistema 
+                operativo.
+                Este directorio es muy importante ya que en caso de problemas, el administrador del sistema lo puede consultar para intentar averiguar la
+                causa del problema. Los log o registros se encuentran perfectamente clasificados, así por lo tanto si queremos consultar los registros
+                generados por el kernel tendremos que consultar el archivo ``/var/log/messages``, si queremos consultar los accesos a nuestro sistema
+                operativo podemos consultar el archivo ``/var/log/wtmp``, etc.
 
-``/var/mail``: Directorio en el que se ubican los archivos de correo electrónico de cada uno de los usuarios del servidor de mail. También es posible
-ubicar nuestros archivos de correo electrónico en la partición /home.
+* ``/var/mail``: Directorio en el que se ubican los archivos de correo electrónico de cada uno de los usuarios del servidor de mail. También es posible
+                 ubicar nuestros archivos de correo electrónico en la partición /home.
 
-``/var/opt``: En el directorio /var/opt se almacenan datos variables que utilizan los programas instalados en la ubicación /opt.
+* ``/var/opt``: En el directorio /var/opt se almacenan datos variables que utilizan los programas instalados en la ubicación /opt.
 
-``/var/run``: El directorio /var/run contiene información de la sesión que estamos ejecutando. Ejemplos de la información que contienen los archivos de
-esta carpeta son los demonios que están en ejecución, los usuarios que están logueados, los procesos que están activos, etc.
+* ``/var/run``: El directorio /var/run contiene información de la sesión que estamos ejecutando. Ejemplos de la información que contienen los archivos 
+                de esta carpeta son los demonios que están en ejecución, los usuarios que están logueados, los procesos que están activos, etc.
 
-``/var/spool``: Directorio que almacena archivos que controlan la tareas pendientes de realizar. Así por ejemplo en el directorio /var/spool/cups
-encontraremos los archivos que gestionan los trabajos de impresión en espera, en el directorio /var/spool/cron encontraremos los archivos que gestionan
-las tareas planificadas pendientes de ejecutar, etc.
+* ``/var/spool``: Directorio que almacena archivos que controlan la tareas pendientes de realizar. Así por ejemplo en el directorio ``/var/spool/cups``
+                  encontraremos los archivos que gestionan los trabajos de impresión en espera, en el directorio ``/var/spool/cron`` encontraremos los
+                  archivos que gestionan las tareas planificadas pendientes de ejecutar, etc.
 
-``/var/tmp``: Directorio que al igual que el directorio /tmp contiene archivos temporales. La principal diferencia entre los directorios /var/tmp y /tmp
-es que los archivos temporales ubicados en la carpeta /tmp se acostumbran a borrar automáticamente entre sesiones o reinicios del sistema, mientras que
-los archivos temporales ubicados en el directorio /var/tmp no lo hacen.
+* ``/var/tmp``: Directorio que al igual que el directorio /tmp contiene archivos temporales. La principal diferencia entre los directorios ``/var/tmp`` y
+                ``/tmp`` es que los archivos temporales ubicados en la carpeta /tmp se acostumbran a borrar automáticamente entre sesiones o reinicios
+                del sistema, mientras que los archivos temporales ubicados en el directorio /var/tmp no lo hacen.
 
 
 ## Directorio /sys
 
-Directorio que contiene información similar a la del directorio /proc. ``Dentro de esta carpeta podemos encontrar información estructurada y jerárquica 
-acerca del kernel de nuestro equipo, de nuestras particiones y sistemas de archivo, de nuestros drivers, etc``.
+Directorio que contiene información similar a la del directorio ``/proc``. ``Dentro de esta carpeta podemos encontrar información estructurada y
+jerárquica acerca del kernel de nuestro equipo, de nuestras particiones y sistemas de archivo, de nuestros drivers, etc``.
 
 
 ## Directorio /lost+found
