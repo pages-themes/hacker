@@ -321,7 +321,7 @@ Algunos de los subdirectorios importantes que están dentro de la carpeta ``/var
 algunos programas, como por ejemplo un servidor web, es evitar que ciertos recursos sean usados por otros programas que no sean el propio servidor web.
 En el momento de cerrar la aplicación que ha generado el archivo de bloqueo, el archivo de bloqueo desaparece.
 
-* ``/var/log``: En el directorio ``/var/log`` se encuentran de forma clasificada gran parte de los registros de nuestros programas y del sistema 
+* ``/var/log``: En el directorio /var/log se encuentran de forma clasificada gran parte de los registros de nuestros programas y del sistema 
                 operativo.
                 Este directorio es muy importante ya que en caso de problemas, el administrador del sistema lo puede consultar para intentar averiguar la
                 causa del problema. Los log o registros se encuentran perfectamente clasificados, así por lo tanto si queremos consultar los registros
