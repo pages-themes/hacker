@@ -279,7 +279,7 @@ El directorio ``/usr`` contiene una serie de subdirectorios que acostumbran a al
                     que funcione de forma adecuada.
 
 * ``/usr/lib``: Subdirectorio que incluye bibliotecas compartidas y ficheros binarios que únicamente pueden ser ejecutados por el administrador del
-sistema.
+                sistema.
 
 * ``/usr/local``: GNU-Linux es un sistema operativo diseñado para ser usado en entornos de red. Por lo tanto es posible que el directorio /usr no esté
                   instalado localmente en nuestro y esté en un servidor. En estos casos existe el directorio /usr/local que está destinado a alojar los
@@ -317,9 +317,9 @@ Algunos de los subdirectorios importantes que están dentro de la carpeta ``/var
 * ``/var/lib``: En este subdirectorio encontramos información sobre el estado de las aplicaciones. Este directorio también contiene bases de datos del
                 sistema.
 
-*``/var/lock``: Directorio en el que se hallan los archivos de bloqueo que crean ciertos programas. La función de los archivos de bloqueo creados por
-algunos programas, como por ejemplo un servidor web, es evitar que ciertos recursos sean usados por otros programas que no sean el propio servidor web.
-En el momento de cerrar la aplicación que ha generado el archivo de bloqueo, el archivo de bloqueo desaparece.
+* ``/var/lock``: Directorio en el que se hallan los archivos de bloqueo que crean ciertos programas. La función de los archivos de bloqueo creados por
+                  algunos programas, como por ejemplo un servidor web, es evitar que ciertos recursos sean usados por otros programas que no sean el
+                  propio servidor web. En el momento de cerrar la aplicación que ha generado el archivo de bloqueo, el archivo de bloqueo desaparece.
 
 * ``/var/log``: En el directorio /var/log se encuentran de forma clasificada gran parte de los registros de nuestros programas y del sistema 
                 operativo.
