@@ -5,7 +5,7 @@
 * <a href="#item4.1" style="text-decoration:none">Directorios Compartibles</a>
 * <a href="#item5" style="text-decoration:none">Directorios No Compartibles</a>
 * <a href="#item6" style="text-decoration:none">Directorios Variables</a>
-* <a href="#item7" style="text-decoration:none">Directorios Estáticos</a>
+* <a href="#item7" style="text-decoration:none">Directorios Estáticos</a>  
 <a href="#item8" style="text-decoration:none">Directorios Principales</a>    
 * <a href="#item9" style="text-decoration:none">Directorio /bin</a>
 * <a href="#item10" style="text-decoration:none">Directorio /boot</a>
