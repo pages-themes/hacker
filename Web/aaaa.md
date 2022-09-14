@@ -1,17 +1,17 @@
-# Qué es un directorio?
+# Qué es un Directorio?
 
-En informática, un directorio o ``carpeta`` es un contenedor virtual en el que se almacenan una agrupación 
-de archivos informáticos y otros subdirectorios, atendiendo a su contenido, a su propósito o a cualquier criterio que decida el usuario.
+En informática, ``un directorio o carpeta es un contenedor virtual en el que se almacenan una agrupación 
+de archivos informáticos y otros subdirectorios, atendiendo a su contenido, a su propósito o a cualquier criterio que decida el usuario.``
 
 En Linux los directorios siguen siendo las carpetas de toda la vida, pero en este curso trataremos únicamente la gestión de directorios a través
 de la terminal, ya que nuestra finalidad es poder gestionar cualquier cosa a través de líneas de comandos.
 
-# Estructura de directorios de Linux
+# Estructura de Directorios en Linux
 
 El estándar de jerarquía del sistema de archivos, también conocido como FHS (Filesystem Hierarchy Standard), es la norma creada por la 
 comunidad que define los directorios y el contenido de los directorios en los sistemas operativos GNU/Linux y Unix.
 
-GNU-Linux dispone de un sistema de directorios completamente estructurado, coherente y estandarizado, obteniendo así las siguientes ventajas:
+``GNU-Linux dispone de un sistema de directorios completamente estructurado``, coherente y estandarizado, obteniendo así las siguientes ventajas:
 
 * El software que tenemos instalado en nuestro ordenador sabe en todo momento las carpetas y los permisos de las carpetas de nuestro ordenador. Por 
   lo tanto, nuestro software en todo momento sabe donde encontrar y almacenar la información que necesita para su funcionamiento.
@@ -35,41 +35,41 @@ Como todos los demás directorios o archivos descienden de la raíz, la ruta abs
 un archivo en ``/home/user/documents``, puedes adivinar que la estructura de directorios va desde ``root->home->user->documents``.
 
 
-# Tipos de directorio en Linux:
+# Tipos de Directorio en Linux:
 
 En GNU-Linux existen distintos tipos de directorios. Los distintos tipos de directorios existentes según su uso son los siguientes:
 
-## Directorios compartibles
+## Directorios Compartibles
 
-Los directorios compartidos son aquellos directorios que se pueden acceder desde distintos equipos. Por lo tanto, los directorios compartibles son
-aquellos que contienen archivos que se pueden usar desde otros equipos.
+Los directorios compartidos ``son aquellos directorios que se pueden acceder desde distintos equipos``. Por lo tanto, los directorios compartibles son
+aquellos que ``contienen archivos que se pueden usar desde otros equipos``.
 
 Algunos ejemplos de directorios compartibles son:
 
 ``/var/mail``, ``/opt``, ``/home``, ``/var/www/html``, ``/usr``, etc.
 
-## Directorios no compartibles
+## Directorios No Compartibles
 
-Al contrario que los directorios compartibles, los directorios no compartibles son aquellos directorios que no se pueden compartir y su acceso y
-modificación están limitados al administrador del sistema. Por lo tanto, los directorios no compartibles contienen archivos que solo puedes ser 
-accesibles y modificados por el administrador del sistema.
+Al contrario que los directorios compartibles, los directorios no compartibles ``son aquellos directorios que no se pueden compartir y su acceso y
+modificación están limitados al administrador del sistema``. Por lo tanto, los directorios no compartibles contienen archivos que ``solo puedes ser 
+accesibles y modificados por el administrador del sistema``.
 
 Algunos ejemplos de directorios no compartibles son:
 
 ``/etc``, ``/boot``, ``/var/run``, etc.
 
-## Directorios variables
+## Directorios Variables
 
-Son aquellos directorios que contienen archivos que pueden ser modificados y pueden variar su contenido sin la intervención del administrador del
-sistema.
+Son aquellos directorios que ``contienen archivos que pueden ser modificados y pueden variar su contenido sin la intervención del administrador del
+sistema``.
 
 Algunos ejemplos de directorios variables son:
 
 ``/var/log/messages``, ``/var/mail``, ``/var/spool/news``, ``/home``, ``/var/run``, etc.
 
-## Directorios estáticos
+## Directorios Estáticos
 
-Son aquellos directorios que contienen archivos que solo pueden ser modificados con la intervención del administrador del sistema.
+Son aquellos directorios que ``contienen archivos que solo pueden ser modificados con la intervención del administrador del sistema``.
 
 Algunos ejemplos de directorios estáticos son:
 
@@ -305,14 +305,15 @@ propia, y en caso de no ser posible es recomendable ubicarlo fuera de la partici
 
 Algunos de los subdirectorios importantes que están dentro de la carpeta ``/var`` son los siguientes:
 
-``/var/cache``: Subdirectorio pensado para almacenar datos de aplicaciones en modo cache. Un ejemplo de lo que acabo de citar es apt-get. En el momento
-de instalar una aplicación con apt-get se almacena una copia del paquete binario instalado en la ubicación /var/cache/apt/archives/. Así en el caso que
-desinstalaramos el programa y quisiéramos volver instalarlo no seria necesario descargar el fichero binario de nuevo y la instalación seria inmediata.
+* ``/var/cache``: Subdirectorio pensado para almacenar datos de aplicaciones en modo cache. Un ejemplo de lo que acabo de citar es apt-get. En el momento
+                  de instalar una aplicación con apt-get se almacena una copia del paquete binario instalado en la ubicación /var/cache/apt/archives/.
+                  Así en el caso que desinstalaramos el programa y quisiéramos volver instalarlo no seria necesario descargar el fichero binario de nuevo
+                  y la instalación seria inmediata.              
 
-``/var/lib``: En este subdirectorio encontramos información sobre el estado de las aplicaciones. Este directorio también contiene bases de datos del
-sistema.
+* ``/var/lib``: En este subdirectorio encontramos información sobre el estado de las aplicaciones. Este directorio también contiene bases de datos del
+                sistema.
 
-``/var/lock``: Directorio en el que se hallan los archivos de bloqueo que crean ciertos programas. La función de los archivos de bloqueo creados por
+*``/var/lock``: Directorio en el que se hallan los archivos de bloqueo que crean ciertos programas. La función de los archivos de bloqueo creados por
 algunos programas, como por ejemplo un servidor web, es evitar que ciertos recursos sean usados por otros programas que no sean el propio servidor web.
 En el momento de cerrar la aplicación que ha generado el archivo de bloqueo, el archivo de bloqueo desaparece.
 
