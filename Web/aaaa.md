@@ -5,26 +5,28 @@
 * <a href="#item4.1" style="text-decoration:none">Directorios Compartibles</a>
 * <a href="#item5" style="text-decoration:none">Directorios No Compartibles</a>
 * <a href="#item6" style="text-decoration:none">Directorios Variables</a>
-* <a href="#item7" style="text-decoration:none">Directorios Estáticos</a>  
-<a href="#item8" style="text-decoration:none">Directorios Principales</a>    
-* <a href="#item9" style="text-decoration:none">Directorio /bin</a>
-* <a href="#item10" style="text-decoration:none">Directorio /boot</a>
-* <a href="#item11" style="text-decoration:none">Directorio /dev</a>
-* <a href="#item12" style="text-decoration:none">Directorio /etc</a>
-* <a href="#item13" style="text-decoration:none">Directorio /home</a>
-* <a href="#item14" style="text-decoration:none">Directorio /lib</a>
-* <a href="#item15" style="text-decoration:none">Directorio /mnt</a>
-* <a href="#item16" style="text-decoration:none">Directorio /media</a>
-* <a href="#item17" style="text-decoration:none">Directorio /opt</a>
-* <a href="#item18" style="text-decoration:none">Directorio /proc</a>
-* <a href="#item19" style="text-decoration:none">Directorio /root
-* <a href="#item20" style="text-decoration:none">Directorio /sbin</a>
-* <a href="#item21" style="text-decoration:none">Directorio /srv</a>
-* <a href="#item22" style="text-decoration:none">Directorio /tmp</a>
-* <a href="#item23" style="text-decoration:none">Directorio /usr</a>
-* <a href="#item24" style="text-decoration:none">Directorio /var</a>
-* <a href="#item25" style="text-decoration:none">Directorio /sys</a>
-* <a href="#item26" style="text-decoration:none">Directorio /lost+found</a>
+* <a href="#item7" style="text-decoration:none">Directorios Estáticos</a>   
+ 
+<a href="#item8" style="text-decoration:none">Directorios Principales</a>  
+
+* <a href="#item9" style="text-decoration:none">Directorio /bin</a>  
+* <a href="#item10" style="text-decoration:none">Directorio /boot</a>  
+* <a href="#item11" style="text-decoration:none">Directorio /dev</a>  
+* <a href="#item12" style="text-decoration:none">Directorio /etc</a>  
+* <a href="#item13" style="text-decoration:none">Directorio /home</a>  
+* <a href="#item14" style="text-decoration:none">Directorio /lib</a>  
+* <a href="#item15" style="text-decoration:none">Directorio /mnt</a>  
+* <a href="#item16" style="text-decoration:none">Directorio /media</a>  
+* <a href="#item17" style="text-decoration:none">Directorio /opt</a>  
+* <a href="#item18" style="text-decoration:none">Directorio /proc</a>  
+* <a href="#item19" style="text-decoration:none">Directorio /root</a> 
+* <a href="#item20" style="text-decoration:none">Directorio /sbin</a>  
+* <a href="#item21" style="text-decoration:none">Directorio /srv</a>  
+* <a href="#item22" style="text-decoration:none">Directorio /tmp</a>  
+* <a href="#item23" style="text-decoration:none">Directorio /usr</a>  
+* <a href="#item24" style="text-decoration:none">Directorio /var</a>  
+* <a href="#item25" style="text-decoration:none">Directorio /sys</a>  
+* <a href="#item26" style="text-decoration:none">Directorio /lost+found</a>  
 
 <a name="item1"></a>
 # ¿Qué es un Directorio?
