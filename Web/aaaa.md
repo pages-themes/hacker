@@ -22,21 +22,21 @@ A la acción de colocar distintos comandos concatenados en la misma línea de co
 
 Cada variable concatena los conmandos de una forma partícular:
 
-# ;
+## ;
 
 Con ``;`` el segundo comando se ejecutará sin importar el resultado del segundo. Esto quiere decir, que aúnque el primer comando nos reportará
 un codigo de error, el segundo se ejecurtará independientemente monstrando el resultado.
 
     whoami ; ls
 
-# &&
+## &&
 
 Con ``&&`` el segundo comando se ejecutará solo si el primero termina con éxito. En caso de el primer comando reportar un error el siguiente comando no
 se ejecutará.
 
     whoami && ls
     
-# ||
+## ||
 
 Con ``||`` el segundo comando solo se ejucutará si el primero termina sin éxito. Si el primer comando se realiza de manera exitosa el siguinete
 no se ejecutará.
@@ -44,13 +44,13 @@ no se ejecutará.
     whoami || ls
     
     
-# &
+## &
 
 Con ``&```hará que los dos (o más) comandos se ejecuten de manera simultanea.
 
     whoami & ls
     
-# |
+## |
 
 Con ``|`` la salida del primer comando se convierte en la entrada del segundo.
 
@@ -79,7 +79,10 @@ Además, una vez se ha establecido la comunicación, el usuario tiene que ser ca
 la información que el ordenador le proporciona.
 
 Estas herramientas son comúnmente conocidas como dispositivos de entrada/salida. Así, ``al dispositivo de entrada se le llama entrada estándar o stdin y
-al dispositivo de salida se le llama salida estándar o stdout``. 
+al dispositivo de salida se le llama salida estándar o stdout``.
+
+Es importante saber que hay un tercer flujo por el cual se envía la información en caso de error. Este flujo de transmisión de datos es conocido como
+``salida de error o error estándar``.
 
 
 ## ¿Qué es la entrada estándar (stdin)?
@@ -95,11 +98,32 @@ información a través de la entrada estándar`` utilizando el teclado. No obsta
 en las que se toman los datos de un archivo o el retorno de un programa como información de entrada para que otro programa pueda ejecutarse. Sin embargo,
 a no ser que se produzca alguna modificación, ``la entrada estándar siempre estará asociada al descriptor de archivos 0 (fd = 0)``.
 
-# ¿Qué es la salida estandar (stdout)?
+## ¿Qué es la salida estandar (stdout)?
 
+Cuando un programa termina de ejecutarse, en muchas ocasiones debe mostrar en algún sitio el resultado de dicha ejecución. En la mayoría de las
+ocasiones este sitio se corresponde con la pantalla del ordenador y es ``la salida estándar (stdout) la que permite que dicho resultado se muestre por
+pantalla``. 
+
+Esto es importante ya que para nuestro sistema operativo todo lo relacionado con el ordenador es un fichero. Por tanto, ``la pantalla va a comunicarse 
+con un fichero que le permita comunicarse con el resto de programas, un fichero representado por STDOUT_FILENO y apuntado por stdout``.
+
+No obstante, es importante saber que la pantalla del ordenador no es la salida estándar. ``Cuando un programa envía el resultado de su ejecución a la
+salida estándar, la pantalla muestra dicho resultado porque ambas están conectadas``. Por defecto, ``stdout está conectada a la pantalla, pero no
+significa que sean lo mismo``. 
+
+Fácilmente puede redireccionarse la salida estándar a un archivo y evitar así que el resultado se muestre por pantalla y ser guardados en un archivo por
+ejemplo.
+
+``La salida estándar siempre estará asociada al descriptor de archivos 0 (fd = 1)``.
  
-# STDERR
+# ¿Qué es la salida de error o error estandar (STDERR)?
  
 El ``stderr`` también conocido como  error estándar, es el descriptor de archivo predeterminado donde un proceso puede escribir mensajes de error. 
 
+En la mayoría de las ocasiones, el mensaje de error se muestra por pantalla. Sin embargo, esto no significa que la ``salida estándar`` y el ``error
+estándar`` formen parte del mismo flujo de transmisión. En realidad, ``son dos flujos totalmente distintos que``, por defecto, ``se encuentran conectados
+con la pantalla del ordenador``.
 
+También importante saber que el error estándar está asociado al descriptor de archivos 2 o ``fd = 2``. A no ser que se especifique lo contrario, este
+descriptor de archivos siempre va a mostrar su contenido por pantalla. No obstante, al igual que sucede con stdout, podemos redireccionar a stderr para
+que en lugar de mostrar el contenido por pantalla, lo envíe a un archivo o a otro programa.
