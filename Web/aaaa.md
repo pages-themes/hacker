@@ -116,7 +116,7 @@ ejemplo.
 
 ``La salida estándar siempre estará asociada al descriptor de archivos 0 (fd = 1)``.
  
-# ¿Qué es la salida de error o error estandar (STDERR)?
+## ¿Qué es la salida de error o error estandar (STDERR)?
  
 El ``stderr`` también conocido como  error estándar, es el descriptor de archivo predeterminado donde un proceso puede escribir mensajes de error. 
 
