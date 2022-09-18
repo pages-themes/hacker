@@ -26,8 +26,8 @@
    <meta property="og:locale" content="en_US" />
    <meta name="description" content="Blog sobre Ciberseguridad." />
    <meta property="og:description" content="Blog sobre Ciberseguridad." />
-   <link rel="canonical" href="https://f1r0x.github.io/Web/.html" />         <!-- ¡¡¡ Cambiar !!!  -->
-   <meta property="og:url" content="https://f1r0x.github.io/Web/.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <link rel="canonical" href="https://f1r0x.github.io/Web/cursolinux_6_concatenar_comandos.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/cursolinux_6_concatenar_comandos.html" />    <!-- ¡¡¡ Cambiar !!!  -->
    <meta property="og:site_name" content="F1r0x" />
    <meta property="og:type" content="website" />
    <meta name="twitter:card" content="summary" />
@@ -77,9 +77,9 @@
 <!---------------------- Botones de Anterior y Siguiente --------------------------------->
 
 <div id="main-container">
-  <a href="#" class="btn btn-anterior-con-titulo">Artículo anterior</a>
-  <a href="#" class="btn btn-siguiente-con-titulo">Artículo siguiente</a>
-</div>  
+    <a href="./cursolinux_5_comandos_basicos.html" class="btn btn-anterior-con-titulo">Artículo anterior</a>
+    <a href="./busqueda_reporte_archivos_linux.html" class="btn btn-siguiente-con-titulo">Artículo siguiente</a>
+  </div>
   
 <!----------------------------- Imagen Hack The Box -------------------------------------->   
 
@@ -100,7 +100,7 @@
     <symbol id="s-text">
       <text text-anchor="middle"
             x="50%" y="50%" dy=".35em">
-        Plantilla   <!-- Palabra del Letrero-->
+        Linux   <!-- Palabra del Letrero-->
       </text>
     </symbol>  
   
@@ -122,6 +122,50 @@
 <!----------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------->
 
+
+<h1 id="concatenar-varios-comandos-en-linux">Concatenar varios comandos en Linux.</h1>
+
+<p>Una vez sabemos como funciona la dínamica de los comandos, podemos ejecutar varios al mismo tiempo utilizando las distintas
+variables según la acción que vayamos a realizar.</p>
+
+<p>A la acción de colocar distintos comandos concatenados en la misma línea de comando se le conoce como <code class="language-plaintext highlighter-rouge">one-liner</code>.</p>
+
+<p>Cada variable concatena los conmandos de una forma partícular:</p>
+
+<h2>;</h2>
+
+<p>Con <code class="language-plaintext highlighter-rouge">;</code> el segundo comando se ejecutará sin importar el resultado del segundo. Esto quiere decir, que aúnque el primer comando nos reportará
+un codigo de error, el segundo se ejecurtará independientemente monstrando el resultado.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whoami ; ls
+</code></pre></div></div>
+
+<h2 id="-1">&amp;&amp;</h2>
+
+<p>Con <code class="language-plaintext highlighter-rouge">&amp;&amp;</code> el segundo comando se ejecutará solo si el primero termina con éxito. En caso de el primer comando reportar un error el siguiente comando no
+se ejecutará.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whoami &amp;&amp; ls
+</code></pre></div></div>
+
+<h2 id="-2">||</h2>
+
+<p>Con <code class="language-plaintext highlighter-rouge">||</code> el segundo comando solo se ejucutará si el primero termina sin éxito. Si el primer comando se realiza de manera exitosa el siguinete
+no se ejecutará.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whoami || ls
+</code></pre></div></div>
+
+<h2 id="-3">&amp;</h2>
+
+<p>Con <code class="language-plaintext highlighter-rouge">&amp;</code>`hará que los dos (o más) comandos se ejecuten de manera simultanea.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whoami &amp; ls
+</code></pre></div></div>
+
+<h2 id="-4">|</h2>
+
+<p>Con <code class="language-plaintext highlighter-rouge">|</code> la salida del primer comando se convierte en la entrada del segundo.</p>
 
 
 

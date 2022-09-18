@@ -124,7 +124,7 @@
 <li><a href="#item3" style="text-decoration:none">¿Qué es una Distribución?</a></li>
 <li><a href="#item4" style="text-decoration:none">¿Qué es el kernel de Linux?</a></li>
 <li><a href="#item5" style="text-decoration:none">¿Qué es la terminal de Linux?</a></li>
-
+<li><a href="#item6" style="text-decoration:none">¿Qué es un Proceso?</a></li>
 
 <h1 id="introducción-a-linux">Introducción a Linux</h1>
 
@@ -220,7 +220,22 @@ específicas en ambientes especializados.</p>
    comandos</code>. Igual que en otros sistemas operativos, podemos ejecutar cualquier binario o script directamente desde su directorio, peró los detalles los iremos viendo
    más adelante.</p>
 
+<p><a name="item6"></a></p>
+<h2 id="qué-es-un-proceso">¿Qué es un Proceso?</h2>
 
+<p>Un proceso <code class="language-plaintext highlighter-rouge">es simplemente un programa en ejecución</code>. También se define como una <code class="language-plaintext highlighter-rouge">entidad que representa la unidad de trabajo más básica que se 
+implementa en un sistema</code>. Cuando queremos realizar una tarea en nuestro ordenador, ejecutamos un programa. Este programa acaba convirtiéndose
+en un proceso que ejecutará todas las funciones que se definen en el programa en cuestión.</p>
+
+<p>Del mismo modo, cuando un programa se convierte en un proceso, este también pasa a dividirse en cuatro secciones diferentes:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Stack</code>: Contiene la información temporal que se almacena al ejecutar las funciones que se definen en el programa, como por ejemplo sus parámetros,
+                                                                       sus valores de retorno y sus variables locales.</li>
+  <li><code class="language-plaintext highlighter-rouge">Heap</code>: Memoria dinámica reservada por el proceso.</li>
+  <li><code class="language-plaintext highlighter-rouge">Text</code>: Información del estado actual del programa, incluyendo la información almacenada en los registros.</li>
+  <li><code class="language-plaintext highlighter-rouge">Data</code>: Información almacenada en variables globales y variables estáticas.</li>
+</ul>
 
 
 
