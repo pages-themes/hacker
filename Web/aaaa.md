@@ -1,61 +1,3 @@
-# ¿Qué es un proceso?
-
-Un proceso ``es simplemente un programa en ejecución``. También se define como una ``entidad que representa la unidad de trabajo más básica que se 
-implementa en un sistema``. Cuando queremos realizar una tarea en nuestro ordenador, ejecutamos un programa. Este programa acaba convirtiéndose
-en un proceso que ejecutará todas las funciones que se definen en el programa en cuestión.
-
-Del mismo modo, cuando un programa se convierte en un proceso, este también pasa a dividirse en cuatro secciones diferentes:
-
-* ``Stack``: Contiene la información temporal que se almacena al ejecutar las funciones que se definen en el programa, como por ejemplo sus parámetros,
-             sus valores de retorno y sus variables locales.
-* ``Heap``: Memoria dinámica reservada por el proceso.
-* ``Text``: Información del estado actual del programa, incluyendo la información almacenada en los registros.
-* ``Data``: Información almacenada en variables globales y variables estáticas.
-
-
-# Concatenar varios comandos en Linux
-
-Una vez sabemos como funciona la dínamica de los comandos, podemos ejecutar varios al mismo tiempo utilizando las distintas
-variables según la acción que vayamos a realizar.
-
-A la acción de colocar distintos comandos concatenados en la misma línea de comando se le conoce como ``one-liner``.
-
-Cada variable concatena los conmandos de una forma partícular:
-
-## ;
-
-Con ``;`` el segundo comando se ejecutará sin importar el resultado del segundo. Esto quiere decir, que aúnque el primer comando nos reportará
-un codigo de error, el segundo se ejecurtará independientemente monstrando el resultado.
-
-    whoami ; ls
-
-## &&
-
-Con ``&&`` el segundo comando se ejecutará solo si el primero termina con éxito. En caso de el primer comando reportar un error el siguiente comando no
-se ejecutará.
-
-    whoami && ls
-    
-## ||
-
-Con ``||`` el segundo comando solo se ejucutará si el primero termina sin éxito. Si el primer comando se realiza de manera exitosa el siguinete
-no se ejecutará.
-
-    whoami || ls
-    
-    
-## &
-
-Con ``&```hará que los dos (o más) comandos se ejecuten de manera simultanea.
-
-    whoami & ls
-    
-## |
-
-Con ``|`` la salida del primer comando se convierte en la entrada del segundo.
-
-
-
 # Descriptores de archivos:
  
 Un descriptor de archivos (``file descriptor`` o ``fd``) ``es un número entero positivo que utiliza un proceso para identificar un archivo abierto dentro
@@ -127,3 +69,11 @@ con la pantalla del ordenador``.
 También importante saber que el error estándar está asociado al descriptor de archivos 2 o ``fd = 2``. A no ser que se especifique lo contrario, este
 descriptor de archivos siempre va a mostrar su contenido por pantalla. No obstante, al igual que sucede con stdout, podemos redireccionar a stderr para
 que en lugar de mostrar el contenido por pantalla, lo envíe a un archivo o a otro programa.
+
+
+
+
+
+
+
+
