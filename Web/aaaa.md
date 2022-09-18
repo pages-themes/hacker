@@ -11,11 +11,11 @@ eficaz de mantener a cada usuario del sistema controlado, evitando que este pued
 
 # ¿Qué son los permisos en Linux?
 
-Los permiso ``son la manera de restringir las funciones que un usuario tiene permitido realizar sobre un archivo``.
-Los tres parámetros básicos que se regulan a traves de los permisos son la ``lectura(r)``, la ``escritura(w)`` y la ``ejecución(x)`` de los archivos.
+Los permisos ``son la manera de restringir las funciones que un usuario tiene permitido realizar sobre un archivo``.
+Los tres parámetros básicos que se regulan a través de los permisos son la ``lectura(r)``, la ``escritura(w)`` y la ``ejecución(x)`` de los archivos.
 
-A cada archvio se aplicán estos permisos y cada archivo tienen divididos estos permisos en tres secciones, una para los ``Usurios``, otra para los
-``Grupos`` y una para ``Otros``. Dentro de cada uno de estos se especifican cuales de los tres permisos se aplican.
+A cada archivo se aplican estos permisos y cada archivo tienen divididos estos permisos en tres secciones, una para los ``Usuarios``, otra para los
+``Grupos`` y una para ``Otros``. Dentro de cada uno de estos se especifican cuáles de los tres permisos se aplican.
 
 La estructura básica de los permisos es:
 
@@ -23,14 +23,16 @@ La estructura básica de los permisos es:
     
     Usuarios/Grupos/Otros
     
-Son tres secciones (Usuarios/Grupos/Otros) y dentro de cada uno especificaremos los permisos:
+Son tres niveles (Usuarios/Grupos/Otros) y dentro de cada uno especificaremos los permisos:
 
     LecturaUsuario,EscrituraUsuario,EjecuciónUsuario / LecturaGrupos,EscrituraGrupos,EjecuciónGrupos / LecturaOtros,EscrituraOtros,EjecuciónOtros  
 
 
-# ¿Gestión de usuarios en Linux?
+# ¿Gestión de permisos en Linux?
 
-``Usuario:`` Eres Tu, por ejemplo, cuando inicias tu sistema linux. Ingresas al iniciar sesión con el usuario que creaste, ese nombre de usuario se
+Podemos especificar si queremos aplicar estos permisos de manera independiente entre Usuarios, Grupos y Otros: 
+
+``Usuario:`` Eres Tú, por ejemplo, cuando inicias tu sistema Linux. Ingresas al iniciar sesión con el usuario que creaste, ese nombre de usuario se
 puede usar como el “propietario” de un archivo y corresponde a este tipo: “usuario”.
 
 ``Grupo:`` Es el grupo al que pertenece el archivo y cualquier usuario que pertenezca a ese grupo (incluido tal vez el usuario) tiene los permisos
@@ -39,5 +41,32 @@ asignados sobre ese archivo.
 ``Otros:`` Se refiere a cualquier otro usuario que no corresponda al “usuario” ni al “Grupo”, incluso aquellos que no son usuarios del sistema
 como por ejemplo un usuario anónimo que lee un archivo por medio de una página web (y que accede desde fuera, por internet) tiene que tener
 permisos para poder leer ese archivo, este usuario anónimo corresponde a este tipo: “otros”
+
+# Tipos de permisos en Linux.
+
+ A su vez, cada uno de estos niveles puede tener 3 valores diferentes en función del grado de privilegios que especifiquemos en el sistema. Estos
+ valores podemos especificarlos por las siguientes letras:
+
+``r:`` Permiso de lectura (permite abrirlo, copiarlo, etc).
+``w:`` Permiso de escritura (permite modificarlo, borrarlo, etc).
+``x:`` Permiso de ejecución (si es binario, permite ejecutarlo).
+
+Los permisos en Linux se pueden reflejar tanto con letras como con números. Ambas formas son correctas e igual de funcionales. Sin embargo, lo más
+intuitivo son las letras, ya que nos permiten comprender mejor de qué permiso se trata. Los números son más usados por usuarios avanzados, al ser
+más rápido de especificar.
+
+# ¿Cómo ver los permisos de un archivo?
+
+Podemos ver los permisos que tiene los archivos situados en el directorio actual utilizando el comando ``ls -l``:
+
+Cada archivo o carpeta que nos encontremos al listar el contenido de un directorio irá indicado con un símbolo:
+
+``–``o ``.``: Indica que se trata de un archivo.
+``d``: Indica que se trata de un directorio.
+``l``: Indica que se trata de un enlace (acceso directo, por ejemplo).
+
+Seguido veremos los tres niveles de permisos. Los permisos están definidos por las letras (r,w,x) y cuando el permiso no está aplicado se sustituye la
+letra por ``-``.
+
 
 
