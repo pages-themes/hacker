@@ -25,10 +25,19 @@ La estructura básica de los permisos es:
     
 Son tres secciones (Usuarios/Grupos/Otros) y dentro de cada uno especificaremos los permisos:
 
-    LecturaUsuario,EscrituraUsuario,EjecuciónUsuario/LecturaGrupos,EscrituraGrupos,EjecuciónGrupos/LecturaOtros,EscrituraOtros,EjecuciónOtros)    
+    LecturaUsuario,EscrituraUsuario,EjecuciónUsuario / LecturaGrupos,EscrituraGrupos,EjecuciónGrupos / LecturaOtros,EscrituraOtros,EjecuciónOtros  
 
 
+# ¿Gestión de usuarios en Linux?
 
+``Usuario:`` Eres Tu, por ejemplo, cuando inicias tu sistema linux. Ingresas al iniciar sesión con el usuario que creaste, ese nombre de usuario se
+puede usar como el “propietario” de un archivo y corresponde a este tipo: “usuario”.
 
+``Grupo:`` Es el grupo al que pertenece el archivo y cualquier usuario que pertenezca a ese grupo (incluido tal vez el usuario) tiene los permisos
+asignados sobre ese archivo.
+
+``Otros:`` Se refiere a cualquier otro usuario que no corresponda al “usuario” ni al “Grupo”, incluso aquellos que no son usuarios del sistema
+como por ejemplo un usuario anónimo que lee un archivo por medio de una página web (y que accede desde fuera, por internet) tiene que tener
+permisos para poder leer ese archivo, este usuario anónimo corresponde a este tipo: “otros”
 
 
