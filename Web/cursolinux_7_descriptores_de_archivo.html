@@ -1,0 +1,304 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/cursolinux_7_descriptores_de_archivo.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/cursolinux_7_descriptores_de_archivo.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Curso Linux: Descriptores de Archivos</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+
+<!---------------------- Botones de Anterior y Siguiente --------------------------------->
+
+<div id="main-container">
+  <a href="./cursolinux_6_concatenar_comandos.html" class="btn btn-anterior-con-titulo">Artículo anterior</a>
+  <a href="./busqueda_reporte_archivos_linux.html" class="btn btn-siguiente-con-titulo">Artículo siguiente</a>
+</div>  
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!--------------------------------  Letrero Animado  --------------------------------------->      
+ 
+  <svg viewBox="0 0 1320 300">
+
+    <!-- Símbolo -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+        Linux   <!-- Palabra del Letrero-->
+      </text>
+    </symbol>  
+  
+    <!-- Añadir en función de las letras de la palabra -->
+    <use xlink:href="#s-text" class="text"></use><!--1-->
+    <use xlink:href="#s-text" class="text"></use><!--2-->  
+    <use xlink:href="#s-text" class="text"></use><!--3-->
+    <use xlink:href="#s-text" class="text"></use><!--4-->
+    <use xlink:href="#s-text" class="text"></use><!--5-->
+    <use xlink:href="#s-text" class="text"></use><!--6-->
+    <use xlink:href="#s-text" class="text"></use><!--7-->
+    <use xlink:href="#s-text" class="text"></use><!--8-->
+    <use xlink:href="#s-text" class="text"></use><!--9-->
+  </svg>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<li><a href="#item1" style="text-decoration:none">¿Qué es un Descriptor de Archivos?</a></li>
+<li><a href="#item2" style="text-decoration:none">Entrada (stdin) y Salida (stdout) estandar del sistema.</a></li>
+<li><a href="#item3" style="text-decoration:none">¿Qué es la entrada estándar (stdin)?</a></li>
+<li><a href="#item4" style="text-decoration:none">¿Qué es la salida estandar (stdout)?</a></li>
+<li><a href="#item5" style="text-decoration:none">¿Qué es la salida de error o error estandar (stderr)?</a></li>
+
+
+<p><a name="item1"></a></p>
+<h1 id="descriptores-de-archivos">¿Qué es un Descriptor de Archivos?</h1>
+
+<p>Un descriptor de archivos (<code class="language-plaintext highlighter-rouge">file descriptor</code> o <code class="language-plaintext highlighter-rouge">fd</code>) <code class="language-plaintext highlighter-rouge">es un número entero positivo que utiliza un proceso para identificar un archivo abierto dentro
+del sistema</code>.</p>
+
+<p>Cuando un programa quiere acceder a un archivo abierto, el kernel le devuelve un descriptor de archivos. Este <code class="language-plaintext highlighter-rouge">fd</code> apunta a una entrada específica
+dentro de la tabla de archivos del kernel. Esta tabla contiene información sobre el archivo al que hace referencia el descriptor de archivos. Entre esta
+información se especifican las propiedades read-only(solo lectura), write-only(solo escritura), read-write(escritura/lectura), etc.</p>
+
+<p>Tres de los descriptores de archivos más importantes y con los que más se trabaja son:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Standard Input (fd = 0)</code>: Los datos se mandan por la entrada estándar. Por defecto, son los datos que se envían cuando escribimos por teclado.</li>
+  <li><code class="language-plaintext highlighter-rouge">Standard Output (fd = 1)</code>: Los datos se mandan por la salida estándar. Por defecto, son los datos que se muestran por la pantalla.</li>
+  <li><code class="language-plaintext highlighter-rouge">Standard Error (fd = 2)</code>: Los datos se mandan por la salida de error. Por defecto, son los datos que se mandan por la pantalla para indicar que un
+                              programa ha fallado.</li>
+</ul>
+
+<p><a name="item2"></a></p>
+<h1 id="entrada-stdin-y-salida-stdout-estandar-del-sistema">Entrada (stdin) y Salida (stdout) estandar del sistema:</h1>
+
+<p>Como usuarios, para poder comunicarnos con nuestro ordenador necesitamos de una serie de herramientas que nos permitan establecer tal comunicación.
+Además, una vez se ha establecido la comunicación, el usuario tiene que ser capaz de enviar la información al ordenador y tiene que ser capaz de recibir
+la información que el ordenador le proporciona.</p>
+
+<p>Estas herramientas son comúnmente conocidas como dispositivos de entrada/salida. Así, <code class="language-plaintext highlighter-rouge">al dispositivo de entrada se le llama entrada estándar o stdin y
+al dispositivo de salida se le llama salida estándar o stdout</code>.</p>
+
+<p>Es importante saber que hay un tercer flujo por el cual se envía la información en caso de error. Este flujo de transmisión de datos es conocido como
+<code class="language-plaintext highlighter-rouge">salida de error o error estándar</code>.</p>
+
+<p><a name="item3"></a></p>
+<h2 id="qué-es-la-entrada-estándar-stdin">¿Qué es la entrada estándar (stdin)?</h2>
+
+<p>El término <code class="language-plaintext highlighter-rouge">stdin</code> hace referencia a un <code class="language-plaintext highlighter-rouge">flujo de entrada a donde se envían los datos y de donde un programa recibe la información que necesita para
+poder ejecutarse</code>.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Se entiende como flujo una transferencia de datos</code>. En el caso de la entrada estándar, será texto lo que se envíe como información a través 
+de este flujo.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Cuando un programa requiere que el usuario le proporcione información</code>, como un nombre, un número, un día, etc., <code class="language-plaintext highlighter-rouge">el usuario le proporcionará esta
+información a través de la entrada estándar</code> utilizando el teclado. No obstante, esta entrada de datos no siempre proviene del teclado. Hay ocasiones
+en las que se toman los datos de un archivo o el retorno de un programa como información de entrada para que otro programa pueda ejecutarse. Sin embargo,
+a no ser que se produzca alguna modificación, <code class="language-plaintext highlighter-rouge">la entrada estándar siempre estará asociada al descriptor de archivos 0 (fd = 0)</code>.</p>
+
+<p><a name="item4"></a></p>
+<h2 id="qué-es-la-salida-estandar-stdout">¿Qué es la salida estandar (stdout)?</h2>
+
+<p>Cuando un programa termina de ejecutarse, en muchas ocasiones debe mostrar en algún sitio el resultado de dicha ejecución. En la mayoría de las
+ocasiones este sitio se corresponde con la pantalla del ordenador y es <code class="language-plaintext highlighter-rouge">la salida estándar (stdout) la que permite que dicho resultado se muestre por
+pantalla</code>.</p>
+
+<p>Esto es importante ya que para nuestro sistema operativo todo lo relacionado con el ordenador es un fichero. Por tanto, <code class="language-plaintext highlighter-rouge">la pantalla va a comunicarse 
+con un fichero que le permita comunicarse con el resto de programas, un fichero representado por STDOUT_FILENO y apuntado por stdout</code>.</p>
+
+<p>No obstante, es importante saber que la pantalla del ordenador no es la salida estándar. <code class="language-plaintext highlighter-rouge">Cuando un programa envía el resultado de su ejecución a la
+salida estándar, la pantalla muestra dicho resultado porque ambas están conectadas</code>. Por defecto, <code class="language-plaintext highlighter-rouge">stdout está conectada a la pantalla, pero no
+significa que sean lo mismo</code>.</p>
+
+<p>Fácilmente puede redireccionarse la salida estándar a un archivo y evitar así que el resultado se muestre por pantalla y ser guardados en un archivo por
+ejemplo.</p>
+
+<p><code class="language-plaintext highlighter-rouge">La salida estándar siempre estará asociada al descriptor de archivos 0 (fd = 1)</code>.</p>
+
+<p><a name="item5"></a></p>
+<h2 id="qué-es-la-salida-de-error-o-error-estandar-stderr">¿Qué es la salida de error o error estandar (stderr)?</h2>
+
+<p>El <code class="language-plaintext highlighter-rouge">stderr</code> también conocido como  error estándar, es el descriptor de archivo predeterminado donde un proceso puede escribir mensajes de error.</p>
+
+<p>En la mayoría de las ocasiones, el mensaje de error se muestra por pantalla. Sin embargo, esto no significa que la <code class="language-plaintext highlighter-rouge">salida estándar</code> y el <code class="language-plaintext highlighter-rouge">error
+estándar</code> formen parte del mismo flujo de transmisión. En realidad, <code class="language-plaintext highlighter-rouge">son dos flujos totalmente distintos que</code>, por defecto, <code class="language-plaintext highlighter-rouge">se encuentran conectados
+con la pantalla del ordenador</code>.</p>
+
+<p>También importante saber que el error estándar está asociado al descriptor de archivos 2 o <code class="language-plaintext highlighter-rouge">fd = 2</code>. A no ser que se especifique lo contrario, este
+descriptor de archivos siempre va a mostrar su contenido por pantalla. No obstante, al igual que sucede con stdout, podemos redireccionar a stderr para
+que en lugar de mostrar el contenido por pantalla, lo envíe a un archivo o a otro programa.</p>
+
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->
