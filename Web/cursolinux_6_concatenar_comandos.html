@@ -122,7 +122,15 @@
 <!----------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------->
 
+<li><a href="#item1" style="text-decoration:none">Concatenar varios comandos en Linux.</a></li>
+<li><a href="#item2" style="text-decoration:none">Variable ;</a></li>
+<li><a href="#item3" style="text-decoration:none">Variable &&</a></li>
+<li><a href="#item4" style="text-decoration:none">Variable ||</a></li>
+<li><a href="#item5" style="text-decoration:none">Variable &</a></li>
+<li><a href="#item6" style="text-decoration:none">Variable |</a></li>
 
+
+<p><a name="item1"></a></p>
 <h1 id="concatenar-varios-comandos-en-linux">Concatenar varios comandos en Linux.</h1>
 
 <p>Una vez sabemos como funciona la dínamica de los comandos, podemos ejecutar varios al mismo tiempo utilizando las distintas
@@ -132,6 +140,7 @@ variables según la acción que vayamos a realizar.</p>
 
 <p>Cada variable concatena los conmandos de una forma partícular:</p>
 
+<p><a name="item2"></a></p>
 <h2>;</h2>
 
 <p>Con <code class="language-plaintext highlighter-rouge">;</code> el segundo comando se ejecutará sin importar el resultado del segundo. Esto quiere decir, que aúnque el primer comando nos reportará
@@ -140,6 +149,7 @@ un codigo de error, el segundo se ejecurtará independientemente monstrando el r
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whoami ; ls
 </code></pre></div></div>
 
+<p><a name="item3"></a></p>
 <h2 id="-1">&amp;&amp;</h2>
 
 <p>Con <code class="language-plaintext highlighter-rouge">&amp;&amp;</code> el segundo comando se ejecutará solo si el primero termina con éxito. En caso de el primer comando reportar un error el siguiente comando no
@@ -148,6 +158,7 @@ se ejecutará.</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whoami &amp;&amp; ls
 </code></pre></div></div>
 
+<p><a name="item4"></a></p>
 <h2 id="-2">||</h2>
 
 <p>Con <code class="language-plaintext highlighter-rouge">||</code> el segundo comando solo se ejucutará si el primero termina sin éxito. Si el primer comando se realiza de manera exitosa el siguinete
@@ -156,6 +167,7 @@ no se ejecutará.</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whoami || ls
 </code></pre></div></div>
 
+<p><a name="item5"></a></p>
 <h2 id="-3">&amp;</h2>
 
 <p>Con <code class="language-plaintext highlighter-rouge">&amp;</code>`hará que los dos (o más) comandos se ejecuten de manera simultanea.</p>
@@ -163,6 +175,7 @@ no se ejecutará.</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whoami &amp; ls
 </code></pre></div></div>
 
+<p><a name="item6"></a></p>
 <h2 id="-4">|</h2>
 
 <p>Con <code class="language-plaintext highlighter-rouge">|</code> la salida del primer comando se convierte en la entrada del segundo.</p>
