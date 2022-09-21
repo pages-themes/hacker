@@ -331,6 +331,19 @@ hr {
   z-index: 300;
 }
 
+/*----------------- Botón Volver Índice Curso Linux --------------------*/
+
+.btn-curso-linux{
+  position: fixed;
+  margin-top: 595px;
+  margin-left: -320px;
+  z-index: 300;
+}
+
+
+
+
+
 
 /* ------------------------------------ Botón HTB --------------------------------------*/
 
@@ -505,7 +518,7 @@ a {
 svg {
   width: 100%;
   height: 100%;
-  margin-top: -100px;                   /* Separación superior del Letrero */
+  margin-top: -150px;                   /* Separación superior del Letrero */
   margin-left: -100px;                  /* Separación lateral del Letrero */
   background-size: .2em 100%;
   font: 14.5em/1 Open Sans, Impact;

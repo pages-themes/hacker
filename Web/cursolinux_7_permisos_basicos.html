@@ -26,8 +26,8 @@
    <meta property="og:locale" content="en_US" />
    <meta name="description" content="Blog sobre Ciberseguridad." />
    <meta property="og:description" content="Blog sobre Ciberseguridad." />
-   <link rel="canonical" href="https://f1r0x.github.io/Web/cursolinux_6_concatenar_comandos.html" />         <!-- ¡¡¡ Cambiar !!!  -->
-   <meta property="og:url" content="https://f1r0x.github.io/Web/cursolinux_6_concatenar_comandos.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <link rel="canonical" href="https://f1r0x.github.io/Web/cursolinux_7_permisos_basicos.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/cursolinux_7_permisos_basicos.html" />    <!-- ¡¡¡ Cambiar !!!  -->
    <meta property="og:site_name" content="F1r0x" />
    <meta property="og:type" content="website" />
    <meta name="twitter:card" content="summary" />
@@ -44,7 +44,7 @@
     <a id="a-title" href="/">
       <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
     </a>
-    <h6>Curso Linux: Concatenar Comandos</h6>                                                                                 <!-- Descripción de la Página-->
+    <h6>Curso Linux: Permisos Básicos</h6>                                                                                 <!-- Descripción de la Página-->
 
 <!--------------------------------- Botón Github ---------------------------------------->    
     <section id="downloads">         
@@ -77,10 +77,10 @@
 <!---------------------- Botones de Anterior y Siguiente --------------------------------->
 
 <div id="main-container">
-    <a href="./cursolinux_5_comandos_basicos.html" class="btn btn-anterior-con-titulo">Artículo anterior</a>
-    <a href="./cursolinux_7_permisos_basicos.html" class="btn btn-siguiente-con-titulo">Artículo siguiente</a>
-    <a href="./cursolinux_1.html" class="btn btn-curso-linux">Índice Curso Linux</a>
-  </div>
+  <a href="./cursolinux_6_concatenar_comandos.html" class="btn btn-anterior-con-titulo">Artículo anterior</a>
+  <a href="./cursolinux_8_descriptores_de_archivo.html" class="btn btn-siguiente-con-titulo">Artículo siguiente</a>
+  <a href="./cursolinux_1.html" class="btn btn-curso-linux">Índice Curso Linux</a>
+</div>  
   
 <!----------------------------- Imagen Hack The Box -------------------------------------->   
 
@@ -123,64 +123,88 @@
 <!----------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------->
 
-<li><a href="#item1" style="text-decoration:none">Concatenar varios comandos en Linux.</a></li>
-<li><a href="#item2" style="text-decoration:none">Variable ;</a></li>
-<li><a href="#item3" style="text-decoration:none">Variable &&</a></li>
-<li><a href="#item4" style="text-decoration:none">Variable ||</a></li>
-<li><a href="#item5" style="text-decoration:none">Variable &</a></li>
-<li><a href="#item6" style="text-decoration:none">Variable |</a></li>
+<li><a href="#item1" style="text-decoration:none">Gestión de permisos en Linux.</a></li>
+<li><a href="#item2" style="text-decoration:none">¿Qué son los permisos en Linux?</a></li>
+<li><a href="#item3" style="text-decoration:none">¿Gestión de permisos en Linux?</a></li>
+<li><a href="#item4" style="text-decoration:none">Tipos de permisos en Linux.</a></li>
+<li><a href="#item5" style="text-decoration:none">¿Cómo ver los permisos de un archivo?</a></li>
 
 
 <p><a name="item1"></a></p>
-<h1 id="concatenar-varios-comandos-en-linux">Concatenar varios comandos en Linux.</h1>
+<h1 id="gestión-de-permisos-en-linux">Gestión de permisos en Linux.</h1>
 
-<p>Una vez sabemos como funciona la dínamica de los comandos, podemos ejecutar varios al mismo tiempo utilizando las distintas
-variables según la acción que vayamos a realizar.</p>
+<p>Si hay un aspecto que destaca de Linux respecto a otros sistemas, como Windows, es la seguridad. Y no solo hablamos de vulnerabilidades
+y privacidad, sino también de la forma en la que gestiona los archivos personales de sus usuarios. <code class="language-plaintext highlighter-rouge">Cada archivo y cada carpeta cuenta
+con unos permisos definidos, sin los cuales nadie podrá acceder al archivo en cuestión</code>. Y, si estamos aprendiendo a usar Linux, los 
+permisos es uno de los aspectos que debemos conocer y aprender.</p>
 
-<p>A la acción de colocar distintos comandos concatenados en la misma línea de comando se le conoce como <code class="language-plaintext highlighter-rouge">one-liner</code>.</p>
-
-<p>Cada variable concatena los conmandos de una forma partícular:</p>
+<p>El sistema de archivos que utiliza Linux es mucho más avanzado, y a la vez sencillo, que el que utilizan otros sistemas, como Windows. Este se 
+basa en especificar si el propietario, el grupo de usuarios o cualquiera puede leer, escribir o ejecutar el archivo. Sin duda, es una forma muy 
+eficaz de mantener a cada usuario del sistema controlado, evitando que este pueda acceder a los datos de los demás sin permiso.</p>
 
 <p><a name="item2"></a></p>
-<h2>;</h2>
+<h1 id="qué-son-los-permisos-en-linux">¿Qué son los permisos en Linux?</h1>
 
-<p>Con <code class="language-plaintext highlighter-rouge">;</code> el segundo comando se ejecutará sin importar el resultado del segundo. Esto quiere decir, que aúnque el primer comando nos reportará
-un codigo de error, el segundo se ejecurtará independientemente monstrando el resultado.</p>
+<p>Los permisos <code class="language-plaintext highlighter-rouge">son la manera de restringir las funciones que un usuario tiene permitido realizar sobre un archivo</code>.
+Los tres parámetros básicos que se regulan a través de los permisos son la <code class="language-plaintext highlighter-rouge">lectura(r)</code>, la <code class="language-plaintext highlighter-rouge">escritura(w)</code> y la <code class="language-plaintext highlighter-rouge">ejecución(x)</code> de los archivos.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whoami ; ls
+<p>A cada archivo se aplican estos permisos y cada archivo tienen divididos estos permisos en tres secciones, una para los <code class="language-plaintext highlighter-rouge">Usuarios</code>, otra para los
+<code class="language-plaintext highlighter-rouge">Grupos</code> y una para <code class="language-plaintext highlighter-rouge">Otros</code>. Dentro de cada uno de estos se especifican cuáles de los tres permisos se aplican.</p>
+
+<p>La estructura básica de los permisos es:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---/---/---
+
+Usuarios/Grupos/Otros
+</code></pre></div></div>
+
+<p>Son tres niveles (Usuarios/Grupos/Otros) y dentro de cada uno especificaremos los permisos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LecturaUsuario,EscrituraUsuario,EjecuciónUsuario / LecturaGrupos,EscrituraGrupos,EjecuciónGrupos / LecturaOtros,EscrituraOtros,EjecuciónOtros  
 </code></pre></div></div>
 
 <p><a name="item3"></a></p>
-<h2 id="-1">&amp;&amp;</h2>
+<h1 id="gestión-de-permisos-en-linux-1">¿Gestión de permisos en Linux?</h1>
 
-<p>Con <code class="language-plaintext highlighter-rouge">&amp;&amp;</code> el segundo comando se ejecutará solo si el primero termina con éxito. En caso de el primer comando reportar un error el siguiente comando no
-se ejecutará.</p>
+<p>Podemos especificar si queremos aplicar estos permisos de manera independiente entre Usuarios, Grupos y Otros:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whoami &amp;&amp; ls
-</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">Usuario:</code> Eres Tú, por ejemplo, cuando inicias tu sistema Linux. Ingresas al iniciar sesión con el usuario que creaste, ese nombre de usuario se
+puede usar como el “propietario” de un archivo y corresponde a este tipo: “usuario”.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Grupo:</code> Es el grupo al que pertenece el archivo y cualquier usuario que pertenezca a ese grupo (incluido tal vez el usuario) tiene los permisos
+asignados sobre ese archivo.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Otros:</code> Se refiere a cualquier otro usuario que no corresponda al “usuario” ni al “Grupo”, incluso aquellos que no son usuarios del sistema
+como por ejemplo un usuario anónimo que lee un archivo por medio de una página web (y que accede desde fuera, por internet) tiene que tener
+permisos para poder leer ese archivo, este usuario anónimo corresponde a este tipo: “otros”</p>
 
 <p><a name="item4"></a></p>
-<h2 id="-2">||</h2>
+<h1 id="tipos-de-permisos-en-linux">Tipos de permisos en Linux.</h1>
 
-<p>Con <code class="language-plaintext highlighter-rouge">||</code> el segundo comando solo se ejucutará si el primero termina sin éxito. Si el primer comando se realiza de manera exitosa el siguinete
-no se ejecutará.</p>
+<p>A su vez, cada uno de estos niveles puede tener 3 valores diferentes en función del grado de privilegios que especifiquemos en el sistema. Estos
+ valores podemos especificarlos por las siguientes letras:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whoami || ls
-</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">r:</code> Permiso de lectura (permite abrirlo, copiarlo, etc).</p>
+<p><code class="language-plaintext highlighter-rouge">w:</code> Permiso de escritura (permite modificarlo, borrarlo, etc).</p>
+<p><code class="language-plaintext highlighter-rouge">x:</code> Permiso de ejecución (si es binario, permite ejecutarlo).</p>
+
+<p>Los permisos en Linux se pueden reflejar tanto con letras como con números. Ambas formas son correctas e igual de funcionales. Sin embargo, lo más
+intuitivo son las letras, ya que nos permiten comprender mejor de qué permiso se trata. Los números son más usados por usuarios avanzados, al ser
+más rápido de especificar.</p>
 
 <p><a name="item5"></a></p>
-<h2 id="-3">&amp;</h2>
+<h1 id="cómo-ver-los-permisos-de-un-archivo">¿Cómo ver los permisos de un archivo?</h1>
 
-<p>Con <code class="language-plaintext highlighter-rouge">&amp;</code>`hará que los dos (o más) comandos se ejecuten de manera simultanea.</p>
+<p>Podemos ver los permisos que tiene los archivos situados en el directorio actual utilizando el comando <code class="language-plaintext highlighter-rouge">ls -l</code>.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whoami &amp; ls
-</code></pre></div></div>
+<p>Cada archivo o carpeta que nos encontremos al listar el contenido de un directorio irá indicado con un símbolo:</p>
 
-<p><a name="item6"></a></p>
-<h2 id="-4">|</h2>
+<p><code class="language-plaintext highlighter-rouge">–</code> o <code class="language-plaintext highlighter-rouge">.</code>: Indica que se trata de un archivo.</p>
+<p><code class="language-plaintext highlighter-rouge">d</code>: Indica que se trata de un directorio.</p>
+<p><code class="language-plaintext highlighter-rouge">l</code>: Indica que se trata de un enlace (acceso directo, por ejemplo).</p>
 
-<p>Con <code class="language-plaintext highlighter-rouge">|</code> la salida del primer comando se convierte en la entrada del segundo.</p>
-
+<p>Seguido veremos los tres niveles de permisos. Los permisos están definidos por las letras (r,w,x) y cuando el permiso no está aplicado se sustituye la
+letra por <code class="language-plaintext highlighter-rouge">-</code>.</p>
 
 
 
