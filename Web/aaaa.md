@@ -25,7 +25,7 @@ La estructura básica de los permisos es:
     
  Cada archivo o carpeta que nos encontremos al listar el contenido de un directorio irá indicado con un símbolo:
 
-``–``o ``.``: Indica que se trata de un archivo.  
+``–`` o ``.``: Indica que se trata de un archivo.  
 ``d``: Indica que se trata de un directorio.  
 ``l``: Indica que se trata de un enlace (acceso directo, por ejemplo).  
 
