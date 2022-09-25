@@ -6,7 +6,7 @@ con unos permisos definidos, sin los cuales nadie podrá acceder al archivo en c
 permisos es uno de los aspectos que debemos conocer y aprender.
 
 El sistema de archivos que utiliza Linux es mucho más avanzado, y a la vez sencillo, que el que utilizan otros sistemas, como Windows. Este se 
-basa en especificar si el propietario, el grupo de usuarios o cualquiera puede leer, escribir o ejecutar el archivo. Sin duda, es una forma muy 
+basa en especificar si el propietario, el grupo de usuarios o cualquiera, puede leer, escribir o ejecutar el archivo. Sin duda, es una forma muy 
 eficaz de mantener a cada usuario del sistema controlado, evitando que este pueda acceder a los datos de los demás sin permiso.
 
 # ¿Qué son los permisos en Linux?
@@ -17,17 +17,22 @@ Los tres parámetros básicos que se regulan a través de los permisos son la ``
 A cada archivo se aplican estos permisos y cada archivo tienen divididos estos permisos en tres secciones, una para los ``Usuarios``, otra para los
 ``Grupos`` y una para ``Otros``. Dentro de cada uno de estos se especifican cuáles de los tres permisos se aplican.
 
-
-
-
-
-
 La estructura básica de los permisos es:
 
-    ---/---/---
+    .---/---/---
     
-    Usuarios/Grupos/Otros
+    (Tipo de Archivo)Usuarios/Grupos/Otros
     
+ Cada archivo o carpeta que nos encontremos al listar el contenido de un directorio irá indicado con un símbolo:
+
+``–``o ``.``: Indica que se trata de un archivo.  
+``d``: Indica que se trata de un directorio.  
+``l``: Indica que se trata de un enlace (acceso directo, por ejemplo).  
+
+Seguido veremos los tres niveles de permisos. Los permisos están definidos por las letras (r,w,x) y cuando el permiso no está aplicado se sustituye la
+letra por ``-``.  
+   
+   
 Son tres niveles (Usuarios/Grupos/Otros) y dentro de cada uno especificaremos los permisos:
 
     LecturaUsuario,EscrituraUsuario,EjecuciónUsuario / LecturaGrupos,EscrituraGrupos,EjecuciónGrupos / LecturaOtros,EscrituraOtros,EjecuciónOtros  
@@ -79,20 +84,6 @@ En primer lugar nos muetra el tipo de archivo y sus permisos:
 
 Seguido nos muestra el ``nombre del propietario`` del archivo y del ``grupo``, el tamaño del archivo y su fecha
 de creación. El tema de los usuarios y los grupos lo iremos desarrollando poco a poco más adelante.
-
-Cada archivo o carpeta que nos encontremos al listar el contenido de un directorio irá indicado con un símbolo:
-
-``–``o ``.``: Indica que se trata de un archivo.  
-``d``: Indica que se trata de un directorio.  
-``l``: Indica que se trata de un enlace (acceso directo, por ejemplo).  
-
-Seguido veremos los tres niveles de permisos. Los permisos están definidos por las letras (r,w,x) y cuando el permiso no está aplicado se sustituye la
-letra por ``-``.
-
-
-
-
-
 
 
 
