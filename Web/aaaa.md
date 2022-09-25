@@ -52,9 +52,9 @@ permisos para poder leer ese archivo, este usuario anónimo corresponde a este t
  A su vez, cada uno de estos niveles puede tener 3 valores diferentes en función del grado de privilegios que especifiquemos en el sistema. Estos
  valores podemos especificarlos por las siguientes letras:
 
-``r:`` Permiso de lectura (permite abrirlo, copiarlo, etc).
-``w:`` Permiso de escritura (permite modificarlo, borrarlo, etc).
-``x:`` Permiso de ejecución (si es binario, permite ejecutarlo).
+``r:`` Permiso de lectura (permite abrirlo, copiarlo, etc).  
+``w:`` Permiso de escritura (permite modificarlo, borrarlo, etc).  
+``x:`` Permiso de ejecución (si es binario, permite ejecutarlo).   
 
 Los permisos en Linux se pueden reflejar tanto con letras como con números. Ambas formas son correctas e igual de funcionales. Sin embargo, lo más
 intuitivo son las letras, ya que nos permiten comprender mejor de qué permiso se trata. Los números son más usados por usuarios avanzados, al ser
