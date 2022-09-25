@@ -82,9 +82,9 @@ de creación. El tema de los usuarios y los grupos lo iremos desarrollando poco 
 
 Cada archivo o carpeta que nos encontremos al listar el contenido de un directorio irá indicado con un símbolo:
 
-``–``o ``.``: Indica que se trata de un archivo.
-``d``: Indica que se trata de un directorio.
-``l``: Indica que se trata de un enlace (acceso directo, por ejemplo).
+``–``o ``.``: Indica que se trata de un archivo.  
+``d``: Indica que se trata de un directorio.  
+``l``: Indica que se trata de un enlace (acceso directo, por ejemplo).  
 
 Seguido veremos los tres niveles de permisos. Los permisos están definidos por las letras (r,w,x) y cuando el permiso no está aplicado se sustituye la
 letra por ``-``.
