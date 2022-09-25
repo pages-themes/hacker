@@ -17,6 +17,11 @@ Los tres parámetros básicos que se regulan a través de los permisos son la ``
 A cada archivo se aplican estos permisos y cada archivo tienen divididos estos permisos en tres secciones, una para los ``Usuarios``, otra para los
 ``Grupos`` y una para ``Otros``. Dentro de cada uno de estos se especifican cuáles de los tres permisos se aplican.
 
+
+
+
+
+
 La estructura básica de los permisos es:
 
     ---/---/---
@@ -57,7 +62,23 @@ más rápido de especificar.
 
 # ¿Cómo ver los permisos de un archivo?
 
-Podemos ver los permisos que tiene los archivos situados en el directorio actual utilizando el comando ``ls -l``:
+Podemos ver los permisos que tiene los archivos situados en el directorio actual utilizando el comando ``ls -l``.
+
+En el siguiente ejemplo, podemos ver con ``ls`` que dentro del directorio existe el archivo ``prueba1.txt``:
+
+![Captura de pantalla -2022-09-26 00-16-26](https://user-images.githubusercontent.com/103068924/192168621-e73775d2-4c6a-4f63-b952-1562f0eba30b.png)
+
+Para poder ver sus permisos simplemente añadimos la opción ``-l`` al comando ``ls``. Ahora vemos como nos reporta mucha
+más información que antes:
+
+![Captura de pantalla -2022-09-26 00-17-20](https://user-images.githubusercontent.com/103068924/192168403-7dd48e02-e6a2-4e11-b47c-a56f12dd06ba.png)
+
+En primer lugar nos muetra el tipo de archivo y sus permisos:
+
+![Captura de pantalla -2022-09-26 00-17-39](https://user-images.githubusercontent.com/103068924/192168531-14e37480-b619-4f8e-b012-4cd8d6c55557.png)
+
+Seguido nos muestra el ``nombre del propietario`` del archivo y del ``grupo``, el tamaño del archivo y su fecha
+de creación. El tema de los usuarios y los grupos lo iremos desarrollando poco a poco más adelante.
 
 Cada archivo o carpeta que nos encontremos al listar el contenido de un directorio irá indicado con un símbolo:
 
