@@ -42,7 +42,7 @@ Son tres niveles (Usuarios/Grupos/Otros) y dentro de cada uno especificaremos lo
 
 Podemos especificar si queremos aplicar estos permisos de manera independiente entre Usuarios, Grupos y Otros: 
 
-``Usuario:`` Eres Tú, por ejemplo, cuando inicias tu sistema Linux. Ingresas al iniciar sesión con el usuario que creaste, ese nombre de usuario se
+``Usuario:`` Eres tú, por ejemplo, cuando inicias tu sistema Linux. Ingresas al iniciar sesión con el usuario que creaste, ese nombre de usuario se
 puede usar como el “propietario” de un archivo y corresponde a este tipo: “usuario”.
 
 ``Grupo:`` Es el grupo al que pertenece el archivo y cualquier usuario que pertenezca a ese grupo (incluido tal vez el usuario) tiene los permisos
@@ -63,11 +63,11 @@ permisos para poder leer ese archivo, este usuario anónimo corresponde a este t
 
 Los permisos en Linux se pueden reflejar tanto con letras como con números. Ambas formas son correctas e igual de funcionales. Sin embargo, lo más
 intuitivo son las letras, ya que nos permiten comprender mejor de qué permiso se trata. Los números son más usados por usuarios avanzados, al ser
-más rápido de especificar.
+más rápido de especificar. Más adelante realizaremos prácticas y veremos como aplicar tambien los números.
 
 # ¿Cómo ver los permisos de un archivo?
 
-Podemos ver los permisos que tiene los archivos situados en el directorio actual utilizando el comando ``ls -l``.
+Podemos ver los permisos que tienen los archivos situados en el directorio actual utilizando el comando ``ls -l``.
 
 En el siguiente ejemplo, podemos ver con ``ls`` que dentro del directorio existe el archivo ``prueba1.txt``:
 
