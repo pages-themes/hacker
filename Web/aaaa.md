@@ -69,6 +69,21 @@ Seguido veremos los tres niveles de permisos. Los permisos están definidos por 
 letra por ``-``.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 
 
@@ -109,6 +124,8 @@ a la BIOS. Esto lo podemos realizarlo aún que no tengamos ningún sistema opera
 La segunda manera de acceder a la BIOS es desde el mismo Windows10, simplemente nos dirigimos al buscador del sistema y escribimos BIOS, nos 
 aparecera la opción ``Cambias opciones avanzadas de inicio``, una vez dentro, veremos la opción de ``Inicio avanzado`` y pulsamos ``Reiniciar ahora``,
 esto reiniciara el sistema entrando automaticamente en la BIOS.
+
+
 
 
 
