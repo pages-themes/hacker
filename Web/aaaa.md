@@ -69,27 +69,46 @@ Seguido veremos los tres niveles de permisos. Los permisos están definidos por 
 letra por ``-``.
 
 
+---
+
+
 # Formatear/Borrar Windows 10 por Completo:
 
-Existen varias formas de formatear el sistema en Windows o de volver a una copia de seguridad realizada en el pasado. No obstante, no son las formas más seguras, ya que mucho malware se aloja en las carpetas y en los archivos que se ocupan de reinstalar o volver a un punto anterior.
+Existen varias formas de formatear el sistema en Windows o de volver a una copia de seguridad realizada en el pasado. No obstante, no 
+son las formas más seguras, ya que mucho malware se aloja en las carpetas y en los archivos que se ocupan de reinstalar o volver a un 
+punto anterior.
 
-La solución es borrar por completo todo lo que hay dentro del sistema y volver a instalar otro sistema operativo, de esta manera no arrastraremos ningún malware
-que nos haya infectado en el pasado. El nuevo sistema lo tendremos que instalar vía UBS o cd y asegurarnos de que la fuente de descarga es la oficial del sistema.
+La solución es borrar por completo todo lo que hay dentro del sistema y volver a instalar otro sistema operativo, de esta manera no arrastraremos 
+ningún malware que nos haya infectado en el pasado. El nuevo sistema lo tendremos que instalar vía UBS o cd y asegurarnos de que la fuente
+de descarga es la oficial del sistema.
 
-El siguiente paso será borrarlo todo, obviamente si existen archivos que queráis conservar tendréis que guardarlos previamente en algún USB o disco duro. 
+El siguiente paso será borrarlo todo, obviamente si existen archivos que queráis conservar tendréis que guardarlos previamente 
+en algún USB o disco duro. 
 
-Para borrarlo todo, simplemente tendremos que ejecutar el UBS con el nuevo sistema, acceder a la BIOS y ejecutar el PC para que arranque desde el USB con el sistema
-nuevo. 
+Para borrarlo todo, simplemente tendremos que ejecutar el UBS con el nuevo sistema, acceder a la BIOS y ejecutar el PC 
+para que arranque desde el USB con el sistema nuevo.
 
-Una vez se inicie la instalación, nos mostrará los discos duros o espacio de almacenamiento del PC y donde queremos instalar el nuevo sistema. Aquí es donde 
-borraremos todo lo existente en nuestro ordenador, debemos formatear todos los discos que nos muestre dejándolo completamente vacío. Una vez formateado todo ya
-podremos proceder a la instalación del nuevo sistema operativo (o del mismo en caso de que solo queramos sanearlo).
+Una vez se inicie la instalación, nos mostrará los discos duros o espacio de almacenamiento del PC y donde queremos instalar el nuevo 
+sistema. Aquí es donde borraremos todo lo existente en nuestro ordenador, debemos formatear todos los discos que nos muestre dejándolo
+completamente vacío. Una vez formateado todo ya podremos proceder a la instalación del nuevo sistema operativo (o del mismo en caso de
+que solo queramos sanearlo).
 
-Existen varios métodos para preparar nuestro USB booteable. Windows por ejemplo, nos facilitará el sistema operativo y un programa para preparar el USB (a prueba de 
-tontos), tan solo hay que seguir las instrucciones y en cuestión de minutos tendremos nuestro USB booteable con nuestro nuevo Windows.
+Existen varios métodos para preparar nuestro USB booteable. Windows por ejemplo, nos facilitará el sistema operativo y un programa para
+preparar el USB (a prueba de tontos), tan solo hay que seguir las instrucciones y en cuestión de minutos tendremos nuestro USB booteable
+con nuestro nuevo Windows.
 
 Para instalar distribuciones basadas en Linux y Unix suelo utilizar el programa Ventoy.
 
+
+# Como acceder a la BIOS en Windows 10
+
+Existen dos formas genericas de acceder a la BIOS de nuestro sistema, una será particular de cada marca y se accedera tras realizar el arranque
+de la compurtadora, pulsado normalte F2 (suele aparecer escrito durante la carga del sistema una vez encendemos el pc) accederemos directamente
+a la BIOS. Esto lo podemos realizarlo aún que no tengamos ningún sistema operativo instalado.
+
+La segunda manera de acceder a la BIOS es desde el mismo Windows10, simplemente nos dirigimos al buscador del sistema y escribimos BIOS, nos 
+aparecera la opción ``Cambias opciones avanzadas de inicio``, una vez dentro, veremos la opción de ``Inicio avanzado`` y pulsamos ``Reiniciar ahora``,
+esto reiniciara el sistema entrando automaticamente en la BIOS.
 
 
 
