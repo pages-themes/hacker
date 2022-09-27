@@ -138,6 +138,48 @@ aparecera la opción ``Cambias opciones avanzadas de inicio``, una vez dentro, v
 esto reiniciara el sistema entrando automaticamente en la BIOS.
 
 
+# Configuración de discos de almacenamiento en Windows
+
+En el siguiente artículo vamos a ver como administrar los discos de almacenamiento de nuestro sistema. Esto es importante conocerlo ya que de esta 
+manera podremos formatear, añadir discos duros, realizar particiones y gestionar los ajustes de casa disco.
+
+Para entrar en el ``Administrador de Discos`` en Windows 10 simplemente escribimos en el buscador de inicio ``Crear y formatear particiones del disco```:
+
+![Captura de pantalla 2022-09-27 114950](https://user-images.githubusercontent.com/103068924/192494620-effa2a8a-4262-45ea-aeb0-8292c559f352.png)
+
+Entramos y nos mostrará el siguiente panel, vuestra pantalla no será igual ya que dependiendo de los discos de almacenamiento y de sus ajustes se nos
+representará uno o varios discos.
+
+![Captura de pantalla 2022-09-27 115017](https://user-images.githubusercontent.com/103068924/192495280-e1d5e33a-3596-4c24-98a7-0d42a311a0e4.png)
+
+Vamos a verlo por partes, en primer luegar, podemos ver la barra del menú, tambien algunas acciones, y debajo, cada una de la particiones actuales del
+disco e información de cada uno de ellas.
+
+![Captura de pantalla 2022-09-27 112250](https://user-images.githubusercontent.com/103068924/192495430-5993816e-2c72-4baf-b2ce-394963554f78.png)
+
+En primer luegar debemos de aclarar que esto no quiere decir que este equipo disponga de 4 disco duros, lo que dispone es de 4 particiones. Para entenderlo un
+disco duro puede tener varias particiones en función de como lo queramo administrar.
+
+En este caso, nuestro equipo dispone de dos discos, ``Disco()```y ``Disco(1)```:
+
+``Disc()``: Este disco cuenta con un total de 931,50 GB.
+
+![Captura de pantalla 2022-09-27 112104](https://user-images.githubusercontent.com/103068924/192497815-d7117f32-0fa6-467d-8aa3-29971a74db63.png)
+
+pero simplemente tiene una partición ``(D:)`` de 488,28GB.
+
+![Captura de pantalla 2022-09-27 112120](https://user-images.githubusercontent.com/103068924/192497878-0af55185-64b3-45d6-891d-3550d73f19cf.png)
+
+El resto al no estár adignado, es espacio que no se está utilizando, pero podemos utilizarlo en un futuro para crear una nueva partición o añadirla y crear una única.
+
+![Captura de pantalla 2022-09-27 112135](https://user-images.githubusercontent.com/103068924/192497944-2d570eeb-e098-4bdb-a592-0b9b0e1f0463.png)
+
+De momento quedate con que en este disco solo hay una partición, que es la que arriba esta representada como ``(D:)``. Ahora vamos 
+
+
+
+
+
 
 
 
