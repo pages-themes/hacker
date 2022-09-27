@@ -138,6 +138,41 @@ aparecera la opción ``Cambias opciones avanzadas de inicio``, una vez dentro, v
 esto reiniciara el sistema entrando automaticamente en la BIOS.
 
 
+# Qué es una partición?
+
+Una partición es el nombre que se le da a ``cada división presente en una sola unidad física de almacenamiento de datos``. Para que se entienda, ``tener 
+varias particiones es como tener varios discos duros en un solo disco duro físico``, cada uno con su sistema de archivos y funcionando de manera diferente.
+
+Las particiones pueden utilizarse para varios fines. Por una parte, puedes tener una dedicada a guardar datos sensibles con medidas de seguridad que no 
+interfieran en el resto del sistema, así como copias de seguridad, aunque también puedes utilizarla para instalar diferentes sistemas operativos. En algunos de 
+ellos, como los basados en GNU/Linux, también podrás estructurar el disco en particiones para los diferentes tipos de archivo que utilice el sistema operativo.
+
+Existen tres tipos de particiones, ``las primarias``, las ``extendidas`` o ``secundarias``, y las ``lógicas``. A continuación tienes una descripción sobre cómo es cada una de ellas.
+
+``Partición primaria``: Son las divisiones primarias del disco que dependen de una tabla de particiones, y son las que detecta el ordenador al arrancar, por 
+lo que es en ellas donde se instalan los sistemas operativos. Puede haber un máximo de cuatro, y prácticamente cualquier sistema operativo las detectará
+y asignará una unidad siempre y cuando utilicen un sistema de archivo compatible. Un disco duro completamente formateado contiene en realidad una partición
+primaria ocupando todo su espacio.  
+
+``Partición extendida`` o ``secundaria``: Fue ideada para poder tener más de cuatro particiones en un disco duro, aunque en ella no se puede instalar un
+sistema operativo. Esto quiere decir que sólo la podremos usar para almacenar datos. Sólo puede haber una de ellas, aunque dentro podremos hacer
+tantas otras particiones como queramos. Si utilizas esta partición, el disco sólo podrá tener tres primarias, siendo la extendida la que actúe como cuarta.  
+
+``Partición lógica``: Son las particiones que se hacen dentro de una partición extendida. Lo único que necesitarás es asignarle un tamaño, un tipo 
+de sistema de archivos (FAT32, NTFS, ext2,...), y ya estará lista para ser utilizada. Funcionan como si fueran dispositivos independientes, y
+puedes utilizarla para almacenar cualqueir archivo.
+
+# ¿Qué es una partición del sistema EFI?
+
+La partición del sistema EFI (ESP), una pequeña partición formateada con FAT32, suele tener alrededor de 100 MB, aquí es donde se almacenan los 
+cargadores de arranque EFI y las aplicaciones utilizadas por el firmware en el sistema durante el inicio. Si su disco duro está en el estilo de partición 
+de la tabla de particiones GUID (GPT), generará automáticamente una partición del sistema EFI después de que haya instalado sus sistemas operativos. Se admiten
+los sistemas operativos Windows y Mac.
+
+Normalmente no puede ver la partición EFI a través del Explorador de archivos (o Finder para Mac OSX) ya que no tiene una letra de unidad asignada y 
+si accidentalmente logra encontrar y eliminar la partición, entonces su sistema no podrá arrancar. Para proteger la partición EFI, Windows intentará 
+evitar que la elimine.
+
 # Configuración de discos de almacenamiento en Windows
 
 En el siguiente artículo vamos a ver como administrar los discos de almacenamiento de nuestro sistema. Esto es importante conocerlo ya que de esta 
@@ -174,7 +209,28 @@ El resto al no estár adignado, es espacio que no se está utilizando, pero pode
 
 ![Captura de pantalla 2022-09-27 112135](https://user-images.githubusercontent.com/103068924/192497944-2d570eeb-e098-4bdb-a592-0b9b0e1f0463.png)
 
-De momento quedate con que en este disco solo hay una partición, que es la que arriba esta representada como ``(D:)``. Ahora vamos 
+De momento quedate con que en este disco solo hay una partición, que es la que arriba esta representada como ``(D:)``. 
+
+Ahora vamos a ver las tres particiones restantes (``C:``, ``Disco 1 Partición 1`` y ``Disco 1 Particion 4``), estas particiones se encuentran dentro del ``Disco 1``
+de 931,50GB, y son las encargadas de funcionamiento básico del sistema de Windwos. Solo con el ``Disco 1`` ya podríamos tener un equipo eficiente, el ``Disco ()``
+y sus particiones se añaden para tener mayor almacenamiente en el equipo.
+
+Vamos a ver por parte las tres particiones del ``Disco (1)``:
+
+![Captura de pantalla 2022-09-27 112156](https://user-images.githubusercontent.com/103068924/192499740-fbfba77a-5a66-455f-96a8-b6f6a34f8b6d.png)
+
+``Disco 1 Partición 1``: La partición del sistema EFI (ESP), una pequeña partición formateada con FAT32, suele tener alrededor de 100 MB, aquí es donde
+se almacenan los cargadores de arranque EFI y las aplicaciones utilizadas por el firmware en el sistema durante el inicio. 
+Normalmente no puede ver la partición EFI a través del Explorador de archivos ya que no tiene una letra de unidad asignada.  
+
+
+``(C:)``: Es donde guardaremos todos los datos de nuestro equipo, donde tendremos nuestro escritorio y donde guardamos la gran malloria de archivos. Esta partición
+esta basado en un sistema de archivos ``NTFS`` y es el estándar obligatorio en los sitemas operativos Windows.  
+
+``Disco 1 Parición 4``: Está partición recibe el nombre de ``partición de recuperación`` ya que es una pequeña partición en su disco duro que puede 
+ayudarle a restaurar su Windows o solucionar problemas del sistema.
+Esta partición de recuperación es para albergar el Entorno de Recuperación de Windows (WinRE), que puede ser explorado si le asignas manualmente una letra de 
+unidad. Si elimina esta partición, no podrá utilizar las opciones de recuperación de Windows.
 
 
 
