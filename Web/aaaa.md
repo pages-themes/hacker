@@ -234,7 +234,74 @@ unidad. Si elimina esta partición, no podrá utilizar las opciones de recuperac
 
 
 
+# Configuración de Parrot en VirtualBox:
 
+Está es la configuración básica que se utiliza para configurar Parrot en VirtualBox, cabe destacar que se puede realizar modificaciones en funcion del equipo
+en el que lo instalemos. En un ordenador más potente podremos añadir más capacidad y mejor rendimiento.
+
+En primer lugar, abrimos el VirtualBox y creamos una nueva máquina:
+
+![Captura de pantalla 2022-09-28 020947](https://user-images.githubusercontent.com/103068924/192658885-e6ee03a5-64f0-4776-aedc-79037af7df6c.png)
+
+Especificamos un nombre para la máquina, en este caso la llamaremos ``Parrot``, luego en Carpeta de máquina, dejamos la ruta por defecto.
+
+![Captura de pantalla 2022-09-28 020643](https://user-images.githubusercontent.com/103068924/192658811-8a93db5d-42ef-45df-95a9-77a98bcc3761.png)
+
+
+
+### Configuración de Parrot una vez instalado:
+
+Abrimos una Terminal y nos registramos como ``root```, para ello escribimos el comando siguiente:
+
+    sudo su
+   
+![Captura de pantalla 2022-09-28 023902](https://user-images.githubusercontent.com/103068924/192661776-c625436d-e4dd-4c29-8a0b-500f24bca67d.png)
+    
+Nos pedirá la contraseña, está contraseña es la misma que hemos especificado durante la instalación.    
+Una vez estemos como ``root``, realizaremos un ``apt update`` para actualizar el sistema:
+
+    apt update
+    
+![Captura de pantalla 2022-09-28 023943](https://user-images.githubusercontent.com/103068924/192661845-3493740c-ae69-492d-b36b-258a5c8e0811.png)
+
+Nota: Nunca realiceis un ``apt upgrade`` en Parrot. Este comando es utilizado en sistemas basados en Debian
+para actualizar todos paquetes que tengan una nueva versión. En Parrot creará conflictos en sus librerias y
+a la larga nos dará problemas al ejecutar muchas aplicaciones.
+
+En caso de querer actualizar en Parrot todos los paquetes a la última versión, Parrot tiene su propio
+comando para realizr el upgrade:
+
+    parrot-upgrade
+
+![Captura de pantalla 2022-09-28 024757](https://user-images.githubusercontent.com/103068924/192662666-3ce9a614-0bdc-4474-bbcd-1fe1f5af4086.png)
+
+Ahora vamos a proceder a instalar algunas herramientas y librerias, para que sea más fácil, se han compactado
+todos los archivos que vamos a intalar en un solo comando. Para instalarlos simplemete copia el siguiente comando y ejecutalo:
+
+    apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
+
+![Captura de pantalla 2022-09-28 032346](https://user-images.githubusercontent.com/103068924/192666282-1e93eac5-2d31-4369-987b-cbd272e9d855.png)
+
+No pedirá una confirmación, aceptamos escribiendo ``S`` y pulsado ``Enter``.
+
+![Captura de pantalla 2022-09-28 032413](https://user-images.githubusercontent.com/103068924/192666361-6f8caead-20d3-4e2d-8d73-b2ebcbf00a29.png)
+
+
+
+
+# Requisitos mínimos del sistema para la instalación de Kali o Parrot:
+
+Para ejecutar Parrot o Kali con normalidad los documentos oficiales indican los siguientes requerimientos:
+
+* ``Espacio en disco duro``: 20 GB
+* ``Memoria RAM``: 1 GB mínimo 2 o más recomendado
+* ``Hardware y periféricos``: Unidad óptica y puerto(s) USB
+
+En cuanto al procesador no hay requerimientos precisos, Kali soporta arquitecturas ARM, i386 y x64.
+En general puede decirse cualquier procesador moderno es capaz de ejecutar esta distribución.
+
+Aunque Parrot y Kali, al igual que muchas otras distribuciones no es muy exigente en cuanto a hardware, algunas herramientas como las de auditoria de redes
+requieren que la tarjeta de red wifi pueda cambiarse de modo (por ejemplo modo monitor o promiscuo). 
 
 
 
