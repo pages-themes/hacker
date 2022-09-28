@@ -38,6 +38,7 @@ Son tres niveles (Usuarios/Grupos/Otros) y dentro de cada uno especificaremos lo
     LecturaUsuario,EscrituraUsuario,EjecuciónUsuario / LecturaGrupos,EscrituraGrupos,EjecuciónGrupos / LecturaOtros,EscrituraOtros,EjecuciónOtros  
 
 
+
 # ¿Gestión de permisos en Linux?
 
 Podemos especificar si queremos aplicar estos permisos de manera independiente entre Usuarios, Grupos y Otros: 
@@ -286,6 +287,44 @@ No pedirá una confirmación, aceptamos escribiendo ``S`` y pulsado ``Enter``.
 
 ![Captura de pantalla 2022-09-28 032413](https://user-images.githubusercontent.com/103068924/192666361-6f8caead-20d3-4e2d-8d73-b2ebcbf00a29.png)
 
+![Captura de pantalla 2022-09-28 032736](https://user-images.githubusercontent.com/103068924/192666783-5c1663b2-d469-48ac-91f0-a89676d19311.png)
+
+Si todo a salido bien veremos un reporte final como el de la imagen anterior. Ahora volvemos a realizar
+otro ``apt update``, por si queda algún paquete por instalar:
+
+    apt update
+    
+Y con esto ya tendríamos el sistema listo y actualizado. Está es la isntalación básica del sistema en la que
+se traba desde una Interfaz gráfica parecida al estilo de Windows con sus carpetas, su barra de tareas, etc.
+
+El siguiente paso, sería preparar nuestro entorno de trabajo para poder operar de manera eficiente utilizando
+como base un interprete de comandos y no una interfaz gráfica.
+
+Esto lo veremos en el artículo de ``configuración de un entorno de trabajo en Parrot``.
+
+# Instalar BSPWM y SXHKD:
+
+En primer lugar debemos de descargarnos los siguientes repositorios, recomiendo ir al direcotior Descargas
+y descargarlos ahí:
+
+ git clone https://github.com/baskerville/bspwm.git
+ git clone https://github.com/baskerville/sxhkd.git
+
+Ahora debemos de entrar en cada uno de los directorio creados ``bspwm`` y ``sxhkd`` y ejecutar el comando
+``make`` para montar la isntalción y ``sudo make install`` para iniciar la instalción. Esto debemos de 
+realizarlo en los dos directorios.
+
+    cd bswpm 
+    make 
+    sudo make install 
+    cd.. 
+    cd sxhkd  
+    make 
+    sudo make install 
+
+Una vez finalizado instalamos el ``bspwm`` ejecutando els siguiente comando desde el directorio ``Descargas``:
+
+    sudo apt install bspwm
 
 
 
