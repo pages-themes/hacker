@@ -344,10 +344,27 @@ requieren que la tarjeta de red wifi pueda cambiarse de modo (por ejemplo modo m
 
 
 
+# Como instalar Kitty
 
+Para instalar la ``kitty`` desde la terminal ejecutamos el siguiente comando: 
 
+    sudo apt install kitty -y
 
+Una vez instalada nos dirigimos al archivo ``sxxhkdrc`` que se encuentra en el directorio
+``/home/user/.config/sxhkd/sxhkdrc`` y dentro de este archivo tendremos que modificar el 
+apartado ``terminal emulator`` y cambiar ``urxvt`` por ``kitty``.
 
+Podemos modificar el archivo utilizando la herramieta ``nano``:
+
+    nano sxhkdrc
+
+![Captura de pantalla 2022-09-28 043752](https://user-images.githubusercontent.com/103068924/192675024-25e8efff-7b18-4dbe-a5b0-cc63f36e53e4.png)
+
+![Captura de pantalla 2022-09-28 043700](https://user-images.githubusercontent.com/103068924/192675008-07a12df8-db17-4f0f-a9fe-1f3885650533.png)
+
+![Captura de pantalla 2022-09-28 043843](https://user-images.githubusercontent.com/103068924/192675098-afcad7ea-50ad-4151-b073-f9e54ac855bb.png)
+
+Pulsamos ``Ctrl + o`` para guarda y ``Ctrl + x`` para salir.
 
 
 
