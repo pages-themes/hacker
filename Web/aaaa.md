@@ -368,3 +368,112 @@ Pulsamos ``Ctrl + o`` para guarda y ``Ctrl + x`` para salir.
 
 
 
+# Archivos .DEB en Linux
+
+El nombre ``DEB`` viene de acortar el nombre de la primera distro que los introdujo y empezó a utilizar:
+``Debian``. Estos paquetes son, básicamente, los .EXE de las distribuciones Linux basadas en Debian, como 
+ella misma, Ubuntu o Linux Mint, entre otras. Así, ``estos son archivos de almacenamiento (o paquetes)
+que contienen todos los archivos para poder instalar un programa en la distro, además de los scripts
+necesarios para llevar a cabo esta instalación y configuración del programa en cuestión``.
+
+Este formato de archivos tiene algunas limitaciones. Por ejemplo, dentro de un paquete DEB es posible
+que no se encuentren todas las dependencias necesarias para que el programa pueda funcionar con 
+normalidad. Por ello, si esto ocurre, tendremos que bajar e instalar a mano estas dependencias
+necesarias.
+
+Dentro de uno de estos archivos podemos encontrar tres archivos:
+
+* ``Debian-binary``: El que nos indica la versión del paquete que vamos a instalar. La última, actualmente, es la 2.0.
+* ``Control.tar.gz``: Donde encontraremos toda la meta-información del paquete.
+* ``data.tar, data.tar.gz, data.tar.bz2 o data.tar.lzma: Todos los archivos que tenemos que procesar e instalar en el sistema.
+
+## Cómo instalar un archivo DEB en Linux
+
+Por lo general, la mayoría de las distros preparadas para usar archivos DEB vienen de serie con el
+manejador de paquetes ``DPKG`` y ``APT``. De ahí precisamente la importancia de estos formato de fichero
+enconcreto.
+
+Este será el que nos permita instalar programas a través de estos paquetes usando el terminal.
+Sin embargo, hay muchas interfaces gráficas que nos van a permitir trabajar con ellos desde el
+escritorio, como es el caso de Synaptic, PackageKit, Gdebi, e incluso el clásico Ubuntu Software Center.
+
+### Instalación/Desinstalación con DPKG
+
+Para instalar estos programas utilanzo ``DPKG`` y la opción ``-i``, simplemente ejecutaremos:
+
+    dpkg -i paquete.deb
+    
+Una vez termine el proceso, el programa estará instalado ya en  nuestro ordenador. Podemos comprobarlo
+utilizando la misma herramienta y con la opción ``-l``, y luego, con ``grep`` filtramos por el 
+nombre del paquete:
+
+    dpkg -l | grep 'paquete'
+
+## Como desinstalar un programa:
+
+Para desinstalar un programa instalado a partir de su DEB original, podemos hacerlo ejecutando en el
+terminal el siguiente comando:
+
+    dpkg -r paquete.deb
+
+Y, de igual forma, si además queremos eliminar el programa y todos los datos que ha guardado en el PC,
+debemos cambiar el parámetro ``-r`` del comando anterior por ``-P``, y así realizar una desinstalación 
+totalmente completa.
+
+    dpkg -P paquete.deb
+
+
+# Instalación/Desinstalación con APT
+
+APT es el conocido comando que solemos usar para buscar, bajar e instalar programas en la mayoría de 
+las distros Linux basadas en Debian. Esta herramienta, además de permitirnos buscar programas en las
+listas de repositorios añadidas al sistema, también nos va a permitir instalar archivos DEB locales 
+que hayamos bajado de páginas web. Y, además, lo hará con una mayor tasa de éxito que DPKG, ya que 
+nos permitirá buscar y satisfacer dependencias. Eso sí, por debajo del comando «APT» se ejecuta este
+mismo DPKG que acabamos de ver.
+
+Para instalar estos programas con este gestor de paquetes de terminal, lo que debemos hacer es ejecutar
+el siguiente comando:
+
+    sudo apt install ./paquete.deb
+    
+Una vez instalado, el programa ya formará parte de nuestro sistema. En caso de querer desinstalarlo,
+esta vez no tendremos que saber dónde se guardaba el DEB original, sino que con conocer el nombre del
+paquete podemos borrarlo de la siguiente forma:
+
+    sudo apt remove <paquete>
+    
+Y, si cambiamos ``remove`` por ``purge`` podremos borrar, también, todos los datos del programa que se
+han guardado en el sistema.
+
+    sudo apt purge <paquete>    
+    
+### Instalar programas en Linux mediate interfaz gráfica:
+
+Hay muchas interfaces gráficas que nos van a permitir trabajar con ellos desde el escritorio, como es el
+caso de Synaptic, PackageKit, Gdebi, e incluso el clásico Ubuntu Software Center. Para instalar estos
+programas, simplemente ejecutaremos:
+
+    sudo apt install gdebi
+    
+    
+    sudo apt install synaptic
+    
+    
+    sudo apt install packagekit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
