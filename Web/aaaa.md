@@ -128,6 +128,10 @@ con nuestro nuevo Windows.
 Para instalar distribuciones basadas en Linux y Unix suelo utilizar el programa Ventoy.
 
 
+
+
+
+
 # Como acceder a la BIOS en Windows 10
 
 Existen dos formas genericas de acceder a la BIOS de nuestro sistema, una será particular de cada marca y se accedera tras realizar el arranque
@@ -138,8 +142,9 @@ La segunda manera de acceder a la BIOS es desde el mismo Windows10, simplemente 
 aparecera la opción ``Cambias opciones avanzadas de inicio``, una vez dentro, veremos la opción de ``Inicio avanzado`` y pulsamos ``Reiniciar ahora``,
 esto reiniciara el sistema entrando automaticamente en la BIOS.
 
+![Captura de pantalla 2022-09-27 100031](https://user-images.githubusercontent.com/103068924/193149521-b02838bc-941e-4ed6-b97b-f54ca905b08f.png)
 
-
+![Captura de pantalla 2022-09-27 100104](https://user-images.githubusercontent.com/103068924/193149549-0ce6ea6b-a5dd-44b8-a5f4-77c439d9a394.png)
 
 
 
