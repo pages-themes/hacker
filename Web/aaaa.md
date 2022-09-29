@@ -139,6 +139,10 @@ aparecera la opción ``Cambias opciones avanzadas de inicio``, una vez dentro, v
 esto reiniciara el sistema entrando automaticamente en la BIOS.
 
 
+
+
+
+
 # Qué es una partición?
 
 Una partición es el nombre que se le da a ``cada división presente en una sola unidad física de almacenamiento de datos``. Para que se entienda, ``tener 
