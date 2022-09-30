@@ -1,0 +1,319 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/cursowindows_2_sistema_particiones_windows.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/cursowindows_2_sistema_particiones_windows.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Curso Windows: Particiones</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+
+<!---------------------- Botones de Anterior y Siguiente --------------------------------->
+
+<div id="main-container">
+  <a href="./cursowindows_1.1_acceder_a_la_bios.html" class="btn btn-anterior-con-titulo">Artículo anterior</a>
+  <a href="./cursowindows_3_eliminar_windows.html" class="btn btn-siguiente-con-titulo">Artículo siguiente</a>
+  <a href="./cursowindows_1.html" class="btn btn-curso-linux">Índice Curso Linux</a>
+</div>  
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!--------------------------------  Letrero Animado  --------------------------------------->      
+ 
+  <svg viewBox="0 0 1320 300">
+
+    <!-- Símbolo -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+        Windows   <!-- Palabra del Letrero-->
+      </text>
+    </symbol>  
+  
+    <!-- Añadir en función de las letras de la palabra -->
+    <use xlink:href="#s-text" class="text"></use><!--1-->
+    <use xlink:href="#s-text" class="text"></use><!--2-->  
+    <use xlink:href="#s-text" class="text"></use><!--3-->
+    <use xlink:href="#s-text" class="text"></use><!--4-->
+    <use xlink:href="#s-text" class="text"></use><!--5-->
+    <use xlink:href="#s-text" class="text"></use><!--6-->
+    <use xlink:href="#s-text" class="text"></use><!--7-->
+    <use xlink:href="#s-text" class="text"></use><!--8-->
+    <use xlink:href="#s-text" class="text"></use><!--9-->
+  </svg>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<li><a href="#item1" style="text-decoration:none">¿Qué es una partición?</a></li>
+<li><a href="#item2" style="text-decoration:none">¿Qué es una partición del sistema EFI?</a></li>
+<li><a href="#item3" style="text-decoration:none">Configuración de discos de almacenamiento en Windows</a></li>
+
+<p><a name="item1"></a></p>
+<h1 id="qué-es-una-partición">¿Qué es una partición?</h1>
+
+<p>Una partición es el nombre que se le da a <code class="language-plaintext highlighter-rouge">cada división presente en una sola unidad física de almacenamiento de datos</code>. Para que se entienda, <code class="language-plaintext highlighter-rouge">tener 
+varias particiones es como tener varios discos duros en un solo disco duro físico</code>, cada uno con su sistema de archivos y funcionando de manera diferente.</p>
+
+<p>Las particiones pueden utilizarse para varios fines. Por una parte, puedes tener una dedicada a guardar datos sensibles con medidas de seguridad que no 
+interfieran en el resto del sistema, así como copias de seguridad, aunque también puedes utilizarla para instalar diferentes sistemas operativos. En algunos de 
+ellos, como los basados en GNU/Linux, también podrás estructurar el disco en particiones para los diferentes tipos de archivo que utilice el sistema operativo.</p>
+
+<p>Existen tres tipos de particiones, <code class="language-plaintext highlighter-rouge">las primarias</code>, las <code class="language-plaintext highlighter-rouge">extendidas</code> o <code class="language-plaintext highlighter-rouge">secundarias</code>, y las <code class="language-plaintext highlighter-rouge">lógicas</code>. A continuación tienes una descripción sobre cómo es cada una de ellas.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Partición primaria</code>: Son las divisiones primarias del disco que dependen de una tabla de particiones, y son las que detecta el ordenador al arrancar, por 
+lo que es en ellas donde se instalan los sistemas operativos. Puede haber un máximo de cuatro, y prácticamente cualquier sistema operativo las detectará
+y asignará una unidad siempre y cuando utilicen un sistema de archivo compatible. Un disco duro completamente formateado contiene en realidad una partición
+primaria ocupando todo su espacio.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Partición extendida</code> o <code class="language-plaintext highlighter-rouge">secundaria</code>: Fue ideada para poder tener más de cuatro particiones en un disco duro, aunque en ella no se puede instalar un
+sistema operativo. Esto quiere decir que sólo la podremos usar para almacenar datos. Sólo puede haber una de ellas, aunque dentro podremos hacer
+tantas otras particiones como queramos. Si utilizas esta partición, el disco sólo podrá tener tres primarias, siendo la extendida la que actúe como cuarta.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Partición lógica</code>: Son las particiones que se hacen dentro de una partición extendida. Lo único que necesitarás es asignarle un tamaño, un tipo 
+de sistema de archivos (FAT32, NTFS, ext2,…), y ya estará lista para ser utilizada. Funcionan como si fueran dispositivos independientes, y
+puedes utilizarla para almacenar cualqueir archivo.</p>
+
+<p><a name="item2"></a></p>
+<h1 id="qué-es-una-partición-del-sistema-efi">¿Qué es una partición del sistema EFI?</h1>
+
+<p>La partición del sistema EFI (ESP), una pequeña partición formateada con FAT32, suele tener alrededor de 100 MB, aquí es donde se almacenan los 
+cargadores de arranque EFI y las aplicaciones utilizadas por el firmware en el sistema durante el inicio. Si su disco duro está en el estilo de partición 
+de la tabla de particiones GUID (GPT), generará automáticamente una partición del sistema EFI después de que haya instalado sus sistemas operativos. Se admiten
+los sistemas operativos Windows y Mac.</p>
+
+<p>Normalmente no puede ver la partición EFI a través del Explorador de archivos (o Finder para Mac OSX) ya que no tiene una letra de unidad asignada y 
+si accidentalmente logra encontrar y eliminar la partición, entonces su sistema no podrá arrancar. Para proteger la partición EFI, Windows intentará 
+evitar que la elimine.</p>
+
+<p><a name="item3"></a></p>
+<h1 id="configuración-de-discos-de-almacenamiento-en-windows">Configuración de discos de almacenamiento en Windows</h1>
+
+<p>En el siguiente artículo vamos a ver como administrar los discos de almacenamiento de nuestro sistema. Esto es importante conocerlo ya que de esta 
+manera podremos formatear, añadir discos duros, realizar particiones y gestionar los ajustes de casa disco.</p>
+
+<p>Para entrar en el <code class="language-plaintext highlighter-rouge">Administrador de Discos</code> en Windows 10 simplemente escribimos en el buscador de inicio <code class="language-plaintext highlighter-rouge">Crear y formatear particiones del disco</code>`:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/192494620-effa2a8a-4262-45ea-aeb0-8292c559f352.png" alt="Captura de pantalla 2022-09-27 114950" /></p>
+
+<p>Entramos y nos mostrará el siguiente panel, vuestra pantalla no será igual ya que dependiendo de los discos de almacenamiento y de sus ajustes se nos
+representará uno o varios discos.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/192495280-e1d5e33a-3596-4c24-98a7-0d42a311a0e4.png" alt="Captura de pantalla 2022-09-27 115017" /></p>
+
+<p>Vamos a verlo por partes, en primer luegar, podemos ver la barra del menú, tambien algunas acciones, y debajo, cada una de la particiones actuales del
+disco e información de cada uno de ellas.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/192495430-5993816e-2c72-4baf-b2ce-394963554f78.png" alt="Captura de pantalla 2022-09-27 112250" /></p>
+
+<p>En primer luegar debemos de aclarar que esto no quiere decir que este equipo disponga de 4 disco duros, lo que dispone es de 4 particiones. Para entenderlo un
+disco duro puede tener varias particiones en función de como lo queramo administrar.</p>
+
+<p>En este caso, nuestro equipo dispone de dos discos, <code class="language-plaintext highlighter-rouge">Disco()</code><code class="language-plaintext highlighter-rouge">y </code><code class="language-plaintext highlighter-rouge">Disco(1)</code>``:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Disc()</code>: Este disco cuenta con un total de 931,50 GB.</p>
+
+<p><img class="img-particion2" src="https://user-images.githubusercontent.com/103068924/192497815-d7117f32-0fa6-467d-8aa3-29971a74db63.png" alt="Captura de pantalla 2022-09-27 112104" /></p>
+
+<p>pero simplemente tiene una partición <code class="language-plaintext highlighter-rouge">(D:)</code> de 488,28GB.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/192497878-0af55185-64b3-45d6-891d-3550d73f19cf.png" alt="Captura de pantalla 2022-09-27 112120" /></p>
+
+<p>El resto al no estár adignado, es espacio que no se está utilizando, pero podemos utilizarlo en un futuro para crear una nueva partición o añadirla y crear una única.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/192497944-2d570eeb-e098-4bdb-a592-0b9b0e1f0463.png" alt="Captura de pantalla 2022-09-27 112135" /></p>
+
+<p>De momento quedate con que en este disco solo hay una partición, que es la que arriba esta representada como <code class="language-plaintext highlighter-rouge">(D:)</code>.</p>
+
+<p>Ahora vamos a ver las tres particiones restantes (<code class="language-plaintext highlighter-rouge">C:</code>, <code class="language-plaintext highlighter-rouge">Disco 1 Partición 1</code> y <code class="language-plaintext highlighter-rouge">Disco 1 Particion 4</code>), estas particiones se encuentran dentro del <code class="language-plaintext highlighter-rouge">Disco 1</code>
+de 931,50GB, y son las encargadas de funcionamiento básico del sistema de Windwos. Solo con el <code class="language-plaintext highlighter-rouge">Disco 1</code> ya podríamos tener un equipo eficiente, el <code class="language-plaintext highlighter-rouge">Disco ()</code>
+y sus particiones se añaden para tener mayor almacenamiente en el equipo.</p>
+
+<p>Vamos a ver por parte las tres particiones del <code class="language-plaintext highlighter-rouge">Disco (1)</code>:</p>
+
+<p><img class="img-particion2" src="https://user-images.githubusercontent.com/103068924/192499740-fbfba77a-5a66-455f-96a8-b6f6a34f8b6d.png" alt="Captura de pantalla 2022-09-27 112156" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">Disco 1 Partición 1</code>: La partición del sistema EFI (ESP), una pequeña partición formateada con FAT32, suele tener alrededor de 100 MB, aquí es donde
+se almacenan los cargadores de arranque EFI y las aplicaciones utilizadas por el firmware en el sistema durante el inicio. 
+Normalmente no puede ver la partición EFI a través del Explorador de archivos ya que no tiene una letra de unidad asignada.</p>
+
+<p><code class="language-plaintext highlighter-rouge">(C:)</code>: Es donde guardaremos todos los datos de nuestro equipo, donde tendremos nuestro escritorio y donde guardamos la gran malloria de archivos. Esta partición
+esta basado en un sistema de archivos <code class="language-plaintext highlighter-rouge">NTFS</code> y es el estándar obligatorio en los sitemas operativos Windows.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Disco 1 Parición 4</code>: Está partición recibe el nombre de <code class="language-plaintext highlighter-rouge">partición de recuperación</code> ya que es una pequeña partición en su disco duro que puede 
+ayudarle a restaurar su Windows o solucionar problemas del sistema.
+Esta partición de recuperación es para albergar el Entorno de Recuperación de Windows (WinRE), que puede ser explorado si le asignas manualmente una letra de 
+unidad. Si elimina esta partición, no podrá utilizar las opciones de recuperación de Windows.</p>
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

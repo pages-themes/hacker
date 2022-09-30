@@ -93,6 +93,10 @@ h1, h2, h3, h4, h5, h6 {
                0 0 10px rgba(181, 232, 83, 0.1);
 }
 
+.portada1 {
+  margin: 0 0 0;
+}
+
 header h1:before {
   content: " ";
   font-size: 24px;
@@ -241,6 +245,12 @@ hr {
   margin: -150px -260px -150px;
   scale: 0.60;
 }
+
+.img-particion2 {
+  margin: 0 -345px 0;
+  scale: 0.70;
+}
+
 
 
 /* ----------- Indice lateral (Comandos línux) ------------------- */
