@@ -1,0 +1,360 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/cursolinux_9_instalar_y_desinstalar_programas.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/cursolinux_9_instalar_y_desinstalar_programas.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Curso Linux: Instalar y Desinstalar</h6>                                                                        <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+
+<!---------------------- Botones de Anterior y Siguiente --------------------------------->
+
+<div id="main-container">
+  <a href="./cursolinux_8_descriptores_de_archivo.html" class="btn btn-anterior-con-titulo">Artículo anterior</a>
+  <a href="./busqueda_reporte_archivos_linux.html" class="btn btn-siguiente-con-titulo">Artículo siguiente</a>
+  <a href="./cursolinux_1.html" class="btn btn-curso-linux">Índice Curso Linux</a>
+</div>  
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!--------------------------------  Letrero Animado  --------------------------------------->      
+ 
+  <svg viewBox="0 0 1320 300">
+
+    <!-- Símbolo -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+        Linux   <!-- Palabra del Letrero-->
+      </text>
+    </symbol>  
+  
+    <!-- Añadir en función de las letras de la palabra -->
+    <use xlink:href="#s-text" class="text"></use><!--1-->
+    <use xlink:href="#s-text" class="text"></use><!--2-->  
+    <use xlink:href="#s-text" class="text"></use><!--3-->
+    <use xlink:href="#s-text" class="text"></use><!--4-->
+    <use xlink:href="#s-text" class="text"></use><!--5-->
+    <use xlink:href="#s-text" class="text"></use><!--6-->
+    <use xlink:href="#s-text" class="text"></use><!--7-->
+    <use xlink:href="#s-text" class="text"></use><!--8-->
+    <use xlink:href="#s-text" class="text"></use><!--9-->
+  </svg>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<li><a href="#item1" style="text-decoration:none">Instalar y Desinstalar Archivos en Linux</a></li>
+<li><a href="#item2" style="text-decoration:none">Archivos .DEB en Linux</a></li>
+<li><a href="#item3" style="text-decoration:none">Cómo instalar un archivo .DEB</a></li>
+<li><a href="#item4" style="text-decoration:none">Instalación de Archivos con DPKG</a></li>
+<li><a href="#item5" style="text-decoration:none">Desinstalación de archivos con DPKG</a></li>
+<li><a href="#item6" style="text-decoration:none">Instalación de Archivos con APT</a></li>
+<li><a href="#item7" style="text-decoration:none">Desinstalación de Archivos con APT</a></li>
+<li><a href="#item8" style="text-decoration:none">Instalar Archivos en Linux mediante Interfaz Gráfica</a></li>
+
+<p><a name="item1"></a></p>
+<h1 id="instalacion-y-desinstalacion-de-programas-en-linux">Instalar y Desinstalar Archivos en Linux</h1>
+
+<p>Antes de saber como instalar y desinstalar programas desde la terminal, debemos de conocer que paquetes son los que se utilizan para dichas instalciones. 
+La mayoria de herramientas, como veremos más adelante, no necesitaran de descargas de paquetes, ya que los encontraremos directamente desde la terminal. 
+Pero existen muchas otras, las cuales no se encuentran a través de la terminal o están desactualizadas.</p> 
+
+<p>Para introducirnos en como funciona el tema de instalar y desinstalar programas, vamos a ver el principal tipo de archivos que se utiliza para ello, 
+que son los archivos ``.deb``.</p>
+
+<p><a name="item2"></a></p>
+<h1 id="archivos-deb-en-linux">Archivos .DEB en Linux</h1>
+
+<p>El nombre <code class="language-plaintext highlighter-rouge">DEB</code> viene de acortar el nombre de la primera distribución que los introdujo y empezó a utilizar:
+<code class="language-plaintext highlighter-rouge">Debian</code>.</p> 
+
+<p>Estos paquetes son, básicamente, los .EXE de las distribuciones Linux basadas en Debian, como 
+ella misma, Ubuntu o Linux Mint, entre otras. Así, <code class="language-plaintext highlighter-rouge">estos son archivos de almacenamiento (o paquetes)
+que contienen todos los archivos para poder instalar un programa en la distro, además de los scripts
+necesarios para llevar a cabo esta instalación y configuración del programa en cuestión</code>.</p>
+
+<p>Este formato de archivos tiene algunas limitaciones. Por ejemplo, dentro de un paquete DEB es posible
+que no se encuentren todas las dependencias necesarias para que el programa pueda funcionar con 
+normalidad. Por ello, si esto ocurre, tendremos que bajar e instalar a mano estas dependencias
+necesarias.</p>
+
+<p>Dentro de uno de estos archivos podemos encontrar tres archivos:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Debian-binary </code> El que nos indica la versión del paquete que vamos a instalar. La última, actualmente, es la 2.0.</li>
+  <li><code class="language-plaintext highlighter-rouge">Control.tar.gz </code> Donde encontraremos toda la meta-información del paquete.</li>
+  <li><code class="language-plaintext highlighter-rouge">data.tar, data.tar.gz, data.tar.bz2 o data.tar.lzma </code> Todos los archivos que tenemos que procesar e instalar en el sistema.</li>
+</ul>
+
+<p><a name="item3"></a></p>
+<h1 id="cómo-instalar-un-archivo-deb-en-linux">Cómo instalar un archivo .DEB </h1>
+
+<p>Por lo general, la mayoría de las distros preparadas para usar archivos DEB vienen de serie con el
+gestor de paquetes <code class="language-plaintext highlighter-rouge">DPKG</code> y <code class="language-plaintext highlighter-rouge">APT</code>. De ahí precisamente la
+ importancia de estos formatos de fichero en concreto.</p>
+
+<p>Este será el que nos permita instalar programas a través de estos paquetes usando el terminal.
+Sin embargo, hay muchas interfaces gráficas que nos van a permitir trabajar con ellos desde el
+escritorio, como es el caso de Synaptic, PackageKit, Gdebi, e incluso el clásico Ubuntu Software Center.</p>
+
+<h1 id="dpkg">Comando DPKG</h1>
+
+<p><a name="item4"></a></p>
+<h2 id="instalacióndesinstalación-con-dpkg">Instalación de Archivos con DPKG</h2>
+
+<p>Para instalar estos programas utilizando <code class="language-plaintext highlighter-rouge">DPKG</code> y la opción <code class="language-plaintext highlighter-rouge">-i</code>, simplemente ejecutaremos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dpkg -i paquete.deb
+</code></pre></div></div>
+
+<p>Una vez termine el proceso, el programa estará instalado ya en  nuestro ordenador. Podemos comprobarlo
+utilizando la misma herramienta y con la opción <code class="language-plaintext highlighter-rouge">-l</code>, y luego, con <code class="language-plaintext highlighter-rouge">grep</code> filtramos por el 
+nombre del paquete:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dpkg -l | grep 'paquete'
+</code></pre></div></div>
+
+<p><a name="item5"></a></p>
+<h2 id="como-desinstalar-un-programa">Desinstalación de archivos con DPKG</h2>
+
+<p>Para desinstalar un programa instalado a partir de su DEB original, podemos hacerlo ejecutando en el
+terminal el siguiente comando:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dpkg -r paquete.deb
+</code></pre></div></div>
+
+<p>Y, de igual forma, si además queremos eliminar el programa y todos los datos que ha guardado en el PC,
+debemos cambiar el parámetro <code class="language-plaintext highlighter-rouge">-r</code> del comando anterior por <code class="language-plaintext highlighter-rouge">-P</code>, y así realizar una desinstalación 
+totalmente completa.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dpkg -P paquete.deb
+</code></pre></div></div>
+
+<h1 id="apt">Comando APT</h1>
+
+<p><a name="item6"></a></p>
+<h2 id="instalacióndesinstalación-con-apt">Instalación de Archivos con APT</h2>
+
+<p>APT es el conocido comando que solemos usar para buscar, bajar e instalar programas en la mayoría de 
+las distros Linux basadas en Debian. <code class="language-plaintext highlighter-rouge">Esta herramienta, además de permitirnos buscar programas en las
+listas de repositorios añadidas al sistema, también nos va a permitir instalar archivos .DEB locales 
+que hayamos bajado de páginas web. Y, además, lo hará con una mayor tasa de éxito que DPKG</code>, ya que 
+nos permitirá buscar y satisfacer dependencias. Eso sí, por debajo del comando «APT» se ejecuta este
+mismo DPKG que acabamos de ver.</p>
+
+<p>Para instalar estos programas con este gestor de paquetes de terminal, lo que debemos hacer es ejecutar
+el siguiente comando:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install ./paquete.deb
+</code></pre></div></div>
+
+<p>Una vez instalado, el programa ya formará parte de nuestro sistema.</p>
+ 
+<p><a name="item7"></a></p>
+<h2 id="instalacióndesinstalación-con-apt">Desinstalación de Archivos con APT</h2>   
+
+<p>En caso de querer desinstalar algún programa o archivo, esta vez no tendremos que saber dónde se guardaba el DEB original, sino que con conocer el nombre del
+paquete podemos borrarlo de la siguiente forma:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt remove &lt;paquete&gt;
+</code></pre></div></div>
+
+<p>Y, si cambiamos <code class="language-plaintext highlighter-rouge">remove</code> por <code class="language-plaintext highlighter-rouge">purge</code> podremos borrar, también, todos los datos del programa que se
+han guardado en el sistema.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt purge &lt;paquete&gt;    
+</code></pre></div></div>
+
+<p><a name="item8"></a></p>
+<h1 id="instalar-programas-en-linux-mediate-interfaz-gráfica">Instalar Archivos en Linux mediante Interfaz Gráfica</h1>
+
+<p>Hay muchas interfaces gráficas que nos van a permitir trabajar con ellos desde el escritorio, como es el
+caso de Synaptic, PackageKit, Gdebi, e incluso el clásico Ubuntu Software Center. Para instalar estos
+programas, simplemente ejecutaremos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install gdebi
+
+
+sudo apt install synaptic
+
+
+sudo apt install packagekit
+</code></pre></div></div>
+
+<p>Estos programas no voy a entrar en detalle a explicarlos ya que son programas muy simples de utilizar y en este curso nos vamos a enfocar 
+   en trabajar desde la terminal. </p>
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

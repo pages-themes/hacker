@@ -129,7 +129,6 @@
 <li><a href="#item4" style="text-decoration:none">Tipos de permisos en Linux.</a></li>
 <li><a href="#item5" style="text-decoration:none">¿Cómo ver los permisos de un archivo?</a></li>
 
-
 <p><a name="item1"></a></p>
 <h1 id="gestión-de-permisos-en-linux">Gestión de permisos en Linux.</h1>
 
@@ -139,7 +138,7 @@ con unos permisos definidos, sin los cuales nadie podrá acceder al archivo en c
 permisos es uno de los aspectos que debemos conocer y aprender.</p>
 
 <p>El sistema de archivos que utiliza Linux es mucho más avanzado, y a la vez sencillo, que el que utilizan otros sistemas, como Windows. Este se 
-basa en especificar si el propietario, el grupo de usuarios o cualquiera puede leer, escribir o ejecutar el archivo. Sin duda, es una forma muy 
+basa en especificar si el propietario, el grupo de usuarios o cualquiera, puede leer, escribir o ejecutar el archivo. Sin duda, es una forma muy 
 eficaz de mantener a cada usuario del sistema controlado, evitando que este pueda acceder a los datos de los demás sin permiso.</p>
 
 <p><a name="item2"></a></p>
@@ -153,10 +152,21 @@ Los tres parámetros básicos que se regulan a través de los permisos son la <c
 
 <p>La estructura básica de los permisos es:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---/---/---
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.---/---/---
 
-Usuarios/Grupos/Otros
+(Tipo de Archivo)Usuarios/Grupos/Otros
 </code></pre></div></div>
+
+<p><img class="img-permisos1" src="https://user-images.githubusercontent.com/103068924/193150558-17297f3b-3e3b-491f-9032-3ca8f94ac88c.png" alt="prored-bits-de-permisos-unix-permission-bits" /></p>
+
+<p>Cada archivo o carpeta que nos encontremos al listar el contenido de un directorio irá indicado con un símbolo:</p>
+
+<p><code class="language-plaintext highlighter-rouge">–</code> o <code class="language-plaintext highlighter-rouge">.</code>: Indica que se trata de un archivo.<br />
+<code class="language-plaintext highlighter-rouge">d</code>: Indica que se trata de un directorio.<br />
+<code class="language-plaintext highlighter-rouge">l</code>: Indica que se trata de un enlace (acceso directo, por ejemplo).</p>
+
+<p>Seguido veremos los tres niveles de permisos. Los permisos están definidos por las letras (r,w,x) y cuando el permiso no está aplicado se sustituye la
+letra por <code class="language-plaintext highlighter-rouge">-</code>.</p>
 
 <p>Son tres niveles (Usuarios/Grupos/Otros) y dentro de cada uno especificaremos los permisos:</p>
 
@@ -168,7 +178,7 @@ Usuarios/Grupos/Otros
 
 <p>Podemos especificar si queremos aplicar estos permisos de manera independiente entre Usuarios, Grupos y Otros:</p>
 
-<p><code class="language-plaintext highlighter-rouge">Usuario:</code> Eres Tú, por ejemplo, cuando inicias tu sistema Linux. Ingresas al iniciar sesión con el usuario que creaste, ese nombre de usuario se
+<p><code class="language-plaintext highlighter-rouge">Usuario:</code> Eres tú, por ejemplo, cuando inicias tu sistema Linux. Ingresas al iniciar sesión con el usuario que creaste, ese nombre de usuario se
 puede usar como el “propietario” de un archivo y corresponde a este tipo: “usuario”.</p>
 
 <p><code class="language-plaintext highlighter-rouge">Grupo:</code> Es el grupo al que pertenece el archivo y cualquier usuario que pertenezca a ese grupo (incluido tal vez el usuario) tiene los permisos
@@ -184,30 +194,34 @@ permisos para poder leer ese archivo, este usuario anónimo corresponde a este t
 <p>A su vez, cada uno de estos niveles puede tener 3 valores diferentes en función del grado de privilegios que especifiquemos en el sistema. Estos
  valores podemos especificarlos por las siguientes letras:</p>
 
-<p><code class="language-plaintext highlighter-rouge">r:</code> Permiso de lectura (permite abrirlo, copiarlo, etc).</p>
-<p><code class="language-plaintext highlighter-rouge">w:</code> Permiso de escritura (permite modificarlo, borrarlo, etc).</p>
-<p><code class="language-plaintext highlighter-rouge">x:</code> Permiso de ejecución (si es binario, permite ejecutarlo).</p>
+<p><code class="language-plaintext highlighter-rouge">r:</code> Permiso de lectura (permite abrirlo, copiarlo, etc).<br />
+<code class="language-plaintext highlighter-rouge">w:</code> Permiso de escritura (permite modificarlo, borrarlo, etc).<br />
+<code class="language-plaintext highlighter-rouge">x:</code> Permiso de ejecución (si es binario, permite ejecutarlo).</p>
 
 <p>Los permisos en Linux se pueden reflejar tanto con letras como con números. Ambas formas son correctas e igual de funcionales. Sin embargo, lo más
 intuitivo son las letras, ya que nos permiten comprender mejor de qué permiso se trata. Los números son más usados por usuarios avanzados, al ser
-más rápido de especificar.</p>
+más rápido de especificar. Más adelante realizaremos prácticas y veremos como aplicar tambien los números.</p>
 
 <p><a name="item5"></a></p>
 <h1 id="cómo-ver-los-permisos-de-un-archivo">¿Cómo ver los permisos de un archivo?</h1>
 
-<p>Podemos ver los permisos que tiene los archivos situados en el directorio actual utilizando el comando <code class="language-plaintext highlighter-rouge">ls -l</code>.</p>
+<p>Podemos ver los permisos que tienen los archivos situados en el directorio actual utilizando el comando <code class="language-plaintext highlighter-rouge">ls -l</code>.</p>
 
-<p>Cada archivo o carpeta que nos encontremos al listar el contenido de un directorio irá indicado con un símbolo:</p>
+<p>En el siguiente ejemplo, podemos ver con <code class="language-plaintext highlighter-rouge">ls</code> que dentro del directorio existe el archivo <code class="language-plaintext highlighter-rouge">prueba1.txt</code>:</p>
 
-<p><code class="language-plaintext highlighter-rouge">–</code> o <code class="language-plaintext highlighter-rouge">.</code>: Indica que se trata de un archivo.</p>
-<p><code class="language-plaintext highlighter-rouge">d</code>: Indica que se trata de un directorio.</p>
-<p><code class="language-plaintext highlighter-rouge">l</code>: Indica que se trata de un enlace (acceso directo, por ejemplo).</p>
+<p><img src="https://user-images.githubusercontent.com/103068924/192168621-e73775d2-4c6a-4f63-b952-1562f0eba30b.png" alt="Captura de pantalla -2022-09-26 00-16-26" /></p>
 
-<p>Seguido veremos los tres niveles de permisos. Los permisos están definidos por las letras (r,w,x) y cuando el permiso no está aplicado se sustituye la
-letra por <code class="language-plaintext highlighter-rouge">-</code>.</p>
+<p>Para poder ver sus permisos simplemente añadimos la opción <code class="language-plaintext highlighter-rouge">-l</code> al comando <code class="language-plaintext highlighter-rouge">ls</code>. Ahora vemos como nos reporta mucha
+más información que antes:</p>
 
+<p><img src="https://user-images.githubusercontent.com/103068924/192168403-7dd48e02-e6a2-4e11-b47c-a56f12dd06ba.png" alt="Captura de pantalla -2022-09-26 00-17-20" /></p>
 
+<p>En primer lugar nos muetra el tipo de archivo y sus permisos:</p>
 
+<p><img src="https://user-images.githubusercontent.com/103068924/192168531-14e37480-b619-4f8e-b012-4cd8d6c55557.png" alt="Captura de pantalla -2022-09-26 00-17-39" /></p>
+
+<p>Seguido nos muestra el <code class="language-plaintext highlighter-rouge">nombre del propietario</code> del archivo y del <code class="language-plaintext highlighter-rouge">grupo</code>, el tamaño del archivo y su fecha
+de creación. El tema de los usuarios y los grupos lo iremos desarrollando poco a poco más adelante.</p>
 <!----------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------->
 <!---------------------------- Fin del contenido de la Página ----------------------------->  

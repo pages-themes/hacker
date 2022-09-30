@@ -19,15 +19,15 @@
 
   <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
 
-   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <title>F1r0x</title>
    <link rel="icon" href="/assets/images/logoweb.ico">
    <meta name="generator" content="Jekyll v3.9.2" />
    <meta property="og:title" content="F1r0x" />
    <meta property="og:locale" content="en_US" />
    <meta name="description" content="Blog sobre Ciberseguridad." />
    <meta property="og:description" content="Blog sobre Ciberseguridad." />
-   <link rel="canonical" href="https://f1r0x.github.io/cursowindows.html" />         <!-- ¡¡¡ Cambiar !!!  -->
-   <meta property="og:url" content="https://f1r0x.github.io/cursowindows.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <link rel="canonical" href="https://f1r0x.github.io/Web/cursolinux_2_eliminar_windows.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/cursolinux_2_eliminar_windows.html" />    <!-- ¡¡¡ Cambiar !!!  -->
    <meta property="og:site_name" content="F1r0x" />
    <meta property="og:type" content="website" />
    <meta name="twitter:card" content="summary" />
@@ -44,7 +44,7 @@
     <a id="a-title" href="/">
       <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
     </a>
-    <h6>Blog sobre informática Y ciberseguridad.</h6>                                                                                 <!-- Descripción de la Página-->
+    <h6>Curso Windows: Eliminar Windows</h6>                                                                                 <!-- Descripción de la Página-->
 
 <!--------------------------------- Botón Github ---------------------------------------->    
     <section id="downloads">         
@@ -73,6 +73,14 @@
 <!----------------------------------------------------------------------------------------->
 
 <div class="container">
+
+<!---------------------- Botones de Anterior y Siguiente --------------------------------->
+
+<div id="main-container">
+  <a href="./cursowindows_1.1_acceder_a_la_bios.html" class="btn btn-anterior-con-titulo">Artículo anterior</a>
+  <a href="#" class="btn btn-siguiente-con-titulo">Artículo siguiente</a>
+  <a href="./cursowindows_1.html" class="btn btn-curso-linux">Índice Curso Windows</a>
+</div>  
   
 <!----------------------------- Imagen Hack The Box -------------------------------------->   
 
@@ -98,13 +106,15 @@
     </symbol>  
   
     <!-- Añadir en función de las letras de la palabra -->
-    <use xlink:href="#s-text" class="text"></use>
-    <use xlink:href="#s-text" class="text"></use>
-    <use xlink:href="#s-text" class="text"></use>
-    <use xlink:href="#s-text" class="text"></use>
-    <use xlink:href="#s-text" class="text"></use>
-    <use xlink:href="#s-text" class="text"></use>
-    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use><!--1-->
+    <use xlink:href="#s-text" class="text"></use><!--2-->  
+    <use xlink:href="#s-text" class="text"></use><!--3-->
+    <use xlink:href="#s-text" class="text"></use><!--4-->
+    <use xlink:href="#s-text" class="text"></use><!--5-->
+    <use xlink:href="#s-text" class="text"></use><!--6-->
+    <use xlink:href="#s-text" class="text"></use><!--7-->
+    <use xlink:href="#s-text" class="text"></use><!--8-->
+    <use xlink:href="#s-text" class="text"></use><!--9-->
   </svg>
 
 <!----------------------------------------------------------------------------------------->
@@ -113,14 +123,33 @@
 <!----------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------->
 
+<h1 id="formatearborrar-windows-10-por-completo">Cómo Eliminar Windows 10 por Completo</h1>
 
-<h1 id="terminal-de-windows">Terminal de Windows</h1>
+<p>Existen varias formas de formatear el sistema en Windows o de volver a una copia de seguridad realizada en el pasado. No obstante, no 
+son las formas más seguras, ya que mucho malware se aloja en las carpetas y en los archivos que se ocupan de reinstalar o volver a un 
+punto anteriormente guardado.</p>
 
-<ul>
-  <li><a href="../Web/administrar_usuarios_y_permisos.html" style="text-decoration:none">Administrar Usuarios y Permisos</a></li>
-  <li><a href="../Web/escalda_privilegios_windows.html" style="text-decoration:none">Escalada de Privilegios en Windows.</a></li>
-</ul>
-  
+<p>La solución es borrar por completo todo lo que hay dentro del sistema y volver a instalar otro sistema operativo, de esta manera no arrastraremos 
+ningún malware que nos haya infectado en el pasado. El nuevo sistema lo tendremos que instalar vía UBS o cd y asegurarnos de que la fuente
+de descarga, es la oficial del sistema.</p>
+
+<p>El siguiente paso será borrarlo todo, obviamente si existen archivos que queráis conservar tendréis que guardarlos previamente 
+en algún USB o disco duro.</p>
+
+<p>Para borrarlo todo, simplemente tendremos que ejecutar el UBS con el nuevo sistema, acceder a la BIOS y ejecutar el PC 
+para que arranque desde el USB con el sistema nuevo.</p>
+
+<p>Una vez se inicie la instalación, nos mostrará los discos duros o espacio de almacenamiento del PC y donde queremos instalar el nuevo 
+sistema. Aquí es donde borraremos todo lo existente en nuestro ordenador, debemos formatear todos los discos que nos muestre dejándolo
+completamente vacío. Una vez formateado todo ya podremos proceder a la instalación del nuevo sistema operativo (o del mismo en caso de
+que solo queramos sanearlo).</p>
+
+<p>Existen varios métodos para preparar nuestro USB booteable. Windows por ejemplo, nos facilitará el sistema operativo y un programa para
+preparar el USB (a prueba de tontos), tan solo hay que seguir las instrucciones y en cuestión de minutos tendremos nuestro USB booteable
+con nuestro nuevo Windows.</p>
+
+<p>Para instalar distribuciones basadas en Linux y Unix suelo utilizar el programa Ventoy.</p>
+
 
 <!----------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------->
@@ -212,7 +241,6 @@
 
     </div>
 </html>
-
 
 <!------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------------------------------------->
