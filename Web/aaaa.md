@@ -6,7 +6,7 @@ Primero tendremos que darles permisos de ejecución al archivo .SH:
 
     sudo chmod +x archivo.sh
     
-Luego simplemente ejecutamos el isntalador:
+Luego simplemente ejecutamos el instalador:
 
     ./archivo.sh
 
