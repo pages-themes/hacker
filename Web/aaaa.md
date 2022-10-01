@@ -1,3 +1,17 @@
+# Instalar Archivos .SH en Linux
+
+Muchos programas utilizan como archivo de instalación un ``.SH``, lo suelen llamar ``install.sh`` o algo por el estilo.
+
+Primero tendremos que darles permisos de ejecución al archivo .SH:
+
+    sudo chmod +x archivo.sh
+    
+Luego simplemente ejecutamos el isntalador:
+
+    ./archivo.sh
+
+
+
 # Configuración de Parrot en VirtualBox:
 
 Está es la configuración básica que se utiliza para configurar Parrot en VirtualBox, cabe destacar que se puede realizar modificaciones en funcion del equipo
