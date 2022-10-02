@@ -196,12 +196,89 @@ Ya tendríamos nuestros cambios locales publicados en el repositorio de Github.
 
 ---
 
+# Capturar o interceptar Peticiones con Burpsuite
+
+Para aplicar este ajuste, en primer lugar debemos de tener el ``Foxyproxy`` enlazado con ``Burpsuite``. Una vez establecido el túner a través del proxy, 
+capturamos la petición de la página deseada como hemos visto anteriormente.
+
+Para capturar la petición, con Burpsuite nos dirigimos al apartado ``Proxy`` y luego a ``Inetecept``. Recargamos el navegador con el Foxyproxy activado y ya
+deberiamos de tener la petición capturada. 
+
+# Capturar o interceptar Respuesta a las peticiones con Burpsuite
+
+Como hemos visto anteriormente, podemos capturar las peticiones de una página web con Burpsuite, pero, y si queremos enviar nuestra petición y capturar la
+respuesta por parte del servidor? Esto puede ser muy útil a la hora de módificar las peticiones capturadas y ver que respuestas nos reporta el servidor.
+
+Para activar está funcion y poder capturar esas peticiones debemos dirigirnos a ``Proxy``>``Options``>``Intercep Server Responses``  y marcar la casilla 
+superior que dice ``Intercep responses based on the following rules:`` y desmarcamos la opcion marcada que dice ``Content type header``.
+
+Ahora simplemente capturamos una petición, como hemos visto anteriomente, pulsamos ``Fordwar`` y nos devolverá la respuesta de nuestra petición.
+
 # Evitar Redirects con Burbpsuite
 
-En oscasiones nos encontraremos páginas con vínculos o redirecciones a otras páginas (codigo 301), esto suele pasar cuando en vez de utilizar cookies de sesions nos 
-encontramos con que la página se gestiona a traves de redirects.
+En oscasiones nos encontraremos páginas con vínculos o redirecciones a otras páginas (código de estado 302), esto suele pasar cuando, en vez de utilizar
+ cookies de sesion, nos encontramos con que la página se gestiona a través de redirects.
 
-Con está tecnica evitaremos esas nuevas direcciones 
+Con está tecnica evitaremos esas nuevas direcciones, forzando al sistema a devolver un código de estado 200 (código de estado exitoso).En ocasiones al 
+aplicar este cambio, podremos ver partes de la página web que antes no eran posibles.
+
+Para aplicar este ajuste, en primer lugar debemos de tener el ``Foxyproxy`` enlazado con ``Burpsuite``. Una vez establecido el túner a través del proxy, 
+capturamos la petición de la página deseada con el ``Intercept`` como hemos visto anteriormente.
+
+Realizamos un ``Forward`` y veremos la respuesta. Al tratarse de una redirección, veremos como
+el primer parametro ``HTTP/1.1`` nos reporta el código de estado ``302 Found``. Para anular la
+redirección debemos cambiar este parámetro por el de ``200 OK``.
+
+Finalmente aplicamos un ``Forward`` y veremos como en el navegador se nos despliega una página
+diferente.
+
+Vamos a tratar de mostrar un ejemplo utilizando la máquina Previse de Hack The Box.
+
+### Ejemplo:
+
+En la siguiente demostración, utilizaremos la máquina Previse de Hack The Box para tratar de mostrar
+como una página que nos redirige con un código de estado 302 a una página, nos puede redirigir a 
+otra evitando ese redirect y cambiandolo por un código de estado 200. 
+
+
+En primer lugar, vamos a listar con ``Wfuzz`` los ditintos archivos alojados en el servidor para
+ver el código de estado de cada archivo:
+
+
+
+Para este ejemplo vamos a utilizar dos de los archivos aquí expuestos, podemos ver como el payload 
+``status`` nos devuelve un código de estado ``302`` y al introducirlo en el navegador nos redirige
+al payload ``login`` que si tiene un código de estado ``200`` y nos reporta una página de registro.
+
+Abrimos ``Burpsuite``, configuramos ``Foxyproxy`` y realizamos una captura de la ruta 
+``http://10.10.11.104/status.php``:
+
+Ahora aplicamos un ``Fordward``:
+
+Vemos como arriba de todo nos muestra el código de estado, en este caso un ``302 Found``:
+
+
+Cambiamos el código de estado por un ``200 OK``:
+
+
+
+Y realizamos un nuevo ``Forward`` para ver la nueva página:
+
+
+
+
+Vemos como ya no nos reporta la página de registro, ahora nos muestra una página de información
+con el título ``Status``. 
+
+
+
+
+
+
+
+
+
+
 
 
 
