@@ -229,6 +229,8 @@ Realizamos un ``Forward`` y veremos la respuesta. Al tratarse de una redirecció
 el primer parametro ``HTTP/1.1`` nos reporta el código de estado ``302 Found``. Para anular la
 redirección debemos cambiar este parámetro por el de ``200 OK``.
 
+![Captura de pantalla -2022-10-03 00-14-38](https://user-images.githubusercontent.com/103068924/193480138-38ffa0f7-586f-466b-aa47-8b4d2a0ffc67.png)
+
 Finalmente aplicamos un ``Forward`` y veremos como en el navegador se nos despliega una página
 diferente.
 
@@ -240,37 +242,52 @@ En la siguiente demostración, utilizaremos la máquina Previse de Hack The Box 
 como una página que nos redirige con un código de estado 302 a una página, nos puede redirigir a 
 otra evitando ese redirect y cambiandolo por un código de estado 200. 
 
-
 En primer lugar, vamos a listar con ``Wfuzz`` los ditintos archivos alojados en el servidor para
 ver el código de estado de cada archivo:
 
-
+![Captura de pantalla -2022-10-02 20-06-45](https://user-images.githubusercontent.com/103068924/193480048-7fbd2ad8-c545-4452-b60f-1b0497e341a1.png)
 
 Para este ejemplo vamos a utilizar dos de los archivos aquí expuestos, podemos ver como el payload 
 ``status`` nos devuelve un código de estado ``302`` y al introducirlo en el navegador nos redirige
 al payload ``login`` que si tiene un código de estado ``200`` y nos reporta una página de registro.
 
+![Captura de pantalla -2022-10-03 00-58-34](https://user-images.githubusercontent.com/103068924/193480093-0eaf88cc-c3f7-471a-8bb5-ded62b22560b.png)
+
+![Captura de pantalla -2022-10-03 00-58-09](https://user-images.githubusercontent.com/103068924/193480099-2098e0bb-dcf5-48fd-beb0-1f2ca8d6a094.png)
+
+
 Abrimos ``Burpsuite``, configuramos ``Foxyproxy`` y realizamos una captura de la ruta 
 ``http://10.10.11.104/status.php``:
 
+
+![Captura de pantalla -2022-10-03 00-13-41](https://user-images.githubusercontent.com/103068924/193480114-79f3d051-c761-46cf-944f-e78ca917f0e0.png)
+
 Ahora aplicamos un ``Fordward``:
+
+
+![Captura de pantalla -2022-10-03 00-14-17](https://user-images.githubusercontent.com/103068924/193480129-b2160fff-a551-4008-a343-c3d60efb953c.png)
 
 Vemos como arriba de todo nos muestra el código de estado, en este caso un ``302 Found``:
 
+![Captura de pantalla -2022-10-03 00-15-46](https://user-images.githubusercontent.com/103068924/193480154-681bb28b-75b5-4262-9148-3948cf7ae6bb.png)
+
+![Captura de pantalla -2022-10-03 00-16-12](https://user-images.githubusercontent.com/103068924/193480160-606c0fcd-8bb9-44ae-aca7-9c3b862f3833.png)
 
 Cambiamos el código de estado por un ``200 OK``:
 
+![Captura de pantalla -2022-10-03 00-16-48](https://user-images.githubusercontent.com/103068924/193480165-aa24ec95-5c9a-4377-96cf-dc1e0742b3a4.png)
 
+![Captura de pantalla -2022-10-03 00-17-02](https://user-images.githubusercontent.com/103068924/193480172-bf71c479-8abd-43c5-9428-d22f0ac23534.png)
 
 Y realizamos un nuevo ``Forward`` para ver la nueva página:
 
-
-
+![Captura de pantalla -2022-10-03 00-17-38](https://user-images.githubusercontent.com/103068924/193480183-d9684f64-381a-41ab-bae9-5f52d8081ac3.png)
 
 Vemos como ya no nos reporta la página de registro, ahora nos muestra una página de información
 con el título ``Status``. 
 
 
+![Captura de pantalla -2022-10-03 01-02-06](https://user-images.githubusercontent.com/103068924/193480200-bb7748cc-d418-4b07-9278-f3f0085e2e65.png)
 
 
 
