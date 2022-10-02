@@ -194,6 +194,15 @@ nuevo en ``Generate new token``.
 Ya tendríamos nuestros cambios locales publicados en el repositorio de Github.
 
 
+---
+
+# Evitar Redirects con Burbpsuite
+
+En oscasiones nos encontraremos páginas con vínculos o redirecciones a otras páginas (codigo 301), esto suele pasar cuando en vez de utilizar cookies de sesions nos 
+encontramos con que la página se gestiona a traves de redirects.
+
+Con está tecnica evitaremos esas nuevas direcciones 
+
 
 
 
