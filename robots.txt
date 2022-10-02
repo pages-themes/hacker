@@ -7,7 +7,7 @@ Disallow: /_sass/
 Disallow: /assets/
 Disallow: /script/
 Disallow: /js/
-Sitemap: https://f1r0x.github.io/
+Sitemap: https://f1r0x.github.io/sitemap.xml
 
 
 
