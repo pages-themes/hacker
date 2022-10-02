@@ -277,7 +277,7 @@ Cambiamos el código de estado por un ``200 OK``:
 
 ![Captura de pantalla -2022-10-03 00-17-02](https://user-images.githubusercontent.com/103068924/193480172-bf71c479-8abd-43c5-9428-d22f0ac23534.png)
 
-Y realizamos un nuevo ``Forward`` para ver la nueva página:
+Y realizamos un nuevo ``Forward`` para enviar la petición módificada y ver la nueva página forzando el código de estado 200 OK:
 
 ![Captura de pantalla -2022-10-03 00-17-38](https://user-images.githubusercontent.com/103068924/193480183-d9684f64-381a-41ab-bae9-5f52d8081ac3.png)
 
