@@ -262,12 +262,10 @@ Abrimos ``Burpsuite``, configuramos ``Foxyproxy`` y realizamos una captura de la
 
 ![Captura de pantalla -2022-10-03 00-13-41](https://user-images.githubusercontent.com/103068924/193480114-79f3d051-c761-46cf-944f-e78ca917f0e0.png)
 
-Ahora aplicamos un ``Fordward``:
-
-
 ![Captura de pantalla -2022-10-03 00-14-17](https://user-images.githubusercontent.com/103068924/193480129-b2160fff-a551-4008-a343-c3d60efb953c.png)
 
-Vemos como arriba de todo nos muestra el código de estado, en este caso un ``302 Found``:
+Ahora aplicamos un ``Fordward`` para capturar la respuesta del servidor y veremos como arriba de todo nos
+muestra el código de estado, en este caso un ``302 Found``:
 
 ![Captura de pantalla -2022-10-03 00-15-46](https://user-images.githubusercontent.com/103068924/193480154-681bb28b-75b5-4262-9148-3948cf7ae6bb.png)
 
