@@ -1,0 +1,29 @@
+@import "rouge-base16-dark";
+@import "default_colors";
+
+$body-background: $cod-grey !default;
+$body-foreground: $gallery !default;
+$header: $conifer !default;
+$blockquote-color: $silver-chalice !default;
+$blockquote-border: $dove-grey !default;
+$container-max-width: 1000px;  /* Tamaño máx del contenedor de la página */
+
+@mixin media-max-width($max-width) {
+  @media (max-width: $max-width) {
+      @content;
+  }
+}
+
+.img-burpsuite1 {
+    margin: -50px -400px -50px;
+    scale: 0.7;
+}
+
+.img-setoolkit {
+  margin: -30px -100px -30px;
+  scale: 0.9;
+}
+
+.img-metasploit2 {
+  margin: 0 -90px 0;
+}

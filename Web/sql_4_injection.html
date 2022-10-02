@@ -26,8 +26,8 @@
    <meta property="og:locale" content="en_US" />
    <meta name="description" content="Blog sobre Ciberseguridad." />
    <meta property="og:description" content="Blog sobre Ciberseguridad." />
-   <link rel="canonical" href="https://f1r0x.github.io/Web/hashid.html" />         <!-- ¡¡¡ Cambiar !!!  -->
-   <meta property="og:url" content="https://f1r0x.github.io/Web/hashid.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <link rel="canonical" href="https://f1r0x.github.io/Web/sql_4_injection.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/sql_4_injection.html" />    <!-- ¡¡¡ Cambiar !!!  -->
    <meta property="og:site_name" content="F1r0x" />
    <meta property="og:type" content="website" />
    <meta name="twitter:card" content="summary" />
@@ -44,7 +44,7 @@
     <a id="a-title" href="/">
       <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
     </a>
-    <h6>Blog sobre informática Y ciberseguridad.</h6>                                                                                 <!-- Descripción de la Página-->
+    <h6>Curso SQL: Inyecciones</h6>                                                                                 <!-- Descripción de la Página-->
 
 <!--------------------------------- Botón Github ---------------------------------------->    
     <section id="downloads">         
@@ -93,20 +93,20 @@
     <symbol id="s-text">
       <text text-anchor="middle"
             x="50%" y="50%" dy=".35em">
-        HashID   <!-- Palabra del Letrero-->
+        SQL  <!-- Palabra del Letrero-->
       </text>
     </symbol>  
   
     <!-- Añadir en función de las letras de la palabra -->
-    <use xlink:href="#s-text" class="text"></use><!--1-->
-    <use xlink:href="#s-text" class="text"></use><!--2-->  
-    <use xlink:href="#s-text" class="text"></use><!--3-->
-    <use xlink:href="#s-text" class="text"></use><!--4-->
-    <use xlink:href="#s-text" class="text"></use><!--5-->
-    <use xlink:href="#s-text" class="text"></use><!--6-->
-    <use xlink:href="#s-text" class="text"></use><!--7-->
-    <use xlink:href="#s-text" class="text"></use><!--8-->
-    <use xlink:href="#s-text" class="text"></use><!--9-->
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
   </svg>
 
 <!----------------------------------------------------------------------------------------->
@@ -115,32 +115,29 @@
 <!----------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------->
 
-<p>Hashid es una herramienbta que nos reportará el tipo de algoritmo más probable que se utilizó en su día para crear
-    ese hash a partir de una contraseña.</p>
-    
-    <h2 id="instalación">Instalación:</h2>
-    
-    <p>Para instalar la herramienta:</p>
-    
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install hashid
-    </code></pre></div></div>
-    
-    <h2 id="ejecución">Ejecución:</h2>
-    
-    <p>Para ejecutarla:</p>
-    
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hashid [Hash Núm]
-    </code></pre></div></div>
-    
-    <h3 id="ejemplo">Ejemplo:</h3>
-    
-    <p><img src="https://user-images.githubusercontent.com/103068924/165281291-c32d3c2a-5ab4-441e-bb04-81190b786114.png" alt="Captura de pantalla -2022-04-26 12-33-14" /></p>
-    
-    <p>Según la herramienta HashId el algoritmo de nuestro hash es un MD2, MD5 o MD4.</p>
-    
-    <p>Recordar que la aplicación nos reporta los más probables, en ocasiones el primero en reportar no es el
-    correcto, por tanto, tener en cuenta los dos o tres primeros en orden descendente, ya que el primero que nos 
-    reporta es el que en teoría tiene más probabilidades.</p>
+<h1 id="sql-injection">SQL Injection</h1>
+
+<p>La Inyección SQL es un método de infiltración de código intruso que se vale de una vulnerabilidad informática presente en una aplicación en el nivel 
+de validación de las entradas para realizar operaciones sobre una base de datos.</p>
+
+<h2 id="argumentos-para-comprobar-si-se-puede-realizar-un-sql-injection">Argumentos para comprobar si se puede realizar un SQL Injection:</h2>
+
+<p>Podemos probar distintas líneas de comando en los campos de escritura para tratar de comprobar si son vulnerables a estas inyecciones SQL:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1' or 1=1-- -
+
+' or ''='
+</code></pre></div></div>
+
+<p>Otra forma es tratar de ver si hay un retraso en la respuesta (en este caso de 5 segundos) con el siguiente comando, para asegurarnos debemos probar con
+varios símbolos finales, ya que podría no ser vulnerable a todos.:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'or sleep(5)
+
+'or sleep(5)#
+
+'or sleep(5)@
+</code></pre></div></div>
 
 
 
@@ -234,7 +231,6 @@
 
     </div>
 </html>
-<hr />
 
 <!------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------------------------------------->

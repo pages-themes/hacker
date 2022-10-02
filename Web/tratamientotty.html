@@ -44,7 +44,7 @@
     <a id="a-title" href="/">
       <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
     </a>
-    <h6>Blog sobre informática Y ciberseguridad.</h6>                                                                                 <!-- Descripción de la Página-->
+    <h6></h6>                                                                                 <!-- Descripción de la Página-->
 
 <!--------------------------------- Botón Github ---------------------------------------->    
     <section id="downloads">         
@@ -117,6 +117,11 @@
 
 <h1 id="tratamiento-de-la-tty">Tratamiento de la TTY</h1>
 
+<li><a href="#item1" style="text-decoration:none">¿Qué es la TTY?</a></li>
+<li><a href="#item2" style="text-decoration:none">¿Para qué sirve el tratamiento de la TTY?</a></li>
+<li><a href="#item3" style="text-decoration:none">Ajustar Proporciones de la TTY</a></li>
+
+<p><a name="item1"></a></p>
 <h2 id="qué-es-la-tty">¿Qué es la TTY?</h2>
 
 <p>En la terminología de Unix, un tty es un tipo particular de archivo de dispositivo que implementa una cantidad de comandos proporcionados por el hardware
@@ -125,6 +130,7 @@ de nuestro equipo.</p>
 <p>También otros TTYs llamados, en ocasiones, pseudo-tty se proporcionan (a través de una delgada capa de kernel) mediante programas llamados emuladores de 
 terminal, como <code class="language-plaintext highlighter-rouge">xterm</code>, <code class="language-plaintext highlighter-rouge">termite</code>,<code class="language-plaintext highlighter-rouge">gnome-terminal</code>, <code class="language-plaintext highlighter-rouge">konsole</code>.</p>
 
+<p><a name="item2"></a></p>
 <h2 id="para-qué-sirve-el-tratamiento-de-la-tty">¿Para qué sirve el tratamiento de la TTY?</h2>
 
 <p>Cuando nos conectamos mediante una <code class="language-plaintext highlighter-rouge">reverse-shell</code> con otro equipo, en muchas ocasiones nos encontraremos con que la Shell de la que disponemos no son
@@ -160,6 +166,7 @@ poder disponer de una Shell completamente funcional.</p>
 export TERM=xterm
 </code></pre></div></div>
 
+<p><a name="item3"></a></p>
 <h2 id="ajustar-proporciones">Ajustar Proporciones:</h2>
 
 <p>Para que las proporciones de la terminal sean iguales a las de nuestro sistema debemos ajustar tanto las filas como las columnas. Por ejemplo si abrimos 
@@ -271,7 +278,7 @@ terminal de la Reverse Shell:</p>
 
     </div>
 </html>
-<hr />
+
 
 <!------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------------------------------------->

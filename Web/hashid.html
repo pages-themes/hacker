@@ -26,8 +26,8 @@
    <meta property="og:locale" content="en_US" />
    <meta name="description" content="Blog sobre Ciberseguridad." />
    <meta property="og:description" content="Blog sobre Ciberseguridad." />
-   <link rel="canonical" href="https://f1r0x.github.io/Web/sqlmap.html" />         <!-- ¡¡¡ Cambiar !!!  -->
-   <meta property="og:url" content="https://f1r0x.github.io/Web/sqlmap.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <link rel="canonical" href="https://f1r0x.github.io/Web/hashid.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/hashid.html" />    <!-- ¡¡¡ Cambiar !!!  -->
    <meta property="og:site_name" content="F1r0x" />
    <meta property="og:type" content="website" />
    <meta name="twitter:card" content="summary" />
@@ -44,7 +44,7 @@
     <a id="a-title" href="/">
       <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
     </a>
-    <h6>Blog sobre informática Y ciberseguridad.</h6>                                                                                 <!-- Descripción de la Página-->
+    <h6>Herramientas</h6>                                                                                 <!-- Descripción de la Página-->
 
 <!--------------------------------- Botón Github ---------------------------------------->    
     <section id="downloads">         
@@ -93,7 +93,7 @@
     <symbol id="s-text">
       <text text-anchor="middle"
             x="50%" y="50%" dy=".35em">
-            SQLMAP   <!-- Palabra del Letrero-->
+        HashID   <!-- Palabra del Letrero-->
       </text>
     </symbol>  
   
@@ -115,43 +115,32 @@
 <!----------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------->
 
-<h1 id="sqlmap">SQLMAP</h1>
-
-<h2 id="qué-es-sqlmap">¿Qué es SQLMAP?</h2>
-
-<p>Sqlmap es un software de código abierto que se utiliza para detectar y explotar las vulnerabilidades de las bases de datos y brinda opciones para 
-inyectarles códigos maliciosos. Viene con un potente motor de detección al cual le podemos especificar distintas variables.</p>
-
-<h3 id="características">Características:</h3>
-
-<p>Soporte completo para MySQL, Oracle, PostgreSQL y Microsoft SQL. Además de estos cuatro sistemas de gestión de bases de datos, sqlMap también puede
-identificar Microsoft Access, DB2, Informix, Sybase e Interbase.</p>
-
-<p>Amplia base de datos de sistema de gestión de huellas dactilares basadas en inband error messages, analizar el banner, las funciones de salida de
-comparación y características específicas tales como MySQL comment injection.</p>
-
-<p>También es posible forzar a la base de datos de sistema de gestión de nombre si ya lo saben.
-Soporte completo para 2 técnicas de SQL injection: blind SQL injection y inband SQL injection.</p>
-
-<h3 id="instalando-sqlmap">Instalando SQLMAP:</h3>
-
-<p>SQLMAP viene preinstalado con kali linux, que es la opción preferida de la mayoría de los probadores de penetración. Sin embargo, puede instalar sqlmap 
-en otros sistemas Linux basados en Debian usando el comando:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install sqlmap
-</code></pre></div></div>
-
-<h1 id="ejecución-de-sqlmap">Ejecución de SQLMap:</h1>
-
-<h3 id="paso-1-enumere-información-sobre-las-bases-de-datos-existentes">Paso 1: Enumere información sobre las bases de datos existentes:</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sqlmap -u [Url Víctima] --dbs
-</code></pre></div></div>
-
-<p>Primero, debemos ingresar la URL web que queremos verificar junto con el parámetro <code class="language-plaintext highlighter-rouge">-u</code>. También podemos usar el parámetro <code class="language-plaintext highlighter-rouge">–tor</code> si deseamos probar el 
-sitio web usando proxies. Ahora, por lo general, nos gustaría probar si es posible obtener acceso a una base de datos. Así que usamos la opción <code class="language-plaintext highlighter-rouge">–dbs</code> para hacerlo. <code class="language-plaintext highlighter-rouge">–dbs</code> enumera todas las bases de datos disponibles.</p>
-
-<p>Ejemplo: <code class="language-plaintext highlighter-rouge">sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 --dbs</code></p>
+<p>Hashid es una herramienbta que nos reportará el tipo de algoritmo más probable que se utilizó en su día para crear
+    ese hash a partir de una contraseña.</p>
+    
+    <h2 id="instalación">Instalación:</h2>
+    
+    <p>Para instalar la herramienta:</p>
+    
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install hashid
+    </code></pre></div></div>
+    
+    <h2 id="ejecución">Ejecución:</h2>
+    
+    <p>Para ejecutarla:</p>
+    
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hashid [Hash Núm]
+    </code></pre></div></div>
+    
+    <h3 id="ejemplo">Ejemplo:</h3>
+    
+    <p><img src="https://user-images.githubusercontent.com/103068924/165281291-c32d3c2a-5ab4-441e-bb04-81190b786114.png" alt="Captura de pantalla -2022-04-26 12-33-14" /></p>
+    
+    <p>Según la herramienta HashId el algoritmo de nuestro hash es un MD2, MD5 o MD4.</p>
+    
+    <p>Recordar que la aplicación nos reporta los más probables, en ocasiones el primero en reportar no es el
+    correcto, por tanto, tener en cuenta los dos o tres primeros en orden descendente, ya que el primero que nos 
+    reporta es el que en teoría tiene más probabilidades.</p>
 
 
 
@@ -245,7 +234,6 @@ sitio web usando proxies. Ahora, por lo general, nos gustaría probar si es posi
 
     </div>
 </html>
-<hr />
 
 <!------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------------------------------------->

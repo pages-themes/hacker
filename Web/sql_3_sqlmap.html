@@ -26,8 +26,8 @@
    <meta property="og:locale" content="en_US" />
    <meta name="description" content="Blog sobre Ciberseguridad." />
    <meta property="og:description" content="Blog sobre Ciberseguridad." />
-   <link rel="canonical" href="https://f1r0x.github.io/Web/sql_injection.html" />         <!-- ¡¡¡ Cambiar !!!  -->
-   <meta property="og:url" content="https://f1r0x.github.io/Web/sql_injection.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <link rel="canonical" href="https://f1r0x.github.io/Web/sql_3_sqlmap.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/sql_3_sqlmap.html" />    <!-- ¡¡¡ Cambiar !!!  -->
    <meta property="og:site_name" content="F1r0x" />
    <meta property="og:type" content="website" />
    <meta name="twitter:card" content="summary" />
@@ -44,7 +44,7 @@
     <a id="a-title" href="/">
       <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
     </a>
-    <h6>Blog sobre informática Y ciberseguridad.</h6>                                                                                 <!-- Descripción de la Página-->
+    <h6>Herramientas</h6>                                                                                 <!-- Descripción de la Página-->
 
 <!--------------------------------- Botón Github ---------------------------------------->    
     <section id="downloads">         
@@ -93,20 +93,20 @@
     <symbol id="s-text">
       <text text-anchor="middle"
             x="50%" y="50%" dy=".35em">
-        SQL Injection   <!-- Palabra del Letrero-->
+            SQLMAP   <!-- Palabra del Letrero-->
       </text>
     </symbol>  
   
     <!-- Añadir en función de las letras de la palabra -->
-    <use xlink:href="#s-text" class="text"></use>
-    <use xlink:href="#s-text" class="text"></use>
-    <use xlink:href="#s-text" class="text"></use>
-    <use xlink:href="#s-text" class="text"></use>
-    <use xlink:href="#s-text" class="text"></use>
-    <use xlink:href="#s-text" class="text"></use>
-    <use xlink:href="#s-text" class="text"></use>
-    <use xlink:href="#s-text" class="text"></use>
-    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use><!--1-->
+    <use xlink:href="#s-text" class="text"></use><!--2-->  
+    <use xlink:href="#s-text" class="text"></use><!--3-->
+    <use xlink:href="#s-text" class="text"></use><!--4-->
+    <use xlink:href="#s-text" class="text"></use><!--5-->
+    <use xlink:href="#s-text" class="text"></use><!--6-->
+    <use xlink:href="#s-text" class="text"></use><!--7-->
+    <use xlink:href="#s-text" class="text"></use><!--8-->
+    <use xlink:href="#s-text" class="text"></use><!--9-->
   </svg>
 
 <!----------------------------------------------------------------------------------------->
@@ -115,29 +115,43 @@
 <!----------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------->
 
-<h1 id="sql-injection">SQL Injection</h1>
+<h1 id="sqlmap">SQLMAP</h1>
 
-<p>La Inyección SQL es un método de infiltración de código intruso que se vale de una vulnerabilidad informática presente en una aplicación en el nivel 
-de validación de las entradas para realizar operaciones sobre una base de datos.</p>
+<h2 id="qué-es-sqlmap">¿Qué es SQLMAP?</h2>
 
-<h2 id="argumentos-para-comprobar-si-se-puede-realizar-un-sql-injection">Argumentos para comprobar si se puede realizar un SQL Injection:</h2>
+<p>Sqlmap es un software de código abierto que se utiliza para detectar y explotar las vulnerabilidades de las bases de datos y brinda opciones para 
+inyectarles códigos maliciosos. Viene con un potente motor de detección al cual le podemos especificar distintas variables.</p>
 
-<p>Podemos probar distintas líneas de comando en los campos de escritura para tratar de comprobar si son vulnerables a estas inyecciones SQL:</p>
+<h3 id="características">Características:</h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1' or 1=1-- -
+<p>Soporte completo para MySQL, Oracle, PostgreSQL y Microsoft SQL. Además de estos cuatro sistemas de gestión de bases de datos, sqlMap también puede
+identificar Microsoft Access, DB2, Informix, Sybase e Interbase.</p>
 
-' or ''='
+<p>Amplia base de datos de sistema de gestión de huellas dactilares basadas en inband error messages, analizar el banner, las funciones de salida de
+comparación y características específicas tales como MySQL comment injection.</p>
+
+<p>También es posible forzar a la base de datos de sistema de gestión de nombre si ya lo saben.
+Soporte completo para 2 técnicas de SQL injection: blind SQL injection y inband SQL injection.</p>
+
+<h3 id="instalando-sqlmap">Instalando SQLMAP:</h3>
+
+<p>SQLMAP viene preinstalado con kali linux, que es la opción preferida de la mayoría de los probadores de penetración. Sin embargo, puede instalar sqlmap 
+en otros sistemas Linux basados en Debian usando el comando:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install sqlmap
 </code></pre></div></div>
 
-<p>Otra forma es tratar de ver si hay un retraso en la respuesta (en este caso de 5 segundos) con el siguiente comando, para asegurarnos debemos probar con
-varios símbolos finales, ya que podría no ser vulnerable a todos.:</p>
+<h1 id="ejecución-de-sqlmap">Ejecución de SQLMap:</h1>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'or sleep(5)
+<h3 id="paso-1-enumere-información-sobre-las-bases-de-datos-existentes">Paso 1: Enumere información sobre las bases de datos existentes:</h3>
 
-'or sleep(5)#
-
-'or sleep(5)@
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sqlmap -u [Url Víctima] --dbs
 </code></pre></div></div>
+
+<p>Primero, debemos ingresar la URL web que queremos verificar junto con el parámetro <code class="language-plaintext highlighter-rouge">-u</code>. También podemos usar el parámetro <code class="language-plaintext highlighter-rouge">–tor</code> si deseamos probar el 
+sitio web usando proxies. Ahora, por lo general, nos gustaría probar si es posible obtener acceso a una base de datos. Así que usamos la opción <code class="language-plaintext highlighter-rouge">–dbs</code> para hacerlo. <code class="language-plaintext highlighter-rouge">–dbs</code> enumera todas las bases de datos disponibles.</p>
+
+<p>Ejemplo: <code class="language-plaintext highlighter-rouge">sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 --dbs</code></p>
 
 
 
@@ -231,7 +245,6 @@ varios símbolos finales, ya que podría no ser vulnerable a todos.:</p>
 
     </div>
 </html>
-<hr />
 
 <!------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------------------------------------->
