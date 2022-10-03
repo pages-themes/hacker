@@ -130,7 +130,9 @@
 <li><a href="#item5" style="text-decoration:none">Desinstalación de archivos con DPKG</a></li>
 <li><a href="#item6" style="text-decoration:none">Instalación de Archivos con APT</a></li>
 <li><a href="#item7" style="text-decoration:none">Desinstalación de Archivos con APT</a></li>
-<li><a href="#item8" style="text-decoration:none">Instalar Archivos en Linux mediante Interfaz Gráfica</a></li>
+<li><a href="#item8" style="text-decoration:none">Instalar Archivos .SH en Linux</a></li>
+<li><a href="#item9" style="text-decoration:none">Instalar Archivos en Linux mediante Interfaz Gráfica</a></li>
+
 
 <p><a name="item1"></a></p>
 <h1 id="instalacion-y-desinstalacion-de-programas-en-linux">Instalar y Desinstalar Archivos en Linux</h1>
@@ -246,6 +248,21 @@ han guardado en el sistema.</p>
 </code></pre></div></div>
 
 <p><a name="item8"></a></p>
+<h1 id="instalar-archivos-sh-en-linux">Instalar Archivos .SH en Linux</h1>
+
+<p>Muchos programas utilizan como archivo de instalación un <code class="language-plaintext highlighter-rouge">.SH</code>, lo suelen llamar <code class="language-plaintext highlighter-rouge">install.sh</code> o algo por el estilo.</p>
+
+<p>Primero tendremos que darles permisos de ejecución al archivo .SH:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chmod +x archivo.sh
+</code></pre></div></div>
+
+<p>Luego simplemente ejecutamos el instalador:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./archivo.sh
+</code></pre></div></div>
+
+<p><a name="item9"></a></p>
 <h1 id="instalar-programas-en-linux-mediate-interfaz-gráfica">Instalar Archivos en Linux mediante Interfaz Gráfica</h1>
 
 <p>Hay muchas interfaces gráficas que nos van a permitir trabajar con ellos desde el escritorio, como es el

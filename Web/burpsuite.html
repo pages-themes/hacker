@@ -117,12 +117,16 @@
 
 <ul>
   <li><a href="#item1" style="text-decoration:none">¿Qué es BurpSuite?</a></li>
-  <li><a href="#item2" style="text-decoration:none">Herramientas Necesarias.</a></li>
+  <li><a href="#item2" style="text-decoration:none">Herramientas Necesarias</a></li>
   <li><a href="#item3" style="text-decoration:none">Configuración de FoxyProxy</a></li>
   <li><a href="#item4" style="text-decoration:none">Actualizar BurpSuite</a></li>
   <li><a href="#item5" style="text-decoration:none">Configuración de BurpSuite</a></li>
-  <li><a href="#item6" style="text-decoration:none">Como Interceptar peticiones básicas.</a></li>
+  <li><a href="#item6" style="text-decoration:none">Como Interceptar peticiones básicas</a></li>
+  <li><a href="#item7" style="text-decoration:none">Capturar o interceptar Respuesta a las peticiones con Burpsuite</a></li>
+  <li><a href="#item8" style="text-decoration:none">Evitar Redirects con Burbpsuite</a></li>
+  <li><a href="#item9" style="text-decoration:none">Ejemplo: Capturar, redirigir y evitar redirect</a></li>
 </ul>
+
 
 <p><a name="item1"></a></p>
 <h1 id="qué-es-burpsuite">¿Qué es BurpSuite?</h1>
@@ -212,9 +216,94 @@ Luego desde BurpSuite nos dirigimos al apartado <code class="language-plaintext 
 
 <p><img src="https://user-images.githubusercontent.com/103068924/180096836-94b40517-d704-4bb0-a2ab-163bb1641826.png" alt="Captura de pantalla 2022-07-21 005816" /></p>
 
-<p><img src="https://user-images.githubusercontent.com/103068924/180096903-3fb03265-3b28-4e9e-8520-9afb98b6d99e.png" alt="Captura de pantalla 2022-07-21 005926" /></p>
+<p><img class="img-burpsuite2" src="https://user-images.githubusercontent.com/103068924/180096903-3fb03265-3b28-4e9e-8520-9afb98b6d99e.png" alt="Captura de pantalla 2022-07-21 005926" /></p>
 
 <p>Finalmente, realizamos la petición que queríamos capturar en el navegador y veremos como BupSuite la interceptará.</p>
+
+<p><a name="item7"></a></p>
+<h1 id="capturar-o-interceptar-respuesta-a-las-peticiones-con-burpsuite">Capturar o interceptar Respuesta a las peticiones con Burpsuite</h1>
+
+<p>Como hemos visto anteriormente, podemos capturar las peticiones de una página web con Burpsuite, pero, y si queremos enviar nuestra petición y capturar la
+respuesta por parte del servidor? Esto puede ser muy útil a la hora de módificar las peticiones capturadas y ver que respuestas nos reporta el servidor.</p>
+
+<p>Para activar está funcion y poder capturar esas peticiones debemos dirigirnos a <code class="language-plaintext highlighter-rouge">Proxy</code>&gt;<code class="language-plaintext highlighter-rouge">Options</code>&gt;<code class="language-plaintext highlighter-rouge">Intercep Server Responses</code>  y marcar la casilla 
+superior que dice <code class="language-plaintext highlighter-rouge">Intercep responses based on the following rules:</code> y desmarcamos la opcion marcada que dice <code class="language-plaintext highlighter-rouge">Content type header</code>.</p>
+
+<p>Ahora simplemente capturamos una petición, como hemos visto anteriomente, pulsamos <code class="language-plaintext highlighter-rouge">Fordwar</code> y nos devolverá la respuesta de nuestra petición.</p>
+
+<p><a name="item8"></a></p>
+<h1 id="evitar-redirects-con-burbpsuite">Evitar Redirects con Burbpsuite</h1>
+
+<p>En oscasiones nos encontraremos páginas con vínculos o redirecciones a otras páginas (código de estado 302), esto suele pasar cuando, en vez de utilizar
+ cookies de sesion, nos encontramos con que la página se gestiona a través de redirects.</p>
+
+<p>Con está tecnica evitaremos esas nuevas direcciones, forzando al sistema a devolver un código de estado 200 (código de estado exitoso).En ocasiones al 
+aplicar este cambio, podremos ver partes de la página web que antes no eran posibles.</p>
+
+<p>Para aplicar este ajuste, en primer lugar debemos de tener el <code class="language-plaintext highlighter-rouge">Foxyproxy</code> enlazado con <code class="language-plaintext highlighter-rouge">Burpsuite</code>. Una vez establecido el túner a través del proxy, 
+capturamos la petición de la página deseada con el <code class="language-plaintext highlighter-rouge">Intercept</code> como hemos visto anteriormente.</p>
+
+<p>Realizamos un <code class="language-plaintext highlighter-rouge">Forward</code> y veremos la respuesta. Al tratarse de una redirección, veremos como
+el primer parametro <code class="language-plaintext highlighter-rouge">HTTP/1.1</code> nos reporta el código de estado <code class="language-plaintext highlighter-rouge">302 Found</code>. Para anular la
+redirección debemos cambiar este parámetro por el de <code class="language-plaintext highlighter-rouge">200 OK</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/193480138-38ffa0f7-586f-466b-aa47-8b4d2a0ffc67.png" alt="Captura de pantalla -2022-10-03 00-14-38" /></p>
+
+<p>Finalmente aplicamos un <code class="language-plaintext highlighter-rouge">Forward</code> y veremos como en el navegador se nos despliega una página
+diferente.</p>
+
+<p>Vamos a tratar de mostrar un ejemplo utilizando la máquina Previse de Hack The Box.</p>
+
+<p><a name="item9"></a></p>
+<h2 id="ejemplo">Ejemplo: Capturar, redirigir y evitar redirect.</h2>
+
+<p>En la siguiente demostración, utilizaremos la máquina Previse de Hack The Box para tratar de mostrar
+como una página que nos redirige con un código de estado 302 a una página, nos puede redirigir a 
+otra evitando ese redirect y cambiandolo por un código de estado 200.</p>
+
+<p>En primer lugar, vamos a listar con <code class="language-plaintext highlighter-rouge">Wfuzz</code> los ditintos archivos alojados en el servidor para
+ver el código de estado de cada archivo:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/193480048-7fbd2ad8-c545-4452-b60f-1b0497e341a1.png" alt="Captura de pantalla -2022-10-02 20-06-45" /></p>
+
+<p>Para este ejemplo vamos a utilizar dos de los archivos aquí expuestos, podemos ver como el payload 
+<code class="language-plaintext highlighter-rouge">status</code> nos devuelve un código de estado <code class="language-plaintext highlighter-rouge">302</code> y al introducirlo en el navegador nos redirige
+al payload <code class="language-plaintext highlighter-rouge">login</code> que si tiene un código de estado <code class="language-plaintext highlighter-rouge">200</code> y nos reporta una página de registro.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/193480093-0eaf88cc-c3f7-471a-8bb5-ded62b22560b.png" alt="Captura de pantalla -2022-10-03 00-58-34" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/193480099-2098e0bb-dcf5-48fd-beb0-1f2ca8d6a094.png" alt="Captura de pantalla -2022-10-03 00-58-09" /></p>
+
+<p>Abrimos <code class="language-plaintext highlighter-rouge">Burpsuite</code>, configuramos <code class="language-plaintext highlighter-rouge">Foxyproxy</code> y realizamos una captura de la ruta 
+<code class="language-plaintext highlighter-rouge">http://10.10.11.104/status.php</code>:</p>
+
+<p><img class="img-burpsuite1" src="https://user-images.githubusercontent.com/103068924/193480114-79f3d051-c761-46cf-944f-e78ca917f0e0.png" alt="Captura de pantalla -2022-10-03 00-13-41" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/193480129-b2160fff-a551-4008-a343-c3d60efb953c.png" alt="Captura de pantalla -2022-10-03 00-14-17" /></p>
+
+<p>Ahora aplicamos un <code class="language-plaintext highlighter-rouge">Fordward</code> para capturar la respuesta del servidor y veremos como arriba de todo nos
+muestra el código de estado, en este caso un <code class="language-plaintext highlighter-rouge">302 Found</code>:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/193480154-681bb28b-75b5-4262-9148-3948cf7ae6bb.png" alt="Captura de pantalla -2022-10-03 00-15-46" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/193480160-606c0fcd-8bb9-44ae-aca7-9c3b862f3833.png" alt="Captura de pantalla -2022-10-03 00-16-12" /></p>
+
+<p>Cambiamos el código de estado por un <code class="language-plaintext highlighter-rouge">200 OK</code>:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/193480165-aa24ec95-5c9a-4377-96cf-dc1e0742b3a4.png" alt="Captura de pantalla -2022-10-03 00-16-48" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/193480172-bf71c479-8abd-43c5-9428-d22f0ac23534.png" alt="Captura de pantalla -2022-10-03 00-17-02" /></p>
+
+<p>Y realizamos un nuevo <code class="language-plaintext highlighter-rouge">Forward</code> para enviar la petición módificada y ver la nueva página forzando el código de estado 200 OK:</p>
+
+<p><img class="img-burpsuite1" src="https://user-images.githubusercontent.com/103068924/193480183-d9684f64-381a-41ab-bae9-5f52d8081ac3.png" alt="Captura de pantalla -2022-10-03 00-17-38" /></p>
+
+<p>Vemos como ya no nos reporta la página de registro, ahora nos muestra una página de información
+con el título <code class="language-plaintext highlighter-rouge">Status</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/193480200-bb7748cc-d418-4b07-9278-f3f0085e2e65.png" alt="Captura de pantalla -2022-10-03 01-02-06" /></p>
+
+
 
 
 <!----------------------------------------------------------------------------------------->
