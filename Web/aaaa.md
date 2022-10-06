@@ -17,3 +17,29 @@ de forma privada.
 # rlwrap nc
 
 Como añardir rlwrap a netcat para aplicar una shell interactiva.
+
+
+
+# Comandos Terminal CMD Windows
+
+## Ver Usuarios
+
+Este comando tiene la tarea de enumerar todas las cuentas de usuario existentes en el sistema donde se incluyen la cuentas ocultas o cuentas de usuario deshabilitadas.
+Estas cuentas de usuario se enumeran con su nombre interno asignado.
+
+    net user
+      
+Podremos almacenar los resultados en un archivo de texto usando la siguiente sintaxis:
+
+    net user > archivo.txt
+
+También podemos indicar una ruta personalizada si así lo deseamos:
+ 
+    net user > “ruta\archivo.txt
+    
+## Ver información detallada de un Usuaerio
+
+Para obtener información mucho más detallada de un usuario del sistema, podemos ejecutar lo siguiente. Allí
+vemos información precisa y completa sobre el usuario seleccionado.
+
+    net user “usuario”
