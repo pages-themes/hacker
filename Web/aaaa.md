@@ -37,9 +37,17 @@ También podemos indicar una ruta personalizada si así lo deseamos:
  
     net user > “ruta\archivo.txt
     
-## Ver información detallada de un Usuaerio
+### Ver información detallada de un Usuaerio
 
 Para obtener información mucho más detallada de un usuario del sistema, podemos ejecutar lo siguiente. Allí
 vemos información precisa y completa sobre el usuario seleccionado.
 
     net user “usuario”
+
+## Cambiar el nombre a un Archivo
+    
+Para cambiar el nombre de archivo2.txt por archivo3.txt, se puede usar el comando REN (o RENAME) escribiendo:
+
+    REN archivo2.txt archivo3.txt 
+    
+
