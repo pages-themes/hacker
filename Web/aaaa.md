@@ -151,6 +151,15 @@ el puerto 22. En caso de querer especificar otro puerto lo podemo hacer con la o
     ssh [Usuario]@[Dirección] -p [Puerto]
     
     
+## Conectarse a un servicio SSH con SSHPASS:
+
+La utilidad sshpass está diseñada para ejecutar SSH utilizando el modo de autenticación de contraseña interactiva
+con el teclado, pero de una manera no interactiva. De esta forma podemos especificar en la misma línea de comandos
+la contraseña antes de ejecutar el comando SSH. La contraseña debe establecerse entre comillas dobles:
+
+    sshpass -p ["Contraseña"] ssh [Usurio]@[Dirección] -p [Puerto] 
+    
+    
 # Ejemplo de conexión SSH:
 
 Para realizar un ejemplo de como conectarno a otro equipo utilizando SSH vamos a utilizar la web ``https://overthewire.org``. Está página está 
