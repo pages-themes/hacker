@@ -165,9 +165,8 @@ En primer lugar abrimos la página oficial de Over The Wire:
 
 Una vez abierta nos dirigimos al ``Nivel 0``:
 
-Vemos como nos dice que el nombre del usuario es ``bandit0`` que la contraseña es ``bandit0`` también, la dirección es ``bandit.labs.overthewire.org´´
+Vemos como nos dice que el nombre del usuario es ``bandit0`` que la contraseña es ``bandit0`` también, la dirección es ``bandit.labs.overthewire.org``
 y nos indica que debemos utilizar el ``puerto 2220``:
-
 
     ssh bandit0@bandit.labs.overthewire.org -p 2220 
     
