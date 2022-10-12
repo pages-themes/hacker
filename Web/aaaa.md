@@ -163,14 +163,23 @@ sección de Laboratorios.
 
 En primer lugar abrimos la página oficial de Over The Wire:
 
+![Captura de pantalla 2022-10-12 220427](https://user-images.githubusercontent.com/103068924/195438160-e7db9a69-f9d1-4ee9-b8dd-a494988ad836.png)
+
 Una vez abierta nos dirigimos al ``Nivel 0``:
+
+![Captura de pantalla 2022-10-12 221133](https://user-images.githubusercontent.com/103068924/195438319-f437c607-eae0-4a8a-84f1-59b286582a8c.png)
 
 Vemos como nos dice que el nombre del usuario es ``bandit0`` que la contraseña es ``bandit0`` también, la dirección es ``bandit.labs.overthewire.org``
 y nos indica que debemos utilizar el ``puerto 2220``:
 
     ssh bandit0@bandit.labs.overthewire.org -p 2220 
     
-Una vez ejeuctado el comando anterior, nos pedirá la contraseña.     
+Una vez ejeuctado el comando anterior, nos pedirá la contraseña, la introducimos y ya tendremos acceso al 
+otro equipo:
+
+![Captura de pantalla 2022-10-12 221350](https://user-images.githubusercontent.com/103068924/195438782-444534be-f275-4742-a489-8f93d475accf.png)
+
+![Captura de pantalla 2022-10-12 221444](https://user-images.githubusercontent.com/103068924/195439083-539b1748-e770-40c1-bb04-97c0a24a6f91.png)
 
 
 
