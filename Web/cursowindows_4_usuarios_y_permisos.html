@@ -135,9 +135,28 @@ Lo ideal para no tener problemas, es abrir la Terminal como Administrador, para 
 clic Derecho y <code class="language-plaintext highlighter-rouge">Abrir como Administrador</code>.</p>
 
 <h2 id="listar-usuarios">Listar Usuarios:</h2>
-<p>Mediante este comando podremos ver todos los usuarios registrados en el sistema:</p>
+<p>Este comando tiene la tarea de enumerar todas las cuentas de usuario existentes en el sistema donde se incluyen la cuentas ocultas o cuentas de usuario deshabilitadas.
+  Estas cuentas de usuario se enumeran con su nombre interno asignado.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>net user
+</code></pre></div></div>
+
+<p>Podremos almacenar los resultados en un archivo de texto usando la siguiente sintaxis:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>net user &gt; archivo.txt
+</code></pre></div></div>
+
+<p>También podemos indicar una ruta personalizada si así lo deseamos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>net user &gt; “ruta\archivo.txt
+</code></pre></div></div>
+
+<h3 id="ver-información-detallada-de-un-usuario">Ver información detallada de un Usuario</h3>
+
+<p>Para obtener información mucho más detallada de un usuario del sistema, podemos ejecutar lo siguiente. Allí
+vemos información precisa y completa sobre el usuario seleccionado.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>net user “usuario”
 </code></pre></div></div>
 
 <h2 id="crear-un-nuevo-usuario">Crear un Nuevo Usuario:</h2>
