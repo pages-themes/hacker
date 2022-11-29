@@ -1,0 +1,279 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/bootear_usb_con_ventoy.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/bootear_usb_con_ventoy.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                          <!-- Nombre del Autor -->                         
+    </a>
+    <h6></h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!--------------------------------  Letrero Animado  --------------------------------------->      
+ 
+  <svg viewBox="0 0 1320 300">
+
+    <!-- Símbolo -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+            Ventoy   <!-- Palabra del Letrero-->
+      </text>
+    </symbol>  
+  
+    <!-- Añadir en función de las letras de la palabra -->
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+  </svg>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<li><a href="#item1" style="text-decoration:none">¿Qué es Ventoy?</a></li>
+<li><a href="#item2" style="text-decoration:none">Cómo Instalar Ventoy</a></li>
+<li><a href="#item3" style="text-decoration:none">Bootear USB con Ventoy</a></li>
+
+
+<p><a name="item1"></a></p>
+<h1 id="qué-es-ventoy">¿Qué es Ventoy?</h1>
+
+<p>Ventoy es un utilitario libre y de código abierto que se utiliza para escribir archivos de imagen como.iso,.wim,.img,.vhd y.efi en medios 
+de almacenamiento para crear unidades flash USB de arranque.</p>
+
+<p><a name="item2"></a></p>
+<h1 id="instalación">Cómo Instalar Ventoy</h1>
+
+<p>Para proceder con la instalación, en primer lugar, debemos descargarnos el programa, podemos hacerlo desde su web oficial
+<a href="https://ventoy.net/en/download.html"><code class="language-plaintext highlighter-rouge">https://ventoy.net/en/download.html</code></a> o si estamos utilizando Linux podemos clonarlo directamente de GitHub
+mediante el comando:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/ventoy/Ventoy.git
+</code></pre></div></div>
+
+<p>Una vez descargado, creraremos un directorio llamado <code class="language-plaintext highlighter-rouge">Ventoy</code> y movemos el archivo descargado para luego proceder a descomprimirlo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir Ventoy &amp; mv ventoy-1.0.74-linux.tar.gz ./Ventoy
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168425974-fbf6b698-db6a-41e0-9451-94742987fdc4.png" alt="Captura de pantalla -2022-05-14 13-42-15" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168425978-60adeed7-791a-4d9c-b2c0-cc7dcca00c02.png" alt="Captura de pantalla -2022-05-14 13-42-50" /></p>
+
+<p>Descomprimimos el archivo. Para ello nos dirigimos al directorio donde se encuentre el archivo descargado y ejecutamos el siguiente
+comando:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tar -xf [Archivo.tar.gz]
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168425984-0aee4b1c-34a5-46a6-9c20-f46e238b224e.png" alt="Captura de pantalla -2022-05-14 13-44-58" /></p>
+
+<p>Una vez descomprimido, vemos que nos aparece una carpeta nueva en el mismo directorio. Ya disponemos de Ventoy y podemos borrar el archivo <code class="language-plaintext highlighter-rouge">.tar.gz</code> que
+hemos descomprimido. Finalmente, para instalarlo ejecutamos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./VentoyGUI.x86_64
+</code></pre></div></div>
+
+<p>Se nos abrirá una interfaz gráfica desde la cual realizamos la instalación de Ventoy en cualquier USB.</p>
+
+<p><a name="item3"></a></p>
+<h1 id="bootear-usb-con-ventoy">Bootear USB con Ventoy:</h1>
+
+<p>Una vez tenemos Ventoy instalado y un USB listo en nuestro PC, lo primero que tendremos que hacer es formatear y montar el USB. Para ello en primer lugar
+identificamos su directorio:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fdisk -l
+</code></pre></div></div>
+
+<p>Vemos que el directorio de nuestro USB es el <code class="language-plaintext highlighter-rouge">/dev/sdb</code>. El siguiente paso será abrir una terminal desde el directorio que contiene el programa Ventoy,
+(la carpeta descomprimida anteriormente) y proceder a montar Ventoy mediante el siguiente comando:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo sh Ventoy2Disk.sh -i /dev/sdb
+</code></pre></div></div>
+
+<p>Al terminar se nos avisará de que la instalación se ha ejecutado correctamente o de si debemos realizar algún procedimiento adicional.</p>
+
+<p>Una vez montado Ventoy en nuestro USB, veremos que el nombre de nuestro dispositivo USB abra pasado a llamarse Ventoy.</p>
+
+<p>Ahora, para montar un archivo <code class="language-plaintext highlighter-rouge">.iso</code> lo único que debemos hacer es copiarlo dentro del USB. Podemos copiar varios archivos <code class="language-plaintext highlighter-rouge">.iso</code>, ya que antes
+de realizar el arranque nos preguntara que Sistema Operativo deseamos ejecutar. Es importante que el dispositivo USB tenga espacio de sobra para
+poder almacenar los distintos archivos.iso.</p>
+
+<p>Finalmente, una vez copiadas las .iso podemos arrancar el PC desde la Bios y seleccionar el Sistema Operativo que queramos.</p>
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

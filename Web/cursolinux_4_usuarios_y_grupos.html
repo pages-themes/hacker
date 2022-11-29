@@ -1,0 +1,335 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Curso Linux</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/cursolinux_4_usuarios_y_grupos.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/cursolinux_4_usuarios_y_grupos.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Curso Linux: Usuarios y Grupos</h6>                                                                                <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+
+<!---------------------- Botones de Anterior y Siguiente --------------------------------->
+
+<div id="main-container">
+  <a href="./cursolinux_3_consola_terminal_shell.html" class="btn btn-anterior-con-titulo">Artículo anterior</a>
+  <a href="./cursolinux_4.1_directorios_principales.html" class="btn btn-siguiente-con-titulo">Artículo siguiente</a>
+  <a href="./cursolinux_1.html" class="btn btn-curso-linux">Índice Curso Linux</a>
+</div>
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!--------------------------------  Letrero Animado  --------------------------------------->      
+ 
+  <svg viewBox="0 0 1320 300">
+
+    <!-- Símbolo -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+        Linux   <!-- Palabra del Letrero-->
+      </text>
+    </symbol>  
+  
+    <!-- Añadir en función de las letras de la palabra -->
+    <use xlink:href="#s-text" class="text"></use><!--1-->
+    <use xlink:href="#s-text" class="text"></use><!--2-->  
+    <use xlink:href="#s-text" class="text"></use><!--3-->
+    <use xlink:href="#s-text" class="text"></use><!--4-->
+    <use xlink:href="#s-text" class="text"></use><!--5-->
+    <use xlink:href="#s-text" class="text"></use><!--6-->
+    <use xlink:href="#s-text" class="text"></use><!--7-->
+    <use xlink:href="#s-text" class="text"></use><!--8-->
+    <use xlink:href="#s-text" class="text"></use><!--9-->
+  </svg>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<li><a href="#item1" style="text-decoration:none">Usuarios en Linux.</a></li>
+<li><a href="#item2" style="text-decoration:none">Tipos de Usuarios.</a></li>
+<li><a href="#item3" style="text-decoration:none">Superusuario o root.</a></li>
+<li><a href="#item4" style="text-decoration:none">Gestión de Grupos.</a></li>
+<li><a href="#item5" style="text-decoration:none">Comandos para la gestión de usuarios y grupos en Linux.</a></li>
+
+<h1 id="gestión-de-usuarios-y-grupos-en-linux">Gestión de Usuarios y Grupos en Linux.</h1>
+
+<p>El sistema operativo Linux cuenta con un gran capacidad de gestión de usuarios y grupos que le permite realizar un uso óptimo
+de su <code class="language-plaintext highlighter-rouge">plataforma multiusuario</code>.</p>
+
+<p>Quienes utilizan este servidor se identifican mediante un <code class="language-plaintext highlighter-rouge">nombre de usuario</code>, y también debe contar con una <code class="language-plaintext highlighter-rouge">contraseña</code> para que pueda
+realizar la verificación de credenciales y acceder al sistema.</p>
+
+<p>Además, el acceso a determinados archivos, directorios y ficheros dependerá de los grupos a los que pertenezca el usuario del sistema.</p>
+
+<p><a name="item1"></a></p>
+<h1 id="usuarios-en-linux">Usuarios en Linux.</h1>
+
+<p>Los usuarios son una de las piezas claves en cualquier sistema Linux ya que <code class="language-plaintext highlighter-rouge">con ellos iniciamos sesión y podremos realizar tareas
+en base a los permisos</code> que han sido asignados <code class="language-plaintext highlighter-rouge">(administración, lectura, escritura)</code> y en base a ello estos usuarios tendrán cierta autoridad
+en el sistema.</p>
+
+<p><a name="item2"></a></p>
+<h1 id="tipos-de-usuarios">Tipos de Usuarios.</h1>
+
+<p>En los sistemas que toman por base la interfaz GNU/Linux o Unix existen dos tipos de usuarios: el <code class="language-plaintext highlighter-rouge">administrador o root</code>, y los demás <code class="language-plaintext highlighter-rouge">usuarios</code>:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Usuario administrador o root:</code> El usuario root tiene la posibilidad de realizar todo tipo de labores respecto a la administración del sistema.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Usuario Normal:</code> Los usuarios normales o no administradores, son aquellos que pueden utilizar las herramientas del sistema con normalidad, pero que no pueden ejecutar labores administrativas. Son aquellos con los que realizamos las tareas más comunes.</p>
+  </li>
+</ul>
+
+<p>Cuando ingresamos a un sistema Linux lo hacemos con un usurio normal y su contraseña, con este usuario es con el que trabajaremos normalmente, pero cuando
+nos sea necesario realizar algún cambio en el sistema, como por ejemplo instalar un programa nuevo, lo tendremos que hacer a traves de un usuario 
+Administrador o root.</p>
+
+<p>Podemos realizar estos cambios del sistema de dos formas:</p>
+
+<ul><li><p>La primera opción es convertirse en root, para ello utilizando el siguiente comando y proporcionando nuestra contraseña, nuestro usuario pasará
+a ser root y por tanto tendrá los máximos privilegios del sistema.</p></li></ul>
+
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo su</code></pre></div></div>
+
+  
+<ul><li><p>La segunda opción es ejecutar la acción como superusurio, pero sin dejar de ser un Usuario normal. Para ello,
+simplemente ejecutamos el comando <code class="language-plaintext highlighter-rouge">sudo</code> delante del comando que vamos a ejecutar como superusuario.</p></li></ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whoami</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo whoami</code></pre></div></div>
+
+<p>Como veis <code class="language-plaintext highlighter-rouge">whoami</code> nos reporta nuestro Usurio actual, en este caso el usurio normal, pero al utilizar el comando <code class="language-plaintext highlighter-rouge">sudo</code>, podemos ver
+como nos devuelve el resultado <code class="language-plaintext highlighter-rouge">root</code> cuando aún estamos como el Usuario normal. Esto se debe a que hemos ejecutado el comando <code class="language-plaintext highlighter-rouge">whoami</code> como
+root pero sin tener que cambiar de usuario.</p>
+
+<p>En las dos situaciones el sistema nos pedira una contraseña para confirmar que tenemos acceso.</p>
+
+<p>Si estamos como <code class="language-plaintext highlighter-rouge">root</code> y queremos volver a convertirnos en un usuario normal, utilizaremos el comando <code class="language-plaintext highlighter-rouge">su</code> seguido del nombre del usuario.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>su [Nombre_del_Usuario]</code></pre></div></div>
+
+
+<p><a name="item3"></a></p>
+<h1 id="superusuario-o-root">Superusuario o root:</h1>
+
+<p>Ser <code class="language-plaintext highlighter-rouge">root</code> en el sistema es como ser dios, nos permirita realizar cualquier tipo de cambio a nivel de sistema y por tanto, debemos de tener cuidado
+con su uso. Es recomendable volver al usuario normal tras terminal las tareas realizadas como root al igual que establecer una contraseña segura.</p>
+
+<p>Como veís, <code class="language-plaintext highlighter-rouge">para poder realizar el cambio de usuario normal a usuario root, se necesitarán permisos de administración</code>, y se puede acceder ya sea proporcionando la contraseña del usuario root e iniciando sesión, o establecer una lista de usuarios que pueden tener acceso como administradores.</p>
+
+<p>En términos de seguridad, es recomendable optar por establecer una lista de usuarios con permisos, debido a que compartir la contraseña del usuario
+root con varias personas, implica el traspaso de información sensible y pone al sistema en una situación de vulnerabilidad.</p>
+
+<p><a name="item4"></a></p>
+<h1 id="gestión-de-grupos">Gestión de Grupos:</h1>
+
+<p>Los grupos en Linux son usados principalmente para otorgar permisos sobre archivos y directorios. El sistema operativo ya trae incluido ciertos grupos predeterminados que cumplen con funciones específicas. Cada grupo creado en Linux tiene la característica de ser independiente de otros. Además, los grupos en Linux pueden tener contraseñas. Estos grupos pueden ser de tipo primario o secundario:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Grupo principal</code>: Tiene la función de determinar quién será el grupo que posea los archivos creados por el usuario. El grupo primario es el que se le asocia a la cuenta por defecto, y al que se le asignarán los archivos y directorios desarrollados por el usuario. Además, el nombre del grupo suele ser el mismo nombre de usuario.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Grupos secundarios</code>: Los grupos suplementarios son aquellos grupos adicionales a los que el usuario pertenezca.</p>
+  </li>
+</ul>
+
+<p><a name="item5"></a></p>
+<h1 id="comandos-para-la-gestión-de-usuarios-y-grupos-en-linux">Comandos para la gestión de usuarios y grupos en Linux:</h1>
+
+<p>Estos son los comandos para gestiónar los usuaior y los grupos a traves de la terminal de Linux. Más adelante veremos como trabajar con la terminal
+  y como utilizar cada uno de los siguientes comandos.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">adduser</code> o <code class="language-plaintext highlighter-rouge">useradd</code>: Permite la creación de nuevos usuarios.</li>
+  <li><code class="language-plaintext highlighter-rouge">usermod</code>, <code class="language-plaintext highlighter-rouge">chfn</code>, <code class="language-plaintext highlighter-rouge">chsh</code> y <code class="language-plaintext highlighter-rouge">chage</code>: Usados para la modificación de un usuario.</li>
+  <li><code class="language-plaintext highlighter-rouge">deluser</code> o <code class="language-plaintext highlighter-rouge">userdel</code>: Comando para la eliminación de usuarios.</li>
+  <li><code class="language-plaintext highlighter-rouge">passwd</code>: Para cambiar la contraseña de un usuario.</li>
+  <li><code class="language-plaintext highlighter-rouge">addgroup</code> o <code class="language-plaintext highlighter-rouge">groupadd</code>: Usado para añadir un grupo.</li>
+  <li><code class="language-plaintext highlighter-rouge">groupmod</code>: Permite modificar un grupo.</li>
+  <li><code class="language-plaintext highlighter-rouge">groupdel</code> o <code class="language-plaintext highlighter-rouge">delgroup</code>: Se utiliza para eliminar un grupo.</li>
+  <li><code class="language-plaintext highlighter-rouge">gpasswd</code>: Comando diseñado para cambiar la contraseña de un grupo.</li>
+  <li><code class="language-plaintext highlighter-rouge">whoami</code>: Para saber qué usuario somos.</li>
+  <li><code class="language-plaintext highlighter-rouge">groups</code>: Para obtener información de los grupos a los que pertenecemos.</li>
+  <li><code class="language-plaintext highlighter-rouge">id</code>: Nos muestra tanto el usuario como los grupos.</li>
+  <li><code class="language-plaintext highlighter-rouge">su</code>: Comando para cambiar de usuario.</li>
+  <li><code class="language-plaintext highlighter-rouge">who</code> o <code class="language-plaintext highlighter-rouge">w</code>: Sirve para saber cuáles usuarios están conectados en la máquina en un determinado momento.</li>
+  <li><code class="language-plaintext highlighter-rouge">write</code> o <code class="language-plaintext highlighter-rouge">wall</code>: Para enviar mensajes de al resto de usuarios logueados.</li>
+</ul>
+
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

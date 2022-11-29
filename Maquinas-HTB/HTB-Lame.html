@@ -1,0 +1,354 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/htb_lame.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/htb_lame.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Blog sobre informática Y ciberseguridad.</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<center><img src="https://user-images.githubusercontent.com/103068924/167405551-4cd2153a-044b-42a7-bb99-3efb07ba4302.png" alt="Captura de pantalla -2022-05-09 12-57-37" /></center>
+
+<h1 id="htb-lame">HTB-Lame</h1>
+
+<h2 id="fase-de-reconocimiento">Fase de Reconocimiento</h2>
+
+<p>En primer lugar, debemos asegurar que estamos conectados a la víctima y tratar de recopilar la máxima información posible.</p>
+
+<p>Para verificar la conexión y tener una primera toma de contacto utilizaremos el comando <code class="language-plaintext highlighter-rouge">ping</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ping 10.10.10.3
+</code></pre></div></div>
+
+<p>Mediante este comando podemos obtener la siguiente información:</p>
+
+<ul>
+  <li>Verificar la conexión.</li>
+  <li>La latencia. Podemos observar el tiempo de recorrido
+de un paquete.</li>
+  <li>Podemos obtener la Ip de un dominio.</li>
+  <li>
+    <p>Determinar si estamos frente a un SO Linux o Windows:
+  Windows ttl = 128
+  Linux ttl = 64</p>
+
+    <p>nmap -p- –open -T5 -v -n 10.10.10.3 -oG allPorts</p>
+  </li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167393165-e89c0c25-6ae5-48d4-b779-db308bad145f.png" alt="Captura de pantalla -2022-05-07 17-30-56" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">-p-</code> : Escanea todo el rango de puertos.</p>
+
+<p><code class="language-plaintext highlighter-rouge">--open</code> : Solo nos mostrará puertos con el estatus abierto.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-T5</code> : Controla el tiempo y el rendimiento del escaneo donde 1 es el más lento y 5 el más rápido.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-v</code> : Verbose. Recopila los puertos abiertos por TCP y los reporta por consola.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-n</code> : Anula la resolución DNS.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-oG</code> : Exportar los resultados en formato grepeable.</p>
+
+<p><code class="language-plaintext highlighter-rouge">allPorts</code> : Nombre del archivo. Si no existe lo creará.</p>
+
+<p>De esta manera podremos revisar los puertos que estaban abiertos en cualquier momento.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167393202-bf6a1888-3079-4e22-a786-3a2ac8c9592f.png" alt="Captura de pantalla -2022-05-07 17-32-33" /></p>
+
+<p>Tras conocer los puertos TCP abiertos, realizaremos un segundo escaneo enfocado en los puertos abiertos para ver la información que nos reportan y
+  exportarlo en formato nmap al archivo ‘targed’.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap -sC -sV -n -v -p21,,22,139,445,3632 -oN target
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167393674-9798ac56-230c-4ad8-99cd-4f385aff6c07.png" alt="Captura de pantalla -2022-05-07 17-34-44" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">-sC</code> : Lanza scrips básicos de reconocimiento.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-sV</code> : Localiza la versión y servicio de los puertos definidos.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-p</code> : Puertos a escanear.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-oN</code> : Reporta los resultados en formato nmap al archivo <code class="language-plaintext highlighter-rouge">target</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167393829-bc058509-3ec1-4eab-8997-57e2afb97bc7.png" alt="Captura de pantalla -2022-05-07 17-52-38" /></p>
+
+<p>Vemos que en el puerto 21/tcp corre un servicio ftp con la versión <code class="language-plaintext highlighter-rouge">vsftpd 2.3.4</code>. Vamos a tratar de buscar alguna vulnerabilidad para esta versión 
+en concreto. Para realizar la búsqueda utilizaremos la herramienta <code class="language-plaintext highlighter-rouge">searchsploit</code>. En caso de no tenerlo lo instalamos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install searchsploit
+</code></pre></div></div>
+
+<p>Luego lo ejecutamos y le especificamos la versión para que nos busque el <code class="language-plaintext highlighter-rouge">exploit</code> adecudo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>searchsploit vsftpd
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167394414-f5e72232-7c5b-44bb-8326-7b580addf1b0.png" alt="Captura de pantalla -2022-05-07 17-52-16" /></p>
+
+<p>Vemos como para la versión 2.3.4 existe una herramienta llamada <code class="language-plaintext highlighter-rouge">Backdoor Command Execution (Metasploit)</code> alojado en el PATH <code class="language-plaintext highlighter-rouge">unix/remote/17491.rb</code>.
+Veamos el código a ver que información utiliza para vulnerar está versión:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>searchsploit -x unix/remote/17491.rb
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-x</code> : Para examinar un archivo.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167397809-ad87df83-57fe-40c4-a481-05d6e80623a5.png" alt="Captura de pantalla -2022-05-09 13-07-04" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167397813-ccae4253-80e9-43c6-aea4-28fa99ef8efc.png" alt="Captura de pantalla -2022-05-09 13-07-35" /></p>
+
+<p>Esta herramienta, por lo que parece, usa una serie de cadenas en el usuario para tratar de ganar acceso por el puerto 6200. Yo lo he intentado 
+manualmente y mediante <code class="language-plaintext highlighter-rouge">Metasploit</code> y no he podido acceder mediante esta herramienta.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167398192-d205b407-614e-439e-aa2c-e18d3a6060e3.png" alt="Captura de pantalla -2022-05-09 13-01-26" /></p>
+
+<p>Al ver que esto no funcionaba, busque otro vector de ataque y vemos que por los puertos 139 y 445 corre un servicio <code class="language-plaintext highlighter-rouge">Samba</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167399970-c676bcde-785d-4bea-936f-eaed02ccc5dc.png" alt="Captura de pantalla -2022-05-09 13-17-47" /></p>
+
+<p>Vemos también que en el puerto 445 nos indica la versión <code class="language-plaintext highlighter-rouge">3.0.20</code>, así que buscamos sobre este servicio:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>searchsploit samba 3.0.20
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167399895-d6be29db-a564-4d30-894b-78efb0a9dec4.png" alt="Captura de pantalla -2022-05-09 13-22-01" /></p>
+
+<h2 id="metasploit">Metasploit</h2>
+
+<p>Vamos a tratar de acceder mediante <code class="language-plaintext highlighter-rouge">Metasploit</code> empleando la herramienta reportada anteriormente. En primer lugar, ejecutamos <code class="language-plaintext highlighter-rouge">Metasploit</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>msfconsole
+</code></pre></div></div>
+
+<p>Buscamos la versión de Samba para asegurarnos que tenemos la herramienta y ver donde se aloja:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>search samba 3.0.20
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167402968-186b60cc-f240-4690-9d65-74faea05daa5.png" alt="Captura de pantalla -2022-05-09 13-30-56" /></p>
+
+<p>Ahora, mediante la variable <code class="language-plaintext highlighter-rouge">options</code> podemos ver los campos que tenemos que rellenar para poder realizar el ataque.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167403226-78c7e9b2-a4ab-48a2-b9bd-c0cff8e697e5.png" alt="Captura de pantalla -2022-05-09 13-32-08" /></p>
+
+<p>Para cambiar los campos empleamos la variable <code class="language-plaintext highlighter-rouge">set</code> y el campo que deseamos cambiar. Primero introduciremos el localhost <code class="language-plaintext highlighter-rouge">LHOST</code>, es nuestra IP o en este caso
+la IP de la VPN de Hack the Box:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167403416-26917d45-b54e-4539-90d9-1d40a43bc32e.png" alt="Captura de pantalla -2022-05-09 13-35-27" /></p>
+
+<p>Ahora especificamos el puerto de escucha, yo voy a utilizar el <code class="language-plaintext highlighter-rouge">8080</code>:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167403656-cf7c6037-69b3-46f5-92cc-69c1d2d6126f.png" alt="Captura de pantalla -2022-05-09 13-33-13" /></p>
+
+<p>Ahora especificaremos de la misma manera el remote host <code class="language-plaintext highlighter-rouge">RHSOT</code> en este caso la Ip de la máquina:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167403867-17ecf37e-5e8a-4e41-9403-ff6d701b08b2.png" alt="Captura de pantalla -2022-05-09 13-34-53" /></p>
+
+<p>Y finalmente el puerto abierto <code class="language-plaintext highlighter-rouge">RPORT</code> por el que corre el servicio Samba, en este caso el puerto <code class="language-plaintext highlighter-rouge">139</code>, este campo se suele
+rellenar de forma automática.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167404426-44f0a7d5-57c6-475a-9c11-8079cb1492b4.png" alt="Captura de pantalla -2022-05-09 13-52-53" /></p>
+
+<p>Y finalmente ejecutamos Metasploit:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exploit
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167404633-ab7437bf-1c2d-43a3-8c9e-ee57d00c5337.png" alt="Captura de pantalla -2022-05-09 13-36-49" /></p>
+
+<p>Vemos como nos crea la shell y que a de más estamos registrados como <code class="language-plaintext highlighter-rouge">root</code>.</p>
+
+<p>Finalmente, como estamos registrados como <code class="language-plaintext highlighter-rouge">root</code> podemos buscar las flags sin ningún problema. Vemos que la flag del usuario la 
+podemos encontrar en el directorio <code class="language-plaintext highlighter-rouge">/home/makis/user.txt</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167404984-24576d4e-346f-4162-9f66-57510b3f9616.png" alt="Captura de pantalla -2022-05-09 13-39-09" /></p>
+
+<p>Y que la flag del usuario <code class="language-plaintext highlighter-rouge">root</code> lo podemos encontrar en el directorio <code class="language-plaintext highlighter-rouge">/root/root.txt</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167405126-6bd4e482-5ba2-4c22-b5b3-a88cf3733ecd.png" alt="Captura de pantalla -2022-05-09 13-37-35" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167405180-12c27e0a-f370-4788-baeb-6b725da56e99.png" alt="Captura de pantalla -2022-05-07 18-32-07" /></p>
+
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+<hr />
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

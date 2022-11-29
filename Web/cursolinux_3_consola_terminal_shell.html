@@ -1,0 +1,268 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/cursolinux_3_consola_terminal_shell.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/cursolinux_3_consola_terminal_shell.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Curso Linux: Consola, Terminal y Shell</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+    <!---------------------- Botones de Anterior y Siguiente --------------------------------->
+
+<div id="main-container">
+    <a href="./cursolinux_2_introduccion_conceptos_básicos.html" class="btn btn-anterior-con-titulo">Artículo anterior</a>
+    <a href="./cursolinux_4_usuarios_y_grupos.html" class="btn btn-siguiente-con-titulo">Artículo siguiente</a>
+    <a href="./cursolinux_1.html" class="btn btn-curso-linux">Índice Curso Linux</a>
+  </div>
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!--------------------------------  Letrero Animado  --------------------------------------->      
+ 
+  <svg viewBox="0 0 1320 300">
+
+    <!-- Símbolo -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+        Linux   <!-- Palabra del Letrero-->
+      </text>
+    </symbol>  
+  
+    <!-- Añadir en función de las letras de la palabra -->
+    <use xlink:href="#s-text" class="text"></use><!--1-->
+    <use xlink:href="#s-text" class="text"></use><!--2-->  
+    <use xlink:href="#s-text" class="text"></use><!--3-->
+    <use xlink:href="#s-text" class="text"></use><!--4-->
+    <use xlink:href="#s-text" class="text"></use><!--5-->
+    <use xlink:href="#s-text" class="text"></use><!--6-->
+    <use xlink:href="#s-text" class="text"></use><!--7-->
+    <use xlink:href="#s-text" class="text"></use><!--8-->
+    <use xlink:href="#s-text" class="text"></use><!--9-->
+  </svg>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<li><a href="#item1" style="text-decoration:none">¿Qué es una Consola?</a></li>
+<li><a href="#item2" style="text-decoration:none">¿Qué es una Terminal?</a></li>
+<li><a href="#item3" style="text-decoration:none">¿Qué es una Shell?</a></li>
+
+<p><a name="item1"></a></p>
+<h1 id="qué-es-una-consola">¿Qué es una Consola?</h1>
+
+<p>Una consola hace referencia a un dispositivo electrónico que cuenta con monitor y teclado y que se utiliza para interactuar con un ordenador.</p>
+
+<p>Este dispositivo es un tipo de <code class="language-plaintext highlighter-rouge">terminal físico</code>, una ventana en la que se encuentran activos sus programas en modo texto, un <code class="language-plaintext highlighter-rouge">interfaz o escritorio desde el cual se monitorea y controla un sistema</code>. Básicamente, es una 
+terminal física.</p>
+
+<p>Actualmente, existen las llamadas consolas virtuales, lo que significa que la consola puede ser completamente un software. Además, es bastante común que, en el aspecto práctico, no se establezcan diferencias entre consola y terminal.</p>
+
+<p><a name="item2"></a></p>
+<h1 id="qué-es-un-terminal">¿Qué es una Terminal?</h1>
+
+<p>El concepto o nombre terminal se refiere a un dispositivo para enviar comandos a un ordenador y mostrar su
+respuesta. En el mundo del desarrollo de software, esto corresponde con el programa que emula este dispositivo.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Es un entorno de entrada y salida del texto, el cual emula</code> una GUI, es decir, <code class="language-plaintext highlighter-rouge">una consola</code> en una interfaz gráfica de usuario.</p>
+
+<p>Sistemas como Linux agregaron mejores herramientas encargadas del multiprocesamiento, por lo que <code class="language-plaintext highlighter-rouge">el terminal pasó
+a ser meramente un software</code>.</p>
+
+<p>Los sistemas Linux a menudo cuenta con diversas terminales, por ejemplo en Kali Linux viene por defecto instalada como principal QTerminal, aunque también vienen instaladas terminales como la Powershell, Terminator, etc.</p>
+
+<p>Para abrir la terminal podemos hacerlo de diversas formas, una es dirigirnos al icono que se encuentra arriba a la izquierda:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/189313897-3e9f5c87-4702-4fb5-b257-26b7e6237d6f.png" alt="189310438-eb23610b-af5e-412e-ad7d-1d8928f871f3" /></p>
+
+<p>Otra forma es abrir la barra de búsqueda de Linux, escribir Terminal y nos aparecerá el mismo icono que antes. Y finalmente podemos abrir la terminal mediante
+su atajo de teclado.</p>
+
+<p>Los atajos de teclado son teclas predefinidas con una función, abrir un programa, ejecutar una acción, etc. En este caso pulsado <code class="language-plaintext highlighter-rouge">Ctrl + Alt + T</code> no se abrirá la terminal.</p>
+
+<p>Más adelante veremos como modificar los atajos de teclado para ajustarlo a nuestras necesidades.</p>
+
+<p><a name="item3"></a></p>
+<h1 id="qué-es-shell">¿Qué es una Shell?</h1>
+
+<p>Shell <code class="language-plaintext highlighter-rouge">es la interfaz o programa que interpreta las líneas de comandos</code> (donde se ingresan datos y comandos) <code class="language-plaintext highlighter-rouge">enviadas
+por la terminal</code>. Funciona procesando los comandos e interpretando los resultados, es decir, <code class="language-plaintext highlighter-rouge">toma comandos escritos
+a mano y le transmite al sistema operativo que estos deben ser ejecutados</code>. También, toma secuencia de comandos con el fin de interpretar la lógica entre ellos. Su función principal es la de iniciar otros programas.</p>
+
+<p>Por defecto, Kali Linux siempre ha usado “bash” (también conocido como “Bourne-Again SHell”) como shell predeterminado, cuando abres una terminal o consola.</p>
+
+<p>En este curso veremos y trabajaremos con las dos shells más utilizadas en Linux que son <code class="language-plaintext highlighter-rouge">Bash</code> y <code class="language-plaintext highlighter-rouge">ZSH</code>.</p>
+
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

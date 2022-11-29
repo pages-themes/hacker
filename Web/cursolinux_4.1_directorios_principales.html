@@ -1,0 +1,650 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/cursolinux_4.1_directorios_principales.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/cursolinux_4.1_directorios_principales.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Curso Linux: Directorios</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+
+<!---------------------- Botones de Anterior y Siguiente --------------------------------->
+
+<div id="main-container">
+    <a href="./cursolinux_4_usuarios_y_grupos.html" class="btn btn-anterior-con-titulo">Artículo anterior</a>
+    <a href="./cursolinux_5_comandos_basicos.html" class="btn btn-siguiente-con-titulo">Artículo siguiente</a>
+    <a href="./cursolinux_1.html" class="btn btn-curso-linux">Índice Curso Linux</a>
+  </div>
+    
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!--------------------------------  Letrero Animado  --------------------------------------->      
+ 
+  <svg viewBox="0 0 1320 300">
+
+    <!-- Símbolo -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+        Linux   <!-- Palabra del Letrero-->
+      </text>
+    </symbol>  
+  
+    <!-- Añadir en función de las letras de la palabra -->
+    <use xlink:href="#s-text" class="text"></use><!--1-->
+    <use xlink:href="#s-text" class="text"></use><!--2-->  
+    <use xlink:href="#s-text" class="text"></use><!--3-->
+    <use xlink:href="#s-text" class="text"></use><!--4-->
+    <use xlink:href="#s-text" class="text"></use><!--5-->
+    <use xlink:href="#s-text" class="text"></use><!--6-->
+    <use xlink:href="#s-text" class="text"></use><!--7-->
+    <use xlink:href="#s-text" class="text"></use><!--8-->
+    <use xlink:href="#s-text" class="text"></use><!--9-->
+  </svg>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<li><a href="#item1" style="text-decoration:none">¿Qué es un Directorio?</a></li>
+<li><a href="#item2" style="text-decoration:none">Estructura de Directorios en Linux</a></li>
+<li><a href="#item3" style="text-decoration:none">Directorio Raíz (/)</a></li>
+<li><a href="#item4" style="text-decoration:none">Tipos de Directorio en Linux:</a></li>
+  <ul>
+    <li><a href="#item4.1" style="text-decoration:none">Directorios Compartibles</a></li>
+    <li><a href="#item5" style="text-decoration:none">Directorios No Compartibles</a></li>
+    <li><a href="#item6" style="text-decoration:none">Directorios Variables</a></li>
+    <li><a href="#item7" style="text-decoration:none">Directorios Estáticos</a></li>
+  </ul>
+  
+  <li><a href="#item8" style="text-decoration:none">Directorios Principales:</a></li>
+  
+  <ul>
+    <li><a href="#item9" style="text-decoration:none">Directorio /bin</a></li>
+    <li><a href="#item10" style="text-decoration:none">Directorio /boot</a></li>
+    <li><a href="#item11" style="text-decoration:none">Directorio /dev</a></li>
+    <li><a href="#item12" style="text-decoration:none">Directorio /etc</a></li>
+    <li><a href="#item13" style="text-decoration:none">Directorio /home</a></li>
+    <li><a href="#item14" style="text-decoration:none">Directorio /lib</a></li>
+    <li><a href="#item15" style="text-decoration:none">Directorio /mnt</a></li>
+    <li><a href="#item16" style="text-decoration:none">Directorio /media</a></li>
+    <li><a href="#item17" style="text-decoration:none">Directorio /opt</a></li>
+    <li><a href="#item18" style="text-decoration:none">Directorio /proc</a></li>
+    <li><a href="#item19" style="text-decoration:none">Directorio /root</a></li>
+    <li><a href="#item20" style="text-decoration:none">Directorio /sbin</a></li>
+    <li><a href="#item21" style="text-decoration:none">Directorio /srv</a></li>
+    <li><a href="#item22" style="text-decoration:none">Directorio /tmp</a></li>
+    <li><a href="#item23" style="text-decoration:none">Directorio /usr</a></li>
+    <li><a href="#item24" style="text-decoration:none">Directorio /var</a></li>
+    <li><a href="#item25" style="text-decoration:none">Directorio /sys</a></li>
+    <li><a href="#item26" style="text-decoration:none">Directorio /lost+found</a></li>
+  </ul>
+  
+  <p><a name="item1"></a></p>
+  <h1 id="qué-es-un-directorio">¿Qué es un Directorio?</h1>
+  
+  <p>En informática, <code class="language-plaintext highlighter-rouge">un directorio o carpeta es un contenedor virtual en el que se almacenan una agrupación 
+  de archivos informáticos y otros subdirectorios, atendiendo a su contenido, a su propósito o a cualquier criterio que decida el usuario.</code></p>
+  
+  <p>En Linux los directorios siguen siendo las carpetas de toda la vida, pero en este curso trataremos únicamente la gestión de directorios a través
+  de la terminal, ya que nuestra finalidad es poder gestionar cualquier cosa a través de líneas de comandos.</p>
+  
+  <p><a name="item2"></a></p>
+  <h1 id="estructura-de-directorios-en-linux">Estructura de Directorios en Linux</h1>
+  
+  <p>El estándar de jerarquía del sistema de archivos, también conocido como FHS (Filesystem Hierarchy Standard), es la norma creada por la 
+  comunidad que define los directorios y el contenido de los directorios en los sistemas operativos GNU/Linux y Unix.</p>
+  
+  <p><code class="language-plaintext highlighter-rouge">GNU-Linux dispone de un sistema de directorios completamente estructurado</code>, coherente y estandarizado, obteniendo así las siguientes ventajas:</p>
+  
+  <ul>
+    <li>El software que tenemos instalado en nuestro ordenador sabe en todo momento las carpetas y los permisos de las carpetas de nuestro ordenador. Por 
+  lo tanto, nuestro software en todo momento sabe donde encontrar y almacenar la información que necesita para su funcionamiento.</li>
+    <li>Los usuarios saben en todo momento el contenido que hay en cada una de las carpetas del ordenador.</li>
+    <li>Ayuda a la hora de realizar el mantenimiento de un sistema operativo.</li>
+    <li>Ayuda a otorgar los permisos pertinentes a cada uno de los archivos de nuestro sistema operativo.</li>
+  </ul>
+  
+  <p>El estándar de jerarquía del sistema de archivos es flexible y existe cierta libertad a la hora de aplicar las normas. De hecho, ciertas distribuciones 
+  GNU-Linux introducen modificaciones a la estructura de directorios estándar para adaptarla a sus necesidades.</p>
+  
+  <p><a name="item3"></a></p>
+  <h1 id="directorio-raíz-">Directorio Raíz (/)</h1>
+  
+  <p>El directorio raíz, simbolizado por el símbolo (<code class="language-plaintext highlighter-rouge">/</code>), <code class="language-plaintext highlighter-rouge">es el directorio principal</code> a partir del cual se ramifican todo el resto de directorios.</p>
+  
+  <p>Por lo tanto, podemos decir que el directorio raíz es el contenedor de nuestro sistema operativo, ya que <code class="language-plaintext highlighter-rouge">de él nacen el resto de directorios</code> que
+  tendrá nuestro sistema operativo.</p>
+  
+  <p><img src="https://user-images.githubusercontent.com/103068924/190015184-ca69f912-79d4-4162-9e95-7dd90804e897.png" alt="Captura de pantalla -2022-09-13 23-46-29" /></p>
+  
+  <p>Como todos los demás directorios o archivos descienden de la raíz, la ruta absoluta de cualquier archivo pasa por la raíz. Por ejemplo, si tienes 
+  un archivo en <code class="language-plaintext highlighter-rouge">/home/user/documents</code>, puedes adivinar que la estructura de directorios va desde <code class="language-plaintext highlighter-rouge">root-&gt;home-&gt;user-&gt;documents</code>.</p>
+  
+  <p><a name="item4"></a></p>
+  <h1 id="tipos-de-directorio-en-linux">Tipos de Directorio en Linux:</h1>
+  
+  <p>En GNU-Linux existen distintos tipos de directorios. Los distintos tipos de directorios existentes según su uso son los siguientes:</p>
+  
+  <p><a name="item4.1"></a></p>
+  <h2 id="directorios-compartibles">Directorios Compartibles</h2>
+  
+  <p>Los directorios compartidos <code class="language-plaintext highlighter-rouge">son aquellos directorios que se pueden acceder desde distintos equipos</code>. Por lo tanto, los directorios compartibles son
+  aquellos que <code class="language-plaintext highlighter-rouge">contienen archivos que se pueden usar desde otros equipos</code>.</p>
+  
+  <p>Algunos ejemplos de directorios compartibles son:</p>
+  
+  <p><code class="language-plaintext highlighter-rouge">/var/mail</code>, <code class="language-plaintext highlighter-rouge">/opt</code>, <code class="language-plaintext highlighter-rouge">/home</code>, <code class="language-plaintext highlighter-rouge">/var/www/html</code>, <code class="language-plaintext highlighter-rouge">/usr</code>, etc.</p>
+  
+  <p><a name="item5"></a></p>
+  <h2 id="directorios-no-compartibles">Directorios No Compartibles</h2>
+  
+  <p>Al contrario que los directorios compartibles, los directorios no compartibles <code class="language-plaintext highlighter-rouge">son aquellos directorios que no se pueden compartir y su acceso y
+  modificación están limitados al administrador del sistema</code>. Por lo tanto, los directorios no compartibles contienen archivos que <code class="language-plaintext highlighter-rouge">solo puedes ser 
+  accesibles y modificados por el administrador del sistema</code>.</p>
+  
+  <p>Algunos ejemplos de directorios no compartibles son:</p>
+  
+  <p><code class="language-plaintext highlighter-rouge">/etc</code>, <code class="language-plaintext highlighter-rouge">/boot</code>, <code class="language-plaintext highlighter-rouge">/var/run</code>, etc.</p>
+  
+  <p><a name="item6"></a></p>
+  <h2 id="directorios-variables">Directorios Variables</h2>
+  
+  <p>Son aquellos directorios que <code class="language-plaintext highlighter-rouge">contienen archivos que pueden ser modificados y pueden variar su contenido sin la intervención del administrador del
+  sistema</code>.</p>
+  
+  <p>Algunos ejemplos de directorios variables son:</p>
+  
+  <p><code class="language-plaintext highlighter-rouge">/var/log/messages</code>, <code class="language-plaintext highlighter-rouge">/var/mail</code>, <code class="language-plaintext highlighter-rouge">/var/spool/news</code>, <code class="language-plaintext highlighter-rouge">/home</code>, <code class="language-plaintext highlighter-rouge">/var/run</code>, etc.</p>
+  
+  <p><a name="item7"></a></p>
+  <h2 id="directorios-estáticos">Directorios Estáticos</h2>
+  
+  <p>Son aquellos directorios que <code class="language-plaintext highlighter-rouge">contienen archivos que solo pueden ser modificados con la intervención del administrador del sistema</code>.</p>
+  
+  <p>Algunos ejemplos de directorios estáticos son:</p>
+  
+  <p><code class="language-plaintext highlighter-rouge">/etc/password</code>, <code class="language-plaintext highlighter-rouge">/etc/shadow</code>, <code class="language-plaintext highlighter-rouge">/usr</code>, <code class="language-plaintext highlighter-rouge">/opt</code>, <code class="language-plaintext highlighter-rouge">/etc</code>, <code class="language-plaintext highlighter-rouge">/boot</code>, <code class="language-plaintext highlighter-rouge">/bin</code>, <code class="language-plaintext highlighter-rouge">/sbin</code>, etc.</p>
+  
+  <p><a name="item8"></a></p>
+  <h1 id="directorios-principales">Directorios Principales</h1>
+  
+  <p>Ahora vamos a ver los directorios principales y sus funciones principales. Estos directorios parten de la raíz (<code class="language-plaintext highlighter-rouge">/</code>) y cada uno tiene una función
+  predefinida.</p>
+  
+  <p>En la siguiente imagen podemos ver un breve resumen de cada uno de los directorios principales y sus funciones:</p>
+  
+  <p><img src="https://user-images.githubusercontent.com/103068924/190019663-5673274a-8836-4d0d-bd91-c38a1b542b9d.png" alt="Captura de pantalla -2022-09-14 00-14-18" /></p>
+  
+  <p><a name="item9"></a></p>
+  <h2 id="directorio-bin">Directorio /bin</h2>
+  
+  <p>El directorio <code class="language-plaintext highlighter-rouge">/bin</code> es un directorio estático y compartible en el que <code class="language-plaintext highlighter-rouge">se almacenan archivos binarios/ejecutables necesarios para el funcionamiento
+  del sistema</code>. Estos archivos binarios los pueden usar la totalidad de usuarios del sistema operativo.</p>
+  
+  <p>Algunos de los archivos ejecutables almacenados en el directorio /bin son <code class="language-plaintext highlighter-rouge">cp</code>, <code class="language-plaintext highlighter-rouge">echo</code>, <code class="language-plaintext highlighter-rouge">tar</code>, <code class="language-plaintext highlighter-rouge">cat</code>, <code class="language-plaintext highlighter-rouge">mv</code>, <code class="language-plaintext highlighter-rouge">rm</code>, <code class="language-plaintext highlighter-rouge">ping</code>, <code class="language-plaintext highlighter-rouge">cp</code>, <code class="language-plaintext highlighter-rouge">gzip</code>,
+  <code class="language-plaintext highlighter-rouge">kill</code>, <code class="language-plaintext highlighter-rouge">ls</code>, <code class="language-plaintext highlighter-rouge">ping</code>, <code class="language-plaintext highlighter-rouge">su</code>, etc. Estos archivos son los que nos permiten realizar la gran mayoría de utilidades básicas a través de la terminal
+  Linux.</p>
+  
+  <p>El directorio /bin en ningún caso podrá contener subdirectorios.</p>
+  
+  <p><a name="item10"></a></p>
+  <h2 id="directorio-boot">Directorio /boot</h2>
+  
+  <p>Es un directorio estático no compartible que <code class="language-plaintext highlighter-rouge">contiene la totalidad de archivos necesarios para el arranque del ordenador excepto los archivos de
+  configuración</code>. Algunos de los archivos indispensables para el arranque del sistema que acostumbra a almacenar el directorio <code class="language-plaintext highlighter-rouge">/boot</code> son el kernel y
+  el gestor de arranque Grub.</p>
+  
+  <p>La totalidad de contenido almacenado en el directorio <code class="language-plaintext highlighter-rouge">/boot</code> es el que se utiliza antes de que el Kernel de comience a ejecutar programas en modo 
+  usuario.</p>
+  
+  <p>El directorio /boot puede estar ubicado en su propia partición (partición /boot).</p>
+  
+  <p><a name="item11"></a></p>
+  <h2 id="directorio-dev">Directorio /dev</h2>
+  
+  <p><code class="language-plaintext highlighter-rouge">El sistema operativo Gnu-Linux trata los dispositivos de hardware como si fueran un archivo. Estos archivos que representan nuestros dispositivos de 
+  hardware se hallan almacenados en el directorio /dev.</code></p>
+  
+  <p>Cada vez que nosotros accedemos o usamos un dispositivo de hardware, como puede ser una memoria USB, una impresora, un disco duro externo, un ratón, etc,
+  accedemos al hardware del dispositivo leyendo y escribiendo en el fichero correspondiente ubicado en el directorio <code class="language-plaintext highlighter-rouge">/dev</code>.</p>
+  
+  <p>Algunos de los archivos básicos que podemos encontrar en este directorio son:</p>
+  
+  <ul>
+    <li><code class="language-plaintext highlighter-rouge">cdrom</code>: Representa nuestro dispositivo de CDROM.</li>
+    <li><code class="language-plaintext highlighter-rouge">sda</code>: Representa nuestro disco duro sata.</li>
+    <li><code class="language-plaintext highlighter-rouge">audio</code>: Representa nuestra tarjeta de sonido.</li>
+    <li><code class="language-plaintext highlighter-rouge">psaux</code>: Representa el puerto PS/2.</li>
+    <li><code class="language-plaintext highlighter-rouge">lpx</code>: Representa nuestra impresora.</li>
+    <li><code class="language-plaintext highlighter-rouge">fd0</code>: Representa nuestra disquetera.</li>
+  </ul>
+  
+  <p><a name="item12"></a></p>
+  <h2 id="directorio-etc">Directorio /etc</h2>
+  
+  <p>El directorio <code class="language-plaintext highlighter-rouge">/etc</code> es un directorio estático que <code class="language-plaintext highlighter-rouge">contiene los archivos de configuración del sistema operativo</code>. Este directorio también contiene
+  archivos de configuración para controlar el funcionamiento de diversos programas.</p>
+  
+  <p>Algunos de los archivos de configuración de la carpeta /etc pueden ser sustituidos o complementados por archivos de configuración ubicados en nuestra
+  carpeta personal /home.</p>
+  
+  <p>Este directorio solamente contiene archivos de texto y subdirectorios. Estos subdirectorios también contendrán archivos de configuración para configurar
+  partes de nuestro sistema como por ejemplo:</p>
+  
+  <ul>
+    <li><code class="language-plaintext highlighter-rouge">/etc/apt</code>: Carpeta que contiene ficheros de configuración del gestor de paquetes apt.</li>
+    <li><code class="language-plaintext highlighter-rouge">/etc/opt</code>: Carpeta que contiene los ficheros de configuración para los programas alojados en la carpeta /opt. Algunos programas alojados en esta 
+                carpeta pueden ser Spotify, Google-earth, Google Chrome, Teamviewer, etc.</li>
+    <li><code class="language-plaintext highlighter-rouge">/etc/profile</code>: Carpeta que contiene parámetros de configuración de los usuarios para inicializar la shell o interprete de comandos “terminal”</li>
+    <li><code class="language-plaintext highlighter-rouge">/etc/sgml</code>: Carpeta que contiene los ficheros de configuración para SGML. SGML es un lenguaje que se utiliza para la organización y marcado de
+                 documentos.</li>
+    <li><code class="language-plaintext highlighter-rouge">/etc/X11</code>: Ficheros para la configuración del sistema X Window etc.</li>
+  </ul>
+  
+  <p><a name="item13"></a></p>
+  <h2 id="directorio-home">Directorio /home</h2>
+  
+  <p>El directorio <code class="language-plaintext highlighter-rouge">/home</code> se trata de un directorio variable y compartible. Este directorio <code class="language-plaintext highlighter-rouge">está destinado a alojar la totalidad de archivos personales
+  de los distintos usuarios del sistema operativo a excepción del usuario root</code>. Algunos de los archivos personales almacenados en la carpeta <code class="language-plaintext highlighter-rouge">/home</code>
+  son fotografías, documentos de ofimática, vídeos, etc.</p>
+  
+  <p>Esta carpeta <code class="language-plaintext highlighter-rouge">también contiene los ficheros de configuración de los programas que utilizan cada uno de los usuarios</code> del sistema operativo <code class="language-plaintext highlighter-rouge">a
+  excepción del usuario root</code>.</p>
+  
+  <p>Todos los archivos personales y archivos de configuración que acabamos de mencionar se almacenan en subdirectorios dentro de la carpeta <code class="language-plaintext highlighter-rouge">/home</code>. Así
+  por ejemplo si en nuestro ordenador tenemos 2 usuarios (usuario1 y usuario2) los archivos personales y de configuración del usuario 1 se almacenarán en
+  la ubicación:</p>
+  
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/usuario1
+  </code></pre></div></div>
+  
+  <p>Por otro lado los archivos personales y de configuración del usuario 2 se almacenarán en la carpeta:</p>
+  
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/usuario2
+  </code></pre></div></div>
+  
+  <p>De esta forma los archivos personales y de configuración quedan perfectamente clasificados por usuario.</p>
+  
+  <p>Normalmente el directorio <code class="language-plaintext highlighter-rouge">/home</code> reside un una partición propia, ya que de este modo podremos reinstalar nuestro sistema operativo sin perder nuestros
+  datos personales y manteniendo la configuración antigua.</p>
+  
+  <p>Dentro del directorio <code class="language-plaintext highlighter-rouge">/home</code> encontraremos los directorios principales del usuario: Descargas, Desktop, Imágenes, Música, etc.</p>
+  
+  <p><a name="item14"></a></p>
+  <h2 id="directorio-lib">Directorio /lib</h2>
+  
+  <p>El directorio <code class="language-plaintext highlighter-rouge">/lib</code> es un directorio estático y que puede ser compartible. Este directorio <code class="language-plaintext highlighter-rouge">contiene bibliotecas compartidas que son necesarias para 
+  arrancar los ejecutables que se almacenan en los directorios /bin y /sbin</code>.</p>
+  
+  <p>Este directorio <code class="language-plaintext highlighter-rouge">también contiene módulos del kernel y controladores de drivers</code> que son necesarios durante el inicio del sistema y durante el
+  funcionamiento del sistema operativo.</p>
+  
+  <p><a name="item15"></a></p>
+  <h2 id="directorio-mnt">Directorio /mnt</h2>
+  
+  <p>El directorio <code class="language-plaintext highlighter-rouge">/mnt</code> tiene la finalidad de <code class="language-plaintext highlighter-rouge">albergar los puntos de montaje de los distintos dispositivos de almacenamiento como por ejemplo discos
+  duros externos, particiones de unidades externas, etc</code>.</p>
+  
+  <p>Los medios montados en esta carpeta pueden ser tanto estáticos como variables y por norma general son compartibles.</p>
+  
+  <p><a name="item16"></a></p>
+  <h2 id="directorio-media">Directorio /media</h2>
+  
+  <p>La función del directorio <code class="language-plaintext highlighter-rouge">/media</code> es similar a la del directorio /mnt. Este directorio <code class="language-plaintext highlighter-rouge">contiene los puntos de montaje de los medios extraíbles de
+  almacenamiento como por ejemplo memorias USB, lectores de CD-ROM, unidades de disquete, etc</code>.</p>
+  
+  <p>En el directorio <code class="language-plaintext highlighter-rouge">/media</code> también podemos montar sin ningun tipo de problema medios que montaríamos en el directorio ``/mnt`.</p>
+  
+  <p><a name="item17"></a></p>
+  <h2 id="directorio-opt">Directorio /opt</h2>
+  
+  <p>El contenido almacenado en el directorio <code class="language-plaintext highlighter-rouge">/opt</code> es estático y compartible. <code class="language-plaintext highlighter-rouge">La función de este directorio es almacenar programas que no vienen con
+  nuestro sistema operativo como por ejemplo Spotify, Google-earth, Google Chrome, Teamviewer, etc</code>.</p>
+  
+  <p>Como es un directorio compartible los programas presentes en esta carpeta <code class="language-plaintext highlighter-rouge">pueden ser usados por todos los usuarios del sistema operativo</code>.</p>
+  
+  <p>La función de este directorio es muy similar a la del directorio <code class="language-plaintext highlighter-rouge">/usr/local</code>, pero a diferencia de la carpeta <code class="language-plaintext highlighter-rouge">/usr/local</code> en <code class="language-plaintext highlighter-rouge">/opt</code> se instalan
+  programas que no siguen los estándares para almacenar su contenido en la carpeta <code class="language-plaintext highlighter-rouge">/usr</code>.</p>
+  
+  <p><a name="item18"></a></p>
+  <h2 id="directorio-proc">Directorio /proc</h2>
+  
+  <p>El directorio <code class="language-plaintext highlighter-rouge">/proc</code> se trata de un sistema de archivos virtual. <code class="language-plaintext highlighter-rouge">Este sistema de archivos virtual nos proporciona información acerca de los
+  distintos procesos y aplicaciones que se están ejecutando en nuestro sistema operativo</code>.</p>
+  
+  <p><code class="language-plaintext highlighter-rouge">Para cada uno de los procesos en marcha existe un subdirectorio dentro de la carpeta /proc</code>. Dentro del subdirectorio es donde se almacena esta
+  información.</p>
+  
+  <p>Como curiosidad decir que la totalidad del contenido almacenado en la carpeta /proc no está almacenado en nuestro disco duro. El contenido de este
+  directorio está almacenado en la memoria RAM y el mismo sistema operativo es quien crea y borra el contenido de la carpeta /proc.</p>
+  
+  <p><a name="item19"></a></p>
+  <h2 id="directorio-root">Directorio /root</h2>
+  
+  <p>El directorio <code class="language-plaintext highlighter-rouge">/root</code> se trata de un directorio variable no compartible. <code class="language-plaintext highlighter-rouge">El directorio /root es el directorio /home del administrador del sistema
+  (usuario root)</code>.</p>
+  
+  <p><a name="item20"></a></p>
+  <h2 id="directorio-sbin">Directorio /sbin</h2>
+  
+  <p>El directorio <code class="language-plaintext highlighter-rouge">/sbin</code> se trata de un directorio estático y compartible. <code class="language-plaintext highlighter-rouge">Su función es similar al directorio /bin, pero a diferencia del directorio
+  /bin, el directorio /sbin almacena archivos binarios/ejecutables que solo puede ejecutar el usuario root o administrador del sistema</code>.</p>
+  
+  <p>Los archivos incluidos en el directorio <code class="language-plaintext highlighter-rouge">/sbin</code> son aquellos que son primordiales para el arranque, restauración y reparación del sistema operativo.
+  Algunos de los archivos ejecutables almacenados en este directorio son fsck, init, reboot, shutdown, fastboot, etc.</p>
+  
+  <p>Otros directorios que contienen programas y binarios para la administración del sistema son el <code class="language-plaintext highlighter-rouge">/usr/bin</code> y el <code class="language-plaintext highlighter-rouge">/usr/local/sbin</code>.</p>
+  
+  <p><a name="item21"></a></p>
+  <h2 id="directorio-srv">Directorio /srv</h2>
+  
+  <p>El directorio <code class="language-plaintext highlighter-rouge">/srv</code> se usa para almacenar directorios y datos que usan ciertos servidores que podamos tener instalados en nuestro ordenador.</p>
+  
+  <p>Algunos de los servidores que almacenan datos en el directorio <code class="language-plaintext highlighter-rouge">/srv</code> son:</p>
+  
+  <ul>
+    <li>Servidor web apache en el directorio <code class="language-plaintext highlighter-rouge">/srv/www</code>.</li>
+    <li>Cualquier servidor ftp en la ubicación <code class="language-plaintext highlighter-rouge">/srv/ftp</code>.</li>
+    <li>Un servidor CVS.</li>
+    <li>Etc.</li>
+  </ul>
+  
+  <p><a name="item22"></a></p>
+  <h2 id="directorio-tmp">Directorio /tmp</h2>
+  
+  <p><code class="language-plaintext highlighter-rouge">El directorio /tmp es es donde se crean y se almacenan los archivos temporales y las variables que los programas puedan funcionar de forma adecuada.</code></p>
+  
+  <p>Generalmente los sistemas operativos vacían el directorio <code class="language-plaintext highlighter-rouge">/tmp</code> cada vez que reiniciamos el ordenador. En el caso que no sea así es recomendable
+  vaciar cada cierto el contenido de esta carpeta.</p>
+  
+  <p><a name="item23"></a></p>
+  <h2 id="directorio-usr">Directorio /usr</h2>
+  
+  <p>El directorio <code class="language-plaintext highlighter-rouge">/usr</code> es un directorio compartido y estático. <code class="language-plaintext highlighter-rouge">Este directorio es el que contiene la gran mayoría de programas instalados en nuestro
+  sistema operativo</code>.</p>
+  
+  <p>Todo el contenido almacenado en la carpeta <code class="language-plaintext highlighter-rouge">/usr</code> es accesible para todos los usuarios y su contenido es solo de lectura.</p>
+  
+  <p>El directorio <code class="language-plaintext highlighter-rouge">/usr</code> contiene una serie de subdirectorios que acostumbran a almacenar la siguiente información:</p>
+  
+  <ul>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">/usr/bin</code>: Subdirectorio que almacena los archivos ejecutables del software que tenemos almacenado en nuestro ordenador.</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">/usr/include</code>: Subdirectorio que incluye la totalidad de archivos de cabecera que necesita el software instalado en nuestro sistema operativo para
+                    que funcione de forma adecuada.</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">/usr/lib</code>: Subdirectorio que incluye bibliotecas compartidas y ficheros binarios que únicamente pueden ser ejecutados por el administrador del
+                sistema.</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">/usr/local</code>: GNU-Linux es un sistema operativo diseñado para ser usado en entornos de red. Por lo tanto es posible que el directorio /usr no esté
+                  instalado localmente en nuestro y esté en un servidor. En estos casos existe el directorio /usr/local que está destinado a alojar los
+                  programas que instala localmente el administrador del sistema. Este directorio está protegido de las actualizaciones automáticas de
+                  todo el sistema operativo y tiene una estructura de directorios muy similar a la del directorio /usr.</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">/usr/sbin</code>: Directorio que contiene archivos binarios para la administración del nuestro equipo no esenciales para el proceso de arranque ni para
+                 reparar el ordenador. Estos archivos binarios almacenados en la carpeta /usr/sbin solamente pueden ser usados por el administrador del
+                 sistema. Algunos de estos archivos binarios no críticos para administrar el sistema operativo pueden ser por ejemplo varios demonios
+                 para diversos servicios de red, xcalib para calibrar el color de nuestro monitores, etc.</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">/usr/share</code>: En el directorio /usr/share encontramos archivos de texto compartibles que son independientes de la arquitectura del sistema operativo.
+                  En este directorio podemos encontrar por ejemplo los archivos de ayuda como por ejemplo los documentos info y las páginas de man,
+                  ficheros de configuración, imágenes, iconos, themes, etc.</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">/usr/src</code>: En el directorio /usr/src normalmente encontramos el código fuente de algunas aplicaciones y del kernel que tenemos instalado en nuestro
+                sistema operativo.</p>
+    </li>
+  </ul>
+  
+  <p><a name="item24"></a></p>
+  <h2 id="directorio-var">Directorio /var</h2>
+  
+  <p><code class="language-plaintext highlighter-rouge">El directorio /var contiene archivos de datos variables y temporales como por ejemplo los registros del sistema (logs), los registros de programas que
+  tenemos instalados en el sistema operativo, archivos spool, etc.</code></p>
+  
+  <p>La principal función del directorio <code class="language-plaintext highlighter-rouge">/var</code> es la detectar problemas y solucionarlos. Se recomienda ubicar el directorio <code class="language-plaintext highlighter-rouge">/var</code> en una partición 
+  propia, y en caso de no ser posible es recomendable ubicarlo fuera de la partición raíz.</p>
+  
+  <p>Algunos de los subdirectorios importantes que están dentro de la carpeta <code class="language-plaintext highlighter-rouge">/var</code> son los siguientes:</p>
+  
+  <ul>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">/var/cache</code>: Subdirectorio pensado para almacenar datos de aplicaciones en modo cache. Un ejemplo de lo que acabo de citar es apt-get. En el momento
+                  de instalar una aplicación con apt-get se almacena una copia del paquete binario instalado en la ubicación /var/cache/apt/archives/.
+                  Así en el caso que desinstalaramos el programa y quisiéramos volver instalarlo no seria necesario descargar el fichero binario de nuevo
+                  y la instalación seria inmediata.</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">/var/lib</code>: En este subdirectorio encontramos información sobre el estado de las aplicaciones. Este directorio también contiene bases de datos del
+                sistema.</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">/var/lock</code>: Directorio en el que se hallan los archivos de bloqueo que crean ciertos programas. La función de los archivos de bloqueo creados por
+                  algunos programas, como por ejemplo un servidor web, es evitar que ciertos recursos sean usados por otros programas que no sean el
+                  propio servidor web. En el momento de cerrar la aplicación que ha generado el archivo de bloqueo, el archivo de bloqueo desaparece.</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">/var/log</code>: En el directorio /var/log se encuentran de forma clasificada gran parte de los registros de nuestros programas y del sistema 
+                operativo.
+                Este directorio es muy importante ya que en caso de problemas, el administrador del sistema lo puede consultar para intentar averiguar la
+                causa del problema. Los log o registros se encuentran perfectamente clasificados, así por lo tanto si queremos consultar los registros
+                generados por el kernel tendremos que consultar el archivo <code class="language-plaintext highlighter-rouge">/var/log/messages</code>, si queremos consultar los accesos a nuestro sistema
+                operativo podemos consultar el archivo <code class="language-plaintext highlighter-rouge">/var/log/wtmp</code>, etc.</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">/var/mail</code>: Directorio en el que se ubican los archivos de correo electrónico de cada uno de los usuarios del servidor de mail. También es posible
+                 ubicar nuestros archivos de correo electrónico en la partición /home.</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">/var/opt</code>: En el directorio /var/opt se almacenan datos variables que utilizan los programas instalados en la ubicación /opt.</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">/var/run</code>: El directorio /var/run contiene información de la sesión que estamos ejecutando. Ejemplos de la información que contienen los archivos 
+                de esta carpeta son los demonios que están en ejecución, los usuarios que están logueados, los procesos que están activos, etc.</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">/var/spool</code>: Directorio que almacena archivos que controlan la tareas pendientes de realizar. Así por ejemplo en el directorio <code class="language-plaintext highlighter-rouge">/var/spool/cups</code>
+                  encontraremos los archivos que gestionan los trabajos de impresión en espera, en el directorio <code class="language-plaintext highlighter-rouge">/var/spool/cron</code> encontraremos los
+                  archivos que gestionan las tareas planificadas pendientes de ejecutar, etc.</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">/var/tmp</code>: Directorio que al igual que el directorio /tmp contiene archivos temporales. La principal diferencia entre los directorios <code class="language-plaintext highlighter-rouge">/var/tmp</code> y
+                <code class="language-plaintext highlighter-rouge">/tmp</code> es que los archivos temporales ubicados en la carpeta /tmp se acostumbran a borrar automáticamente entre sesiones o reinicios
+                del sistema, mientras que los archivos temporales ubicados en el directorio /var/tmp no lo hacen.</p>
+    </li>
+  </ul>
+  
+  <p><a name="item25"></a></p>
+  <h2 id="directorio-sys">Directorio /sys</h2>
+  
+  <p>Directorio que contiene información similar a la del directorio <code class="language-plaintext highlighter-rouge">/proc</code>. <code class="language-plaintext highlighter-rouge">Dentro de esta carpeta podemos encontrar información estructurada y
+  jerárquica acerca del kernel de nuestro equipo, de nuestras particiones y sistemas de archivo, de nuestros drivers, etc</code>.</p>
+  
+  <p><a name="item26"></a></p>
+  <h2 id="directorio-lostfound">Directorio /lost+found</h2>
+  
+  <p><code class="language-plaintext highlighter-rouge">Directorio que se crea en las particiones de disco con un sistema de archivos ext después ejecutar herramientas para restaurar y recuperar el sistema
+  operativo como por ejemplo fsch</code>.</p>
+  
+  <p>Si nuestro sistema no ha presentado problemas este directorio estará completamente vacío. <code class="language-plaintext highlighter-rouge">En el caso que hayan habido problemas este directorio
+  contendrá ficheros y directorios que han sido recuperados tras la caída del sistema operativo</code>.</p>
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

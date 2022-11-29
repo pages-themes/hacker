@@ -1,0 +1,13 @@
+User-Agent: *
+
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /.github/
+Disallow: /_sass/
+Disallow: /assets/
+Disallow: /script/
+Disallow: /js/
+Sitemap: https://f1r0x.github.io/sitemap.xml
+
+
+

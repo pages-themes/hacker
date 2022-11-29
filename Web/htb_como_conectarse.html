@@ -1,0 +1,259 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Blog sobre informática Y ciberseguridad.</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<h1 id="como-conectarse-a-las-máquinas-de-hack-the-box-por-vpn">Como conectarse a las máquinas de Hack the Box por VPN:</h1>
+
+<p><a href="https://www.hackthebox.com/" style="text-decoration:none">https://www.hackthebox.com/</a></p>
+
+<p>En este artículo os mostraré como conectarse a cualquier servicio de HTB (Hack The Box) a través de sus VPN.
+HTB utiliza VPN para los distintos servicios que se utilizan. Resumiendo, las <code class="language-plaintext highlighter-rouge">starting_points</code>  utilizan una VPV, las <code class="language-plaintext highlighter-rouge">máquinas</code> usan otras
+y así con cada uno de los distintos grupos de servicio que ofrecen, como su <code class="language-plaintext highlighter-rouge">academia</code>, los <code class="language-plaintext highlighter-rouge">battlegrounds</code>, etc.</p>
+
+<p>En primer lugar, debemos estar registrados en la plataforma, la plataforma ofrece una gran cantidad de máquinas gratuitas, y luego, también nos ofrece
+distintas versiones de pago, las cuales ofrecen grandes ventajas, mayor número de máquinas, nos da la opción de realizar máquinas retiradas, más clases
+y muchas otros productos. Todo esto lo podemos ver en la misma página de inicio de Hack the Box.</p>
+
+<p>Para conectarnos con HTB primero tendremos que descargarnos un archivo .ovpn que HTB nos proporcionará. Para ello, desde nuestra página, una vez hemos
+ingresado, nos dirigimos al boton que se encuentra arriba a la derecha que pone <code class="language-plaintext highlighter-rouge">Connect to HTB</code>:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/165812472-cdb9d43e-6d38-4b5a-a0bb-ec6a693ff456.png" alt="Captura de pantalla -2022-04-28 18-51-22" /></p>
+
+<p>Dependiendo del tipo de servicio que queremos realizar, nos descargamos una u otra, en el caso de querer realizar una máquina nos descargaremos
+el archivo de la pestaña <code class="language-plaintext highlighter-rouge">máquinas</code>, en nuestro caso, como estamos empezando, primero realizaremos las máquinas de introducción que son las
+<code class="language-plaintext highlighter-rouge">starting_points</code>, para ello entramos en su pestaña:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/165812514-d2253d16-2e15-406c-b542-32a1c105d596.png" alt="Captura de pantalla -2022-04-28 18-51-59" /></p>
+
+<p>Si disponemos de una máquina Linux o de algún entorno virtual (Virtual Box, VMware,etc) desde el cual vamos a acceder (ya sea con ParrotOS, Kali, Arch o
+cualquier distribución Linux) nos descargaremos la versión <code class="language-plaintext highlighter-rouge">OpenVPN</code>:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/165812546-e2978df3-8819-4df2-a43c-34e70224e983.png" alt="Captura de pantalla -2022-04-28 18-53-02" /></p>
+
+<p>Aquí simplemente establecemos nuestra región, que nos conectamos a través de una VPN y que vamos a utilizar el protocolo <code class="language-plaintext highlighter-rouge">UDP</code> (En caso de no funcionaros 
+probar el protocolo TCP), luego presionamos <code class="language-plaintext highlighter-rouge">Download VPN</code>:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/165812567-2c3715ba-0f4f-44c1-9c34-d6fee4ca88f8.png" alt="Captura de pantalla -2022-04-28 18-53-31" /></p>
+
+<p>Una vez descargado nuestro archivo <code class="language-plaintext highlighter-rouge">.ovpn</code>, abrimos una terminal, nos dirigimos al directorio donde se nos haya descargado el archivo, y yo aconsejo
+crearse un directorio específico para los distintos archivos <code class="language-plaintext highlighter-rouge">.ovpn</code> que HTB nos va proporcionando para los distintos servicios.</p>
+
+<p>Ahora solo faltaría ejecutar el siguiente comando:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo openvpn starting_Ponint_Firox.ovpn
+</code></pre></div></div>
+
+<p>sudo :  Nos permite actuar como root, y por tanto, tenemos todos los privilegios.</p>
+
+<p>openvpn : Ejecuta la orden de abrir la VPN</p>
+
+<p>starting_point_firox.ovpn : Es el archivo que nos hemos descargado.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/165812615-c019f96b-b8af-4de5-87e9-2dba400611bd.png" alt="Captura de pantalla -2022-04-28 18-55-55" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/165812637-ffc50713-0add-4623-8a12-9be4142545c7.png" alt="Captura de pantalla -2022-04-28 18-56-46" /></p>
+
+<p>En la parte final, nos reporta que la conexión se ha realizado de forma correcta. No debemos cerrar esta terminal mientras estemos trabajando con 
+la máquina, ya que si cerramos la terminal perdemos la conexión con la VPN y, por tanto, no podremos comunicarnos con la máquina.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/165812667-5ce72375-b7db-48bc-96ae-6461639984a1.png" alt="Captura de pantalla -2022-04-28 18-57-09" /></p>
+
+<p>Veremos que el botón anterior se nos abra puesto en verde indicándonos a que servicio de VPN estamos conectados:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/165812691-802d5ceb-41cf-40e8-b1de-d9c790a89081.png" alt="Captura de pantalla -2022-04-28 18-57-29" /></p>
+
+<p>Finalmente, par iniciar una máquina, simplemente pulsamos la <code class="language-plaintext highlighter-rouge">máquina</code> o <code class="language-plaintext highlighter-rouge">startging_point</code> que queramos realizar, comprobamos que la VPN está bien 
+conectada (Primer tick verde) y luego pulsamos <code class="language-plaintext highlighter-rouge">Spawn Machine</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/165812720-dde2f00b-839a-4341-a4c9-466e18c2d703.png" alt="Captura de pantalla -2022-04-28 18-58-18" /></p>
+
+<p>Una vez realizada la conexión, nos reportará la <code class="language-plaintext highlighter-rouge">Ip</code> de la máquina que vamos a explotar.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/165812758-4e6bdec9-f163-42b0-b1ab-a3f7a19a5822.png" alt="Captura de pantalla -2022-04-28 19-00-08" /></p>
+
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-id-badge" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+<a href="./contacto.html"">
+<div class="option">
+<i class="far fa-address-card" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+<hr />
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

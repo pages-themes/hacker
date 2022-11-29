@@ -1,0 +1,819 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/cursopython.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/cursopython.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Curso Python</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!--------------------------------  Letrero Animado  --------------------------------------->      
+ 
+  <svg viewBox="0 0 1320 300">
+
+    <!-- Símbolo -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+        Python   <!-- Palabra del Letrero-->
+      </text>
+    </symbol>  
+  
+    <!-- Añadir en función de las letras de la palabra -->
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+  </svg>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<h1 id="índice">Índice:</h1>
+
+
+  <li><a href="#item1" style="text-decoration:none">1.1 ¿Qué es Python?</a></li>
+  <li><a href="#item2" style="text-decoration:none">1.2 Ventajas de programar en Python.</a></li>
+  <li><a href="#item3" style="text-decoration:none">1.3 Programas Necesarios para programar en Python.</a></li>
+  <li><a href="#item4" style="text-decoration:none">1.3 Interprete de Python.</a></li>
+  <li><a href="#item5" style="text-decoration:none">1.3 Editor de Código.</a></li>
+  <li><a href="#item6" style="text-decoration:none">1.4 Dinámica de trabajo.</a></li>
+  <li><a href="#item7" style="text-decoration:none">2.1 Crear Nuestro Primer Programa: Hello World.</a></li>
+  <li><a href="#item8" style="text-decoration:none">2.2 Tipos de Data en Python: Datatypes.</a></li>
+  <li><a href="#item9" style="text-decoration:none">2.2 Variables.</a></li>
+  <li><a href="#item10" style="text-decoration:none">2.2 Listas.</a></li>
+  <li><a href="#item11" style="text-decoration:none">2.2 Función print().</a></li>
+  <li><a href="#item12" style="text-decoration:none">2.2 Definir una función.</a></li>
+
+
+<p><a name="item1"></a></p>
+<h2 id="qué-es-python">¿Qué es Python?</h2>
+
+<p>Es un lenguaje de programación multiplataforma, que se destaca por su código legible y limpio. Su licencia es de código abierto y
+permite su utilización en cualquier escenario. Esto hace que sea uno de los lenguajes de iniciación de muchos programadores. Permite y agiliza, entre otras de
+sus características, la automatización de procesos y ejecución de tareas tanto en entorno de cliente como de servidor.</p>
+
+<p>Un lenguaje sencillo, legible y elegante que atiende a un conjunto de reglas que hacen muy corta su curva de aprendizaje. Esto hace de Python un lenguaje 
+práctico que permite ahorrar mucho tiempo.</p>
+
+<p><a name="item2"></a></p>
+<h2 id="ventajas-de-programar-en-python">Ventajas de programar en Python:</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Simplificado y rápido</code> : Este lenguaje simplifica mucho la programación, es un gran lenguaje para scripting.</li>
+  <li><code class="language-plaintext highlighter-rouge">Elegante y flexible</code> : El lenguaje ofrece muchas facilidades al programador al ser fácilmente legible e interpretable.</li>
+  <li><code class="language-plaintext highlighter-rouge">Programación productiva</code> : Es sencillo de aprender, con una curva de aprendizaje moderada. Es muy fácil comenzar a programar y fomenta la productividad.</li>
+  <li><code class="language-plaintext highlighter-rouge">Ordenado y limpio</code> : Es muy legible y sus módulos están bien organizados.</li>
+  <li><code class="language-plaintext highlighter-rouge">Portable</code> : Es un lenguaje muy portable. Podemos usarlo en prácticamente cualquier sistema de la actualidad.</li>
+  <li><code class="language-plaintext highlighter-rouge">Comunidad</code> : Cuenta con un gran número de usuarios. Su comunidad participa activamente en el desarrollo del lenguaje.</li>
+</ul>
+
+<p><a name="item3"></a></p>
+<h2 id="programas-necesarios-para-programar-en-python">Programas Necesarios para programar en Python:</h2>
+
+<p><a name="item4"></a></p>
+<h3 id="interprete-de-python">Interprete de Python:</h3>
+
+<p>Para poder programar en Python vamos a necesitar dos programas, primero vamos a necesitar un intérprete de Python, que es el encargado a que nuestro ordenador 
+(o cualquier dispositivo compatible) pueda entender Python. Podemos descargarlo desde su página oficia.</p>
+
+<ul>
+  <li>Descargar Intérprete de Python –&gt; <a href="https://www.python.org" style="text-decoration:none">Link</a></li>
+</ul>
+
+<!-- <p><img src="https://user-images.githubusercontent.com/103068924/172308453-711064dc-8f05-493c-aae0-35ec9ff0c91a.png" alt="Python" /></p> -->
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172308502-1700286d-5bdf-43ee-9ef5-f8ffa710a10a.png" alt="Python1" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172308571-f82b909d-8257-4007-a20e-c171fdd669fa.png" alt="Screenshot 2022-06-07 080832" /></p>
+
+<p>Una vez descargado, ejecutamos el archivo de instalación <code class="language-plaintext highlighter-rouge">.exe</code>. La instalación es muy simple, lo primero que veremos al desplegarse la ventana de instalación
+es el botón de <code class="language-plaintext highlighter-rouge">Install Now</code>, pero antes de pulsarlo debéis activar las casillas inferiores. Tanto la que nos permite utilizar el programa a todos los usuarios
+(que viene activada de forma predeterminada) como la <code class="language-plaintext highlighter-rouge">Add Python to PATH</code> que nos permitira trabajar con python desde la Terminal.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172308587-e7df641c-27a2-47be-911c-5862ff6d56ee.png" alt="Screenshot 2022-06-07 081039" /></p>
+
+<p>Para comprobar que la instalación se ha completado correctamente, abrimos la terminal de Windows (Cntl + r y escribimos <code class="language-plaintext highlighter-rouge">cmd</code>) y ejecutamos el siguiente
+comando:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python --version
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172308937-2c0fa1f1-0db2-4daa-9f94-52f726fe9c03.png" alt="Screenshot 2022-06-07 081356" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172308954-64a67a3b-0e13-4ae3-8e00-6961cedb114d.png" alt="Screenshot 2022-06-07 081534" /></p>
+
+<p>Si la instalación se ha realizado correctamente, nos debería de mostrar la versión de Python instalada. También podemos comprobar que funciona correctamente 
+ejecutando el mismo Python:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172308797-7e9e4948-32d6-4803-9388-ab777e8bcff5.png" alt="Screenshot 2022-06-07 081426" /></p>
+
+<p>Ahora nuestra terminal está lista para interpretar código Python. Podemos comprobarlo actuando algún cálculo simple. <code class="language-plaintext highlighter-rouge">Ej:</code> 2 + 2 y debería reportarnos 4.
+Para volver a la Terminal de Windows introducimos el comando <code class="language-plaintext highlighter-rouge">exit()</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172309096-65bee0fe-46ac-405c-a439-4d9033e45735.png" alt="Screenshot 2022-06-07 081636" /></p>
+
+<p><a name="item5"></a></p>
+<h3 id="editor-de-código">Editor de Código:</h3>
+
+<p>El segundo programa que vamos a necesitar va a ser el encargado de ayudarnos a escribir el código de Python, estos programas se conocen como <code class="language-plaintext highlighter-rouge">editores de código</code>
+y existe una gran variedad. Nosotros vamos a usar Visual Estudio Code, ya que es el editor más empleado actualmente.</p>
+
+<ul>
+  <li>Descargar Editor de Código –&gt; <a href="https://code.visualstudio.com" style="text-decoration:none">Link</a></li>
+</ul>
+
+<p><img class="img-python1" src="https://user-images.githubusercontent.com/103068924/172309670-a8876ac3-f000-4a76-a14b-dacd01f490e2.png" alt="Screenshot 2022-06-07 081905" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172309684-10c1bb86-6ec2-44f0-ba6d-a12b86671d96.png" alt="Screenshot 2022-06-07 081932" /></p>
+
+<p>Al igual que la instalación anterior, esta también es muy sencilla y debemos de fijarnos básicamente en lo mismo. Una vez descargado el archivo de instalación
+<code class="language-plaintext highlighter-rouge">.exe</code> simplemente lo ejecutamos, una vez inicie la instalación, pulsamos siguiente hasta llegar al apartado <code class="language-plaintext highlighter-rouge">Seleccione Tareas Adicionales</code> y debemos de 
+activar la opción de <code class="language-plaintext highlighter-rouge">Agregar a PATH (disponible después de reiniciar)</code>, está opción nos permitirá trabajar desde la Terminal con el Editor de Código.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172309723-8a3cea41-73ff-42be-9228-e3c4178f5219.png" alt="Screenshot 2022-06-07 082001" /></p>
+
+<p><a name="item6"></a></p>
+<h3 id="dinámica-de-trabajo">Dinámica de trabajo:</h3>
+
+<p>Una vez tengamos los dos programas instalados ya podemos empezar a trabajar. Básicamente, escribiremos nuestro código mediante el <code class="language-plaintext highlighter-rouge">Editor de Código</code> (en este caso
+mediante Visual Estudio Code) y lo ejecutaremos utilizando el <code class="language-plaintext highlighter-rouge">Interprete</code>.</p>
+
+<center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png" /></center>
+
+<p><a name="item7"></a></p>
+<h2 id="crear-nuestro-primer-programa-hello-world">Crear Nuestro Primer Programa: Hello World</h2>
+
+<p>Para empezar, vamos a crearnos una carpeta desde la cual trabajar. Creamos una carpeta llamada <code class="language-plaintext highlighter-rouge">Curso_Python</code> en nuestro escritorio. Tras crear la carpeta, abrimos
+el Visual Estudio Code, y en la parte superior izquierda pulsamos <code class="language-plaintext highlighter-rouge">File</code> luego <code class="language-plaintext highlighter-rouge">Open Folder</code> y abrimos nuestra carpeta <code class="language-plaintext highlighter-rouge">Curso_Python</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172322112-c71bfbf5-234b-427b-8673-ba4b92ad0158.png" alt="Screenshot 2022-06-07 093039" /></p>
+
+<p>Una vez abierta la carpeta, veremos como se nos muestra en modo menú en la parte izquierda de la pantalla. Ahora vamos a generar un archivo dentro de nuestra
+carpeta, para ello nos dirigimos al menú de nuestra carpeta (arriba izquierda) y pulsamos <code class="language-plaintext highlighter-rouge">New File</code>, llamaremos al archivo <code class="language-plaintext highlighter-rouge">helloworld.py</code>.</p>
+
+<p><img class="img-python2" src="https://user-images.githubusercontent.com/103068924/172323550-4e75bc78-2be4-44fb-8203-6bd7c72575d2.png" alt="Screenshot 2022-06-07 093905" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172323598-87f8ddba-e724-4a17-815e-2bb410d3e5c8.png" alt="Screenshot 2022-06-07 093558" /></p>
+
+<p>Para que nuestro programa funcione y que los dispositivos identifiquen que este archivo contiene código Python, debemos usar la extensión <code class="language-plaintext highlighter-rouge">.py</code>, ya que sin
+ella los archivos no se ejecutaran.</p>
+
+<p>Una vez creado nuestro archivo helloworld.py, vamos a tratar de crear un programa super simple que nos devuelva la frase <code class="language-plaintext highlighter-rouge">Hello World</code>. En primer lugar, vamos 
+a introducir un comentario para en un futuro poder saber de qué trata el programa. Los comentarios son muy útiles para programas con códigos largos o cuando 
+trabajamos con otras personas y queremos dejar notas sobre las cuestiones que veamos oportunas reportar. Los comentarios solo aparecen en el código, no serán 
+interpretados al ejecutar el programa.</p>
+
+<p>Para introducir un comentario simplemente colocamos el signo <code class="language-plaintext highlighter-rouge">#</code> seguido del comentario en cuestión. En nuestro caso vamos a especificar que es nuestro primer
+programa, para ello escribimos <code class="language-plaintext highlighter-rouge"># Este es mi primer programa.</code></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172324207-560066ef-fa6a-40e8-8ad1-8bbd771681a3.png" alt="Screenshot 2022-06-07 094110" /></p>
+
+<p>Bien, ya hemos visto como se incorporan los comentarios, ahora vamos con la sintaxis del código. La finalidad de nuestro programa es que cuando lo
+ejecutemos, nos reporte la frase <code class="language-plaintext highlighter-rouge">Hello World</code>. Para ello vamos a ver nuestro primer concepto que son las palabras claves. Python utiliza estas palabras clave o
+argumentos que tiene predefinidas para realizar una serie de acciones. El argumento que nosotros vamos a necesitar para <code class="language-plaintext highlighter-rouge">Imprimir</code> nuestra frase es <code class="language-plaintext highlighter-rouge">print()</code>.</p>
+
+<p><code class="language-plaintext highlighter-rouge">print()</code> : Se usa para imprimir en pantalla. En caso de no establecer nada, Python lo interpretará como un salto de línea (al igual que si pulsáramos Enter
+en un editor de texto.).</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Este es mi primer programa
+</span><span class="k">print</span><span class="p">(</span><span class="s">"Hello World"</span><span class="p">)</span>   
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172324659-5ed6319d-a447-44e2-87d7-2d36295f1a84.png" alt="Screenshot 2022-06-07 094243" /></p>
+
+<p>Finalmente, para guardar nuestro proyecto podemos dirigirnos a <code class="language-plaintext highlighter-rouge">File</code> y <code class="language-plaintext highlighter-rouge">Save</code> o utilizando el atajo <code class="language-plaintext highlighter-rouge">Ctrl + s</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172325296-bb9cc111-561f-4551-9ae9-244d491be338.png" alt="Screenshot 2022-06-07 094551" /></p>
+
+<p>Como veis debemos de introducir el texto entre comillas ya sean dobles o simples. ¿Ya tendríamos nuestro primer mini programa creado, fácil verdad? El siguiente
+paso será ejecutarlo.</p>
+
+<p>Para ejecutar nuestro programa lo primero que debemos de hacer es abrir una Terminal. Para abrir la Terminal de Windows (Cntl + r y escribimos <code class="language-plaintext highlighter-rouge">cmd</code>). Una vez
+abierta la Terminal debemos dirigirnos a la carpeta creada al principio, que es donde se encuentra nuestro programa <code class="language-plaintext highlighter-rouge">helloworld.py</code>. Para desplazarnos entre 
+directorios empleamos el comando <code class="language-plaintext highlighter-rouge">cd</code> seguido de la ruta de nuestra carpeta.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /Desktop/Curso_Python/
+
+cd /Escritorio/Curso_Python/
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172326102-b18c884d-8f1d-4853-bd3c-11fab0bb6544.png" alt="Screenshot 2022-06-07 094954" /></p>
+
+<p>Una vez estemos en nuestro directorio, podemos ver los archivos que contiene mediante el comando <code class="language-plaintext highlighter-rouge">dir</code> y vemos nuestro archivo <code class="language-plaintext highlighter-rouge">helloworld.py</code>. Para ejecutar el
+programa, simplemente escribimos el comando <code class="language-plaintext highlighter-rouge">python</code> seguido de nuestro programa.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python helloworld.py
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172326672-f53e35aa-498d-49ae-81f4-f175400f30d6.png" alt="Screenshot 2022-06-07 095305" /></p>
+
+<p>Como podéis ver nos reporta nuestra frase. En caso de tener dudas con los parámetros que vamos viendo, podéis revisarlos con el parámetro ayuda <code class="language-plaintext highlighter-rouge">-h</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python -h
+</code></pre></div></div>
+
+<p>Puede parecer muy confuso al principio, pero en un futuro puede resolverte pequeñas dudas.</p>
+
+<center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png" /></center>
+
+<p><a name="item8"></a></p>
+<h1 id="tipos-de-data-en-python-datatypes">Tipos de Data en Python: Datatypes</h1>
+
+<p>Vamos a tratar de establecer algún concepto más, ya hemos visto la capacidad de imprimir frases como la de “Hello World”, a cada letra o símbolo incluido dentro
+de la frase (incluidos los espacios) se les conoce como <code class="language-plaintext highlighter-rouge">caracteres</code> y al conjunto de estos caracteres se le conoce como <code class="language-plaintext highlighter-rouge">string</code>. Cuando cambiamos cualquier 
+carácter, ya sea un espacio, una letra minúscula por una mayúscula o incluir cualquier signo, Pyhton interpreta que es un string diferente.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Por Ejemplo</code> : “Hello World” y “hello World” serían dos strings diferentes, ya que la primera letra no es igual.</p>
+
+<p>Otra cosa que debemos tener en cuenta es que podemos establecer varios strings diferenciándolos únicamente por el tipo de comillas. A continuación podemos ver 
+ejemplos de diferentes strings en función del tipo de comillas.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'Hello World'
+"Hello World"
+'''Helo World'''
+"""Hello World"""
+</code></pre></div></div>
+
+<p>Como podéis ver, existen varias formas de nombrar un <code class="language-plaintext highlighter-rouge">string</code>, pero como podemos saber que interpreta Pyhton como un string? Muy fácil, para ello volvemos a la 
+Terminal, ejecutamos Python:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python
+</code></pre></div></div>
+
+<p>Y vamos a suponer que queremos saber si <code class="language-plaintext highlighter-rouge">"Hello World"</code> es un string, para ello utilizaremos el argumento <code class="language-plaintext highlighter-rouge">type()</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>type("Hello World")
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172606021-1e791c41-684e-4af9-88e7-a5f2194ffd53.png" alt="Screenshot 2022-06-07 094929" /></p>
+
+<p>Al ejecutarlo vemos como no nos devuelve el resultado. Esto es debido a que nos falta añadir tambien la función
+print()para que nos responda mediante la terminal.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print(type("Hello World"))
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172606802-e840e027-a149-41ff-bdfc-70c006e720c7.png" alt="Screenshot 2022-06-08 133500" /></p>
+
+<p>Vemos como ahora no reporta <code class="language-plaintext highlighter-rouge">class 'str'</code>, donde <code class="language-plaintext highlighter-rouge">str</code> es el diminutivo de string. Vamos a ver otro ejemplo, esta vez con los números:</p>
+
+<p>print(type(100))</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172606958-adf8c7bf-2946-4a39-8ae8-baf02c687e08.png" alt="Screenshot 2022-06-08 133611" /></p>
+
+<p>Esta vez vemos como nos reporta <code class="language-plaintext highlighter-rouge">int</code> (integral), indicándonos que se trata de un número entero.</p>
+
+<p>Ahora vamos a tratar de incluir este argumento en nuestro programita anterior, en primer lugar, el programa debe imprimir la frase “Hello World” y seguido
+debe de imprimir el tipo de clase que es. Para ello realizamos lo siguiente:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Este es mi primer programa
+</span><span class="k">print</span><span class="p">(</span><span class="s">"Hello World"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s">"Hello World"</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172607271-b6c50687-41df-4f76-ab47-b4bb196d5e18.png" alt="Screenshot 2022-06-08 131601" /></p>
+
+<p>Guardamos (Cntrl + s) y desde la terminal lo ejecutamos.</p>
+
+<p>Ahora, vemos como nos reporta la frase, y el tipo de clase que es. Bien, ya hemos tocado un poco de Python, ahora vamos a seguir con algo de teoría.</p>
+
+<center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png" /></center>
+
+<p><a name="item9"></a></p>
+<h1 id="variables">Variables</h1>
+
+<p>Ahora vamos a ver el concepto de <code class="language-plaintext highlighter-rouge">variables</code>, una variable la podemos definir como un nombre adjunto a un objeto en particular. En Python, las variables no 
+necesitan ser declaradas o definidas por adelantado, como es el caso en muchos otros lenguajes de programación.</p>
+
+<p>Para crear una variable, simplemente le asignamos un valor y luego ya podemos empezar a utilizarla. La asignación se realiza con un solo signo igual <code class="language-plaintext highlighter-rouge">=</code>:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Ejemplo:</code></p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">y</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172607212-4cdf48f3-c516-4d12-9866-3b2c7c57189a.png" alt="Screenshot 2022-06-08 131753" /></p>
+
+<p>Como podéis ver aquí establecemos dos variables, al objeto <code class="language-plaintext highlighter-rouge">10</code> le establecemos el nombre <code class="language-plaintext highlighter-rouge">x</code>, de tal forma que al ejecutar <code class="language-plaintext highlighter-rouge">print(x)</code> directamente nos imprime
+<code class="language-plaintext highlighter-rouge">10</code>. De la misma manera establecemos la segunda variable con <code class="language-plaintext highlighter-rouge">y</code>.</p>
+
+<p>Podemos definir varias variables al mismo objeto, teniendo en cuenta que Python lee de arriba para bajo, se interpretará la última variable establecida. Esto puede
+ser un poco lioso, pero vamos a ver un par de ejemplos.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172607322-63383ced-75c2-4bb7-aa12-47f95a21a46a.png" alt="Screenshot 2022-06-08 131916" /></p>
+
+<p>Como puedes ver, hemos establecido dos variables al mismo objeto. Como <code class="language-plaintext highlighter-rouge">x = 20</code> es el último establecido, será el único que se imprima por pantalla. En caso de querer
+imprimir también el primer valor, debemos de imprimir <code class="language-plaintext highlighter-rouge">x</code> antes del cambio:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">1000</span>   
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>     <span class="c1"># Cambio de la variable
+</span><span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172607416-ec587275-19f4-4687-82be-01dd291b652c.png" alt="Screenshot 2022-06-08 131944" /></p>
+
+<p>Ahora nos reporta los dos resultados, Python interpreta la primera variable hasta llegar al cambio <code class="language-plaintext highlighter-rouge">x = 20</code>. Algo importante también, es que las variables distinguen
+entre mayúsculas y minúsculas:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>          <span class="c1"># Estas dos variables son distintas.
+</span><span class="n">A</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+</code></pre></div></div>
+
+<p>El siguiente concepto que vamos a ver dentro de las variables, es como indicar el <code class="language-plaintext highlighter-rouge">tipo de datos</code> de una variable.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>     <span class="c1"># Establecemos la variable como String '5'
+</span><span class="n">y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>     <span class="c1"># Establecemos la variable como Entero 5 
+</span><span class="n">z</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>   <span class="c1"># Establecemos la variable como Float 5.0 
+</span></code></pre></div></div>
+
+<p>De esta forma podemos ejecutar una variable de varias formas distintas. Podéis comprobarlo imprimiendo mediante <code class="language-plaintext highlighter-rouge">print()</code> las distintas variables:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>     <span class="c1"># Establecemos la variable como String '5'
+</span><span class="n">y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>     <span class="c1"># Establecemos la variable como Entero 5 
+</span><span class="n">z</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>   <span class="c1"># Establecemos la variable como Float 5.0 
+</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172607542-8b23fcb9-a0f7-4419-a0de-c7c0d4b5ae4b.png" alt="Screenshot 2022-06-08 132030" /></p>
+
+<p>También podemos obtener el tipo de datos de un variable con el argumento <code class="language-plaintext highlighter-rouge">type()</code>, para ver un ejemplo crearemos dos nuevas variables <code class="language-plaintext highlighter-rouge">x = 10</code> y <code class="language-plaintext highlighter-rouge">y = "F1r0x"</code>
+y queremos reportar el tipo de variable:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">y</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172607574-a7961bf2-b098-40ea-ab3b-ba02070e133a.png" alt="Screenshot 2022-06-08 132100" /></p>
+
+<p>Ya hemos visto como establecer variables, lo único es que los nombres que hemos establecido a las variables son muy simples (básicamente <code class="language-plaintext highlighter-rouge">x</code> y <code class="language-plaintext highlighter-rouge">y</code>). ¿Qué ocurre 
+si queremos establecer nombres más largos y más específicos? Pues en primer lugar debemos de saber que no podemos asignar el nombre que queramos, existen unos
+parámetros que Python interpretará como nombres y otros que los interpretará como variables ilegales. Veamos las reglas básicas de Python:</p>
+
+<ul>
+  <li>Un nombre de variable debe comenzar con una letra o el carácter de subrayado (barra baja _).</li>
+  <li>Un nombre de variable NO puede comenzar con un número.</li>
+  <li>Un nombre de variable solo puede contener caracteres alfanuméricos y guiones bajos (Az, 0-9 y _).</li>
+  <li>Los nombres de las variables distinguen entre mayúsculas y minúsculas (edad, Edad y EDAD son tres variables diferentes).</li>
+</ul>
+
+<p>Nombres de variables <code class="language-plaintext highlighter-rouge">Legales</code>:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Ejemplo:</code></p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">minombre</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+<span class="n">mi_nombre</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+<span class="n">_mi_noimbre</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+<span class="n">miNombre</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+<span class="n">MINOMBRE</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+<span class="n">minombre11</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+</code></pre></div></div>
+
+<p>Nombre de variables <code class="language-plaintext highlighter-rouge">Ilegales</code>:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Ejemplo:</code></p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="n">minombre</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+<span class="n">mi</span><span class="o">-</span><span class="n">nombre</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+<span class="n">mi</span> <span class="n">nombre</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+</code></pre></div></div>
+<p>Estos tres últimos ejemplos, Python no será capaz de interpretarlos y nos reportará un error.</p>
+
+<p>Para las variables largas, podemos utilizar varias técnicas para facilitar su lectura:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Carmel:</code>
+Cada palabra, excepto la primera, comienza con una letra mayúscula:</p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">miVaribleNombre</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">Pascual:</code>
+Cada palabra comienza con una letra mayúscula:</p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MiVariableNombre</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">Snake:</code>
+Cada palabra está separada por un carácter de subrayado:</p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mi_variable_nombre</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+</code></pre></div></div>
+
+<p>Ya sabemos estableces variables y podemos llamarlas de múltiples maneras. Ahora vamos a ver como establecer distintas variables sin necesidad de escribir 
+código de más, ya que podemos establecer distintas variables en la misma línea de código. Esto lo podemos ejecutar de la siguiente manera:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="s">"Unos"</span><span class="p">,</span> <span class="s">"Dos"</span><span class="p">,</span> <span class="s">"Tres"</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172607644-8c42daa4-b73e-4ba1-8efa-cadbe52094ea.png" alt="Screenshot 2022-06-08 132131" /></p>
+
+<p>Otra cosa que también podemos hacer es establecer un valor para múltiples variables. De esta forma ejecutando cualquiera de esas variables, obtendremos el 
+mismo resultado:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">y</span> <span class="o">=</span> <span class="n">z</span> <span class="o">=</span> <span class="s">"Unos"</span><span class="p">,</span> <span class="s">"Dos"</span><span class="p">,</span> <span class="s">"Tres"</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172607675-a9bda205-e8f4-4879-993a-4f2bd7e77c42.png" alt="Screenshot 2022-06-08 132208" /></p>
+
+<center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png" /></center>
+
+<p><a name="item10"></a></p>
+<h1 id="listas">Listas</h1>
+
+<p>El siguiente concepto que vamos a ver son <code class="language-plaintext highlighter-rouge">las listas</code> se utilizan para almacenar varios elementos en una sola variable. Para crear listas se emplean los
+corchetes <code class="language-plaintext highlighter-rouge">[]</code>. Vamos a ver un ejemplo y crear una lista simple:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">milista</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Uno"</span><span class="p">,</span> <span class="s">"Dos"</span><span class="p">,</span> <span class="s">"Tres"</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">milista</span><span class="p">)</span>
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172607720-d6cffc26-3b98-4fe6-b5a5-5ed6315696e5.png" alt="Screenshot 2022-06-08 132238" /></p>
+
+<p>Los elementos de la lista están ordenados, se pueden cambiar y permiten valores duplicados. Estos elementos están indexados, el primer elemento tiene un índice
+<code class="language-plaintext highlighter-rouge">0</code>, el segundo <code class="language-plaintext highlighter-rouge">1</code> y así sucesivamente. Las listas están ordenadas, significa que los elementos tienen un orden definido y ese orden no cambiará.</p>
+
+<p>La lista se puede cambiar, lo que significa que podemos cambiar, agregar y eliminar elementos en una lista después de que se haya creado. Debido a que las
+listas están indexadas, las listas pueden tener elementos con el mismo valor.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">milista</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Uno"</span><span class="p">,</span> <span class="s">"Dos"</span><span class="p">,</span> <span class="s">"Tres"</span><span class="p">,</span> <span class="s">"Uno"</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">milista</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>En el index número <code class="language-plaintext highlighter-rouge">3</code> tengo establecido el nombre <code class="language-plaintext highlighter-rouge">Uno</code>, al igual que en el index <code class="language-plaintext highlighter-rouge">0</code>. Ahora, que ocurre cuando tenemos listas muy largas y queremos saber 
+la <code class="language-plaintext highlighter-rouge">longitud</code> de la lista, para ello utilizamos la función <code class="language-plaintext highlighter-rouge">len()</code> y nos reporta el número de nombres que componen la lista:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">milista</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Uno"</span><span class="p">,</span> <span class="s">"Dos"</span><span class="p">,</span> <span class="s">"Tres"</span><span class="p">,</span> <span class="s">"Uno"</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">milista</span><span class="p">))</span>
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172607761-32d1eeac-2c86-47ef-909e-f90f786d6672.png" alt="Screenshot 2022-06-08 132406" /></p>
+
+<p>Ahora vamos a ver como extraer, los distintos nombres de una lista y asignarlos a varias variables, esto se conoce como <code class="language-plaintext highlighter-rouge">unpacking</code>.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">comida</span> <span class="o">=</span> <span class="p">[</span><span class="s">"arroz"</span><span class="p">,</span> <span class="s">"pizza"</span><span class="p">,</span> <span class="s">"sopa"</span><span class="p">]</span>   <span class="c1"># Nuestra lista
+</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">comida</span>                      <span class="c1"># Asignamos nuestras tres variables a la lista comida.
+</span><span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>                              <span class="c1"># Imprime el primer valor de la lista comida.
+</span><span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>                              <span class="c1"># Imprime el segundo valor de la lista.  
+</span><span class="k">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172607787-5b75c915-fb12-48c9-9ed5-38b7d398c127.png" alt="Screenshot 2022-06-08 132444" /></p>
+
+<p>Al estar las listas indexadas, vemos como nos reporta los nombres de la lista en el mismo orden que hemos establecido las variables.</p>
+
+<center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png" /></center>
+
+<p><a name="item11"></a></p>
+<h1 id="función-print">Función print()</h1>
+
+<p>La función de Python print() se usa a menudo para generar variables y reportarlas por consola, como hemos visto anteriormente. Vamos a ver un poco más a fondo 
+su funcionamiento. Esta función permite generar múltiples variables separándolas por una coma <code class="language-plaintext highlighter-rouge">,</code>.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="s">"Hello"</span>
+<span class="n">y</span> <span class="o">=</span> <span class="s">"World"</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172607820-453c6973-d32b-4072-bc37-f7decac44720.png" alt="Screenshot 2022-06-08 132510" /></p>
+
+<p>Como vemos nos reporta los nombres de las variables separados por un espacio. Otra forma de generar varias variables es utilizando el signo <code class="language-plaintext highlighter-rouge">+</code>, al utilizar el
+signo de suma los nombres de las variables y se reportarán sin espacios entre los nombres.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="s">"Hello"</span>
+<span class="n">y</span> <span class="o">=</span> <span class="s">"World"</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172607845-aff9b501-26ef-4d04-918a-6862749eed06.png" alt="Screenshot 2022-06-08 132533" /></p>
+
+<p>También podemos utilizar el carácter <code class="language-plaintext highlighter-rouge">+</code> como operador matemático, para ello establecemos dos variables numéricas y establecemos la suma en la función <code class="language-plaintext highlighter-rouge">print()</code>:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172607878-33fc4905-3855-4bcd-89d5-b27af0facd3e.png" alt="Screenshot 2022-06-08 132555" /></p>
+
+<p>Obviamente, esta función solo es funcional con variables numéricos, en caso de intentar sumar una cadena y un número se nos reportará un error.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>      <span class="c1"># Nos reportará un error. No puede sumar F1r0x y 20.
+</span></code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172607906-0ac0622a-1322-47b5-a7af-d21919cb2d4b.png" alt="Screenshot 2022-06-08 132637" /></p>
+
+<p>En caso de querer imprimir dos variables diferentes, es mejor usar <code class="language-plaintext highlighter-rouge">print()</code> separando las variables por una coma.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>      <span class="c1"># Correcto. Nos reportará: F1rox 20
+</span></code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172607937-000fdd4b-d6a1-4cb3-8b78-fa3fbf0b5c6f.png" alt="Screenshot 2022-06-08 132708" /></p>
+
+<center><img src="https://user-images.githubusercontent.com/103068924/172475444-daa9d38a-ac36-4b3d-bed3-25984f3e3997.png" /></center>
+
+<p><a name="item12"></a></p>
+<h1 id="como-definir-una-función">Como Definir una Función</h1>
+
+<h3 id="qué-es-una-función">¿Qué es una Función?</h3>
+
+<p>En Python, una función es un grupo de declaraciones relacionadas que realizan una tarea específica.</p>
+
+<p>Las funciones ayudan a dividir nuestro programa en partes más pequeñas y modulares. A medida que nuestro programa crece más y más, las funciones lo hacen más
+organizado y manejable.</p>
+
+<p>Además, evita la repetición y hace que el código sea reutilizable. Su sintaxis básica sería la siguiente:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">nombre_función</span><span class="p">(</span><span class="n">parámetros</span><span class="p">):</span>
+	<span class="s">"""cadena de documentación"""</span>
+	<span class="n">declaraciones</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Como podéis ver, la definición de una función consta de los siguientes componentes:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Palabra clave def</code> : Marca el inicio del encabezado de la función.</li>
+  <li><code class="language-plaintext highlighter-rouge">Nombre de la función</code> : Identifica de forma única la función. La nomenclatura de funciones sigue las mismas reglas de escritura de identificadores en Python.</li>
+  <li><code class="language-plaintext highlighter-rouge">Parámetros</code> : (Argumentos) A través de los cuales pasamos valores a una función. Son opcionales.</li>
+  <li><code class="language-plaintext highlighter-rouge">Dos puntos (:)</code> : Se utiliza para marcar el final del encabezado de la función.</li>
+  <li><code class="language-plaintext highlighter-rouge">Cadena de documentación opcional</code> : (Docstring) Es básicamente un comentario para describir lo que hace la función.</li>
+</ul>
+
+<p>Las declaraciones deben tener el mismo nivel de sangría (generalmente 4 espacios). También podemos incluir de manera opcional una declaración <code class="language-plaintext highlighter-rouge">return</code> para 
+ devolver un valor de la función. Entraremos en detalle sobre estos conceptos más adelante.</p>
+
+<p>Vamos a ver algunos ejemplos, primero vamos a crear una variable fuera de una función <code class="language-plaintext highlighter-rouge">x</code> y la utilizaremos dentro de la función:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="s">"World"</span>      <span class="c1"># Variable fuera de la función.    
+</span>
+<span class="k">def</span> <span class="nf">mifuncion</span><span class="p">():</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"Hello "</span> <span class="o">+</span> <span class="n">x</span><span class="p">)</span>    
+
+<span class="n">mifuncion</span><span class="p">()</span>
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172607976-dfe21b89-8f0a-4ee0-b860-83003b013855.png" alt="Screenshot 2022-06-08 132736" /></p>
+
+<p>También está la opción de crea una variable con el mismo nombre dentro de una función, esta variable será local y solo se puede usar dentro de la función. La 
+ variable global con el mismo nombre quedará como estaba, global y con el valor original.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="s">"World"</span>      <span class="c1"># Variable fuera de la función.    
+</span>
+<span class="k">def</span> <span class="nf">mifuncion</span><span class="p">():</span>
+  <span class="n">x</span> <span class="o">=</span> <span class="s">"F1r0x"</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"Hello "</span> <span class="o">+</span> <span class="n">x</span><span class="p">)</span>    
+
+<span class="n">mifuncion</span><span class="p">()</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">"Hello "</span> <span class="o">+</span> <span class="n">x</span><span class="p">)</span>
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172608013-0dda4886-ae23-4f45-adc8-400ea2dfbdbf.png" alt="Screenshot 2022-06-08 132800" /></p>
+
+<p>De la misma forma que hemos creado una variable global fuera de la función, podemos definirla dentro. Esto lo podemos realizar utilizando la palabra clave
+<code class="language-plaintext highlighter-rouge">global</code> dentro de la función:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">mifuncion</span><span class="p">():</span>
+  <span class="k">global</span> <span class="n">x</span>
+  <span class="n">x</span> <span class="o">=</span> <span class="s">"World"</span>   
+
+<span class="n">mifuncion</span><span class="p">()</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">"Hello "</span> <span class="o">+</span> <span class="n">x</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172608039-52651b32-e49f-43c9-b026-3929701ceee9.png" alt="Screenshot 2022-06-08 132820" /></p>
+
+<p>Ya hemos visto muy por encima varios conceptos, hemos visto las variables, las listas, las funciones y ahora vamos a tratar de profundizar un poco más utilizando
+los disntintos conceptos.</p>
+
+<p>Vamos a tratar de explicar algunas funciones, hemos visto como imprimir mediante <code class="language-plaintext highlighter-rouge">print()</code> y como podemos ejecutar un <code class="language-plaintext highlighter-rouge">string</code> como por ejemplo 
+<code class="language-plaintext highlighter-rouge">print("Hello Wold")</code>. Esto esta muy bien, pero para poder ver las funciones que podeos aplicar a este string se utiliza la funcion <code class="language-plaintext highlighter-rouge">dir()</code>:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">miString</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">dir</span><span class="p">(</span><span class="n">miString</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172608080-14884acb-6f37-44ac-8f6a-a06c1a9a72d9.png" alt="Screenshot 2022-06-08 132853" /></p>
+
+<p>Aquí podeís ver todas las opciones que le podemos aplicar al string “Hello World”. El primer ejemplo q vamos a ver es <code class="language-plaintext highlighter-rouge">upper()</code> (uppercase = mayúscula) que nos
+muestra el string en <code class="language-plaintext highlighter-rouge">mayúsculas</code>.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">miString</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">miString</span><span class="p">.</span><span class="n">upper</span><span class="p">())</span>
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172609155-edd99ea7-0b3f-4227-982a-13dd2982c839.png" alt="Screenshot 2022-06-08 134905" /></p>
+
+<p>La sintaxis mantiene primero la función, seguido de la variable y finalmente, introducimos separado por un punto <code class="language-plaintext highlighter-rouge">.</code> la función que modifica nuestro string.
+Vemos como la funcion <code class="language-plaintext highlighter-rouge">upper()</code> ha modificado com pletamente nuestra variable, mostrandonos todo su contenido en mayúsculas.</p>
+
+<p>También podemos realizar la operación contraria, utilzando la función <code class="language-plaintext highlighter-rouge">lower()</code> podemos representar el string en <code class="language-plaintext highlighter-rouge">minúsculas</code>.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">miString</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">miString</span><span class="p">.</span><span class="n">upper</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">miString</span><span class="p">.</span><span class="n">lower</span><span class="p">())</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/172610739-3683ed1c-1cf9-4a2e-a566-4ecc4d1bc101.png" alt="Screenshot 2022-06-08 135751" /></p>
+
+<p>Existen una gran cantidad de funciones con multiples finalidades, otro ejemplo es la funcion <code class="language-plaintext highlighter-rouge">swapcase()</code> que nos reportará la primera letra de cada
+palabra en <code class="language-plaintext highlighter-rouge">minúscula</code> seguido de el resto de la palabra en <code class="language-plaintext highlighter-rouge">mayúsculas</code>.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">miString</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">miString</span><span class="p">.</span><span class="n">upper</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">miString</span><span class="p">.</span><span class="n">lower</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">miString</span><span class="p">.</span><span class="n">swapcase</span><span class="p">())</span>
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/103068924/172611339-f0f776c3-9f9a-40c4-a0fd-e561ea1705e5.png" alt="Screenshot 2022-06-08 140140" /></p>
+
+
+
+
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+<hr />
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

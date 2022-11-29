@@ -1,0 +1,379 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/htb_blue.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/htb_blue.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Blog sobre informática Y ciberseguridad.</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<center><img src="https://user-images.githubusercontent.com/103068924/168258096-c362a48f-e5af-4500-822a-72db7894bbb1.png" /></center>
+
+<h1 id="hack-the-box-blue">Hack The Box-Blue</h1>
+
+<p>En primer lugar, nos creamos un directorio con el nombre de la máquina desde el que trabajaremos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkdir Blue
+</code></pre></div></div>
+
+<p>Ahora, mediante la función <a href="../Herramientas_y_Scripts/mkt.html" style="text-decoration:none"><code class="language-plaintext highlighter-rouge">mkt</code></a> que tengo previamente definida en la <code class="language-plaintext highlighter-rouge">.zshrc</code> crearemos nuestros directorios
+de trabajo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkt
+</code></pre></div></div>
+
+<p>Esta función está definida para crearnos cuatro directorios (<code class="language-plaintext highlighter-rouge">nmap</code>, <code class="language-plaintext highlighter-rouge">content</code>, <code class="language-plaintext highlighter-rouge">exploits</code> y <code class="language-plaintext highlighter-rouge">scripts</code>) desde los cuales poder trabajar a la hora de
+realizar las máquinas de HTB.</p>
+
+<h2 id="ping">PING</h2>
+
+<p>Ejecutamos un <code class="language-plaintext highlighter-rouge">ping</code> y vemos como nos reporta un ttl=127, por tanto, ya sabemos que estamos frente una máquina Windows.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ping -c 1 10.10.10.40
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168258904-068e429f-b39a-4aa5-84f2-921190929c68.png" alt="Captura de pantalla -2022-05-13 02-23-49" /></p>
+
+<h2 id="nmap--link">NMAP –&gt; <a href="../Herramientas_y_Scripts/Nmap.html" style="text-decoration:none">Link</a></h2>
+
+<p>Ahora mediante <code class="language-plaintext highlighter-rouge">nmap</code> realizaremos un escaneo de puertos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn 10.10.10.40 -oG allPorts
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-p-</code> : Escanea todo el rango de puertos.</p>
+
+<p><code class="language-plaintext highlighter-rouge">--open</code> : Solo nos mostrará puertos con el estatus abierto.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-sS</code> : El escaneo SYN realizar rápidamente, escaneando miles de puertos por segundo en una red rápida que no se ve obstaculizada por firewalls intrusivos.</p>
+
+<p><code class="language-plaintext highlighter-rouge">--min-rate</code> : Controla directamente la tasa de escaneo. Nmap intentará mantener la velocidad de envío en 5000 paquetes por segundo o más.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-vvv</code> : Triple verbose. Recopila los puertos abiertos por TCP y los reporta por consola. Cuanto más verbose más información reporta mientras se realiza el escaneneo.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-n</code> : Anula la resolución DNS.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168261222-f452e600-c30b-4d2b-b771-8fb42b8227b2.png" alt="Captura de pantalla -2022-05-13 12-02-21" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168261243-724fd7e1-4fc9-44ea-8ccc-4ad16c25fa43.png" alt="Captura de pantalla -2022-05-13 12-02-42" /></p>
+
+<p>Vemos como nos reporta los puertos 135,139,445 y 49157. Lo que de momento más me llama la atención es que por el puerto 445 corre un servicio
+<code class="language-plaintext highlighter-rouge">microsoft-ds</code>. Vamos a realizr un segundo escaneo mediante <code class="language-plaintext highlighter-rouge">nmap</code> lanzado una serie de scripts de reconocimiento para ver si nos reporta algo más
+de información de estos puertos en concreto.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap -sC -sV -v -n -p135,139,445,49157 10.10.10.40 -oG target
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168263122-4832c99c-8c10-447b-ae68-994e27bd978c.png" alt="Captura de pantalla -2022-05-13 12-13-24" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">-sC</code> : Lanza scrips básicos de reconocimiento.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-sV</code> : Localiza la versión y servicio de los puertos definidos.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-p</code> : Puertos a escanear.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-oN</code> : Reporta los resultados en formato nmap al archivo <code class="language-plaintext highlighter-rouge">target</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168263141-ceb0d066-7c9b-4651-930e-08c0d33c0b85.png" alt="Captura de pantalla -2022-05-13 12-14-09" /></p>
+
+<p>Vemos como nos da un poco más de información, pero lo más interesante es que nos reporta la versión exacta del sistema Windows, que este caso nos
+reporta un <code class="language-plaintext highlighter-rouge">Windows 7 Professional 6.1</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168264574-29ff87fd-bd2c-415a-83be-4726dd0798eb.png" alt="Captura de pantalla -2022-05-13 12-23-13" /></p>
+
+<p>Ahora vamos utilizar <code class="language-plaintext highlighter-rouge">nmap</code> para lanzar un script más especifico y tratar de reportar alguna vunerabilidad para está version de Windows 7. Pero primero
+vamos a comprobar que disponemos del script. Para poder ver todo los scripts de <code class="language-plaintext highlighter-rouge">nmap</code>, podemos utilizar el comando <code class="language-plaintext highlighter-rouge">locate .nse</code>, donde se nos desplegará
+una lista de todos los disponibles.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>locate .nse
+</code></pre></div></div>
+
+<p>Ahora para poder filtrar un poco los resultados, de forma paralela concatenamos un <code class="language-plaintext highlighter-rouge">xargs grep "categories"</code> y de está forma filtraremos por todos
+los resultados que incluyen la palabra <code class="language-plaintext highlighter-rouge">categories</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>locate .nse | xargs grep "categories"
+</code></pre></div></div>
+
+<p>Y ahora para terminar de filtrar los resultados dentro de categories, vamos a quedarnos solo con los resultados que nos especifican los scripts entre
+comillas, lo cual se conoce como <code class="language-plaintext highlighter-rouge">DATA</code>. Para poder filtrar pro data utilizaremos la expresión regular <code class="language-plaintext highlighter-rouge">'".*?"'</code> de la siguiente manera:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>locate .nse | xargs grep "categories" | grep -oP '".*?"'
+</code></pre></div></div>
+
+<p>Finalmente vamos a quitar las categorias que se repitan mediante <code class="language-plaintext highlighter-rouge">sort -u</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>locate .nse | xargs grep "categories" | grep -oP '".*?"' | sort -u
+</code></pre></div></div>
+
+<p>Bien, ahora para lanzar los scripts que deseamos que son <code class="language-plaintext highlighter-rouge">vuln</code> y <code class="language-plaintext highlighter-rouge">safe</code>, básicamente estos scripts lanzan un chequeo para tratar de  reportar las vulnerabilidades 
+conocidas del sistema y <code class="language-plaintext highlighter-rouge">safe</code> lo utilizamos para no causar ningún tipo de denegación de servicio en el sistema que vamos a escanear.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap --script "vuln and safe" -p445 10.10.10.40 -oN smbScan
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">--script "vuln and safe"</code> : Especifica los scripts que vamos a utilizar.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-p445</code> : Especifica el puerto que vamos a chequear.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-oN smbScan</code> : Exporta los resultados en formato nmap al archivo smbScan.</p>
+
+<p>Vemos como nos reporta que este sistema es vulnerable al <code class="language-plaintext highlighter-rouge">ms17-010</code> más conocido como EthernalBlue. Ahora que ya conocemos una vulnerabilidad 
+ vamos a tratar de buscar un exploit funcional.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> searchsploit ms17-010
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168269407-839dd7e4-9274-4903-af8b-a65e20e8cb8a.png" alt="Captura de pantalla -2022-05-13 02-38-33" /></p>
+
+<p>Vemos que <code class="language-plaintext highlighter-rouge">Metasploit</code> nos reporta el exploit <code class="language-plaintext highlighter-rouge">SMB Remote Code Execution Scanner (MS17-010) (Metasploit)</code>. Vamos abrir Metasploit y a buscar si 
+ disponemos del exploit.</p>
+
+<h2 id="metasploit--link">Metasploit –&gt; <a href="../Herramientas_y_Scripts/Metasploit.html" style="text-decoration:none">Link</a></h2>
+
+<p>Abrimos Metasploit:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> msfconsole
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168270105-48d203d3-c899-4769-87ff-2700713fa253.png" alt="Captura de pantalla -2022-05-13 02-39-06" /></p>
+
+<p>Ahora buscamos filtrando por la vulnerabilidad <code class="language-plaintext highlighter-rouge">ms17-010</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> search ms17-010
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168271708-92c389f8-74c0-4f21-8970-d877a1b5b355.png" alt="Captura de pantalla -2022-05-13 13-05-57" /></p>
+
+<p>Vemos como la vulnerabilidad EthernarBlue aparece la primera, para seleccionarla utilizamos el comando <code class="language-plaintext highlighter-rouge">use</code> y especificamos el número del <code class="language-plaintext highlighter-rouge">exploit</code> en
+la lista, en este caso el <code class="language-plaintext highlighter-rouge">0</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>use 0
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168272058-197fb5f0-ff1e-4d58-b42f-3eefb77a5105.png" alt="Captura de pantalla -2022-05-13 13-06-25" /></p>
+
+<p>Ahora que ya tenemos el exploit seleccionado, tenemos que configurarlo y preparado para el ataque. Para ver las opciones del exploit utilizamos el
+comando <code class="language-plaintext highlighter-rouge">options</code>:</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168272431-3800b374-8f02-418f-9d8b-9e4a66dc7227.png" alt="Captura de pantalla -2022-05-13 13-06-45" /></p>
+
+<p>Para configurar el exploit debemos modificar el <code class="language-plaintext highlighter-rouge">RHOSTS</code> que es la Ip de la víctima, el <code class="language-plaintext highlighter-rouge">LHOST</code> que será nuestra Ip pública, en este caso la VPN de 
+hack the box y finalmente, especificamos el puerto de escucha <code class="language-plaintext highlighter-rouge">LPORT</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168273836-ea8929fd-7167-4988-ab1f-3b2378dce33d.png" alt="Captura de pantalla -2022-05-13 13-25-31" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168273919-0f1bd7da-2bfb-406e-8fa1-069e84a26753.png" alt="Captura de pantalla -2022-05-13 13-26-24" /></p>
+
+<p>Finalmete ejecutamos el exploit:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exploit
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168273321-abd7ac24-82f9-4e54-b183-6f2f70132efb.png" alt="Captura de pantalla -2022-05-13 13-09-48" /></p>
+
+<p>Si todo funciona correctamente se nos tendría que abrir una shell. En caso de daros algún error, es posible que tengáis que reiniciar la máquina y
+el Metasploit y volver a intentar el ataque.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168326527-fa31beac-78dc-4236-b075-22186c53a8b4.png" alt="Captura de pantalla -2022-05-13 17-48-20" /></p>
+
+<p>Esta vulnerabilidad es muy grave, ya que mediante este exploit pasamos a tenerlos máximos privilegios, por tanto, podemos ver todos los archivos, 
+incluida la flaf de <code class="language-plaintext highlighter-rouge">root</code>.</p>
+
+<p>Para encontrar la primera flag simplemente nos dirigimos al directorio <code class="language-plaintext highlighter-rouge">C:\Users\haris\Desktop</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /Users/haris/Desktop
+</code></pre></div></div>
+
+<p>Podemos listar los archivos del directorio mediante <code class="language-plaintext highlighter-rouge">ls</code> y mediante <code class="language-plaintext highlighter-rouge">cat</code> nos reportará por consola el contenido.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168327189-8d5ecd5b-e4f5-47fb-815d-3d6ecae6851a.png" alt="Captura de pantalla -2022-05-13 17-50-12" /></p>
+
+<p>Finalmente, la flag del usuario <code class="language-plaintext highlighter-rouge">root</code> la podemos encontrar en el directorio <code class="language-plaintext highlighter-rouge">C:\Users\Administrator\Desktop\</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168327406-bb7a2c94-5b04-4219-ac01-ec0a2b6219ec.png" alt="Captura de pantalla -2022-05-13 17-50-59" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/188526091-ba232036-2831-434e-9dc3-e9c20ef10854.png" alt="Captura de pantalla 2022-09-06 030042" /></p>
+
+<center><img src="https://user-images.githubusercontent.com/103068924/168327730-476d67f7-5298-41f3-8f38-c92a0bb8fbff.png" /></center>
+
+
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+<hr />
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

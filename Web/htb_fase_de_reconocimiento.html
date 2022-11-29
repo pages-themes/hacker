@@ -1,0 +1,324 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Blog sobre informática Y ciberseguridad.</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!--------------------------------  Letrero Animado  --------------------------------------->      
+ 
+  <svg viewBox="0 0 1320 300">
+
+    <!-- Símbolo -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+        Plantilla   <!-- Palabra del Letrero-->
+      </text>
+    </symbol>  
+  
+    <!-- Añadir en función de las letras de la palabra -->
+    <use xlink:href="#s-text" class="text"></use><!--1-->
+    <use xlink:href="#s-text" class="text"></use><!--2-->  
+    <use xlink:href="#s-text" class="text"></use><!--3-->
+    <use xlink:href="#s-text" class="text"></use><!--4-->
+    <use xlink:href="#s-text" class="text"></use><!--5-->
+    <use xlink:href="#s-text" class="text"></use><!--6-->
+    <use xlink:href="#s-text" class="text"></use><!--7-->
+    <use xlink:href="#s-text" class="text"></use><!--8-->
+    <use xlink:href="#s-text" class="text"></use><!--9-->
+  </svg>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<h1 id="fase-de-reconocimiento---htb">Fase de Reconocimiento - HTB</h1>
+
+<p>Aquí trato de mostrar unas pautas muy básicas de 
+ reconocimiento. El reconocimiento es una parte
+ fundamental, ya que necesitamos conocer a lo que
+ nos enfrentamos para poder buscar vulnerabilidades.</p>
+
+<p>En primer lugar, debemos asegurar que estamos conectados
+ a la víctima y tratar de recopilar la máxima información
+ posible.</p>
+
+<hr />
+
+<h2 id="ping">PING</h2>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/165159179-2e3ba6e6-84b8-42d8-a2c0-817beac98552.png" alt="Captura de pantalla -2022-04-11 18-56-44" /></p>
+
+<p>Para verificar la conexión y tener una primera toma de
+ contacto utilizaremos el comando <code class="language-plaintext highlighter-rouge">ping</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ping [Ip Víctima]
+</code></pre></div></div>
+
+<p>Mediante este comando podemos obtener la siguiente
+ información:</p>
+
+<ul>
+  <li>Verificar la conexión.</li>
+  <li>La latencia. Podemos observar el tiempo de recorrido
+de un paquete.</li>
+  <li>Podemos obtener la Ip de un dominio.</li>
+  <li>Determinar si estamos frente a un SO Linux o Windows:
+  Windows ttl = 128
+  Linux ttl = 64</li>
+</ul>
+
+<hr />
+
+<h2 id="nmap--link">NMAP –&gt; <a href="../Herramientas_y_Scripts/Nmap.html" style="text-decoration:none">Link</a></h2>
+
+<p>Tras conocer la máquina a la que nos enfrentamos
+  pasaremos analizar los protocolos tcp/udp.</p>
+
+<p>Primero analizaremos los puertos tcp ya que son los más
+  utilizados y los más rápidos de escanear.</p>
+
+<p>Mediante nmap realizaremos varios escaneos, el primero 
+  será un análisis de todos los puertos abiertos del
+  protocolo tcp.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap -p- --open -T5 -v -n [Ip]
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-p-</code> : Escanea todo el rango de puertos.</p>
+
+<p><code class="language-plaintext highlighter-rouge">--open</code> : Solo nos mostrará puertos con el estatus abierto.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-T5</code> : Controla el tiempo y el rendimiento del escaneo donde 1 es el más lento  y 5 el más rápido.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-v</code> : Verbose. Recopila los puertos abiertos por TCP y los reporta por consola.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-n</code> : Anula la resolución DNS.</p>
+
+<p>Ahora para poder trabajar mejor, exportaremos una lista
+  en formato Grepeable al archivo <code class="language-plaintext highlighter-rouge">allPorts</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap -p- --open -T5 -v -n [Ip] -oG allPorts
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-oG</code> : Exportar los resultados en formato grepeable.</p>
+
+<p><code class="language-plaintext highlighter-rouge">allPorts</code> : Nombre del archivo. Si no existe lo creará.</p>
+
+<p>De esta manera podremos revisar los puertos que estaban
+  abiertos en cualquier momento.</p>
+
+<hr />
+
+<h2 id="nmap--link-1">NMAP –&gt; <a href="../Herramientas_y_Scripts/Nmap.html" style="text-decoration:none">Link</a></h2>
+<h3 id="escaneo-exhaustivo">ESCANEO EXHAUSTIVO:</h3>
+
+<p>Tras conocer los puertos TCP abiertos, realizaremos un 
+ segundo escaneo enfocado en los puertos abiertos para ver
+ la información que nos reportan y exportarlo en formato
+ nmap al archivo ‘targed’.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap -sC -sV -p[Port1,Port2] -oN targed  
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-sC</code> : Lanza scrips básicos de reconocimiento.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-sV</code> : Localiza la versión y servicio de los puertos definidos.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-p</code> : Puertos a escanear.    Ej:  -p22,80</p>
+
+<p><code class="language-plaintext highlighter-rouge">-oN</code> : Reporta los resultados en formato nmap al archivo <code class="language-plaintext highlighter-rouge">targed</code>.</p>
+
+<hr />
+
+<h2 id="whatweb">WHATWEB</h2>
+
+<p>Es una herramienta  que se utiliza  para tratar de
+  averiguar
+  el gestor de contenido de la Ip. Nos reportará
+  información varia del sistema.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whatweb http://[Ip]
+  
+whatweb http://[Host]
+</code></pre></div></div>
+
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-id-badge" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+<a href="./contacto.html"">
+<div class="option">
+<i class="far fa-address-card" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+<hr />
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

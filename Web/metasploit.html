@@ -1,0 +1,295 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Blog sobre Ciberseguridad.</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/metasploit.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/metasploit.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Herramientas</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<h1 id="metasploit">Metasploit</h1>
+
+<h1 id="qué-es-metasploit">¿Qué es Metasploit?</h1>
+
+<p>Metasploit es un proyecto de código abierto para la seguridad informática, que proporciona información acerca de vulnerabilidades de seguridad y ayuda en 
+tests de penetración <code class="language-plaintext highlighter-rouge">Pentesting</code> y el desarrollo de firmas para sistemas de detección de intrusos.</p>
+
+<p>Su subproyecto más conocido es el <code class="language-plaintext highlighter-rouge">Metasploit Framework</code>, una herramienta para desarrollar y ejecutar exploits contra una máquina remota.</p>
+
+<p>Inicialmente, fue creado utilizando el lenguaje de programación de scripting Perl aunque actualmente el Metasploit Framework ha sido escrito de nuevo 
+completamente en el lenguaje Ruby.</p>
+
+<h1 id="como-funciona-metasploit">¿Como funciona Metasploit?</h1>
+
+<p>Los pasos básicos para la explotación de un sistema que utiliza el Sistema incluyen:</p>
+
+<ol>
+  <li>
+    <p>La selección y configuración de un código el cual se va a explotar. El cual entra al sistema objetivo, mediante el aprovechamiento de
+bugs. Existen cerca de 900 exploits incluidos para Windows, Unix / Linux y Mac OS X.</p>
+  </li>
+  <li>
+    <p>Opción para comprobar si el sistema destino es susceptible a los bugs elegidos.</p>
+  </li>
+  <li>
+    <p>La técnica para codificar el sistema de prevención de intrusiones (IPS) e incluir la carga útil codificada.</p>
+  </li>
+  <li>
+    <p>Visualización a la hora de ejecutar el exploit.</p>
+  </li>
+</ol>
+
+<p>Metasploit se ejecuta en Unix (incluyendo Linux y Mac OS X) y en Windows. El Sistema Metasploit se puede extender y es capaz utilizar complementos 
+en varios idiomas.</p>
+
+<p>Para elegir un exploit y la carga útil, se necesita un poco de información sobre el sistema objetivo, como la versión del sistema operativo y los
+servicios de red instalados.</p>
+
+<p>Esta información puede ser obtenida con el escaneo de puertos y “OS fingerprinting”, puedes obtener esta información 
+con herramientas como Nmap, NeXpose o Nessus, estos programas, pueden detectar vulnerabilidades del sistema de destino. Metasploit puede importar
+los datos de la exploración de vulnerabilidades y comparar las vulnerabilidades identificadas.</p>
+
+<h1 id="instalación">Instalación:</h1>
+
+<p>Para poder instalar Metasploit en sistemas basados en Debian como Parrot o Kali Linux, primero actualizamos el sistema:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update
+</code></pre></div></div>
+
+<p>Y luego procedemos con la instalación:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install metasploit-framework
+</code></pre></div></div>
+
+<p>Una vez instalado podemos ejecutarlo mediante el comando:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>msfconsole
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168301223-b00a6c4b-9582-42c4-8adf-85b44e3ebfcc.png" alt="Captura de pantalla -2022-05-13 02-39-06" /></p>
+
+<h1 id="búsqueda-de-exploits">Búsqueda de Exploits:</h1>
+
+<p>Metasploit cuenta con una gran recopilación de exploits, para poder buscar el adecuado filtrando por la vulnerabilidad que queremos explotar 
+simplemente usamos el comando <code class="language-plaintext highlighter-rouge">search</code> seguido del exploit, la vulnerabilidad o la versión del sistema que vamos a vulnerar. Esto debemos
+ejecutarlo una vez hemos ingresado en <code class="language-plaintext highlighter-rouge">msfconsole</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>search [Información que identifique la vulnerabilidad.]
+</code></pre></div></div>
+
+<p><img class="img-metasploit2" src="https://user-images.githubusercontent.com/103068924/168302351-3f912051-c282-44f8-a783-8ea373f84284.png" alt="Captura de pantalla -2022-05-13 13-05-57" /></p>
+
+<h2 id="conceptos-básicos-de-configuración">Conceptos básicos de configuración:</h2>
+
+<p>Una vez nos muestra las listas (en este ejemplo hemos buscado la vulnerabilidad ms17-010 conocida como EthernalBlue) de los exploits que contienen
+la iformación proporcionada. En mi caso, como he especificado la vulnerabilidad <code class="language-plaintext highlighter-rouge">ms17-'010</code> los resultados son muy concretos.</p>
+
+<p>Una vez tenemos claro el exploit que deseamos emplear, podemos seleccionarlo mediante <code class="language-plaintext highlighter-rouge">use</code> seguido o del número de posición en la lista, el directorio o el nombre del mismo exploit.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>use 0
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168303141-286e5f50-4e31-44b6-93a1-497f1e553a3f.png" alt="Captura de pantalla -2022-05-13 13-06-25" /></p>
+
+<p>Tras seleccionar el exploit ya solo faltaría configurarlo. Para ver la configuración predeterminada podemos usar el comando <code class="language-plaintext highlighter-rouge">options</code>.</p>
+
+<p><img class="img-metasploit2" src="https://user-images.githubusercontent.com/103068924/168303659-f3e2dbc6-913a-48ae-9f0a-e01faf0cd725.png" alt="Captura de pantalla -2022-05-13 13-26-24" /></p>
+
+<p>Para configurar los parametros simplemente utilizamos <code class="language-plaintext highlighter-rouge">set</code> seguido del parametro a cambiar. Debemos especificar el  <code class="language-plaintext highlighter-rouge">RHOSTS</code> donde indicamos la Ip
+de la víctima, el <code class="language-plaintext highlighter-rouge">LHOST</code> donde indicaremos nuestra Ip pública (En caso de emplear una VPN debemos poner la Ip de misma.) y finalmente, indicamos 
+el <code class="language-plaintext highlighter-rouge">LPORT</code> que es el puerto por el cual nos pondremos en escucha.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set RHOSTS [Ip Víctima]
+
+set LHOST [Ip Local]
+
+set LPORT [Puerto de Escucha]
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/168304755-70ce4ee5-3ce0-440f-a1ab-8f68ad035dff.png" alt="Captura de pantalla -2022-05-13 13-25-31" /></p>
+
+<p>Finalmente, una vez lo tenemos todo configurado, ejecutamos la herramienta deseada mediante el comando <code class="language-plaintext highlighter-rouge">exploit</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exploit
+</code></pre></div></div>
+
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->

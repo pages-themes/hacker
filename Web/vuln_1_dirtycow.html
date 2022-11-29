@@ -1,0 +1,318 @@
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4e466187f8c7aec736a8844fc4931d346df15ea7">     <!-- Archivo CSS O SCSS Jekyll -->
+    <!-- <link rel="stylesheet" href="/assets/css/icon-style.css"> -->                                  <!-- Archivo CSS O SCSS del Buscador -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>           <!-- Archivo Java para importar fuentes -->
+
+  <!---------------------- Configuración de Colores ------------------------------->
+
+    <meta name="theme-color" content="#151515">
+    <meta name="msapplication-navbutton-color" content="#151515">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!--------------------- Begin Jekyll SEO tag v2.8.0 ----------------------------->
+
+   <title>F1r0x | Vulnerabilidades</title>
+   <link rel="icon" href="/assets/images/logoweb.ico">
+   <meta name="generator" content="Jekyll v3.9.2" />
+   <meta property="og:title" content="F1r0x" />
+   <meta property="og:locale" content="en_US" />
+   <meta name="description" content="Blog sobre Ciberseguridad." />
+   <meta property="og:description" content="Blog sobre Ciberseguridad." />
+   <link rel="canonical" href="https://f1r0x.github.io/Web/vuln_1_dirtycow.html" />         <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:url" content="https://f1r0x.github.io/Web/vuln_1_dirtycow.html" />    <!-- ¡¡¡ Cambiar !!!  -->
+   <meta property="og:site_name" content="F1r0x" />
+   <meta property="og:type" content="website" />
+   <meta name="twitter:card" content="summary" />
+   <meta property="twitter:title" content="F1r0x" />
+   <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"WebPage","description":"Blog sobre Ciberseguridad.","headline":"F1r0x","url":"https://f1r0x.github.io/portada.html"}</script>
+
+</head>
+
+<!--------------------------- Encabezado de la página ---------------------------------->
+
+<header>
+  <div class="container">
+    <a id="a-title" href="/">
+      <h5>F1r0x</h5>                                                                                                    <!-- Nombre del Autor -->                         
+    </a>
+    <h6>Vulnerabilidades</h6>                                                                                 <!-- Descripción de la Página-->
+
+<!--------------------------------- Botón Github ---------------------------------------->    
+    <section id="downloads">         
+      <a href="https://github.com/F1r0x/f1r0x.github.io" class="btn btn-github"><span class="icon"></span>GitHub</a>    <!-- Contenido del botón Github -->
+    </section>
+  </div>
+</header>
+
+<!---------------------------------  Buscador  ------------------------------------------>
+
+<!--
+<body>
+<div id="a-buscador" class="buscar">
+  <input type="text" class="buscar_texto" placeholder="Escrive lo que buscas">
+  <a href="" class="boton">
+  <i class="icon-buscar"></i>
+  </a>
+</div>
+</body>
+-->
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------- Contenido del Cuerpo de la Página -------------------------------->  
+<!------------------------------ Botones y Efectos  --------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<div class="container">
+  
+<!----------------------------- Imagen Hack The Box -------------------------------------->   
+
+<!--
+  <section id="main_content">
+    <p><a href="./hackthebox.html" style="text-decoration:none">
+          <img src="https://user-images.githubusercontent.com/103068924/186534363-a36084e5-2626-4b25-976c-ab2d232462f5.gif" align="middle" />
+       </a>
+    </p>
+  </section>
+-->
+
+<!--------------------------------  Letrero Animado  --------------------------------------->      
+ 
+  <svg viewBox="0 0 1320 300">
+
+    <!-- Símbolo -->
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%" y="50%" dy=".35em">
+        DirtyCow   <!-- Palabra del Letrero-->
+      </text>
+    </symbol>  
+  
+    <!-- Añadir en función de las letras de la palabra -->
+    <use xlink:href="#s-text" class="text"></use><!--1-->
+    <use xlink:href="#s-text" class="text"></use><!--2-->  
+    <use xlink:href="#s-text" class="text"></use><!--3-->
+    <use xlink:href="#s-text" class="text"></use><!--4-->
+    <use xlink:href="#s-text" class="text"></use><!--5-->
+    <use xlink:href="#s-text" class="text"></use><!--6-->
+    <use xlink:href="#s-text" class="text"></use><!--7-->
+    <use xlink:href="#s-text" class="text"></use><!--8-->
+  </svg>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Contenido de la Página ------------------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<h1 id="dirty-cow---edb-id40839">Dirty Cow - EDB-ID:40839</h1>
+
+<ul>
+  <li><a href="#item1" style="text-decoration:none">¿Qué es Dirty Cow?</a></li>
+  <li><a href="#item2" style="text-decoration:none">¿Cómo explotar la vulnerabilidad Dirty Cow?</a></li>
+  <li><a href="#item3" style="text-decoration:none">Como saber que un equipo posee la vulnerabilidad Dirty Cow.</a></li>
+  <li><a href="#item4" style="text-decoration:none">Instalación del Exploit.</a></li>
+  <li><a href="#item5" style="text-decoration:none">Ejecución del Exploit.</a></li>
+</ul>
+
+<p><a name="item1"></a></p>
+<h2 id="qué-es-dirty-cow">¿Qué es Dirty Cow?</h2>
+
+<p>Dirty Cow (Dirty copy-on-write) es una vulnerabilidad de seguridad informática para el kernel de Linux que afectó a todos los 
+sistemas operativos basados en Linux, incluidos los dispositivos Android, que usaban versiones anteriores del kernel de Linux 
+creadas antes de 2018.</p>
+
+<p>Concretamente, afecta a las versiones desde la 2.6.22 hasta la 3.9 del kernel de Linux.</p>
+
+<p><a name="item2"></a></p>
+<h2 id="cómo-explotar-la-vulnerabilidad-dirty-cow">¿Cómo explotar la vulnerabilidad Dirty Cow?</h2>
+
+<p>Este exploit escrito en <code class="language-plaintext highlighter-rouge">C</code>, utiliza el exploit <code class="language-plaintext highlighter-rouge">pokemon</code> de la vulnerabilidad Dirty Cow.</p>
+
+<p>El exploit aprovecha una vulnerabilidad en el código del kernel de Linux a través del cual genera automáticamente una nueva línea <code class="language-plaintext highlighter-rouge">passwd</code>(/etc/passdw).</p>
+
+<p>Se le pedirá al usuario la nueva contraseña cuando se ejecute el binario.</p>
+
+<p>A continuación, se realiza una copia de seguridad del archivo <code class="language-plaintext highlighter-rouge">/etc/passwd</code> original en <code class="language-plaintext highlighter-rouge">/tmp/passwd.bak</code> y sobrescribe la cuenta raíz con la
+línea generada. Esto podemos comprobarlo haciendo un <code class="language-plaintext highlighter-rouge">cat</code> en el archivo <code class="language-plaintext highlighter-rouge">passwd</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat /etc/passwd
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/182746135-250eed29-7793-471c-b274-043ae2f88f84.png" alt="Captura de pantalla 2022-08-04 031357" /></p>
+
+<p>Después de ejecutar el exploit, debería poder iniciar sesión con el usuario recién originado. Por defecto se creará el Usurio <code class="language-plaintext highlighter-rouge">firefart</code>. Podemos
+cambiar el nombre dentro del exploit y proporcionarle el que queramos.</p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/182746181-88bf1e37-8627-4a38-89b1-373d990b9a76.png" alt="Captura de pantalla 2022-08-04 031524" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/182746205-34d43fb9-5c48-4270-b1ac-3a9d121d9950.png" alt="Captura de pantalla 2022-08-04 031701" /></p>
+
+<p>Exploit original: https://www.exploit-db.com/exploits/40839</p>
+
+<p>Exploit en mi repositorio GitHub: https://github.com/F1r0x/f1r0x.github.io/blob/main/Exploits/DirtyCow/dirty.c</p>
+
+<p><a name="item3"></a></p>
+<h2 id="como-saber-que-un-equipo-posee-la-vulnerabilidad-dirty-cow">Como saber que un equipo posee la vulnerabilidad Dirty Cow:</h2>
+
+<p>Básicamente, para comprobar si un sistema Linux es vulnerable al Dirty Cow es revisando la versión del kernel. Si la versión del kernel está entre
+la 2.6.22 hasta la 3.9 es muy posible que sea vulnerable. Para comprobar la versión del kernel podemos utilizar el comando:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uname -a
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/182746307-77b0b46f-f8d8-4e39-aed7-209f7b32bb63.png" alt="Captura de pantalla 2022-08-04 034452" /></p>
+
+<p><a name="item4"></a></p>
+<h2 id="instalación-del-exploit">Instalación del exploit:</h2>
+
+<p>Para instalar el exploit, primero debemos tener acceso al sistema y poder descargar el binario en el equipo víctima, podemos descargarlo desde 
+el repositorio original o desde GitHub si nos permite realizar un <code class="language-plaintext highlighter-rouge">git clone</code> o podemos copiarlo directamente desde el buscador y crear el
+archivo (mediante <code class="language-plaintext highlighter-rouge">nano</code> por ejemplo).</p>
+
+<ul>
+  <li><a href="./dirty.c" style="text-decoration:none">Copiar de Aquí.</a></li>
+</ul>
+
+<p>Podemos crear el archivo <code class="language-plaintext highlighter-rouge">dirty.c</code> utilizado <code class="language-plaintext highlighter-rouge">nano</code> y pegar el código del exploit.</p>
+
+<p>Una vez descargado o creado lo debemos compilar con:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcc -pthread dirty.c -o dirty -lcrypt 
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/182746374-e0239b7d-abe1-488e-a469-f67706a5317c.png" alt="Captura de pantalla 2022-08-04 031828" /></p>
+
+<p><a name="item5"></a></p>
+<h2 id="ejecución-del-exploit">Ejecución del Exploit:</h2>
+
+<p>Ahora para ejecutar el binario utilizamos el siguiente comando:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./dirty
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/103068924/182746270-b2880a65-5126-47c8-8aea-48ab48177e8c.png" alt="Captura de pantalla 2022-08-04 031905" /></p>
+
+<p>Tras ejecutarlo nos pedirá que ingresemos una nueva contraseña.</p>
+
+<p>Finalmente, una vez generada la nueva contraseña, se alojará el nuevo usuario en el <code class="language-plaintext highlighter-rouge">/etc/passwd</code>  y podremos ingresar como ese usuario
+ el cual tendrá privilegios de superusuario o <code class="language-plaintext highlighter-rouge">root</code>.</p>
+
+<p>Para acceder al usuario:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> su firefart
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">firefart</code>: Es el usuario predeterminado del exploit.</li>
+</ul>
+
+<p>Para acceder a través de un servicio <code class="language-plaintext highlighter-rouge">ssh</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ssh firefart@[Ip Vícitma]
+</code></pre></div></div>
+
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!---------------------------- Fin del contenido de la Página ----------------------------->  
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+
+<!----------------------------------  Menu lateral  --------------------------------------->
+
+<body id="body">
+    
+<div class="icon__menu">
+<i class="fas fa-bars" id="btn_open"></i>
+</div>
+
+<div class="menu__side" id="menu_side">
+
+<!--- Botón Youtube --- 
+<div class="name__page">
+<i class="fab fa-youtube"></i>
+<h4>F1r0x</h4>
+</div>
+-->
+
+<div class="options__menu">	
+
+<a href="../portada.html" class="selected">
+<div class="option">
+<i class="fas fa-home" title="Inicio"></i>
+<h4>Inicio</h4>
+</div>
+</a>
+
+<a href="./articulos.html">
+<div class="option">
+<i class="far fa-file" title="Artículos"></i>
+<h4>Artículos</h4>
+</div>
+</a>
+            
+<a href="./cursos.html">
+<div class="option">
+<i class="fas fa-video" title="Cursos"></i>
+<h4>Cursos</h4>
+</div>
+</a>
+
+<a href="./hackthebox.html">
+<div class="option">
+<i class="far fa-sticky-note" title="Hack the Box"></i>
+<h4>HTB</h4>
+</div>
+</a>
+
+<a href="./contacto.html">
+<div class="option">
+<i class="far fa-id-badge" title="Contacto"></i>
+<h4>Contacto</h4>
+</div>
+</a>
+
+<a href="./referencias.html">
+<div class="option">
+<i class="far fa-address-card" title="Referencias"></i>
+<h4>Referencias</h4>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/script.js"></script>  <!-- Archivo Java para el menú lateral responsive -->
+</body>
+
+<!-------------------------------------  Gestor de Comentrarios  ---------------------------------->
+
+<html lang="en">
+  <div id="comentarios">
+    <body>
+      <script src="https://utteranc.es/client.js" repo="F1r0x/gestion-comentarios" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+      </script>         
+    </body>
+  </div>
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+    </div>
+</html>
+
+<!------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------->
