@@ -29,7 +29,7 @@ layout: default
 <p>
     I was born in Cagliari in 1998. After 5 years of economical studies in I.T.C Primo Levi I decide to get a Degree and 
     I sign myself at University of Cagliari where I got a Bachelors Degree with my Thesis "Studio ed analisi di librerie 
-    crittografiche impiegate da malware Android" in 2021 (you can read it from <a href="{{'/assets/pdf/tesi_puzzoni.pdf'}}f" target="_blank">here</a>) .
+    crittografiche impiegate da malware Android" in 2021 (you can read it from <a href="{{'/assets/pdf/tesi_puzzoni.pdf'}}" target="_blank">here</a>) .
 </p>
 <p>In 2019 I attended the CyberChallenge.it course and I discovered my passion for Cyber Security activities and I'm part of Srdnlen Team since the end of this course.</p>
 <p>This Team of ethical hackers is busy with international CTF competitions and We are ranked from 2020 between the top Italian players.</p>
