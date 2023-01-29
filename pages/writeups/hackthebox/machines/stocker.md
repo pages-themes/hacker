@@ -3,6 +3,8 @@ layout: post
 author: k0d14k
 ---
 
+# Stocker
+
 CTF: hackthebox
 
 Category: Machine

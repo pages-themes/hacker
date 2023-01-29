@@ -3,6 +3,8 @@ layout: post
 author: k0d14k
 ---
 
+# Paper Trail
+
 CTF: Angstrom 2019
 
 Category: misc

@@ -3,6 +3,8 @@ layout: post
 author: k0d14k
 ---
 
+# Precious
+
 CTF: hackthebox
 
 Category: Machine
