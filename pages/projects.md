@@ -11,6 +11,6 @@ layout: default
         </p>
     </div>
     <div class="card-footer text-dark d-flex justify-content-end">
-        <a href="/assets/pdf/tesi_puzzoni.pdf" target="_blank" class="btn btn-success">Read</a>
+        <a href="{{'/assets/pdf/tesi_puzzoni.pdf'}}" target="_blank" class="btn btn-success">Read</a>
     </div>
 </div>

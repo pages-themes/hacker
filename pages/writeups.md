@@ -19,7 +19,7 @@ layout: default
             <td>Machines</td>
             <td>Stocker</td>
             <td class="d-flex justify-content-center">
-                <a href="/pages/writeups/hackthebox/machines/stocker" class="btn">Read</a>
+                <a href="{{'/pages/writeups/hackthebox/machines/stocker'}}" class="btn">Read</a>
             </td>
         </tr>
         <tr>
@@ -27,7 +27,7 @@ layout: default
             <td>Machines</td>
             <td>Precious</td>
             <td class="d-flex justify-content-center">
-                <a href="/pages/writeups/hackthebox/machines/precious" class="btn">Read</a>
+                <a href="{{'/pages/writeups/hackthebox/machines/precious'}}" class="btn">Read</a>
             </td>
         </tr>
     </tbody>
@@ -48,7 +48,7 @@ layout: default
             <td>MISC</td>
             <td>Paper Bin</td>
             <td class="d-flex justify-content-center">
-                <a href="/pages/writeups/angstromctf/2019/paperbin" class="btn">Read</a>
+                <a href="{{'/pages/writeups/angstromctf/2019/paperbin'}}" class="btn">Read</a>
             </td>
         </tr>
         <tr>
@@ -56,7 +56,7 @@ layout: default
             <td>MISC</td>
             <td>Paper Trail</td>
             <td class="d-flex justify-content-center">
-                <a href="/pages/writeups/angstromctf/2019/papertrail" class="btn">Read</a>
+                <a href="{{'/pages/writeups/angstromctf/2019/papertrail'}}" class="btn">Read</a>
             </td>
         </tr>
         <tr>
@@ -64,7 +64,7 @@ layout: default
             <td>MISC</td>
             <td>LITHP</td>
             <td class="d-flex justify-content-center">
-                <a href="/pages/writeups/angstromctf/2019/lithp" class="btn">Read</a>
+                <a href="{{'/pages/writeups/angstromctf/2019/lithp'}}" class="btn">Read</a>
             </td>
         </tr>
         <tr>
@@ -72,7 +72,7 @@ layout: default
             <td>MISC</td>
             <td>Scratch It Out</td>
             <td class="d-flex justify-content-center">
-                <a href="/pages/writeups/angstromctf/2019/scratcitout" class="btn">Read</a>
+                <a href="{{'/pages/writeups/angstromctf/2019/scratcitout'}}" class="btn">Read</a>
             </td>
         </tr>
     </tbody>
