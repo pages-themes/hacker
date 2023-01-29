@@ -44,7 +44,7 @@ layout: default
     </thead>
     <tbody>
         <tr>
-            <td><a href="https://2019.angstromctf.com/">AngostromCFF 2019</a></td>
+            <td><a href="https://2019.angstromctf.com/">AngostromCTF 2019</a></td>
             <td>MISC</td>
             <td>Paper Bin</td>
             <td class="d-flex justify-content-center">
@@ -52,7 +52,7 @@ layout: default
             </td>
         </tr>
         <tr>
-            <td><a href="https://2019.angstromctf.com/">AngostromCFF 2019</a></td>
+            <td><a href="https://2019.angstromctf.com/">AngostromCTF 2019</a></td>
             <td>MISC</td>
             <td>Paper Trail</td>
             <td class="d-flex justify-content-center">
@@ -60,7 +60,7 @@ layout: default
             </td>
         </tr>
         <tr>
-            <td><a href="https://2019.angstromctf.com/">AngostromCFF 2019</a></td>
+            <td><a href="https://2019.angstromctf.com/">AngostromCTF 2019</a></td>
             <td>MISC</td>
             <td>LITHP</td>
             <td class="d-flex justify-content-center">
@@ -68,7 +68,7 @@ layout: default
             </td>
         </tr>
         <tr>
-            <td><a href="https://2019.angstromctf.com/">AngostromCFF 2019</a></td>
+            <td><a href="https://2019.angstromctf.com/">AngostromCTF 2019</a></td>
             <td>MISC</td>
             <td>Scratch It Out</td>
             <td class="d-flex justify-content-center">
