@@ -72,7 +72,7 @@ layout: default
             <td>MISC</td>
             <td>Scratch It Out</td>
             <td class="d-flex justify-content-center">
-                <a href="{{'/pages/writeups/angstromctf/2019/scratcitout'}}" class="btn">Read</a>
+                <a href="{{'/pages/writeups/angstromctf/2019/scratchitout'}}" class="btn">Read</a>
             </td>
         </tr>
     </tbody>
