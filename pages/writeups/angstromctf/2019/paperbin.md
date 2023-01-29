@@ -3,8 +3,6 @@ layout: post
 author: k0d14k
 ---
 
-# Paper bin
-
 CTF: Angstrom 2019
 
 Category: misc
