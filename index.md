@@ -1,5 +1,3 @@
-# Homepage
-
 Hello,
 
 This is [Mueez ul-Haq](https://minerva-007.github.io/about), a mechanical engineer, an experienced C++ programmer, and a cybersecurity rookie. I make and break stuff for the fun of it.
