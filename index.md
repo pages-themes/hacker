@@ -1,24 +1,9 @@
 # Homepage
 
-Hi there! Enjoy some posts!
+Hello,
 
-{% for category in site.categories %}
-  <h3>{{ category[0] }}</h3>
-  <ul>
-    {% for post in category[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-          <blockquote><p>{{ post.excerpt }}</p></blockquote>
-    {% endfor %}
-  </ul>
-{% endfor %}
+This is [Mueez ul-Haq](https://minerva-007.github.io/about), a mechanical engineer, an experienced C++ programmer, and a cybersecurity rookie. I make and break stuff for the fun of it.
 
-```
+Checkout some of these works by me, or head to the [main page](https://minerva-007.github.io/posts) to read some more.
 
 
-```
-[About me](https://minerva-007.github.io/about)
-```
-But in this world of infinite choices,
-what will it take just to find that special day?
-- Monika
-```
