@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Abridged: Arrangement of tubes in a tube bank: a heuristic approach"
+title:  "Abridged: Arrangement of tubes in a tube bank using a heuristic approach"
 category: MechE
 tags: heat-transfer HMT fluid-mechanics MATLAB FEATool CFD simulation abridged
 permalink: /tubes-arrange-short
@@ -8,18 +8,18 @@ permalink: /tubes-arrange-short
 Place tubes in a bank for maximum heat transfer.
 <!--more-->
 
-## For a longer version, [click here](https://minerva-007.github.io/HMT-L-tubes-in-a-bank). For the files, [click here](https://github.com/Minerva-007/HMT-L-OEL)
+### For a longer version, [click here](https://minerva-007.github.io/HMT-L-tubes-in-a-bank). For the files, [click here](https://github.com/Minerva-007/HMT-L-OEL)
 
 # Premise
 The objective was to place ten tubes in a tube tank to ensure that maximum heat transfer was obtained. [FEATool Multiplysics](https://www.featool.com/) was used in adjunct with MATLAB, OpenFOAM, and gmsh to obtain results. 14 configurations were heuristically derived and tested in a two-dimensional computational fluid dynamics simulation coupled with heat transfer. The results were contradictory with the existing literature due to the sparse nature of the problem domain.
 
 # Configurations
 
-
+![Configurations](\assets\images\HMT-L\1.jpg){: width="500"}
 # Results
 
 
-![Contours](\assets\images\HMT-L\fourcontours.jpg)
+![Contours](\assets\images\HMT-L\fourcontours.jpg){: width="500"}
 
 
 # References
