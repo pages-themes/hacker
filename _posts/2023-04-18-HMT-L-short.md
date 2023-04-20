@@ -21,6 +21,7 @@ The objective was to place ten tubes in a tube tank to ensure that maximum heat 
 
 ![Contours](\assets\images\HMT-L\fourcontours.jpg){: width="500"}
 
+![Table](\assets\images\HMT-L\results.jpg){: width="500"}
 
 # References
 [1] Olanrewaju, Ridwan Olaitan. "Design, Construction And Performance Evaluation Of A Dual-Powered Cooker." Phd Diss., Department Of Mechanical Engineering, Faculty Of Engineering And Technology, Ladoke Akintola University Of Technology, Ogbomoso, 2019.
