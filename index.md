@@ -2,7 +2,7 @@ G'day, mate,
 
 This is [Mueez ul-Haq](https://minerva-007.github.io/about), a mechanical engineer, an experienced C++ programmer, and a cybersecurity rookie. I make and break stuff for the fun of it.
 
-### [What flags have I captured?](https://minerva-007.github.io/CTFS)
+### [What flags have I captured?](https://minerva-007.github.io/CTFs)
 ### [What projects have I completed?](https://minerva-007.github.io/Projects)
 ### [List of all blogs](https://minerva-007.github.io/posts)
 
