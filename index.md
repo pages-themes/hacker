@@ -4,7 +4,7 @@
 
 
 
-## Amswering Business Question Using SQL
+## Answering Business Question Using SQL
 
 In this project, I act as a data analyst working at a record store selling music albums, where I will be applying concepts learned in SQL to write querries and do some analysis on given relational database.
 
