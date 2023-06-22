@@ -1,96 +1,40 @@
 ---
-layout: default
+layout: Intelligent
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+[Link to another page](https://www.linkedin.com/in/saadhashmish/).
 
-[Link to another page](./another-page.html).
+A customer experience centered individual, having 6+ years management experience building and growing web & mobile products, business planning & project management. Whilst working on tools for developing a user experience, my priority has always been to reach out to the end users & stakeholders for understanding what their actual requirement is. The mantra “Learn. Build. Deliver. Relearn.” drives me to achieving my goals.
+Prior to my current engagement as a PM at Samsung Research Bangalore, I had a 2-year stint at Daimler India Commercial Vehicles (Chennai). I hold a master’s degree in Business Administration from IIM Ranchi and bachelor’s degree in Mechanical Engineering from NIT, Karnataka
 
-There should be whitespace between paragraphs.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+# Machine Learning
 
-# Header 1
+Machine Learning is an art and science. And so are the interests of Saad Hashmi. Blending the science and the art produces true innovation. 
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+## Fraud Detection
 
-## Header 2
-
-> This is a blockquote following a header.
+> Fraud detection is a set of processes and analyses that allow businesses to identify and prevent unauthorised financial activity. This may include fraudulent credit card transactions, identity theft, cyber hacking, insurance scams and more.
 >
-> When something is important enough, you do it even if the odds are not in your favor.
+> 
+> [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/sajankedia/fraud_detection)
 
-### Header 3
+<center><img src="images/fraud_detection.jpg"/></center>
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+## Churn Prediction 
 
-#### Header 4
+> Churn Prediction is a set of processes and analyses that allow businesses to identify and prevent customers from churning or unsubscribing from their portfolio. These are very important as existing customers are responsible for 80% of company revenues.
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
 
-##### Header 5
+### Company History
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+| Company Name        | Designation           | Duration |
+|:-------------       |:----------------------|:------|
+| Daimler             | Procurement Manager   | 2014-16  |
+| Samsung             | Product Manager       | 2018-22  |
+| GoTo                | Sr Product Manager    | 2022-Present   |
 
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
 
 ### Small image
 
@@ -105,17 +49,17 @@ end
 
 <dl>
 <dt>Name</dt>
-<dd>Godzilla</dd>
+<dd>Saad Hashmi</dd>
 <dt>Born</dt>
-<dd>1952</dd>
+<dd>1991</dd>
 <dt>Birthplace</dt>
-<dd>Japan</dd>
+<dd>India</dd>
 <dt>Color</dt>
-<dd>Green</dd>
+<dd>Brown</dd>
 </dl>
 
 ```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+Hope you enjoyed staying at this page. Please keep a look out for further updates.
 ```
 
 ```
