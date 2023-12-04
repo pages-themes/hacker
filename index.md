@@ -3,52 +3,68 @@ layout: default
 ---
 
 <h1>News</h1>
-
-
-<article>
-  <h2>New Project Available</h2>
-  <p>My first github pubblic Project. Read the <a href="{{'/pages/projects/javaGenericCrud'}}">Post</a>.</p>
-  <small>02 Feb 2023</small>
-</article>
 <hr>
-
 <article>
-  <h2>New WriteUp Available</h2>
-  <p>A new writeup for HackTheBox - Stocker is now Available. <a href="{{'/pages/writeups/hackthebox/machines/stocker'}}">check it out</a></p>
-  <small>29 Gen 2023</small>
+  <div style="display: flex;">
+      <div style="flex: 1">
+        <center>
+          <img width="400em" src="data:image/png;base64,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" alt="">
+        </center>
+      </div>
+      <div style="flex: 1">
+        <h2>HackTheBox - Neonify - Writeup</h2>
+        <p>A new writeup for HackTheBox - Neonify is now Available.</p>
+        
+        <center>
+          <a href="{{'/pages/writeups/hackthebox/challenges/neonify'}}" class="btn">Check it Out</a>
+        </center>
+
+        <br>
+        <small>04 Dec 2023</small>
+      </div>
+  </div>
 </article>
-<hr>
 
+<hr>
 <article>
-  <h2>New WriteUp Available</h2>
-  <p>A new writeup for HackTheBox - Precious is now Available. <a href="{{'/pages/writeups/hackthebox/machines/precious'}}">check it out</a></p>
-  <small>29 Gen 2023</small>
+  <div style="display: flex;">
+      <div style="flex: 1">
+        <center>
+          <img width="400em" src="data:image/png;base64,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" alt="">
+        </center>
+      </div>
+      <div style="flex: 1">
+        <h2>HackTheBox - Toxic - Writeup</h2>
+        <p>A new writeup for HackTheBox - Toxic is now Available.</p>
+        
+        <center>
+          <a href="{{'/pages/writeups/hackthebox/challenges/toxic'}}" class="btn">Check it Out</a>
+        </center>
+
+        <br>
+        <small>04 Dec 2023</small>
+      </div>
+  </div>
 </article>
-<hr>
 
-<article>
-  <h2>New WriteUp Available</h2>
-  <p>A new writeup for AngstromCTF 2019 - Paper Bin is now Available. <a href="{{'/pages/writeups/angstromctf/2019/paperbin'}}">check it out</a></p>
-  <small>29 Gen 2023</small>
-</article>
 <hr>
-
 <article>
-  <h2>New WriteUp Available</h2>
-  <p>A new writeup for AngstromCTF 2019 - Paper Trail is now Available. <a href="{{'/pages/writeups/angstromctf/2019/papertrail'}}">check it out</a></p>
-  <small>29 Gen 2023</small>
-</article>
-<hr>
+  <div style="display: flex;">
+      <div style="flex: 1">
+        <center>
+          <img width="400em" src="data:image/png;base64,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" alt="">
+        </center>
+      </div>
+      <div style="flex: 1">
+        <h2>HackTheBox - LoveTok - Writeup</h2>
+        <p>A new writeup for HackTheBox - LoveTok is now Available.</p>
+        
+        <center>
+          <a href="{{'/pages/writeups/hackthebox/challenges/lovetok'}}" class="btn">Check it Out</a>
+        </center>
 
-<article>
-  <h2>New WriteUp Available</h2>
-  <p>A new writeup for AngstromCTF 2019 - LITHP is now Available. <a href="{{'/pages/writeups/angstromctf/2019/lithp'}}">check it out</a></p>
-  <small>29 Gen 2023</small>
-</article>
-<hr>
-
-<article>
-  <h2>New WriteUp Available</h2>
-  <p>A new writeup for AngstromCTF 2019 - Scratch It Out is now Available. <a href="{{'/pages/writeups/angstromctf/2019/scratchitout'}}">check it out</a></p>
-  <small>29 Gen 2023</small>
+        <br>
+        <small>04 Dec 2023</small>
+      </div>
+  </div>
 </article>

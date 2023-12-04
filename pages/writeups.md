@@ -16,6 +16,30 @@ layout: default
     <tbody>
         <tr>
             <td><a href="https://www.hackthebox.com/">HackTheBox</a></td>
+            <td>Web</td>
+            <td>Toxic</td>
+            <td class="d-flex justify-content-center">
+                <a href="{{'/pages/writeups/hackthebox/challenges/toxic'}}" class="btn">Read</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.hackthebox.com/">HackTheBox</a></td>
+            <td>Web</td>
+            <td>Neonify</td>
+            <td class="d-flex justify-content-center">
+                <a href="{{'/pages/writeups/hackthebox/challenges/neonify'}}" class="btn">Read</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.hackthebox.com/">HackTheBox</a></td>
+            <td>Web</td>
+            <td>Lovetok</td>
+            <td class="d-flex justify-content-center">
+                <a href="{{'/pages/writeups/hackthebox/challenges/lovetok'}}" class="btn">Read</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.hackthebox.com/">HackTheBox</a></td>
             <td>Machines</td>
             <td>Stocker</td>
             <td class="d-flex justify-content-center">

@@ -11,7 +11,7 @@ layout: default
     <td>
       <ul>
         <li>Bachelors Degree in Computer Science at <a href="https://www.unica.it" target="_blank">University of Cagliari</a>.</li>
-        <li>By the day Full stack web developer at <a href="https://www.si2001.it" target="_blank">Si2001</a>.</li>
+        <li>By the day Software Security Consultant at <a href="https://mindedsecurity.com" target="_blank">IMQ Minded Security</a>.</li>
         <li>
             By the night H@cker for <a href="https://srdnlen.unica.it" target="_blank">Srdnlen</a> CTF team as k0d14k.
             <ul>
@@ -33,7 +33,7 @@ layout: default
 </p>
 <p>In 2019 I attended the CyberChallenge.it course and I discovered my passion for Cyber Security activities and I'm part of Srdnlen Team since the end of this course.</p>
 <p>This Team of ethical hackers is busy with international CTF competitions and We are ranked from 2020 between the top Italian players.</p>
-<p>Right now I'm a Web Developer for SI2001 and provide consulence to some very important customers.</p>
+<p>Right now I'm a Software Security Consultant at IMQ Minded Security and provide consulence to some very important customers.</p>
 <p>Feel free to fork my projects on GitHub or to contact me if you want a collaboration to any project or to get writeups explaination, You'll find some of my contacts on the contants page.</p>
 
 <hr>
