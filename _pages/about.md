@@ -1,3 +1,6 @@
+---
+permalink: /about
+---
 # Who am I?
 
 Hello there, this is Mueez-ul-Haq (aka Minerva-007). Dabbling through several domains, I excel in mechanical engineering, low-level development, and reverse engineering. 
