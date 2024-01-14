@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /
+permalink: /home
 toc: false
 share:false
 related:false
