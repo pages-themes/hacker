@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Abridged: Arrangement of tubes in a tube bank using a heuristic approach"
 category: MechE
 tags: heat-transfer HMT fluid-mechanics MATLAB FEATool CFD simulation abridged
