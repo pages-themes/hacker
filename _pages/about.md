@@ -1,6 +1,6 @@
 ---
 permalink: /about
-layout: single
+layout: default
 author_profile:false
 toc:false
 share:false
