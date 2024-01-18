@@ -1,5 +1,10 @@
-title: Hacker theme
-description: Hacker is a theme for GitHub Pages.
+remote_theme: pages-themes/hacker@master
+plugins:
+- jekyll-remote-theme
+title: Modern Hacker theme
+description: Modern Hacker is a theme for GitHub Pages.
+theme: jekyll-theme-modern-hacker
 show_downloads: true
-google_analytics:
-theme: jekyll-theme-hacker
+google:
+  tag_manager:
+  analytics:
