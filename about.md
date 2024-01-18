@@ -1,6 +1,10 @@
 ---
 layout: default
 permalink: /about
+header:
+   overlay_image: /assets/images/1500x500.jpg
+   show_overlay_excerpt: true
+   caption: "Kyou my beloved!"
 ---
 # About
 
