@@ -158,6 +158,7 @@ include:
   - .htaccess
   - _pages
   - _posts
+  - _portfolio
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
