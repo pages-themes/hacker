@@ -1,6 +1,6 @@
 ---
-permalink: /about
 layout: default
+permalink: /about
 author_profile:false
 toc:false
 share:false
