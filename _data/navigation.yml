@@ -2,6 +2,8 @@
 main:
   - title: "About"
     url: https://minerva-007.github.io/about
+  - title: "Blog"
+    url: https://minerva-007.github.io/posts
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
