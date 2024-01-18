@@ -1,39 +1,49 @@
 ---
 permalink: /about
+layout: single
+author_profile:false
+toc:false
+share:false
+related:false
+header:
+   overlay_image: /assets/images/1500x500.jpg
+   show_overlay_excerpt: true
+   caption: "Kyou my beloved!"
 ---
-# Who am I?
+# About
 
-Hello there, this is Mueez-ul-Haq (aka Minerva-007). Dabbling through several domains, I excel in mechanical engineering, low-level development, and reverse engineering. 
-
-## What I do
+Hello there, this is Mueez-ul-Haq (aka Minerva.). I am a mechanical engineer (mastery in thermal power), a long-time programmer, and a diehard fan of anime and Doom. 
 
 ### Mechanical Engineering
-My major is in renewable energy resources, with a paper published in my university's conference. Following is a list of interests:
+My capstone project in my bachelors degree was related to renewable energy, and I presented my work in ICERD-8 organized in Kuwait in November 2023.
+Currently I am a teaching assistant in MED UET LHR, and a ECoE scholarship awardee by QATPL Bhikki. My masters programme involves internship in the 1180MW combined cycle power plant for a year.
+My core competencies are:
 - Renewable energy resources
 	- Resource assessment, prediction, utilization.
+- Computational Engineering 
+	- Metaheuristics, Monte Carlo solvers, classical techniques.
 - Thermofluid simulations
 - Design Engineering (machine and mechanisms)
 - Design for Manufacturing
-- Computational Engineering 
-	- Metaheuristics, Monte Carlo solvers, classical techniques.
 
 Tools: MATLAB, Simulink, Arduino, SOLIDWORKS, Ricardo WAVE, EES, MathCAD, PVSyst, Siemens PLM.
 
-### Low-level developmet
-Developing programs to learn technologies that can help me in daily life is the theme behind my scripts. Following are my interests:
-- Algorithms, Data Structures
+### Programming (C/C++)
+From writing stupid proofs of concept codes to making sophisticated simulations, I have experimented a lot in my past 10 years.
+- Game Development
+- High Performance Computing
 - Network Programming
 - Compiler Construction
 - Bash/PS scripting
 
-Tools: gcc, g++, masm, cmd/powershell, bash, winsock, gdb.
+Tools: gcc, g++, masm, cmd/powershell, bash, vim winsock/winGDI.
 
 Environments: Visual Studio, Dev-cpp, Ubuntu@WSL.
 
 ### Cybersecurity
-I participate in jeopardy-style CTFs in rev/pwn category, as well as practice weekly. I play for [Task_Hashed](https://ctftime.org/team/175900) and sometimes [JHDiscord](https://ctftime.org/team/62434).
+I used to participate in jeopardy-style CTFs in rev/pwn category from August 2022 to March 2023. I still remember a few things, however. I was an active player for [/bin/cat](https://ctftime.org/team/211363) and sometimes [JHDiscord](https://ctftime.org/team/62434).
 
 Tools: Ghidra, IDA, gdb, CyberChef, Ubuntu@WSL.
 
 ## Find me
-You can find me at [Github](https://www.github.com/Minerva-007/) and at [LinkedIn](https://www.linkedin.com/in/Minerva-007)
+You can find me at [Github](https://www.github.com/Minerva-007/), [LinkedIn](https://www.linkedin.com/in/Minerva-007) and [Twitter](https://www.twitter.com/__minerva__007) for any queries. I'm open to freelance contracts, too. 
