@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 permalink: /about
 header:
    overlay_image: /assets/images/1500x500.jpg
