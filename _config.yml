@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "en-US"
 title                    : "Minerva."
 title_separator          : "-"
-subtitle                 : "Mueez Ul-Haq - a bit of everything"# site tagline that appears below site title in masthead
+subtitle                 : "Mueez Ul-Haq - Engineer, Programmer, Designer"# site tagline that appears below site title in masthead
 name                     : "Mueez Ul-Haq"
-description              : "A bit of everything"
+description              : "Engineer, Programmer, Designer"
 url                      : "https://minerva-007.github.io" # the base hostname & protocol for your site e.g. 
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -105,7 +105,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Minerva."
+  name             : "Mueez Ul-Haq (Minerva.)"
   avatar           : "/assets/images/Minene.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Mechanical/Thermal Power Engineer with more experience in coding... for some reason"
   location         : "MED UET Lahore/QATPL Bhikki"
