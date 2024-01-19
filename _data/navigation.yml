@@ -1,14 +1,8 @@
 # main links
 main:
-  - title: "About"
-    url: https://minerva-007.github.io/about
-  - title: "Blog"
-    url: https://minerva-007.github.io/posts
   - title: "Portfolio"
     url: https://minerva-007.github.io/portfolio
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Blog"
+    url: https://minerva-007.github.io/posts
+  - title: "About"
+    url: https://minerva-007.github.io/about
