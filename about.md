@@ -4,14 +4,12 @@ permalink: /about
 header:
    overlay_image: /assets/images/1500x500.jpg
    show_overlay_excerpt: true
-   caption: "Kyou my beloved!"
+   caption: "Kyou, my beloved!"
    actions:
-    - label: "Download Master CV"
+    - label: "Master CV"
       url: https://www.linkedin.com/in/minerva-007/
-    - label: "Contact on LinkedIn"
+    - label: "LI Connect"
       url: https://www.linkedin.com/in/minerva-007/
-excerpt: "Info related to Mueez Ul-Haq"
-
 ---
 # About
 
