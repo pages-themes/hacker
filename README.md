@@ -15,7 +15,7 @@ To use the Hacker theme:
     ```yml
     remote_theme: pages-themes/hacker@v0.2.0
     plugins:
-    - jekyll-remote-theme # add this line to the plugins list if you already have one
+    - jekyll-remote-theme # add this line to the plugins list if you don't already have one
     ```
 
 2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
