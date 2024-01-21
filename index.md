@@ -92,6 +92,11 @@ end
   - level 2 item
 - level 1 item
 
+### What about task lists...
+
+- [ ] Undone task (unchecked)
+- [x] Completed task (checked)
+
 ### Small image
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
