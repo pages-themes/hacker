@@ -266,3 +266,40 @@ a {
 #a-title {
   text-decoration: none;
 }
+
+// Variables
+$sidebar-width: 300px;
+$sidebar-bg-color: #333;
+$sidebar-text-color: #9F2B68;
+$sidebar-link-color: #b5e853;
+$sidebar-link-hover-color: #fff;
+
+// Sidebar Styles
+.sidebar {
+  position: fixed;
+  top: 8%;
+  left: 0;
+  height: 100%;
+  width: $sidebar-width;
+  background-color: $sidebar-bg-color;
+  color: $sidebar-text-color;
+  padding: 20px;
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $sidebar-link-color;
+    display: block;
+    padding: 8px 10px;
+    border-radius: 5px;
+  }
+}

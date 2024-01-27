@@ -1,5 +1,4 @@
-title: Hacker theme
-description: Hacker is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+title: Maldev-Blog
+description: The blog of a friendly hacker.
+show_downloads: true 
 theme: jekyll-theme-hacker
