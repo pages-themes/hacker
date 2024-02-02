@@ -1,38 +1,87 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    {% include head-custom.html %}
+<html lang="{{ site.lang | default: " en-US" }}">
 
-{% seo %}
-  </head>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  {% include head-custom.html %}
 
-  <body>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #333;
+    }
 
-    <header>
-      <div class="container">
-        <a id="a-title" href="{{ '/' | relative_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+    main-content {
+      color: white;
+    }
 
-        <section id="downloads">
-          {% if site.show_downloads %}
-            <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
-            <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
-          {% endif %}
-          <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+    .catpuccin-sidebar {
+      background-color: #333;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .catpuccin-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .catpuccin-title a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 5px;
+      transition: color 0.3s;
+    }
+
+    .catpuccin-title a:hover {
+      color: #66D9EF;
+      /* Highlight color */
+    }
+  </style>
+  {% seo %}
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a id="a-title" href="{{ '/' | relative_url }}">
+        <h1>Maldev blog - Schizzy</h1>
+      </a>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="">
+        <div class="catpuccin-sidebar">
+          <img src="/assets/images/catpuccino.jpg" alt="catpuccino" class="catpuccin-img">
+          <h2 class="catpuccin-title">
+            <a href="../docs/FAQ.md">FAQ</a>
+            <a href="#">HTB Writeups</a>
+            <a href="#">Malware Analysis</a>
+            <a href="#">Programming</a>
+            <a href="#">Random</a>
+          </h2>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <section id="main_content">
+          {{ content }}
         </section>
       </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        {{ content }}
-      </section>
     </div>
-  </body>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>
