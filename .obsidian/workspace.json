@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "149205d1e52929a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "971e079909dedee1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e869b515ea6fe1d8",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f45b4b33a5355b46",
+    "type": "split",
+    "children": [
+      {
+        "id": "965318f95f41a407",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "62c24e3c139ad890",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6d1b38fb6b0945d9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5517e11a601780dc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fc8737bb4e28f960",
+    "type": "split",
+    "children": [
+      {
+        "id": "f057b792c2e17d45",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da3edec2bd555801",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "67840aa3e4859f7b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7adb4b5c917e4457",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b989b7725cf684dd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "62c24e3c139ad890",
+  "lastOpenFiles": [
+    "_posts/2024-06-30-vulnlab-data.md",
+    "_posts/2024-06-29-vulnlab-baby.md",
+    "_posts/2024-06-28-vulnlab-manage.md",
+    "_posts/2024-06-22-vulnlab-breach.md",
+    "_posts/2024-06-07-tryhackme-kenobi.md",
+    "_posts/2024-05-18-vulnlab-escape.md",
+    "_posts/2024-06-06-tryhackme-include.md",
+    "_posts/2024-05-18-tryhackme-annie.md",
+    "_posts",
+    "images/vulnlab_sync/sync.png",
+    "images/vulnlab_sync",
+    "images/vulnlab_manage/manage.png",
+    "images/vulnlab_manage",
+    "images/vulnlab_lock/lock.avif",
+    "images/vulnlab_lock",
+    "images/vulnlab_escape/Pasted image 20240518171447.png",
+    "images/vulnlab_escape/Pasted image 20240518171406.png",
+    "images/vulnlab_escape/Pasted image 20240518171013.png",
+    "images/vulnlab_escape/Pasted image 20240518170437.png",
+    "images/vulnlab_escape/Pasted image 20240518155305.png",
+    "images/vulnlab_escape/Pasted image 20240518161612.png",
+    "images/vulnlab_escape/Pasted image 20240518161405.png",
+    "images/vulnlab_escape",
+    "images/vulnlab_data",
+    "images/vulnlab_breach",
+    "images/vulnlab_baby",
+    "images/tryhackme_kenobi",
+    "images/tryhackme_include"
+  ]
+}
