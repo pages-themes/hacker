@@ -2,3 +2,34 @@
 ---
 
 @import 'jekyll-theme-hacker';
+
+
+
+.pls:active, .pls:hover {
+font-size:32px;
+border: 2px solid red;
+}
+
+p:active, p:hover {
+color:purple;
+}
+
+.images {
+    max-width: 80vw;
+    margin: 10px 0;
+}
+
+.btn {
+    text-align: center;
+}
+
+img.btn {
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    margin: 0 0 5px 0;
+}
+
+.btn:hover {
+    color: #b5e853;
+}

@@ -4,7 +4,22 @@ layout: default
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
-[Link to another page](./another-page.html).
+[Link to another page](./another-page.html) 
+{: .button1}
+
+[this should work maybe](./another-page.html) 
+{: .button2}
+
+<a href="https://youtu.be/dQw4w9WgXcQ?si=6kPDRSe_KHNjGvAp">is there some chance?</a>
+
+
+mot aleatoire 
+{: .pls}
+
+
+
+
+<p style="color:ref;font-size:46px;">mot aleatoire</p>
 
 There should be whitespace between paragraphs.
 
