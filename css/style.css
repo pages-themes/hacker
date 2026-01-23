@@ -90,7 +90,8 @@ header h1:before {
   font-size: 24px;
 }
 
-header h2 {
+header h2,
+footer h2{
   font-size: 18px;
   font-weight: 300;
   color: #666;
@@ -115,6 +116,7 @@ header h2 {
 /* Main Content */
 #main_content {
   width: 100%;
+  min-height: 600px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -209,10 +211,22 @@ table {
   border-collapse: collapse;
 }
 
+table tbody {
+  min-height: 400px;
+  display: block;
+}
+
+table thead,
+table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
 th {
-  text-align: left;
-  border-bottom: 1px dashed #b5e853;
-  padding: 5px 10px;
+    text-align: left;
+    border-bottom: 2px dashed blue;
+    padding: 5px 10px;
 }
 
 td {
@@ -329,3 +343,12 @@ a:hover {
 .highlight .kc { color: #ae81ff; } /* Keyword constant */
 .highlight .no { color: #66d9ef; } /* Name constant */
 .highlight .nf { color: #a6e22e; } /* Name function */
+
+/* Footer Section */
+footer {
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-top: 1px dashed var(--conifer);
+    padding: 20px 0;
+    margin: 0 0 40px 0;
+}
